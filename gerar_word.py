@@ -329,7 +329,18 @@ def add_article_section(doc, art):
     p_tema.paragraph_format.left_indent = Pt(10)
     add_run_styled(p_tema, art["tema"], bold=True, font_size=11, color_hex="7EC8E3")
 
-    # ── Tradução PT-PT (leitura primária) ────────────────────────────────
+    # ── Texto original EN (leitura primária) ─────────────────────────────
+    doc.add_paragraph().paragraph_format.space_after = Pt(4)
+    t_en = doc.add_table(rows=2, cols=1)
+    set_table_width(t_en, pct=5000)
+    titulo_en = art["regulamento"].get("titulo", "")
+    hdr_en = f"@regulamento — {titulo_en}  ·  {art['regulamento']['ref']}  |  EN"
+    cell_header(t_en.cell(0, 0), hdr_en, COR["regulamento_header"])
+    cell_body(t_en.cell(1, 0),
+              art["regulamento"]["texto"],
+              COR["regulamento_body"])
+
+    # ── Tradução PT-PT ────────────────────────────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
     t_trad = doc.add_table(rows=2, cols=1)
     set_table_width(t_trad, pct=5000)
@@ -340,17 +351,6 @@ def add_article_section(doc, art):
               art["regulamento"]["traducao"],
               COR["regulamento_trad"],
               italic=True)
-
-    # ── Texto original EN (referência) ───────────────────────────────────
-    doc.add_paragraph().paragraph_format.space_after = Pt(4)
-    t_en = doc.add_table(rows=2, cols=1)
-    set_table_width(t_en, pct=5000)
-    cell_header(t_en.cell(0, 0),
-                "@regulamento — Texto original EN",
-                COR["regulamento_header"])
-    cell_body(t_en.cell(1, 0),
-              art["regulamento"]["texto"],
-              COR["regulamento_body"])
 
     # ── Tabela 3 colunas: RGBEAC | Código | Legislação vigente ───────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)

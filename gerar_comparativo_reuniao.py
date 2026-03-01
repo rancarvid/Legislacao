@@ -22,6 +22,7 @@ ARTIGOS = [
         "tema": "Identificação e Registo",
         "regulamento": {
             "ref": "Art.º 17.º do Regulamento 2023/0447",
+            "titulo": "Identification and registration of dogs and cats",
             "texto": (
                 "All dogs and cats kept in establishments placed on the market or owned by pet owners "
                 "or by any other natural or legal persons, shall be individually identified by means of "
@@ -126,6 +127,7 @@ ARTIGOS = [
         "tema": "Bem-Estar e Detenção",
         "regulamento": {
             "ref": "Art.º 6.º do Regulamento 2023/0447",
+            "titulo": "General welfare obligations",
             "texto": (
                 "Operators shall be responsible for the welfare of dogs or cats kept in the establishments "
                 "under their responsibility and under their control and to minimise any risks to their welfare.\n\n"
@@ -216,6 +218,7 @@ ARTIGOS = [
         "tema": "Reprodução e Criação",
         "regulamento": {
             "ref": "Art.º 7.º do Regulamento 2023/0447",
+            "titulo": "Notification and registration of establishments",
             "texto": (
                 "Operators shall notify the competent authorities of their activity, providing at least the "
                 "following information:\n\n"
@@ -319,6 +322,7 @@ ARTIGOS = [
         "tema": "Princípios Gerais de Bem-Estar",
         "regulamento": {
             "ref": "Art.º 5.º do Regulamento 2023/0447",
+            "titulo": "General welfare principles",
             "texto": (
                 "Operators shall apply the following general welfare principles with respect to dogs or cats "
                 "bred or kept in their establishment:\n\n"
@@ -425,6 +429,7 @@ ARTIGOS = [
         "tema": "Estratégias de Criação — Conformação e Consanguinidade",
         "regulamento": {
             "ref": "Art.º 6.a do Regulamento 2023/0447",
+            "titulo": "Breeding strategies obligations",
             "texto": (
                 "Operators of breeding establishments shall ensure that their breeding strategies minimise the "
                 "risk of producing dogs or cats with genotypes associated with detrimental effects on their health "
@@ -528,7 +533,8 @@ ARTIGOS = [
         "id": "ART-13",
         "tema": "Saúde e Monitorização Sanitária",
         "regulamento": {
-            "ref": "Art.º 13.º (Health) do Regulamento 2023/0447 (PE/Conselho)",
+            "ref": "Art.º 13.º do Regulamento 2023/0447 (PE/Conselho)",
+            "titulo": "Health",
             "texto": (
                 "1. Operators shall ensure that:\n\n"
                 "(a) dogs or cats under their responsibility are inspected by animal caretakers at least once a "
@@ -544,9 +550,9 @@ ARTIGOS = [
                 "common diseases to which dogs or cats are likely to be exposed are implemented;\n"
                 "(e) enrichment do not present a significant risk of injury or biological or chemical "
                 "contamination or any other health risk.\n\n"
-                "[dim]Point (a) shall not apply to livestock guardian dogs kept in breeding establishments during "
+                "Point (a) shall not apply to livestock guardian dogs kept in breeding establishments during "
                 "the periods when such dogs are used for guarding or training purposes.\n\n"
-                "[dim]Member states may grant derogations from point (c) in cases of emergencies, where no "
+                "Member states may grant derogations from point (c) in cases of emergencies, where no "
                 "veterinarian can be reached without undue delay, provided that national rules are put in place "
                 "to ensure that:\n"
                 "(i) an immediate action ending the life of the dog or cat with minimum pain and suffering using "
@@ -582,9 +588,9 @@ ARTIGOS = [
                 "expostos;\n"
                 "(e) os enriquecimentos não apresentam risco significativo de lesões ou de contaminação biológica "
                 "ou química, nem qualquer outro risco para a saúde.\n\n"
-                "[dim]A alínea (a) não se aplica aos cães de guarda de gado mantidos em estabelecimentos de "
+                "A alínea (a) não se aplica aos cães de guarda de gado mantidos em estabelecimentos de "
                 "criação durante os períodos em que tais cães são utilizados para fins de guarda ou treino.\n\n"
-                "[dim]Os Estados-Membros podem conceder derrogações relativamente à alínea (c) em casos de "
+                "Os Estados-Membros podem conceder derrogações relativamente à alínea (c) em casos de "
                 "emergência, quando não seja possível contactar um médico veterinário sem demora injustificada, "
                 "desde que sejam estabelecidas regras nacionais que assegurem que:\n"
                 "(i) é tomada imediatamente uma ação que ponha fim à vida do cão ou gato com o mínimo de dor e "
@@ -1188,7 +1194,8 @@ function artMatch(art, q) {{
   const div = art.divergencia || {{}};
   const campos = [
     art.id, art.tema,
-    art.regulamento.ref, art.regulamento.texto, art.regulamento.traducao,
+    art.regulamento.ref, art.regulamento.titulo,
+    art.regulamento.texto, art.regulamento.traducao,
     art.rgbeac.ref, art.rgbeac.texto,
     art.codigo.ref, art.codigo.texto,
     art.legislacao.ref, art.legislacao.texto,
@@ -1318,20 +1325,23 @@ function render() {{
     <div class="art-badge">${{art.id}}</div>
     <div class="tema-title">${{art.tema}}</div>
 
-    <div class="card reg-tr" style="margin-bottom:14px;">
+    <div class="card reg" style="margin-bottom:14px;">
+      <div class="card-header">
+        @regulamento — ${{art.regulamento.titulo}}
+        <span class="card-header-ref">${{art.regulamento.ref}} · Texto original EN</span>
+      </div>
+      <div class="card-body">
+        ${{formatarTexto(art.regulamento.texto)}}
+      </div>
+    </div>
+
+    <div class="card reg-tr" style="margin-bottom:20px;">
       <div class="card-header">
         @regulamento — Tradução PT-PT
         <span class="card-header-ref">${{art.regulamento.ref}}</span>
       </div>
       <div class="card-body">
         ${{formatarTexto(art.regulamento.traducao)}}
-      </div>
-    </div>
-
-    <div class="card reg" style="margin-bottom:20px;">
-      <div class="card-header">@regulamento — Texto original EN</div>
-      <div class="card-body">
-        ${{formatarTexto(art.regulamento.texto)}}
       </div>
     </div>
 
