@@ -264,50 +264,55 @@ def add_article_section(doc, art):
     p_tema.paragraph_format.left_indent = Pt(10)
     add_run_styled(p_tema, art["tema"], bold=True, font_size=11, color_hex="7EC8E3")
 
-    # ── Tabela 4 colunas: Regulamento | RGBEAC | Código | Legislação vigente ──
-    doc.add_paragraph().paragraph_format.space_after = Pt(4)
-    t3 = doc.add_table(rows=2, cols=4)
-    set_table_width(t3, pct=5000)
-
-    # Cabeçalhos
-    cell_header(t3.cell(0, 0), "@regulamento (texto original EN)",
-                COR["regulamento_header"])
-    cell_header(t3.cell(0, 1), "@rgbeac (proposta jun. 2025)",
-                COR["rgbeac_header"])
-    cell_header(t3.cell(0, 2), "@codigo (DL n.º 214/2013)",
-                COR["codigo_header"])
-    cell_header(t3.cell(0, 3), "@legislacao (legislação vigente)",
-                COR["legislacao_header"])
-
-    # Corpos
-    cell_body(t3.cell(1, 0),
-              art["regulamento"]["texto"],
-              COR["regulamento_body"],
-              ref_text=art["regulamento"]["ref"])
-    cell_body(t3.cell(1, 1),
-              art["rgbeac"]["texto"],
-              COR["rgbeac_body"],
-              ref_text=art["rgbeac"]["ref"])
-    cell_body(t3.cell(1, 2),
-              art["codigo"]["texto"],
-              COR["codigo_body"],
-              ref_text=art["codigo"]["ref"])
-    cell_body(t3.cell(1, 3),
-              art["legislacao"]["texto"],
-              COR["legislacao_body"],
-              ref_text=art["legislacao"]["ref"])
-
-    # ── Tradução do Regulamento ───────────────────────────────────────────
+    # ── Tradução PT-PT (leitura primária) ────────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
     t_trad = doc.add_table(rows=2, cols=1)
     set_table_width(t_trad, pct=5000)
     cell_header(t_trad.cell(0, 0),
-                "Tradução do @regulamento (PT-PT)",
+                f"@regulamento — Tradução PT-PT  ·  {art['regulamento']['ref']}",
                 "2471A3")
     cell_body(t_trad.cell(1, 0),
               art["regulamento"]["traducao"],
               COR["regulamento_trad"],
               italic=True)
+
+    # ── Texto original EN (referência) ───────────────────────────────────
+    doc.add_paragraph().paragraph_format.space_after = Pt(4)
+    t_en = doc.add_table(rows=2, cols=1)
+    set_table_width(t_en, pct=5000)
+    cell_header(t_en.cell(0, 0),
+                "@regulamento — Texto original EN",
+                COR["regulamento_header"])
+    cell_body(t_en.cell(1, 0),
+              art["regulamento"]["texto"],
+              COR["regulamento_body"])
+
+    # ── Tabela 3 colunas: RGBEAC | Código | Legislação vigente ───────────
+    doc.add_paragraph().paragraph_format.space_after = Pt(4)
+    t3 = doc.add_table(rows=2, cols=3)
+    set_table_width(t3, pct=5000)
+
+    # Cabeçalhos
+    cell_header(t3.cell(0, 0), "@rgbeac (proposta jun. 2025)",
+                COR["rgbeac_header"])
+    cell_header(t3.cell(0, 1), "@codigo (DL n.º 214/2013)",
+                COR["codigo_header"])
+    cell_header(t3.cell(0, 2), "@legislacao (legislação vigente)",
+                COR["legislacao_header"])
+
+    # Corpos
+    cell_body(t3.cell(1, 0),
+              art["rgbeac"]["texto"],
+              COR["rgbeac_body"],
+              ref_text=art["rgbeac"]["ref"])
+    cell_body(t3.cell(1, 1),
+              art["codigo"]["texto"],
+              COR["codigo_body"],
+              ref_text=art["codigo"]["ref"])
+    cell_body(t3.cell(1, 2),
+              art["legislacao"]["texto"],
+              COR["legislacao_body"],
+              ref_text=art["legislacao"]["ref"])
 
     # ── Divergência ───────────────────────────────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)

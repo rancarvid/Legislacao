@@ -87,17 +87,21 @@
     border-bottom: 3px solid var(--reg);
   }
 
-  /* GRID 4 COLUNAS */
-  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
-  @media (max-width: 1400px) { .grid { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 800px)  { .grid { grid-template-columns: 1fr; } }
+  /* GRID 3 COLUNAS (diplomas nacionais) */
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 700px)  { .grid { grid-template-columns: 1fr; } }
 
   /* CARD */
   .card { border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.12); }
   .card-header {
     padding: 10px 16px; font-size: .78rem;
     font-weight: 700; text-transform: uppercase; letter-spacing: .8px;
-    color: #fff;
+    color: #fff; display: flex; align-items: center; gap: 10px;
+  }
+  .card-header-ref {
+    font-size: .7rem; font-weight: 400; opacity: .7;
+    text-transform: none; letter-spacing: 0;
   }
   .card-body { padding: 14px 16px; font-size: .88rem; line-height: 1.65; }
   .card-ref { font-size: .75rem; font-weight: 700; margin-bottom: 10px; opacity: .75; }
@@ -471,14 +475,24 @@ function render() {
     <div class="art-badge">${art.id}</div>
     <div class="tema-title">${art.tema}</div>
 
-    <div class="grid">
-      <div class="card reg">
-        <div class="card-header">@regulamento (texto original EN)</div>
-        <div class="card-body">
-          <div class="card-ref">${art.regulamento.ref}</div>
-          <pre>${highlight(art.regulamento.texto)}</pre>
-        </div>
+    <div class="card reg-tr" style="margin-bottom:14px;">
+      <div class="card-header">
+        @regulamento — Tradução PT-PT
+        <span class="card-header-ref">${art.regulamento.ref}</span>
       </div>
+      <div class="card-body">
+        <pre>${highlight(art.regulamento.traducao)}</pre>
+      </div>
+    </div>
+
+    <div class="card reg" style="margin-bottom:20px;">
+      <div class="card-header">@regulamento — Texto original EN</div>
+      <div class="card-body">
+        <pre>${highlight(art.regulamento.texto)}</pre>
+      </div>
+    </div>
+
+    <div class="grid">
       <div class="card rgb">
         <div class="card-header">@rgbeac (proposta jun. 2025)</div>
         <div class="card-body">
@@ -499,13 +513,6 @@ function render() {
           <div class="card-ref">${art.legislacao.ref}</div>
           <pre>${highlight(art.legislacao.texto)}</pre>
         </div>
-      </div>
-    </div>
-
-    <div class="card reg-tr" style="margin-bottom:20px;">
-      <div class="card-header">Tradução do @regulamento (PT-PT)</div>
-      <div class="card-body">
-        <pre>${highlight(art.regulamento.traducao)}</pre>
       </div>
     </div>
 
