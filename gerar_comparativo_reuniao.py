@@ -914,13 +914,43 @@ def criar_html(path, artigos):
     font-size: .85rem; color: var(--rgb);
   }}
   pre {{ white-space: pre-wrap; word-break: break-word; }}
+  mark {{ background: #FFE066; color: #000; border-radius: 2px; padding: 0 2px; }}
+
+  /* BARRA DE PESQUISA */
+  .search-wrap {{ position: relative; }}
+  .search-wrap input {{
+    padding: 7px 32px 7px 12px;
+    border-radius: 6px; border: none;
+    font-size: .88rem; width: 240px;
+    background: rgba(255,255,255,.14); color: #fff;
+    outline: none; transition: background .2s;
+  }}
+  .search-wrap input::placeholder {{ color: rgba(255,255,255,.4); }}
+  .search-wrap input:focus {{ background: rgba(255,255,255,.24); }}
+  .search-wrap .clear-btn {{
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    background: none; border: none; color: rgba(255,255,255,.55);
+    cursor: pointer; font-size: 1rem; line-height: 1; padding: 0;
+    display: none;
+  }}
+  .search-count {{ color: #90b0c8; font-size: .73rem; padding: 2px 20px 8px; }}
 </style>
 </head>
 <body>
 
 <header>
   <h1>Comparativo Artigo a Artigo — Regulamento 2023/0447 (Cães e Gatos)</h1>
-  <span id="progresso"></span>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <div class="search-wrap">
+      <input id="search-input" type="search"
+             placeholder="🔍 Pesquisar palavra-chave…"
+             oninput="pesquisar(this.value)"
+             autocomplete="off">
+      <button class="clear-btn" id="clear-btn"
+              onclick="limparPesquisa()" title="Limpar pesquisa">✕</button>
+    </div>
+    <span id="progresso"></span>
+  </div>
 </header>
 
 <div class="layout">
@@ -934,21 +964,102 @@ def criar_html(path, artigos):
 const ARTIGOS = {dados_json};
 
 let atual = 0;
+let searchTerm = '';
 
+/* ---- PESQUISA ---- */
+function pesquisar(q) {{
+  searchTerm = q.trim().toLowerCase();
+  const clearBtn = document.getElementById('clear-btn');
+  if (clearBtn) clearBtn.style.display = searchTerm ? 'block' : 'none';
+  if (searchTerm) {{
+    const primeiroIdx = ARTIGOS.findIndex(a => artMatch(a, searchTerm));
+    if (primeiroIdx >= 0 && !artMatch(ARTIGOS[atual], searchTerm)) {{
+      atual = primeiroIdx;
+    }}
+  }}
+  render();
+}}
+
+function limparPesquisa() {{
+  searchTerm = '';
+  const inp = document.getElementById('search-input');
+  if (inp) inp.value = '';
+  const clearBtn = document.getElementById('clear-btn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  render();
+}}
+
+function artMatch(art, q) {{
+  const campos = [
+    art.id, art.tema,
+    art.regulamento.ref, art.regulamento.texto, art.regulamento.traducao,
+    art.rgbeac.ref, art.rgbeac.texto,
+    art.codigo.ref, art.codigo.texto,
+    art.legislacao.ref, art.legislacao.texto,
+    art.divergencia
+  ];
+  return campos.some(c => (c || '').toLowerCase().includes(q));
+}}
+
+function getSnippet(art, q) {{
+  const campos = [
+    art.regulamento.texto, art.regulamento.traducao,
+    art.rgbeac.texto, art.codigo.texto,
+    art.legislacao.texto, art.divergencia
+  ];
+  for (const c of campos) {{
+    const idx = (c || '').toLowerCase().indexOf(q);
+    if (idx >= 0) {{
+      const s = Math.max(0, idx - 28);
+      const e = Math.min(c.length, idx + q.length + 40);
+      return (s > 0 ? '…' : '') +
+             c.slice(s, e).replace(/\\n/g, ' ') +
+             (e < c.length ? '…' : '');
+    }}
+  }}
+  return '';
+}}
+
+function highlight(str) {{
+  if (!searchTerm || !str) return nl2br(str || '');
+  const re = new RegExp(searchTerm.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&'), 'gi');
+  return nl2br(str.replace(re, m => `<mark>${{m}}</mark>`));
+}}
+
+/* ---- SIDEBAR ---- */
 function renderSidebar() {{
   const nav = document.getElementById('sidebar');
   nav.innerHTML = '<h2>Artigos</h2>';
+  let nResultados = 0;
   ARTIGOS.forEach((art, i) => {{
+    const mostrar = !searchTerm || artMatch(art, searchTerm);
+    if (!mostrar) return;
+    nResultados++;
     const btn = document.createElement('button');
-    btn.innerHTML = `<b>${{art.id}}</b><small>${{art.tema}}</small>`;
+    const snippet = searchTerm ? getSnippet(art, searchTerm) : '';
+    btn.innerHTML =
+      `<b>${{art.id}}</b><small>${{art.tema}}</small>` +
+      (snippet ? `<em style="font-size:.7rem;opacity:.65;display:block;margin-top:3px;font-style:normal;">${{
+        snippet.replace(new RegExp(searchTerm.replace(/[.*+?^${{}}()|[\\]\\\\]/g,'\\\\$&'),'gi'),
+                        m => `<mark>${{m}}</mark>`)
+      }}</em>` : '');
     btn.className = i === atual ? 'active' : '';
     btn.onclick = () => {{ atual = i; render(); }};
     nav.appendChild(btn);
   }});
+  if (searchTerm) {{
+    const ct = document.createElement('div');
+    ct.className = 'search-count';
+    ct.textContent = nResultados > 0
+      ? `${{nResultados}} resultado(s) para "${{searchTerm}}"`
+      : 'Sem resultados.';
+    nav.insertBefore(ct, nav.children[1]);
+  }}
 }}
 
+/* ---- UTILIDADES ---- */
 function nl2br(str) {{
-  return str.replace(/\\n/g, '<br>');
+  return (str || '').replace(/\\n/g, '<br>');
 }}
 
 function render() {{
@@ -966,28 +1077,28 @@ function render() {{
         <div class="card-header">@regulamento (texto original EN)</div>
         <div class="card-body">
           <div class="card-ref">${{art.regulamento.ref}}</div>
-          <pre>${{nl2br(art.regulamento.texto)}}</pre>
+          <pre>${{highlight(art.regulamento.texto)}}</pre>
         </div>
       </div>
       <div class="card rgb">
         <div class="card-header">@rgbeac (proposta jun. 2025)</div>
         <div class="card-body">
           <div class="card-ref">${{art.rgbeac.ref}}</div>
-          <pre>${{nl2br(art.rgbeac.texto)}}</pre>
+          <pre>${{highlight(art.rgbeac.texto)}}</pre>
         </div>
       </div>
       <div class="card cod">
         <div class="card-header">@codigo (DL n.º 214/2013)</div>
         <div class="card-body">
           <div class="card-ref">${{art.codigo.ref}}</div>
-          <pre>${{nl2br(art.codigo.texto)}}</pre>
+          <pre>${{highlight(art.codigo.texto)}}</pre>
         </div>
       </div>
       <div class="card leg">
         <div class="card-header">@legislacao (legislação vigente)</div>
         <div class="card-body">
           <div class="card-ref">${{art.legislacao.ref}}</div>
-          <pre>${{nl2br(art.legislacao.texto)}}</pre>
+          <pre>${{highlight(art.legislacao.texto)}}</pre>
         </div>
       </div>
     </div>
@@ -995,7 +1106,7 @@ function render() {{
     <div class="card reg-tr" style="margin-bottom:20px;">
       <div class="card-header">Tradução do @regulamento (PT-PT)</div>
       <div class="card-body">
-        <pre>${{nl2br(art.regulamento.traducao)}}</pre>
+        <pre>${{highlight(art.regulamento.traducao)}}</pre>
       </div>
     </div>
 
@@ -1003,7 +1114,7 @@ function render() {{
       <strong>Divergência face ao Regulamento
         <span class="badge-alt">Necessidade de alteração: ${{art.necessidade_alteracao}}</span>
       </strong>
-      ${{nl2br(art.divergencia)}}
+      ${{highlight(art.divergencia)}}
     </div>
 
     <div class="notas-box">
