@@ -82,6 +82,21 @@ ARTIGOS = [
                 "centro da face lateral esquerda do pescoço."
             ),
         },
+        "legislacao": {
+            "ref": "n.ºs 1, 2 e 3 do art.º 5.º do DL n.º 82/2019, de 27 de junho",
+            "texto": (
+                "1 — A identificação dos animais de companhia, pela sua marcação e registo no SIAC, deve ser "
+                "realizada até 120 dias após o seu nascimento.\n\n"
+                "2 — Na impossibilidade de determinar a data de nascimento exata, para efeitos de contagem do "
+                "prazo referido no número anterior, a identificação deve ser efetuada até à perda dos dentes "
+                "incisivos de leite.\n\n"
+                "3 — Sem prejuízo dos números anteriores, e relativamente aos cães, gatos e furões que sejam "
+                "cedidos e ou comercializados a partir de um criador ou de um estabelecimento autorizado para a "
+                "detenção de animais de companhia, nomeadamente os centros de hospedagem com ou sem fins lucrativos "
+                "e os centros de recolha oficiais, deve ser assegurada a sua marcação e registo no SIAC antes de "
+                "abandonarem a instalação de nascimento ou de alojamento, independentemente da sua idade."
+            ),
+        },
         "divergencia": (
             "O @regulamento fixa o prazo de identificação em 3 meses para nascimentos e 30 dias para entrada em "
             "estabelecimentos. O @codigo fixa entre 3 e 6 meses, sem distinguir o contexto de estabelecimento. "
@@ -140,6 +155,18 @@ ARTIGOS = [
                 "condições referidas no número anterior ou as demais previstas no presente diploma.\n\n"
                 "3 — É proibida a violência contra animais, considerando-se como tal todos os atos que, sem "
                 "necessidade, infligem a morte, o sofrimento, a dor, a angústia ou ferimentos a um animal."
+            ),
+        },
+        "legislacao": {
+            "ref": "n.ºs 1, 2 e 3 do art.º 7.º do DL n.º 276/2001, de 17 de outubro",
+            "texto": (
+                "1 — As condições de detenção e de alojamento para reprodução, criação, manutenção e acomodação "
+                "dos animais de companhia devem salvaguardar os seus parâmetros de bem-estar animal, "
+                "nomeadamente nos termos dos artigos seguintes.\n\n"
+                "2 — Nenhum animal deve ser detido como animal de companhia se não estiverem asseguradas as "
+                "condições referidas no número anterior ou se não se adaptar ao cativeiro.\n\n"
+                "3 — São proibidas todas as violências contra animais, considerando-se como tais os atos "
+                "consistentes em, sem necessidade, se infligir a morte, o sofrimento ou lesões a um animal."
             ),
         },
         "divergencia": (
@@ -209,6 +236,26 @@ ARTIGOS = [
                 "designadamente monorquidia e displasia."
             ),
         },
+        "legislacao": {
+            "ref": "n.º 1 do art.º 3.º-A do DL n.º 276/2001, de 17 de outubro",
+            "texto": (
+                "1 — A mera comunicação prévia a que se refere a alínea a) do n.º 1 do artigo anterior é "
+                "dirigida à DGAV e deve conter os seguintes elementos, quando aplicáveis:\n\n"
+                "a) O nome ou a denominação social do interessado;\n"
+                "b) A localização do alojamento e a sua designação comercial;\n"
+                "c) O número de identificação fiscal ou de pessoa coletiva do interessado;\n"
+                "d) Municípios integrantes, no caso dos centros de recolha intermunicipais;\n"
+                "e) Caracterização das atividades a exercer;\n"
+                "f) Indicação do médico veterinário responsável pelo alojamento;\n"
+                "g) O número de celas de quarentena para isolamento de animais por suspeita de raiva, "
+                "no caso dos centros de recolha;\n"
+                "h) A capacidade máxima de animais e respetivas espécies a alojar;\n"
+                "i) O número de animais detidos, espécies e raças;\n"
+                "j) Declaração de responsabilidade, subscrita pelo interessado, relativa ao cumprimento "
+                "da legislação aplicável aos animais de companhia, nomeadamente em matéria de instalações, "
+                "equipamentos, higiene, saúde e bem-estar dos animais."
+            ),
+        },
         "divergencia": (
             "O @regulamento exige notificação prévia das autoridades com dados detalhados (capacidade, raças, "
             "ninhadas estimadas). O @codigo regula condições de reprodução mas não prevê registo ou notificação "
@@ -232,6 +279,8 @@ COR = {
     "rgbeac_body":        "D5E8D4",   # verde claro
     "codigo_header":      "7E4C00",   # castanho escuro
     "codigo_body":        "FFE6CC",   # castanho claro
+    "legislacao_header":  "006064",   # verde-azul escuro (teal)
+    "legislacao_body":    "E0F7FA",   # verde-azul muito claro
     "divergencia_header": "5D2A8A",   # roxo escuro
     "divergencia_body":   "EAD7F7",   # roxo claro
     "notas_header":       "4A4A4A",   # cinza escuro
@@ -279,6 +328,8 @@ def criar_excel(path):
         ("Texto @rgbeac", 55),
         ("Art. @codigo", 22),
         ("Texto @codigo", 55),
+        ("Art. @legislacao", 22),
+        ("Texto @legislacao (vigente)", 55),
         ("Divergência face ao Regulamento", 42),
         ("Necessidade de Alteração", 14),
         ("Notas de Reunião", 40),
@@ -307,6 +358,8 @@ def criar_excel(path):
             art["rgbeac"]["texto"],
             art["codigo"]["ref"],
             art["codigo"]["texto"],
+            art["legislacao"]["ref"],
+            art["legislacao"]["texto"],
             art["divergencia"],
             art["necessidade_alteracao"],
             art["notas"],
@@ -329,14 +382,17 @@ def criar_excel(path):
             elif col_idx in (7, 8):
                 cell.fill = fill(COR["codigo_body"])
                 cell.font = font_normal()
-            elif col_idx == 9:
+            elif col_idx in (9, 10):
+                cell.fill = fill(COR["legislacao_body"])
+                cell.font = font_normal()
+            elif col_idx == 11:
                 cell.fill = fill(COR["divergencia_body"])
                 cell.font = font_normal(bold=True)
-            elif col_idx == 10:
+            elif col_idx == 12:
                 cell.fill = fill(COR["divergencia_body"])
                 cell.font = Font(bold=True, color="8B0000", size=10, name="Calibri")
                 cell.alignment = wrap_align("center", "center")
-            elif col_idx == 11:
+            elif col_idx == 13:
                 cell.fill = fill(COR["notas_body"])
                 cell.font = font_normal(color="4A4A4A")
         ws.row_dimensions[row_idx].height = 120
@@ -356,6 +412,7 @@ def criar_excel(path):
         ("@regulamento (tradução PT)", COR["regulamento_trad"], False),
         ("@rgbeac", COR["rgbeac_body"], False),
         ("@codigo", COR["codigo_body"], False),
+        ("@legislacao (legislação vigente)", COR["legislacao_body"], False),
         ("Divergência", COR["divergencia_body"], False),
         ("Notas de Reunião", COR["notas_body"], False),
     ]
@@ -405,6 +462,8 @@ def criar_html(path, artigos):
     --rgb-bg: #D5E8D4;
     --cod:    #7E4C00;
     --cod-bg: #FFE6CC;
+    --leg:    #006064;
+    --leg-bg: #E0F7FA;
     --div:    #5D2A8A;
     --div-bg: #EAD7F7;
     --nota:   #4A4A4A;
@@ -477,9 +536,10 @@ def criar_html(path, artigos):
     border-bottom: 3px solid var(--reg);
   }}
 
-  /* GRID 3 COLUNAS */
-  .grid {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }}
-  @media (max-width: 1100px) {{ .grid {{ grid-template-columns: 1fr; }} }}
+  /* GRID 4 COLUNAS */
+  .grid {{ display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }}
+  @media (max-width: 1400px) {{ .grid {{ grid-template-columns: 1fr 1fr; }} }}
+  @media (max-width: 800px)  {{ .grid {{ grid-template-columns: 1fr; }} }}
 
   /* CARD */
   .card {{ border-radius: 8px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.12); }}
@@ -499,6 +559,8 @@ def criar_html(path, artigos):
   .card.rgb .card-body   {{ background: var(--rgb-bg); }}
   .card.cod .card-header {{ background: var(--cod); }}
   .card.cod .card-body   {{ background: var(--cod-bg); }}
+  .card.leg .card-header {{ background: var(--leg); }}
+  .card.leg .card-body   {{ background: var(--leg-bg); }}
 
   /* DIVERGÊNCIA */
   .div-box {{
@@ -624,6 +686,13 @@ function render() {{
           <pre>${{nl2br(art.codigo.texto)}}</pre>
         </div>
       </div>
+      <div class="card leg">
+        <div class="card-header">@legislacao (legislação vigente)</div>
+        <div class="card-body">
+          <div class="card-ref">${{art.legislacao.ref}}</div>
+          <pre>${{nl2br(art.legislacao.texto)}}</pre>
+        </div>
+      </div>
     </div>
 
     <div class="card reg-tr" style="margin-bottom:20px;">
@@ -662,11 +731,12 @@ function navegar(dir) {{
 }}
 
 function exportarNotas() {{
-  const linhas = [['ID', 'Tema', 'Art. Regulamento', 'Art. RGBEAC', 'Art. Código', 'Notas de Reunião']];
+  const linhas = [['ID', 'Tema', 'Art. Regulamento', 'Art. RGBEAC', 'Art. Código', 'Art. Legislação Vigente', 'Notas de Reunião']];
   ARTIGOS.forEach(a => {{
     linhas.push([
       a.id, a.tema,
       a.regulamento.ref, a.rgbeac.ref, a.codigo.ref,
+      a.legislacao.ref,
       a.notas
     ]);
   }});
