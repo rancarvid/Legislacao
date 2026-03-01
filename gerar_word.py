@@ -4,6 +4,7 @@ Lê os dados de gerar_comparativo_reuniao.py e produz comparativo_reuniao_exempl
 """
 
 import os
+import re
 import sys
 from docx import Document
 from docx.shared import Pt, Cm, RGBColor, Twips
@@ -144,36 +145,81 @@ def cell_header(cell, text, bg_hex, text_hex="FFFFFF",
     add_run_styled(p, text, bold=bold, font_size=font_size, color_hex=text_hex)
 
 
+_RE_ALINEA = re.compile(r"^[a-z]\)|^\([a-z-]+\)")
+_RE_SUB    = re.compile(r"^[—–]\s|^[—–]$")
+
+
+def _classify_line(line):
+    """Devolve 'sub', 'alinea' ou 'normal'."""
+    t = line.strip()
+    if _RE_SUB.match(t):
+        return "sub"
+    if _RE_ALINEA.match(t):
+        return "alinea"
+    return "normal"
+
+
+def _add_para(cell, first_flag):
+    """Cria novo parágrafo na célula; na primeira chamada reutiliza o existente."""
+    from docx.text.paragraph import Paragraph as _Para
+    if first_flag[0]:
+        first_flag[0] = False
+        return cell.paragraphs[0]
+    new_p = OxmlElement("w:p")
+    cell._tc.append(new_p)
+    return _Para(new_p, cell)
+
+
 def cell_body(cell, text, bg_hex, ref_text=None,
               font_size=9.5, bold=False, italic=False,
               text_hex="222222"):
-    """Preenche célula como corpo de conteúdo com texto verbatim."""
+    """Preenche célula detectando automaticamente alíneas e subalíneas."""
     set_cell_bg(cell, bg_hex)
     set_cell_borders(cell)
     set_cell_vertical_align(cell, "top")
-    p = cell.paragraphs[0]
-    p.paragraph_format.space_before = Pt(4)
-    p.paragraph_format.space_after = Pt(4)
-    p.paragraph_format.left_indent = Pt(4)
-    p.paragraph_format.right_indent = Pt(4)
+
+    first = [True]  # mutable flag para _add_para
+
+    # ── Referência (opcional) ────────────────────────────────────────────
     if ref_text:
-        add_run_styled(p, ref_text + "\n", bold=True, font_size=8,
+        p = _add_para(cell, first)
+        p.paragraph_format.space_before = Pt(4)
+        p.paragraph_format.space_after = Pt(2)
+        p.paragraph_format.left_indent = Pt(4)
+        p.paragraph_format.right_indent = Pt(4)
+        add_run_styled(p, ref_text, bold=True, font_size=8,
                        color_hex="555555", italic=True)
-    # Texto verbatim — preserva parágrafos internos
-    paragraphs = text.split("\n\n")
-    for i, para in enumerate(paragraphs):
-        if i == 0:
-            add_run_styled(p, para.strip(), bold=bold, italic=italic,
-                           font_size=font_size, color_hex=text_hex)
-        else:
-            new_p = OxmlElement("w:p")
-            cell._tc.append(new_p)
-            from docx.text.paragraph import Paragraph
-            new_para = Paragraph(new_p, cell)
-            new_para.paragraph_format.space_before = Pt(6)
-            new_para.paragraph_format.space_after = Pt(0)
-            new_para.paragraph_format.left_indent = Pt(4)
-            add_run_styled(new_para, para.strip(), bold=bold, italic=italic,
+
+    # ── Corpo do texto: blocos separados por \n\n, linhas por \n ─────────
+    blocos = [b for b in text.split("\n\n") if b.strip()]
+    for bi, bloco in enumerate(blocos):
+        linhas = [l.strip() for l in bloco.split("\n") if l.strip()]
+        for li, linha in enumerate(linhas):
+            kind = _classify_line(linha)
+            p = _add_para(cell, first)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.right_indent = Pt(4)
+
+            # Espaçamento: maior entre blocos (\n\n), menor entre linhas (\n)
+            if bi == 0 and li == 0 and not ref_text:
+                p.paragraph_format.space_before = Pt(4)
+            elif li == 0:
+                p.paragraph_format.space_before = Pt(7)
+            else:
+                p.paragraph_format.space_before = Pt(1)
+
+            # Indentação por tipo
+            if kind == "sub":
+                p.paragraph_format.left_indent = Pt(34)
+                p.paragraph_format.first_line_indent = Pt(-14)
+            elif kind == "alinea":
+                p.paragraph_format.left_indent = Pt(18)
+                p.paragraph_format.first_line_indent = Pt(-14)
+            else:
+                p.paragraph_format.left_indent = Pt(4)
+                p.paragraph_format.first_line_indent = Pt(0)
+
+            add_run_styled(p, linha, bold=bold, italic=italic,
                            font_size=font_size, color_hex=text_hex)
 
 
@@ -314,17 +360,46 @@ def add_article_section(doc, art):
               COR["legislacao_body"],
               ref_text=art["legislacao"]["ref"])
 
-    # ── Divergência ───────────────────────────────────────────────────────
+    # ── Divergência estruturada (4 secções) ───────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
-    t_div = doc.add_table(rows=2, cols=1)
+    t_div = doc.add_table(rows=1, cols=1)
     set_table_width(t_div, pct=5000)
     cell_header(t_div.cell(0, 0),
                 f"DIVERGÊNCIA FACE AO REGULAMENTO  ·  Necessidade de alteração: {art['necessidade_alteracao']}",
                 COR["divergencia_header"])
-    cell_body(t_div.cell(1, 0),
-              art["divergencia"],
-              COR["divergencia_body"],
-              bold=True, text_hex="3D1A6E")
+
+    div = art.get("divergencia", {})
+    secoes = [
+        (div.get("legislacao", ""), "@legislacao", COR["legislacao_header"], COR["legislacao_body"]),
+        (div.get("codigo",     ""), "@codigo",     COR["codigo_header"],     COR["codigo_body"]),
+        (div.get("rgbeac",     ""), "@rgbeac",     COR["rgbeac_header"],     COR["rgbeac_body"]),
+        (div.get("sumario",    ""), "Sumário / Proposta", COR["divergencia_header"], COR["divergencia_body"]),
+    ]
+    for texto_sec, label_sec, hdr_cor, body_cor in secoes:
+        if not texto_sec:
+            continue
+        row = t_div.add_row()
+        c_label = row.cells[0]
+        set_cell_bg(c_label, hdr_cor)
+        set_cell_borders(c_label, hdr_cor)
+        p_l = c_label.paragraphs[0]
+        p_l.paragraph_format.space_before = Pt(4)
+        p_l.paragraph_format.space_after = Pt(0)
+        p_l.paragraph_format.left_indent = Pt(6)
+        add_run_styled(p_l, label_sec, bold=True, font_size=8.5, color_hex="FFFFFF")
+
+        row2 = t_div.add_row()
+        c_body = row2.cells[0]
+        set_cell_bg(c_body, body_cor)
+        set_cell_borders(c_body)
+        set_cell_vertical_align(c_body, "top")
+        first = [True]
+        p = _add_para(c_body, first)
+        p.paragraph_format.space_before = Pt(4)
+        p.paragraph_format.space_after = Pt(4)
+        p.paragraph_format.left_indent = Pt(6)
+        p.paragraph_format.right_indent = Pt(6)
+        add_run_styled(p, texto_sec.strip(), font_size=9, color_hex="222222")
 
     # ── Notas de Reunião ──────────────────────────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)

@@ -97,15 +97,27 @@ ARTIGOS = [
                 "abandonarem a instalação de nascimento ou de alojamento, independentemente da sua idade."
             ),
         },
-        "divergencia": (
-            "O @regulamento fixa o prazo de identificação em 3 meses para nascimentos e 30 dias para entrada em "
-            "estabelecimentos. A @legislacao (DL n.º 82/2019, art.º 5.º) prevê um prazo geral de 120 dias após "
-            "o nascimento, sem distinguir o contexto de estabelecimento — prazo superior ao fixado pelo "
-            "@regulamento e que exigirá redução. O @codigo fixa entre 3 e 6 meses, igualmente sem distinção de "
-            "contexto. O @rgbeac alinha com o @regulamento nos prazos, mas aplica-se apenas a cães, gatos e "
-            "furões. Nenhum dos diplomas nacionais vigentes distingue o prazo de 30 dias aplicável a animais que "
-            "entram em estabelecimentos, previsto no @regulamento."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 82/2019 (art.º 5.º) prevê prazo geral de 120 dias após o nascimento, sem distinguir "
+                "o contexto de estabelecimento — prazo superior ao máximo de 3 meses do @regulamento, que "
+                "exigirá redução. Não prevê o prazo específico de 30 dias para animais que entram em "
+                "estabelecimentos."
+            ),
+            "codigo": (
+                "O @codigo fixa prazo de identificação entre 3 e 6 meses, igualmente sem distinção entre "
+                "nascimentos e entrada em estabelecimentos, ficando aquém da precisão exigida pelo @regulamento."
+            ),
+            "rgbeac": (
+                "O @rgbeac aproxima-se dos prazos do @regulamento mas aplica-se apenas a cães, gatos e furões. "
+                "Não prevê o prazo específico de 30 dias para animais que entram em estabelecimentos."
+            ),
+            "sumario": (
+                "Necessidade de alteração: (1) reduzir prazo máximo de identificação de nascimentos para 3 meses; "
+                "(2) criar prazo diferenciado de 30 dias para animais admitidos em estabelecimentos; "
+                "(3) harmonizar prazos entre todos os diplomas nacionais."
+            ),
+        },
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
@@ -173,14 +185,29 @@ ARTIGOS = [
                 "consistentes em, sem necessidade, se infligir a morte, o sofrimento ou lesões a um animal."
             ),
         },
-        "divergencia": (
-            "O @regulamento especifica o limite de 5 animais por família de acolhimento e atribui responsabilidade "
-            "ao operador (não à família). A @legislacao (DL n.º 276/2001, art.º 7.º) centra a responsabilidade no "
-            "detentor, sem distinguir o contexto de acolhimento temporário nem fixar limites numéricos — posição "
-            "idêntica à do @rgbeac e do @codigo. Nenhum dos diplomas nacionais, incluindo a legislação vigente, "
-            "prevê o conceito de família de acolhimento nem o limite numérico de 5 animais estabelecido pelo "
-            "@regulamento. A lacuna é transversal a toda a legislação nacional."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.º 7.º) centra a responsabilidade no detentor em geral, sem distinguir "
+                "o contexto de acolhimento temporário nem fixar limites numéricos de animais por família. "
+                "O conceito de família de acolhimento é inexistente na legislação vigente."
+            ),
+            "codigo": (
+                "O @codigo não prevê o conceito de família de acolhimento nem qualquer limite numérico de "
+                "animais por unidade. A responsabilidade do operador como figura distinta do detentor "
+                "particular também não é contemplada."
+            ),
+            "rgbeac": (
+                "O @rgbeac menciona famílias de acolhimento temporário mas não fixa o limite de 5 animais "
+                "por família de acolhimento nem especifica que a responsabilidade jurídica recai sobre o "
+                "operador e não sobre a família."
+            ),
+            "sumario": (
+                "Lacuna transversal a toda a legislação nacional. Necessidade de: (1) criar o conceito de "
+                "'família de acolhimento' como extensão da atividade do operador; (2) fixar limite numérico "
+                "de animais por família (máximo 5, ou 1 ninhada com mãe); (3) atribuir responsabilidade "
+                "jurídica ao operador, não à família de acolhimento."
+            ),
+        },
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
@@ -263,16 +290,27 @@ ARTIGOS = [
                 "equipamentos, higiene, saúde e bem-estar dos animais."
             ),
         },
-        "divergencia": (
-            "O @regulamento exige notificação prévia com dados detalhados, incluindo o número estimado de ninhadas "
-            "a colocar no mercado por ano (al. ea)). A @legislacao (DL n.º 276/2001, art.º 3.º-A) já prevê "
-            "comunicação prévia à DGAV com elementos parcialmente equivalentes (capacidade máxima, espécies, raças "
-            "— als. h) e i)), mas não exige a estimativa de ninhadas, constituindo lacuna parcial face ao "
-            "@regulamento. O @codigo regula condições de reprodução mas não prevê notificação ou registo de "
-            "estabelecimentos criadores. O @rgbeac trata exclusivamente da esterilização de errantes, sem qualquer "
-            "norma sobre notificação de criadores. A @legislacao vigente é, dos diplomas nacionais, o mais próximo "
-            "do @regulamento neste eixo, ainda que com lacuna relevante."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.º 3.º-A) prevê comunicação prévia à DGAV com elementos "
+                "parcialmente equivalentes (capacidade máxima, espécies, raças). Não exige a estimativa "
+                "anual de ninhadas a colocar no mercado (al. ea) do @regulamento), constituindo lacuna "
+                "parcial. É o diploma mais próximo do @regulamento neste eixo."
+            ),
+            "codigo": (
+                "O @codigo regula condições de reprodução (art.º 8.º) mas não prevê qualquer sistema "
+                "de notificação ou registo de estabelecimentos criadores junto da autoridade competente."
+            ),
+            "rgbeac": (
+                "O @rgbeac trata da esterilização de errantes e CED, mas não contém norma sobre "
+                "notificação de criadores ou registo de estabelecimentos com fins de reprodução comercial."
+            ),
+            "sumario": (
+                "A @legislacao vigente é o diploma base adequado para a transposição. Necessidade de ajuste: "
+                "acrescentar a obrigação de estimativa anual de ninhadas a colocar no mercado e alinhar "
+                "os restantes elementos informativos com a lista exaustiva do art.º 7.º do @regulamento."
+            ),
+        },
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
@@ -358,17 +396,27 @@ ARTIGOS = [
                 "devem ser as adequadas à manutenção do conforto e bem-estar das espécies que albergam."
             ),
         },
-        "divergencia": (
-            "O @regulamento enuncia explicitamente 5 domínios de bem-estar — nutrição, ambiente, saúde, "
-            "comportamento e estado mental — como obrigação vinculativa dos operadores de estabelecimentos. "
-            "A @legislacao (DL n.º 276/2001, art.ºs 7.º e 9.º) e o @codigo (art.º 5.º) consagram os mesmos "
-            "parâmetros de bem-estar, mas sem formulação sistemática nos 5 domínios: o @codigo refere 'parâmetros "
-            "de bem-estar animal' genericamente; o DL n.º 276/2001 desenvolve cada parâmetro em artigos separados "
-            "(alojamento, alimentação, ambiente) mas sem os denominar domínios. O @rgbeac (art.º 10.º, n.º 1, "
-            "al. a)) articula obrigações equivalentes ao nível do detentor mas de forma descritiva, não "
-            "sistematizada nos 5 domínios. Nenhum diploma nacional adota formalmente a nomenclatura dos 5 domínios "
-            "OMSA como o @regulamento."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.ºs 7.º e 9.º) consagra os mesmos parâmetros mas desenvolve-os "
+                "em artigos separados (alojamento, alimentação, ambiente) sem os denominar como domínios "
+                "nem os sistematizar de forma unificada segundo o referencial OMSA."
+            ),
+            "codigo": (
+                "O @codigo (art.º 5.º) refere 'parâmetros de bem-estar animal' genericamente, sem adotar "
+                "formalmente a nomenclatura dos 5 domínios OMSA nem a sua sistematização explícita."
+            ),
+            "rgbeac": (
+                "O @rgbeac (art.º 10.º, n.º 1, al. a)) articula obrigações equivalentes ao nível do "
+                "detentor de forma descritiva, sem sistematização nos 5 domínios nem referência ao "
+                "quadro OMSA."
+            ),
+            "sumario": (
+                "Alinhamento substancial de conteúdo; sem necessidade de alteração imediata. Recomenda-se "
+                "a adoção formal dos 5 domínios OMSA como referencial estruturante em futura revisão "
+                "legislativa ou em normas de orientação técnica da DGAV."
+            ),
+        },
         "necessidade_alteracao": "Não",
         "notas": "",
     },
@@ -449,18 +497,30 @@ ARTIGOS = [
                 "médico-veterinárias ou no interesse particular do animal ou para impedir a reprodução."
             ),
         },
-        "divergencia": (
-            "O @regulamento proíbe traços conformacionais excessivos e impõe consulta veterinária prévia ao "
-            "acasalamento de animais potencialmente afetados, além de proibir consanguinidade próxima (pais/filhos, "
-            "irmãos, avós/netos) e produção de híbridos. Estas exigências são inteiramente novas no direito "
-            "nacional: a @legislacao (DL n.º 276/2001, art.ºs 17.º e 18.º) limita-se a exigir intervenção "
-            "veterinária em cirurgias e documentação para amputações, sem abordar conformação ou consanguinidade. "
-            "O @codigo (art.º 8.º, n.º 2) exclui da reprodução animais com defeitos genéticos e malformações, e "
-            "proíbe acasalamento em cios sucessivos, mas não prevê o conceito de traços conformacionais excessivos "
-            "nem proíbe consanguinidade. O @rgbeac (art.º 34.º) proíbe apenas intervenções cirúrgicas de "
-            "modificação da aparência, sem norma sobre estratégia genética. Lacuna normativa transversal a toda "
-            "a legislação nacional quanto ao núcleo central do art.º 6.a do @regulamento."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.ºs 17.º e 18.º) exige intervenção veterinária em cirurgias e "
+                "documentação para amputações, mas não prevê qualquer restrição à reprodução por traços "
+                "conformacionais excessivos nem proibição de consanguinidade próxima ou hibridação."
+            ),
+            "codigo": (
+                "O @codigo (art.º 8.º, n.º 2) exclui da reprodução animais com defeitos genéticos e "
+                "malformações (displasia, rim poliquístico) e proíbe cios sucessivos, mas não prevê "
+                "o conceito de traços conformacionais excessivos nem a proibição de consanguinidade."
+            ),
+            "rgbeac": (
+                "O @rgbeac (art.º 34.º) proíbe intervenções cirúrgicas de modificação da aparência, "
+                "mas não contém qualquer norma sobre estratégia genética de criação, conformação "
+                "excessiva ou consanguinidade."
+            ),
+            "sumario": (
+                "Lacuna normativa transversal. Necessidade de criar norma específica que: (1) defina "
+                "traços conformacionais excessivos (a regular por ato delegado europeu até 2030); "
+                "(2) proíba consanguinidade próxima (pais/filhos, irmãos, avós/netos); (3) proíba "
+                "a produção de híbridos; (4) imponha consulta veterinária prévia ao acasalamento "
+                "de animais potencialmente afetados."
+            ),
+        },
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
@@ -547,18 +607,30 @@ ARTIGOS = [
                 "médico-veterinários de rotina, vacinações e desparasitações sempre que aconselhável."
             ),
         },
-        "divergencia": (
-            "O @regulamento impõe inspeção diária por cuidadores, isolamento imediato de animais com bem-estar "
-            "comprometido e condições específicas para reprodução em criadores (idade mínima da fêmea, frequência "
-            "máxima de partos por ninhada, proibição de cobrição de gatas a lactar). A @legislacao (DL n.º "
-            "276/2001, art.ºs 13.º e 16.º) prevê inspeção diária e programa de profilaxia supervisionado por "
-            "veterinário — alinhamento parcial com o @regulamento — mas não fixa condições sanitárias específicas "
-            "para a reprodução em criadores. O @rgbeac (art.º 33.º) centra os cuidados de saúde no detentor em "
-            "geral, sem distinguir obrigações reforçadas para operadores de criação. O @codigo (art.º 6.º) limita "
-            "o dever de cuidados médico-veterinários ao animal ferido ou doente, sem obrigação de inspeção "
-            "sistemática nem regras sanitárias de criação. A @legislacao vigente é a mais próxima do @regulamento "
-            "neste eixo, mas apresenta lacuna relevante nas condições sanitárias específicas da reprodução."
-        ),
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.ºs 13.º e 16.º) prevê inspeção diária e programa de profilaxia "
+                "supervisionado por veterinário — alinhamento parcial. Não fixa condições sanitárias "
+                "específicas para reprodução em criadores: sem idade mínima da fêmea, sem frequência "
+                "máxima de partos, sem proibição de cobrição de fêmeas a lactar."
+            ),
+            "codigo": (
+                "O @codigo (art.º 6.º) limita o dever de cuidados médico-veterinários ao animal ferido "
+                "ou doente, sem obrigação de inspeção diária sistemática nem quaisquer regras sanitárias "
+                "específicas para a reprodução em criadores."
+            ),
+            "rgbeac": (
+                "O @rgbeac (art.º 33.º) centra os cuidados de saúde no detentor em geral, sem distinguir "
+                "obrigações reforçadas para operadores de criação nem fixar condições específicas para a "
+                "reprodução (idade mínima, frequência de partos, lactação)."
+            ),
+            "sumario": (
+                "A @legislacao vigente é o diploma mais próximo do @regulamento. Necessidade de alteração "
+                "dirigida a criadores: introduzir (1) requisitos mínimos de idade e maturidade das fêmeas; "
+                "(2) frequência máxima de partos conforme Anexo I do @regulamento; (3) proibição de "
+                "cobrição de fêmeas a lactar; alinhando com o regime sanitário do art.º 13.º."
+            ),
+        },
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
@@ -627,7 +699,10 @@ def criar_excel(path):
         ("Texto @codigo", 55),
         ("Art. @legislacao", 22),
         ("Texto @legislacao (vigente)", 55),
-        ("Divergência face ao Regulamento", 42),
+        ("Div. vs @legislacao", 38),
+        ("Div. vs @codigo", 38),
+        ("Div. vs @rgbeac", 38),
+        ("Sumário / Proposta", 38),
         ("Necessidade de Alteração", 14),
         ("Notas de Reunião", 40),
     ]
@@ -657,7 +732,10 @@ def criar_excel(path):
             art["codigo"]["texto"],
             art["legislacao"]["ref"],
             art["legislacao"]["texto"],
-            art["divergencia"],
+            art["divergencia"].get("legislacao", ""),
+            art["divergencia"].get("codigo", ""),
+            art["divergencia"].get("rgbeac", ""),
+            art["divergencia"].get("sumario", ""),
             art["necessidade_alteracao"],
             art["notas"],
         ]
@@ -833,6 +911,35 @@ def criar_html(path, artigos):
     border-bottom: 3px solid var(--reg);
   }}
 
+  /* FORMATAÇÃO DE TEXTO LEGAL */
+  .leg-block + .leg-block {{ margin-top: 7px; }}
+  .leg-p {{ margin: 0; line-height: 1.65; text-align: justify; }}
+  .leg-alinea {{
+    margin: 2px 0; line-height: 1.6;
+    padding-left: 1.8em; text-indent: -1.8em;
+  }}
+  .leg-sub {{
+    margin: 2px 0; line-height: 1.55;
+    padding-left: 3.2em; text-indent: -1.0em;
+  }}
+
+  /* DIVERGÊNCIA ESTRUTURADA */
+  .div-section {{ margin-bottom: 10px; }}
+  .div-section:last-child {{ margin-bottom: 0; }}
+  .div-tag {{
+    display: inline-block;
+    border-radius: 3px; padding: 1px 8px;
+    font-size: .72rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: .5px;
+    margin-right: 6px; vertical-align: middle;
+    white-space: nowrap;
+  }}
+  .div-tag.tag-leg  {{ background: var(--leg); color: #fff; }}
+  .div-tag.tag-cod  {{ background: var(--cod); color: #fff; }}
+  .div-tag.tag-rgb  {{ background: var(--rgb); color: #fff; }}
+  .div-tag.tag-sum  {{ background: var(--div); color: #fff; }}
+  .div-text {{ display: inline; font-size: .87rem; line-height: 1.6; }}
+
   /* GRID 3 COLUNAS (diplomas nacionais) */
   .grid {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }}
   @media (max-width: 1100px) {{ .grid {{ grid-template-columns: 1fr 1fr; }} }}
@@ -994,22 +1101,25 @@ function limparPesquisa() {{
 }}
 
 function artMatch(art, q) {{
+  const div = art.divergencia || {{}};
   const campos = [
     art.id, art.tema,
     art.regulamento.ref, art.regulamento.texto, art.regulamento.traducao,
     art.rgbeac.ref, art.rgbeac.texto,
     art.codigo.ref, art.codigo.texto,
     art.legislacao.ref, art.legislacao.texto,
-    art.divergencia
+    div.legislacao, div.codigo, div.rgbeac, div.sumario
   ];
   return campos.some(c => (c || '').toLowerCase().includes(q));
 }}
 
 function getSnippet(art, q) {{
+  const div = art.divergencia || {{}};
   const campos = [
-    art.regulamento.texto, art.regulamento.traducao,
+    art.regulamento.traducao, art.regulamento.texto,
     art.rgbeac.texto, art.codigo.texto,
-    art.legislacao.texto, art.divergencia
+    art.legislacao.texto,
+    div.legislacao, div.codigo, div.rgbeac, div.sumario
   ];
   for (const c of campos) {{
     const idx = (c || '').toLowerCase().indexOf(q);
@@ -1028,6 +1138,48 @@ function highlight(str) {{
   if (!searchTerm || !str) return nl2br(str || '');
   const re = new RegExp(searchTerm.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&'), 'gi');
   return nl2br(str.replace(re, m => `<mark>${{m}}</mark>`));
+}}
+
+/* Formata texto legal com deteção automática de alíneas e subalíneas */
+function hl(s) {{
+  if (!searchTerm || !s) return s || '';
+  const re = new RegExp(searchTerm.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&'), 'gi');
+  return s.replace(re, m => `<mark>${{m}}</mark>`);
+}}
+
+function formatarTexto(str) {{
+  if (!str) return '';
+  const blocos = str.split(/\\n\\n+/);
+  return blocos.map(bloco => {{
+    const linhas = bloco.split('\\n').filter(l => l.trim() !== '');
+    if (!linhas.length) return '';
+    const ps = linhas.map(linha => {{
+      const t = linha.trim();
+      if (/^[—–]\\s/.test(t) || t === '—' || t === '–') {{
+        return `<p class="leg-sub">${{hl(t)}}</p>`;
+      }}
+      if (/^[a-z]\\)/.test(t) || /^\\([a-z-]+\\)/.test(t)) {{
+        return `<p class="leg-alinea">${{hl(t)}}</p>`;
+      }}
+      return `<p class="leg-p">${{hl(t)}}</p>`;
+    }}).join('');
+    return `<div class="leg-block">${{ps}}</div>`;
+  }}).join('');
+}}
+
+function renderDiv(div) {{
+  if (!div) return '';
+  const secs = [
+    {{ cls: 'tag-leg', label: '@legislacao',  texto: div.legislacao }},
+    {{ cls: 'tag-cod', label: '@codigo',      texto: div.codigo }},
+    {{ cls: 'tag-rgb', label: '@rgbeac',      texto: div.rgbeac }},
+    {{ cls: 'tag-sum', label: 'Sumário',      texto: div.sumario }},
+  ];
+  return secs.map(s => `
+    <div class="div-section">
+      <span class="div-tag ${{s.cls}}">${{s.label}}</span>
+      <span class="div-text">${{hl(s.texto)}}</span>
+    </div>`).join('');
 }}
 
 /* ---- SIDEBAR ---- */
@@ -1082,14 +1234,14 @@ function render() {{
         <span class="card-header-ref">${{art.regulamento.ref}}</span>
       </div>
       <div class="card-body">
-        <pre>${{highlight(art.regulamento.traducao)}}</pre>
+        ${{formatarTexto(art.regulamento.traducao)}}
       </div>
     </div>
 
     <div class="card reg" style="margin-bottom:20px;">
       <div class="card-header">@regulamento — Texto original EN</div>
       <div class="card-body">
-        <pre>${{highlight(art.regulamento.texto)}}</pre>
+        ${{formatarTexto(art.regulamento.texto)}}
       </div>
     </div>
 
@@ -1098,21 +1250,21 @@ function render() {{
         <div class="card-header">@rgbeac (proposta jun. 2025)</div>
         <div class="card-body">
           <div class="card-ref">${{art.rgbeac.ref}}</div>
-          <pre>${{highlight(art.rgbeac.texto)}}</pre>
+          ${{formatarTexto(art.rgbeac.texto)}}
         </div>
       </div>
       <div class="card cod">
         <div class="card-header">@codigo (DL n.º 214/2013)</div>
         <div class="card-body">
           <div class="card-ref">${{art.codigo.ref}}</div>
-          <pre>${{highlight(art.codigo.texto)}}</pre>
+          ${{formatarTexto(art.codigo.texto)}}
         </div>
       </div>
       <div class="card leg">
         <div class="card-header">@legislacao (legislação vigente)</div>
         <div class="card-body">
           <div class="card-ref">${{art.legislacao.ref}}</div>
-          <pre>${{highlight(art.legislacao.texto)}}</pre>
+          ${{formatarTexto(art.legislacao.texto)}}
         </div>
       </div>
     </div>
@@ -1121,7 +1273,7 @@ function render() {{
       <strong>Divergência face ao Regulamento
         <span class="badge-alt">Necessidade de alteração: ${{art.necessidade_alteracao}}</span>
       </strong>
-      ${{highlight(art.divergencia)}}
+      ${{renderDiv(art.divergencia)}}
     </div>
 
     <div class="notas-box">
@@ -1146,12 +1298,17 @@ function navegar(dir) {{
 }}
 
 function exportarNotas() {{
-  const linhas = [['ID', 'Tema', 'Art. Regulamento', 'Art. RGBEAC', 'Art. Código', 'Art. Legislação Vigente', 'Notas de Reunião']];
+  const linhas = [['ID', 'Tema', 'Art. Regulamento', 'Art. RGBEAC', 'Art. Código',
+                   'Art. Legislação Vigente', 'Div. @legislacao', 'Div. @codigo',
+                   'Div. @rgbeac', 'Sumário', 'Necessidade Alteração', 'Notas de Reunião']];
   ARTIGOS.forEach(a => {{
+    const d = a.divergencia || {{}};
     linhas.push([
       a.id, a.tema,
       a.regulamento.ref, a.rgbeac.ref, a.codigo.ref,
       a.legislacao.ref,
+      d.legislacao || '', d.codigo || '', d.rgbeac || '', d.sumario || '',
+      a.necessidade_alteracao,
       a.notas
     ]);
   }});
