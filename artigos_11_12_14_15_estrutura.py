@@ -62,29 +62,48 @@ ARTICLES_11_12_14_15 = [
             ),
         },
         "rgbeac": {
-            "ref": "[A completar por pesquisa]",
-            "texto": "[A completar por pesquisa]"
+            "ref": "RGBEAC (jun. 2025) - Seção 'Obrigações especiais dos detentores'",
+            "texto": (
+                "Alimentos saudáveis e convenientes, conforme as necessidades fisiológicas e etológicas do animal.\n"
+                "Acesso permanente a água potável e fresca.\n"
+                "Ênfase em necessidades nutricionais adequadas ao estado de saúde e etapa de vida do animal."
+            )
         },
         "codigo": {
-            "ref": "[A completar por pesquisa]",
-            "texto": "[A completar por pesquisa]"
+            "ref": "Art.º 46.º do Código do Animal (DL 214/2013) - Alimentação e abeberamento",
+            "texto": (
+                "1 - Os animais de companhia devem ser alimentados de forma adequada ao seu estado, idade, tamanho, atividade "
+                "e saúde, em quantidade e qualidade apropriadas que lhes permitam manter um bom estado de saúde.\n\n"
+                "2 - A alimentação deve ser variada, estar de acordo com as disposições de bem-estar animal e ser distribuída "
+                "de forma coerente com o comportamento natural do animal.\n\n"
+                "3 - Os equipamentos utilizados para a alimentação e abeberamento (comedouros e bebedouros) devem ser apropriados "
+                "ao tipo de animal, mantidos em perfeito estado de higiene e limpeza.\n\n"
+                "4 - As provisões alimentares devem ser conservadas em condições higiénicas apropriadas.\n\n"
+                "5 - Todos os animais de companhia devem ter acesso permanente a água potável, em quantidade apropriada."
+            )
         },
         "legislacao": {
-            "ref": "[A completar por pesquisa]",
-            "texto": "[A completar por pesquisa]"
+            "ref": "DL 82/2019 - Não específico para alimentação",
+            "texto": (
+                "DL 82/2019 regulamenta identificação e não aborda especificamente requisitos de alimentação. "
+                "Requisitos cobertos por @CODIGO (Art. 46.º) e @RGBEAC."
+            )
         },
         "divergencia": {
-            "legislacao": "[A completar após pesquisa]",
-            "codigo": "[A completar após pesquisa]",
-            "rgbeac": "[A completar após pesquisa]",
-            "sumario": "[A completar após pesquisa]"
+            "legislacao": "NÃO APLICÁVEL - Diploma não específico nesta matéria",
+            "codigo": "SIM - COBERTURA COMPLETA (Art. 46.º implementa integralmente)",
+            "rgbeac": "SIM - COBERTURA COMPLETA (linguagem modernizada)",
+            "sumario": (
+                "COBERTURA COMPLETA. Código do Animal (Art. 46.º) implementa todos os requisitos do Artigo 11.º. "
+                "RGBEAC alinha melhor com linguagem e especificidades do Regulamento europeu. Sem divergências substanciais."
+            )
         },
-        "necessidade_alteracao": "[A completar após pesquisa]",
-        "notas": "Correspondências sendo pesquisadas"
+        "necessidade_alteracao": "Não",
+        "notas": "Correspondências encontradas. RGBEAC alinha melhor com Regulamento EU."
     },
     {
         "id": "ART-12",
-        "tema": "Alojamento",
+        "tema": "Alojamento (Housing)",
         "regulamento": {
             "ref": "Art.º 12.º do Regulamento 2023/0447",
             "titulo": "Housing",
