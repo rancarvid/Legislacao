@@ -16,24 +16,21 @@ ARTICLES_11_12_14_15_COMPLETE = [
                 "ref": "Art.º 46.º do Código do Animal (DL 214/2013)",
                 "titulo": "Alimentação e abeberamento",
                 "texto": (
-                    "1 - Os animais de companhia devem ser alimentados de forma adequada ao seu estado, idade, tamanho, atividade "
-                    "e saúde, em quantidade e qualidade apropriadas que lhes permitam manter um bom estado de saúde.\n\n"
-                    "2 - A alimentação deve ser variada, estar de acordo com as disposições de bem-estar animal e ser distribuída "
-                    "de forma coerente com o comportamento natural do animal.\n\n"
-                    "3 - Os equipamentos utilizados para a alimentação e abeberamento (comedouros e bebedouros) devem ser apropriados "
-                    "ao tipo de animal, mantidos em perfeito estado de higiene e limpeza.\n\n"
-                    "4 - As provisões alimentares devem ser conservadas em condições higiénicas apropriadas.\n\n"
-                    "5 - Todos os animais de companhia devem ter acesso permanente a água potável, em quantidade apropriada."
+                    "A alimentação dos animais de companhia, nos locais de criação, manutenção e venda bem como nos "
+                    "centros de recolha e instalações de hospedagem, deve obedecer a um programa de alimentação bem definido, "
+                    "de valor nutritivo adequado e distribuído em quantidade suficiente para satisfazer as necessidades alimentares "
+                    "das espécies.\n\n"
+                    "Os animais devem dispor de água potável e sem qualquer restrição, salvo por razões médico-veterinárias."
                 ),
                 "divergencia_sumario": "COBERTURA COMPLETA - Art. 46.º implementa integralmente os requisitos do Art. 11.º"
             },
             "rgbeac": {
-                "ref": "RGBEAC (proposta, jun. 2025)",
-                "titulo": "Obrigações especiais dos detentores",
+                "ref": "Arts. 7.º (n.º 1, al. a) e 10.º (n.º 1, al. a) do RGBEAC (proposta, jun. 2025)",
+                "titulo": "Princípios fundamentais e Obrigações especiais dos detentores",
                 "texto": (
-                    "Alimentos saudáveis e convenientes, conforme as necessidades fisiológicas e etológicas do animal.\n"
-                    "Acesso permanente a água potável e fresca.\n"
-                    "Ênfase em necessidades nutricionais adequadas ao estado de saúde e etapa de vida do animal."
+                    "Art. 7.º: Não passem fome ou sede, nem sejam sujeitos a malnutrição.\n\n"
+                    "Art. 10.º: Alimentos saudáveis, adequados e convenientes ao seu normal desenvolvimento e "
+                    "acesso permanente a água potável. Ênfase em necessidades nutricionais adequadas ao estado de saúde."
                 ),
                 "divergencia_sumario": "COBERTURA COMPLETA - Linguagem modernizada e alinhada com Regulamento europeu"
             },
@@ -41,15 +38,14 @@ ARTICLES_11_12_14_15_COMPLETE = [
                 "ref": "DL 82/2019",
                 "titulo": "Bem-estar de animais de companhia - não específico",
                 "texto": (
-                    "DL 82/2019 regulamenta identificação de animais. Não aborda especificamente requisitos de alimentação. "
-                    "Requisitos cobertos por Art. 46.º do Código e RGBEAC."
+                    "DL 82/2019 regulamenta identificação de animais. Não aborda especificamente requisitos de alimentação."
                 ),
                 "divergencia_sumario": "NÃO APLICÁVEL"
             }
         },
         "analise_divergencias": {
             "necessidade_alteracao": "Não",
-            "observacoes": "Legislação portuguesa cobre completamente. RGBEAC (2025) alinha melhor com terminologia europeia."
+            "observacoes": "Legislação portuguesa cobre completamente. RGBEAC (2025) alinha perfeitamente com Regulamento europeu."
         }
     },
     {
@@ -58,43 +54,42 @@ ARTICLES_11_12_14_15_COMPLETE = [
         "regulamento": "Art.º 12.º - Housing",
         "correspondencias": {
             "codigo": {
-                "ref": "Art.º 13.º do Código do Animal (DL 214/2013)",
-                "titulo": "Condições dos alojamentos",
+                "ref": "Arts. 3.º, 14.º, 18.º, 28.º do Código do Animal (DL 214/2013)",
+                "titulo": "Definições, Fatores ambientais e Instalações",
                 "texto": (
-                    "1 - O alojamento dos animais de companhia deve oferecer condições que permitam satisfazer as suas "
-                    "necessidades fisiológicas e etológicas, incluindo espaço adequado.\n\n"
-                    "2 - Deve ser assegurado exercício físico adequado e acesso a áreas que permitam expressão de comportamentos naturais.\n\n"
-                    "3 - Deve ser disponibilizado abrigo e proteção contra adversidades climáticas.\n\n"
-                    "4 - As estruturas devem ser seguras e adequadas à espécie e número de animais.\n\n"
-                    "5 - Deve ser garantido enriquecimento ambiental e possibilidade de expressão de comportamentos naturais."
+                    "Art. 3.º: Define 'Alojamento' como qualquer instalação, edifício ou local onde animais se encontram mantidos.\n\n"
+                    "Art. 14.º: A temperatura, ventilação, luminosidade e obscuridade devem ser adequadas ao conforto e bem-estar.\n\n"
+                    "Art. 18.º: Alojamentos devem possuir instalações para armazenagem, lavagem, quarentena, enfermaria e higienização.\n\n"
+                    "Art. 28.º: Define separação por espécie e requisitos de estrutura para hospedagem."
                 ),
-                "divergencia_sumario": "COBERTURA COMPLETA - Art. 13.º implementa requisitos principais do Art. 12.º"
+                "divergencia_sumario": "COBERTURA COMPLETA - Código implementa requisitos principais do Art. 12.º"
             },
             "rgbeac": {
-                "ref": "RGBEAC (proposta, jun. 2025)",
-                "titulo": "Obrigações especiais e TÍTULO VII - Alojamentos",
+                "ref": "Arts. 7.º, 10.º, 11.º, 47-57 do RGBEAC (proposta, jun. 2025)",
+                "titulo": "Princípios, Obrigações especiais e Condições de alojamentos",
                 "texto": (
-                    "Proibição de contenção permanente.\n"
-                    "Espaço e enriquecimento adequados.\n"
-                    "Abrigo e proteção contra adversidades climáticas.\n"
-                    "Regulação detalhada em Portaria específica para requisitos técnicos (temperatura, ventilação, iluminação).\n"
-                    "Enriquecimento ambiental obrigatório."
+                    "Art. 7.º: Condições de detenção e alojamento salvaguardam bem-estar animal.\n\n"
+                    "Art. 10.º: Liberdade de movimento, proibição de contenção permanente, espaço adequado, "
+                    "enriquecimento ambiental e abrigo protetor.\n\n"
+                    "Art. 11.º: Obrigações especiais relativas ao alojamento doméstico.\n\n"
+                    "Arts. 47-57: Regulação detalhada de alojamentos para hospedagem (estruturas, proteção, "
+                    "maneio, responsabilidades veterinárias)."
                 ),
-                "divergencia_sumario": "COBERTURA EXPANDIDA - RGBEAC especifica mais detalhes e alinha com Regulamento"
+                "divergencia_sumario": "COBERTURA EXPANDIDA - RGBEAC especifica detalhes técnicos e alinha com Regulamento europeu"
             },
             "legislacao": {
                 "ref": "Lei 27/2016, DL 82/2019",
-                "titulo": "Legislação adicional - não específica",
+                "titulo": "Legislação adicional - não específica para alojamento",
                 "texto": (
-                    "Lei 27/2016 aborda recolha de animais errantes. "
-                    "DL 82/2019 regulamenta identificação. Nenhum diploma específico para condições de alojamento."
+                    "Lei 27/2016 aborda recolha de animais errantes. DL 82/2019 regulamenta identificação. "
+                    "Nenhum diploma específico complementar para condições detalhadas de alojamento."
                 ),
                 "divergencia_sumario": "NÃO APLICÁVEL"
             }
         },
         "analise_divergencias": {
-            "necessidade_alteracao": "Sim - RGBEAC necessita Portaria complementar com especificações técnicas",
-            "observacoes": "Código e RGBEAC cobrem princípios; faltam normas técnicas detalhadas como temperatura, ventilação"
+            "necessidade_alteracao": "Sim - Portaria complementar com especificações técnicas detalhadas (temperatura, ventilação, iluminação)",
+            "observacoes": "@CODIGO e @RGBEAC cobrem princípios; faltam normas técnicas pormenorizadas como valores mínimos de temperatura/ventilação"
         }
     },
     {
