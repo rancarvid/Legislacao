@@ -813,6 +813,277 @@ ARTIGOS = [
         "necessidade_alteracao": "Sim",
         "notas": "",
     },
+    {
+        "id": "ART-08",
+        "tema": "Detenção Responsável e Informação",
+        "regulamento": {
+            "ref": "Art.º 8.º do Regulamento 2023/0447",
+            "titulo": "Obligation of informing on responsible ownership",
+            "texto": (
+                "Operators shall provide to the acquirer of a dog or cat written information necessary to enable "
+                "him or her to ensure the welfare of the dog or cat including information on responsible ownership and "
+                "on the specific needs of the dog or cat in terms of feeding, caring, health, housing and behavioural needs, "
+                "as well as information on its health.\n\n"
+                "1a. The written information on the dog or cat's health referred to in the first paragraph shall include at least:\n"
+                "(a) the dog or cat's vaccination status;\n"
+                "(b) any medical conditions or predispositions to diseases, including allergies, that are known by the operator, "
+                "and any diagnostic test results for the dog or cat that are available to the operator.\n\n"
+                "In case the information on the dog's or cat's health is documented in a document required under Regulation "
+                "(EU) 2016/429, the operator shall transmit that document to the acquirer."
+            ),
+            "traducao": (
+                "Os operadores devem fornecer ao adquirente de um cão ou gato informação escrita necessária para lhe permitir "
+                "assegurar o bem-estar do cão ou gato, incluindo informação sobre detenção responsável e sobre as necessidades "
+                "específicas do cão ou gato em termos de alimentação, cuidados, saúde, alojamento e necessidades comportamentais, "
+                "bem como informação sobre a sua saúde.\n\n"
+                "1a. A informação escrita sobre a saúde do cão ou gato referida no parágrafo anterior deve incluir pelo menos:\n"
+                "(a) o estado de vacinação do cão ou gato;\n"
+                "(b) quaisquer condições médicas ou predisposições a doenças, incluindo alergias, conhecidas pelo operador, "
+                "e quaisquer resultados de testes de diagnóstico para o cão ou gato que estejam disponíveis para o operador.\n\n"
+                "Caso a informação sobre a saúde do cão ou gato esteja documentada num documento exigido sob o Regulamento "
+                "(UE) 2016/429, o operador deve transmitir esse documento ao adquirente."
+            ),
+        },
+        "rgbeac": {
+            "ref": "Art.º 8.º do RGBEAC (proposta, jun. 2025)",
+            "texto": (
+                "1 — O detentor do animal de companhia deve possuir informação sobre as obrigações inerentes à sua detenção, "
+                "incluindo direitos e responsabilidades, normas de bem-estar, cuidados de saúde, comportamento, necessidades "
+                "específicas da espécie/raça, duração de vida esperada, custos de manutenção, e proibição de abandono.\n\n"
+                "2 — Os comerciantes devem fornecer por escrito ao adquirente informação completa antes da transferência do animal, "
+                "incluindo identidade e dados de contacto do comerciante, dados de identificação do animal, cuidados de saúde e "
+                "estado de vacinação, e certificado de origem ou de compatibilidade quando aplicável."
+            ),
+        },
+        "codigo": {
+            "ref": "Art.º 57.º do Código do Animal (DL n.º 214/2013)",
+            "texto": (
+                "1 — O detentor do animal deve ter acesso a informação sobre:\n\n"
+                "a) As obrigações inerentes à sua detenção, direitos e responsabilidades;\n"
+                "b) As normas de bem-estar, cuidados de saúde e comportamento esperado;\n"
+                "c) As necessidades específicas da espécie ou raça;\n"
+                "d) A duração de vida esperada;\n"
+                "e) Os custos de manutenção;\n"
+                "f) A proibição de abandono.\n\n"
+                "2 — Os criadores e comerciantes devem fornecer informação escrita completa ao adquirente antes da transferência "
+                "do animal, incluindo dados de identificação e cuidados de saúde."
+            ),
+        },
+        "legislacao": {
+            "ref": "Art.º 20.º do DL n.º 276/2001, de 17 de outubro",
+            "texto": (
+                "1 — O proprietário ou detentor de animal de companhia deve ter acesso a informação adequada sobre as suas obrigações "
+                "relativas ao bem-estar do animal.\n\n"
+                "2 — Os detentores de animais de companhia que os comercializem devem fornecer informação ao adquirente sobre o estado "
+                "de saúde do animal e vacinas efetuadas."
+            ),
+        },
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.º 20.º) é genérico e não especifica a forma escrita nem detalhes de conteúdo. O @regulamento "
+                "exige informação escrita sobre necessidades específicas de bem-estar (alimentação, cuidados, saúde, alojamento, comportamento) "
+                "e condiciona a transferência à transmissão dessa informação."
+            ),
+            "codigo": (
+                "O @codigo (art.º 57.º) exige informação escrita mas com âmbito mais amplo (duração de vida, custos) do que o @regulamento, "
+                "que se foca especificamente em bem-estar e saúde."
+            ),
+            "rgbeac": (
+                "O @rgbeac (art.º 8.º) aproxima-se do conteúdo do @regulamento, exigindo informação escrita antes da transferência, "
+                "incluindo dados de saúde e vacinação, mas ainda sem o enfoque específico em bem-estar comportamental."
+            ),
+            "sumario": (
+                "Necessidade de alteração: (1) formalizar requisito de informação escrita como condição de transferência de animal; "
+                "(2) especificar conteúdo obrigatório sobre bem-estar, saúde e necessidades comportamentais; (3) harmonizar entre @codigo "
+                "e @rgbeac quanto a âmbito e forma."
+            ),
+        },
+        "necessidade_alteracao": "Sim",
+        "notas": "",
+    },
+    {
+        "id": "ART-09",
+        "tema": "Competências de Cuidadores e Bem-Estar Animal",
+        "regulamento": {
+            "ref": "Art.º 9.º do Regulamento 2023/0447",
+            "titulo": "Animal welfare competences of animal caretakers",
+            "texto": (
+                "1. Animal caretakers, other than volunteers in shelters and interns who are under the responsibility of a competent "
+                "animal caretaker, shall have the following competences as regards the dogs and cats they are handling:\n"
+                "(a) understanding of their biological behaviour and their physiological and ethological needs;\n"
+                "(b) ability to recognise their expressions including any sign of suffering and to identify and take the appropriate "
+                "mitigating measures in such cases;\n"
+                "(c) ability to apply good animal management practices, including operant conditioning and positive reinforcement, "
+                "to use and maintain the equipment used for the dogs or cats under their care and to minimise any risks to the welfare "
+                "of the dogs or cats, preventing suffering;\n"
+                "(d) knowledge of their obligations under this Regulation.\n\n"
+                "2. The competences referred to in paragraph 1 may be acquired through education, training or professional experience. "
+                "Education, training or professional experience shall be documented.\n\n"
+                "2a. Operators shall ensure that at least one animal caretaker, other than a volunteer or intern, at the establishment has "
+                "completed the training courses referred to in Article 18 and that the caretaker transfers the knowledge to the other animal "
+                "caretakers of the establishment.\n\n"
+                "3. The Commission shall, by means of implementing acts, lay down minimum requirements concerning the formal education, training "
+                "or professional experience in order to acquire the competences referred to in paragraph 2 and for the training courses referred to "
+                "in paragraph 2a. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 24. "
+                "The implementing act concerning the training courses referred to in paragraph 2a shall be adopted by [3 years from the date of "
+                "entry into force of the Regulation]."
+            ),
+            "traducao": (
+                "1. Os cuidadores de animais, com exceção de voluntários em abrigos e estagiários sob a responsabilidade de um cuidador competente, "
+                "devem ter as seguintes competências no que diz respeito aos cães e gatos que manuseiam:\n"
+                "(a) compreensão do seu comportamento biológico e das suas necessidades fisiológicas e etológicas;\n"
+                "(b) capacidade de reconhecer as suas expressões, incluindo qualquer sinal de sofrimento, e de identificar e adotar as medidas "
+                "mitigantes apropriadas nesses casos;\n"
+                "(c) capacidade de aplicar boas práticas de maneio de animais, incluindo condicionamento operante e reforço positivo, utilizar "
+                "e manter o equipamento utilizado para os cães ou gatos sob os seus cuidados e minimizar quaisquer riscos para o bem-estar dos "
+                "cães ou gatos, prevenindo sofrimento;\n"
+                "(d) conhecimento das suas obrigações sob este Regulamento.\n\n"
+                "2. As competências referidas no parágrafo 1 podem ser adquiridas através de educação, formação ou experiência profissional. "
+                "A educação, formação ou experiência profissional devem ser documentadas.\n\n"
+                "2a. Os operadores devem assegurar que pelo menos um cuidador de animais, que não seja um voluntário ou estagiário, no estabelecimento "
+                "tenha completado os cursos de formação referidos no artigo 18.º e que o cuidador transfira os conhecimentos aos outros cuidadores "
+                "de animais do estabelecimento.\n\n"
+                "3. A Comissão estabelecerá, por meio de atos de execução, os requisitos mínimos relativos à educação formal, formação ou experiência "
+                "profissional para adquirir as competências referidas no parágrafo 2 e para os cursos de formação referidos no parágrafo 2a. Esses "
+                "atos de execução serão adotados de acordo com o procedimento de exame referido no artigo 24.º. O ato de execução relativo aos cursos "
+                "de formação referidos no parágrafo 2a deve ser adotado por [3 anos da data de entrada em vigor do Regulamento]."
+            ),
+        },
+        "rgbeac": {
+            "ref": "Art.º 11.º do RGBEAC (proposta, jun. 2025)",
+            "texto": (
+                "1 — Os operadores de estabelecimentos devem assegurar que os cuidadores de animais possuem conhecimentos e competências adequados "
+                "em bem-estar animal, comportamento e cuidados específicos de cada espécie.\n\n"
+                "2 — Os conhecimentos e competências devem ser adquiridos através de:\n"
+                "a) Formação profissional reconhecida;\n"
+                "b) Experiência prática documentada;\n"
+                "c) Cursos de capacitação específicos.\n\n"
+                "3 — Os operadores devem assegurar que existe sempre um cuidador com formação completa e que este transmita conhecimentos aos restantes."
+            ),
+        },
+        "codigo": {
+            "ref": "Art.º 40.º do Código do Animal (DL n.º 214/2013)",
+            "texto": (
+                "1 — Os operadores de estabelecimentos devem assegurar que o maneio dos animais é efetuado por pessoal com formação teórica e prática "
+                "em bem-estar animal.\n\n"
+                "2 — A formação deve incluir conhecimento sobre necessidades comportamentais, saúde e bem-estar específicos da espécie.\n\n"
+                "3 — O pessoal deve ser supervisionado por pessoa com experiência certificada em bem-estar animal."
+            ),
+        },
+        "legislacao": {
+            "ref": "n.º 2 do art.º 13.º do DL n.º 276/2001, de 17 de outubro",
+            "texto": (
+                "O maneio deve ser feito por pessoal que possua formação teórica e prática específica ou sob a supervisão de uma pessoa "
+                "competente para o efeito."
+            ),
+        },
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 exige 'formação teórica e prática' mas não especifica competências concretas em bem-estar animal. "
+                "O @regulamento detalha 4 competências específicas (comportamento, reconhecimento de sofrimento, maneio, conhecimento de "
+                "obrigações) e formaliza a certificação de educação/formação/experiência."
+            ),
+            "codigo": (
+                "O @codigo (art.º 40.º) é mais prescritivo que a legislação vigente mas menos detalhado que o @regulamento. Menciona "
+                "'bem-estar animal' e 'necessidades comportamentais' mas sem as 4 competências específicas."
+            ),
+            "rgbeac": (
+                "O @rgbeac aproxima-se do nível de detalhe do @regulamento, mencionando formação, experiência e transmissão de conhecimento, "
+                "mas ainda sem a especificação das 4 competências de forma estruturada."
+            ),
+            "sumario": (
+                "Necessidade de alteração: (1) detalhar as 4 competências obrigatórias em legislação nacional; (2) formalizar requisito de "
+                "documentação de educação/formação/experiência; (3) criar mecanismo de certificação de competências; (4) exigir que operador "
+                "designe um cuidador responsável com formação completa que transmita conhecimento aos demais."
+            ),
+        },
+        "necessidade_alteracao": "Sim",
+        "notas": "",
+    },
+    {
+        "id": "ART-10",
+        "tema": "Avaliação e Supervisão de Bem-Estar",
+        "regulamento": {
+            "ref": "Art.º 10.º do Regulamento 2023/0447",
+            "titulo": "Advisory welfare visits",
+            "texto": (
+                "Operators shall:\n\n"
+                "(a) ensure that the establishments under their responsibility receive a visit by a veterinarian within the first year after "
+                "the date of application of this Regulation or within the first year after having notified a new establishment, for the purpose "
+                "of identifying and assessing any risk factor for the welfare of the dogs or cats and advising the operator on measures to address "
+                "those risks; thereafter the visits from a veterinarian shall take place when appropriate, based on a risk analysis by the "
+                "competent authorities; Member States may provide for that the advisory welfare visits are annual;\n\n"
+                "(b) keep the records of the findings of the visit of the veterinarian referred to in point (a) and of their follow up actions "
+                "for at least 4 years, from the day of the visit, and shall make them available to the competent authorities upon request and "
+                "to the veterinarian that performs subsequent advisory visits.\n\n"
+                "By 24 months from the date of entry into force of this Regulation, the Commission shall adopt delegated acts in accordance with "
+                "Article 23 supplementing this Article in order to lay down minimum criteria to be assessed during the advisory welfare visit."
+            ),
+            "traducao": (
+                "Os operadores devem:\n\n"
+                "(a) assegurar que os estabelecimentos sob a sua responsabilidade recebem uma visita de um médico veterinário no prazo de um ano "
+                "a partir da data de aplicação do presente Regulamento ou no prazo de um ano após notificação de novo estabelecimento, com o "
+                "objetivo de identificar e avaliar quaisquer fatores de risco para o bem-estar dos cães ou gatos e aconselhar o operador sobre "
+                "medidas para resolver esses riscos; depois, as visitas do médico veterinário devem ocorrer quando apropriado, com base numa "
+                "análise de risco pelas autoridades competentes; os Estados-Membros podem estabelecer que as visitas de aconselhamento de bem-estar "
+                "sejam anuais;\n\n"
+                "(b) manter registos dos resultados da visita do médico veterinário referida na alínea (a) e das ações de acompanhamento por um "
+                "período mínimo de 4 anos, a partir da data da visita, e disponibilizá-los às autoridades competentes a pedido e ao médico "
+                "veterinário que realiza visitas de aconselhamento subsequentes.\n\n"
+                "Dentro de 24 meses a partir da data de entrada em vigor do presente Regulamento, a Comissão deve adotar atos delegados em "
+                "conformidade com o artigo 23.º que complementem o presente artigo de forma a estabelecer critérios mínimos a serem avaliados "
+                "durante a visita de aconselhamento de bem-estar."
+            ),
+        },
+        "rgbeac": {
+            "ref": "Art.º 36.º do RGBEAC (proposta, jun. 2025)",
+            "texto": (
+                "1 — Os operadores de estabelecimentos de criação e venda devem assegurar avaliações veterinárias periódicas de bem-estar animal.\n\n"
+                "2 — A primeira avaliação deve ocorrer no prazo de um ano após notificação do estabelecimento.\n\n"
+                "3 — As avaliações subsequentes devem ocorrer conforme avaliação de risco pelas autoridades competentes.\n\n"
+                "4 — Os resultados e recomendações das avaliações devem ser registados e mantidos por um período mínimo de 4 anos."
+            ),
+        },
+        "codigo": {
+            "ref": "Art.º 41.º do Código do Animal (DL n.º 214/2013)",
+            "texto": (
+                "1 — Os operadores de estabelecimentos devem submeter-se a inspeções veterinárias periódicas de bem-estar animal.\n\n"
+                "2 — As inspeções devem avaliar conformidade com parâmetros de bem-estar e identificar riscos à saúde e bem-estar dos animais.\n\n"
+                "3 — Recomendações de inspeções devem ser registadas e implementadas pelo operador."
+            ),
+        },
+        "legislacao": {
+            "ref": "Art.º 19.º do DL n.º 276/2001, de 17 de outubro",
+            "texto": (
+                "1 — Os estabelecimentos de criação, venda e alojamento de animais devem ser objeto de inspecções regulares por veterinário.\n\n"
+                "2 — O veterinário deve avaliar conformidade com os parâmetros de bem-estar e elaborar relatório.\n\n"
+                "3 — O operador deve manter cópia do relatório de inspeção por período determinado."
+            ),
+        },
+        "divergencia": {
+            "legislacao": (
+                "O DL n.º 276/2001 (art.º 19.º) exige inspeções regulares mas não especifica prazo (1 ano após notificação). "
+                "O @regulamento é mais prescritivo: 1.ª visita obrigatória no 1.º ano, depois conforme análise de risco, com "
+                "manutenção de registos por 4 anos e transmissão ao veterinário subsequente."
+            ),
+            "codigo": (
+                "O @codigo (art.º 41.º) menciona inspeções periódicas mas sem prazos específicos. Menos detalhado que ambos "
+                "o @regulamento e a legislação vigente."
+            ),
+            "rgbeac": (
+                "O @rgbeac aproxima-se do @regulamento com prazo de 1 ano para 1.ª avaliação e manutenção de registos por 4 anos. "
+                "Porém, não especifica que a avaliação é de responsabilidade do operador (não da autoridade competente)."
+            ),
+            "sumario": (
+                "Alinhamento parcial com legislação vigente. Necessidade de alteração: (1) formalizar prazo de 1 ano para 1.ª visita "
+                "após notificação; (2) criar regime de avaliação de risco para determinar frequência de visitas subsequentes; "
+                "(3) estabelecer obrigação do operador de manter registos por 4 anos; (4) harmonizar terminologia ('inspeção' vs 'visita "
+                "de aconselhamento'); (5) garantir transmissão de informações entre veterinários."
+            ),
+        },
+        "necessidade_alteracao": "Sim",
+        "notas": "",
+    },
 ]
 
 # ---------------------------------------------------------------------------
