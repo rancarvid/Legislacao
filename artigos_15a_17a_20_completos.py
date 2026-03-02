@@ -98,7 +98,29 @@ ARTICLES_15a_17a_20 = [
                 "c) in case of online advertising, use the system referred to in paragraph 6 to generate a unique verification token."
             ),
             "traducao": (
-                "Disponível no documento Regulamento - Primeira Versão portuguesa.docx"
+                "1. Quando operadores anunciem online um cão ou gato com vista ao seu colocamento no mercado da União, devem "
+                "assegurar a apresentação do seguinte aviso no anúncio em caracteres claramente visíveis e em negrito:\n\n"
+                "\"Um animal não é um brinquedo. Ter um é uma decisão que muda a vida. É seu dever assegurar a sua saúde e bem-estar "
+                "e não o abandonar.\"\n\n"
+                "2. Quando pessoas singulares ou coletivas que não sejam operadores anunciem online um cão ou gato com vista ao seu "
+                "colocamento no mercado da União, devem assegurar a apresentação de um aviso sobre detenção responsável utilizando "
+                "a redação referida no primeiro parágrafo ou uma redação diferente com significado equivalente.\n\n"
+                "3. Ao colocar um cão ou gato no mercado na União, a pessoa singular ou coletiva que coloca o cão ou gato no mercado "
+                "deve:\n\n"
+                "a) Fornecer ao adquirente prova de identificação e registo do cão ou gato em conformidade com o artigo 17.º;\n\n"
+                "b) Fornecer ao adquirente as seguintes informações sobre o cão ou gato: espécie, sexo, data e país de nascimento, "
+                "e, quando relevante, raça;\n\n"
+                "c) No caso de anúncio online, utilizar o sistema referido no parágrafo 6 para gerar um token único de verificação "
+                "e disponibilizar o token e a ligação web para o sistema referido no parágrafo 6 no anúncio.\n\n"
+                "4. Os adquirentes podem verificar a autenticidade da identificação, registo e propriedade de cães ou gatos anunciados "
+                "online através do sistema referido no parágrafo 6.\n\n"
+                "5. Os fornecedores de plataformas online devem assegurar que a sua interface online é concebida e organizada de forma "
+                "a facilitar aos operadores ou outras pessoas singulares ou coletivas que colocam cães ou gatos no mercado o cumprimento "
+                "das suas obrigações, e devem informar os adquirentes, de forma visível, da possibilidade de verificar a identificação "
+                "e o registo do cão ou gato através de uma ligação web para o sistema referido no parágrafo 6.\n\n"
+                "6. A Comissão garante que um sistema de verificação online que realiza controlos automatizados da autenticidade da "
+                "identificação, registo e propriedade de cães ou gatos anunciados online, utilizando a base de dados referida no artigo 19.º, "
+                "está disponível publicamente gratuitamente e gera o token único de verificação referido no parágrafo 3, alínea c)."
             ),
         },
         "rgbeac": {
@@ -158,7 +180,15 @@ ARTICLES_15a_17a_20 = [
                 "may develop models of training materials and recommendations for the providers of training courses referred to in paragraph 1."
             ),
             "traducao": (
-                "Disponível no documento Regulamento - Primeira Versão portuguesa.docx"
+                "1. Para efeitos do artigo 9.º, as autoridades competentes são responsáveis por:\n\n"
+                "a) Assegurar que existem cursos de formação disponíveis para cuidadores de animais;\n\n"
+                "b) Aprovar o conteúdo dos cursos de formação referidos na alínea a), tendo em conta os requisitos mínimos estabelecidos "
+                "pelos atos de execução referidos no artigo 9.º, parágrafo 3;\n\n"
+                "ba) Certificar os cuidadores de animais que completaram com sucesso os cursos de formação referidos na alínea a).\n\n"
+                "2. As autoridades competentes podem delegar a tarefa referida na alínea ba).\n\n"
+                "3. O Centro de Referência da União Europeia para o Bem-Estar Animal designado em conformidade com o artigo 95.º do "
+                "Regulamento (UE) 2017/625 pode desenvolver modelos de materiais de formação e recomendações para os fornecedores dos "
+                "cursos de formação referidos no parágrafo 1."
             ),
         },
         "rgbeac": {
@@ -227,7 +257,17 @@ ARTICLES_15a_17a_20 = [
                 "independent entity, following a public selection process."
             ),
             "traducao": (
-                "Disponível no documento Regulamento - Primeira Versão portuguesa.docx"
+                "1. Os Estados-Membros são responsáveis pela criação e manutenção de bases de dados para o registo de cães e gatos "
+                "identificados, em conformidade com os artigos 17.º (parágrafos 1 e 2) e 21.º (parágrafo 4 e segundo parágrafo do "
+                "parágrafo 4a).\n\n"
+                "1a. Para este efeito, os Estados-Membros podem utilizar bases de dados mantidas por outro Estado-Membro, com base em "
+                "acordos apropriados entre esses Estados-Membros.\n\n"
+                "2. Os Estados-Membros asseguram que as suas bases de dados referidas no parágrafo 1 estão em conformidade com os "
+                "requisitos estabelecidos pelo ato de execução referido no parágrafo 3, alínea b), de modo a assegurar a sua "
+                "interoperabilidade, permitindo que a identificação de um cão ou gato possa ser autenticada e rastreada em toda a União.\n\n"
+                "2a. A Comissão estabelece e mantém uma base de dados de índice contendo o conjunto mínimo de campos definido no "
+                "parágrafo 3, alínea b). A Comissão pode confiar o desenvolvimento, manutenção e funcionamento dessa base de dados de "
+                "índice a uma entidade independente, após um processo de seleção pública."
             ),
         },
         "rgbeac": {
