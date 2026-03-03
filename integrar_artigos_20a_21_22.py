@@ -11,6 +11,7 @@ sys.path.insert(0, '/home/user/Claude---Legislacao')
 from artigos_20a_21_22_completos import ARTICLES_20A_21_22
 import gerar_comparativo_reuniao as gen
 import gerar_word
+from article_validator import validate_articles_list, print_validation_report
 
 def main():
     print("\n" + "="*80)
@@ -20,6 +21,16 @@ def main():
     # Adiciona os novos artigos à lista em memória
     print("\n✓ Carregando artigos 20a, 21, 22...")
     gen.ARTIGOS.extend(ARTICLES_20A_21_22)
+
+    # Valida estrutura de todos os artigos
+    print("✓ Validando estrutura de dados...")
+    is_valid, errors = validate_articles_list(gen.ARTIGOS)
+    if not is_valid:
+        print("\n✗ ERRO: Validação de estrutura falhou!")
+        print_validation_report(is_valid, errors)
+        print("\nINTEGRAÇÃO ABORTADA")
+        return
+    print("✓ Validação bem-sucedida")
 
     # Reordena os artigos em sequência numérica
     print("✓ Reordenando artigos em sequência...")
