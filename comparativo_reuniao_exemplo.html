@@ -50,24 +50,25 @@
     height: calc(100vh - 60px);
     overflow-y: auto;
   }
-  nav h2 { color: #aaa; font-size: .7rem; text-transform: uppercase;
-            letter-spacing: 1.5px; padding: 0 20px 12px; }
+  nav h2 { color: #fff; font-size: .7rem; text-transform: uppercase;
+            letter-spacing: 1.5px; padding: 0 20px 12px; font-weight: 700; }
   nav button {
     display: block; width: 100%;
     background: none; border: none;
-    color: #ccc; text-align: left;
+    color: #fff; text-align: left;
     padding: 12px 20px; cursor: pointer;
     font-size: .88rem; line-height: 1.35;
     border-left: 3px solid transparent;
     transition: all .15s;
+    font-weight: 500;
   }
-  nav button:hover { background: rgba(255,255,255,.06); color: #fff; }
+  nav button:hover { background: rgba(255,255,255,.12); color: #fff; }
   nav button.active {
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.15);
     color: #fff; font-weight: 700;
-    border-left-color: #7EC8E3;
+    border-left-color: #8AAFCF;
   }
-  nav button small { display: block; font-size: .74rem; opacity: .55; margin-top: 2px; }
+  nav button small { display: block; font-size: .74rem; opacity: .85; margin-top: 2px; color: #e0e0e0; }
 
   /* MAIN */
   main { flex: 1; padding: 28px 32px; overflow-x: auto; }
