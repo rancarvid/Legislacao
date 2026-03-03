@@ -22,6 +22,22 @@ def main():
     print("\n✓ Carregando artigos 20a, 21, 22...")
     gen.ARTIGOS.extend(ARTICLES_20A_21_22)
 
+    # Remove duplicatas (em caso de artigos já presentes em gerar_comparativo_reuniao.py)
+    print("✓ Removendo duplicatas...")
+    seen_ids = set()
+    unique_articles = []
+    duplicates_removed = 0
+    for art in gen.ARTIGOS:
+        art_id = art.get('id')
+        if art_id not in seen_ids:
+            unique_articles.append(art)
+            seen_ids.add(art_id)
+        else:
+            duplicates_removed += 1
+    gen.ARTIGOS = unique_articles
+    if duplicates_removed > 0:
+        print(f"  ⚠️  {duplicates_removed} artigo(s) duplicado(s) removido(s)")
+
     # Valida estrutura de todos os artigos
     print("✓ Validando estrutura de dados...")
     is_valid, errors = validate_articles_list(gen.ARTIGOS)
