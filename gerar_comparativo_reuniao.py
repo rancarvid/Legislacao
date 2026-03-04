@@ -3112,6 +3112,138 @@ ARTIGOS = [
             "Recomenda-se: (i) validar conformidade microchips portugueses com ISO 11785 e 24631-1; "
             "(ii) atualizar requisitos de aprovação/certificação de equipamentos; (iii) harmonizar prazos de identificação (3 meses vs. 30 dias por tipo operador)."
         )
+    },
+    {
+        "id": "ANNEX-III",
+        "tema": "Recolha de Dados sobre Bem-Estar Animal — Relatório Trienal à Comissão UE",
+        "regulamento": {
+            "ref": "ANEXO III do Regulamento 2023/0447 (conforme Article 20)",
+            "titulo": "Collection of data",
+            "texto": (
+                "1. Number of dogs and cats registered per year, as referred to in Article 17 and Article 21(4).\n\n"
+                "1a. Number of breeding establishments, selling establishments, shelters, and foster homes registered per year in accordance with Article 7.\n\n"
+                "2. Number of breeding establishments approved per year, as referred to in Article 7a.\n\n"
+                "2a. Number of breeding establishments whose approval has been suspended or withdrawn per year."
+            ),
+            "traducao": (
+                "1. Número de cães e gatos registados por ano, conforme referido nos artigos 17.º e 21.º, n.º 4.\n\n"
+                "1a. Número de estabelecimentos de criação, estabelecimentos de venda, abrigos e famílias de acolhimento registados por ano, em conformidade com o artigo 7.º.\n\n"
+                "2. Número de estabelecimentos de criação aprovados por ano, conforme referido no artigo 7a.º.\n\n"
+                "2a. Número de estabelecimentos de criação cuja aprovação foi suspensa ou revogada por ano."
+            ),
+        },
+
+        "rgbeac": {
+            "ref": "RGBEAC (Regime Geral do Bem-Estar dos Animais de Companhia, proposta jun. 2025) — Arts. 20.º, 46.º",
+            "texto": (
+                "Artigo 20.º — Sistema de Informação de Animais de Companhia (SIAC)\n\n"
+                "1 - O SIAC reúne informação relativa à: a) Rastreabilidade de dispositivos de identificação; b) Identificação dos animais de companhia; "
+                "c) Sua titularidade ou detenção; d) Informação de saúde pública, saúde animal e bem-estar animal.\n\n"
+                "2 – A DGAV é a entidade responsável pelo SIAC, assegurando seu funcionamento e tratamento seguro de informação.\n\n"
+                "3 – A DGAV pode atribuir gestão do SIAC a outras entidades, mediante protocolo e parecer da Comissão Nacional de Proteção de Dados.\n\n"
+                "4 - Normas e procedimentos constam de Manual de Procedimentos SIAC, aprovado pelo diretor-geral de alimentação e veterinária.\n\n"
+                "Artigo 46.º — Relatório Nacional Anual\n\n"
+                "1 - Centros de bem-estar animal e alojamentos com fins de promoção remetem à DGAV no primeiro mês de cada ano, relatórios de gestão do ano anterior.\n\n"
+                "2 – A DGAV consolida informação a nível nacional sobre bem-estar animal em cada ano, incluindo: "
+                "a) Acompanhamento da política internacional; b) Prestação de apoios públicos; c) Atividade do SIAC; d) Resultados de planos de controlo; "
+                "e) Processos contraordenacionais; f) Coimas e sanções; g) Atividade de centros de bem-estar animal; h) Programas de interesse nacional."
+            ),
+        },
+
+        "codigo": {
+            "ref": "Código do Animal (DL 214/2013) — Arts. 55.º, 56.º, 141.º-145.º",
+            "texto": (
+                "Artigo 55.º — Base de dados\n\n"
+                "1 - Toda informação de registo coligida numa aplicação informática nacional.\n\n"
+                "2 - A DGAV detém, define e coordena acesso à BD, podendo autorizar gestão em outras entidades mediante protocolos e parecer da Comissão Nacional de Proteção de Dados.\n\n"
+                "3 - Só entidades autorizadas pela DGAV têm acesso.\n\n"
+                "Artigo 56.º — Classificação dos animais\n\n"
+                "Categorias para registo na BD: a) Cão (designado A); b) Cão Potencialmente Perigoso (designado G); c) Cão Perigoso (designado H); d) Gato (designado I).\n\n"
+                "Artigos 141.º-145.º — Monitorização e Relatórios\n\n"
+                "Código do Animal estabelece estrutura de: a) Monitorização de bem-estar animal; b) Recolha de dados de infrações; "
+                "c) Aplicação de sanções; d) Atividades de centros de recolha; e) Estatísticas de animais processados; f) Sistema de contraordenações."
+            ),
+        },
+
+        "legislacao": {
+            "ref": "DL 82/2019 (Arts. 2.º-7.º), Lei 27/2016 (Arts. 1.º-9.º)",
+            "texto": (
+                "[dim]Decreto-Lei n.º 82/2019 de 27 de junho — Bem-Estar de Animais de Companhia\n\n"
+                "Artigo 2.º — Âmbito de aplicação — Aplicável a cães, gatos e furões detidos para fins não comerciais.\n\n"
+                "Artigo 3.º — Obrigações de registo — Proprietários de cães e gatos devem proceder ao registo no SIAC com identificação eletrónica obrigatória.\n\n"
+                "Artigo 4.º — Identificação eletrónica — Via aplicação subcutânea de microchip (ISO 11784 e 11785).\n\n"
+                "Artigo 5.º — Procedimentos de registo — Procedimentos de registo, atualização e consulta do SIAC estabelecidos em regulação complementar.\n\n"
+                "Artigo 6.º — Controlos de acesso — Segurança de dados e autorização de acesso ao SIAC sob responsabilidade DGAV.\n\n"
+                "Artigo 7.º — Rastreabilidade — Sistema garante rastreabilidade de dispositivos de identificação e proprietários.\n\n"
+                "[dim]Lei n.º 27/2016 de 23 de agosto — Rede de Centros de Recolha e Proibição do Abate\n\n"
+                "Artigo 1.º — Objeto — Aprova medidas para criação de rede de centros de recolha oficial de animais errantes.\n\n"
+                "Artigo 2.º — Definições — Centros de recolha, abrigos, famílias de acolhimento — conceitos e categorias.\n\n"
+                "Artigos 3.º-9.º — Estrutura e Funcionamento — Procedimentos de registo, aprovação, funcionamento e supervisão."
+            ),
+        },
+
+        "divergencia": {
+            "legislacao": (
+                "ANÁLISE POR PONTO:\n\n"
+                "PONTO 1 (Cães/gatos registados): ✅ CONFORMIDADE COMPLETA\n"
+                "SIAC operacional desde 2019 (DL 82/2019) — registo obrigatório e eletrónico. Dados disponíveis anualmente.\n\n"
+                "PONTO 1a (Estabelecimentos registados): ⚠️ CONFORMIDADE PARCIAL\n"
+                "Lei 27/2016 e DL 82/2019 cobrem criação, venda, abrigos. LACUNA: conceito \"famílias de acolhimento\" não explicitamente codificado em legislação vigente.\n\n"
+                "PONTO 2 (Estabelecimentos aprovados): ❌ LACUNA CRÍTICA\n"
+                "Legislação vigente menciona REGISTO de estabelecimentos de criação. FALTA: sistema específico de \"aprovação\" formal (vs. apenas registo). "
+                "Portarias específicas de aprovação existem para outros setores (científico) — NÃO claramente para criadores de animais de companhia.\n\n"
+                "PONTO 2a (Suspensão/revogação): ❌ LACUNA CRÍTICA\n"
+                "DL 82/2019 e Lei 27/2016 NÃO mencionam procedimentos de suspensão ou revogação de aprovação de estabelecimentos."
+            ),
+            "codigo": (
+                "ANÁLISE POR PONTO:\n\n"
+                "PONTO 1: ✅ CONFORMIDADE COMPLETA\n"
+                "Arts. 55.º-56.º estabelecem base de dados nacional com classificação detalhada de animais. Sistema estruturado.\n\n"
+                "PONTO 1a: ❌ NÃO IMPLEMENTADO\n"
+                "Código do Animal não estabelece sistema específico de registo de estabelecimentos de criação, venda, abrigos, famílias de acolhimento.\n\n"
+                "PONTO 2: ❌ NÃO IMPLEMENTADO\n"
+                "Código do Animal não estabelece sistema de aprovação de criadores.\n\n"
+                "PONTO 2a: ❌ NÃO IMPLEMENTADO\n"
+                "Código do Animal não menciona suspensão/revogação de aprovação."
+            ),
+            "rgbeac": (
+                "ANÁLISE POR PONTO:\n\n"
+                "PONTO 1: ✅ CONFORMIDADE COMPLETA\n"
+                "Art. 20.º (SIAC) — registo obrigatório e operacional. Relatório nacional anual possível (Art. 46.º).\n\n"
+                "PONTO 1a: ⚠️ CONFORMIDADE PARCIAL\n"
+                "Art. 20.º implicitamente cobre estabelecimentos através de rastreabilidade de dispositivos. "
+                "REQUER complementação: codificação explícita de registo de \"famílias de acolhimento\".\n\n"
+                "PONTO 2: ❌ NÃO IMPLEMENTADO\n"
+                "RGBEAC não menciona sistema de aprovação de criadores.\n\n"
+                "PONTO 2a: ❌ NÃO IMPLEMENTADO\n"
+                "RGBEAC não menciona suspensão/revogação de aprovação."
+            ),
+            "sumario": (
+                "CONCLUSÃO GERAL:\n\n"
+                "Legislação portuguesa implementa PARCIALMENTE os 4 pontos de Annex III (dados para relatório trienal à Comissão UE):\n\n"
+                "✅ PONTO 1 — COBERTURA COMPLETA: SIAC operacional desde 2019. Dados de cães/gatos registados disponíveis anualmente.\n\n"
+                "⚠️ PONTO 1a — COBERTURA PARCIAL: Sistema de registo de estabelecimentos existe (Lei 27/2016); conceito "
+                "\"famílias de acolhimento\" requer codificação explícita.\n\n"
+                "❌ PONTO 2 — LACUNA ESTRUTURAL: Falta sistema formal de \"aprovação\" de criadores. Existe apenas registo administrativo. "
+                "Necessário: distinguir registo (mera inscrição) de aprovação (avaliação de conformidade com requisitos técnicos).\n\n"
+                "❌ PONTO 2a — LACUNA ESTRUTURAL: Falta procedimentos formais de suspensão/revogação de aprovação. "
+                "Necessário: mecanismo administrativo com critérios de suspensão e revogação.\n\n"
+                "RECOMENDAÇÕES:\n"
+                "1. Complementar Lei 27/2016 com definição e registo de \"famílias de acolhimento\" (ponto 1a).\n"
+                "2. Criar sistema de aprovação prévia de estabelecimentos de criação, com avaliação de conformidade (ponto 2).\n"
+                "3. Estabelecer procedimentos formais de suspensão/revogação com critérios administrativos (ponto 2a).\n"
+                "4. Integrar dados coletados em relatório trienal da Comissão UE (conforme Art. 20 do Regulamento)."
+            ),
+        },
+
+        "necessidade_alteracao": "Sim — Estabelecer sistema de aprovação, suspensão e revogação de estabelecimentos de criação + codificar famílias de acolhimento",
+        "notas": (
+            "ANNEX III define dados OBRIGATÓRIOS para relatório trienal à Comissão UE (Art. 20 do Regulamento). "
+            "SIAC português fornece dados para ponto 1 (cães/gatos registados) — sistema operacional desde 2019. "
+            "Pontos 2 e 2a requerem regulação complementar urgente: aprovação formal de criadores (vs. apenas registo) + procedimentos de suspensão/revogação. "
+            "Ponto 1a (estabelecimentos) — codificação explícita de \"famílias de acolhimento\" como categoria administrativa. "
+            "Recomenda-se: Lei complementar ou Portaria reguladora para implementação completa dos 4 pontos antes do próximo período de reporte (trienal)."
+        )
     }
 ]
 
