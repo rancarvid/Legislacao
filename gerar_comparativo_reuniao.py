@@ -2288,6 +2288,267 @@ ARTIGOS = [
         },
         "necessidade_alteracao": "Sim",
         "notas": "Estrutura de anexos presente mas sem mecanismo de delegação de autoridade para atos delegados/execução conforme Reg. EU."
+    },
+    {
+        "id": "ART-23",
+        "tema": "Exercício da Delegação",
+        "regulamento": {
+            "ref": "Art.º 23.º do Regulamento 2023/0447",
+            "titulo": "Exercise of the delegation",
+            "texto": (
+                "1 — The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article.\n\n"
+                "2 — The power to adopt delegated acts referred to in Article 6(2b), Article 6a(3), Article 10(2) and Article 22 shall be "
+                "conferred on the Commission for an indeterminate period of time from [the date of entry into force of this Regulation].\n\n"
+                "3 — The delegation of power referred to in Article 6(2b), Article 6a(3), Article 10(2) and Article 22 may be revoked at any "
+                "time by the European Parliament or by the Council. A decision to revoke shall put an end to the delegation of the power "
+                "specified in that decision. It shall take effect the day following the publication of the decision in the Official Journal "
+                "of the European Union or at a later date specified therein. It shall not affect the validity of any delegated acts already in force.\n\n"
+                "4 — Before adopting a delegated act, the Commission shall consult experts designated by each Member State in accordance with "
+                "the principles laid down in the Interinstitutional Agreement of 13 April 2016 on Better Law-Making.\n\n"
+                "5 — As soon as it adopts a delegated act, the Commission shall notify it simultaneously to the European Parliament and to the Council.\n\n"
+                "6 — A delegated act adopted pursuant to Article 6(2b), Article 6a(3), Article 10(2) and Article 22 shall enter into force only "
+                "if no objection has been expressed either by the European Parliament or by the Council within a period of two months of notification "
+                "of that act to the European Parliament and the Council or if, before the expiry of that period, the European Parliament and the Council "
+                "have both informed the Commission that they will not object. That period shall be extended by two months at the initiative of the "
+                "European Parliament or of the Council."
+            ),
+            "traducao": (
+                "1 — O poder de adotar atos delegados é conferido à Comissão nas condições estabelecidas no presente artigo.\n\n"
+                "2 — O poder de adotar atos delegados referido no artigo 6.º, n.º 4, no artigo 10.º, n.º 2, e no artigo 22.º é conferido à Comissão "
+                "por tempo indeterminado a partir de [data de entrada em vigor do presente regulamento].\n\n"
+                "3 — A delegação de poderes referida no artigo 6.º, n.º 4, no artigo 10.º, n.º 2, e no artigo 22.º pode ser revogada em qualquer "
+                "momento pelo Parlamento Europeu ou pelo Conselho. A decisão de revogação põe termo à delegação dos poderes nela especificados. "
+                "A decisão de revogação produz efeitos a partir do dia seguinte ao da sua publicação no Jornal Oficial da União Europeia ou de uma "
+                "data posterior nela especificada. A decisão de revogação não afeta os atos delegados já em vigor.\n\n"
+                "4 — Antes de adotar um ato delegado, a Comissão consulta os peritos designados por cada Estado-Membro de acordo com os princípios "
+                "estabelecidos no Acordo Interinstitucional, de 13 de abril de 2016, sobre legislar melhor.\n\n"
+                "5 — Assim que adotar um ato delegado, a Comissão notifica-o simultaneamente ao Parlamento Europeu e ao Conselho.\n\n"
+                "6 — Os atos delegados adotados nos termos do artigo 6.º, n.º 4, do artigo 10.º, n.º 2, e do artigo 22.º só entram em vigor se não "
+                "tiverem sido formuladas objeções pelo Parlamento Europeu ou pelo Conselho no prazo de dois meses a contar da notificação desse ato "
+                "ao Parlamento Europeu e ao Conselho, ou se, antes do termo desse prazo, o Parlamento Europeu e o Conselho tiverem informado a "
+                "Comissão de que não têm objeções a formular. O referido prazo é prorrogado por dois meses por iniciativa do Parlamento Europeu ou "
+                "do Conselho."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo processual do Regulamento europeu — sem correspondência em legislação portuguesa."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre procedimento de delegação de atos à Comissão Europeia."
+    },
+    {
+        "id": "ART-24",
+        "tema": "Procedimento de Comité",
+        "regulamento": {
+            "ref": "Art.º 24.º do Regulamento 2023/0447",
+            "titulo": "Committee procedure",
+            "texto": (
+                "1 — The Commission shall be assisted by the Standing Committee on Plants, Animals, Food and Feed established by Article 58(1) "
+                "of Regulation (EC) No 178/2002. That Committee shall be a committee within the meaning of Regulation (EU) No 182/2011.\n\n"
+                "2 — Where reference is made to this paragraph, Article 5 of Regulation (EU) No 182/2011 shall apply.\n\n"
+                "3 — Where the Committee delivers no opinion, the Commission shall not adopt the draft implementing act and Article 5(4), third "
+                "subparagraph, of Regulation (EU) No 182/2011 shall apply."
+            ),
+            "traducao": (
+                "1 — A Comissão é assistida pelo Comité Permanente dos Vegetais, Animais e dos Alimentos para Consumo Humano e Animal criado pelo "
+                "artigo 58.º, n.º 1, do Regulamento (CE) n.º 178/2002. Este comité deve ser entendido como comité na aceção do Regulamento (UE) "
+                "n.º 182/2011.\n\n"
+                "2 — Caso se faça referência ao presente número, aplica-se o artigo 5.º do Regulamento (UE) n.º 182/2011.\n\n"
+                "3 — Na falta de parecer do comité, a Comissão não adota o projeto de ato de execução, aplicando-se o artigo 5.º, n.º 4, terceiro "
+                "parágrafo, do Regulamento (UE) n.º 182/2011."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo processual do Regulamento europeu — sem correspondência em legislação portuguesa."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre procedimento de comité — assistência à Comissão Europeia."
+    },
+    {
+        "id": "ART-25",
+        "tema": "Medidas Nacionais Mais Rigorosas",
+        "regulamento": {
+            "ref": "Art.º 25.º do Regulamento 2023/0447",
+            "titulo": "Stricter national measures",
+            "texto": (
+                "1 — This Regulation shall not prevent Member States from maintaining or adopting any stricter national rules aimed at a more "
+                "extensive protection of the welfare of dogs and cats kept in establishments and the traceability of dogs and cats, provided that "
+                "those rules are not inconsistent with this Regulation and do not interfere with the proper functioning of the internal market.\n\n"
+                "1a — Member States shall inform the Commission about such existing national rules by [the date of application of this Regulation] "
+                "and shall inform the Commission about such new national rules before their adoption, unless Member States have notified the draft "
+                "national rules in accordance with Directive (EU) 2015/1535. The Commission shall bring them to the attention of the other Member States.\n\n"
+                "2 — A Member State that has stricter national rules referred to in paragraph 1 shall not prohibit or impede the placing on the "
+                "market within its territory of dogs and cats kept in another Member State on the grounds that the dogs and cats concerned have not "
+                "been kept in accordance with its stricter national rules."
+            ),
+            "traducao": (
+                "1 — O presente regulamento não obsta a que os Estados-Membros mantenham disposições nacionais mais rigorosas que visem uma proteção "
+                "mais ampla do bem-estar dos cães e gatos detidos em estabelecimentos e a rastreabilidade dos cães e gatos, desde que essas disposições "
+                "não sejam incompatíveis com o presente regulamento e não interfiram com o bom funcionamento do mercado interno.\n\n"
+                "1a — Os Estados-Membros devem informar a Comissão acerca de tais disposições nacionais existentes até [data de aplicação do presente "
+                "regulamento] e devem informar a Comissão acerca de tais disposições nacionais novas antes da sua adoção, salvo se os Estados-Membros "
+                "tiverem notificado os projetos de disposições nacionais em conformidade com a Diretiva (UE) 2015/1535. A Comissão transmite essas "
+                "informações aos outros Estados-Membros.\n\n"
+                "2 — Um Estado-Membro que tenha disposições nacionais mais rigorosas referidas no n.º 1 não pode proibir ou impedir a colocação no "
+                "mercado, no seu território, de cães e gatos detidos noutro Estado-Membro com o fundamento de que os cães e gatos em causa não estiveram "
+                "detidos em conformidade com as suas disposições nacionais mais rigorosas."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo sobre direitos dos Estados-Membros de manter ou adoptar medidas mais rigorosas."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre liberdade de Estados-Membros para legislação mais rigorosa."
+    },
+    {
+        "id": "ART-26",
+        "tema": "Relatórios e Avaliação",
+        "regulamento": {
+            "ref": "Art.º 26.º do Regulamento 2023/0447",
+            "titulo": "Reporting and evaluation",
+            "texto": (
+                "1 — On the basis of the reports received in accordance with Article 20 and any additional relevant information, the Commission shall "
+                "publish, by [7 years from the date of entry into force of this Regulation] and thereafter every 3 years, a monitoring report on the "
+                "welfare of dogs and cats placed on the market in the Union.\n\n"
+                "2 — By 14 years from the date of entry into force of this Regulation, the Commission shall carry out an evaluation of this Regulation "
+                "and present a report on the main findings to the European Parliament, the Council, the European Economic and Social Committee, and the "
+                "Committee of the Regions. In particular, the Commission shall assess:\n\n"
+                "a) the extent to which this Regulation has contributed to ensuring a high level of welfare for dogs and cats, improving traceability, "
+                "reducing illegal trade;\n\n"
+                "b) the impact of this Regulation on operators of breeding and selling establishments and of shelters, and operators placing dogs and "
+                "cats in foster homes, including the administrative burden and compliance costs.\n\n"
+                "3 — For the purposes of the reporting referred to in paragraph 2, Member States shall provide the Commission with the information "
+                "necessary for the preparation of the report."
+            ),
+            "traducao": (
+                "1 — Com base nos relatórios recebidos em conformidade com o artigo 20.º e em informações adicionais pertinentes, a Comissão publica, "
+                "até [7 anos após a data de entrada em vigor do presente regulamento] e, posteriormente, de três em três anos, um relatório de monitorização "
+                "sobre o bem-estar dos cães e gatos colocados no mercado da União.\n\n"
+                "2 — Até [14 anos a contar da data de entrada em vigor do presente regulamento], a Comissão procede a uma avaliação do presente regulamento "
+                "e apresenta um relatório sobre as principais conclusões ao Parlamento Europeu, ao Conselho, ao Comité Económico e Social Europeu e ao Comité "
+                "das Regiões. Em particular, a Comissão avalia:\n\n"
+                "a) O grau em que o presente regulamento contribuiu para assegurar um elevado nível de bem-estar dos cães e gatos, melhorando a rastreabilidade, "
+                "reduzindo o comércio ilegal;\n\n"
+                "b) O impacto do presente regulamento nos operadores de estabelecimentos de criação e venda e de abrigos, e nos operadores que colocam cães e gatos "
+                "em lares de acolhimento, incluindo o encargo administrativo e os custos de conformidade.\n\n"
+                "3 — Para efeitos dos relatórios referidos no n.º 2, os Estados-Membros devem fornecer à Comissão as informações necessárias para a elaboração "
+                "dos mesmos."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo sobre obrigações de relatório e avaliação pela Comissão Europeia."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre relatórios de monitorização e avaliação do Regulamento."
+    },
+    {
+        "id": "ART-27",
+        "tema": "Sanções",
+        "regulamento": {
+            "ref": "Art.º 27.º do Regulamento 2023/0447",
+            "titulo": "Penalties",
+            "texto": (
+                "1 — Member States shall lay down the rules on penalties applicable to infringements of this Regulation, including those resulting "
+                "from the abandonment by operators of dogs and cats, and shall take all measures necessary to ensure that they are implemented. The "
+                "penalties provided for shall be effective, proportionate and dissuasive.\n\n"
+                "2 — Member States shall notify the Commission of those rules and of those measures and shall notify it, without delay, of any "
+                "subsequent amendment affecting them."
+            ),
+            "traducao": (
+                "1 — Os Estados-Membros estabelecem as regras relativas às sanções aplicáveis em caso de violação do disposto no presente regulamento, "
+                "incluindo as resultantes do abandono de cães e gatos por parte de operadores, e tomam todas as medidas necessárias para garantir a sua "
+                "aplicação. As sanções previstas devem ser efetivas, proporcionadas e dissuasivas.\n\n"
+                "2 — Os Estados-Membros notificam a Comissão dessas regras e dessas medidas e também, sem demora, de qualquer alteração ulterior das mesmas."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo sobre responsabilidade dos Estados-Membros em estabelecer sanções por infração."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre regime sancionatório a ser definido pelos Estados-Membros."
+    },
+    {
+        "id": "ART-28",
+        "tema": "Entrada em Vigor e Aplicação",
+        "regulamento": {
+            "ref": "Art.º 28.º do Regulamento 2023/0447",
+            "titulo": "Entry into force and application",
+            "texto": (
+                "1 — This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the "
+                "European Union.\n\n"
+                "2 — It shall apply from [2 years from the date of entry into force of this Regulation], except:\n\n"
+                "a) Article 13 that shall apply from [3 years from the date of entry into force of this Regulation];\n\n"
+                "b) Article 6a(2) that shall apply from 1 July 2030;\n\n"
+                "c) Article 12, Article 17a(3)(c), (4) and (6), Article 18(a),(b) and (ba), Article 19(2) and (2a), and Article 21(1) to (4) that shall "
+                "apply from [5 years from the date of entry into force of this Regulation];\n\n"
+                "d) Article 9(2) and (2a) that shall apply from [7 years from the date of entry into force of this Regulation];\n\n"
+                "e) Article 7a that shall apply from [8 years from the date of entry into force of this Regulation];\n\n"
+                "f) Article 21(4a) that shall apply from [10 years from the entry into force of the Regulation] and;\n\n"
+                "g) second subparagraph of Article 17(1) and (2), Article 17a(3) and Article 19(1) that shall apply from [4 years from entry into force "
+                "of this Regulation], except for pet owners and other natural or legal persons, other than operators, who do not place dogs or cats on "
+                "the market, for whom Article 17(1) and (2) shall apply from [10 years from entry into force of this Regulation] in the case of identification "
+                "and registration of dogs and [15 years from the entry into force of this Regulation] in the case of identification and registration of cats.\n\n"
+                "3 — This Regulation shall be binding in its entirety and directly applicable in all Member States."
+            ),
+            "traducao": (
+                "1 — O presente regulamento entra em vigor no vigésimo dia seguinte ao da sua publicação no Jornal Oficial da União Europeia.\n\n"
+                "2 — O presente regulamento é aplicável a partir de [2 anos após a data de entrada em vigor do presente regulamento], salvo:\n\n"
+                "a) O artigo 13.º que é aplicável a partir de [3 anos após a data de entrada em vigor do presente regulamento];\n\n"
+                "b) O artigo 6a, n.º 2 que é aplicável a partir de 1 de julho de 2030;\n\n"
+                "c) O artigo 12.º, artigo 17a (n.º 3, alíneas c, d e f), artigo 18.º (alíneas a, b e ba), artigo 19.º (n.ºs 2 e 2a) e artigo 21.º (n.ºs 1 a 4) "
+                "que são aplicáveis a partir de [5 anos após a data de entrada em vigor do presente regulamento];\n\n"
+                "d) O artigo 9.º (n.ºs 2 e 2a) que é aplicável a partir de [7 anos após a data de entrada em vigor do presente regulamento];\n\n"
+                "e) O artigo 7a que é aplicável a partir de [8 anos após a data de entrada em vigor do presente regulamento];\n\n"
+                "f) O artigo 21.º, n.º 4a que é aplicável a partir de [10 anos após a entrada em vigor do regulamento] e;\n\n"
+                "g) O segundo parágrafo do artigo 17.º (n.ºs 1 e 2), artigo 17a (n.º 3) e artigo 19.º, n.º 1 que são aplicáveis a partir de [4 anos após a "
+                "entrada em vigor do presente regulamento], com exceção dos proprietários de animais de estimação e outras pessoas singulares ou coletivas, "
+                "que não sejam operadores, que não colocam cães ou gatos no mercado, para os quais o artigo 17.º (n.ºs 1 e 2) é aplicável a partir de [10 anos "
+                "após a entrada em vigor do presente regulamento] no caso da identificação e registo de cães e [15 anos após a entrada em vigor do presente "
+                "regulamento] no caso da identificação e registo de gatos.\n\n"
+                "3 — O presente regulamento é obrigatório em todos os seus elementos e diretamente aplicável em todos os Estados-Membros."
+            )
+        },
+        "rgbeac": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "codigo": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "legislacao": {"ref": "Não se aplica", "texto": "Não se aplica"},
+        "divergencia": {
+            "legislacao": "Não se aplica",
+            "codigo": "Não se aplica",
+            "rgbeac": "Não se aplica",
+            "sumario": "Artigo sobre entrada em vigor e aplicação do Regulamento."
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "Artigo sobre entrada em vigor, períodos de aplicação escalonados e obrigatoriedade do Regulamento."
     }
 ]
 
