@@ -2707,9 +2707,9 @@ ARTIGOS = [
             )
         },
         "rgbeac": {
-            "ref": "Arts. 34-40 do RGBEAC (proposta, jun. 2025)",
+            "ref": "Sem equivalência específica",
             "texto": (
-                "[Verificar específico RGBEAC para correspondências]"
+                "Sem equivalência identificada no @RGBEAC para os requisitos técnicos específicos de temperatura, iluminação e espaço do ANNEX I, Ponto 2 do Regulamento."
             )
         },
         "codigo": {
@@ -2765,8 +2765,8 @@ ARTIGOS = [
                 "iluminação quantificada (7h luz/80Hz, 8h sem luz), espaço mínimo por tamanho/idade."
             ),
             "rgbeac": (
-                "CONVERGÊNCIA COMPLETA\n"
-                "RGBEAC implementa integralmente os requisitos do Regulamento: temperatura, iluminação, espaço e áreas de parto específicas."
+                "SEM EQUIVALÊNCIA ESPECÍFICA\n"
+                "Não foi identificada correspondência específica no @RGBEAC para os requisitos técnicos detalhados de temperatura, iluminação e espaço do ANNEX I, Ponto 2 do Regulamento."
             ),
             "sumario": (
                 "ANNEX I, Ponto 2 do Regulamento especifica requisitos técnicos detalhados: temperatura por fase (parto de cães 22-28°C; gatos 18-27°C), "
