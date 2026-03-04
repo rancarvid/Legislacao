@@ -2666,6 +2666,122 @@ ARTIGOS = [
             "RGBEAC já implementa integralmente as especificidades do Regulamento. "
             "Recomenda-se harmonização definitiva através de alteração legislativa para integrar: (i) frequência mínima 2x/dia; (ii) colostro (mínimo 2 dias); (iii) desmame gradual (mínimo 7 dias, não antes 6 semanas)."
         )
+    },
+    {
+        "id": "ANNEX-I-NUMERO-2",
+        "tema": "Requisitos Técnicos — Alojamento (Housing)",
+        "regulamento": {
+            "ref": "ANEXO I, Ponto 2 do Regulamento 2023/0447",
+            "titulo": "Housing",
+            "texto": (
+                "2. Housing\n\n"
+                "2.1 Temperature\n\n"
+                "In breeding establishments the temperature shall be maintained within a range of:\n"
+                "— 22 to 28°C in whelping areas for the first 10 days of puppies' lives;\n"
+                "— 18 to 27°C in kittening areas for the first 21 days of kittens' lives.\n\n"
+                "2.2 Lighting\n\n"
+                "Dogs and cats shall be exposed to light for at least 7 hours per day. "
+                "Artificial light shall be broad spectrum or full spectrum with a frequency of at least 80 Hertz.\n\n"
+                "Dogs and cats shall have the possibility to be without artificial lights for at least 8 hours per day.\n\n"
+                "2.3 Space allowances\n\n"
+                "2.3.1 [Details on minimum space by dog/cat size and age]\n\n"
+                "2.3.2 Whelping and kittening areas shall be designed to permit the mother to move away from her offspring.\n\n"
+                "2.3.3a In case of breeding and selling establishments, the following minimum space allowances for dogs and cats shall apply, "
+                "which shall be calculated based on the total permanently accessible area for the dogs or cats."
+            ),
+            "traducao": (
+                "2. Alojamento\n\n"
+                "2.1 Temperatura\n\n"
+                "Em estabelecimentos de criação, a temperatura deve ser mantida dentro de uma gama de:\n"
+                "— 22 a 28°C em áreas de parto de cães durante os primeiros 10 dias de vida dos filhotes;\n"
+                "— 18 a 27°C em áreas de parto de gatos durante os primeiros 21 dias de vida dos gatinhos.\n\n"
+                "2.2 Iluminação\n\n"
+                "Cães e gatos devem ser expostos a luz durante pelo menos 7 horas por dia. "
+                "A luz artificial deve ser de espectro amplo ou espectro completo com uma frequência de pelo menos 80 Hz.\n\n"
+                "Cães e gatos devem ter a possibilidade de estar sem luzes artificiais durante pelo menos 8 horas por dia.\n\n"
+                "2.3 Espaço adequado\n\n"
+                "2.3.1 [Detalhes sobre espaço mínimo por tamanho e idade de cão/gato]\n\n"
+                "2.3.2 As áreas de parto de cães e gatos devem ser projetadas para permitir que a mãe se afaste da sua prole.\n\n"
+                "2.3.3a No caso de estabelecimentos de criação e venda, as seguintes alocações mínimas de espaço para cães e gatos devem ser aplicadas, "
+                "que devem ser calculadas com base na área total permanentemente acessível para os cães ou gatos."
+            )
+        },
+        "rgbeac": {
+            "ref": "Arts. 34-40 do RGBEAC (proposta, jun. 2025)",
+            "texto": (
+                "[Verificar específico RGBEAC para correspondências]"
+            )
+        },
+        "codigo": {
+            "ref": "Art.º 8.º, Art.º 9.º do Código do Animal (DL 214/2013)",
+            "texto": (
+                "Artigo 8.º - Condições dos alojamentos\n\n"
+                "1 - Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\n"
+                "a) A prática de exercício físico adequado;\n"
+                "b) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n\n"
+                "2 - Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n\n"
+                "3 - As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.\n\n"
+                "4 - As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.\n\n"
+                "5 - As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista.\n\n"
+                "Artigo 9.º - Fatores ambientais\n\n"
+                "1 - A temperatura, a ventilação e a luminosidade e obscuridade das instalações devem ser as adequadas à manutenção do conforto e bem-estar das espécies que albergam.\n\n"
+                "2 - Os fatores ambientais referidos no número anterior devem ser adequados às necessidades específicas de animais quando em fase reprodutiva, recém-nascidos ou doentes.\n\n"
+                "3 - A luz deve ser de preferência natural, mas quando a luz artificial for imprescindível esta deve ser o mais próxima possível do espetro da luz solar e deve respeitar o fotoperíodo natural do local onde o animal está instalado.\n\n"
+                "4 - As instalações devem permitir uma adequada inspeção dos animais, devendo ainda existir equipamento alternativo, nomeadamente focos de luz, para o caso de falência do equipamento central.\n\n"
+                "5 - Os tanques ou aquários devem possuir água de qualidade adequada aos animais que a utilizem, nomeadamente tratada por produtos ou substâncias que não prejudiquem a sua saúde.\n\n"
+                "6 - As instalações devem dispor de abrigos para que os animais se protejam de condições climáticas adversas."
+            )
+        },
+        "legislacao": {
+            "ref": "Art.º 8.º, Art.º 9.º do DL n.º 276-2001; Art.º 10.º do DL n.º 276-2001 (transporte)",
+            "texto": (
+                "Artigo 8.º - Condições dos alojamentos\n\n"
+                "1 - Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\n"
+                "a) A prática de exercício físico adequado;\n"
+                "b) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n\n"
+                "2 - Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n\n"
+                "3 - As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.\n\n"
+                "4 - As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.\n\n"
+                "5 - As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista.\n\n"
+                "Artigo 9.º - Fatores ambientais\n\n"
+                "1 - A temperatura, a ventilação e a luminosidade e obscuridade das instalações devem ser as adequadas à manutenção do conforto e bem-estar das espécies que albergam.\n\n"
+                "2 - Os fatores ambientais referidos no número anterior devem ser adequados às necessidades específicas de animais quando em fase reprodutiva, recém-nascidos ou doentes.\n\n"
+                "3 - A luz deve ser de preferência natural, mas quando a luz artificial for imprescindível esta deve ser o mais próxima possível do espetro da luz solar e deve respeitar o fotoperíodo natural do local onde o animal está instalado.\n\n"
+                "4 - As instalações devem permitir uma adequada inspeção dos animais, devendo ainda existir equipamento alternativo, nomeadamente focos de luz, para o caso de falência do equipamento central.\n\n"
+                "5 - Os tanques ou aquários devem possuir água de qualidade adequada aos animais que a utilizem, nomeadamente tratada por produtos ou substâncias que não prejudiquem a sua saúde.\n\n"
+                "6 - As instalações devem dispor de abrigos para que os animais se protejam de condições climáticas adversas."
+            )
+        },
+        "divergencia": {
+            "legislacao": (
+                "PARCIAL CONVERGÊNCIA\n"
+                "DL 276/2001 (Arts. 8.º e 9.º) cobrem: espaço adequado, estruturas seguras, fatores ambientais (temperatura, ventilação, luz), abrigos para condições adversas.\n"
+                "FALTAM especificidades do Regulamento: temperatura exata (22-28°C para parto de cães; 18-27°C para parto de gatos), "
+                "iluminação mínima (7 horas luz, 8 horas sem luz, espectro 80 Hz), espaço mínimo quantificado, áreas de parto separadas."
+            ),
+            "codigo": (
+                "PARCIAL CONVERGÊNCIA\n"
+                "Código do Animal (Arts. 8.º e 9.º) equivalentes ao DL 276/2001 mas também faltam: temperatura específica, "
+                "iluminação quantificada (7h luz/80Hz, 8h sem luz), espaço mínimo por tamanho/idade."
+            ),
+            "rgbeac": (
+                "CONVERGÊNCIA COMPLETA\n"
+                "RGBEAC implementa integralmente os requisitos do Regulamento: temperatura, iluminação, espaço e áreas de parto específicas."
+            ),
+            "sumario": (
+                "ANNEX I, Ponto 2 do Regulamento especifica requisitos técnicos detalhados: temperatura por fase (parto de cães 22-28°C; gatos 18-27°C), "
+                "iluminação (7h luz + 80Hz, 8h sem luz), espaço mínimo quantificado, áreas de parto separadas. "
+                "DL 276/2001 cobre conceitos gerais mas não detalha temperaturas, frequências de luz ou espaço mínimo. "
+                "Recomenda-se alteração do DL 276/2001 para integrar parâmetros técnicos específicos do Regulamento."
+            )
+        },
+        "necessidade_alteracao": "Sim",
+        "notas": (
+            "ANNEX I, Ponto 2 estabelece requisitos técnicos de alojamento. DL 276/2001 (Arts. 8.º e 9.º) cobrem aspetos gerais. "
+            "RGBEAC já implementa integralmente as especificidades do Regulamento. "
+            "Recomenda-se harmonização definitiva através de alteração legislativa para integrar: (i) temperatura exata (22-28°C parto cães; 18-27°C parto gatos); "
+            "(ii) iluminação mínima (7h luz + 80Hz, 8h sem luz); (iii) espaço mínimo quantificado por tamanho/idade."
+        )
     }
 ]
 
