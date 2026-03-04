@@ -35,6 +35,9 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 | `@legislacao` | `Portaria 148_2016 - Estabelece a obrigatoriedade de registo dos cães que integrem matilhas de caça maior, bem como dos respetivos proprietários e matilheiros, prevendo as respetivas regras_ocred.docx` | Portaria n.º 148/2016 — Matilhas de caça maior |
 | `@legislacao` | `Portaria n.º 264_2013 - Aprova as normas técnicas de execução regulamentar do Programa Nacional de Luta e Vigilância Epidemiológica da Raiva Animal e Outras Zoonoses_ocred.docx` | Portaria n.º 264/2013 — PNLVERAZ (raiva e zoonoses) |
 | `@legislacao` | `DECRET~1.DOC` | Decreto-Lei (legislação vigente adicional) |
+| `@legislacao` | `Portaria 148_2016 - (...).docx` | Portaria n.º 148/2016 — Matilhas de caça maior |
+| `@legislacao` | `Portaria n.º 264_2013 - (...).docx` | Portaria n.º 264/2013 — PNLVERAZ (raiva e zoonoses) |
+| `@legislacao` | `DECRET~1.DOC` | Decreto-Lei n. 74_2007, de 27 de Março - Direito de acesso das pessoas com deficiência acompanhadas de cães de assistência.docx |
 
 > **Regra de classificação**: Tudo o que não for `@codigo`, `@rgbeac` ou `@regulamento` integra o grupo `@legislacao`.
 
