@@ -379,46 +379,101 @@ def add_article_section(doc, art):
               COR["legislacao_body"],
               ref_text=art["legislacao"]["ref"])
 
-    # ── Divergência estruturada (4 secções) ───────────────────────────────
+    # ── Divergência estruturada (3 colunas + sumário merged) ───────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)
-    t_div = doc.add_table(rows=1, cols=1)
+    t_div = doc.add_table(rows=3, cols=3)
     set_table_width(t_div, pct=5000)
-    cell_header(t_div.cell(0, 0),
-                f"DIVERGÊNCIA FACE AO REGULAMENTO  ·  Necessidade de alteração: {art['necessidade_alteracao']}",
-                COR["divergencia_header"])
 
     div = art.get("divergencia", {})
-    secoes = [
-        (div.get("legislacao", ""), "@legislacao", COR["legislacao_header"], COR["legislacao_body"]),
-        (div.get("codigo",     ""), "@codigo",     COR["codigo_header"],     COR["codigo_body"]),
-        (div.get("rgbeac",     ""), "@rgbeac",     COR["rgbeac_header"],     COR["rgbeac_body"]),
-        (div.get("sumario",    ""), "Sumário / Proposta", COR["divergencia_header"], COR["divergencia_body"]),
-    ]
-    for texto_sec, label_sec, hdr_cor, body_cor in secoes:
-        if not texto_sec:
-            continue
-        row = t_div.add_row()
-        c_label = row.cells[0]
-        set_cell_bg(c_label, hdr_cor)
-        set_cell_borders(c_label, hdr_cor)
-        p_l = c_label.paragraphs[0]
-        p_l.paragraph_format.space_before = Pt(4)
-        p_l.paragraph_format.space_after = Pt(0)
-        p_l.paragraph_format.left_indent = Pt(6)
-        add_run_styled(p_l, label_sec, bold=True, font_size=8.5, color_hex="FFFFFF")
 
-        row2 = t_div.add_row()
-        c_body = row2.cells[0]
-        set_cell_bg(c_body, body_cor)
-        set_cell_borders(c_body)
-        set_cell_vertical_align(c_body, "top")
-        first = [True]
-        p = _add_para(c_body, first)
-        p.paragraph_format.space_before = Pt(4)
-        p.paragraph_format.space_after = Pt(4)
-        p.paragraph_format.left_indent = Pt(6)
-        p.paragraph_format.right_indent = Pt(6)
-        add_run_styled(p, texto_sec.strip(), font_size=9, color_hex="222222")
+    # Linha 0: Headers (3 colunas) — Ordem: RGBEAC | CÓDIGO | LEGISLAÇÃO
+    cell_header(t_div.cell(0, 0), "@rgbeac", COR["rgbeac_header"])
+    cell_header(t_div.cell(0, 1), "@codigo", COR["codigo_header"])
+    cell_header(t_div.cell(0, 2), "@legislacao", COR["legislacao_header"])
+
+    # Linha 1: Textos (3 colunas) — Ordem: RGBEAC | CÓDIGO | LEGISLAÇÃO
+    cell_body(t_div.cell(1, 0),
+              div.get("rgbeac", ""),
+              COR["rgbeac_body"])
+    cell_body(t_div.cell(1, 1),
+              div.get("codigo", ""),
+              COR["codigo_body"])
+    cell_body(t_div.cell(1, 2),
+              div.get("legislacao", ""),
+              COR["legislacao_body"])
+
+    # Linha 2: Sumário (merged 3 colunas com amplitude total)
+    cell_sumario = t_div.cell(2, 0)
+    set_cell_bg(cell_sumario, COR["divergencia_body"])
+    set_cell_borders(cell_sumario)
+    set_cell_vertical_align(cell_sumario, "top")
+
+    # Merge cells (2, 1) e (2, 2) com (2, 0)
+    for col_idx in [1, 2]:
+        cell_to_merge = t_div.cell(2, col_idx)
+        tc = cell_to_merge._tc
+        tcPr = tc.get_or_add_tcPr()
+        tcMerge = OxmlElement("w:tcMerge")
+        tcPr.append(tcMerge)
+
+    # Header do sumário (primeira linha da célula)
+    p_header = cell_sumario.paragraphs[0]
+    p_header.paragraph_format.space_before = Pt(4)
+    p_header.paragraph_format.space_after = Pt(6)
+    p_header.paragraph_format.left_indent = Pt(6)
+    p_header.paragraph_format.right_indent = Pt(4)
+    p_header.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    add_run_styled(p_header,
+                   f"Sumário / Proposta  ·  Necessidade de alteração: {art['necessidade_alteracao']}",
+                   bold=True, font_size=9, color_hex="222222")
+
+    # Corpo do sumário com parsing de alíneas
+    sumario_texto = div.get("sumario", "")
+    first = [True]
+    first[0] = False  # Já usamos o primeiro parágrafo para header
+
+    blocos = [b for b in sumario_texto.split("\n\n") if b.strip()]
+    for bi, bloco in enumerate(blocos):
+        is_dim = bloco.startswith("[dim]")
+        bloco_txt = bloco[5:].strip() if is_dim else bloco
+        dim_hex = "AAAAAA" if is_dim else "222222"
+
+        linhas = [l.strip() for l in bloco_txt.split("\n") if l.strip()]
+        for li, linha in enumerate(linhas):
+            kind = _classify_line(linha)
+            p = _add_para(cell_sumario, first)
+            p.paragraph_format.space_after = Pt(0)
+            p.paragraph_format.right_indent = Pt(4)
+
+            if li == 0 and bi == 0:
+                p.paragraph_format.space_before = Pt(2)
+            elif li == 0:
+                p.paragraph_format.space_before = Pt(7) if kind != "alinea" else Pt(5)
+            else:
+                p.paragraph_format.space_before = Pt(1)
+
+            if kind == "art-header":
+                p.paragraph_format.left_indent = Pt(4)
+                p.paragraph_format.first_line_indent = Pt(0)
+                if bi > 0:
+                    p.paragraph_format.space_before = Pt(10)
+                add_run_styled(p, linha, bold=True, italic=False,
+                               font_size=8.5, color_hex="333333")
+            elif kind == "sub":
+                p.paragraph_format.left_indent = Pt(34)
+                p.paragraph_format.first_line_indent = Pt(-14)
+                add_run_styled(p, linha, bold=False, italic=False,
+                               font_size=9, color_hex=dim_hex)
+            elif kind == "alinea":
+                p.paragraph_format.left_indent = Pt(18)
+                p.paragraph_format.first_line_indent = Pt(-14)
+                add_run_styled(p, linha, bold=False, italic=False,
+                               font_size=9, color_hex=dim_hex)
+            else:
+                p.paragraph_format.left_indent = Pt(4)
+                p.paragraph_format.first_line_indent = Pt(0)
+                add_run_styled(p, linha, bold=False, italic=False,
+                               font_size=9, color_hex=dim_hex)
 
     # ── Notas de Reunião ──────────────────────────────────────────────────
     doc.add_paragraph().paragraph_format.space_after = Pt(4)

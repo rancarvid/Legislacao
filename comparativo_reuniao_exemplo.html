@@ -128,6 +128,68 @@
   .div-tag.tag-sum  { background: var(--div); color: #fff; }
   .div-text { display: inline; font-size: .87rem; line-height: 1.6; }
 
+  /* DIVERGÊNCIA EM GRID (3 colunas + sumário) */
+  .divergencia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 1100px) { .divergencia-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 700px)  { .divergencia-grid { grid-template-columns: 1fr; } }
+
+  .div-col {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+  }
+  .div-col.leg .div-col-header { background: var(--leg); color: #fff; }
+  .div-col.leg .div-col-body   { background: var(--leg-bg); }
+  .div-col.cod .div-col-header { background: var(--cod); color: #fff; }
+  .div-col.cod .div-col-body   { background: var(--cod-bg); }
+  .div-col.rgb .div-col-header { background: var(--rgb); color: #fff; }
+  .div-col.rgb .div-col-body   { background: var(--rgb-bg); }
+
+  .div-col-header {
+    padding: 10px 12px;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+  }
+  .div-col-body {
+    padding: 12px;
+    flex: 1;
+    font-size: .87rem;
+    line-height: 1.6;
+    overflow-y: auto;
+    color: #222;
+  }
+
+  .div-sumario {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: var(--div-bg);
+  }
+  .div-sumario-header {
+    padding: 10px 12px;
+    background: var(--div);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+  }
+  .div-sumario-body {
+    padding: 12px;
+    font-size: .87rem;
+    line-height: 1.6;
+    color: #222;
+  }
+
   /* GRID 3 COLUNAS (diplomas nacionais) */
   .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
   @media (max-width: 1100px) { .grid { grid-template-columns: 1fr 1fr; } }
@@ -1385,17 +1447,34 @@ function formatarTexto(str) {
 
 function renderDiv(div) {
   if (!div) return '';
-  const secs = [
-    { cls: 'tag-leg', label: '@legislacao',  texto: div.legislacao },
-    { cls: 'tag-cod', label: '@codigo',      texto: div.codigo },
-    { cls: 'tag-rgb', label: '@rgbeac',      texto: div.rgbeac },
-    { cls: 'tag-sum', label: 'Sumário',      texto: div.sumario },
-  ];
-  return secs.map(s => `
-    <div class="div-section">
-      <span class="div-tag ${s.cls}">${s.label}</span>
-      <span class="div-text">${hl(s.texto)}</span>
-    </div>`).join('');
+
+  // Grid 3 colunas: rgbeac, codigo, legislacao (ordem da legislação equivalente)
+  const gridHTML = `
+    <div class="divergencia-grid">
+      <div class="div-col rgb">
+        <div class="div-col-header">@rgbeac</div>
+        <div class="div-col-body">${hl(div.rgbeac || '')}</div>
+      </div>
+      <div class="div-col cod">
+        <div class="div-col-header">@codigo</div>
+        <div class="div-col-body">${hl(div.codigo || '')}</div>
+      </div>
+      <div class="div-col leg">
+        <div class="div-col-header">@legislacao</div>
+        <div class="div-col-body">${hl(div.legislacao || '')}</div>
+      </div>
+    </div>
+  `;
+
+  // Sumário como linha comum abaixo
+  const sumarioHTML = `
+    <div class="div-sumario">
+      <div class="div-sumario-header">Sumário / Proposta</div>
+      <div class="div-sumario-body">${hl(div.sumario || '')}</div>
+    </div>
+  `;
+
+  return gridHTML + sumarioHTML;
 }
 
 /* ---- SIDEBAR ---- */
