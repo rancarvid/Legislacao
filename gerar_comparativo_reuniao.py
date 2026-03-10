@@ -13,6 +13,15 @@ import json
 import os
 
 # ---------------------------------------------------------------------------
+# SHAREPOINT — configuração de autenticação e ficheiro de notas
+# ---------------------------------------------------------------------------
+
+AZURE_CLIENT_ID = "119b5f9a-6927-4105-b07c-bad620b62f8b"
+SHAREPOINT_URL  = "https://dgavgovpt.sharepoint.com/:t:/s/BemEstardosAnimaisdeCompanhia/IQCn5z50smbVR7rSlTQBaXa7Abu7LFqbZaS2dNECtjfKc5w?e=pEeBAx"
+REDIRECT_URI    = "http://localhost:8080/redirect.html"
+MSAL_VERSION    = "2.38.0"
+
+# ---------------------------------------------------------------------------
 # DADOS — verbatim dos documentos
 # ---------------------------------------------------------------------------
 
@@ -1554,12 +1563,25 @@ def criar_html(path, artigos):
   }}
   .search-count {{ color: #90b0c8; font-size: .73rem; padding: 2px 20px 8px; }}
 </style>
+<script src="https://alcdn.msauth.net/browser/{MSAL_VERSION}/js/msal-browser.min.js"
+        crossorigin="anonymous"></script>
 </head>
 <body>
 
+<div id="login-banner" style="
+    display:flex; align-items:center; justify-content:center; gap:16px;
+    background:#1a5276; color:#fff; padding:10px 20px; font-size:.9rem;">
+  <span>Para carregar e guardar notas, inicia sessão com a tua conta Microsoft.</span>
+  <button onclick="loginMicrosoft()" style="
+      background:#fff; color:#1a5276; border:none; border-radius:4px;
+      padding:6px 14px; font-weight:600; cursor:pointer; white-space:nowrap;">
+    🔑 Entrar com Microsoft (dgavgovpt)
+  </button>
+</div>
+
 <header>
   <h1>Comparativo Artigo a Artigo — Regulamento 2023/0447 (Cães e Gatos)</h1>
-  <div style="display:flex;align-items:center;gap:16px;">
+  <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
     <div class="search-wrap">
       <input id="search-input" type="search"
              placeholder="🔍 Pesquisar palavra-chave…"
@@ -1569,6 +1591,14 @@ def criar_html(path, artigos):
               onclick="limparPesquisa()" title="Limpar pesquisa">✕</button>
     </div>
     <span id="progresso"></span>
+    <div id="user-info" style="display:none; margin-left:auto; font-size:.82rem; color:#cde; display:flex; align-items:center; gap:8px;">
+      <span id="user-name" style="font-weight:600;"></span>
+      <button onclick="logout()" style="
+          background:rgba(255,255,255,.15); color:#fff; border:1px solid rgba(255,255,255,.3);
+          border-radius:4px; padding:3px 10px; cursor:pointer; font-size:.8rem;">
+        Sair
+      </button>
+    </div>
   </div>
 </header>
 
@@ -1581,6 +1611,126 @@ def criar_html(path, artigos):
 
 <script>
 const ARTIGOS = {dados_json};
+
+// ── SHAREPOINT AUTH & SYNC ────────────────────────────────────────────────
+const _CLIENT_ID = "{AZURE_CLIENT_ID}";
+const _SHARE_URL = "{SHAREPOINT_URL}";
+const _REDIRECT  = "{REDIRECT_URI}";
+
+const _msal = new msal.PublicClientApplication({{
+  auth: {{
+    clientId:    _CLIENT_ID,
+    authority:   "https://login.microsoftonline.com/dgavgovpt.onmicrosoft.com",
+    redirectUri: _REDIRECT
+  }}
+}});
+const _SCOPES = ["User.Read", "Files.ReadWrite"];
+
+let _driveId = null, _itemId = null;
+
+function _encodeShare(url) {{
+  return 'u!' + btoa(url).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}}
+
+async function _getToken() {{
+  const accounts = _msal.getAllAccounts();
+  if (!accounts.length) return null;
+  try {{
+    return (await _msal.acquireTokenSilent({{ scopes: _SCOPES, account: accounts[0] }})).accessToken;
+  }} catch (_) {{
+    return (await _msal.acquireTokenPopup({{ scopes: _SCOPES }})).accessToken;
+  }}
+}}
+
+async function _resolveItem(token) {{
+  if (_driveId && _itemId) return;
+  const r = await fetch(
+    `https://graph.microsoft.com/v1.0/shares/${{_encodeShare(_SHARE_URL)}}/driveItem`,
+    {{ headers: {{ Authorization: `Bearer ${{token}}` }} }}
+  );
+  if (!r.ok) throw new Error(`Erro ao resolver ficheiro SharePoint: ${{r.status}}`);
+  const d = await r.json();
+  _driveId = d.parentReference.driveId;
+  _itemId  = d.id;
+}}
+
+async function loginMicrosoft() {{
+  try {{
+    const res = await _msal.loginPopup({{ scopes: _SCOPES }});
+    document.getElementById('user-name').textContent = res.account.name;
+    document.getElementById('user-info').style.display = 'flex';
+    document.getElementById('login-banner').style.display = 'none';
+    document.getElementById('btn-guardar').disabled = false;
+    await carregarNotasSharePoint();
+  }} catch (e) {{
+    alert('Erro no login: ' + e.message);
+  }}
+}}
+
+function logout() {{
+  _msal.logoutPopup().then(() => {{
+    document.getElementById('login-banner').style.display = 'flex';
+    document.getElementById('user-info').style.display = 'none';
+    document.getElementById('btn-guardar').disabled = true;
+    document.getElementById('save-status').textContent = '';
+  }});
+}}
+
+async function carregarNotasSharePoint() {{
+  const status = document.getElementById('save-status');
+  status.style.color = '#666';
+  status.textContent = 'A carregar notas…';
+  try {{
+    const token = await _getToken();
+    await _resolveItem(token);
+    const r = await fetch(
+      `https://graph.microsoft.com/v1.0/drives/${{_driveId}}/items/${{_itemId}}/content`,
+      {{ headers: {{ Authorization: `Bearer ${{token}}` }} }}
+    );
+    if (!r.ok) throw new Error(`${{r.status}}`);
+    const notas = await r.json();
+    ARTIGOS.forEach(a => {{ if (notas[a.id]) a.notas = notas[a.id]; }});
+    mostrarArtigo(atual);
+    status.textContent = 'Notas carregadas ✓';
+    status.style.color = '#2a7a2a';
+  }} catch (e) {{
+    status.textContent = `Erro ao carregar notas (${{e.message}})`;
+    status.style.color = '#c00';
+  }}
+}}
+
+async function guardarNotas() {{
+  const btn    = document.getElementById('btn-guardar');
+  const status = document.getElementById('save-status');
+  btn.disabled = true;
+  btn.textContent = 'A guardar…';
+  try {{
+    const token = await _getToken();
+    await _resolveItem(token);
+    const notas = {{}};
+    ARTIGOS.forEach(a => {{ if (a.notas) notas[a.id] = a.notas; }});
+    const r = await fetch(
+      `https://graph.microsoft.com/v1.0/drives/${{_driveId}}/items/${{_itemId}}/content`,
+      {{
+        method:  'PUT',
+        headers: {{ Authorization: `Bearer ${{token}}`, 'Content-Type': 'application/json' }},
+        body:    JSON.stringify(notas, null, 2)
+      }}
+    );
+    if (!r.ok) throw new Error(`${{r.status}}`);
+    const agora = new Date().toLocaleTimeString('pt-PT', {{ hour: '2-digit', minute: '2-digit' }});
+    const nome  = _msal.getAllAccounts()[0]?.name || '';
+    status.textContent = `Guardado às ${{agora}} por ${{nome}} ✓`;
+    status.style.color = '#2a7a2a';
+  }} catch (e) {{
+    status.textContent = `Erro ao guardar (${{e.message}})`;
+    status.style.color = '#c00';
+  }} finally {{
+    btn.disabled = false;
+    btn.textContent = 'Guardar notas no SharePoint';
+  }}
+}}
+// ── FIM SHAREPOINT ────────────────────────────────────────────────────────
 
 let atual = 0;
 let searchTerm = '';
@@ -1815,6 +1965,13 @@ function render() {{
       <label>Notas de Reunião</label>
       <textarea id="notas-input" placeholder="Escreve aqui as decisões ou observações da reunião..."
         oninput="ARTIGOS[${{atual}}].notas = this.value">${{art.notas}}</textarea>
+      <div style="display:flex; gap:10px; align-items:center; margin-top:6px;">
+        <button id="btn-guardar" class="btn btn-export" onclick="guardarNotas()" disabled
+                style="background:#1a5276; color:#fff;">
+          Guardar notas no SharePoint
+        </button>
+        <span id="save-status" style="font-size:.8rem; color:#666;"></span>
+      </div>
     </div>
 
     <div class="nav-btns">
