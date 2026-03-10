@@ -380,7 +380,7 @@ GRUPOS = [
                 "prazos": ["4a"],
             },
             {
-                "ref": "Art. 23(4), 2.º §,\npontos (a)(c)",
+                "ref": "Art. 23(4), second subparagraph,\npontos (a)(c)",
                 "norma": (
                     "4. The Commission shall establish and maintain an index database containing "
                     "the minimum set of fields laid down in the implementing acts referred to in "
@@ -408,7 +408,7 @@ GRUPOS = [
                 "prazos": ["2a"],
             },
             {
-                "ref": "Art. 23(4), 2.º §,\npontos (b)(d)(e)",
+                "ref": "Art. 23(4), second subparagraph,\npontos (b)(d)(e)",
                 "norma": (
                     "It shall adopt the implementing acts referred to in the second subparagraph, "
                     "points (b), (d) and (e) by ... [three years from the date of entry into "
@@ -494,7 +494,7 @@ GRUPOS = [
                 "prazos": ["5a"],
             },
             {
-                "ref": "Art. 21(3) 2.º § +\nArt. 21(4)(5)\n[via Art. 33, ponto (iv)]",
+                "ref": "Art. 21(3), 2.º parágrafo +\nArt. 21(4)(5)\n[via Art. 33, ponto (iv)]",
                 "norma": (
                     "Art. 21(3), 2.º §: Where a natural or legal person advertises a dog or "
                     "cat online with a view to placing it on the Union market, that person shall "
@@ -680,7 +680,7 @@ GRUPOS = [
                 "prazos": ["10a"],
             },
             {
-                "ref": "Art. 26(4), 5.º §\n(atos de execução)",
+                "ref": "Art. 26(4),\natos de execução\n(5.º parágrafo)",
                 "norma": (
                     "The Commission shall by ... [8 years after the date of entry into force "
                     "of this Regulation] adopt implementing acts laying down detailed "
@@ -1144,9 +1144,10 @@ def gerar():
     set_paragraph_spacing(nota, 200, 0)
     rn = nota.add_run(
         "Nota: Texto verbatim em inglês conforme Regulamento 2023/0447 (versão de 11.12.2025). "
-        "Os prazos em anos são relativos à data de entrada em vigor. "
+        "Os prazos em anos são contados a partir da entrada em vigor (vigésimo dia após publicação no JOUE). "
         "As datas 1 Jul. 2030 e 1 Jul. 2036 são absolutas (Art. 33, ponto iii). "
-        "Blocos [PRAZO] em azul indicam que o prazo está numa norma diferente da norma substantiva."
+        "Quando há um bloco [PRAZO] separado, o prazo vem de Art. 33 (disposições gerais de aplicação); "
+        "quando não há, o prazo está embutido no próprio artigo."
     )
     rn.italic = True
     rn.font.size = Pt(7.5)
