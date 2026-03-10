@@ -1491,9 +1491,9 @@ def criar_html(path, artigos):
                      font-size: .78rem; text-transform: uppercase; letter-spacing: .8px; }}
   .badge-alt {{
     display: inline-block;
-    background: #A04848; color: #fff;
+    background: #C87878; color: #fff;
     border-radius: 4px; padding: 1px 7px;
-    font-size: .48rem; font-weight: 700; margin-left: 10px;
+    font-size: .54rem; font-weight: 700; margin-left: 10px;
   }}
 
   /* NOTAS */
