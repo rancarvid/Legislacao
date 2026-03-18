@@ -167,7 +167,7 @@ a { color: inherit; text-decoration: none; }
   <div class="sidebar-header">
     <h2>Análise dos Preâmbulos e Opiniões</h2>
     <p>Regulamento UE 2023/0447 · @codigo · @rgbeac</p>
-    <p style="margin-top:8px;color:#4a5a80;">17 de março de 2026</p>
+    <p style="margin-top:8px;color:#4a5a80;">18 de março de 2026</p>
   </div>
   <nav class="sidebar-nav">
     <a href="#sec1" class="sec1"><span class="nav-num">1</span> Espírito do Regulamento Europeu</a>
@@ -186,12 +186,12 @@ a { color: inherit; text-decoration: none; }
 <div id="hero">
   <h1>Análise dos Preâmbulos e Opiniões<br>sobre o Regulamento UE 2023/0447</h1>
   <p>Reflexão sobre o espírito legislativo, os temas recorrentes nas opiniões e a realidade portuguesa</p>
-  <p>Produzido em 17 de março de 2026</p>
+  <p>Produzido em 18 de março de 2026</p>
   <div class="hero-tags">
     <span class="hero-tag">@regulamento</span>
     <span class="hero-tag">@codigo</span>
     <span class="hero-tag">@rgbeac</span>
-    <span class="hero-tag">@opiniao (18 pareceres)</span>
+    <span class="hero-tag">@opiniao (52 pareceres, 7 grupos)</span>
     <span class="hero-tag">Realidade PT</span>
     <span class="hero-tag">Síntese executiva</span>
   </div>
@@ -357,17 +357,26 @@ para receber e implementar o Regulamento europeu 2023/0447.</p>
     <div class="section-divider"></div>
   </div>
   <div class="texto-analise">
-<p>Foram analisados 18 pareceres produzidos por organizações diversas — ONG de bem-estar animal,
-federações de caçadores, empresas farmacêuticas, associações da indústria, académicos e organizações
-internacionais — sobre versões anteriores do Regulamento 2023/0447. Embora algumas posições possam
-já não se aplicar à versão final do Regulamento, os temas de fundo permanecem relevantes para a
-análise de impacto e de implementação.</p>
+<p>Foram analisados <strong>52 pareceres</strong> produzidos por organizações de 17 países europeus
+e internacionais sobre versões anteriores do Regulamento 2023/0447, agrupados em 7 categorias:
+organizações de bem-estar animal, veterinárias, kennel clubs e felinologia, caçadores e uso funcional,
+indústria e comércio, rastreabilidade e I&R, e autoridades públicas. Embora algumas posições
+específicas possam já não se aplicar à versão final do Regulamento, os temas de fundo permanecem
+plenamente relevantes para a análise de impacto e implementação.</p>
+<p>Use o filtro abaixo para visualizar por grupo de organização.</p>
 </div>
   <div class="nota-met"><strong>Nota metodológica:</strong> Os pareceres foram produzidos sobre versões anteriores do Regulamento. Algumas posições específicas podem já ter sido acolhidas ou ultrapassadas pela versão final. Os temas de fundo, no entanto, permanecem relevantes para a análise de implementação.</div>
-  <div class="tabela-scroll">
-<table class="tabela-opiniao">
+  <div style="margin-bottom:12px;">
+<label style="font-size:12px;font-weight:600;color:#555;">Filtrar por grupo: </label>
+<select id="filtro-grupo" onchange="filtrarGrupo(this.value)" style="font-size:12px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;">
+<option value="">Todos os grupos</option>
+<option value="Bem-estar animal">Bem-estar animal</option><option value="Veterinária">Veterinária</option><option value="Kennel clubs e felinologia">Kennel clubs e felinologia</option><option value="Caçadores e uso funcional">Caçadores e uso funcional</option><option value="Indústria e comércio">Indústria e comércio</option><option value="Rastreabilidade e I&R">Rastreabilidade e I&R</option><option value="Autoridades públicas">Autoridades públicas</option>
+</select>
+</div>
+<div class="tabela-scroll">
+<table class="tabela-opiniao" id="tabela-opin">
 <thead><tr>
-<th>Organização</th><th>Tipo</th><th>Limiar
+<th>Organização</th><th>Grupo</th><th>Tipo</th><th>Limiar
 Art. 4</th><th>Proibição
 venda lojas</th><th>Castração
 cirúrgica</th><th>Coleiras
@@ -379,49 +388,114 @@ tamento</th><th>Animais
 errantes</th><th>Venda
 online</th>
 </tr></thead>
-<tbody><tr><td><strong>AWI / Ecuavet</strong></td><td class='tipo-org'>Clínica veterinária</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td><td class=''>—</td><td class='pos-contra'>✖ proibição total</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>AnimaNaturalis</strong></td><td class='tipo-org'>ONG bem-estar</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td></tr>
-<tr><td><strong>FACE</strong></td><td class='tipo-org'>Fed. caçadores EU</td><td class='pos-derrog'>△ revisão</td><td class=''>—</td><td class=''>—</td><td class='pos-derrog'>△ uso regulado</td><td class='pos-derrog'>△ derrogação</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Koninklijke Hondenbescherming</strong></td><td class='tipo-org'>Proteção animal NL</td><td class=''>—</td><td class='pos-contra'>✖ proibição</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-favor'>✔</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Manteca / UAB</strong></td><td class='tipo-org'>Académico (Medicina Vet.)</td><td class=''>—</td><td class=''>—</td><td class='pos-contra'>✖ crítica</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>MSD Animal Health</strong></td><td class='tipo-org'>Empresa (identificação)</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-favor'>✔ reforço</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Norwegian Society</strong></td><td class='tipo-org'>Proteção animal NO</td><td class='pos-derrog'>△ limiar ↓</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-favor'>✔</td><td class='pos-reforco'>⚠ COI</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>SEY Animal Welfare Finland</strong></td><td class='tipo-org'>Proteção animal FI</td><td class=''>—</td><td class='pos-contra'>✖ proibição</td><td class=''>—</td><td class='pos-contra'>✖ proibição total</td><td class=''>—</td><td class='pos-favor'>✔</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td><td class=''>—</td></tr>
-<tr><td><strong>VETO</strong></td><td class='tipo-org'>ONG bem-estar EU</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-contra'>✖ anti-derrg.</td><td class='pos-favor'>✔</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠ galgos</td><td class=''>—</td></tr>
-<tr><td><strong>VIRBAC</strong></td><td class='tipo-org'>Empresa farmacêutica</td><td class=''>—</td><td class=''>—</td><td class='pos-contra'>✖ crítica</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>UAB Comportamental</strong></td><td class='tipo-org'>Académico (Comportamento)</td><td class=''>—</td><td class=''>—</td><td class='pos-contra'>✖ crítica</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Féd. nationale chasseurs (FR)</strong></td><td class='tipo-org'>Fed. caçadores FR</td><td class='pos-derrog'>△ revisão</td><td class=''>—</td><td class=''>—</td><td class='pos-derrog'>△ uso regulado</td><td class='pos-derrog'>△ derrogação</td><td class='pos-derrog'>△ flexibil.</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Tierschutz-LASA</strong></td><td class='tipo-org'>Proteção animal</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-contra'>✖ anti-derrg.</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td><td class=''>—</td></tr>
-<tr><td><strong>EUCED</strong></td><td class='tipo-org'>Org. cooperação EU</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class='pos-reforco'>⚠</td><td class=''>—</td><td class=''>—</td><td class='pos-favor'>✔</td><td class='pos-reforco'>⚠</td></tr>
-<tr><td><strong>FEDIAF</strong></td><td class='tipo-org'>Ind. alimentos animais</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>Eurogroup for Animals</strong></td><td class='tipo-org'>ONG pan-europeia</td><td class='pos-contra'>✖ suprimir isenções</td><td class='pos-contra'>✖ proibição</td><td class=''>—</td><td class='pos-contra'>✖ proibição total</td><td class=''>—</td><td class='pos-favor'>✔ universal</td><td class='pos-contra'>✖ proibir criação</td><td class='pos-contra'>✖ proibição total</td><td class='pos-reforco'>⚠</td><td class='pos-reforco'>⚠</td></tr>
-<tr><td><strong>World Dog Alliance</strong></td><td class='tipo-org'>Org. internacional</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td><td class=''>—</td></tr>
-<tr><td><strong>LAV Onlus</strong></td><td class='tipo-org'>ONG bem-estar IT</td><td class='pos-contra'>✖ suprimir isenções</td><td class='pos-contra'>✖ proibição</td><td class=''>—</td><td class='pos-contra'>✖ proibição total</td><td class=''>—</td><td class='pos-favor'>✔ universal</td><td class='pos-contra'>✖ proibir criação</td><td class='pos-contra'>✖ proibição total</td><td class='pos-reforco'>⚠</td><td class=''>—</td></tr>
+<tbody><tr class='grupo-header' data-grupo='Bem-estar animal'><td colspan='13'><strong>Bem-estar animal</strong></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Eurogroup for Animals</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG pan-europeia (BE)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>LAV Onlus</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar (IT)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>AWI / Ecuavet</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Clínica veterinária (EU)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>AnimaNaturalis</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>VETO</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar EU</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>SEY Animal Welfare Finland</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (FI)</td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Norwegian Society for Protection</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (NO)</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Tierschutz-LASA</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (DE)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>EUCED</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Cooperação económica EU</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Animal Protection Denmark</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (DK)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Djurskyddet Sverige</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (SE)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-contra'>Contra</td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Finnish Centre for Animal Welfare</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Centro bem-estar (FI)</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Dutch Assoc. Protection Animals</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Proteção animal (NL)</td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>EU Dog & Cat Alliance</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Coligação ONG (EU)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Brigitte Bardot Foundation</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar (FR)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>PETA Deutschland</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar (DE)</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>NOAH – for dyrs rettigheter</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG bem-estar (NO)</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>SOS Galgos</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG galgos (ES)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class=''></td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-contra'>Contra</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class=''></td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>FENPCA</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Fed. proteção cães (ES)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-contra'>Contra</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>LAU KATU ELKARTEA</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Assoc. proteção animal (ES)</td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>Asociación HAIEKIN</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Assoc. proteção animal (ES)</td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>APARIOJA (La Rioja)</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Assoc. proteção animal (ES)</td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>MIS AMIGAS LAS PALOMAS</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>ONG proteção animal (ES)</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class=''></td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Bem-estar animal'><td><strong>INTERcids</strong></td><td class='tipo-org'>Bem-estar animal</td><td class='tipo-org'>Operadores jurídicos (EU)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr class='grupo-header' data-grupo='Veterinária'><td colspan='13'><strong>Veterinária</strong></td></tr>
+<tr data-grupo='Veterinária'><td><strong>FVE (Fed. Veterinários EU)</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Federação veter. europeia</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Veterinária'><td><strong>WSAVA</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Assoc. mundial vet. peq. animais</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-contra'>Contra</td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Veterinária'><td><strong>Danish Veterinary Assoc.</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Assoc. veterinária (DK)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Veterinária'><td><strong>Federal Chamber Vet. (BTK 🇩🇪)</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Câmara federal veter. (DE)</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Veterinária'><td><strong>Norwegian Vet. Nurses Assoc.</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Enfermeiras veterinárias (NO)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Veterinária'><td><strong>Manteca / UAB</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Académico med. veter.</td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Veterinária'><td><strong>UAB (Comportamento animal)</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Académico comportamento</td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Veterinária'><td><strong>VIRBAC</strong></td><td class='tipo-org'>Veterinária</td><td class='tipo-org'>Empresa farmacêutica veter.</td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr class='grupo-header' data-grupo='Kennel clubs e felinologia'><td colspan='13'><strong>Kennel clubs e felinologia</strong></td></tr>
+<tr data-grupo='Kennel clubs e felinologia'><td><strong>Koninklijke Hondenbescherming</strong></td><td class='tipo-org'>Kennel clubs e felinologia</td><td class='tipo-org'>Proteção cães (NL)</td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Kennel clubs e felinologia'><td><strong>The Dutch Kennel Club</strong></td><td class='tipo-org'>Kennel clubs e felinologia</td><td class='tipo-org'>Kennel club (NL)</td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Kennel clubs e felinologia'><td><strong>Norwegian Kennel Club</strong></td><td class='tipo-org'>Kennel clubs e felinologia</td><td class='tipo-org'>Kennel club (NO)</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class=''></td></tr>
+<tr data-grupo='Kennel clubs e felinologia'><td><strong>Lithuanian Felinology (Bubaste)</strong></td><td class='tipo-org'>Kennel clubs e felinologia</td><td class='tipo-org'>Assoc. felinológica (LT)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr class='grupo-header' data-grupo='Caçadores e uso funcional'><td colspan='13'><strong>Caçadores e uso funcional</strong></td></tr>
+<tr data-grupo='Caçadores e uso funcional'><td><strong>FACE (Fed. Caçadores EU)</strong></td><td class='tipo-org'>Caçadores e uso funcional</td><td class='tipo-org'>Fed. caça e conservação EU</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Caçadores e uso funcional'><td><strong>Féd. Nationale Chasseurs (FR)</strong></td><td class='tipo-org'>Caçadores e uso funcional</td><td class='tipo-org'>Fed. caçadores (FR)</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Caçadores e uso funcional'><td><strong>Real Fed. Española de Caza</strong></td><td class='tipo-org'>Caçadores e uso funcional</td><td class='tipo-org'>Fed. caça (ES)</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td></tr>
+<tr class='grupo-header' data-grupo='Indústria e comércio'><td colspan='13'><strong>Indústria e comércio</strong></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>FEDIAF</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Ind. alimentos animais (EU)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>MSD Animal Health</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Empresa farmacêutica veter.</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>AnimalhealthEurope</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Ind. medicamentos animais</td><td class='pos-reforco'>Reforço</td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>Electronic Collar Manufacturers</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Fabr. coleiras eléctricas</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>Assoc. Responsible Dog Owners</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Assoc. proprietários (UK)</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-derrog'>Derrogação</td><td class='pos-derrog'>Derrogação</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>Classifieds Marketplaces Europe</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Plataformas classificados</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-derrog'>Derrogação</td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>European Pet Organization (EPO)</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Org. setor animais companhia</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Indústria e comércio'><td><strong>World Dog Alliance</strong></td><td class='tipo-org'>Indústria e comércio</td><td class='tipo-org'>Org. internacional</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr class='grupo-header' data-grupo='Rastreabilidade e I&R'><td colspan='13'><strong>Rastreabilidade e I&R</strong></td></tr>
+<tr data-grupo='Rastreabilidade e I&R'><td><strong>EuroPetNet</strong></td><td class='tipo-org'>Rastreabilidade e I&R</td><td class='tipo-org'>Rede bases dados I&R</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Rastreabilidade e I&R'><td><strong>K&R Network</strong></td><td class='tipo-org'>Rastreabilidade e I&R</td><td class='tipo-org'>Rede I&R (DE)</td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Rastreabilidade e I&R'><td><strong>TASSO e.V.</strong></td><td class='tipo-org'>Rastreabilidade e I&R</td><td class='tipo-org'>Maior registo livre (DE)</td><td class='pos-contra'>Contra</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr class='grupo-header' data-grupo='Autoridades públicas'><td colspan='13'><strong>Autoridades públicas</strong></td></tr>
+<tr data-grupo='Autoridades públicas'><td><strong>Bundesministerium (🇩🇪)</strong></td><td class='tipo-org'>Autoridades públicas</td><td class='tipo-org'>Ministério Alimentação e Agric. (DE)</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-favor'>Favor</td><td class=''></td><td class=''></td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class=''></td><td class=''></td></tr>
+<tr data-grupo='Autoridades públicas'><td><strong>Czech National Authority</strong></td><td class='tipo-org'>Autoridades públicas</td><td class='tipo-org'>Autoridade nacional (CZ)</td><td class='pos-contra'>Contra</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class=''></td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Autoridades públicas'><td><strong>Norwegian Food Safety Auth.</strong></td><td class='tipo-org'>Autoridades públicas</td><td class='tipo-org'>Autoridade alimentar (NO)</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-derrog'>Derrogação</td><td class='pos-favor'>Favor</td><td class='pos-reforco'>Reforço</td><td class='pos-reforco'>Reforço</td><td class='pos-favor'>Favor</td><td class='pos-favor'>Favor</td></tr>
+<tr data-grupo='Autoridades públicas'><td><strong>Fundación Vet+i (🇪🇸)</strong></td><td class='tipo-org'>Autoridades públicas</td><td class='tipo-org'>Plataforma tecn. san. animal (ES)</td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td><td class=''></td></tr>
 </tbody>
 </table>
 </div>
 <div class="legenda-opiniao">
-<span class="pos-favor">✔ Favor / apoia</span>
-<span class="pos-contra">✖ Contra / critica / propõe proibição</span>
-<span class="pos-reforco">⚠ Propõe reforço da norma</span>
-<span class="pos-derrog">△ Propõe derrogação / flexibilização</span>
+<span class="pos-favor">Favor / apoia</span>
+<span class="pos-contra">Contra / critica / propõe proibição</span>
+<span class="pos-reforco">Propõe reforço da norma</span>
+<span class="pos-derrog">Propõe derrogação / flexibilização</span>
 <span>— Não abordado</span>
 </div>
+<script>
+function filtrarGrupo(grupo) {
+  var rows = document.querySelectorAll('#tabela-opin tbody tr');
+  rows.forEach(function(row) {
+    if (!grupo || row.getAttribute('data-grupo') === grupo) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+}
+</script>
   <div class="texto-analise" style="margin-top:24px;">
-<p>Da análise cruzada dos 18 pareceres emergem <strong>três eixos de tensão</strong> fundamentais:</p>
+<p>Da análise cruzada dos <strong>52 pareceres</strong>, organizados em 7 grupos, emergem
+<strong>quatro eixos de tensão</strong> fundamentais:</p>
 <ul>
-  <li><strong>Bem-estar vs. uso funcional dos animais:</strong> A divisão mais nítida opõe as organizações
-  de bem-estar animal (que querem normas mais exigentes para todos os animais, incluindo os de caça) às
-  federações de caçadores (que defendem derrogações para a atividade cinegética). Este conflito é central
-  para a aplicação do Regulamento em países como Portugal, Espanha e França, com forte tradição de caça
-  com cães.</li>
-  <li><strong>Proibições vs. regulação:</strong> Em temas como coleiras elétricas, venda em pet shops e
-  acorrentamento, a maioria das organizações de bem-estar defende a proibição total, enquanto os setores
-  com interesses económicos ou culturais preferem uma abordagem de regulação e limitação.</li>
-  <li><strong>Castração cirúrgica:</strong> Surpreendentemente, há vozes académicas e da indústria
-  farmacêutica a questionar a castração cirúrgica como método-padrão de controlo populacional,
-  apontando para efeitos adversos na saúde e comportamento. Este debate tem implicações diretas para
-  as políticas de esterilização em Portugal.</li>
+  <li><strong>Consenso alargado em rastreabilidade:</strong> A rastreabilidade (identificação
+  eletrónica + base de dados interoperável) é o único tema com aprovação quase unânime — todas as
+  organizações de bem-estar, veterinárias, kennel clubs e autoridades públicas apoiam. Mesmo a
+  indústria e os caçadores não a contestam. O debate limita-se ao <em>âmbito</em>: se deve abranger
+  todos os cães e gatos (posição das ONG) ou apenas os transacionados comercialmente.</li>
+  <li><strong>Bem-estar vs. uso funcional:</strong> A divisão mais nítida opõe as organizações de
+  bem-estar (que querem normas universais, incluindo cães de caça) às federações de caçadores (que
+  defendem derrogações). FACE, FNC e Real Fed. Española de Caza rejeitam a aplicação do limiar Art. 4
+  à criação não comercial de cães de caça. Em sentido contrário, SOS Galgos e FENPCA documentam que
+  os cães de caça representam 70% dos abandonamentos em Espanha — argumento com relevância directa
+  para Portugal.</li>
+  <li><strong>Proibições vs. regulação:</strong> Coleiras elétricas, venda em pet shops e
+  acorrentamento dividem o campo: ONG e autoridades querem proibição total; a indústria
+  (Electronic Collar Manufacturers, ARDO) e parte dos kennel clubs propõem exceções e regulação.
+  Significativamente, mesmo o Norwegian Kennel Club — que genericamente apoia o Regulamento —
+  propõe uma derrogação limitada para uso em treino de cães de caça.</li>
+  <li><strong>Debate científico sobre castração:</strong> Manteca/UAB, VIRBAC e UAB Comportamento
+  questionam a castração cirúrgica como método-padrão, apontando efeitos adversos na saúde e
+  comportamento documentados em 35 raças. A Norwegian Food Safety Authority e a FVE continuam a
+  apoiar a castração como instrumento de controlo. Este debate tem implicações directas para as
+  políticas de esterilização municipais em Portugal (54,4% dos cães registados já esterilizados).</li>
 </ul>
 </div>
 </section>
@@ -536,7 +610,7 @@ cultura de compliance — especialmente fora das áreas metropolitanas.</p>
 </div><!-- /main -->
 
 <div id="footer">
-  Análise produzida no âmbito do projeto de análise comparativa da legislação portuguesa e europeia sobre animais de companhia · 17 de março de 2026
+  Análise produzida no âmbito do projeto de análise comparativa da legislação portuguesa e europeia sobre animais de companhia · 18 de março de 2026
 </div>
 
 </body>

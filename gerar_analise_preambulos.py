@@ -173,54 +173,176 @@ SEC4_TITULO = "Temas recorrentes nas opiniões (@opiniao)"
 SEC4_SUBTITULO = "Análise de 18 pareceres de organizações europeias sobre o Regulamento 2023/0447"
 
 SEC4_INTRO = """
-<p>Foram analisados 18 pareceres produzidos por organizações diversas — ONG de bem-estar animal,
-federações de caçadores, empresas farmacêuticas, associações da indústria, académicos e organizações
-internacionais — sobre versões anteriores do Regulamento 2023/0447. Embora algumas posições possam
-já não se aplicar à versão final do Regulamento, os temas de fundo permanecem relevantes para a
-análise de impacto e de implementação.</p>
+<p>Foram analisados <strong>52 pareceres</strong> produzidos por organizações de 17 países europeus
+e internacionais sobre versões anteriores do Regulamento 2023/0447, agrupados em 7 categorias:
+organizações de bem-estar animal, veterinárias, kennel clubs e felinologia, caçadores e uso funcional,
+indústria e comércio, rastreabilidade e I&R, e autoridades públicas. Embora algumas posições
+específicas possam já não se aplicar à versão final do Regulamento, os temas de fundo permanecem
+plenamente relevantes para a análise de impacto e implementação.</p>
+<p>Use o filtro abaixo para visualizar por grupo de organização.</p>
 """
 
-# Themes: rows = organizations, columns = themes
-# Position: "✔ Favor" / "✖ Contra" / "⚠ Propõe reforço" / "△ Propõe derrogação" / "— N/A"
-OPINIAO_TEMAS = ["Limiar\nArt. 4", "Proibição\nvenda lojas", "Castração\ncirúrgica", "Coleiras\nelétricas", "Cães\nde caça", "Rastreabi-\nlidade", "Braquice-\nfálicos", "Acorren-\ntamento", "Animais\nerrantes", "Venda\nonline"]
+# Themes: 10 columns
+# Position codes: "Favor" / "Contra" / "Reforço" / "Derrogação" / "" (N/A)
+OPINIAO_TEMAS = [
+    "Limiar\nArt. 4", "Proibição\nvenda lojas", "Castração\ncirúrgica", "Coleiras\nelétricas",
+    "Cães\nde caça", "Rastreabi-\nlidade", "Braquice-\nfálicos", "Acorren-\ntamento",
+    "Animais\nerrantes", "Venda\nonline"
+]
 
+# (Organização, Tipo/descrição, Grupo, [posições por tema])
+# Grupos: "Bem-estar animal" | "Veterinária" | "Kennel clubs e felinologia"
+#         | "Caçadores e uso funcional" | "Indústria e comércio" | "Rastreabilidade e I&R"
+#         | "Autoridades públicas"
 OPINIAO_DADOS = [
-    # (Organização, tipo, [posições por tema])
-    ("AWI / Ecuavet", "Clínica veterinária", ["—", "—", "—", "—", "—", "⚠", "—", "✖ proibição total", "—", "—"]),
-    ("AnimaNaturalis", "ONG bem-estar", ["—", "—", "—", "—", "—", "⚠", "—", "—", "—", "⚠"]),
-    ("FACE", "Fed. caçadores EU", ["△ revisão", "—", "—", "△ uso regulado", "△ derrogação", "—", "—", "—", "—", "—"]),
-    ("Koninklijke Hondenbescherming", "Proteção animal NL", ["—", "✖ proibição", "—", "—", "—", "✔", "—", "—", "—", "—"]),
-    ("Manteca / UAB", "Académico (Medicina Vet.)", ["—", "—", "✖ crítica", "—", "—", "—", "—", "—", "—", "—"]),
-    ("MSD Animal Health", "Empresa (identificação)", ["—", "—", "—", "—", "—", "✔ reforço", "—", "—", "—", "—"]),
-    ("Norwegian Society", "Proteção animal NO", ["△ limiar ↓", "—", "—", "—", "—", "✔", "⚠ COI", "—", "—", "—"]),
-    ("SEY Animal Welfare Finland", "Proteção animal FI", ["—", "✖ proibição", "—", "✖ proibição total", "—", "✔", "—", "—", "⚠", "—"]),
-    ("VETO", "ONG bem-estar EU", ["—", "—", "—", "—", "✖ anti-derrg.", "✔", "—", "—", "⚠ galgos", "—"]),
-    ("VIRBAC", "Empresa farmacêutica", ["—", "—", "✖ crítica", "—", "—", "—", "—", "—", "—", "—"]),
-    ("UAB Comportamental", "Académico (Comportamento)", ["—", "—", "✖ crítica", "—", "—", "—", "—", "—", "—", "—"]),
-    ("Féd. nationale chasseurs (FR)", "Fed. caçadores FR", ["△ revisão", "—", "—", "△ uso regulado", "△ derrogação", "△ flexibil.", "—", "—", "—", "—"]),
-    ("Tierschutz-LASA", "Proteção animal", ["—", "—", "—", "—", "✖ anti-derrg.", "—", "—", "—", "⚠", "—"]),
-    ("EUCED", "Org. cooperação EU", ["—", "—", "—", "—", "—", "⚠", "—", "—", "✔", "⚠"]),
-    ("FEDIAF", "Ind. alimentos animais", ["—", "—", "—", "—", "—", "—", "—", "—", "—", "—"]),
-    ("Eurogroup for Animals", "ONG pan-europeia", ["✖ suprimir isenções", "✖ proibição", "—", "✖ proibição total", "—", "✔ universal", "✖ proibir criação", "✖ proibição total", "⚠", "⚠"]),
-    ("World Dog Alliance", "Org. internacional", ["—", "—", "—", "—", "—", "—", "—", "—", "—", "—"]),
-    ("LAV Onlus", "ONG bem-estar IT", ["✖ suprimir isenções", "✖ proibição", "—", "✖ proibição total", "—", "✔ universal", "✖ proibir criação", "✖ proibição total", "⚠", "—"]),
+    # ── GRUPO: Bem-estar animal ────────────────────────────────────────────
+    ("Eurogroup for Animals", "ONG pan-europeia (BE)", "Bem-estar animal",
+     ["Contra", "Favor", "Favor", "Contra", "", "Favor", "Reforço", "Contra", "Reforço", "Reforço"]),
+    ("LAV Onlus", "ONG bem-estar (IT)", "Bem-estar animal",
+     ["Contra", "Favor", "", "Contra", "", "Favor", "Reforço", "Contra", "Reforço", ""]),
+    ("AWI / Ecuavet", "Clínica veterinária (EU)", "Bem-estar animal",
+     ["", "", "", "", "", "Reforço", "", "Contra", "", ""]),
+    ("AnimaNaturalis", "ONG bem-estar", "Bem-estar animal",
+     ["", "", "", "", "", "Reforço", "", "", "", "Reforço"]),
+    ("VETO", "ONG bem-estar EU", "Bem-estar animal",
+     ["", "", "", "", "Contra", "Favor", "", "", "Reforço", ""]),
+    ("SEY Animal Welfare Finland", "Proteção animal (FI)", "Bem-estar animal",
+     ["", "Contra", "", "Contra", "", "Favor", "", "", "Reforço", ""]),
+    ("Norwegian Society for Protection", "Proteção animal (NO)", "Bem-estar animal",
+     ["Derrogação", "", "", "", "", "Favor", "Reforço", "", "", ""]),
+    ("Tierschutz-LASA", "Proteção animal (DE)", "Bem-estar animal",
+     ["", "", "", "", "Contra", "", "", "", "Reforço", ""]),
+    ("EUCED", "Cooperação económica EU", "Bem-estar animal",
+     ["", "", "", "", "", "Reforço", "", "", "Favor", "Reforço"]),
+    ("Animal Protection Denmark", "Proteção animal (DK)", "Bem-estar animal",
+     ["Contra", "Favor", "Reforço", "", "", "Favor", "Reforço", "Favor", "Reforço", "Favor"]),
+    ("Djurskyddet Sverige", "Proteção animal (SE)", "Bem-estar animal",
+     ["Contra", "Favor", "Reforço", "Contra", "Reforço", "Favor", "Contra", "Contra", "Reforço", "Favor"]),
+    ("Finnish Centre for Animal Welfare", "Centro bem-estar (FI)", "Bem-estar animal",
+     ["Reforço", "", "", "", "Reforço", "Favor", "Reforço", "Favor", "", ""]),
+    ("Dutch Assoc. Protection Animals", "Proteção animal (NL)", "Bem-estar animal",
+     ["Contra", "", "", "", "Derrogação", "Favor", "Reforço", "", "", "Favor"]),
+    ("EU Dog & Cat Alliance", "Coligação ONG (EU)", "Bem-estar animal",
+     ["Contra", "Favor", "", "", "", "Favor", "Reforço", "", "", "Reforço"]),
+    ("Brigitte Bardot Foundation", "ONG bem-estar (FR)", "Bem-estar animal",
+     ["Contra", "Favor", "Reforço", "Contra", "Reforço", "Favor", "Contra", "", "Reforço", "Favor"]),
+    ("PETA Deutschland", "ONG bem-estar (DE)", "Bem-estar animal",
+     ["Derrogação", "Favor", "Favor", "Reforço", "Contra", "Favor", "Reforço", "Reforço", "Favor", "Favor"]),
+    ("NOAH – for dyrs rettigheter", "ONG bem-estar (NO)", "Bem-estar animal",
+     ["Reforço", "Favor", "Reforço", "Reforço", "Derrogação", "Favor", "Reforço", "Favor", "Favor", "Favor"]),
+    ("SOS Galgos", "ONG galgos (ES)", "Bem-estar animal",
+     ["Contra", "Favor", "Favor", "", "Contra", "Favor", "Contra", "Contra", "Favor", ""]),
+    ("FENPCA", "Fed. proteção cães (ES)", "Bem-estar animal",
+     ["Contra", "Favor", "Reforço", "", "Contra", "Reforço", "Reforço", "Reforço", "Reforço", "Reforço"]),
+    ("LAU KATU ELKARTEA", "Assoc. proteção animal (ES)", "Bem-estar animal",
+     ["Derrogação", "Reforço", "Reforço", "", "Derrogação", "Reforço", "Reforço", "", "Reforço", "Favor"]),
+    ("Asociación HAIEKIN", "Assoc. proteção animal (ES)", "Bem-estar animal",
+     ["Derrogação", "Reforço", "Reforço", "", "Derrogação", "Reforço", "Reforço", "", "Reforço", "Favor"]),
+    ("APARIOJA (La Rioja)", "Assoc. proteção animal (ES)", "Bem-estar animal",
+     ["Derrogação", "Reforço", "Reforço", "", "Derrogação", "Reforço", "Reforço", "", "Reforço", "Favor"]),
+    ("MIS AMIGAS LAS PALOMAS", "ONG proteção animal (ES)", "Bem-estar animal",
+     ["Derrogação", "Favor", "Favor", "", "Contra", "Favor", "Reforço", "Reforço", "Favor", "Favor"]),
+    ("INTERcids", "Operadores jurídicos (EU)", "Bem-estar animal",
+     ["", "", "", "", "", "", "", "", "", ""]),
+
+    # ── GRUPO: Veterinária ─────────────────────────────────────────────────
+    ("FVE (Fed. Veterinários EU)", "Federação veter. europeia", "Veterinária",
+     ["Contra", "Favor", "Favor", "", "", "Favor", "Reforço", "", "Favor", "Favor"]),
+    ("WSAVA", "Assoc. mundial vet. peq. animais", "Veterinária",
+     ["Reforço", "", "Favor", "Contra", "", "Favor", "Reforço", "Contra", "Favor", "Favor"]),
+    ("Danish Veterinary Assoc.", "Assoc. veterinária (DK)", "Veterinária",
+     ["Contra", "Favor", "Reforço", "", "", "Favor", "Reforço", "", "", "Favor"]),
+    ("Federal Chamber Vet. (BTK 🇩🇪)", "Câmara federal veter. (DE)", "Veterinária",
+     ["Reforço", "", "", "", "", "Favor", "", "", "", ""]),
+    ("Norwegian Vet. Nurses Assoc.", "Enfermeiras veterinárias (NO)", "Veterinária",
+     ["", "", "", "", "", "Favor", "", "", "", ""]),
+    ("Manteca / UAB", "Académico med. veter.", "Veterinária",
+     ["", "", "Contra", "", "", "", "", "", "", ""]),
+    ("UAB (Comportamento animal)", "Académico comportamento", "Veterinária",
+     ["", "", "Contra", "", "", "", "", "", "", ""]),
+    ("VIRBAC", "Empresa farmacêutica veter.", "Veterinária",
+     ["", "", "Contra", "", "", "", "", "", "", ""]),
+
+    # ── GRUPO: Kennel clubs e felinologia ──────────────────────────────────
+    ("Koninklijke Hondenbescherming", "Proteção cães (NL)", "Kennel clubs e felinologia",
+     ["", "Contra", "", "", "", "Favor", "", "", "", ""]),
+    ("The Dutch Kennel Club", "Kennel club (NL)", "Kennel clubs e felinologia",
+     ["Contra", "", "", "", "", "Favor", "Reforço", "", "", "Favor"]),
+    ("Norwegian Kennel Club", "Kennel club (NO)", "Kennel clubs e felinologia",
+     ["Favor", "Favor", "Derrogação", "Derrogação", "Derrogação", "Favor", "Reforço", "Favor", "Favor", ""]),
+    ("Lithuanian Felinology (Bubaste)", "Assoc. felinológica (LT)", "Kennel clubs e felinologia",
+     ["", "", "", "", "", "", "", "", "", ""]),
+
+    # ── GRUPO: Caçadores e uso funcional ───────────────────────────────────
+    ("FACE (Fed. Caçadores EU)", "Fed. caça e conservação EU", "Caçadores e uso funcional",
+     ["Derrogação", "", "", "Derrogação", "Derrogação", "", "", "", "", ""]),
+    ("Féd. Nationale Chasseurs (FR)", "Fed. caçadores (FR)", "Caçadores e uso funcional",
+     ["Derrogação", "", "", "Derrogação", "Derrogação", "Derrogação", "", "", "", ""]),
+    ("Real Fed. Española de Caza", "Fed. caça (ES)", "Caçadores e uso funcional",
+     ["Derrogação", "", "", "", "Favor", "", "", "Contra", "", ""]),
+
+    # ── GRUPO: Indústria e comércio ────────────────────────────────────────
+    ("FEDIAF", "Ind. alimentos animais (EU)", "Indústria e comércio",
+     ["", "", "", "", "", "", "", "", "", ""]),
+    ("MSD Animal Health", "Empresa farmacêutica veter.", "Indústria e comércio",
+     ["", "", "", "", "", "Reforço", "", "", "", ""]),
+    ("AnimalhealthEurope", "Ind. medicamentos animais", "Indústria e comércio",
+     ["Reforço", "Contra", "", "", "", "Favor", "Reforço", "", "", "Favor"]),
+    ("Electronic Collar Manufacturers", "Fabr. coleiras eléctricas", "Indústria e comércio",
+     ["", "", "", "Contra", "Favor", "", "", "", "", ""]),
+    ("Assoc. Responsible Dog Owners", "Assoc. proprietários (UK)", "Indústria e comércio",
+     ["", "", "", "Derrogação", "Derrogação", "", "", "", "", ""]),
+    ("Classifieds Marketplaces Europe", "Plataformas classificados", "Indústria e comércio",
+     ["", "", "", "", "", "", "", "", "", "Derrogação"]),
+    ("European Pet Organization (EPO)", "Org. setor animais companhia", "Indústria e comércio",
+     ["", "", "", "", "", "", "", "", "", ""]),
+    ("World Dog Alliance", "Org. internacional", "Indústria e comércio",
+     ["", "", "", "", "", "Favor", "", "", "", "Favor"]),
+
+    # ── GRUPO: Rastreabilidade e I&R ───────────────────────────────────────
+    ("EuroPetNet", "Rede bases dados I&R", "Rastreabilidade e I&R",
+     ["", "", "", "", "", "Favor", "", "", "", "Favor"]),
+    ("K&R Network", "Rede I&R (DE)", "Rastreabilidade e I&R",
+     ["Contra", "", "", "", "", "Favor", "", "", "", "Favor"]),
+    ("TASSO e.V.", "Maior registo livre (DE)", "Rastreabilidade e I&R",
+     ["Contra", "", "", "", "", "Favor", "Reforço", "", "", "Favor"]),
+
+    # ── GRUPO: Autoridades públicas ────────────────────────────────────────
+    ("Bundesministerium (🇩🇪)", "Ministério Alimentação e Agric. (DE)", "Autoridades públicas",
+     ["Reforço", "", "Favor", "", "", "Favor", "Reforço", "", "", ""]),
+    ("Czech National Authority", "Autoridade nacional (CZ)", "Autoridades públicas",
+     ["Contra", "Favor", "Reforço", "", "Reforço", "Favor", "Reforço", "Reforço", "", "Favor"]),
+    ("Norwegian Food Safety Auth.", "Autoridade alimentar (NO)", "Autoridades públicas",
+     ["Derrogação", "Favor", "Favor", "Reforço", "Derrogação", "Favor", "Reforço", "Reforço", "Favor", "Favor"]),
+    ("Fundación Vet+i (🇪🇸)", "Plataforma tecn. san. animal (ES)", "Autoridades públicas",
+     ["", "", "", "", "", "", "", "", "", ""]),
 ]
 
 SEC4_ANALISE = """
-<p>Da análise cruzada dos 18 pareceres emergem <strong>três eixos de tensão</strong> fundamentais:</p>
+<p>Da análise cruzada dos <strong>52 pareceres</strong>, organizados em 7 grupos, emergem
+<strong>quatro eixos de tensão</strong> fundamentais:</p>
 <ul>
-  <li><strong>Bem-estar vs. uso funcional dos animais:</strong> A divisão mais nítida opõe as organizações
-  de bem-estar animal (que querem normas mais exigentes para todos os animais, incluindo os de caça) às
-  federações de caçadores (que defendem derrogações para a atividade cinegética). Este conflito é central
-  para a aplicação do Regulamento em países como Portugal, Espanha e França, com forte tradição de caça
-  com cães.</li>
-  <li><strong>Proibições vs. regulação:</strong> Em temas como coleiras elétricas, venda em pet shops e
-  acorrentamento, a maioria das organizações de bem-estar defende a proibição total, enquanto os setores
-  com interesses económicos ou culturais preferem uma abordagem de regulação e limitação.</li>
-  <li><strong>Castração cirúrgica:</strong> Surpreendentemente, há vozes académicas e da indústria
-  farmacêutica a questionar a castração cirúrgica como método-padrão de controlo populacional,
-  apontando para efeitos adversos na saúde e comportamento. Este debate tem implicações diretas para
-  as políticas de esterilização em Portugal.</li>
+  <li><strong>Consenso alargado em rastreabilidade:</strong> A rastreabilidade (identificação
+  eletrónica + base de dados interoperável) é o único tema com aprovação quase unânime — todas as
+  organizações de bem-estar, veterinárias, kennel clubs e autoridades públicas apoiam. Mesmo a
+  indústria e os caçadores não a contestam. O debate limita-se ao <em>âmbito</em>: se deve abranger
+  todos os cães e gatos (posição das ONG) ou apenas os transacionados comercialmente.</li>
+  <li><strong>Bem-estar vs. uso funcional:</strong> A divisão mais nítida opõe as organizações de
+  bem-estar (que querem normas universais, incluindo cães de caça) às federações de caçadores (que
+  defendem derrogações). FACE, FNC e Real Fed. Española de Caza rejeitam a aplicação do limiar Art. 4
+  à criação não comercial de cães de caça. Em sentido contrário, SOS Galgos e FENPCA documentam que
+  os cães de caça representam 70% dos abandonamentos em Espanha — argumento com relevância directa
+  para Portugal.</li>
+  <li><strong>Proibições vs. regulação:</strong> Coleiras elétricas, venda em pet shops e
+  acorrentamento dividem o campo: ONG e autoridades querem proibição total; a indústria
+  (Electronic Collar Manufacturers, ARDO) e parte dos kennel clubs propõem exceções e regulação.
+  Significativamente, mesmo o Norwegian Kennel Club — que genericamente apoia o Regulamento —
+  propõe uma derrogação limitada para uso em treino de cães de caça.</li>
+  <li><strong>Debate científico sobre castração:</strong> Manteca/UAB, VIRBAC e UAB Comportamento
+  questionam a castração cirúrgica como método-padrão, apontando efeitos adversos na saúde e
+  comportamento documentados em 35 raças. A Norwegian Food Safety Authority e a FVE continuam a
+  apoiar a castração como instrumento de controlo. Este debate tem implicações directas para as
+  políticas de esterilização municipais em Portugal (54,4% dos cães registados já esterilizados).</li>
 </ul>
 """
 
@@ -403,33 +525,66 @@ def gerar_tabela_inovacoes(dados):
 </table>"""
 
 def gerar_tabela_opiniao(temas, dados):
+    # Recolher grupos únicos em ordem de aparecimento
+    grupos_vistos = []
+    for org, tipo, grupo, posicoes in dados:
+        if grupo not in grupos_vistos:
+            grupos_vistos.append(grupo)
+
     cabecalhos = "".join(f"<th>{t}</th>" for t in temas)
     linhas = ""
-    for org, tipo, posicoes in dados:
+    grupo_atual = None
+    for org, tipo, grupo, posicoes in dados:
+        if grupo != grupo_atual:
+            grupo_atual = grupo
+            ncols = len(temas) + 3  # org + grupo + tipo + temas
+            linhas += f"<tr class='grupo-header' data-grupo='{grupo}'><td colspan='{ncols}'><strong>{grupo}</strong></td></tr>\n"
         cels = ""
         for p in posicoes:
             cls = ""
-            if "✔" in p: cls = "pos-favor"
-            elif "✖" in p: cls = "pos-contra"
-            elif "⚠" in p: cls = "pos-reforco"
-            elif "△" in p: cls = "pos-derrog"
+            if p == "Favor": cls = "pos-favor"
+            elif p == "Contra": cls = "pos-contra"
+            elif p == "Reforço": cls = "pos-reforco"
+            elif p == "Derrogação": cls = "pos-derrog"
             cels += f"<td class='{cls}'>{p}</td>"
-        linhas += f"<tr><td><strong>{org}</strong></td><td class='tipo-org'>{tipo}</td>{cels}</tr>\n"
-    return f"""<div class="tabela-scroll">
-<table class="tabela-opiniao">
+        linhas += f"<tr data-grupo='{grupo}'><td><strong>{org}</strong></td><td class='tipo-org'>{grupo}</td><td class='tipo-org'>{tipo}</td>{cels}</tr>\n"
+
+    grupos_options = "".join(f'<option value="{g}">{g}</option>' for g in grupos_vistos)
+
+    return f"""<div style="margin-bottom:12px;">
+<label style="font-size:12px;font-weight:600;color:#555;">Filtrar por grupo: </label>
+<select id="filtro-grupo" onchange="filtrarGrupo(this.value)" style="font-size:12px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;">
+<option value="">Todos os grupos</option>
+{grupos_options}
+</select>
+</div>
+<div class="tabela-scroll">
+<table class="tabela-opiniao" id="tabela-opin">
 <thead><tr>
-<th>Organização</th><th>Tipo</th>{cabecalhos}
+<th>Organização</th><th>Grupo</th><th>Tipo</th>{cabecalhos}
 </tr></thead>
 <tbody>{linhas}</tbody>
 </table>
 </div>
 <div class="legenda-opiniao">
-<span class="pos-favor">✔ Favor / apoia</span>
-<span class="pos-contra">✖ Contra / critica / propõe proibição</span>
-<span class="pos-reforco">⚠ Propõe reforço da norma</span>
-<span class="pos-derrog">△ Propõe derrogação / flexibilização</span>
+<span class="pos-favor">Favor / apoia</span>
+<span class="pos-contra">Contra / critica / propõe proibição</span>
+<span class="pos-reforco">Propõe reforço da norma</span>
+<span class="pos-derrog">Propõe derrogação / flexibilização</span>
 <span>— Não abordado</span>
-</div>"""
+</div>
+<script>
+function filtrarGrupo(grupo) {{
+  var rows = document.querySelectorAll('#tabela-opin tbody tr');
+  rows.forEach(function(row) {{
+    if (!grupo || row.getAttribute('data-grupo') === grupo) {{
+      row.style.display = '';
+    }} else {{
+      row.style.display = 'none';
+    }}
+  }});
+}}
+</script>"""
 
 def nivel_classe(nivel):
     return {"alto": "nivel-alto", "medio": "nivel-medio", "baixo": "nivel-baixo", "muito-alto": "nivel-muito-alto"}.get(nivel, "")
@@ -664,7 +819,7 @@ a {{ color: inherit; text-decoration: none; }}
     <span class="hero-tag">@regulamento</span>
     <span class="hero-tag">@codigo</span>
     <span class="hero-tag">@rgbeac</span>
-    <span class="hero-tag">@opiniao (18 pareceres)</span>
+    <span class="hero-tag">@opiniao (52 pareceres, 7 grupos)</span>
     <span class="hero-tag">Realidade PT</span>
     <span class="hero-tag">Síntese executiva</span>
   </div>
@@ -869,7 +1024,7 @@ def gerar_word():
     add_subtitulo_doc(doc, "Reflexão sobre o espírito legislativo, os temas recorrentes nas opiniões e a realidade portuguesa")
     add_subtitulo_doc(doc, f"Produzido em {DATA_PRODUCAO}")
     doc.add_paragraph()
-    add_subtitulo_doc(doc, "@regulamento · @codigo · @rgbeac · @opiniao (18 pareceres) · Realidade PT")
+    add_subtitulo_doc(doc, "@regulamento · @codigo · @rgbeac · @opiniao (52 pareceres, 7 grupos) · Realidade PT")
 
     # SEC 1
     add_sec_titulo(doc, 1, SEC1_TITULO, SEC1_SUBTITULO, RGBColor(0, 119, 182))
@@ -904,13 +1059,21 @@ def gerar_word():
         run.font.italic = True
         run.font.size = Pt(9)
 
-    # Tabela opiniões simplificada
-    doc.add_heading("Posições por organização e tema", level=2)
-    cabecalhos_opin = ["Organização", "Tipo"] + [t.replace('\n', ' ') for t in OPINIAO_TEMAS]
+    # Tabela opiniões — formato condensado (3 colunas para caber em Word)
+    doc.add_heading("Posições por organização e tema (síntese)", level=2)
+    temas_abrev = ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10"]
     linhas_opin = []
-    for org, tipo, posicoes in OPINIAO_DADOS:
-        linhas_opin.append([org, tipo] + posicoes)
-    add_tabela_2col(doc, cabecalhos_opin, linhas_opin, cor_header=RGBColor(155, 89, 182))
+    grupo_ant = None
+    for org, tipo, grupo, posicoes in OPINIAO_DADOS:
+        if grupo != grupo_ant:
+            grupo_ant = grupo
+            linhas_opin.append([f"── {grupo} ──", "", ""])
+        pos_sintet = "; ".join(
+            f"{temas_abrev[i]}: {p}" for i, p in enumerate(posicoes) if p
+        ) or "—"
+        linhas_opin.append([org, grupo, pos_sintet])
+    add_tabela_2col(doc, ["Organização", "Grupo", "Principais posições"],
+                    linhas_opin, cor_header=RGBColor(155, 89, 182))
     add_texto(doc, SEC4_ANALISE)
 
     # SEC 5
@@ -1048,28 +1211,44 @@ def gerar_excel():
          'dados': [(i, d, r) for i, d, r in SEC3_INOVACOES]},
     ], "C8DCC6")
 
-    # SEC 4 — Opiniões (matriz)
+    # SEC 4 — Opiniões (matriz com coluna Grupo)
     ws_sec4 = wb.create_sheet("Sec4")
-    ws_sec4.column_dimensions['A'].width = 20
-    for idx, tema in enumerate(OPINIAO_TEMAS, 1):
-        ws_sec4.column_dimensions[get_column_letter(idx+1)].width = 16
+    ws_sec4.column_dimensions['A'].width = 22  # Organização
+    ws_sec4.column_dimensions['B'].width = 22  # Grupo
+    for idx in range(len(OPINIAO_TEMAS)):
+        ws_sec4.column_dimensions[get_column_letter(idx+3)].width = 14
+
+    # Cores pastel por grupo
+    cores_grupo = {
+        "Bem-estar animal":         "EAF4EA",
+        "Veterinária":              "EAF0FA",
+        "Kennel clubs e felinologia": "FFF8EA",
+        "Caçadores e uso funcional": "FFF0EA",
+        "Indústria e comércio":     "F5EAFA",
+        "Rastreabilidade e I&R":    "EAF7FA",
+        "Autoridades públicas":     "F0EAF5",
+    }
 
     row = 1
     # Título
-    ws_sec4.merge_cells(f'A1:{get_column_letter(len(OPINIAO_TEMAS)+2)}{row}')
-    cell_title = ws_sec4[f'A1']
-    cell_title.value = 'Matriz de Opiniões: 18 Organizações × 10 Temas'
+    n_cols = len(OPINIAO_TEMAS) + 2
+    ws_sec4.merge_cells(f'A1:{get_column_letter(n_cols)}{row}')
+    cell_title = ws_sec4['A1']
+    cell_title.value = 'Matriz de Opiniões: 52 Organizações × 10 Temas (7 grupos)'
     cell_title.font = Font(name='Calibri', size=14, bold=True, color='5B7A8F')
     cell_title.alignment = Alignment(horizontal='left', vertical='center', wrap_text=True)
     row += 2
 
     # Cabeçalho
-    ws_sec4.cell(row=row, column=1).value = 'Organização'
-    ws_sec4.cell(row=row, column=1).fill = PatternFill(start_color=cor_header, end_color=cor_header, fill_type='solid')
-    ws_sec4.cell(row=row, column=1).font = Font(name='Calibri', size=9, bold=True, color='1A1A2E')
-    ws_sec4.cell(row=row, column=1).border = thin_border
+    for col_idx, cab in enumerate(['Organização', 'Grupo'], 1):
+        cell = ws_sec4.cell(row=row, column=col_idx)
+        cell.value = cab
+        cell.fill = PatternFill(start_color=cor_header, end_color=cor_header, fill_type='solid')
+        cell.font = Font(name='Calibri', size=9, bold=True, color='1A1A2E')
+        cell.alignment = Alignment(horizontal='left', vertical='center', wrap_text=True)
+        cell.border = thin_border
 
-    for col_idx, tema in enumerate(OPINIAO_TEMAS, 2):
+    for col_idx, tema in enumerate(OPINIAO_TEMAS, 3):
         cell = ws_sec4.cell(row=row, column=col_idx)
         cell.value = tema.replace('\n', ' ')
         cell.fill = PatternFill(start_color=cor_header, end_color=cor_header, fill_type='solid')
@@ -1078,27 +1257,52 @@ def gerar_excel():
         cell.border = thin_border
     row += 1
 
-    # Dados opiniões
-    for org, tipo, posicoes in OPINIAO_DADOS:
-        ws_sec4.cell(row=row, column=1).value = org
-        ws_sec4.cell(row=row, column=1).font = Font(name='Calibri', size=9, bold=True)
-        ws_sec4.cell(row=row, column=1).border = thin_border
+    # Dados opiniões — separador por grupo
+    grupo_atual = None
+    for org, tipo, grupo, posicoes in OPINIAO_DADOS:
+        # Linha separadora de grupo
+        if grupo != grupo_atual:
+            grupo_atual = grupo
+            ws_sec4.merge_cells(f'A{row}:{get_column_letter(n_cols)}{row}')
+            cell_grp = ws_sec4[f'A{row}']
+            cell_grp.value = grupo
+            cor_grp = cores_grupo.get(grupo, "F0F0F0")
+            cell_grp.fill = PatternFill(start_color=cor_grp, end_color=cor_grp, fill_type='solid')
+            cell_grp.font = Font(name='Calibri', size=9, bold=True, color='2D4059')
+            cell_grp.alignment = Alignment(horizontal='left', vertical='center')
+            ws_sec4.row_dimensions[row].height = 16
+            row += 1
 
-        for col_idx, pos in enumerate(posicoes, 2):
+        cor_grp = cores_grupo.get(grupo, "FFFFFF")
+
+        # Organização
+        cell_org = ws_sec4.cell(row=row, column=1)
+        cell_org.value = org
+        cell_org.font = Font(name='Calibri', size=9, bold=True)
+        cell_org.border = thin_border
+        cell_org.fill = PatternFill(start_color=cor_grp, end_color=cor_grp, fill_type='solid')
+
+        # Grupo
+        cell_grp2 = ws_sec4.cell(row=row, column=2)
+        cell_grp2.value = grupo
+        cell_grp2.font = Font(name='Calibri', size=8, color='666666')
+        cell_grp2.border = thin_border
+        cell_grp2.fill = PatternFill(start_color=cor_grp, end_color=cor_grp, fill_type='solid')
+
+        for col_idx, pos in enumerate(posicoes, 3):
             cell = ws_sec4.cell(row=row, column=col_idx)
-            cell.value = pos if pos != "—" else ""
+            cell.value = pos if pos else ""
             cell.border = thin_border
             cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
             cell.font = Font(name='Calibri', size=8)
 
-            # Cor baseada em posição
-            if "Favor" in pos:
+            if pos == "Favor":
                 cell.fill = PatternFill(start_color=cor_favor, end_color=cor_favor, fill_type='solid')
-            elif "Contra" in pos:
+            elif pos == "Contra":
                 cell.fill = PatternFill(start_color=cor_contra, end_color=cor_contra, fill_type='solid')
-            elif "reforço" in pos or "⚠" in pos:
+            elif pos == "Reforço":
                 cell.fill = PatternFill(start_color=cor_reforco, end_color=cor_reforco, fill_type='solid')
-            elif "derrogação" in pos or "△" in pos:
+            elif pos == "Derrogação":
                 cell.fill = PatternFill(start_color=cor_derrog, end_color=cor_derrog, fill_type='solid')
         row += 1
 
