@@ -207,13 +207,71 @@ SECOES = [
         ],
     },
     {
-        "titulo": "10. Separação das crias",
+        "titulo": "10. Separação das crias da progenitora",
         "linhas": [
             (
-                "Idade mínima de separação da progenitora",
-                "Não regulado no Art.º 8.º (ver Art.º 7.º e Anexo I sobre alojamento e cuidados)",
-                "Não regulado no Art.º 8.º",
-                "Cães: 10.ª semana\nGatos: 12.ª semana\n(com desmame gradual)\n(Art.º 70.º, n.º 5)",
+                "Cachorros (cães) — idade mínima de separação",
+                "8 semanas (estabelecimentos de criação, abrigos e famílias de acolhimento)\nDerrogação por razões médicas com parecer escrito do MV\n(Anexo I, Pt. 4, n.º 3.3)",
+                "Não regulado no Art.º 8.º nem no Anexo I reprodutivo",
+                "10.ª semana de idade\n(com período de desmame gradual)\n(Art.º 70.º, n.º 5)",
+            ),
+            (
+                "Gatinhos — idade mínima de separação",
+                "Abrigos e famílias de acolhimento: 8 semanas\nEstabelecimentos de criação: 12 semanas\nDerrogação por razões médicas com parecer escrito do MV\n(Anexo I, Pt. 4, n.º 3.3)",
+                "Não regulado no Art.º 8.º nem no Anexo I reprodutivo",
+                "12.ª semana de idade\n(com período de desmame gradual)\n(Art.º 70.º, n.º 5)",
+            ),
+            (
+                "Registo do parecer de derrogação",
+                "O operador conserva o registo até ao último cachorro/gatinho da ninhada ser colocado no mercado\n(Anexo I, Pt. 4, n.º 3.3)",
+                "Não regulado",
+                "Não regulado explicitamente",
+            ),
+        ],
+    },
+    {
+        "titulo": "11. Desmame (processo e critérios)",
+        "linhas": [
+            (
+                "Processo de desmame — duração e método",
+                "Introdução gradual de alimentos sólidos ao longo de um período não inferior a 7 dias\n(Anexo I, Pt. 1, n.º 4.4)",
+                "Não regulado especificamente\n(o @codigo prevê programa de alimentação adequado à fase fisiológica — Art.º 8.º, n.º 2, al. a) por referência ao Anexo I)",
+                "«Período de desmame gradual» salvaguardado antes da separação\n(Art.º 70.º, n.º 5 — não especifica duração)",
+            ),
+            (
+                "Idade mínima para conclusão do desmame",
+                "Não antes das 6 semanas de idade (tanto para cachorros como para gatinhos)\n(Anexo I, Pt. 1, n.º 4.4)",
+                "Não regulado",
+                "Não regulado explicitamente (a separação só é permitida a partir da 10.ª/12.ª semana, o que implica desmame anterior)",
+            ),
+            (
+                "Alimentação de cachorros/gatinhos não desmamados",
+                "Colostro nos primeiros 2 dias; depois leite da progenitora ou de cadela/gata lactante; se impossível, sucedâneo de leite específico para cachorros/gatinhos\n(Anexo I, Pt. 1, n.º 2.2)",
+                "Não regulado no Anexo I reprodutivo\n(o Art.º 8.º, n.º 3, al. f) do @codigo prevê alojamento de fêmeas com crias em condições de bem-estar)",
+                "Não regulado especificamente no Art.º 70.º",
+            ),
+            (
+                "Monitorização do crescimento de não desmamados",
+                "Todos os cachorros/gatinhos não desmamados devem receber leite, sucedâneo ou combinação em quantidade suficiente para ganho de peso constante\n(Anexo I, Pt. 1, n.º 3.3)",
+                "Não regulado",
+                "Não regulado",
+            ),
+        ],
+    },
+    {
+        "titulo": "12. Socialização das crias",
+        "linhas": [
+            (
+                "Idade de início e tipo de socialização",
+                "A partir das 3 semanas de idade: oportunidades diárias e progressivas de contacto social com congéneres, seres humanos e, sempre que possível, outras espécies\n(Anexo I, Pt. 4, n.º 1.1)",
+                "Não regulado especificamente na secção de reprodução\n(o @codigo exige enriquecimento ambiental — Art.º 13.º, n.º 5)",
+                "Todos os alojamentos de criação de cães e gatos devem dispor de um plano de socialização e enriquecimento ambiental\n(Art.º 52.º, n.º 7 do @rgbeac)",
+            ),
+            (
+                "Separação por comportamento agressivo",
+                "Animais que representem ameaça ou causem stress excessivo devem ser mantidos separados\n(Anexo I, Pt. 4, n.º 1.1)",
+                "Não regulado especificamente",
+                "Não regulado especificamente",
             ),
         ],
     },
