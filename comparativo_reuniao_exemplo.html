@@ -295,48 +295,6 @@
     display: none;
   }
   .search-count { color: #90b0c8; font-size: .73rem; padding: 2px 20px 8px; }
-
-  /* ESTADO */
-  .notas-estado-row {
-    display: flex; align-items: center; gap: 14px; margin-bottom: 10px; flex-wrap: wrap;
-  }
-  .notas-estado-row > label { margin-bottom: 0; }
-  .estado-select {
-    border: 2px solid #ccc; border-radius: 6px;
-    padding: 5px 12px; font-size: .88rem; font-family: inherit;
-    background: #fff; cursor: pointer; transition: border-color .2s, background .2s;
-    font-weight: 700;
-  }
-  .estado-select:focus { outline: none; border-color: var(--div); }
-  .estado-select.est-por_discutir { border-color: #bbb; color: #666; }
-  .estado-select.est-fechado      { border-color: #2e7d32; background: #f0fff4; color: #1a5c1a; }
-  .estado-select.est-pendente     { border-color: #b8860b; background: #fffbee; color: #7a5800; }
-  .estado-dot {
-    display: inline-block; width: 8px; height: 8px;
-    border-radius: 50%; margin-left: 5px; vertical-align: middle; flex-shrink: 0;
-  }
-  .dot-por_discutir { background: #aaa; }
-  .dot-fechado      { background: #2e7d32; }
-  .dot-pendente     { background: #c8a000; }
-
-  /* IMPRESSÃO */
-  .notas-print { display: none; }
-  @media print {
-    header, nav, .nav-btns, #export-msg, .search-wrap,
-    .notas-box button, .notas-box label[for], .notas-box input,
-    .notas-box textarea, .notas-estado-row .estado-select { display: none !important; }
-    .notas-print { display: block !important; white-space: pre-wrap;
-      border: 1px solid #ccc; border-radius: 6px; padding: 10px;
-      font-size: .88rem; background: var(--nota-bg); min-height: 40px; }
-    .layout { display: block; }
-    main { padding: 12px 20px; }
-    body { background: #fff !important; }
-    .grid { grid-template-columns: 1fr 1fr 1fr; }
-    .divergencia-grid { grid-template-columns: 1fr 1fr 1fr; }
-    .art-badge, .card-header, .div-col-header, .div-sumario-header,
-    .badge-alt, .div-box { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    @page { margin: 1.5cm; }
-  }
 </style>
 </head>
 <body>
@@ -406,16 +364,16 @@ const ARTIGOS = [
       "traducao": "Os operadores devem aplicar os seguintes princípios gerais de bem-estar aos cães e gatos criados ou detidos nos seus estabelecimentos:\n(a) Os cães e os gatos recebem água e alimentos de qualidade e numa quantidade que assegura a sua boa e adequada nutrição e hidratação;\n(b) os cães e gatos são mantidos num ambiente físico adequado, regularmente limpo, seguro e confortável, especialmente em termos de espaço, qualidade do ar, temperatura, iluminação, proteção face a condições climáticas adversas e facilidade de movimentação, prevenindo a sobrelotação;\n(c) os cães e gatos são mantidos seguros, limpos e com boa saúde, prevenindo doenças, lesões e dor, nomeadamente através de práticas de maneio, manuseamento e reprodução adequadas;\n(d) os cães e gatos são mantidos num ambiente que lhes permite exibir comportamentos específicos da espécie e comportamentos sociais não nocivos, e estabelecer uma relação positiva com os seres humanos;\n(e) (e) os cães e gatos são mantidos de forma a otimizar o seu estado mental, prevenindo ou reduzindo estímulos negativos em duração e intensidade, maximizando oportunidades de estímulos positivos, prevenindo o desenvolvimento de comportamentos repetitivos anormais, tendo em conta as necessidades individuais do animal nos domínios referidos nas alíneas (a) a (d)."
     },
     "rgbeac": {
-      "ref": "Análise no Art.º 7",
-      "texto": ""
+      "ref": "Art.º 7.º do RGBEAC (proposta, jun. 2025)",
+      "texto": "1 – Todos têm o dever de garantir condições de bem-estar aos animais de companhia, em especial que:\na) não passem fome ou sede, nem sejam sujeitos a malnutrição;\nb) não sejam expostos a situações de desconforto físico ou térmico;\nc) não sofram dor, lesão física ou doença;\nd) possam expressar padrões normais de comportamento; e\ne) não sejam colocados em situações que lhes provoquem stresse, medo ou ansiedade injustificados.\n2 - As condições de detenção e de alojamento dos animais de companhia devem salvaguardar os seus parâmetros de bem-estar animal, nomeadamente nos termos dos artigos seguintes.\n3 - Nenhum animal deve ser detido como animal de companhia se não estiverem asseguradas as condições referidas no presente decreto-lei ou se não se adaptar ao cativeiro."
     },
     "codigo": {
-      "ref": "Análise no Art.º 7",
-      "texto": ""
+      "ref": "Arts. 4.º e 5.º do Código do Animal (DL n.º 214/2013)",
+      "texto": "Artigo 4.º — Detenção responsável\nCabe aos detentores de animais de companhia assegurar as necessidades básicas de bem-estar dos mesmos, garantir o controlo da sua reprodução, salvaguardar a sua saúde e prevenir os riscos inerentes à transmissão de doenças a pessoas e a outros animais e, ainda, a segurança das populações, garantindo a salubridade dos locais e a tranquilidade das pessoas.\n\nArtigo 5.º — Princípios básicos para o bem-estar dos animais\n1 - As condições de detenção e de alojamento para reprodução, criação, manutenção e acomodação dos animais de companhia devem salvaguardar os seus parâmetros de bem-estar animal.\n2 - Nenhum animal deve ser detido como animal de companhia se não estiverem asseguradas as condições referidas no número anterior ou se não se adaptar ao cativeiro.\n3 - É proibida a violência contra animais, considerando-se como tal todos os atos que, sem necessidade, infligem a morte, o sofrimento, abuso ou lesões a um animal, designadamente os seguintes:\na) Agredir animais, nomeadamente com o uso de chicotes, estimulantes elétricos ou objetos contundentes ou perfurantes, ou com murros, bofetadas ou pontapés;\nb) Restringir a liberdade de movimentos dos animais de tal forma que lhes seja impedido levantar-se, deitar-se ou virar-se sobre si próprios;\nc) Usar equipamentos de maneio, contenção ou treino, que causem sofrimento desnecessário ou lesões aos animais;\nd) Incitar, realizar ou promover lutas entre animais de companhia, quando destas possa resultar sofrimento, lesões ou morte dos animais.\n4 - É proibido utilizar animais para fins didáticos e lúdicos, de treino, filmagens, exibições, publicidade ou atividades semelhantes, sempre que daí resultem para aqueles dor ou sofrimentos consideráveis, salvo experiência científica de comprovada necessidade e justificada nos termos da lei."
     },
     "legislacao": {
-      "ref": "Análise no Art.º 7",
-      "texto": ""
+      "ref": "n.ºs 1, 2, 3 e 4 do art.º 7.º do DL n.º 276/2001, de 17 de outubro",
+      "texto": "1 — As condições de detenção e de alojamento para reprodução, criação, manutenção e acomodação dos animais de companhia devem salvaguardar os seus parâmetros de bem-estar animal, nomeadamente nos termos dos artigos seguintes.\n2 — Nenhum animal deve ser detido como animal de companhia se não estiverem asseguradas as condições referidas no número anterior ou se não se adaptar ao cativeiro.\n3 — São proibidas todas as violências contra animais, considerando-se como tais os atos consistentes em, sem necessidade, se infligir a morte, o sofrimento ou lesões a um animal.\n4 — É proibido utilizar animais para fins didáticos e lúdicos, de treino, filmagens, exibições, publicidade ou atividades semelhantes, na medida em que daí resultem para eles dor ou sofrimentos consideráveis, salvo experiência científica de comprovada necessidade e justificada nos termos da lei."
     },
     "divergencia": {
       "rgbeac": "Análise no Art.º 7",
@@ -481,7 +439,7 @@ const ARTIGOS = [
       "rgbeac": "",
       "codigo": "O @codigo (art.º 8.º, n.º 2) exclui da reprodução animais com defeitos genéticos e malformações (monorquidia, displasia, rim poliquístico e alterações comportamentais) e proíbe cios sucessivos, mas não prevê o conceito de traços conformacionais excessivos nem a proibição de consanguinidade.",
       "legislacao": "Breve referência. Sem equivalência",
-      "sumario": "Introduzir conceito de características conformacionais excessivas (a regular por ato delegado europeu até 2030); (2) proibir consanguinidade próxima (pais/filhos, irmãos, avós/netos); (3) proibir a produção de híbridos; (4) impor consulta veterinária prévia ao acasalamento de animais potencialmente afetados.\n\nANNEX I, Ponto 3 estabelece requisitos técnicos obrigatórios de saúde reprodutiva. Recomenda-se: (i) incorporar idade mínima 10 meses (gatas) e 2º estro (cadelas); (ii) estabelecer máximo imperativo de 3 ninhadas em 2 anos (sem exceções veterinárias); (iii) exigir período de recuperação 1 ano após atingir limite; (iv) proibir uso após 2 cesarianas; (v) exigir avaliação veterinária escrita para cadelas ≥8 anos e gatas ≥6 anos."
+      "sumario": "Introduzir conceito de características conformacionais excessivas (a regular por ato delegado europeu até 2030); (2) proibir consanguinidade próxima (pais/filhos, irmãos, avós/netos); (3) proibir a produção de híbridos; (4) impor consulta veterinária prévia ao acasalamento de animais potencialmente afetados. \n\nANNEX I, Ponto 3 estabelece requisitos técnicos obrigatórios de saúde reprodutiva. Recomenda-se: (i) incorporar idade mínima 10 meses (gatas) e 2º estro (cadelas); (ii) estabelecer máximo imperativo de 3 ninhadas em 2 anos (sem exceções veterinárias); (iii) exigir período de recuperação 1 ano após atingir limite; (iv) proibir uso após 2 cesarianas; (v) exigir avaliação veterinária escrita para cadelas ≥8 anos e gatas ≥6 anos."
     },
     "necessidade_alteracao": "Sim",
     "notas": ""
@@ -630,7 +588,7 @@ const ARTIGOS = [
     "divergencia": {
       "rgbeac": "Recupera as «ações»\nReforça a obrigação com 'parecer relativo à verificação das condições higiossanitárias e de bem-estar'\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
       "codigo": "Replica quase verbatim o art.º 4.º do DL n.º 276/2001, mas exclui «ações»\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
-      "legislacao": "Estabelece a obrigação de ter médico veterinário responsável que execute 'programas e ações' para saúde e bem-estar,\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
+      "legislacao": "Estabelece a obrigação de ter médico veterinário responsável que execute 'programas e ações' para saúde e bem-estar, \nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
       "sumario": "O @regulamento exige 'visita de um veterinário' num prazo específico (1 ano) após entrada em funcionamento com manutenção de registos por 4 anos e transmissão entre veterinários. Necessidade de alteração: (1) formalizar obrigação de 'visita de avaliação' por veterinário dentro de 1 ano após implementação do regulamento/notificação; (2) exigir avaliações periódicas conforme risco; (3) obrigatória manutenção de registos por 4 anos;"
     },
     "necessidade_alteracao": "Sim",
@@ -691,7 +649,7 @@ const ARTIGOS = [
       "rgbeac": "@rgbeac prevê acesso diário a área de exercício exterior 2x/dia durante 30 minutos (= 1h total),",
       "codigo": "",
       "legislacao": "",
-      "sumario": "N.º 2, Proibição expressa de manter cães ou gatos em contentores : não coberto, nenhum dos três diplomas contém esta proibição explícita.\nN.º 3 – Exceções ao uso de contentores (transporte, isolamento curto prazo, espetáculos, neonatos com termorregulação reduzida ou acompanhados da mãe) Não coberto\nN.º 4 – Proibição de manter cães >8 semanas exclusivamente no interior; acesso diário ao exterior mínimo 1h total (ou passeio); desvio apenas por parecer veterinário escrito - Parcialmente coberto no n.º 6, art.º 47.º @rgbeac prevê acesso diário a área de exercício exterior 2x/dia durante 30 minutos (= 1h total), mas não contém a proibição explícita de manutenção exclusiva no interior nem o mecanismo de desvio por parecer veterinário escrito. Ausente no @codigo e @legislacao.\n\nPrever exceções para cães de guarda de rebanho"
+      "sumario": "N.º 2, Proibição expressa de manter cães ou gatos em contentores : não coberto, nenhum dos três diplomas contém esta proibição explícita. \nN.º 3 – Exceções ao uso de contentores (transporte, isolamento curto prazo, espetáculos, neonatos com termorregulação reduzida ou acompanhados da mãe) Não coberto\nN.º 4 – Proibição de manter cães >8 semanas exclusivamente no interior; acesso diário ao exterior mínimo 1h total (ou passeio); desvio apenas por parecer veterinário escrito - Parcialmente coberto no n.º 6, art.º 47.º @rgbeac prevê acesso diário a área de exercício exterior 2x/dia durante 30 minutos (= 1h total), mas não contém a proibição explícita de manutenção exclusiva no interior nem o mecanismo de desvio por parecer veterinário escrito. Ausente no @codigo e @legislacao. \n\nPrever exceções para cães de guarda de rebanho"
     },
     "necessidade_alteracao": "Sim - Portaria complementar com especificações técnicas",
     "notas": ""
@@ -736,16 +694,16 @@ const ARTIGOS = [
       "traducao": "1. Os operadores devem assegurar que medidas são tomadas para satisfazer as necessidades comportamentais de cães ou gatos em conformidade com o ponto 4 do Anexo I.\n2. Os operadores não devem manter cães ou gatos em áreas que restringem os seus movimentos naturais, exceto no caso do artigo 15.º (parágrafo 3), segundo parágrafo, ou para realizar os seguintes procedimentos ou tratamentos:\na) exames físicos;\nb) identificação individual de cães ou gatos e leitura da informação de identificação;\nc) recolha de amostras e vacinações;\nd) procedimentos de higiene, higiénicos, de saúde ou reprodutivos que não sejam acasalamento;\ne) tratamento médico, incluindo tratamento cirúrgico ou reabilitação prescrita.\n3. O acorrentamento por mais de 1 hora é proibido, exceto durante a duração de um tratamento médico ou participação em espetáculos, exposições e competições de cães e gatos.\n4. Os Estados-Membros podem conceder isenções ao disposto no n.º 3 para os cães destinados a ser utilizados nos serviços militares, policiais e aduaneiros que sejam mantidos em estabelecimentos de criação ou de venda.\n5.  Os operadores devem assegurar que os cães ou gatos sejam mantidos em condições que lhes permitam exibir comportamentos sociais não prejudiciais e comportamentos específicos da espécie, bem como vivenciar emoções positivas.\n6. Os operadores devem assegurar que os cães ou gatos possam socializar em conformidade com o ponto 4 do anexo I. Os operadores de estabelecimentos de criação devem dispor de uma estratégia documentada para essa socialização.\nEm derrogação do primeiro parágrafo, os requisitos de socialização não se aplicam aos cães de proteção de gado mantidos em estabelecimentos de criação durante os períodos em que tais cães sejam utilizados para fins de guarda ou de treino, nem aos cães de pastoreio durante a transumância sazonal.\n7. Os operadores devem assegurar que o enriquecimento seja facultado e esteja acessível a todos os cães ou gatos, criando-lhes um ambiente estimulante que lhes permita desenvolver e exibir comportamentos específicos da espécie e reduza a sua frustração."
     },
     "rgbeac": {
-      "ref": "RGBEAC (proposta, jun. 2025) - Artigos 7 a 12 e 52º",
-      "texto": "Analisado no Art.º 8.º do Reg.\nEspecificação clara: 'exercício físico e estímulo mental', 'Contato social adequado'. (Art.º 10.º).\nMétodos de 'reforço positivo' (OBRIGATÓRIO).\nProibição explícita de 'métodos aversivos, punitivos ou violentos'.\n\nn.º 7, do art.º 52.º\nTodos os alojamentos para hospedagem de cães e gatos, à exceção dos alojamentos com fins higiénicos, devem dispor de um plano de socialização e enriquecimento ambiental.\n(Documentação obrigatória de estratégia de socialização - criadores).\n\nFatores de socialização também previstos no treino dos perigosos e PP."
+      "ref": "Arts. 47.º e 52.º (n.º 7) do RGBEAC (proposta, jun. 2025)",
+      "texto": "Artigo 47.º — Condições dos alojamentos\n1 - Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\na) A prática de exercício físico adequado;\nb) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 - Os animais devem dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n3 - [dim]As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.[/dim]\n4 - As instalações devem providenciar um enriquecimento ambiental complexo e estimulante de acordo com as necessidades específicas dos animais que albergam, incluindo materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente materiais para substrato, cama ou ninhos, ramos, buracos, locais para banhos, brinquedos e outros adequados ao fim em vista.\n5 - [dim]As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar ameaça ao bem-estar dos animais, designadamente não podem conter objetos ou equipamentos perigosos para os animais.[/dim]\n6 – Os cães devem ter acesso diário a uma área de exercício fora do seu alojamento habitual, pelo menos duas vezes por dia, durante 30 minutos.\n7 – As áreas de exercício referidas no número anterior devem incluir equipamento de enriquecimento ambiental e agilidade, incluindo piscinas, plataformas elevadas e outros adequados ao fim em vista.\n\nArtigo 52.º — Maneio (excerto)\n7 – Todos os alojamentos para hospedagem de cães e gatos, à exceção dos alojamentos com fins higiénicos, devem dispor de um plano de socialização e enriquecimento ambiental."
     },
     "codigo": {
-      "ref": "Arts. 5.º e 13.º do Código do Animal (DL 214/2013)",
-      "texto": "Artigo 5.º - Princípios que proíbem violência e maus-tratos, garantem bem-estar.\nArtigo 13.º - Espaço para exercício físico e expressão de comportamentos naturais.\nAnalisado no art.º 8.º do Reg."
+      "ref": "Art.º 13.º do Código do Animal (DL 214/2013)",
+      "texto": "Artigo 13.º — Condições dos alojamentos\n1 - Os animais devem dispor de um espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\na) A prática de exercício físico adequado;\nb) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 - Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n3 - [dim]As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.[/dim]\n4 - [dim]As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação, não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.[/dim]\n5 - As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão dos comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista."
     },
     "legislacao": {
-      "ref": "Decreto-Lei n.º 276/2001 - Artigo 8.º",
-      "texto": "1 — Os animais devem dispor de um espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir: a) A prática de exercício físico adequado; b) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 — Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem."
+      "ref": "art.º 8.º do DL n.º 276/2001, de 17 de outubro",
+      "texto": "1 — Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\na) A prática de exercício físico adequado;\nb) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 — Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n3 — [dim]As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.[/dim]\n4 — [dim]As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.[/dim]\n5 — As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista."
     },
     "divergencia": {
       "rgbeac": "Cobertura mais significtiva",
@@ -808,9 +766,9 @@ const ARTIGOS = [
       "texto": "Artigo 4.º - Exposições\n1. A participação de cães e gatos em concursos e exposições está sujeita às normas sanitárias emitidas pela DGV.\n2. A realização de concursos e exposições carece de autorização da DRA da área da realização da mesma, após parecer da respectiva câmara municipal.\n3. A autorização prévia a que se refere o número anterior deve ser solicitada pela organização da exposição com a antecedência mínima de 15 dias na câmara municipal da área da realização da exposição, mediante requerimento dirigido ao director regional de agricultura respectivo para efeitos do disposto no número anterior, acompanhado dos seguintes documentos:\na) Planta do local de realização do concurso ou exposição;\nb) A identificação do(s) médico(s) veterinário(s) responsável(eis) pela exposição ou concurso;\nc) Regulamento sanitário do concurso ou exposição, onde deve estar especificado o modo como se prevê dar cumprimento ao disposto nos números seguintes.\n\n4 - Só serão admitidos a concurso os animais que:\na) Estejam identificados electronicamente nos termos do Sistema de Identificação de Caninos e Felinos (SICAFE), no caso dos concorrentes nacionais ou, no caso de animais provenientes de outros países, de sistema de identificação em vigor no país de origem e que permita uma identificação rigorosa e eficaz do animal;\nb) Sejam portadores de boletim sanitário de cães e gatos e possuam prova de vacinação anti-rábica dentro do prazo de validade conforme determinado anualmente por despacho do director-geral de Veterinária, nos termos do n.º 2 do artigo 1.º da Portaria n.º 81/2002, de 24 de Janeiro, no caso dos animais com idade superior a 3 meses;\nc) Possuam dentro dos prazos de validade e efectuadas há mais de oito dias as vacinações contra as principais doenças infecto-contagiosas da espécie, comprovadas pelas vinhetas de vacinação respectivas apostas no boletim sanitário de cães e gatos, devidamente autenticadas por um médico veterinário.\n\n5 - Compete à organização da exposição:\na) Assegurar a presença do número de médicos veterinários necessários ao cumprimento do disposto neste diploma;\nb) Assegurar que o local onde a exposição decorre reúne as condições que permitam salvaguardar o disposto no capítulo VII do Decreto-Lei n.º 276/2001, de 17 de Outubro;\nc) Salvaguardar os aspectos de segurança, no caso de animais potencialmente perigosos, que deverão estar convenientemente açaimados ou protegidos do contacto com o público, quando fora do concurso;\nd) Disponibilizar os meios que os médicos veterinários considerem necessários ao bom desempenho das suas funções.\n\n6 - Compete aos médicos veterinários responsáveis pela exposição ou concurso:\na) Verificar a identificação electrónica dos animais e a sua correspondência com o constante do boletim;\nb) Proceder ao exame clínico dos animais que se apresentam para participar na exposição ou concurso;\nc) Examinar a documentação sanitária dos animais;\nd) Prestar a assistência médico-veterinária que se revelar necessária durante o evento;\ne) Proceder às observações que entenderem necessárias para a defesa sanitária da exposição ou concurso."
     },
     "divergencia": {
-      "rgbeac": "— Todos animais de companhia em múltiplos eventos (concursos, campanhas, cinema, etc.)\n— Câmara Municipal (consultivo)\n— Comunicação prévia isenta de taxa para sem fins lucrativos\n— Possibilidade de exames de dopagem\n— Proibida pirotecnia",
-      "codigo": "— Cães/gatos em concursos/exposições e acrescenta adoções\n— Parecer MVM vinculativo",
-      "legislacao": "— Cães/gatos em concursos/exposições",
+      "rgbeac": "Todos animais de companhia em múltiplos eventos (concursos, campanhas, cinema, etc.)\nCâmara Municipal (consultivo)\nComunicação prévia isenta de taxa para sem fins lucrativos\nPossibilidade de exames de dopagem\nProibida pirotecnia",
+      "codigo": "Cães/gatos em concursos/exposições e acrescenta adoções\nParecer MVM vinculativo",
+      "legislacao": "Cães/gatos em concursos/exposições",
       "sumario": "Prever a exclusão de animais com características conformacionais excessivas"
     },
     "necessidade_alteracao": "Sim",
@@ -901,7 +859,7 @@ const ARTIGOS = [
       "rgbeac": "Cobertura completa, implementam sistema profissional com certificação pela Autoridade como requerido)\nVai mais além e regula toda as facetas de treino, incluindo excetuando os perigos e potencialmente perigosos previstos na secção anterior",
       "codigo": "Necessita ir ao encontro da certificação",
       "legislacao": "Cães de assistência e perigosos ou potencialmente perigosos a rever no contexto próprio, não abrangido pelo @regulamento",
-      "sumario": "O RGBEAC cumpre os critérios ao prever um sistema robusto de certificação profissional para treinadores de cães com: título profissional obrigatório, requisitos de habilitação, provas teóricas e práticas, métodos baseados em reforço positivo, verificação de antecedentes criminais.\nNa legislação vigente só se encontra referências ao treino no Decreto-Lei n.º 315/2009, de 29 de Outubro, (regime dos cães perigosos e potencialmente perigosos), e no Decreto-Lei n.º 74/2007, de 27 de março, relativo ao treino em Cães de Assistência"
+      "sumario": "O RGBEAC cumpre os critérios ao prever um sistema robusto de certificação profissional para treinadores de cães com: título profissional obrigatório, requisitos de habilitação, provas teóricas e práticas, métodos baseados em reforço positivo, verificação de antecedentes criminais. \nNa legislação vigente só se encontra referências ao treino no Decreto-Lei n.º 315/2009, de 29 de Outubro, (regime dos cães perigosos e potencialmente perigosos), e no Decreto-Lei n.º 74/2007, de 27 de março, relativo ao treino em Cães de Assistência"
     },
     "necessidade_alteracao": "Não",
     "notas": ""
@@ -1422,34 +1380,24 @@ const ARTIGOS = [
 const _STORAGE_KEY = 'notas_reuniao_regulamento';
 
 function _guardarLocal() {
-  const dados = {};
-  ARTIGOS.forEach(a => {
-    dados[a.id] = { notas: a.notas || '', estado: a.estado || 'por_discutir' };
-  });
-  localStorage.setItem(_STORAGE_KEY, JSON.stringify(dados));
+  const notas = {};
+  ARTIGOS.forEach(a => { if (a.notas) notas[a.id] = a.notas; });
+  localStorage.setItem(_STORAGE_KEY, JSON.stringify(notas));
 }
 
 function _carregarLocal() {
-  ARTIGOS.forEach(a => { if (!a.estado) a.estado = 'por_discutir'; });
   try {
     const raw = localStorage.getItem(_STORAGE_KEY);
     if (!raw) return;
-    const dados = JSON.parse(raw);
-    ARTIGOS.forEach(a => {
-      const d = dados[a.id];
-      if (!d) return;
-      if (typeof d === 'string') { a.notas = d; } // retrocompatibilidade
-      else { a.notas = d.notas || ''; a.estado = d.estado || 'por_discutir'; }
-    });
+    const notas = JSON.parse(raw);
+    ARTIGOS.forEach(a => { if (notas[a.id]) a.notas = notas[a.id]; });
   } catch (_) {}
 }
 
 function exportarJSON() {
-  const dados = {};
-  ARTIGOS.forEach(a => {
-    dados[a.id] = { notas: a.notas || '', estado: a.estado || 'por_discutir' };
-  });
-  const blob = new Blob([JSON.stringify(dados, null, 2)], { type: 'application/json' });
+  const notas = {};
+  ARTIGOS.forEach(a => { if (a.notas) notas[a.id] = a.notas; });
+  const blob = new Blob([JSON.stringify(notas, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url; a.download = 'notas_reuniao.json';
@@ -1462,13 +1410,8 @@ function importarJSON(event) {
   const reader = new FileReader();
   reader.onload = e => {
     try {
-      const dados = JSON.parse(e.target.result);
-      ARTIGOS.forEach(a => {
-        const d = dados[a.id];
-        if (!d) return;
-        if (typeof d === 'string') { a.notas = d; }
-        else { a.notas = d.notas || ''; a.estado = d.estado || 'por_discutir'; }
-      });
+      const notas = JSON.parse(e.target.result);
+      ARTIGOS.forEach(a => { if (notas[a.id]) a.notas = notas[a.id]; });
       _guardarLocal();
       mostrarArtigo(atual);
       const msg = document.getElementById('save-status');
@@ -1628,9 +1571,8 @@ function renderSidebar() {
     nResultados++;
     const btn = document.createElement('button');
     const snippet = searchTerm ? getSnippet(art, searchTerm) : '';
-    const est = art.estado || 'por_discutir';
     btn.innerHTML =
-      `<b>${art.id}<span class="estado-dot dot-${est}"></span></b><small>${art.tema}</small>` +
+      `<b>${art.id}</b><small>${art.tema}</small>` +
       (snippet ? `<em style="font-size:.7rem;opacity:.65;display:block;margin-top:3px;font-style:normal;">${
         snippet.replace(new RegExp(searchTerm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),
                         m => `<mark>${m}</mark>`)
@@ -1716,19 +1658,9 @@ function render() {
     </div>
 
     <div class="notas-box">
-      <div class="notas-estado-row">
-        <label>Estado</label>
-        <select class="estado-select est-${art.estado || 'por_discutir'}"
-          onchange="ARTIGOS[${atual}].estado = this.value; this.className = 'estado-select est-' + this.value; _guardarLocal(); renderSidebar();">
-          <option value="por_discutir" ${(art.estado || 'por_discutir') === 'por_discutir' ? 'selected' : ''}>⏳ Por discutir</option>
-          <option value="fechado"      ${art.estado === 'fechado'      ? 'selected' : ''}>✅ Fechado</option>
-          <option value="pendente"     ${art.estado === 'pendente'     ? 'selected' : ''}>⚠️ Pendente</option>
-        </select>
-      </div>
       <label>Notas de Reunião</label>
       <textarea id="notas-input" placeholder="Escreve aqui as decisões ou observações da reunião..."
         oninput="ARTIGOS[${atual}].notas = this.value; _guardarLocal();">${art.notas}</textarea>
-      <div class="notas-print">${art.notas || ''}</div>
       <div style="display:flex; gap:10px; align-items:center; margin-top:6px; flex-wrap:wrap;">
         <button class="btn btn-export" onclick="exportarJSON()"
                 style="background:#1a5276; color:#fff;">
@@ -1745,7 +1677,6 @@ function render() {
     <div class="nav-btns">
       ${atual > 0 ? '<button class="btn btn-prev" onclick="navegar(-1)">← Anterior</button>' : ''}
       <button class="btn btn-export" onclick="exportarNotas()">Exportar Notas (CSV)</button>
-      <button class="btn" onclick="window.print()" style="background:#555; color:#fff;">🖨️ Imprimir / PDF</button>
       ${atual < ARTIGOS.length - 1 ? '<button class="btn btn-next" onclick="navegar(1)">Próximo →</button>' : ''}
     </div>
     <div id="export-msg"></div>
@@ -1759,10 +1690,9 @@ function navegar(dir) {
 }
 
 function exportarNotas() {
-  const estadoLabel = { por_discutir: '⏳ Por discutir', fechado: '✅ Fechado', pendente: '⚠️ Pendente' };
   const linhas = [['ID', 'Tema', 'Art. Regulamento', 'Art. RGBEAC', 'Art. Código',
                    'Art. Legislação Vigente', 'Div. @legislacao', 'Div. @codigo',
-                   'Div. @rgbeac', 'Sumário', 'Necessidade Alteração', 'Estado', 'Notas de Reunião']];
+                   'Div. @rgbeac', 'Sumário', 'Necessidade Alteração', 'Notas de Reunião']];
   ARTIGOS.forEach(a => {
     const d = a.divergencia || {};
     linhas.push([
@@ -1771,7 +1701,6 @@ function exportarNotas() {
       a.legislacao.ref,
       d.legislacao || '', d.codigo || '', d.rgbeac || '', d.sumario || '',
       a.necessidade_alteracao,
-      estadoLabel[a.estado || 'por_discutir'] || a.estado,
       a.notas
     ]);
   });
