@@ -1662,8 +1662,8 @@ function marcarGlossario(htmlStr, glossario) {
     }
 
     // Escapar caracteres especiais de regex
-    const regexEscaped = termo.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&');
-    const regex = new RegExp('\\b' + regexEscaped + '\\b(?![^<]*>)', 'gi');
+    const regexEscaped = termo.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
+    const regex = new RegExp('\\\\b' + regexEscaped + '\\\\b(?![^<]*>)', 'gi');
 
     // DEBUG: Contar quantos matches encontra
     const testStr = result.toLowerCase();
