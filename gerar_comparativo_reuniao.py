@@ -1382,8 +1382,8 @@ def criar_excel(path):
 # HTML
 # ---------------------------------------------------------------------------
 
-def extrair_glossario(artigos):
-    """Extrai definições do ART-04 (Definições) para criar glossário interativo."""
+def extrair_glossario_pt(artigos):
+    """Extrai definições em PORTUGUÊS do ART-04 (Definições) para criar glossário interativo."""
     glossario = {}
 
     # Encontrar ART-04
@@ -1410,19 +1410,49 @@ def extrair_glossario(artigos):
     return glossario
 
 
+def extrair_glossario_en(artigos):
+    """Extrai definições em INGLÊS do ART-04 (Definitions) para criar glossário interativo."""
+    glossario = {}
+
+    # Encontrar ART-04
+    art04 = next((a for a in artigos if a['id'] == 'ART-04'), None)
+    if not art04:
+        return glossario
+
+    # Usar o texto em inglês
+    texto = art04['regulamento']['texto']
+
+    # Padrão para inglês: número. 'termo' means definição;
+    # Exemplo: 1. 'dog' means an animal of the species Canis lupus familiaris;
+    import re
+    pattern = r"\d+\.\s*'([^']+)'\s+means\s+(.+?)(?=\n\d+\.|$)"
+    matches = re.findall(pattern, texto, re.DOTALL)
+
+    for termo, definicao in matches:
+        # Limpar whitespace excessivo e quebras de linha
+        definicao_limpa = definicao.strip().replace('\n', ' ')
+        # Remover ponto final se existir
+        definicao_limpa = definicao_limpa.rstrip(';').strip()
+        glossario[termo.strip().lower()] = definicao_limpa
+
+    return glossario
+
+
 def criar_html(path, artigos):
     """Gera visualizador HTML interativo para reunião."""
 
     # Serializar artigos para JSON (injetado no HTML)
     dados_json = json.dumps(artigos, ensure_ascii=False, indent=2)
 
-    # Extrair glossário para tooltips interativos
-    glossario = extrair_glossario(artigos)
-    glossario_json = json.dumps(glossario, ensure_ascii=False)
+    # Extrair glossários para tooltips interativos (apenas para Regulamento)
+    glossario_pt = extrair_glossario_pt(artigos)
+    glossario_en = extrair_glossario_en(artigos)
+    glossario_pt_json = json.dumps(glossario_pt, ensure_ascii=False)
+    glossario_en_json = json.dumps(glossario_en, ensure_ascii=False)
 
     # JavaScript para glossário interativo (fora da f-string para evitar problemas com backslashes)
     js_glossario = """
-// ── GLOSSÁRIO INTERATIVO: Tooltips e Marcação de Termos ─────────────────────
+// ── GLOSSÁRIO INTERATIVO: Tooltips e Marcação de Termos (APENAS REGULAMENTO) ──
 let tooltipTimeoutId = null;
 
 function marcarGlossario(htmlStr, glossario) {
@@ -1438,9 +1468,9 @@ function marcarGlossario(htmlStr, glossario) {
   return result;
 }
 
-function mostrarTooltip(termo, elemento) {
+function mostrarTooltip(termo, elemento, glossario) {
   const tooltip = document.getElementById('tooltip-glossario');
-  const definicao = GLOSSARIO[termo.toLowerCase()];
+  const definicao = glossario[termo.toLowerCase()];
   if (!definicao) return;
 
   tooltip.textContent = definicao;
@@ -1462,24 +1492,44 @@ function esconderTooltip() {
   tooltip.classList.remove('visible');
 }
 
-// Event delegation para termos do glossário
+// Função auxiliar para determinar qual glossário usar
+function obterGlossarioParaElemento(elemento) {
+  // Verificar o card pai para saber qual glossário usar
+  const card = elemento.closest('.card');
+  if (card && card.classList.contains('reg')) {
+    return GLOSSARIO_EN;  // Texto em inglês
+  } else if (card && card.classList.contains('reg-tr')) {
+    return GLOSSARIO_PT;  // Tradução em português
+  }
+  return null;  // Não usar glossário
+}
+
+// Event delegation para termos do glossário (APENAS em cards de Regulamento)
 document.addEventListener('mouseenter', (e) => {
   if (e.target.classList.contains('glossario-termo')) {
-    mostrarTooltip(e.target.dataset.termo, e.target);
+    const glossario = obterGlossarioParaElemento(e.target);
+    if (glossario) {
+      mostrarTooltip(e.target.dataset.termo, e.target, glossario);
+    }
   }
 }, true);
 
 document.addEventListener('mouseleave', (e) => {
   if (e.target.classList.contains('glossario-termo')) {
-    clearTimeout(tooltipTimeoutId);
-    tooltipTimeoutId = setTimeout(() => esconderTooltip(), 500);
+    if (obterGlossarioParaElemento(e.target)) {
+      clearTimeout(tooltipTimeoutId);
+      tooltipTimeoutId = setTimeout(() => esconderTooltip(), 500);
+    }
   }
 }, true);
 
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('glossario-termo')) {
-    e.preventDefault();
-    mostrarTooltip(e.target.dataset.termo, e.target);
+    const glossario = obterGlossarioParaElemento(e.target);
+    if (glossario) {
+      e.preventDefault();
+      mostrarTooltip(e.target.dataset.termo, e.target, glossario);
+    }
   }
 }, true);
 """
@@ -1891,7 +1941,8 @@ document.addEventListener('click', (e) => {
 
 <script>
 const ARTIGOS = {dados_json};
-const GLOSSARIO = {glossario_json};
+const GLOSSARIO_PT = {glossario_pt_json};  // Glossário em português
+const GLOSSARIO_EN = {glossario_en_json};  // Glossário em inglês
 
 {js_glossario}
 
@@ -2146,7 +2197,7 @@ function render() {{
         <span class="card-header-ref">${{art.regulamento.ref}} · Texto original EN</span>
       </div>
       <div class="card-body">
-        ${{marcarGlossario(formatarTexto(art.regulamento.texto), GLOSSARIO)}}
+        ${{marcarGlossario(formatarTexto(art.regulamento.texto), GLOSSARIO_EN)}}
       </div>
     </div>
 
@@ -2156,7 +2207,7 @@ function render() {{
         <span class="card-header-ref">${{art.regulamento.ref}}</span>
       </div>
       <div class="card-body">
-        ${{marcarGlossario(formatarTexto(art.regulamento.traducao), GLOSSARIO)}}
+        ${{marcarGlossario(formatarTexto(art.regulamento.traducao), GLOSSARIO_PT)}}
       </div>
     </div>
 
@@ -2165,21 +2216,21 @@ function render() {{
         <div class="card-header">@rgbeac (proposta jun. 2025)</div>
         <div class="card-body">
           <div class="card-ref">${{art.rgbeac.ref}}</div>
-          ${{marcarGlossario(formatarTexto(art.rgbeac.texto), GLOSSARIO)}}
+          ${{formatarTexto(art.rgbeac.texto)}}
         </div>
       </div>
       <div class="card cod">
         <div class="card-header">@codigo (DL n.º 214/2013)</div>
         <div class="card-body">
           <div class="card-ref">${{art.codigo.ref}}</div>
-          ${{marcarGlossario(formatarTexto(art.codigo.texto), GLOSSARIO)}}
+          ${{formatarTexto(art.codigo.texto)}}
         </div>
       </div>
       <div class="card leg">
         <div class="card-header">@legislacao (legislação vigente)</div>
         <div class="card-body">
           <div class="card-ref">${{art.legislacao.ref}}</div>
-          ${{marcarGlossario(formatarTexto(art.legislacao.texto), GLOSSARIO)}}
+          ${{formatarTexto(art.legislacao.texto)}}
         </div>
       </div>
     </div>
