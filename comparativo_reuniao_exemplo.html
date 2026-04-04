@@ -1631,6 +1631,12 @@ function marcarGlossario(htmlStr, glossario) {
 }
 
 function mostrarTooltip(termo, elemento, glossario) {
+  // DEBUG: Adicionar verificação extra
+  if (!elemento || !elemento.classList) {
+    console.warn('mostrarTooltip: elemento inválido', elemento);
+    return;
+  }
+
   const tooltip = document.getElementById('tooltip-glossario');
   const definicao = glossario[termo.toLowerCase()];
   if (!definicao) return;
@@ -1657,10 +1663,15 @@ function esconderTooltip() {
 // Função auxiliar para determinar qual glossário usar
 function obterGlossarioParaElemento(elemento) {
   // Verificar o card pai para saber qual glossário usar
+  if (!elemento || !elemento.closest) {
+    console.warn('obterGlossarioParaElemento: elemento inválido', elemento);
+    return null;
+  }
+
   const card = elemento.closest('.card');
-  if (card && card.classList.contains('reg')) {
+  if (card && card.classList && card.classList.contains('reg')) {
     return GLOSSARIO_EN;  // Texto em inglês
-  } else if (card && card.classList.contains('reg-tr')) {
+  } else if (card && card.classList && card.classList.contains('reg-tr')) {
     return GLOSSARIO_PT;  // Tradução em português
   }
   return null;  // Não usar glossário
