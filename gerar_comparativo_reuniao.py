@@ -23,6 +23,127 @@ import os
 
 ARTIGOS = [
     {
+        "id": "ART-01",
+        "tema": "Objeto",
+        "regulamento": {
+            "ref": "Art.º 1.º do Regulamento 2023/0447  |  EN",
+            "titulo": "Subject matter",
+            "texto": "This Regulation lays down:\n(a) minimum requirements for the welfare of dogs and cats bred or kept in establishments or placed on the market of the Union; and\n(b) rules on the traceability of dogs and cats ▌.",
+            "traducao": "O presente regulamento define:\na) Os requisitos mínimos para o bem-estar dos cães e gatos criados ou detidos em estabelecimentos ou colocados no mercado da União;\nb) A rastreabilidade dos cães e gatos.",
+        },
+        "rgbeac": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "codigo": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "legislacao": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "divergencia": {
+            "rgbeac": "Sem correspondência",
+            "codigo": "Sem correspondência",
+            "legislacao": "Sem correspondência",
+            "sumario": "Artigo introdutório do Regulamento europeu — define o objeto geral do regulamento.",
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "",
+    },
+    {
+        "id": "ART-02",
+        "tema": "Âmbito de Aplicação Material",
+        "regulamento": {
+            "ref": "Art.º 2.º do Regulamento 2023/0447  |  EN",
+            "titulo": "Material scope",
+            "texto": "1. This Regulation applies to the breeding, keeping, tracing, placing on the market and entry into the Union of dogs and cats ▌.\n2. This Regulation does not apply to the breeding, keeping or placing on the market or entry into the Union of dogs or cats intended or used for scientific purposes or for clinical trials required for the marketing authorisation of veterinary medicinal products.\n▌",
+            "traducao": "1. O presente regulamento aplica-se à criação, à detenção, ao rastreio, à colocação no mercado e à entrada na União de cães e gatos.\n2. O presente regulamento não se aplica à criação, detenção ou colocação no mercado ou à entrada na União de cães ou gatos destinados ou utilizados para fins científicos ou para ensaios clínicos exigidos para a autorização de comercialização de medicamentos veterinários.",
+        },
+        "rgbeac": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "codigo": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "legislacao": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "divergencia": {
+            "rgbeac": "Sem correspondência",
+            "codigo": "Sem correspondência",
+            "legislacao": "Sem correspondência",
+            "sumario": "Define o âmbito material do Regulamento — aplica-se à criação, detenção, rastreio e colocação no mercado de cães e gatos.",
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "",
+    },
+    {
+        "id": "ART-03",
+        "tema": "Âmbito de Aplicação Pessoal",
+        "regulamento": {
+            "ref": "Art.º 3.º do Regulamento 2023/0447  |  EN",
+            "titulo": "Personal scope",
+            "texto": "1. Chapter II of this Regulation applies to all operators.\n2. Chapter III of this Regulation applies to all natural and legal persons owning dogs or cats in the Union.\n3. Chapter IV applies to all natural and legal persons who bring dogs or cats into the Union.\n4. This Regulation does not apply to farmers offering refuge on their holding to free-roaming stray cats that are useful for pest control, where those farmers are not operators and do not place those cats on the market.",
+            "traducao": "1. O capítulo II do presente regulamento aplica-se a todos os operadores.\n2. O capítulo III do presente regulamento aplica-se a todas as pessoas singulares e coletivas proprietárias de cães e gatos na União.\n3. O capítulo IV aplica-se a todas as pessoas singulares e coletivas que introduzam cães ou gatos na União.\n4. O presente regulamento não aplica-se a agricultores que, na sua exploração, ofereçam refúgio a gatos vadios em liberdade que sejam úteis para controlo de pragas, desde que esses agricultores não sejam operadores e não coloquem esses gatos no mercado.",
+        },
+        "rgbeac": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "codigo": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "legislacao": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "divergencia": {
+            "rgbeac": "Sem correspondência",
+            "codigo": "Sem correspondência",
+            "legislacao": "Sem correspondência",
+            "sumario": "Define o âmbito pessoal — quem está obrigado pelo Regulamento (operadores, proprietários, importadores).",
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "",
+    },
+    {
+        "id": "ART-04",
+        "tema": "Definições",
+        "regulamento": {
+            "ref": "Art.º 4.º do Regulamento 2023/0447  |  EN",
+            "titulo": "Definitions",
+            "texto": "For the purposes of this Regulation, the following definitions apply:\n1. 'dog' means an animal of the species Canis lupus familiaris;\n▌\n2. 'cat' means an animal of the species Felis silvestris catus;\n3. 'welfare of dogs and cats' means the physical and mental state of a dog or a cat, which receives appropriate nutrition, is kept in an appropriate environment, is in good health, displays appropriate behaviour, and has an overall a positive mental experience of life;\n4. 'hybrid' means any offspring of the first to the fourth generation following a cross-breeding event between a wild species and the domestic species of dog or cat;\n5. 'breeding' means the activity of keeping dogs or cats in breeding establishments for the purposes of reproduction;",
+            "traducao": "Para efeitos do presente regulamento, entende-se por:\n1. «Cão», um animal da espécie Canis lupus familiaris;\n2. «Gato», um animal da espécie Felis silvestris catus;\n3. «Bem-estar dos cães e gatos», o estado físico e mental de um cão ou de um gato que recebe nutrição adequada, é mantido num ambiente apropriado, está em bom estado de saúde, exibe comportamento apropriado e tem uma experiência mental geral positiva da vida;\n4. «Híbrido», qualquer descendência da primeira à quarta geração após o cruzamento entre uma espécie selvagem e a espécie doméstica de cão ou gato;\n5. «Criação», a atividade de detenção de cães ou gatos em estabelecimentos de criação para efeitos de reprodução;",
+        },
+        "rgbeac": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "codigo": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "legislacao": {
+            "ref": "Sem correspondência",
+            "texto": "",
+        },
+        "divergencia": {
+            "rgbeac": "Sem correspondência",
+            "codigo": "Sem correspondência",
+            "legislacao": "Sem correspondência",
+            "sumario": "Define conceitos-chave usados ao longo do Regulamento (cão, gato, bem-estar, criação, etc.).",
+        },
+        "necessidade_alteracao": "Não",
+        "notas": "",
+    },
+
+    {
         "id": "ART-05",
         "tema": "Isenções de Obrigações",
         "regulamento": {
