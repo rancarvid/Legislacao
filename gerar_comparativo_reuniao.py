@@ -1596,12 +1596,29 @@ let tooltipTimeoutId = null;
 function marcarGlossario(htmlStr, glossario) {
   if (!glossario || Object.keys(glossario).length === 0) return htmlStr;
 
+  // Processar termos em ordem decrescente de comprimento para evitar spans aninhados
+  // Ex: "bem-estar dos cães e gatos" deve ser processado antes de "cães"
+  const termos = Object.keys(glossario).sort((a, b) => b.length - a.length);
+
   let result = htmlStr;
-  for (const termo of Object.keys(glossario)) {
+  for (const termo of termos) {
+    // Saltar se este termo é substring de outro já marcado
+    // (isso significa que já está dentro de um span)
+    let isSubstring = false;
+    for (const other of termos) {
+      if (termo !== other && other.includes(termo)) {
+        if (result.includes('data-termo="' + other + '"')) {
+          isSubstring = true;
+          break;
+        }
+      }
+    }
+
+    if (isSubstring) continue;
+
     // Escapar caracteres especiais de regex
     const regexEscaped = termo.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
-    // Usar apenas a forma exata (sem 's?') pois glossário já contém ambas as formas
-    // ex: "cão de pastoreio" e "cães de pastoreio" como entradas separadas
+    // Word boundaries + negative lookahead para evitar texto dentro de tags existentes
     const regex = new RegExp('\\\\b' + regexEscaped + '\\\\b(?![^<]*>)', 'gi');
     result = result.replace(regex, m => '<span class="glossario-termo" data-termo="' + termo + '">' + m + '</span>');
   }
