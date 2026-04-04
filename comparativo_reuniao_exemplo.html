@@ -1589,43 +1589,67 @@ function marcarGlossario(htmlStr, glossario) {
   // Processar termos em ordem decrescente de comprimento para evitar spans aninhados
   const termos = Object.keys(glossario).sort((a, b) => b.length - a.length);
 
+  // DEBUG: Output inicial
+  console.log('=== marcarGlossario DEBUG ===');
+  console.log('Glossário carregado com ' + termos.length + ' termos');
+
   // DEBUG: Log para verificar se a função está sendo chamada
   let debugCount = 0;
+  let debugLog = [];
 
   let result = htmlStr;
   for (const termo of termos) {
+    let skipReason = null;
+
     // Saltar se este termo é substring de outro já marcado
     let isSubstring = false;
     for (const other of termos) {
       if (termo !== other && other.includes(termo)) {
         if (result.includes('data-termo="' + other + '"')) {
           isSubstring = true;
+          skipReason = 'substring de [' + other + ']';
           break;
         }
       }
     }
 
-    if (isSubstring) continue;
+    if (isSubstring) {
+      debugLog.push('SKIP: "' + termo + '" (' + skipReason + ')');
+      continue;
+    }
 
     // Escapar caracteres especiais de regex
-    const regexEscaped = termo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp('\\b' + regexEscaped + '\\b(?![^<]*>)', 'gi');
+    const regexEscaped = termo.replace(/[.*+?^${}()|[\]\\]/g, '\$&');
+    const regex = new RegExp('\b' + regexEscaped + '\b(?![^<]*>)', 'gi');
 
     // DEBUG: Contar quantos matches encontra
-    const testMatches = (result.toLowerCase().match(regex) || []).length;
+    const testStr = result.toLowerCase();
+    const testMatches = (testStr.match(regex) || []).length;
 
+    let countBefore = debugCount;
     result = result.replace(regex, m => {
       debugCount++;
       return '<span class="glossario-termo" data-termo="' + termo + '">' + m + '</span>';
     });
+
+    let countAfter = debugCount - countBefore;
+    if (countAfter === 0) {
+      debugLog.push('NO MATCH: "' + termo + '" (pattern: \b' + regexEscaped + '\b)');
+    } else {
+      debugLog.push('MARKED: "' + termo + '" (' + countAfter + ' ocorrências)');
+    }
   }
 
   // DEBUG: Output no console
+  console.log('DEBUG LOG:');
+  debugLog.forEach(log => console.log('  ' + log));
+
   if (debugCount === 0) {
     console.warn('marcarGlossario: AVISO - Nenhum termo foi marcado! Verifique se o glossário está carregado.');
   } else {
     console.log('marcarGlossario: ' + debugCount + ' termos marcados com sucesso');
   }
+  console.log('=== FIM marcarGlossario DEBUG ===');
 
   return result;
 }
