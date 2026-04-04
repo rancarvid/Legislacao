@@ -1711,7 +1711,7 @@ function obterGlossarioParaElemento(elemento) {
 
 // Event delegation para termos do glossário (APENAS em cards de Regulamento)
 document.addEventListener('mouseenter', (e) => {
-  if (e.target.classList.contains('glossario-termo')) {
+  if (e.target && e.target.classList && e.target.classList.contains('glossario-termo')) {
     const glossario = obterGlossarioParaElemento(e.target);
     if (glossario) {
       mostrarTooltip(e.target.dataset.termo, e.target, glossario);
@@ -1720,7 +1720,7 @@ document.addEventListener('mouseenter', (e) => {
 }, true);
 
 document.addEventListener('mouseleave', (e) => {
-  if (e.target.classList.contains('glossario-termo')) {
+  if (e.target && e.target.classList && e.target.classList.contains('glossario-termo')) {
     if (obterGlossarioParaElemento(e.target)) {
       clearTimeout(tooltipTimeoutId);
       tooltipTimeoutId = setTimeout(() => esconderTooltip(), 500);
@@ -1729,7 +1729,7 @@ document.addEventListener('mouseleave', (e) => {
 }, true);
 
 document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('glossario-termo')) {
+  if (e.target && e.target.classList && e.target.classList.contains('glossario-termo')) {
     const glossario = obterGlossarioParaElemento(e.target);
     if (glossario) {
       e.preventDefault();
