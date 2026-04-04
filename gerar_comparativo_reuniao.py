@@ -1405,7 +1405,12 @@ def extrair_glossario_pt(artigos):
         definicao_limpa = definicao.strip().replace('\n', ' ')
         # Remover ponto final se existir
         definicao_limpa = definicao_limpa.rstrip(';').strip()
-        glossario[termo.strip().lower()] = definicao_limpa
+
+        # NORMALIZAR: converter hífens especiais em hífens normais
+        # U+2011 (non-breaking hyphen) → U+002D (regular hyphen)
+        termo_normalizado = termo.strip().replace('\u2011', '-').replace('\u2010', '-').lower()
+
+        glossario[termo_normalizado] = definicao_limpa
 
     return glossario
 
@@ -1433,7 +1438,11 @@ def extrair_glossario_en(artigos):
         definicao_limpa = definicao.strip().replace('\n', ' ')
         # Remover ponto final se existir
         definicao_limpa = definicao_limpa.rstrip(';').strip()
-        glossario[termo.strip().lower()] = definicao_limpa
+
+        # NORMALIZAR: converter hífens especiais em hífens normais
+        termo_normalizado = termo.strip().replace('\u2011', '-').replace('\u2010', '-').lower()
+
+        glossario[termo_normalizado] = definicao_limpa
 
     return glossario
 
