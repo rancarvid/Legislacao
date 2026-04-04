@@ -1419,6 +1419,35 @@ def extrair_glossario_pt(artigos):
     todos_textos_normalizados = [t.replace('\u2011', '-').replace('\u2010', '-') for t in todos_textos]
     texto_combinado = ' '.join(todos_textos_normalizados).lower()
 
+    def pluralizar_pt(palavra):
+        """Gera plural simples para palavras em português."""
+        if not palavra:
+            return None
+
+        # NÃO pluralizar se já contém plural (cães ou gatos)
+        if 'cães ' in palavra or ' cães' in palavra or 'gatos ' in palavra or ' gatos' in palavra:
+            return None
+
+        # Casos especiais com cão/gato (singular)
+        if ' cão ' in palavra:
+            return palavra.replace(' cão ', ' cães ')
+        if palavra.startswith('cão '):
+            return 'cães ' + palavra[4:]
+        if ' gato ' in palavra:
+            return palavra.replace(' gato ', ' gatos ')
+        if palavra.startswith('gato '):
+            return 'gatos ' + palavra[5:]
+
+        # Regras de pluralização em português
+        # Se termina em -or, muda para -ores (operador → operadores)
+        if palavra.endswith('or'):
+            return palavra[:-2] + 'ores'
+        # Se termina em -ão, muda para -ões
+        if palavra.endswith('ão'):
+            return palavra[:-2] + 'ões'
+        # Senão, adiciona 's'
+        return palavra + 's'
+
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
         definicao_limpa = definicao.strip().replace('\n', ' ')
@@ -1430,16 +1459,8 @@ def extrair_glossario_pt(artigos):
 
         # FILTRAR: não incluir termos simples muito genéricos
         if termo_normalizado not in termos_excluidos:
-            # Calcular possível forma PLURAL
-            termo_plural = None
-            if ' cão ' in termo_normalizado:
-                termo_plural = termo_normalizado.replace(' cão ', ' cães ')
-            elif termo_normalizado.startswith('cão '):
-                termo_plural = 'cães ' + termo_normalizado[4:]
-            elif ' gato ' in termo_normalizado:
-                termo_plural = termo_normalizado.replace(' gato ', ' gatos ')
-            elif termo_normalizado.startswith('gato '):
-                termo_plural = 'gatos ' + termo_normalizado[5:]
+            # Calcular forma PLURAL usando regras de português
+            termo_plural = pluralizar_pt(termo_normalizado)
 
             # VERIFICAR qual forma REALMENTE APARECE no texto
             regex_singular = r'\b' + re.escape(termo_normalizado) + r'\b'
@@ -1447,7 +1468,7 @@ def extrair_glossario_pt(artigos):
 
             # Se tem plural potencial, verificar também
             plural_found = False
-            if termo_plural:
+            if termo_plural and termo_plural != termo_normalizado:
                 regex_plural = r'\b' + re.escape(termo_plural) + r'\b'
                 plural_found = re.search(regex_plural, texto_combinado)
 
@@ -1500,6 +1521,25 @@ def extrair_glossario_en(artigos):
     todos_textos_normalizados = [t.replace('\u2011', '-').replace('\u2010', '-') for t in todos_textos]
     texto_combinado = ' '.join(todos_textos_normalizados).lower()
 
+    def pluralizar_en(palavra):
+        """Gera plural simples para palavras em inglês."""
+        if not palavra:
+            return None
+
+        # NÃO pluralizar se já contém plural (dogs ou cats)
+        if 'dogs ' in palavra or ' dogs' in palavra or 'cats ' in palavra or ' cats' in palavra:
+            return None
+
+        # Casos especiais com dog/cat (singular)
+        if ' dog' in palavra:
+            return palavra.replace(' dog', ' dogs')
+        if ' cat' in palavra:
+            return palavra.replace(' cat', ' cats')
+
+        # Regra genérica: adicionar 's' para formar o plural
+        # (funciona para a maioria dos nomes em inglês)
+        return palavra + 's'
+
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
         definicao_limpa = definicao.strip().replace('\n', ' ')
@@ -1511,12 +1551,8 @@ def extrair_glossario_en(artigos):
 
         # FILTRAR: não incluir termos simples muito genéricos
         if termo_normalizado not in termos_excluidos:
-            # Calcular possível forma PLURAL
-            termo_plural = None
-            if ' dog' in termo_normalizado:
-                termo_plural = termo_normalizado.replace(' dog', ' dogs')
-            elif ' cat' in termo_normalizado:
-                termo_plural = termo_normalizado.replace(' cat', ' cats')
+            # Calcular forma PLURAL usando regras simples de inglês
+            termo_plural = pluralizar_en(termo_normalizado)
 
             # VERIFICAR qual forma REALMENTE APARECE no texto
             regex_singular = r'\b' + re.escape(termo_normalizado) + r'\b'
@@ -1524,7 +1560,7 @@ def extrair_glossario_en(artigos):
 
             # Se tem plural potencial, verificar também
             plural_found = False
-            if termo_plural:
+            if termo_plural and termo_plural != termo_normalizado:
                 regex_plural = r'\b' + re.escape(termo_plural) + r'\b'
                 plural_found = re.search(regex_plural, texto_combinado)
 
