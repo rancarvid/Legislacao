@@ -1471,7 +1471,8 @@ function marcarGlossario(htmlStr, glossario) {
   for (const termo of Object.keys(glossario)) {
     // Escapar caracteres especiais de regex
     const regexEscaped = termo.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
-    const regex = new RegExp('\\\\b' + regexEscaped + '\\\\b(?![^<]*>)', 'gi');
+    // Adicionar 's?' para capturar plurais (ex: "dog" → "dog" ou "dogs")
+    const regex = new RegExp('\\\\b' + regexEscaped + 's?\\\\b(?![^<]*>)', 'gi');
     result = result.replace(regex, m => '<span class="glossario-termo" data-termo="' + termo + '">' + m + '</span>');
   }
   return result;
@@ -2206,7 +2207,7 @@ function render() {{
         <span class="card-header-ref">${{art.regulamento.ref}} · Texto original EN</span>
       </div>
       <div class="card-body">
-        ${{marcarGlossario(formatarTexto(art.regulamento.texto), GLOSSARIO_EN)}}
+        ${{art.id === 'ART-04' ? formatarTexto(art.regulamento.texto) : marcarGlossario(formatarTexto(art.regulamento.texto), GLOSSARIO_EN)}}
       </div>
     </div>
 
@@ -2216,7 +2217,7 @@ function render() {{
         <span class="card-header-ref">${{art.regulamento.ref}}</span>
       </div>
       <div class="card-body">
-        ${{marcarGlossario(formatarTexto(art.regulamento.traducao), GLOSSARIO_PT)}}
+        ${{art.id === 'ART-04' ? formatarTexto(art.regulamento.traducao) : marcarGlossario(formatarTexto(art.regulamento.traducao), GLOSSARIO_PT)}}
       </div>
     </div>
 
