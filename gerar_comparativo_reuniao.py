@@ -1438,15 +1438,34 @@ def extrair_glossario_pt(artigos):
         if palavra.startswith('gato '):
             return 'gatos ' + palavra[5:]
 
-        # Regras de pluralização em português
-        # Se termina em -or, muda para -ores (operador → operadores)
-        if palavra.endswith('or'):
-            return palavra[:-2] + 'ores'
-        # Se termina em -ão, muda para -ões
-        if palavra.endswith('ão'):
-            return palavra[:-2] + 'ões'
-        # Senão, adiciona 's'
-        return palavra + 's'
+        # Para palavras compostas (ex: "lar de acolhimento"), pluralizar a PRIMEIRA palavra
+        partes = palavra.split(' ')
+        if len(partes) > 1:
+            primeira = partes[0]
+            resto = ' '.join(partes[1:])
+
+            # Aplicar regras à primeira palavra
+            if primeira.endswith('or'):
+                primeira = primeira[:-2] + 'ores'
+            elif primeira.endswith('ão'):
+                primeira = primeira[:-2] + 'ões'
+            elif primeira.endswith('ar') or primeira.endswith('er') or primeira.endswith('ir'):
+                # Palavras terminadas em -ar, -er, -ir: adicionar "es"
+                primeira = primeira + 'es'
+            elif not primeira.endswith('s'):
+                primeira = primeira + 's'
+
+            return primeira + ' ' + resto
+        else:
+            # Palavra simples (uma só palavra)
+            if palavra.endswith('or'):
+                return palavra[:-2] + 'ores'
+            if palavra.endswith('ão'):
+                return palavra[:-2] + 'ões'
+            if not palavra.endswith('s'):
+                return palavra + 's'
+
+        return palavra
 
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
@@ -1536,9 +1555,23 @@ def extrair_glossario_en(artigos):
         if ' cat' in palavra:
             return palavra.replace(' cat', ' cats')
 
-        # Regra genérica: adicionar 's' para formar o plural
-        # (funciona para a maioria dos nomes em inglês)
-        return palavra + 's'
+        # Para palavras compostas (ex: "animal carer"), pluralizar a PRIMEIRA palavra
+        partes = palavra.split(' ')
+        if len(partes) > 1:
+            primeira = partes[0]
+            resto = ' '.join(partes[1:])
+
+            # Adicionar 's' para pluralizar (funciona para a maioria em inglês)
+            if not primeira.endswith('s'):
+                primeira = primeira + 's'
+
+            return primeira + ' ' + resto
+        else:
+            # Palavra simples
+            if not palavra.endswith('s'):
+                return palavra + 's'
+
+        return palavra
 
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
