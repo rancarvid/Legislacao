@@ -1383,7 +1383,11 @@ def criar_excel(path):
 # ---------------------------------------------------------------------------
 
 def extrair_glossario_pt(artigos):
-    """Extrai definições em PORTUGUÊS do ART-04 (Definições) para criar glossário interativo."""
+    """Extrai definições em PORTUGUÊS do ART-04 (Definições) para criar glossário interativo.
+
+    Apenas adiciona formas (singular/plural) que REALMENTE APARECEM nos textos dos artigos.
+    Se a forma singular não aparece mas a plural aparece, adiciona a plural.
+    """
     glossario = {}
 
     # Encontrar ART-04
@@ -1392,16 +1396,28 @@ def extrair_glossario_pt(artigos):
         return glossario
 
     # Usar a tradução em português
-    texto = art04['regulamento']['traducao']
+    texto_art04 = art04['regulamento']['traducao']
 
     # Padrão: número) «termo», definição;
     # Exemplo: 1)\t«Cão», um animal da espécie Canis lupus familiaris;
     import re
     pattern = r'\d+\)\s*«([^»]+)»\s*,\s*(.+?)(?=\n\d+\)|CAPÍTULO|$)'
-    matches = re.findall(pattern, texto, re.DOTALL)
+    matches = re.findall(pattern, texto_art04, re.DOTALL)
 
     # Termos simples a EXCLUIR (muito genéricos, aparecem em todo lado)
     termos_excluidos = {'cão', 'gato', 'cadela', 'gata'}
+
+    # Colecionar TODOS os textos de artigos (exceto ART-04) para pesquisa de ocorrências
+    todos_textos = []
+    for art in artigos:
+        if art['id'] != 'ART-04':
+            # Recolher texto em português
+            if art['regulamento'].get('traducao'):
+                todos_textos.append(art['regulamento']['traducao'])
+
+    # Normalizar todos os textos (converter hífens especiais)
+    todos_textos_normalizados = [t.replace('\u2011', '-').replace('\u2010', '-') for t in todos_textos]
+    texto_combinado = ' '.join(todos_textos_normalizados).lower()
 
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
@@ -1410,24 +1426,49 @@ def extrair_glossario_pt(artigos):
         definicao_limpa = definicao_limpa.rstrip(';').strip()
 
         # NORMALIZAR: converter hífens especiais em hífens normais
-        # U+2011 (non-breaking hyphen) → U+002D (regular hyphen)
         termo_normalizado = termo.strip().replace('\u2011', '-').replace('\u2010', '-').lower()
 
         # FILTRAR: não incluir termos simples muito genéricos
         if termo_normalizado not in termos_excluidos:
-            glossario[termo_normalizado] = definicao_limpa
+            # Calcular possível forma PLURAL
+            termo_plural = None
+            if ' cão ' in termo_normalizado:
+                termo_plural = termo_normalizado.replace(' cão ', ' cães ')
+            elif termo_normalizado.startswith('cão '):
+                termo_plural = 'cães ' + termo_normalizado[4:]
+            elif ' gato ' in termo_normalizado:
+                termo_plural = termo_normalizado.replace(' gato ', ' gatos ')
+            elif termo_normalizado.startswith('gato '):
+                termo_plural = 'gatos ' + termo_normalizado[5:]
 
-            # ADICIONAR PLURAIS para termos compostos
-            # Exemplo: "cão de guarda de gado" → também adicionar "cães de guarda de gado"
-            if 'cão' in termo_normalizado or 'gato' in termo_normalizado:
-                termo_plural = termo_normalizado.replace('cão ', 'cães ').replace('gato ', 'gatos ')
+            # VERIFICAR qual forma REALMENTE APARECE no texto
+            regex_singular = r'\b' + re.escape(termo_normalizado) + r'\b'
+            singular_found = re.search(regex_singular, texto_combinado)
+
+            # Se tem plural potencial, verificar também
+            plural_found = False
+            if termo_plural:
+                regex_plural = r'\b' + re.escape(termo_plural) + r'\b'
+                plural_found = re.search(regex_plural, texto_combinado)
+
+            # Adicionar ao glossário a forma (ou formas) que APARECEM no texto
+            if singular_found:
+                glossario[termo_normalizado] = definicao_limpa
+
+            if plural_found:
                 glossario[termo_plural] = definicao_limpa
+
+            # Se nenhuma forma aparece no texto (fora de ART-04), não adicionar
 
     return glossario
 
 
 def extrair_glossario_en(artigos):
-    """Extrai definições em INGLÊS do ART-04 (Definitions) para criar glossário interativo."""
+    """Extrai definições em INGLÊS do ART-04 (Definitions) para criar glossário interativo.
+
+    Apenas adiciona formas (singular/plural) que REALMENTE APARECEM nos textos dos artigos.
+    Se a forma singular não aparece mas a plural aparece, adiciona a plural.
+    """
     glossario = {}
 
     # Encontrar ART-04
@@ -1436,16 +1477,28 @@ def extrair_glossario_en(artigos):
         return glossario
 
     # Usar o texto em inglês
-    texto = art04['regulamento']['texto']
+    texto_art04 = art04['regulamento']['texto']
 
     # Padrão para inglês: número. 'termo' means definição;
     # Exemplo: 1. 'dog' means an animal of the species Canis lupus familiaris;
     import re
     pattern = r"\d+\.\s*'([^']+)'\s+means\s+(.+?)(?=\n\d+\.|$)"
-    matches = re.findall(pattern, texto, re.DOTALL)
+    matches = re.findall(pattern, texto_art04, re.DOTALL)
 
     # Termos simples a EXCLUIR (muito genéricos, aparecem em todo lado)
     termos_excluidos = {'dog', 'cat', 'female dog', 'female cat'}
+
+    # Colecionar TODOS os textos de artigos (exceto ART-04) para pesquisa de ocorrências
+    todos_textos = []
+    for art in artigos:
+        if art['id'] != 'ART-04':
+            # Recolher texto em inglês
+            if art['regulamento'].get('texto'):
+                todos_textos.append(art['regulamento']['texto'])
+
+    # Normalizar todos os textos (converter hífens especiais)
+    todos_textos_normalizados = [t.replace('\u2011', '-').replace('\u2010', '-') for t in todos_textos]
+    texto_combinado = ' '.join(todos_textos_normalizados).lower()
 
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
@@ -1458,16 +1511,31 @@ def extrair_glossario_en(artigos):
 
         # FILTRAR: não incluir termos simples muito genéricos
         if termo_normalizado not in termos_excluidos:
-            glossario[termo_normalizado] = definicao_limpa
-
-            # ADICIONAR PLURAIS para termos compostos com 'dog' ou 'cat'
-            # Exemplo: "herding dog" → também adicionar "herding dogs"
+            # Calcular possível forma PLURAL
+            termo_plural = None
             if ' dog' in termo_normalizado:
                 termo_plural = termo_normalizado.replace(' dog', ' dogs')
-                glossario[termo_plural] = definicao_limpa
             elif ' cat' in termo_normalizado:
                 termo_plural = termo_normalizado.replace(' cat', ' cats')
+
+            # VERIFICAR qual forma REALMENTE APARECE no texto
+            regex_singular = r'\b' + re.escape(termo_normalizado) + r'\b'
+            singular_found = re.search(regex_singular, texto_combinado)
+
+            # Se tem plural potencial, verificar também
+            plural_found = False
+            if termo_plural:
+                regex_plural = r'\b' + re.escape(termo_plural) + r'\b'
+                plural_found = re.search(regex_plural, texto_combinado)
+
+            # Adicionar ao glossário a forma (ou formas) que APARECEM no texto
+            if singular_found:
+                glossario[termo_normalizado] = definicao_limpa
+
+            if plural_found:
                 glossario[termo_plural] = definicao_limpa
+
+            # Se nenhuma forma aparece no texto (fora de ART-04), não adicionar
 
     return glossario
 
@@ -1496,8 +1564,9 @@ function marcarGlossario(htmlStr, glossario) {
   for (const termo of Object.keys(glossario)) {
     // Escapar caracteres especiais de regex
     const regexEscaped = termo.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&');
-    // Adicionar 's?' para capturar plurais (ex: "dog" → "dog" ou "dogs")
-    const regex = new RegExp('\\\\b' + regexEscaped + 's?\\\\b(?![^<]*>)', 'gi');
+    // Usar apenas a forma exata (sem 's?') pois glossário já contém ambas as formas
+    // ex: "cão de pastoreio" e "cães de pastoreio" como entradas separadas
+    const regex = new RegExp('\\\\b' + regexEscaped + '\\\\b(?![^<]*>)', 'gi');
     result = result.replace(regex, m => '<span class="glossario-termo" data-termo="' + termo + '">' + m + '</span>');
   }
   return result;
