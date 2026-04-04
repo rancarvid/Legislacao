@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cães de Caça e o Regulamento 2023/0447 — Reflexão Analítica</title>
+  <style>
+    :root {
+      --cor-regulamento: #1565C0;
+      --cor-legislacao: #2E7D32;
+      --cor-tensao: #B71C1C;
+      --cor-fundo: #FAFAFA;
+      --cor-fundo-card: #FFFFFF;
+      --cor-borda: #E0E0E0;
+      --cor-cinza: #757575;
+      --cor-destaque: #F3F4F6;
+      --fonte-mono: 'Courier New', Courier, monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #212121;
+      background: var(--cor-fundo);
+    }
+
+    header {
+      background: #1A237E;
+      color: white;
+      padding: 36px 48px 28px;
+      border-bottom: 4px solid #3949AB;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
+    }
+
+    header p.subtitulo {
+      font-size: 1rem;
+      opacity: 0.85;
+      font-style: italic;
+    }
+
+    header .meta {
+      margin-top: 14px;
+      font-size: 0.82rem;
+      opacity: 0.65;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 24px 64px;
+    }
+
+    /* Aviso metodológico */
+    .aviso-metodologico {
+      background: #FFF8E1;
+      border-left: 4px solid #F9A825;
+      padding: 14px 18px;
+      border-radius: 0 4px 4px 0;
+      margin-bottom: 36px;
+      font-size: 0.88rem;
+      color: #5D4037;
+    }
+
+    /* Secções */
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1A237E;
+      border-bottom: 2px solid var(--cor-borda);
+      padding-bottom: 8px;
+      margin-bottom: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #37474F;
+      margin: 22px 0 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--cor-fundo-card);
+      border: 1px solid var(--cor-borda);
+      border-radius: 6px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .card.regulamento { border-top: 3px solid var(--cor-regulamento); }
+    .card.legislacao  { border-top: 3px solid var(--cor-legislacao); }
+    .card.tensao      { border-top: 3px solid var(--cor-tensao); }
+    .card.neutro      { border-top: 3px solid #78909C; }
+    .card.observacao  { border-top: 3px solid #7B1FA2; background: #FAF5FF; }
+
+    .card .card-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .card.regulamento .card-label { color: var(--cor-regulamento); }
+    .card.legislacao  .card-label { color: var(--cor-legislacao); }
+    .card.tensao      .card-label { color: var(--cor-tensao); }
+    .card.neutro      .card-label { color: #546E7A; }
+    .card.observacao  .card-label { color: #7B1FA2; }
+
+    /* Citações */
+    blockquote {
+      background: var(--cor-destaque);
+      border-left: 3px solid #90A4AE;
+      padding: 12px 16px;
+      margin: 14px 0;
+      font-style: italic;
+      font-size: 0.93rem;
+      color: #37474F;
+      border-radius: 0 4px 4px 0;
+    }
+
+    blockquote cite {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      font-style: normal;
+      color: var(--cor-cinza);
+    }
+
+    /* Tabela de votação */
+    .tabela-votacao {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 16px 0;
+    }
+
+    .tabela-votacao th {
+      background: #E8EAF6;
+      color: #1A237E;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      border: 1px solid #C5CAE9;
+    }
+
+    .tabela-votacao td {
+      padding: 9px 14px;
+      border: 1px solid var(--cor-borda);
+      vertical-align: top;
+    }
+
+    .tabela-votacao tr:nth-child(even) td { background: #F8F9FA; }
+
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .badge.sim  { background: #E8F5E9; color: #2E7D32; }
+    .badge.nao  { background: #FFEBEE; color: #C62828; }
+    .badge.abs  { background: #FFF8E1; color: #F57F17; }
+
+    /* Grid de pontos de tensão */
+    .grid-tensao {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .grid-tensao { grid-template-columns: 1fr; }
+      header { padding: 24px 20px; }
+      .container { padding: 24px 16px 48px; }
+    }
+
+    .ponto-tensao {
+      background: #FFF3E0;
+      border: 1px solid #FFCC80;
+      border-radius: 6px;
+      padding: 14px 16px;
+    }
+
+    .ponto-tensao h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #E65100;
+      margin-bottom: 6px;
+    }
+
+    .ponto-tensao p {
+      font-size: 0.86rem;
+      color: #4E342E;
+      margin: 0;
+    }
+
+    /* Timeline */
+    .timeline {
+      border-left: 3px solid #C5CAE9;
+      padding-left: 22px;
+      margin: 18px 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -29px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--cor-regulamento);
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px var(--cor-regulamento);
+    }
+
+    .timeline-item .data {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--cor-regulamento);
+      letter-spacing: 0.3px;
+    }
+
+    .timeline-item .descricao {
+      font-size: 0.9rem;
+      color: #37474F;
+      margin-top: 2px;
+    }
+
+    /* Tags de raça */
+    .raca-tag {
+      display: inline-block;
+      background: #E8F5E9;
+      color: #1B5E20;
+      border: 1px solid #A5D6A7;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.8rem;
+      margin: 2px;
+      font-style: italic;
+    }
+
+    /* Fontes */
+    .fontes {
+      background: #F5F5F5;
+      border: 1px solid var(--cor-borda);
+      border-radius: 6px;
+      padding: 16px 20px;
+      font-size: 0.84rem;
+      color: var(--cor-cinza);
+    }
+
+    .fontes h3 {
+      color: #546E7A;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+
+    .fontes a {
+      color: var(--cor-regulamento);
+      text-decoration: none;
+    }
+
+    .fontes a:hover {
+      text-decoration: underline;
+    }
+
+    .fontes li {
+      margin-bottom: 4px;
+      list-style: disc;
+      margin-left: 18px;
+    }
+
+    /* Separador */
+    hr.sep {
+      border: none;
+      border-top: 1px solid var(--cor-borda);
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cães de Caça e o Regulamento (UE) 2023/0447</h1>
+  <p class="subtitulo">Reflexão analítica sobre o impacto na realidade portuguesa</p>
+  <div class="meta">Documento de trabalho · Preparado com base em pesquisa online · Março de 2026</div>
+</header>
+
+<div class="container">
+
+  <div class="aviso-metodologico">
+    <strong>Nota metodológica:</strong> Este documento é uma reflexão analítica de trabalho, elaborada com base em pesquisa online (EUR-Lex, Parlamento Europeu, Conselho, fontes jornalísticas e académicas). Não constitui análise jurídica definitiva. As citações legislativas provêm das fontes indicadas. As opiniões e inferências encontram-se identificadas como tal.
+  </div>
+
+  <!-- 1. ENQUADRAMENTO -->
+  <section>
+    <h2>1. Enquadramento: porquê os cães de caça?</h2>
+
+    <p>O Regulamento (UE) 2023/0447 — proposta de regulamento do Parlamento Europeu e do Conselho relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade — é a primeira legislação europeia de aplicação geral sobre bem-estar de cães e gatos. A sua amplitude de aplicação suscita uma questão prática imediata para Portugal: <strong>qual o estatuto dos cães utilizados na actividade cinegética?</strong></p>
+
+    <p>Portugal tem uma tradição venatória profunda, com raças autóctones de aptidão cinegética reconhecida internacionalmente. O sector da caça envolve dezenas de milhar de cães em contextos que diferem significativamente da detenção doméstica individual: matilhas, canis profissionais, cães de trabalho sob condições de alojamento especializadas.</p>
+
+    <p>A questão não é meramente teórica. O Regulamento estabelece requisitos de bem-estar, identificação, rastreabilidade e reprodução que, se aplicados sem derrogação, afectam directamente a forma como as matilhas de caça são geridas em Portugal.</p>
+  </section>
+
+  <!-- 2. O QUE DIZ O REGULAMENTO -->
+  <section>
+    <h2>2. O que diz o Regulamento sobre cães de caça</h2>
+
+    <div class="card regulamento">
+      <div class="card-label">@regulamento — Âmbito de aplicação</div>
+      <p>O Regulamento não exclui expressamente os cães de caça do seu âmbito. Aplica-se a todos os cães e gatos detidos por operadores, incluindo criadores, estabelecimentos de venda e abrigos. A proposta original da Comissão (Dezembro de 2023) tratava todos os cães e gatos de forma uniforme, independentemente da finalidade — companhia, pastoreio, guarda ou caça.</p>
+    </div>
+
+    <h3>2.1 Derrogações aprovadas pelo Parlamento Europeu (Junho 2025)</h3>
+
+    <p>No relatório <strong>A10-0104/2025</strong> (relatora: Veronika Vrecionová, AGRI), o Parlamento aprovou um conjunto de alterações que reconhecem especificidades dos cães de trabalho:</p>
+
+    <div class="card regulamento">
+      <div class="card-label">Alteração 56 — Cães que realizam actividades profissionais</div>
+      <blockquote>
+        Define "cães que realizam actividades profissionais" incluindo "os que se dedicam à caça" e outras actividades especializadas. Esta categorização abre caminho a regimes diferenciados para estes animais.
+        <cite>Fonte: Relatório A10-0104/2025, Parlamento Europeu, Janeiro–Junho 2025</cite>
+      </blockquote>
+    </div>
+
+    <div class="card regulamento">
+      <div class="card-label">Alteração 32 — Corte de cauda (caudectomia)</div>
+      <blockquote>
+        "Para determinadas raças, por exemplo cães de caça, essas práticas podem ser autorizadas por razões profiláticas."
+        <cite>Fonte: Relatório A10-0104/2025, Parlamento Europeu</cite>
+      </blockquote>
+      <p style="margin-top:10px; font-size:0.9rem;">Esta formulação introduz uma excepção ao princípio geral de proibição de mutilações, reconhecendo que o corte de cauda em certas raças de caça tem justificação preventiva (evitar lesões durante a actividade venatória).</p>
+    </div>
+
+    <div class="card regulamento">
+      <div class="card-label">Alteração 14 — Cães de pastoreio e guarda</div>
+      <blockquote>
+        Reconhece "cães para pastoreio, guarda de gado, proteção das explorações agrícolas" como utilizações legítimas com possibilidade de derrogação de certos requisitos de bem-estar standard.
+        <cite>Fonte: Relatório A10-0104/2025, Parlamento Europeu</cite>
+      </blockquote>
+    </div>
+
+    <div class="card regulamento">
+      <div class="card-label">Alteração 33 — Serviços militares, policiais e aduaneiros</div>
+      <blockquote>
+        "Os Estados-Membros devem poder conceder derrogações aos operadores que detenham cães que possam destinar-se a ser cães dos serviços militares, policiais ou aduaneiros."
+        <cite>Fonte: Relatório A10-0104/2025, Parlamento Europeu</cite>
+      </blockquote>
+    </div>
+
+    <h3>2.2 O limiar de isenção: a "regra das 4 cadelas / 3 ninhadas"</h3>
+
+    <p>O acordo provisório de Novembro de 2025 estabelece que quem detenha <strong>menos de 4 cães (ou 3 gatos), com não mais de 3 (ou 2) ninhadas por ano</strong>, fica totalmente isento dos requisitos básicos de bem-estar do Regulamento. Esta disposição, negociada entre Parlamento e Conselho, é relevante para pequenos caçadores individuais, mas <strong>não cobre as matilhas de caça maior</strong>, que tipicamente excedem estes limiares.</p>
+  </section>
+
+  <!-- 3. PERCURSO LEGISLATIVO E VOTAÇÃO -->
+  <section>
+    <h2>3. Percurso legislativo e posições institucionais</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="data">7 Dezembro 2023</div>
+        <div class="descricao">Comissão Europeia apresenta proposta COM(2023)0769 — 2023/0447(COD). Âmbito universal, sem derrogações específicas para cães de trabalho ou caça.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="data">26 Junho 2024</div>
+        <div class="descricao">Conselho da UE aprova mandato negocial (sob Presidência Belga). Posição mais conservadora que a proposta da Comissão. Alguns Estados-Membros pressionam para manter excepções para matilhas e cães militares, mas o mandato não inclui derrogação expressa para caça. A identificação e registo fica com alcance limitado (não universal).</div>
+      </div>
+      <div class="timeline-item">
+        <div class="data">10 Janeiro 2025</div>
+        <div class="descricao">Comissão AGRI do Parlamento Europeu publica relatório A10-0104/2025 com alterações significativas, incluindo reconhecimento de cães de caça como categoria específica.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="data">19 Junho 2025</div>
+        <div class="descricao">Votação plenária do Parlamento Europeu: <strong>457 votos a favor · 17 contra · 86 abstenções</strong>. Aprovação com ampla maioria. Processo remetido à comissão para negociações interinstitucionais (trílogo).</div>
+      </div>
+      <div class="timeline-item">
+        <div class="data">25 Novembro 2025</div>
+        <div class="descricao">Acordo provisório entre Parlamento e Conselho. Primeira legislação europeia a estabelecer normas mínimas uniformes de bem-estar para cães e gatos.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="data">1.º semestre 2026</div>
+        <div class="descricao">Votação final de aprovação pelo Parlamento Europeu (prevista). Publicação no Jornal Oficial da UE. Aplicação: 2 anos após publicação, com períodos de transição específicos.</div>
+      </div>
+    </div>
+
+    <h3>3.1 Votação plenária do Parlamento (19 Junho 2025)</h3>
+
+    <table class="tabela-votacao">
+      <thead>
+        <tr>
+          <th>Resultado</th>
+          <th>N.º de votos</th>
+          <th>Observação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge sim">A Favor</span></td>
+          <td><strong>457</strong></td>
+          <td>Maioria amplamente supra-maioritária; reflecte consenso transversal</td>
+        </tr>
+        <tr>
+          <td><span class="badge nao">Contra</span></td>
+          <td><strong>17</strong></td>
+          <td>Minoria muito reduzida; oposição de princípio à intervenção europeia nesta matéria</td>
+        </tr>
+        <tr>
+          <td><span class="badge abs">Abstenção</span></td>
+          <td><strong>86</strong></td>
+          <td>Reservas parciais; provavelmente eurodeputados rurais ou de países com fortes tradições venatórias</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="card neutro">
+      <div class="card-label">Nota sobre a posição dos eurodeputados portugueses</div>
+      <p>Não foi possível apurar, com base nas fontes consultadas, o sentido de voto individual dos 21 eurodeputados portugueses na votação de 19 de Junho de 2025. Os registos de votação nominais estão disponíveis no portal do <a href="https://www.europarl.europa.eu/meps/pt/search/advanced?countryCode=PT" target="_blank">Parlamento Europeu</a>. Portugal não emitiu posição pública formal sobre a questão dos cães de caça no âmbito deste Regulamento.</p>
+    </div>
+
+    <h3>3.2 Posição do Conselho (Estados-Membros)</h3>
+
+    <p>O mandato do Conselho de Junho de 2024 foi negociado sob pressão de tempo (fim da Presidência Belga e período pré-eleitoral europeu). Algumas dinâmicas relevantes:</p>
+
+    <ul style="margin: 10px 0 14px 20px;">
+      <li style="margin-bottom:8px;"><strong>Vários Estados-Membros</strong> pressionaram para alargamento da identificação e registo a <em>todos</em> os cães e gatos (não apenas os transaccionados), mas o Conselho ficou com uma versão ligeiramente melhorada da proposta original.</li>
+      <li style="margin-bottom:8px;"><strong>Alguns governos</strong> (particularmente com tradições venatórias fortes) pressionaram para manutenção de excepções para matilhas de caça e cães militares. Este debate não ficou resolvido no mandato do Conselho e transitou para o trílogo.</li>
+      <li style="margin-bottom:8px;"><strong>O Conselho adoptou posição mais conservadora</strong> que o Parlamento em matéria de bem-estar, preferindo menos requisitos obrigatórios e maior flexibilidade nacional.</li>
+      <li>O princípio dos <strong>standards mínimos</strong> (com possibilidade de os Estados-Membros imporem regras mais estritas) foi consensual — o que é relevante dado que Portugal já tem um regime mais exigente em algumas matérias (ex.: proibição do corte de cauda desde 2015).</li>
+    </ul>
+
+    <div class="card neutro">
+      <div class="card-label">Contexto comparado: Espanha</div>
+      <p>Espanha constitui o caso mais paradigmático de tensão entre legislação nacional e o Regulamento europeu. A Lei 7/2023 espanhola exclui <em>expressamente</em> os cães de caça do seu âmbito de protecção, classificando-os junto com animais de produção pecuária. Esta exclusão criou uma lacuna de rastreabilidade para dezenas de milhar de cães de caça espanhóis (podencos, galgos, etc.) sem registo oficial, sem responsável legalmente identificado, vulneráveis ao abandono sistemático após a época venatória. O Regulamento europeu, ao não excluir estes animais, cria um conflito directo com a lei espanhola — sendo Portugal um caso de menor tensão jurídica, mas com desafios práticos semelhantes.</p>
+    </div>
+  </section>
+
+  <!-- 4. A REALIDADE PORTUGUESA -->
+  <section>
+    <h2>4. A realidade portuguesa: legislação vigente e prática</h2>
+
+    <h3>4.1 Quadro jurídico nacional actual</h3>
+
+    <div class="card legislacao">
+      <div class="card-label">@legislacao — DL n.º 82/2019, de 27 de Junho</div>
+      <p>Em Portugal, os cães de caça são actualmente classificados como <strong>animais de companhia</strong> ao abrigo do Decreto-Lei n.º 82/2019. Esta classificação implica que estão sujeitos às mesmas obrigações que qualquer outro cão detido por um particular:</p>
+      <ul style="margin: 8px 0 0 18px;">
+        <li style="margin-bottom:4px;"><strong>Identificação electrónica</strong> obrigatória por microchip e registo no SIAC</li>
+        <li style="margin-bottom:4px;"><strong>Vacinação antirrábica</strong> anual obrigatória para cães com mais de 3 meses</li>
+        <li><strong>Licença anual</strong> na Junta de Freguesia da área de recenseamento</li>
+      </ul>
+    </div>
+
+    <div class="card legislacao">
+      <div class="card-label">@legislacao — Portaria n.º 148/2016 (Matilhas de Caça Maior)</div>
+      <p>A Portaria n.º 148/2016 estabelece a obrigatoriedade de registo dos cães que integrem <strong>matilhas de caça maior</strong>, bem como dos respectivos proprietários e matilheiros. Constitui o único instrumento normativo português especificamente dirigido às matilhas enquanto unidade cinegética, prevendo regras de identificação dos animais e dos responsáveis.</p>
+    </div>
+
+    <div class="card legislacao">
+      <div class="card-label">@legislacao — DL n.º 276/2001 + DL n.º 82/2019 — Alojamento</div>
+      <p>Para matilhas de maior dimensão (canis profissionais), exige-se autorização da autoridade regional agrícola. Distinguem-se:</p>
+      <ul style="margin: 8px 0 0 18px;">
+        <li style="margin-bottom:4px;"><strong>Criação comercial</strong>: instalações com fêmeas reprodutoras e intenção lucrativa</li>
+        <li style="margin-bottom:4px;"><strong>Hotéis de cães</strong>: alojamento pago para cães de múltiplos proprietários</li>
+        <li><strong>Abrigos</strong>: alojamento não lucrativo de um único proprietário</li>
+      </ul>
+    </div>
+
+    <h3>4.2 Raças autóctones portuguesas de aptidão cinegética</h3>
+
+    <p>Portugal tem várias raças autóctones reconhecidas com aptidão cinegética, cujas condições de criação e maneio podem ser afectadas pelo Regulamento:</p>
+
+    <div style="margin: 12px 0;">
+      <span class="raca-tag">Podengo Português</span>
+      <span class="raca-tag">Perdigueiro Português</span>
+      <span class="raca-tag">Sabujo Português</span>
+      <span class="raca-tag">Rafeiro do Alentejo</span>
+      <span class="raca-tag">Cão de Castro Laboreiro</span>
+      <span class="raca-tag">Cão da Serra de Aires</span>
+    </div>
+
+    <p>Estas raças estão frequentemente integradas em matilhas de caça ou são utilizadas em processos venatórios como o <em>corricão</em> (caça exclusivamente com cães), a espera com cão de cobro, ou a batida com cães levantadores. Nestes contextos, o número de animais por detentor, as condições de alojamento e as práticas de reprodução têm características próprias.</p>
+
+    <h3>4.3 Problema prático: o cumprimento existente e os novos requisitos</h3>
+
+    <p>Portugal já impõe identificação electrónica e registo de todos os cães, incluindo os de caça. O DL 82/2019 classifica-os como animais de companhia sem excepção. Contudo, a <strong>compliance efectiva</strong> no sector cinegético é reconhecidamente incompleta, com problemas documentados de:</p>
+
+    <ul style="margin: 10px 0 14px 20px;">
+      <li style="margin-bottom:6px;">Cães não registados no SIAC ou com registos desactualizados</li>
+      <li style="margin-bottom:6px;">Abandono de cães após a época venatória (mesmo ilegalmente)</li>
+      <li style="margin-bottom:6px;">Matilhas com número de animais superior ao que os caçadores conseguem gerir administrativamente</li>
+      <li>Canis de caça sem a autorização exigida para alojamento comercial</li>
+    </ul>
+  </section>
+
+  <!-- 5. PONTOS DE TENSÃO -->
+  <section>
+    <h2>5. Pontos de tensão entre o Regulamento e a realidade portuguesa</h2>
+
+    <div class="grid-tensao">
+      <div class="ponto-tensao">
+        <h4>① Limiar de isenção vs. matilhas</h4>
+        <p>O acordo provisório isenta quem detenha menos de 4 cães com menos de 3 ninhadas/ano. As matilhas de caça maior em Portugal ultrapassam frequentemente este limiar, ficando sujeitas a todos os requisitos do Regulamento.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>② Corte de cauda</h4>
+        <p>Portugal proibiu a caudectomia desde 2015 (mais restritivo que o Regulamento, que a admite por razões profiláticas em raças de caça). O Regulamento não conflitua aqui com o direito português, mas cria uma assimetria europeia que pode gerar pressão para revisão da posição nacional.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>③ Coleiras de estrangulamento e garras</h4>
+        <p>O Regulamento proíbe coleiras de garras e de estrangulamento sem ponto de paragem. No sector da caça, algumas destas coleiras são utilizadas para treino ou controlo de cães durante a actividade cinegética. Falta regulação específica portuguesa sobre este ponto.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>④ Socialização de cães em matilha</h4>
+        <p>O Regulamento prevê requisitos de socialização para cães jovens. Os cães em matilha de caça têm processos de socialização próprios, orientados para o trabalho conjunto em grupo. A aplicação de standards pensados para animais de companhia individuais pode criar tensões práticas.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>⑤ Passeio diário obrigatório</h4>
+        <p>O Regulamento exige acesso diário a espaço exterior ou passeio diário para cães com mais de 8 semanas. Para cães de caça alojados em canis profissionais durante a época fora da caça, este requisito implica custos operacionais e logísticos relevantes.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>⑥ Identificação e rastreabilidade universal</h4>
+        <p>A rastreabilidade universal (microchip + base de dados interoperável europeia) é talvez o ponto de maior impacto prático positivo: potencialmente elimina a impunidade do abandono sazonal de cães de caça e cria responsabilidade jurídica efectiva dos detentores.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>⑦ Limitação de ninhadas e reprodução</h4>
+        <p>Os requisitos de limitação de ninhadas e proibição de consanguinidade podem afectar negativamente a manutenção de linhas cinegéticas puras em raças de aptidão específica, particularmente nas raças autóctones portuguesas com efectivos populacionais reduzidos.</p>
+      </div>
+      <div class="ponto-tensao">
+        <h4>⑧ Proibição de venda em pet-shops</h4>
+        <p>O Regulamento proíbe a venda de cães e gatos em lojas de animais. Para raças de caça autóctones, o impacto é reduzido (não circulam habitualmente por este canal), mas poderá afectar o comércio entre caçadores e criadores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. REFLEXÃO ANALÍTICA -->
+  <section>
+    <h2>6. Reflexão analítica</h2>
+
+    <div class="card observacao">
+      <div class="card-label">Observação — Enquadramento jurídico português vs. espanhol</div>
+      <p>Portugal encontra-se numa posição juridicamente mais favorável do que Espanha para absorver o impacto do Regulamento. Enquanto a Lei 7/2023 espanhola excluiu expressamente os cães de caça do regime de protecção (classificando-os como animais de produção), Portugal já os trata como animais de companhia ao abrigo do DL 82/2019 e exige a sua identificação electrónica. O conflito jurídico em Portugal não é de princípio, mas de cumprimento efectivo.</p>
+    </div>
+
+    <div class="card observacao">
+      <div class="card-label">Observação — O paradoxo da caça como vector de melhoria do bem-estar</div>
+      <p>Há um paradoxo relevante: ao tornar a rastreabilidade universal e efectivamente executada, o Regulamento pode reduzir o abandono sazonal de cães de caça — um problema crónico em Portugal e Espanha — não por impor novos deveres de bem-estar, mas por tornar impossível a invisibilidade dos animais perante as autoridades. O rastreio individual do cão ao seu responsável elimina a "zona cinzenta" em que actualmente vivem muitos animais de caça abandonados.</p>
+    </div>
+
+    <div class="card observacao">
+      <div class="card-label">Observação — A questão das raças autóctones e a limitação da reprodução</div>
+      <p>A limitação de ninhadas e a proibição de consanguinidade merecem atenção específica no contexto das raças cinegéticas autóctones portuguesas. Raças como o Podengo Português ou o Sabujo têm efectivos populacionais limitados e programas de selecção que dependem de uma gestão específica da reprodução. A aplicação rígida de limites de consanguinidade sem atender às especificidades de preservação de raça pode paradoxalmente prejudicar a sustentabilidade genética destas populações. Este ponto justificaria uma análise zootécnica especializada e eventual lobby português junto das instituições europeias.</p>
+    </div>
+
+    <div class="card observacao">
+      <div class="card-label">Observação — O Conselho como veículo de derrogações sectoriais</div>
+      <p>O facto de o Conselho (representativo dos Estados-Membros) ter adoptado uma posição mais conservadora não significa necessariamente maior protecção para o sector da caça. O princípio dos standards mínimos europeus (com possibilidade de aplicação de normas nacionais mais estritas) é confirmado no acordo provisório. Portugal poderá continuar a aplicar normas mais exigentes onde já existam (ex.: proibição de caudectomia), sem que o Regulamento europeu o impeça. O problema reside na harmonização ascendente: os standards europeus são agora o piso mínimo e não o tecto máximo.</p>
+    </div>
+
+    <div class="card observacao">
+      <div class="card-label">Observação — Propostas nacionais (@codigo e @rgbeac) e os cães de caça</div>
+      <p>Quer o @codigo (Código do Animal — proposta de consolidação) quer o @rgbeac (Regime Geral do Bem-Estar dos Animais de Companhia — proposta de Junho de 2025) operam sobre o pressuposto de que os cães de caça são animais de companhia, sem derrogação expressa para o sector venatório. Nenhuma das propostas desenvolve especificamente um regime para matilhas de caça ou para a actividade cinegética. O Regulamento europeu, ao reconhecer os cães de caça como categoria com especificidades próprias (Alt. 56 do relatório AGRI), está paradoxalmente mais avançado neste reconhecimento do que as propostas nacionais.</p>
+    </div>
+  </section>
+
+  <hr class="sep" />
+
+  <!-- 7. SÍNTESE -->
+  <section>
+    <h2>7. Síntese dos principais impactos esperados</h2>
+
+    <table class="tabela-votacao">
+      <thead>
+        <tr>
+          <th>Matéria</th>
+          <th>Regime actual (PT)</th>
+          <th>Regulamento UE</th>
+          <th>Impacto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Identificação electrónica</td>
+          <td>Obrigatória (DL 82/2019)</td>
+          <td>Obrigatória + interoperabilidade europeia</td>
+          <td><span class="badge sim">Reforço</span></td>
+        </tr>
+        <tr>
+          <td>Corte de cauda</td>
+          <td>Proibido desde 2015 (mais restritivo)</td>
+          <td>Permitido profilaticamente em cães de caça</td>
+          <td><span class="badge abs">Sem conflito</span></td>
+        </tr>
+        <tr>
+          <td>Limitação de ninhadas</td>
+          <td>Sem limite expresso</td>
+          <td>Limite de ninhadas + períodos de repouso</td>
+          <td><span class="badge nao">Novo requisito</span></td>
+        </tr>
+        <tr>
+          <td>Proibição consanguinidade</td>
+          <td>Sem regra específica</td>
+          <td>Proibição de cruzamentos entre progenitor/descendente, avó/neto, irmãos</td>
+          <td><span class="badge nao">Novo requisito</span></td>
+        </tr>
+        <tr>
+          <td>Coleiras de estrangulamento</td>
+          <td>Sem regulação expressa</td>
+          <td>Proibidas sem ponto de paragem</td>
+          <td><span class="badge nao">Novo requisito</span></td>
+        </tr>
+        <tr>
+          <td>Acesso exterior / passeio</td>
+          <td>Espaço adequado (DL 276/2001)</td>
+          <td>Passeio diário obrigatório para cães &gt;8 semanas</td>
+          <td><span class="badge nao">Impacto em canis</span></td>
+        </tr>
+        <tr>
+          <td>Isenção pequenos detentores</td>
+          <td>N/A</td>
+          <td>&lt;4 cães / &lt;3 ninhadas: isenção total</td>
+          <td><span class="badge sim">Favorável caçadores individuais</span></td>
+        </tr>
+        <tr>
+          <td>Matilhas de caça maior</td>
+          <td>Portaria 148/2016 (registo específico)</td>
+          <td>Sem derrogação expressa para matilhas</td>
+          <td><span class="badge nao">Lacuna regulatória</span></td>
+        </tr>
+        <tr>
+          <td>Rastreabilidade do abandono</td>
+          <td>Insuficiente na prática</td>
+          <td>Registo interoperável → responsabilidade efectiva</td>
+          <td><span class="badge sim">Melhoria estrutural</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FONTES -->
+  <div class="fontes">
+    <h3>Fontes consultadas</h3>
+    <ul>
+      <li><a href="https://www.europarl.europa.eu/doceo/document/A-10-2025-0104_PT.html" target="_blank">Relatório A10-0104/2025 — Parlamento Europeu (AGRI), Janeiro–Junho 2025</a></li>
+      <li><a href="https://www.europarl.europa.eu/news/pt/press-room/20250616IPR28963/parlamento-adota-posicao-para-lei-do-bem-estar-e-rastreabilidade-de-caes-e-gatos" target="_blank">Parlamento Europeu — Notícia sobre votação de Junho 2025 (PT)</a></li>
+      <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2025/11/25/council-and-parliament-reach-a-provisional-deal-to-improve-the-welfare-and-traceability-of-cats-and-dogs-across-europe/" target="_blank">Conselho da UE — Acordo provisório, Novembro 2025</a></li>
+      <li><a href="https://www.animanaturalis.org/n/47108/what-the-new-european-regulation-could-do-for-hunting-dogs-in-spain-or-not" target="_blank">AnimaNaturalis — Cães de caça em Espanha e o Regulamento europeu</a></li>
+      <li><a href="https://www.agroportal.pt/caes-utilizados-para-a-caca-e-o-seu-alojamento-esclarecimentos-aos-cacadores/" target="_blank">Agroportal — Cães utilizados para a caça: esclarecimentos</a></li>
+      <li><a href="https://food.ec.europa.eu/animals/animal-welfare/protecting-welfare-dogs-and-cats_en" target="_blank">Comissão Europeia — Welfare of dogs and cats</a></li>
+      <li><a href="https://www.europarl.europa.eu/legislative-train/theme-agriculture-and-rural-development-agri/file-welfare-of-dogs-and-cats-and-their-traceability" target="_blank">Legislative Train Schedule — 2023/0447(COD)</a></li>
+      <li>DL n.º 82/2019, de 27 de Junho — Bem-estar de animais de companhia (fonte: repositório @legislacao)</li>
+      <li>Portaria n.º 148/2016 — Matilhas de caça maior (fonte: repositório @legislacao)</li>
+    </ul>
+  </div>
+
+</div><!-- /container -->
+</body>
+</html>

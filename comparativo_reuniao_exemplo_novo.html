@@ -189,37 +189,6 @@
     line-height: 1.6;
     color: #222;
   }
-  .tabela-art {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 12px;
-    font-size: .82rem;
-  }
-  .tabela-art th {
-    background: var(--div);
-    color: #fff;
-    padding: 7px 9px;
-    text-align: left;
-    font-weight: 600;
-    border: 1px solid rgba(0,0,0,.15);
-    white-space: pre-line;
-  }
-  .tabela-art td {
-    padding: 7px 9px;
-    border: 1px solid #ddd;
-    vertical-align: top;
-    white-space: pre-line;
-    line-height: 1.5;
-  }
-  .tabela-art tr:nth-child(even) td {
-    background: rgba(0,0,0,.025);
-  }
-  .tabela-art-wrapper {
-    margin-top: 14px;
-    border: 1px solid rgba(0,0,0,.08);
-    border-radius: 6px;
-    overflow: hidden;
-  }
 
   /* GRID 3 COLUNAS (diplomas nacionais) */
   .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px; }
@@ -377,12 +346,12 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Não se aplica",
-      "codigo": "Não se aplica",
-      "legislacao": "Não se aplica",
-      "sumario": "Artigo de isenções do Regulamento europeu — não tem correspondência directa em legislação portuguesa."
+      "rgbeac": "Não se aplica — artigo processual de isenções sem correspondência nas propostas nacionais.",
+      "codigo": "Não se aplica — artigo processual de isenções sem correspondência nas propostas nacionais.",
+      "legislacao": "Não se aplica — a legislação nacional não utiliza o modelo de limiares de isenção adoptado pelo Regulamento (≤2 ninhadas/ano; ≤15 animais em abrigo). A Portaria n.º 148/2016 regula o registo de cães que integrem matilhas de caça maior junto do ICNF, I. P., mas não fixa limiares de isenção de obrigações de bem-estar.",
+      "sumario": "O n.º 1 do Art.º 5.º define um limiar de 2 ninhadas por ano civil que libera os pequenos criadores das obrigações de bem-estar mais exigentes do Capítulo II. Este limiar pode capturar proprietários de matilhas de caça em Portugal (especialmente caça maior) sem actividade comercial, que regularmente produzem ninhadas de cães de trabalho. No debate legislativo europeu (EP A10-0104/2025), as federações de caçadores (FACE, Federación Española de Caza) argumentaram que o limiar de 2 ninhadas deveria isentar a criação não comercial de cães de caça, enquanto as ONG de bem-estar animal (AnimaNaturalis, Eurogroup for Animals) exigiram a aplicação universal do Regulamento sem excepções. O texto final não criou uma derrogação explícita para cães de caça. A aplicação prática deste limiar a proprietários de matilhas portuguesas (que podem deter 20–120 cães) terá de ser avaliada pela autoridade competente."
     },
-    "necessidade_alteracao": "Não",
+    "necessidade_alteracao": "Não — artigo de isenções de aplicação directa; o limiar é fixado pelo Regulamento e não carece de transposição. Pode carecer de orientação administrativa para aplicação a matilhas de caça.",
     "notas": ""
   },
   {
@@ -407,12 +376,12 @@ const ARTIGOS = [
       "texto": "1 — As condições de detenção e de alojamento para reprodução, criação, manutenção e acomodação dos animais de companhia devem salvaguardar os seus parâmetros de bem-estar animal, nomeadamente nos termos dos artigos seguintes.\n2 — Nenhum animal deve ser detido como animal de companhia se não estiverem asseguradas as condições referidas no número anterior ou se não se adaptar ao cativeiro.\n3 — São proibidas todas as violências contra animais, considerando-se como tais os atos consistentes em, sem necessidade, se infligir a morte, o sofrimento ou lesões a um animal.\n4 — É proibido utilizar animais para fins didáticos e lúdicos, de treino, filmagens, exibições, publicidade ou atividades semelhantes, na medida em que daí resultem para eles dor ou sofrimentos consideráveis, salvo experiência científica de comprovada necessidade e justificada nos termos da lei."
     },
     "divergencia": {
-      "rgbeac": "Análise no Art.º 7",
-      "codigo": "Análise no Art.º 7",
-      "legislacao": "Análise no Art.º 7",
-      "sumario": "Regulamento especifica novos conceitos: estabelecer uma relação positiva com os seres humanos; otimizar o seu estado mental; prevenindo o desenvolvimento de comportamentos repetitivos anormais;"
+      "rgbeac": "O @rgbeac (Art.º 7.º, n.º 1) enuncia cinco domínios de bem-estar em alíneas a) a e) análogas às do Regulamento — correspondência estrutural directa. Divergência: o Regulamento dirige-se exclusivamente aos operadores de estabelecimentos; o @rgbeac dirige-se a todos os cidadãos. O princípio (e) do Regulamento — otimização do estado mental e prevenção de comportamentos repetitivos anormais — não tem correspondência literal no @rgbeac: a alínea e) do @rgbeac refere apenas a proibição de stresse/medo/ansiedade. O domínio (d) do Regulamento — 'relação positiva com os seres humanos' — não consta do @rgbeac. As obrigações específicas para operadores são desenvolvidas nos arts. 9.º a 12.º e 47.º a 55.º do @rgbeac.",
+      "codigo": "O @codigo (Arts. 4.º e 5.º) estabelece princípios gerais equivalentes mas sem a estrutura de cinco domínios explícitos do Regulamento. Os princípios (d) — relação positiva com os seres humanos — e (e) — otimização do estado mental e prevenção de comportamentos repetitivos anormais — não têm correspondência no @codigo. As obrigações específicas estão desenvolvidas nos arts. 13.º a 16.º e 46.º a 48.º do @codigo.",
+      "legislacao": "O DL 276/2001 (Art.º 7.º) enuncia princípios gerais de bem-estar sem estrutura de cinco domínios. Os princípios (d) e (e) do Regulamento não têm correspondência. As obrigações específicas estão desenvolvidas nos arts. 8.º a 16.º do DL 276/2001.",
+      "sumario": "O Art.º 6.º do Regulamento codifica os 'Five Domains' de bem-estar animal como obrigação jurídica para operadores. Os diplomas nacionais reconhecem os primeiros três domínios (nutrição, ambiente físico, saúde) mas não desenvolvem explicitamente os domínios comportamental e mental tal como formulados no Regulamento. As obrigações específicas de cada princípio são desenvolvidas nos Arts. 14.º a 17.º do Regulamento, com correspondências nacionais detalhadas em cada artigo."
     },
-    "necessidade_alteracao": "Não",
+    "necessidade_alteracao": "Sim",
     "notas": ""
   },
   {
@@ -443,166 +412,6 @@ const ARTIGOS = [
       "sumario": "Necessidade de: (1) criar o conceito de 'família de acolhimento' como extensão da atividade do operador; (2) fixar limite numérico de animais por família (máximo 5, ou 1 ninhada com mãe); (3) atribuir responsabilidade jurídica ao operador, não à família de acolhimento."
     },
     "necessidade_alteracao": "Sim",
-    "tabelas": [
-      [
-        [
-          "Critério / Determinação do Regulamento",
-          "Regulamento (UE) 2023/0447(texto PT-PT)",
-          "@rgbeac(proposta jun. 2025)",
-          "@codigo(proposta DL n.º 214/2013)",
-          "Proposta"
-        ],
-        [
-          "al. (a) — Água e alimentaçãoFornecimento adequado de água e alimentos(nutrição e hidratação)",
-          "Os cães e gatos recebem água e alimentos de qualidade e numa quantidade que assegura a sua boa e adequada nutrição e hidratação.(al. (a) do art.º 6.º)",
-          "Art.º 7.º, n.º 1, al. a) — proibição de fome, sede ou malnutrição.Art.º 10.º, n.º 1, al. a), ii) — alimentos saudáveis, adequados e convenientes; acesso permanente a água potável.Art.º 51.º, n.º 1 — programa de alimentação bem definido, de valor nutritivo adequado, em quantidade suficiente para as necessidades das espécies e dos indivíduos.Art.º 51.º, n.º 6 — acesso a água potável sem restrição (salvo razões médico-veterinárias).Coberto.",
-          "Art.º 4.º — dever de assegurar as necessidades básicas de bem-estar.Art.º 46.º, n.º 1 — programa de alimentação bem definido, de valor nutritivo adequado, em quantidade suficiente para as necessidades das espécies e dos indivíduos (nos locais de criação, manutenção, venda, centros de recolha e hospedagem).Art.º 46.º, n.º 6 — acesso a água potável sem restrição (salvo razões médico-veterinárias).Coberto no âmbito de estabelecimentos (art.º 46.º não se aplica à detenção doméstica individual).",
-          "Rgbeac ou código, ampliado à detenção"
-        ],
-        [
-          "al. (b) — Ambiente físico (1/2)Limpo, seguro e confortável(espaço, ar, temperatura, luz, clima)",
-          "Os cães e gatos são mantidos num ambiente físico adequado, regularmente limpo, seguro e confortável, especialmente em termos de espaço, qualidade do ar, temperatura, iluminação e proteção face a condições climáticas adversas.(al. (b) do art.º 6.º)",
-          "Art.º 7.º, n.º 1, al. b) — proibição de desconforto físico ou térmico.Art.º 10.º, n.º 1, al. a), v) — abrigo adequado com proteção de condições atmosféricas adversas (frio, chuva, sol ou calor excessivos); cama seca, limpa e confortável.Art.º 48.º, n.º 1 — temperatura, ventilação, luminosidade e obscuridade adequadas à manutenção do bem-estar e conforto das espécies.Art.º 48.º, n.º 3 — luz preferencialmente natural; luz artificial o mais próxima do espectro solar.Parcialmente coberto (sem referência explícita a qualidade do ar como parâmetro distinto da ventilação).",
-          "Art.º 5.º, n.º 1 — condições de detenção devem salvaguardar bem-estar.Art.º 14.º, n.º 1 — temperatura, ventilação, luminosidade e obscuridade das instalações adequadas ao bem-estar das espécies.Art.º 14.º, n.º 3 — luz preferencialmente natural; artificial o mais próxima do espectro solar.Parcialmente coberto (sem referência explícita a qualidade do ar como parâmetro distinto da ventilação).",
-          "Referir qualidade do ar?"
-        ],
-        [
-          "al. (b) — Ambiente físico (2/2)Espaço anti-sobrelotação;liberdade de movimentos",
-          "Os cães e gatos são mantidos num espaço suficientemente grande para prevenir a sobrelotação e garantir a facilidade de movimentação.(al. (b) do art.º 6.º)",
-          "Art.º 10.º, n.º 1, al. a), iv) — liberdade de movimento; proibição de contenção permanente; espaço e enriquecimento ambiental adequados.\nArt.º 47.º, n.º 1 — espaço adequado às necessidades fisiológicas e etológicas; prática de exercício físico; fuga de animais agressores.\nPortaria prevista no art.º 58.º fixará requisitos específicos.\nParcialmente coberto (sobrelotação não referenciada de forma autónoma).",
-          "Art.º 5.º, n.º 3, al. b) — proibição de restringir a liberdade de movimentos de forma a impedir levantar-se, deitar-se ou virar-se sobre si próprios.\nArt.º 13.º, n.º 1, als. a) e b) — espaço adequado às necessidades fisiológicas e etológicas; prática de exercício físico; fuga de animais agressores.\nParcialmente coberto (sobrelotação não referenciada de forma autónoma).",
-          "Rgbeac com referência à sobrelotação"
-        ],
-        [
-          "al. (c) — Saúde e higiene (1/2)Segurança, limpeza, boa saúde;prevenção de doenças, lesões e dor",
-          "Os cães e gatos são mantidos seguros, limpos e com boa saúde, prevenindo doenças, lesões e dor.(al. (c) do art.º 6.º)",
-          "Art.º 7.º, n.º 1, al. c) — proibição de dor, lesão física ou doença.Art.º 10.º, n.º 1, al. a), iii) — condições higiossanitárias.Art.º 10.º, n.º 1, al. f) — tratamento veterinário preventivo, paliativo ou curativo.Art.º 52.º, n.º 2 — todos os animais alvo de inspeção no início e final do dia e a cada quatro horas; primeiros cuidados imediatos a animais doentes ou lesionados.",
-          "Art.º 4.º — dever de salvaguardar a saúde.Art.º 6.º — dever de assegurar cuidados médico-veterinários ao animal ferido ou doente.Art.º 47.º, n.º 3 — inspeção diária de todos os animais; primeiros cuidados imediatos a animais doentes, lesionados ou com alterações comportamentais.Coberto em termos gerais (inspeção diária; sem diferenciação de frequência para animais vulneráveis).",
-          ""
-        ],
-        [
-          "al. (c) — Saúde e higiene (2/2)Prevenção via maneio, manuseamentoe reprodução adequados",
-          "Prevenção de doenças, lesões e dor, nomeadamente através de práticas de maneio, manuseamento e reprodução adequadas.(al. (c) do art.º 6.º)",
-          "Art.º 12.º, n.º 1, al. b) — proibição de práticas que causem sofrimento, dano, stresse ou angústia.Art.º 52.º, n.ºs 3 e 5 — maneio feito de forma a não causar dores, sofrimento ou distúrbios desnecessários; meios de contenção não devem causar ferimentos, dores ou angústia.Art.º 70.º (normas reprodutivas) — limitações à reprodução para proteção da saúde.Coberto.",
-          "Art.º 5.º, n.º 3, al. c) — proibição de usar equipamentos de maneio, contenção ou treino que causem sofrimento desnecessário ou lesões.Art.º 47.º, n.ºs 4 e 5 — manuseamento feito de forma a não causar dores, sofrimento ou distúrbios desnecessários; meios de contenção não devem causar ferimentos, dores ou angústia.Art.º 8.º, n.º 1 e 2 — reprodução planeada e parâmetros reprodutivos.Coberto.",
-          ""
-        ],
-        [
-          "al. (d) — Comportamento (1/2)Expressão de comportamentos da espéciee sociais não nocivos",
-          "Os cães e gatos são mantidos num ambiente que lhes permite exibir comportamentos específicos da espécie e comportamentos sociais não nocivos.(al. (d) do art.º 6.º)",
-          "Art.º 7.º, n.º 1, al. d) — direito de expressar padrões normais de comportamento.Art.º 10.º, n.º 1, al. a), iv) — espaço e enriquecimento ambiental adequados para a expressão dos comportamentos naturais.Art.º 10.º, n.º 1, al. a), vi) — contato social adequado à espécie, de acordo com a idade e atividade.Art.º 47.º, n.º 4 — enriquecimento ambiental complexo e estimulante com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais.Coberto.",
-          "Art.º 5.º, n.º 1 — condições de detenção que salvaguardem parâmetros de bem-estar.Art.º 13.º, n.º 5 — instalações equipadas com materiais e equipamento que estimulem a expressão dos comportamentos naturais (substrato, cama, ninhos, ramos, buracos, locais para banhos).Parcialmente coberto (enriquecimento ambiental para comportamentos naturais; sem referência explícita a comportamentos sociais não nocivos).",
-          ""
-        ],
-        [
-          "al. (d) — Comportamento (2/2)Relação positiva com os seres humanos",
-          "Os cães e gatos são mantidos num ambiente que lhes permite estabelecer uma relação positiva com os seres humanos.(al. (d) do art.º 6.º)",
-          "Art.º 10.º, n.º 1, al. c) — dever de educar o animal com recurso a métodos de reforço positivo visando a sua vinculação e integração positivas no espaço familiar e no meio ambiente.Art.º 52.º, n.º 4 — interações do pessoal técnico com os animais devem ser positivas, regulares, previsíveis e não forçadas.Coberto.",
-          "Art.º 7.º, n.º 1 — dever de promover o treino dos cães com vista à socialização e obediência.Art.º 7.º, n.º 2 — treino de acordo com boas práticas.Parcialmente coberto (apenas cães; sem referência explícita a relação positiva com os seres humanos como fim autónomo).",
-          ""
-        ],
-        [
-          "al. (e) — Estado mental (1/4)Prevenir/reduzir estímulos negativos(duração e intensidade)",
-          "Os cães e gatos são mantidos de forma a otimizar o seu estado mental, prevenindo ou reduzindo estímulos negativos em duração e intensidade.(al. (e) do art.º 6.º)",
-          "Art.º 7.º, n.º 1, al. e) — proibição de situações que provoquem stresse, medo ou ansiedade injustificados.Art.º 12.º, n.º 1, al. b) — proibição de práticas que causem sofrimento, dano, stresse ou angústia.Parcialmente coberto (abordagem proibitiva; não preventiva).",
-          "Art.º 5.º, n.º 3 — proibição de violência e sofrimento.Sem referência explícita à gestão ativa de estímulos negativos.",
-          ""
-        ],
-        [
-          "al. (e) — Estado mental (2/4)Maximizar estímulos positivos(duração e intensidade)",
-          "Os cães e gatos são mantidos de forma a maximizar oportunidades para estímulos positivos em duração e intensidade.(al. (e) do art.º 6.º)",
-          "Art.º 10.º, n.º 1, al. a), i) — dever de proporcionar atenção, supervisão, controlo, exercício físico e estímulo mental.Art.º 47.º, n.ºs 6 e 7 — acesso diário a área de exercício (mínimo 2×30 min); equipamento de enriquecimento ambiental e agilidade.Parcialmente coberto.",
-          "Art.º 13.º, n.º 5 — materiais e equipamento que estimulem a expressão dos comportamentos naturais.Sem norma positiva explícita sobre maximização de estímulos positivos.",
-          ""
-        ],
-        [
-          "al. (e) — Estado mental (3/4)Prevenir comportamentos repetitivos anormaisou indicativos de bem-estar negativo",
-          "Os cães e gatos são mantidos de forma a prevenir o desenvolvimento de comportamentos repetitivos anormais ou outros comportamentos indicativos de bem-estar negativo.(al. (e) do art.º 6.º)",
-          "Não regulado explicitamente como norma autónoma.(O art.º 7.º, n.º 1, al. d) e e) e o art.º 47.º do @rgbeac indiretamente impõem condições que previnem o seu aparecimento.)",
-          "Não regulado explicitamente.",
-          ""
-        ],
-        [
-          "al. (e) — Estado mental (4/4)Necessidades individuais do animal(als. (a) a (d))",
-          "Os cães e gatos são mantidos tendo em conta as necessidades individuais do animal nos domínios referidos nas alíneas (a) a (d).(al. (e) do art.º 6.º)",
-          "Art.º 10.º, n.º 1, al. a) — bem-estar assegurado \"de acordo com a sua espécie, raça, idade e necessidades físicas e etológicas\".Art.º 48.º, n.º 2 — fatores ambientais adequados às necessidades específicas de animais em fase reprodutiva, recém-nascidos ou doentes.Parcialmente coberto (necessidades da espécie/raça/idade/fase fisiológica; não explicitamente individuais).",
-          "Art.º 4.º — necessidades básicas de bem-estar (sem referência à individualidade do animal).Art.º 14.º, n.º 2 — fatores ambientais adequados às necessidades específicas de animais em fase reprodutiva, recém-nascidos ou doentes.Parcialmente coberto.",
-          ""
-        ]
-      ],
-      [
-        [
-          "Critério / Determinação do Regulamento",
-          "Regulamento (UE) 2023/0447(texto PT-PT)",
-          "@rgbeac(proposta jun. 2025)",
-          "@codigo(proposta DL n.º 214/2013)",
-          ""
-        ],
-        [
-          "n.º 1 — Responsabilidade geralBem-estar dos animais;minimizar riscos",
-          "Os operadores são responsáveis pelo bem-estar dos cães e gatos detidos nos estabelecimentos sob a sua responsabilidade e controlo, devendo minimizar quaisquer riscos para o bem-estar desses animais.(n.º 1 do art.º 7.º)",
-          "Art.º 9.º, n.º 1 — dever geral de todos os cidadãos de notificar infrações.Art.º 10.º, n.º 1 — obrigações especiais dos detentores: assegurar bem-estar.Sem distinção entre detentor doméstico e operador de estabelecimento comercial.Parcialmente coberto.",
-          "Art.º 4.º — detenção responsável: cabe aos detentores assegurar as necessidades básicas de bem-estar e salvaguardar a saúde.Sem atribuição explícita de responsabilidade ao \"operador\" como sujeito autónomo de estabelecimento.Parcialmente coberto.",
-          ""
-        ],
-        [
-          "n.º 2 — Famílias de acolhimento (1/2)Responsabilidade do operador;informação sobre bem-estar e necessidades individuais",
-          "No caso das famílias de acolhimento, a responsabilidade incumbe ao operador em cujo nome os cães ou gatos são detidos. O operador presta à família informações adequadas sobre as obrigações de bem-estar e as necessidades individuais dos animais.(n.º 2 do art.º 7.º)",
-          "Art.º 4.º — define \"Família de acolhimento temporário\" como detentor transitório (45 dias, extensível).Art.º 101.º, n.ºs 3 e 4 — contrato escrito entre titular e família; registo no SIAC.Art.º 101.º, n.º 5 — destino do animal é da responsabilidade do titular.Parcialmente coberto (responsabilidade no titular; mas não se fixa o dever de informação ao acolhedor sobre bem-estar e necessidades individuais).",
-          "Art.º 9.º — define abandono; não prevê o conceito de família de acolhimento.Não coberto.",
-          ""
-        ],
-        [
-          "n.º 2 — Famílias de acolhimento (2/2)Máx. 5 animais ou 1 ninhada(com/sem mãe) por família",
-          "Os operadores não colocam mais do que um total combinado de cinco cães ou gatos ou uma ninhada, com ou sem a mãe, numa família de acolhimento em qualquer momento.(n.º 2 do art.º 7.º)",
-          "Art.º 101.º — acolhimento temporário: sem fixação de limite numérico de animais por família.Não coberto.",
-          "Não regulado.",
-          ""
-        ],
-        [
-          "n.º 3 — Derrogação (Estados-Membros)Maior número autorizadose espaço e cuidadores suficientes",
-          "O Estado-Membro pode autorizar maior número de cães, gatos ou ninhadas na família de acolhimento, desde que as instalações disponham de espaço suficiente (incluindo exterior) e o número de cuidadores seja suficiente.(n.º 3 do art.º 7.º)",
-          "Não regulado.",
-          "Não regulado.",
-          ""
-        ],
-        [
-          "n.º 4 — Proibição de crueldade e maus-tratosInclui participaçãoem atividades de crueldade",
-          "Os operadores não sujeitam qualquer cão ou gato a crueldade, abusos ou maus-tratos, incluindo fazendo-os participar em atividades suscetíveis de resultar em crueldade, abusos ou maus-tratos.(n.º 4 do art.º 7.º)",
-          "Art.º 12.º, n.º 1, al. a) — proibição de causar a morte em violação das normas.Art.º 12.º, n.º 1, al. b) — proibição de práticas que causem sofrimento, dano, stresse ou angústia.Art.º 12.º, n.º 1, al. t) — proibição de utilização em eventos que envolvam crueldade, maus-tratos, sofrimento ou morte.Coberto.",
-          "Art.º 5.º, n.º 3 — proibição de violência: atos que infligem, sem necessidade, morte, sofrimento, abuso ou lesões a um animal.Art.º 5.º, n.º 4 — proibição de fins didáticos e lúdicos com dor ou sofrimentos consideráveis.Coberto.",
-          ""
-        ],
-        [
-          "n.º 5 — Proibição de abandono",
-          "Os operadores não abandonam os cães ou gatos criados ou detidos por eles.(n.º 5 do art.º 7.º)",
-          "Art.º 12.º, n.º 1, al. e) — proibição expressa de abandono.Art.º 9.º, n.º 1 — dever de notificação de infrações (inclui abandono).Coberto.",
-          "Art.º 9.º — define abandono; não estabelece proibição autónoma expressa (proibição implícita pela definição).Parcialmente coberto.",
-          ""
-        ],
-        [
-          "n.º 6 — Realojamento ao cessar atividadeAdoção ou transferênciapara outros operadores/adquirentes",
-          "Antes de os operadores cessarem as atividades num estabelecimento, asseguram que os cães ou gatos aí detidos são realojados, seja assumindo eles próprios a propriedade de animal de companhia, seja transferindo a responsabilidade para outros operadores ou adquirentes.(n.º 6 do art.º 7.º)",
-          "Art.º 101.º, n.º 5 — destino do animal é da responsabilidade do titular; mas esta norma aplica-se ao acolhimento temporário, não ao encerramento de estabelecimento.Não coberto (para encerramento de estabelecimento comercial).",
-          "Não regulado.",
-          ""
-        ],
-        [
-          "n.º 7 — Cuidadores suficientes e competentes(competências do art.º 12.º)",
-          "Os operadores asseguram que os cães e gatos são manuseados por um número suficiente de cuidadores de animais para satisfazer as necessidades de bem-estar, e que esses cuidadores possuem as competências exigidas no artigo 12.º.(n.º 7 do art.º 7.º)",
-          "Art.º 52.º, n.º 1 — observação diária dos animais e maneio assegurados por pessoal técnico com formação teórica e prática específica certificada pela DGAV e em número adequado à quantidade e espécies animais alojados.Parcialmente coberto (número adequado e formação exigidos; sem remissão para catálogo de competências específico equivalente ao art.º 12.º do Regulamento).",
-          "Art.º 47.º, n.º 1 — observação diária dos animais e maneio assegurados por pessoal com aptidão para o efeito e em número adequado à quantidade e espécies animais.Art.º 47.º, n.º 2 — maneio por pessoal com experiência ou formação adequada, sob orientação de médico veterinário.Parcialmente coberto (número adequado e formação exigidos; sem catálogo de competências específico equivalente ao art.º 12.º do Regulamento).",
-          ""
-        ],
-        [
-          "n.º 8 — Monitorização de indicadoresComportamento e aparência física;ações baseadas em resultados",
-          "Os operadores asseguram o bem-estar dos cães ou gatos monitorizando indicadores baseados nos animais relativos ao comportamento e à aparência física, e adotando ações com base nos resultados desse monitoramento.A Comissão adotará atos delegados que estabelecerão os indicadores e os métodos de medição.(n.ºs 8 e 9 do art.º 7.º)",
-          "Art.º 10.º, n.º 1, al. b) — dever de vigiar o animal de modo a evitar que cause danos (obrigação de vigilância; não equivale a monitorização de indicadores de bem-estar).Art.º 52.º, n.º 2 — inspeção dos animais no início e final do dia e a cada quatro horas; primeiros cuidados imediatos.Parcialmente coberto (periodicidade de inspeção regulada; sem sistema formal de indicadores baseados nos animais nem obrigação de ação estruturada com base nos resultados).",
-          "Art.º 47.º, n.º 3 — inspeção diária de todos os animais; primeiros cuidados imediatos a doentes, lesionados ou com alterações comportamentais.Parcialmente coberto (inspeção diária; sem sistema formal de indicadores de bem-estar nem atos delegados equivalentes).",
-          ""
-        ]
-      ]
-    ],
     "notas": ""
   },
   {
@@ -627,339 +436,12 @@ const ARTIGOS = [
       "texto": "n.º 3 do art. 8.º - As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar."
     },
     "divergencia": {
-      "rgbeac": "Prevê limites de idade para reprodução (cadelas 18 meses a 6 anos; gatas 12 meses a 6 anos; machos 12 meses a 7 anos), máximo de 4 ninhadas com intervalo mínimo de 12 meses, testes genéticos e de saúde e proibição de reprodução após 2 cesarianas — vários destes requisitos são mais detalhados que o Regulamento. \nO Art.º 70.º, n.º 7 remete para portaria a definição de coeficiente de consanguinidade e limite de descendentes por macho, sem proibição expressa de cruzamentos entre pais/filhos, irmãos ou avós/netos como o Regulamento.\nO conceito de 'características conformacionais excessivas' não está explícito, embora o n.º 8 proíba genericamente a reprodução quando se espere efeito prejudicial na saúde com base no fenótipo. \nA proibição de híbridos não consta.",
-      "codigo": "Exclui da reprodução animais com defeitos genéticos e malformações, mas especifica monorquidia, displasia, rim poliquístico e alterações comportamentais. \nProíbe cios sucessivos\nNão prevê o conceito de conformações extremas nem a proibição de consanguinidade.",
-      "legislacao": "Breve referência. Sem equivalência",
-      "sumario": "1. Idades mínimas de reprodução\n2. Idades máximas de reprodução\n3. Limites de ninhadas e intervalos\n4. Cesarianas\n5. Consanguinidade e híbridos\n6. Conformação e genótipo\n7. Reprodução assistida\n8. Temperamento e comportamento\n9. Registo e obrigações administrativas\n10. Separação das crias da progenitora\n11. Desmame (processo e critérios)\n12. Socialização das crias\nRegulamento obriga a:\nIntroduzir conceito de características conformacionais excessivas/conformações extremas (a regular por ato delegado europeu até 2030); \nProibir consanguinidade próxima (pais/filhos, irmãos, avós/netos);\nProibir a produção de híbridos; \nImpõe consulta veterinária prévia ao acasalamento de animais potencialmente afetados.\nANNEX I, Ponto 3 estabelece requisitos técnicos obrigatórios de saúde reprodutiva.\nRecomenda-se: \n(i) incorporar idade mínima 10 meses (gatas) e 2º estro (cadelas); \n(ii) estabelecer máximo imperativo de 3 ninhadas em 2 anos (sem exceções veterinárias); \n(iii) exigir período de recuperação 1 ano após atingir limite;\n(iv) proibir uso após 2 cesarianas; \n(v) exigir avaliação veterinária escrita para cadelas ≥8 anos e gatas ≥6 anos."
+      "rgbeac": "O @rgbeac (Art.º 70.º) prevê limites de idade para reprodução (cadelas 18 meses a 6 anos; gatas 12 meses a 6 anos; machos 12 meses a 7 anos), máximo de 4 ninhadas com intervalo mínimo de 12 meses, testes genéticos e de saúde e proibição de reprodução após 2 cesarianas — vários destes requisitos são mais detalhados que o Regulamento. O Art.º 70.º, n.º 7 remete para portaria a definição de coeficiente de consanguinidade e limite de descendentes por macho, sem proibição expressa de cruzamentos entre pais/filhos, irmãos ou avós/netos como o Regulamento. O conceito de 'características conformacionais excessivas' não está explicitado no @rgbeac, embora o n.º 8 proíba genericamente a reprodução quando se espere efeito prejudicial na saúde com base no fenótipo. A proibição de híbridos (espécies distintas) não consta do @rgbeac.",
+      "codigo": "O @codigo (art.º 8.º, n.º 2) exclui da reprodução animais com defeitos genéticos e malformações (monorquidia, displasia, rim poliquístico e alterações comportamentais) e proíbe cios sucessivos, mas não prevê o conceito de traços conformacionais excessivos nem a proibição de consanguinidade próxima (pais/filhos, irmãos, avós/netos). Não proíbe a produção de híbridos. Não exige avaliação veterinária prévia ao acasalamento nem limita o número de descendentes por macho reprodutor.",
+      "legislacao": "O DL n.º 276/2001 não contém disposições específicas sobre estratégia de reprodução, limites etários para criadores, restrições de consanguinidade ou proibição de traços conformacionais excessivos. As normas de reprodução estão essencialmente remetidas para os artigos de alojamento (arts. 21.º a 26.º). Sem equivalência material ao Art.º 8.º do Regulamento.",
+      "sumario": "Introduzir conceito de características conformacionais excessivas (a regular por ato delegado europeu até 2030); (2) proibir consanguinidade próxima (pais/filhos, irmãos, avós/netos); (3) proibir a produção de híbridos; (4) impor consulta veterinária prévia ao acasalamento de animais potencialmente afetados.\n\nANNEX I, Ponto 3 estabelece requisitos técnicos obrigatórios de saúde reprodutiva. Recomenda-se: (i) incorporar idade mínima 10 meses (gatas) e 2º estro (cadelas); (ii) estabelecer máximo imperativo de 3 ninhadas em 2 anos (sem exceções veterinárias); (iii) exigir período de recuperação 1 ano após atingir limite; (iv) proibir uso após 2 cesarianas; (v) exigir avaliação veterinária escrita para cadelas ≥8 anos e gatas ≥6 anos."
     },
     "necessidade_alteracao": "Sim",
-    "tabelas": [
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Cadelas (fêmeas canídeos)",
-          "A partir do 2.º estro(Anexo I, n.º 2.2)",
-          "Raças pequeno/médio porte: 3.º cioRaças grande porte: 2 anos(Art.º 8.º, n.º 2, al. a) + Anexo I)",
-          "18 meses(Art.º 70.º, n.º 2)",
-          "Regulamento impõe-se"
-        ],
-        [
-          "Gatas (fêmeas felídeos)",
-          "A partir dos 10 meses(Anexo I, n.º 1.1)",
-          "1 ano(Anexo I)",
-          "12 meses(Art.º 70.º, n.º 3)",
-          "1 ano"
-        ],
-        [
-          "Cães (machos canídeos)",
-          "Não fixado(Art.º 8.º não estabelece limite mínimo para machos)",
-          "Raças pequeno/médio porte: 1,5 anosRaças grande porte: 2 anos(Anexo I)",
-          "12 meses(Art.º 70.º, n.º 4)",
-          "Raças pequeno/médio porte: 1,5 anosRaças grande porte: 2 anosv"
-        ],
-        [
-          "Gatos (machos felídeos)",
-          "Não fixado",
-          "1 ano(Anexo I)",
-          "12 meses(Art.º 70.º, n.º 4)",
-          "1 ano"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Cadelas",
-          "Exame veterinário escrito obrigatório a partir dos 8 anos (não proibição)(Anexo I, n.º 3.6)",
-          "8 anos; ou 5 anos se for a 1.ª gestação(Anexo I)",
-          "6 anos(Art.º 70.º, n.º 2)",
-          "Código, eventualmente com adenda do Regulamentohttps://food.ec.europa.eu/system/files/2020-11/aw_platform_plat-conc_guide_dog-breeding.pdf"
-        ],
-        [
-          "Gatas",
-          "Exame veterinário escrito obrigatório a partir dos 6 anos (não proibição)(Anexo I, n.º 3.6)",
-          "12 anos(Anexo I)",
-          "6 anos(Art.º 70.º, n.º 3)",
-          "RGBEAC, eventualmente com adenda do Regulamentohttps://food.ec.europa.eu/system/files/2020-11/aw_platform_plat-conc_guide_cat-breeding.pdf"
-        ],
-        [
-          "Cães machos",
-          "Não fixado",
-          "12 anos, ou mais se o estatuto sanitário o permitir(Anexo I)",
-          "7 anos(Art.º 70.º, n.º 4)",
-          "Debatível. Talvez mais bem definido em Portaria que facilite adaptações.Maior risco de patologias e transmissão de defeitos com o avançar da idade, com queda mais marcada em cães acima de 7–9 anos. Mas esperança média de vida tem aumentado, o risco de patologia reprodutiva aumenta e o risco de abandono potencialmente pode aumentar com propostas mais restritivas"
-        ],
-        [
-          "Gatos machos",
-          "Não fixado",
-          "12 anos(Anexo I)",
-          "7 anos(Art.º 70.º, n.º 4)",
-          "Ver supra"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "N.º máximo de ninhadas por período",
-          "Máx. 3 ninhadas em 2 anos (cadelas e gatas)(Anexo I, n.º 3.3)",
-          "Cadelas: 1 ninhada/ano; máx. 4–6 na vidaGatas: 1 ninhada/ano (máx. 3 em 2 anos, com aprovação MV); máx. 8–10 na vida(Anexo I)",
-          "Máx. 4 ninhadas na vida reprodutiva(Art.º 70.º, n.ºs 2 e 3)",
-          "Definir um número entre 4 e 6.\nOs documentos supra indicam limites de 4 ninhadas na vida para ambas."
-        ],
-        [
-          "Intervalo mínimo entre ninhadas",
-          "Período de recuperação de, pelo menos, 1 ano após atingir o limite de 3 ninhadas em 2 anos(Anexo I, n.º 4.4)",
-          "Cadelas: 1 ciclo reprodutivoGatas: 3–6 meses(Anexo I)",
-          "Mínimo de 12 meses entre cada ninhada (cadelas e gatas)(Art.º 70.º, n.ºs 2 e 3)",
-          "Rgbeac"
-        ],
-        [
-          "Cios sucessivos (fêmeas)",
-          "Não regulado explicitamente",
-          "Proibido acasalamento em cios sucessivos(Art.º 8.º, n.º 2, al. a))",
-          "Não regulado explicitamente (intervalo de 12 meses implica proibição)",
-          "“É proibido o acasalamento em cios sucessivos, devendo ser assegurando um intervalo mínimo de X meses entre as ninhadas…”"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Após 1.ª cesariana",
-          "Não regulado",
-          "Não regulado",
-          "Exige atestado do MV assistente confirmando ausência de risco(Art.º 70.º, n.º 10)",
-          "?"
-        ],
-        [
-          "Após 2 cesarianas",
-          "Proibição de usar para reprodução(Anexo I, Pt. 3, n.º 5.5)",
-          "Não regulado explicitamente",
-          "Proibição de usar para reprodução(Art.º 70.º, n.º 12)",
-          "Proibição conforme Rregulamento"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Cruzamentos consanguíneos (pai/filho, irmãos, avós/netos)",
-          "Proibidos, salvo autorização da autoridade competente para preservação de raças locais com reserva genética limitada(Art.º 8.º, n.º 6, al. a))",
-          "Não regulado explicitamente; \nExclui animais com defeitos genéticos e malformações específicas(Art.º 8.º, n.º 2, al. c))",
-          "Sujeitos a portaria (coeficiente de consanguinidade e limites definidos por portaria)(Art.º 70.º, n.º 7)",
-          "Regulamento"
-        ],
-        [
-          "Produção de híbridos (cruzamento interespecífico/inter-racial para fins comerciais)",
-          "Proibida(Art.º 8.º, n.º 6, al. b))",
-          "Proibida, exceto cruzamentos autorizados para melhoramento de raça ou investigação, ou cruzamentos acidentais sem fins comerciais\nAcresce exceção para cruzamentos de raças, em particular caninas, que tenham ocorrido acidentalmente e não tenham fins comerciais(Art.º 8.º, n.º 3)",
-          "Não regulado explicitamente",
-          "Regulamento + ponderar excluir cruzamentos acidentais"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Traços conformacionais excessivos/Conformações extremas",
-          "Proibida a reprodução; \nExige consulta prévia a MV;\nAtos delegados até julho de 2030 definirão critérios(Art.º 8.º, n.ºs 2 e 3, al. b))",
-          "Excluídos da reprodução animais com defeitos genéticos e malformações específicas (ex: displasia da anca, rim poliquístico)(Art.º 8.º, n.º 2, al. c))",
-          "Reprodução condicionada a parecer do MV que ateste ausência de efeito prejudicial com base em genótipo/fenótipo; \nRestrição de reprodução de raças específicas por portaria(Art.º 70.º, n.ºs 8 e 9)",
-          "Regulamento, com a disposição do rgbeac até haver derrogação?"
-        ],
-        [
-          "Testes genéticos e rastreios de saúde",
-          "Atos delegados da Comissão definirão critérios (até julho de 2036 para genótipos)(Art.º 8.º, n.ºs 1 e 3, al. a))",
-          "Excluídos animais com defeitos genéticos específicos (rim poliquístico, displasia, etc.)(Art.º 8.º, n.º 2, al. c))",
-          "Obrigatórios; critérios definidos por portaria específicos para cada raça(Art.º 70.º, n.º 7)",
-          ""
-        ],
-        [
-          "Porte semelhante dos progenitores (prevenção de distócia)",
-          "Não regulado explicitamente",
-          "Obrigatório(Art.º 8.º, n.º 2, al. b))",
-          "Não regulado explicitamente",
-          "Código"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Inseminação artificial (IA)",
-          "Não regulado",
-          "Não regulado",
-          "Restrita a situações excecionais, previstas em portaria(Art.º 70.º, n.º 11)",
-          "rgbeac"
-        ],
-        [
-          "Electroejaculação",
-          "Não regulado",
-          "Não regulado",
-          "Proibida(Art.º 70.º, n.º 12)",
-          "rgbeac"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Critérios comportamentais para seleção de reprodutores",
-          "Não regulado",
-          "Excluídos animais com alterações comportamentais(Art.º 8.º, n.º 2, al. c))",
-          "Obrigatório temperamento amistoso e confiante; proibida reprodução de animais perigosos ou com comportamento agressivo ou excessivamente tímido(Art.º 70.º, n.º 6)",
-          "Combinaria código e rgbeac"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Registo de reprodutores",
-          "Não regulado",
-          "Não regulado ",
-          "Inscrição obrigatória no SIAC como animal reprodutor(Art.º 70.º, n.º 6)",
-          "Rgbeac"
-        ],
-        [
-          "Obrigação de esterilização após fim da vida reprodutiva",
-          "Não regulado",
-          "Não regulado",
-          "Obrigação do detentor de esterilizar o animal e garantir o seu bem-estar até ao final da vida(Art.º 70.º, n.º 13)",
-          "Dúvida sobre a aplicabilidade da obrigação, mas a favor do rgbeac"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Cachorros — idade mínima de separação",
-          "8 semanas (estabelecimentos de criação, abrigos e famílias de acolhimento)Derrogação por razões médicas com parecer escrito do MV(Anexo I, n.º 3.3)",
-          "Não regulado especificamente.\nProibição de exposição em locais de venda até à 8ª semana (n.º 2, art. 23.º; e n.º 2, art. 82.º)",
-          "10.ª semana de idade(com período de desmame gradual)(Art.º 70.º, n.º 5)",
-          "RGBEAC Mais restritivo"
-        ],
-        [
-          "Gatinhos — idade mínima de separação",
-          "Abrigos e famílias de acolhimento: 8 semanasEstabelecimentos de criação: 12 semanasDerrogação por razões médicas com parecer escrito do MV. O operador conserva o registo até ao último cachorro/gatinho da ninhada ser colocado no mercado(Anexo I, n.º 4.3)",
-          "Não regulado especificamente.\nProibição de exposição em locais de venda até à 8ª semana (n.º 2, art. 23.º; e n.º 2, art. 82.º)",
-          "12.ª semana de idade(com período de desmame gradual)(Art.º 70.º, n.º 5)",
-          "Regulamento = rgbeac"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Processo de desmame — duração e método",
-          "Introdução gradual de alimentos sólidos ao longo de um período não inferior a 7 dias(Anexo I, n.º 4.4)",
-          "Não regulado especificamente.Prevê programa de alimentação adequado à fase fisiológica — Art.º 8.º, n.º 2, al. a) por referência ao Anexo I)",
-          "«Período de desmame gradual» salvaguardado antes da separação(Art.º 70.º, n.º 5 — não especifica duração)",
-          "Regulamento + rgbeac"
-        ],
-        [
-          "Idade mínima para conclusão do desmame",
-          "Não antes das 6 semanas de idade (tanto para cachorros como para gatinhos)(Anexo I, n.º 4.4)",
-          "Não regulado explicitamente",
-          "Não regulado explicitamente",
-          "Regulamento"
-        ],
-        [
-          "Alimentação de cachorros/gatinhos não desmamados",
-          "Colostro nos primeiros 2 dias; depois leite da progenitora ou de cadela/gata lactante; se impossível, sucedâneo de leite específico para cachorros/gatinhos(Anexo I, n.º 2.2)",
-          "Não regulado especificamente.\nDescrito nas condições de alimentação e abeberamento: alimentação deve estar de acordo com fase de evolução fisiológica – idade, sexo, fêmeas prenhes ou em fase de lactação.\n(Art. 46º, n.º 1)",
-          "Não regulado especificamente.",
-          "Regulamento"
-        ],
-        [
-          "Monitorização do crescimento de não desmamados",
-          "Todos os cachorros/gatinhos não desmamados devem receber leite, sucedâneo ou combinação em quantidade suficiente para ganho de peso constante(Anexo I, n.º 3.3)",
-          "Não regulado",
-          "Não regulado",
-          "Regulamento"
-        ]
-      ],
-      [
-        [
-          "Critério",
-          "Regulamento (UE) 2023/0447",
-          "@codigo(proposta DL 214/2013)",
-          "@rgbeac(proposta jun. 2025)",
-          "Proposta"
-        ],
-        [
-          "Idade de início e tipo de socialização",
-          "A partir das 3 semanas de idade: oportunidades diárias e progressivas de contacto social com congéneres, seres humanos e, sempre que possível, outras espécies(Anexo I, n.º 1.1)",
-          "Não regulado especificamente na secção de reprodução(o @codigo exige enriquecimento ambiental — Art.º 13.º, n.º 5)",
-          "Todos os alojamentos de criação de cães e gatos devem dispor de um plano de socialização e enriquecimento ambiental(Art.º 52.º, n.º 7 do @rgbeac)",
-          "Regulamento + rgbeac"
-        ],
-        [
-          "Separação comportamento agressivo",
-          "Animais que representem ameaça ou causem stress excessivo devem ser mantidos separados(Anexo I, n.º 1.1)",
-          "Não regulado especificamente.\nAs fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.(Art. 13.º, n.º 3)\nArtigo 83.º - As fêmeas prenhes, bem como as ninhadas em período de aleitamento, não podem ser mantidas nos locais de venda.  ",
-          "Não regulado especificamente.\n3 - As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar (Art.º 47.º, n.º 3)\nArtigo 76.º- As fêmeas prenhes, bem como as ninhadas em período de aleitamento, não podem ser mantidas nos locais de venda.",
-          "Regulamento + qq um"
-        ]
-      ]
-    ],
     "notas": ""
   },
   {
@@ -1014,9 +496,9 @@ const ARTIGOS = [
       "texto": "Art.º 3.º, n.º 12\nA DGAV publicita, no seu sítio de Internet, os nomes dos criadores comerciais de animais de companhia e respetivo município de atividade e número de identificação.\n\nArt.º3.º E - Divulgação dos alojamentos\nDGAV publicita no balcão único eletrónico de serviços, a que se refere o artigo 6.º do Decreto-Lei n.º 92/2010, de 26 de julho, e no seu sítio na Internet a lista dos centros de recolha oficiais, bem como de todos os centros de hospedagem, com ou sem fins lucrativos, que haja permitido ou em relação aos quais tenha recebido mera comunicação prévia, nos termos do presente diploma."
     },
     "divergencia": {
-      "rgbeac": "",
-      "codigo": "",
-      "legislacao": "Conceito novo de ‘aprovação’ com limiar (>5 ninhadas/ano ou >5 cadelas/gatas)",
+      "rgbeac": "O @rgbeac (Art.º 62.º) divulga a lista de alojamentos autorizados através do balcão único eletrónico e do sítio da DGAV, mas não distingue ‘aprovação de estabelecimento de criação’ como procedimento específico com limiar numérico (>5 ninhadas/ano ou >5 fêmeas reprodutoras). O @rgbeac não exige revisão da aprovação por alteração das condições, nem prevê o mecanismo de consulta de aprovação por autoridades de outros Estados-Membros.",
+      "codigo": "O @codigo (Art.º 37.º) publicita a lista de alojamentos de hospedagem, mas não prevê aprovação específica de estabelecimentos de criação com limiar numérico, nem revisão da aprovação por alteração das condições. O @codigo trata o licenciamento de criadores como parte do regime geral de alojamentos, sem o limiar específico do Regulamento.",
+      "legislacao": "Conceito de ‘aprovação’ específica de estabelecimentos de criação com limiar numérico (>5 ninhadas/ano ou >5 fêmeas) é novo no Regulamento, sem equivalente na legislação vigente. O DL n.º 276/2001 exige licença/autorização para alojamentos de hospedagem mas sem distinguir criadores por volume de atividade.",
       "sumario": "Artigo novo no Regulamento, introduz aprovação formal de criadores com limiar numérico para ninhadas ou fêmeas no local.\nA publicitação prevista pelo @regulamento inclui mais informação do que a legislação vigente ou em proposta."
     },
     "necessidade_alteracao": "Sim",
@@ -1106,7 +588,7 @@ const ARTIGOS = [
     "divergencia": {
       "rgbeac": "Recupera as «ações»\nReforça a obrigação com 'parecer relativo à verificação das condições higiossanitárias e de bem-estar'\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
       "codigo": "Replica quase verbatim o art.º 4.º do DL n.º 276/2001, mas exclui «ações»\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
-      "legislacao": "Estabelece a obrigação de ter médico veterinário responsável que execute 'programas e ações' para saúde e bem-estar, \nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
+      "legislacao": "Estabelece a obrigação de ter médico veterinário responsável que execute 'programas e ações' para saúde e bem-estar,\nNão fixa prazos para avaliações de bem-estar nem obrigações de manutenção de registos estruturados, conforme @regulamento",
       "sumario": "O @regulamento exige 'visita de um veterinário' num prazo específico (1 ano) após entrada em funcionamento com manutenção de registos por 4 anos e transmissão entre veterinários. Necessidade de alteração: (1) formalizar obrigação de 'visita de avaliação' por veterinário dentro de 1 ano após implementação do regulamento/notificação; (2) exigir avaliações periódicas conforme risco; (3) obrigatória manutenção de registos por 4 anos;"
     },
     "necessidade_alteracao": "Sim",
@@ -1135,9 +617,9 @@ const ARTIGOS = [
     },
     "divergencia": {
       "rgbeac": "Introduz comedouros interativos e outros dispositivos adequados à espécie – pode ir ao encontro do conceito de categoria?\nObriga a que não haja competição – mais restritivo que o @regulamento\nRetira a obrigatoriedade de aparelhos de frio",
-      "codigo": "Parece restringir as obrigações aos estabelecimentos.\nApenas @código proíbe restos, pastelaria e desperdícios.",
-      "legislacao": "",
-      "sumario": "Regulamento introduz mais «categorias» - raça, categoria, nível de atividade e estado reprodutivo.\nNenhum aborda transições alimentares graduais, cuidados específicos com desmame, segurança estrutural das instalações."
+      "codigo": "O @codigo (Art.º 46.º) restringe a aplicação das obrigações de nutrição aos estabelecimentos de criação, manutenção, venda, centros de recolha e instalações de hospedagem — não se aplica à detenção doméstica individual. O Regulamento dirige-se aos operadores em geral. O n.º 7 do Art.º 46.º do @codigo proíbe alimentar com restos de comida, pastelaria e desperdícios da indústria alimentar — requisito mais restritivo que o Regulamento, que apenas proíbe substâncias causadoras de sofrimento. O @codigo não prevê dieta adaptada a nível de atividade, categoria ou transições alimentares graduais (desmame), nem registro de ajuste de frequência por conselho veterinário escrito.",
+      "legislacao": "O DL n.º 276/2001 (Art.º 12.º) tem disposições de nutrição substancialmente equivalentes às do @codigo (Art.º 46.º) e ao @rgbeac (Art.º 51.º): programa de alimentação bem definido, valor nutritivo adequado, refeições variadas, comedouros/bebedouros adequados, água potável ad libitum, higiene e refrigeração. Divergências face ao Regulamento: (1) não especifica dieta adaptada a raça, nível de atividade ou categoria do animal; (2) não exige transições alimentares graduais nem cuidados específicos de desmame; (3) não prevê obrigação de instalações de alimentação que previnam ferimentos, afogamento ou outros danos físicos; (4) não regula ajuste de frequência alimentar por conselho veterinário escrito.",
+      "sumario": "Regulamento introduz mais «categorias» de adaptação da dieta — raça, categoria, nível de atividade e estado reprodutivo — que os diplomas nacionais não contemplam. Nenhum dos diplomas nacionais aborda transições alimentares graduais, cuidados específicos com desmame, prevenção de ferimentos por instalações de alimentação, ou registo de ajuste de frequência por conselho veterinário. O @codigo é mais restritivo que o Regulamento na proibição de restos de comida e desperdícios."
     },
     "necessidade_alteracao": "Não",
     "notas": "Nutrição e hidratação são também princípios básicos de bem-estar previstos pelo Artigo 5 – parágrafo 1 – alínea a) do @regulamento"
@@ -1164,10 +646,10 @@ const ARTIGOS = [
       "texto": "Artigo 8.º - Condições dos alojamentos\n1 - Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\na) A prática de exercício físico adequado;\nb) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 - Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n3 - As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.\n4 - As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.\n5 - As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista.\nArtigo 9.º - Fatores ambientais\n1 - A temperatura, a ventilação e a luminosidade e obscuridade das instalações devem ser as adequadas à manutenção do conforto e bem-estar das espécies que albergam.\n2 - Os fatores ambientais referidos no número anterior devem ser adequados às necessidades específicas de animais quando em fase reprodutiva, recém-nascidos ou doentes.\n3 - A luz deve ser de preferência natural, mas quando a luz artificial for imprescindível esta deve ser o mais próxima possível do espetro da luz solar e deve respeitar o fotoperíodo natural do local onde o animal está instalado.\n4 - As instalações devem permitir uma adequada inspeção dos animais, devendo ainda existir equipamento alternativo, nomeadamente focos de luz, para o caso de falência do equipamento central.\n5 - Os tanques ou aquários devem possuir água de qualidade adequada aos animais que a utilizem, nomeadamente tratada por produtos ou substâncias que não prejudiquem a sua saúde.\n6 - As instalações devem dispor de abrigos para que os animais se protejam de condições climáticas adversas\n\nArtigo 15.º — Os alojamentos devem assegurar que as espécies animais neles mantidas não possam causar quaisquer riscos para a saúde e para a segurança de pessoas, outros animais e bens."
     },
     "divergencia": {
-      "rgbeac": "@rgbeac prevê acesso diário a área de exercício exterior 2x/dia durante 30 minutos (= 1h total),",
-      "codigo": "",
-      "legislacao": "",
-      "sumario": "N.º 2, Proibição expressa de manter cães ou gatos em contentores : não coberto, nenhum dos três diplomas contém esta proibição explícita. \nN.º 3 – Exceções ao uso de contentores (transporte, isolamento curto prazo, espetáculos, neonatos com termorregulação reduzida ou acompanhados da mãe) Não coberto\nN.º 4 – Proibição de manter cães >8 semanas exclusivamente no interior; acesso diário ao exterior mínimo 1h total (ou passeio); desvio apenas por parecer veterinário escrito - Parcialmente coberto no n.º 6, art.º 47.º @rgbeac prevê acesso diário a área de exercício exterior 2x/dia durante 30 minutos (= 1h total), mas não contém a proibição explícita de manutenção exclusiva no interior nem o mecanismo de desvio por parecer veterinário escrito. Ausente no @codigo e @legislacao. \n\nPrever exceções para cães de guarda de rebanho"
+      "rgbeac": "O @rgbeac (Art.º 47.º, n.º 6) prevê acesso diário a área de exercício exterior, pelo menos 2 vezes por dia, durante 30 minutos — mais específico que o Regulamento (mínimo 1h total). O @rgbeac não contém a proibição explícita de manutenção de cães >8 semanas exclusivamente no interior (Regulamento n.4, primeira parte), nem o mecanismo de desvio desta proibição por parecer veterinário escrito. O @rgbeac não proíbe expressamente a manutenção permanente em contentores (Regulamento n.2), embora a exigência de espaço adequado às necessidades etológicas (Art.º 47.º, n.º 1) produza efeito equivalente.",
+      "codigo": "O @codigo (Arts. 13.º e 14.º) estabelece que os animais devem dispor de 'espaço adequado às necessidades fisiológicas e etológicas', possibilidade de exercício físico, esconderijos e enriquecimento ambiental. Não proíbe expressamente a manutenção permanente em contentores (Regulamento n.2) nem impõe acesso mínimo ao exterior (Regulamento n.4). Não regula dimensões mínimas das instalações nem a proibição de manutenção exclusiva no interior por mais de 8 semanas. O Art.º 14.º do @codigo prevê exigências de temperatura, ventilação, luz e obscuridade mas sem parâmetros quantitativos específicos.",
+      "legislacao": "O DL n.º 276/2001 (Arts. 8.º e 9.º) prevê espaço adequado às necessidades fisiológicas e etológicas, esconderijos, enriquecimento ambiental e fatores ambientais (temperatura, ventilação, luz). Não proíbe a manutenção permanente em contentores, não impõe acesso mínimo ao exterior nem contém o mecanismo de desvio por parecer veterinário escrito do Regulamento n.4. As dimensões mínimas das instalações para cada espécie e categoria constam de legislação complementar (portarias).",
+      "sumario": "N.º 2 — Proibição expressa de manter cães ou gatos em contentores: não coberta por nenhum dos três diplomas de forma explícita.\nN.º 3 — Exceções ao uso de contentores (transporte, isolamento curto prazo, espetáculos, neonatos com termorregulação reduzida ou acompanhados da mãe): não coberta.\nN.º 4 — Proibição de manter cães >8 semanas exclusivamente no interior; acesso diário ao exterior mínimo 1h total (ou passeio); desvio apenas por parecer veterinário escrito: parcialmente coberto pelo @rgbeac (art.º 47.º, n.º 6) mas ausente no @codigo e @legislacao.\nNecessidade de portaria complementar com especificações técnicas de alojamento por espécie/categoria."
     },
     "necessidade_alteracao": "Sim - Portaria complementar com especificações técnicas",
     "notas": ""
@@ -1224,12 +706,12 @@ const ARTIGOS = [
       "texto": "1 — Os animais devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas, devendo o mesmo permitir:\na) A prática de exercício físico adequado;\nb) A fuga e refúgio de animais sujeitos a agressão por parte de outros.\n2 — Os animais devem poder dispor de esconderijos para salvaguarda das suas necessidades de proteção, sempre que o desejarem.\n3 — [dim]As fêmeas em período de incubação, de gestação ou com crias devem ser alojadas de forma a assegurarem a sua função reprodutiva natural em situação de bem-estar.[/dim]\n4 — [dim]As estruturas físicas das instalações, todo o equipamento nelas introduzido e a vegetação não podem representar nenhum tipo de ameaça ao bem-estar dos animais, designadamente não podem possuir objetos ou equipamentos perigosos para os animais.[/dim]\n5 — As instalações devem ser equipadas de acordo com as necessidades específicas dos animais que albergam, com materiais e equipamento que estimulem a expressão do repertório de comportamentos naturais, nomeadamente material para substrato, cama ou ninhos, ramos, buracos, locais para banhos e outros quaisquer adequados ao fim em vista."
     },
     "divergencia": {
-      "rgbeac": "Cobertura mais significtiva",
-      "codigo": "Sem especificações sobre socialização e enriquecimento",
-      "legislacao": "",
-      "sumario": ""
+      "rgbeac": "O @rgbeac (Art.º 47.º, n.º 4) prevê 'enriquecimento ambiental complexo e estimulante' e o Art.º 47.º, n.º 6 impõe acesso diário a área de exercício, pelo menos 2 vezes por dia durante 30 minutos — obrigação mais específica que o Regulamento. O n.º 7 do Art.º 52.º do @rgbeac impõe 'plano de socialização e enriquecimento ambiental' a todos os alojamentos de hospedagem, mas não especifica 'estratégia documentada de socialização' exclusiva para criadores. Derrogações não contempladas: (1) isenção dos cães de proteção de gado («livestock guardian dogs») dos requisitos de socialização durante períodos de guarda/treino; (2) isenção dos cães de pastoreio durante transumância sazonal; (3) isenção de cães militares/policiais/aduaneiros da proibição de acorrentamento superior a 1 hora.",
+      "codigo": "O @codigo (DL 214/2013) não contém especificações sobre socialização, enriquecimento ambiental ou estratégia documentada de socialização por parte dos criadores. O art.º 13.º prevê genericamente 'espaço para exercício físico e expressão de comportamentos naturais', mas sem os requisitos quantitativos ou processuais do Regulamento. Não inclui as derrogações para cães funcionais.",
+      "legislacao": "O DL n.º 276/2001 (art.º 8.º) prevê genericamente que os animais devem 'dispor de um espaço adequado às suas necessidades fisiológicas e etológicas' e de 'esconderijos', mas sem requisitos de socialização, enriquecimento documentado ou estratégia formal. A Portaria n.º 148/2016 regula o registo de cães em matilhas de caça maior (junto do ICNF, I. P.) mas não fixa normas de bem-estar comportamental para esses cães. O @rgbeac (art.º 10.º, n.º 3) isenta expressamente os cães utilizados na caça durante os atos venatórios da obrigação de trela — o que representa uma derrogação análoga (embora com âmbito e fundamento distintos) à derrogação do n.º 4 do Art.º 17.º do Regulamento para cães militares/policiais/aduaneiros. Não existe, no entanto, na legislação nacional, qualquer equivalente à isenção de socialização para cães de proteção de gado ou de pastoreio em transumância.",
+      "sumario": "O Regulamento introduz obrigações novas sem equivalente nacional: (1) proibição de acorrentamento superior a 1 hora (com isenção para cães militares, policiais e aduaneiros); (2) obrigação de estratégia documentada de socialização por parte dos criadores; (3) isenção explícita de socialização para cães de proteção de gado (\"livestock guardian dogs\") durante guarda/treino e para cães de pastoreio em transumância sazonal. Em Portugal, a realidade dos cães de caça (matilhas) é relevante: a Portaria n.º 148/2016 exige registo mas não impõe normas de bem-estar comportamental. O Regulamento não inclui derrogação explícita para cães de caça — estes estão abrangidos pelas obrigações gerais do Art.º 17.º enquanto permanecerem em estabelecimentos de criação ou venda."
     },
-    "necessidade_alteracao": "Em análise. RGBEAC alinha melhor; implementação de reforço positivo obrigatório recomendada",
+    "necessidade_alteracao": "Sim — necessidade de: (1) criar regime de proibição de acorrentamento superior a 1 hora com as isenções previstas; (2) impor estratégia documentada de socialização aos criadores; (3) clarificar o estatuto dos cães de caça e matilhas face às obrigações comportamentais.",
     "notas": ""
   },
   {
@@ -1254,12 +736,12 @@ const ARTIGOS = [
       "texto": "Artigo 17.º\nAs intervenções cirúrgicas, nomeadamente as destinadas ao corte de caudas nos canídeos, têm de ser executadas por um médico veterinário.\nArtigo 18.º\n 1 — Os detentores de animais de companhia que os apresentem com quaisquer amputações que modifiquem a aparência dos animais ou com fins não curativos devem possuir documento comprovativo, passado pelo médico veterinário que a elas procedeu, da necessidade dessa amputação.\n2 — O documento referido no número anterior deve ter a forma de um atestado, do qual constem a identificação do médico veterinário, o número da cédula profissional e a sua assinatura."
     },
     "divergencia": {
-      "rgbeac": "@rgbeac ressalva expressamente o corte das orelhas que não seja realizada para fins de identificação de animais esterilizados conforme boas práticas internacionais\", o que cobre o essencial desta derrogação.",
-      "codigo": "",
-      "legislacao": "",
-      "sumario": "exige expressamente anestesia e analgesia prolongada como condição do procedimento.\nRever proibições na análise do art.7.º"
+      "rgbeac": "O @rgbeac (art.º 12.º, al. i)) proíbe intervenções cirúrgicas com objectivo de modificar a aparência, incluindo 'corte da cauda, secção das cordas vocais, remoção de unhas ou dentes, e corte das orelhas que não seja realizada para fins de identificação de animais esterilizados conforme boas práticas internacionais'. O art.º 34.º do @rgbeac exige atestado veterinário para qualquer intervenção curativa que modifique a aparência, alinhando com o n.º 2 do Art.º 18.º do Regulamento. O @rgbeac também proíbe coleiras elétricas, de choques, estranguladores e açaimos fechados (art.º 12.º, al. aa)), convergindo com o n.º 5 do Art.º 18.º. A derrogação do Art.º 18.º, n.º 3, sobre corte de orelha de gatos em programas TNR está coberta pela ressalva do @rgbeac ('fins de identificação de animais esterilizados conforme boas práticas internacionais').",
+      "codigo": "O @codigo (DL 214/2013) proíbe mutilações com fins não curativos (art.º 52.º, n.º 1), incluindo corte de orelhas, cordas vocais, garras ou unhas, dentes ou presas. O art.º 52.º, n.º 3 proíbe o corte de cauda para todos os cães nascidos a partir de 1 de Janeiro de 2015 — regime mais restritivo que o Regulamento, que admite corte de cauda por razões profiláticas (incluindo potencialmente para cães de caça). O @codigo exige atestado veterinário (n.º 4) alinhado com o n.º 2 do Art.º 18.º. Não cobre explicitamente a proibição de coleiras de espinhos (prong collars) nem de coleiras de estrangulamento sem paragem de segurança prevista no n.º 5, als. (e) e (f) do Regulamento.",
+      "legislacao": "O DL n.º 276/2001 (arts. 17.º e 18.º) exige que as intervenções cirúrgicas (incluindo corte de caudas) sejam realizadas por médico veterinário e que as amputações estejam documentadas por atestado. Não existe proibição expressa de corte de cauda anterior a 2013. O @rgbeac e o @codigo já proíbem o corte de cauda desde 2015 (art.º 52.º, n.º 3 do @codigo), o que excede o regime do Regulamento no que respeita a cães de caça (o Regulamento admite a excepção profilática que poderia ser invocada para justificar o corte de cauda em cães de caça). A derrogação do n.º 5 do Art.º 18.º para cães militares, policiais e aduaneiros não tem equivalente na legislação nacional. A proibição de coleiras de espinhos e de estrangulamento sem paragem de segurança não consta expressamente da legislação nacional vigente (embora o uso de 'aguilhões' e instrumentos perfurantes na condução de animais seja proibido pela Lei n.º 92/95).",
+      "sumario": "Portugal está em grande medida alinhado com o Regulamento no que respeita à proibição de mutilações: o corte de cauda já é proibido desde 2015 (mais restritivo do que o Regulamento, que admite excepção profilática para cães de caça). Os principais gaps são: (1) ausência de proibição expressa de coleiras de espinhos (prong collars) e de estrangulamento sem paragem de segurança; (2) ausência de derrogação específica para cães militares, policiais e aduaneiros; (3) necessidade de clarificar que a excepção profilática do Art.º 18.º, n.º 1 não se aplica ao corte de cauda de cães de caça em Portugal (o @codigo e @rgbeac são mais restritivos). Exige anestesia e analgesia prolongada como condição obrigatória para qualquer procedimento justificado — requisito que a legislação nacional não especifica explicitamente."
     },
-    "necessidade_alteracao": "Não",
+    "necessidade_alteracao": "Sim — necessidade de: (1) proibir expressamente coleiras de espinhos e de estrangulamento sem paragem de segurança; (2) clarificar o âmbito da excepção profilática face ao regime mais restritivo nacional; (3) confirmar conformidade do regime de atestado veterinário com os requisitos documentais do Art.º 18.º, n.º 2.",
     "notas": ""
   },
   {
@@ -1284,9 +766,9 @@ const ARTIGOS = [
       "texto": "Artigo 4.º - Exposições\n1. A participação de cães e gatos em concursos e exposições está sujeita às normas sanitárias emitidas pela DGV.\n2. A realização de concursos e exposições carece de autorização da DRA da área da realização da mesma, após parecer da respectiva câmara municipal.\n3. A autorização prévia a que se refere o número anterior deve ser solicitada pela organização da exposição com a antecedência mínima de 15 dias na câmara municipal da área da realização da exposição, mediante requerimento dirigido ao director regional de agricultura respectivo para efeitos do disposto no número anterior, acompanhado dos seguintes documentos:\na) Planta do local de realização do concurso ou exposição;\nb) A identificação do(s) médico(s) veterinário(s) responsável(eis) pela exposição ou concurso;\nc) Regulamento sanitário do concurso ou exposição, onde deve estar especificado o modo como se prevê dar cumprimento ao disposto nos números seguintes.\n\n4 - Só serão admitidos a concurso os animais que:\na) Estejam identificados electronicamente nos termos do Sistema de Identificação de Caninos e Felinos (SICAFE), no caso dos concorrentes nacionais ou, no caso de animais provenientes de outros países, de sistema de identificação em vigor no país de origem e que permita uma identificação rigorosa e eficaz do animal;\nb) Sejam portadores de boletim sanitário de cães e gatos e possuam prova de vacinação anti-rábica dentro do prazo de validade conforme determinado anualmente por despacho do director-geral de Veterinária, nos termos do n.º 2 do artigo 1.º da Portaria n.º 81/2002, de 24 de Janeiro, no caso dos animais com idade superior a 3 meses;\nc) Possuam dentro dos prazos de validade e efectuadas há mais de oito dias as vacinações contra as principais doenças infecto-contagiosas da espécie, comprovadas pelas vinhetas de vacinação respectivas apostas no boletim sanitário de cães e gatos, devidamente autenticadas por um médico veterinário.\n\n5 - Compete à organização da exposição:\na) Assegurar a presença do número de médicos veterinários necessários ao cumprimento do disposto neste diploma;\nb) Assegurar que o local onde a exposição decorre reúne as condições que permitam salvaguardar o disposto no capítulo VII do Decreto-Lei n.º 276/2001, de 17 de Outubro;\nc) Salvaguardar os aspectos de segurança, no caso de animais potencialmente perigosos, que deverão estar convenientemente açaimados ou protegidos do contacto com o público, quando fora do concurso;\nd) Disponibilizar os meios que os médicos veterinários considerem necessários ao bom desempenho das suas funções.\n\n6 - Compete aos médicos veterinários responsáveis pela exposição ou concurso:\na) Verificar a identificação electrónica dos animais e a sua correspondência com o constante do boletim;\nb) Proceder ao exame clínico dos animais que se apresentam para participar na exposição ou concurso;\nc) Examinar a documentação sanitária dos animais;\nd) Prestar a assistência médico-veterinária que se revelar necessária durante o evento;\ne) Proceder às observações que entenderem necessárias para a defesa sanitária da exposição ou concurso."
     },
     "divergencia": {
-      "rgbeac": "Todos animais de companhia em múltiplos eventos (concursos, campanhas, cinema, etc.)\nCâmara Municipal (consultivo)\nComunicação prévia isenta de taxa para sem fins lucrativos\nPossibilidade de exames de dopagem\nProibida pirotecnia",
-      "codigo": "Cães/gatos em concursos/exposições e acrescenta adoções\nParecer MVM vinculativo",
-      "legislacao": "Cães/gatos em concursos/exposições",
+      "rgbeac": "— Todos animais de companhia em múltiplos eventos (concursos, campanhas, cinema, etc.)\n— Câmara Municipal (consultivo)\n— Comunicação prévia isenta de taxa para sem fins lucrativos\n— Possibilidade de exames de dopagem\n— Proibida pirotecnia",
+      "codigo": "— Cães/gatos em concursos/exposições e acrescenta adoções\n— Parecer MVM vinculativo",
+      "legislacao": "— Cães/gatos em concursos/exposições",
       "sumario": "Prever a exclusão de animais com características conformacionais excessivas"
     },
     "necessidade_alteracao": "Sim",
@@ -1344,9 +826,9 @@ const ARTIGOS = [
       "texto": "Artigo 53.º - Requisitos de validade do anúncio de venda de animal de companhia\n1 - Qualquer anúncio de transmissão, a título oneroso, de animais de companhia deve conter as seguintes informações:\na) A idade dos animais;\nb) Tratando-se de cão ou gato, a indicação se é animal de raça pura ou indeterminada, sendo que, tratando-se de animal de raça pura, deve obrigatoriamente ser referido o número de registo no livro de origens português;\nc) Número de identificação eletrónica da cria e da fêmea reprodutora;\nd) Número de inscrição de criador nos termos do artigo 3.º do presente diploma;\ne) Número de animais da ninhada.\n2 - Qualquer publicação de uma oferta de transmissão de animal a título gratuito deve mencionar explicitamente a sua gratuitidade.\n3 - Os cães e gatos só podem ser considerados de raça pura se estiverem inscritos no livro de origens português, caso contrário são identificados como cão ou gato de raça indeterminada.\n4 - No caso de anúncios de animais de raça indeterminada é proibida qualquer referência a raças no texto do anúncio."
     },
     "divergencia": {
-      "rgbeac": "SIM - Proibição clara de publicidade e venda online, com requisitos de local licenciado",
-      "codigo": "Apenas proíbe a venda de animais de companhia sem documentação adequada e restringe a comercialização de animais com comportamentos perigosos. As disposições cobrem identificação obrigatória e informações sobre o animal antes da venda.",
-      "legislacao": "",
+      "rgbeac": "O @rgbeac (Art.º 91.º) proíbe a venda de cães, gatos e furões através da Internet e exige que a transmissão decorra presencialmente em alojamentos autorizados, convergindo com o Regulamento na proibição da venda em linha. No entanto, os requisitos específicos do Regulamento sobre informação obrigatória em anúncios (número de registo, informação de bem-estar, rastreabilidade) vão além do que o @rgbeac prevê explicitamente.",
+      "codigo": "O @codigo (Art.º 80.º) proíbe a venda pela Internet e exige documentação adequada. Cobre a identificação obrigatória e informações sobre o animal antes da venda. Não inclui os requisitos de informação específica exigidos pelo Regulamento para anúncios em linha (número de registo do operador, informação sobre saúde, socialização e comportamento).",
+      "legislacao": "O DL n.º 276/2001 (Art.º 57.º) permite publicitar animais de companhia na Internet mas proíbe a venda em linha — apenas em local de criação ou estabelecimentos licenciados. O DL n.º 82/2019 (Art.º 53.º) estabelece requisitos para anúncios de transmissão (identificação, raça, informação sanitária) mas sem a especificidade dos requisitos do Regulamento para plataformas digitais.",
       "sumario": "@rgbeac tem concordâncias extensas mas falta a implementação do sistema de verificação online com token único conforme Art. 17a.6 do Regulamento. A proibição é mais restritiva que o Regulamento que permite venda online com verificação."
     },
     "necessidade_alteracao": "Sim - Sistema de verificação online com token único",
@@ -1377,7 +859,7 @@ const ARTIGOS = [
       "rgbeac": "Cobertura completa, implementam sistema profissional com certificação pela Autoridade como requerido)\nVai mais além e regula toda as facetas de treino, incluindo excetuando os perigos e potencialmente perigosos previstos na secção anterior",
       "codigo": "Necessita ir ao encontro da certificação",
       "legislacao": "Cães de assistência e perigosos ou potencialmente perigosos a rever no contexto próprio, não abrangido pelo @regulamento",
-      "sumario": "O RGBEAC cumpre os critérios ao prever um sistema robusto de certificação profissional para treinadores de cães com: título profissional obrigatório, requisitos de habilitação, provas teóricas e práticas, métodos baseados em reforço positivo, verificação de antecedentes criminais. \nNa legislação vigente só se encontra referências ao treino no Decreto-Lei n.º 315/2009, de 29 de Outubro, (regime dos cães perigosos e potencialmente perigosos), e no Decreto-Lei n.º 74/2007, de 27 de março, relativo ao treino em Cães de Assistência"
+      "sumario": "O RGBEAC cumpre os critérios ao prever um sistema robusto de certificação profissional para treinadores de cães com: título profissional obrigatório, requisitos de habilitação, provas teóricas e práticas, métodos baseados em reforço positivo, verificação de antecedentes criminais.\nNa legislação vigente só se encontra referências ao treino no Decreto-Lei n.º 315/2009, de 29 de Outubro, (regime dos cães perigosos e potencialmente perigosos), e no Decreto-Lei n.º 74/2007, de 27 de março, relativo ao treino em Cães de Assistência"
     },
     "necessidade_alteracao": "Não",
     "notas": ""
@@ -1404,9 +886,9 @@ const ARTIGOS = [
       "texto": "DL 82/2019 estabelece o SIAC com extensas disposições cobrindo: criação da base de dados, procedimentos de registo e controlos de acesso, gestão por DGAV, identificação eletrónica via transponder, segurança de dados e autorização de acesso, integração de registos de identificação de animais, gestão da distribuição de dispositivos de identificação, procedimentos de registo e atualização. O sistema é operacional desde 2019."
     },
     "divergencia": {
-      "rgbeac": "Reafirma e fortalece o sistema SIAC",
-      "codigo": "Código do Animal estabelece estrutura completa com classificações",
-      "legislacao": "",
+      "rgbeac": "O @rgbeac (Art.º 20.º) reafirma e fortalece o sistema SIAC, alargando o âmbito de dados registados (comportamento, bem-estar, histórico sanitário). Alinhado com os requisitos de base de dados do Regulamento. O @rgbeac não especifica mecanismos de interoperabilidade com bases de dados de outros Estados-Membros, que o Regulamento exige.",
+      "codigo": "O @codigo (Art.º 53.º) estabelece estrutura completa de identificação e registo com classificações (normal/perigoso/potencialmente perigoso), integra dados de saúde. Alinhado com os requisitos de base de dados do Regulamento. Sem disposições sobre interoperabilidade entre Estados-Membros.",
+      "legislacao": "O DL n.º 82/2019 operacionalizou o SIAC como sistema nacional de identificação e registo de animais de companhia (cães, gatos e furões), com registo centralizado sob responsabilidade da DGAV, identificação por microchip e dados sanitários. O SIAC cobre os requisitos fundamentais do Art.º 23.º do Regulamento. Lacuna: ausência de disposição sobre interoperabilidade com bases de dados de outros Estados-Membros da UE.",
       "sumario": "A legislação portuguesa cumpre os requisitos do Artigo 19. O SIAC está operacional desde 2019, sob responsabilidade de DGAV, com: identificação eletrónica via microchip obrigatória, registo nacional centralizado, rastreabilidade, classificação de animais (normal/perigoso/potencialmente perigoso), integração de dados de saúde e bem-estar, conformidade com proteção de dados (Comissão Nacional de Proteção de Dados)."
     },
     "necessidade_alteracao": "Não",
@@ -1434,10 +916,10 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Análise no Anexo III",
-      "codigo": "Análise no Anexo III",
-      "legislacao": "",
-      "sumario": "necessário: alinhamento da periodicidade de relatórios (atualmente anual; Regulamento requer trienal) e inclusão dos dados específicos de Annex III da EU (quando publicado)."
+      "rgbeac": "O @rgbeac (Art.º 46.º) prevê relatório anual de gestão dos centros de bem-estar animal, mas não tem equivalente ao mecanismo de recolha de dados e relatório trienal à Comissão Europeia exigido pelo Regulamento. Não há disposição sobre indicadores de bem-estar animal baseados em animais para reporte à UE.",
+      "codigo": "O @codigo não prevê mecanismo de recolha de dados sobre bem-estar animal para fins de reporte à Comissão Europeia. Os dados de identificação e registo são recolhidos pelo SIAC mas não consolidados para os indicadores do Regulamento.",
+      "legislacao": "O DL n.º 82/2019 prevê recolha de dados no SIAC (identificação, saúde, registos) mas não estabelece obrigação de reporte periódico à Comissão Europeia sobre indicadores de bem-estar animal. A legislação vigente não prevê o mecanismo trienal de relatório ao nível nacional nem a consolidação de dados por categorias de operadores.",
+      "sumario": "Necessário: alinhamento da periodicidade de relatórios (atualmente anual para centros de recolha; Regulamento requer trienal à Comissão) e inclusão dos dados específicos de Annex III da EU (quando publicado)."
     },
     "necessidade_alteracao": "Sim - Ajuste de periodicidade e conformidade com Annex III EU",
     "notas": ""
@@ -1464,9 +946,9 @@ const ARTIGOS = [
       "texto": "Artigo 9.º - Registo no Sistema de Informação de Animais de Companhia\n1 - Os animais de companhia abrangidos pela obrigação de identificação devem ser registados pelo médico veterinário no SIAC, imediatamente após a sua marcação com o transponder, em nome do respetivo titular."
     },
     "divergencia": {
-      "rgbeac": "Implementação completa em Arts. 20.º",
-      "codigo": "Cobertura expressa em Art. 55.º",
-      "legislacao": "",
+      "rgbeac": "O @rgbeac (Art.º 20.º, n.º 8) prevê que o tratamento de dados pessoais no âmbito do SIAC observa o regime geral de proteção de dados — implementação completa dos requisitos do Regulamento.",
+      "codigo": "O @codigo (Art.º 55.º) prevê cobertura expressa de proteção de dados em conformidade com legislação aplicável. Alinhado com os requisitos do Regulamento.",
+      "legislacao": "O DL n.º 82/2019 (Art.º 20.º) estabelece que o SIAC é operado em conformidade com a legislação de proteção de dados (Regulamento (UE) 2016/679 — RGPD). A legislação vigente implementa os requisitos do Art.º 25.º do Regulamento. Sem lacunas identificadas.",
       "sumario": "A legislação portuguesa implementa completamente os requisitos de proteção de dados. O SIAC é configurado como sistema compliant com GDPR (EU 2016/679) e com regulamentações de proteção de dados."
     },
     "necessidade_alteracao": "Não",
@@ -1524,12 +1006,12 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Sem equivalência.",
-      "codigo": "Sem equivalência.",
-      "legislacao": "Sem equivalência.",
-      "sumario": ""
+      "rgbeac": "Sem equivalência — artigo de habilitação delegada da Comissão Europeia, sem correspondência em proposta nacional.",
+      "codigo": "Sem equivalência — artigo de habilitação delegada da Comissão Europeia, sem correspondência em proposta nacional.",
+      "legislacao": "Sem equivalência — artigo de habilitação delegada da Comissão Europeia, sem correspondência em legislação nacional.",
+      "sumario": "Artigo de habilitação delegada — confere poderes à Comissão para actualizar os Anexos com base em evidência científica. Implica que os requisitos técnicos dos Anexos (espaço por animal, temperatura, iluminação, etc.) poderão ser actualizados sem necessidade de co-decisão do Parlamento/Conselho. Para Portugal, implica monitorização contínua das actualizações dos Anexos e adaptação da legislação complementar (portarias) sempre que os Anexos forem alterados."
     },
-    "necessidade_alteracao": "sem equivalência",
+    "necessidade_alteracao": "Sem necessidade de alteração directa — obrigação de acompanhamento e transposição das actualizações dos Anexos.",
     "notas": "."
   },
   {
@@ -1584,12 +1066,12 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Não se aplica",
-      "codigo": "Não se aplica",
-      "legislacao": "Não se aplica",
-      "sumario": ""
+      "rgbeac": "Não se aplica — artigo de procedimento institucional europeu.",
+      "codigo": "Não se aplica — artigo de procedimento institucional europeu.",
+      "legislacao": "Não se aplica — artigo de procedimento institucional europeu.",
+      "sumario": "Artigo processual sobre procedimento de comité — designa o Comité Permanente dos Vegetais, Animais e dos Alimentos para Consumo Humano e Animal como comité assistente da Comissão para atos de execução do Regulamento. Sem impacto directo na legislação nacional."
     },
-    "necessidade_alteracao": "Não - Artigo processual sobre procedimento de comité — assistência à Comissão Europeia.",
+    "necessidade_alteracao": "Não — artigo processual sobre procedimento de comité europeu.",
     "notas": ""
   },
   {
@@ -1614,12 +1096,12 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Não se aplica",
-      "codigo": "Não se aplica",
-      "legislacao": "Não se aplica",
-      "sumario": ""
+      "rgbeac": "Relevante: o @rgbeac (Art.º 12.º, als. m) a r)) proíbe a venda online de cães, gatos e furões — medida mais restritiva que o Regulamento, que apenas exige requisitos de informação para venda em linha. Portugal poderá manter esta proibição ao abrigo do n.º 1.",
+      "codigo": "Relevante: o @codigo (Art.º 80.º) proíbe a venda de animais de companhia pela Internet — medida mais restritiva que o Regulamento. Portugal poderá manter esta proibição ao abrigo do n.º 1.",
+      "legislacao": "Relevante: o DL n.º 276/2001 (Art.º 57.º) permite publicitar animais na Internet mas proíbe a venda online — medida mais restritiva que o Regulamento. Portugal deverá notificar a Comissão desta disposição nacional mais restritiva ao abrigo do n.º 2 do Art.º 30.º do Regulamento.",
+      "sumario": "Portugal detém várias disposições nacionais mais restritivas que o Regulamento — nomeadamente a proibição de venda online de cães, gatos e furões (DL 276/2001, Art.º 57.º; @codigo Art.º 80.º; @rgbeac Art.º 12.º). Estas disposições são compatíveis com o Regulamento ao abrigo do n.º 1. Obrigação de notificação à Comissão Europeia nos termos do n.º 2: Portugal deve comunicar as medidas mais restritivas que pretenda manter no prazo de dois anos após a entrada em vigor do Regulamento."
     },
-    "necessidade_alteracao": "Não",
+    "necessidade_alteracao": "Não — mas obrigação de notificação das medidas nacionais mais restritivas à Comissão nos termos do n.º 2.",
     "notas": ""
   },
   {
@@ -1674,12 +1156,12 @@ const ARTIGOS = [
       "texto": ""
     },
     "divergencia": {
-      "rgbeac": "Não se aplica",
-      "codigo": "Não se aplica",
-      "legislacao": "Não se aplica",
-      "sumario": ""
+      "rgbeac": "Artigo de habilitação nacional — o @rgbeac (Arts. 138.º a 160.º) contém o regime sancionatório nacional. O Regulamento não fixa sanções — remete para os Estados-Membros a obrigação de estabelecerem sanções efetivas, proporcionadas e dissuasivas.",
+      "codigo": "O @codigo (Arts. 88.º a 97.º) estabelece o regime de contraordenações e sanções para infracções à legislação de bem-estar animal. O Regulamento não fixa os montantes — remete para os Estados-Membros.",
+      "legislacao": "O DL n.º 276/2001 (Arts. 66.º a 72.º) estabelece o regime de contraordenações e coimas para infracções. Portugal já dispõe de regime sancionatório aplicável — necessidade de verificar se as sanções existentes são suficientemente efetivas, proporcionadas e dissuasivas para as infracções ao Regulamento, e de notificar a Comissão.",
+      "sumario": "Artigo de habilitação nacional para sanções. Portugal dispõe de regime sancionatório no DL 276/2001 (Arts. 66.º-72.º), @codigo (Arts. 88.º-97.º) e @rgbeac (Arts. 138.º-160.º). Obrigação de: (1) verificar se as sanções existentes cobrem todas as infracções ao Regulamento, em particular o abandono por operadores; (2) garantir proporcionalidade e carácter dissuasivo; (3) notificar a Comissão das regras de sanções e de qualquer alteração ulterior."
     },
-    "necessidade_alteracao": "Responsabilidade dos Estados-Membros em estabelecer sanções e notificar a Comissão destas, e de qualquer alteração ulterior das mesmas.",
+    "necessidade_alteracao": "Verificar cobertura completa e notificar a Comissão das sanções nacionais aplicáveis.",
     "notas": ""
   },
   {
@@ -2046,7 +1528,7 @@ function formatarTexto(str) {
   }).join('');
 }
 
-function renderDiv(div, art) {
+function renderDiv(div) {
   if (!div) return '';
 
   // Grid 3 colunas: rgbeac, codigo, legislacao (ordem da legislação equivalente)
@@ -2075,22 +1557,7 @@ function renderDiv(div, art) {
     </div>
   `;
 
-  // Tabelas analíticas embebidas (se existirem)
-  let tabelasHTML = '';
-  if (art.tabelas && art.tabelas.length) {
-    art.tabelas.forEach(tbl => {
-      if (!tbl || !tbl.length) return;
-      const header = tbl[0];
-      const rows = tbl.slice(1);
-      const thCells = header.map(h => `<th>${hl(h)}</th>`).join('');
-      const trRows = rows.map(row =>
-        `<tr>${row.map(c => `<td>${hl(c)}</td>`).join('')}</tr>`
-      ).join('');
-      tabelasHTML += `<div class="tabela-art-wrapper"><table class="tabela-art"><thead><tr>${thCells}</tr></thead><tbody>${trRows}</tbody></table></div>`;
-    });
-  }
-
-  return gridHTML + sumarioHTML + tabelasHTML;
+  return gridHTML + sumarioHTML;
 }
 
 /* ---- SIDEBAR ---- */
@@ -2187,7 +1654,7 @@ function render() {
       <strong>Divergência face ao Regulamento
         <span class="badge-alt">Necessidade de alteração: ${art.necessidade_alteracao}</span>
       </strong>
-      ${renderDiv(art.divergencia, art)}
+      ${renderDiv(art.divergencia)}
     </div>
 
     <div class="notas-box">
