@@ -1629,6 +1629,12 @@ let tooltipTimeoutId = null;
 function marcarGlossario(htmlStr, glossario) {
   if (!glossario || Object.keys(glossario).length === 0) return htmlStr;
 
+  // ★ CRÍTICO: Normalizar hífens no HTML ANTES de qualquer matching
+  // U+2011 (non-breaking hyphen) → U+002D (regular hyphen)
+  let htmlNormalizado = htmlStr
+    .replace(/\u2011/g, '-')  // Non-breaking hyphen → regular hyphen
+    .replace(/\u2010/g, '-'); // Hyphen (diacritic) → regular hyphen
+
   // Processar termos em ordem decrescente de comprimento para evitar spans aninhados
   const termos = Object.keys(glossario).sort((a, b) => b.length - a.length);
 
@@ -1640,7 +1646,7 @@ function marcarGlossario(htmlStr, glossario) {
   let debugCount = 0;
   let debugLog = [];
 
-  let result = htmlStr;
+  let result = htmlNormalizado;
   for (const termo of termos) {
     let skipReason = null;
 
