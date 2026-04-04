@@ -269,6 +269,55 @@
     font-size: .65rem; font-weight: 700; margin-left: 10px;
   }
 
+  /* GLOSSÁRIO INTERATIVO - TOOLTIPS */
+  .glossario-termo {
+    background-color: rgba(138, 175, 207, 0.12);
+    border-bottom: 2px dotted #8AAFCF;
+    cursor: help;
+    position: relative;
+    font-weight: 500;
+    padding: 2px 1px;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+  }
+  .glossario-termo:hover {
+    background-color: rgba(138, 175, 207, 0.22);
+  }
+  #tooltip-glossario {
+    position: fixed;
+    background-color: #fff;
+    border: 2px solid #8AAFCF;
+    border-radius: 6px;
+    padding: 12px 14px;
+    max-width: 320px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #333;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: none;
+    pointer-events: none;
+    animation: fadeIn 0.2s ease;
+  }
+  #tooltip-glossario.visible {
+    display: block;
+  }
+  #tooltip-glossario::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #8AAFCF;
+    border-radius: 50%;
+    top: -5px;
+    left: 20px;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   /* NOTAS */
   .notas-box { margin-top: 4px; }
   .notas-box label {
@@ -329,7 +378,8 @@
 </style>
 </head>
 <body>
-
+<!-- Tooltip para Glossário Interativo -->
+<div id="tooltip-glossario"></div>
 
 <header>
   <h1>Comparativo Artigo a Artigo — Regulamento 2023/0447 (Cães e Gatos)</h1>
@@ -1526,6 +1576,70 @@ const ARTIGOS = [
     "notas": ""
   }
 ];
+const GLOSSARIO = {"cão": "um animal da espécie Canis lupus familiaris", "gato": "um animal da espécie Felis silvestris catus", "bem‑estar dos cães e gatos": "o estado físico e mental de um cão ou de um gato que recebe alimentação adequada, é detido num ambiente adequado, é mantido em boa saúde, exibe um comportamento adequado e, no geral, tem uma experiência mental positiva da vida", "híbrido": "qualquer descendência da primeira à quarta geração após o cruzamento entre uma espécie selvagem e um cão ou gato doméstico, ou entre um híbrido e uma espécie selvagem, um cão ou gato doméstico ou outros híbridos", "criação": "a detenção de cães ou gatos em estabelecimentos de criação para efeitos de reprodução", "detenção": "qualquer atividade durante a qual cães e gatos sejam mantidos, alojados ou manuseados, quer num estabelecimento quer sob a responsabilidade de um operador, ou ambos", "colocação no mercado": "a venda, oferta para fins de venda, distribuição ou qualquer outra forma de transferência de propriedade ou responsabilidade relativa a cães e gatos, quer a título oneroso quer a título gratuito, assim como a publicidade de cães e gatos para esses fins, com exceção das doações ocasionais a intervalos irregulares por pessoas singulares que não sejam operadores sem publicidade em linha", "publicidade": "qualquer forma de comunicação com o público, ou com uma parte deste, que tenha o efeito direto ou indireto de promover um cão ou um gato, uma ou mais das suas características físicas, ou uma raça, com o intuito de despertar interesse, de provocar o contacto ou de atrair vendas", "plataforma em linha": "uma plataforma em linha na aceção do artigo 3.º, alínea i), do Regulamento (UE) 2022/2065, do Parlamento Europeu e do Conselho, que intermedeia a colocação no mercado de cães ou gatos", "cadela": "a fêmea do cão, desde o primeiro acasalamento ou inseminação até ao desmame da sua última ninhada", "gata": "a fêmea do gato, desde o primeiro acasalamento ou inseminação até ao desmame da sua última ninhada", "cão de guarda de gado": "um cão detido ou treinado principalmente para proteger o gado de predadores em contextos agrícolas ou pastoris", "cão de pastoreio": "um cão detido ou treinado principalmente para guiar, movimentar ou, de outro modo, controlar gado em contextos agrícolas ou pastoris, incluindo explorações agrícolas, zonas de pastoreio ou durante a transumância", "estabelecimento": "um estabelecimento de criação, um estabelecimento de venda, um abrigo ou um lar de acolhimento", "estabelecimento de criação": "qualquer instalação ou estrutura, incluindo casas particulares, onde são mantidos cães ou gatos para fins de reprodução com vista à colocação da sua descendência no mercado", "agricultor": "um agricultor na aceção do artigo 3.º, ponto 1, do Regulamento (UE) 2021/2115 do Parlamento Europeu e do Conselho", "estabelecimento de venda": "qualquer instalação ou estrutura onde cães ou gatos são detidos para venda sem aí terem nascido, incluindo lojas de animais de companhia ou casas particulares, bem como quaisquer instalações ou estruturas destinadas a operações de agrupamento nas quais sejam agrupados cães ou gatos a partir de mais do que um estabelecimento", "abrigo": "qualquer instalação ou estrutura, incluindo as casas particulares , onde são detidos cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes, para efeitos de colocação no mercado", "lar de acolhimento": "uma casa particular onde cães ou gatos são detidos em nome de um operador responsável por cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes", "operador": "qualquer pessoa singular ou coletiva que coloca cães ou gatos no mercado e é responsável por um estabelecimento de criação, por um estabelecimento de venda ou por um abrigo e pelos cães ou gatos aí detidos, ou que coloca cães e gatos num lar de acolhimento e é responsável pelos cães ou gatos aí detidos", "autoridades competentes": "as autoridades competentes na aceção do artigo 3.º, ponto 3, do Regulamento (UE) 2017/625 do Parlamento Europeu e do Conselho", "estratégia de reprodução": "um conjunto de ações sistemáticas, incluindo o registo, a seleção, a reprodução e o intercâmbio de cães ou gatos reprodutores e dos respetivos produtos germinais, concebidas e aplicadas com vista a preservar ou reforçar as características fenotípicas ou genotípicas pretendidas da população reprodutora alvo", "eutanásia": "o ato de induzir a morte através de um método que provoca uma perda de consciência rápida e irreversível com um mínimo de dor e angústia e que põe termo à vida do cão ou do gato", "mutilação": "uma intervenção, incluindo uma intervenção cirúrgica, realizada por razões que não sejam terapêuticas ou de diagnóstico, exceto a esterilização ou a implantação de um transponder, que provoca danos ou perda de uma parte sensível do corpo, ou a alteração da estrutura óssea, de um cão ou de um gato", "esterilização": "o processo através do qual cães ou gatos são impedidos de se reproduzirem com recurso a cirurgia e de forma irreversível", "sofrimento": "um estado físico ou mental desagradável e indesejado, resultante da exposição de um cão ou gato a estímulos nocivos ou da ausência continuada de estímulos positivos importantes", "alojamento": "edifícios ou espaço exterior delimitado em estabelecimentos onde são detidos cães ou gatos de forma temporária ou permanente", "canil": "uma estrutura física que contém um ou mais compartimentos para alojar cães", "gatil": "uma estrutura física que contém um ou mais compartimentos para alojar gatos", "tratador de animais": "uma pessoa que trata dos cães ou gatos criados ou detidos num estabelecimento, incluindo voluntários, estagiários e trabalhadores a tempo parcial, sob a responsabilidade de um operador", "enriquecimentos": "quaisquer materiais ou estruturas presentes no ambiente de um cão ou de um gato, com propriedades ocupacionais ou nutricionais capazes de provocar e satisfazer a curiosidade ou o comportamento apetitivo de um cão ou de um gato, ou de o motivar fisicamente", "amarração": "ato de prender um cão ou gato a um ponto de fixação ou a um objeto para o manter numa zona desejada ou para restringir o seu movimento", "contentor": "qualquer grade, jaula, caixa ou  recetáculo ou outra estrutura móvel utilizada para confinar cães ou gatos", "propriedade responsável": "conjunto de comportamentos de um proprietário ou futuro proprietário de um cão ou gato coerentes com um compromisso de desempenhar várias funções centradas na satisfação das necessidades de saúde, comportamentais, ambientais e físicas do cão ou do gato e de minimizar os riscos que o cão ou gato pode representar para a comunidade, para outros animais ou para o ambiente", "proprietário de um animal de companhia": "uma pessoa singular ou coletiva que é proprietária de um cão ou gato como animal de companhia", "animal de companhia": "um cão ou um gato detido para entretenimento pessoal ou para fazer companhia a humanos", "rede aac": "a rede constituída pela Comissão e pelos organismos de ligação designados pelos Estados-Membros em conformidade com o artigo 103.º, n.º 1, do Regulamento (UE) 2017/625 com o objetivo de facilitar a comunicação entre as autoridades competentes", "circulação sem caráter comercial": "a circulação sem caráter comercial na aceção do artigo 4.º, ponto 14, do Regulamento (UE) 2016/429 do Parlamento Europeu e do Conselho, quando o animal de companhia em causa for um cão ou um gato."};
+
+
+// ── GLOSSÁRIO INTERATIVO: Tooltips e Marcação de Termos ─────────────────────
+let tooltipTimeoutId = null;
+
+function marcarGlossario(htmlStr, glossario) {
+  if (!glossario || Object.keys(glossario).length === 0) return htmlStr;
+
+  let result = htmlStr;
+  for (const termo of Object.keys(glossario)) {
+    // Escapar caracteres especiais de regex
+    const regexEscaped = termo.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp('\\b' + regexEscaped + '\\b(?![^<]*>)', 'gi');
+    result = result.replace(regex, m => '<span class="glossario-termo" data-termo="' + termo + '">' + m + '</span>');
+  }
+  return result;
+}
+
+function mostrarTooltip(termo, elemento) {
+  const tooltip = document.getElementById('tooltip-glossario');
+  const definicao = GLOSSARIO[termo.toLowerCase()];
+  if (!definicao) return;
+
+  tooltip.textContent = definicao;
+  tooltip.classList.add('visible');
+
+  const rect = elemento.getBoundingClientRect();
+  let top = rect.bottom + 8;
+  let left = rect.left;
+
+  tooltip.style.left = Math.max(8, Math.min(left, window.innerWidth - 328)) + 'px';
+  tooltip.style.top = top + 'px';
+
+  clearTimeout(tooltipTimeoutId);
+  tooltipTimeoutId = setTimeout(() => esconderTooltip(), 6000);
+}
+
+function esconderTooltip() {
+  const tooltip = document.getElementById('tooltip-glossario');
+  tooltip.classList.remove('visible');
+}
+
+// Event delegation para termos do glossário
+document.addEventListener('mouseenter', (e) => {
+  if (e.target.classList.contains('glossario-termo')) {
+    mostrarTooltip(e.target.dataset.termo, e.target);
+  }
+}, true);
+
+document.addEventListener('mouseleave', (e) => {
+  if (e.target.classList.contains('glossario-termo')) {
+    clearTimeout(tooltipTimeoutId);
+    tooltipTimeoutId = setTimeout(() => esconderTooltip(), 500);
+  }
+}, true);
+
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('glossario-termo')) {
+    e.preventDefault();
+    mostrarTooltip(e.target.dataset.termo, e.target);
+  }
+}, true);
+
 
 // ── NOTAS: localStorage + JSON export/import ──────────────────────────────
 const _STORAGE_KEY = 'notas_reuniao_regulamento';
@@ -1778,7 +1892,7 @@ function render() {
         <span class="card-header-ref">${art.regulamento.ref} · Texto original EN</span>
       </div>
       <div class="card-body">
-        ${formatarTexto(art.regulamento.texto)}
+        ${marcarGlossario(formatarTexto(art.regulamento.texto), GLOSSARIO)}
       </div>
     </div>
 
@@ -1788,7 +1902,7 @@ function render() {
         <span class="card-header-ref">${art.regulamento.ref}</span>
       </div>
       <div class="card-body">
-        ${formatarTexto(art.regulamento.traducao)}
+        ${marcarGlossario(formatarTexto(art.regulamento.traducao), GLOSSARIO)}
       </div>
     </div>
 
@@ -1797,21 +1911,21 @@ function render() {
         <div class="card-header">@rgbeac (proposta jun. 2025)</div>
         <div class="card-body">
           <div class="card-ref">${art.rgbeac.ref}</div>
-          ${formatarTexto(art.rgbeac.texto)}
+          ${marcarGlossario(formatarTexto(art.rgbeac.texto), GLOSSARIO)}
         </div>
       </div>
       <div class="card cod">
         <div class="card-header">@codigo (DL n.º 214/2013)</div>
         <div class="card-body">
           <div class="card-ref">${art.codigo.ref}</div>
-          ${formatarTexto(art.codigo.texto)}
+          ${marcarGlossario(formatarTexto(art.codigo.texto), GLOSSARIO)}
         </div>
       </div>
       <div class="card leg">
         <div class="card-header">@legislacao (legislação vigente)</div>
         <div class="card-body">
           <div class="card-ref">${art.legislacao.ref}</div>
-          ${formatarTexto(art.legislacao.texto)}
+          ${marcarGlossario(formatarTexto(art.legislacao.texto), GLOSSARIO)}
         </div>
       </div>
     </div>
