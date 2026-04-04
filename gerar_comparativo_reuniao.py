@@ -1400,6 +1400,9 @@ def extrair_glossario_pt(artigos):
     pattern = r'\d+\)\s*«([^»]+)»\s*,\s*(.+?)(?=\n\d+\)|CAPÍTULO|$)'
     matches = re.findall(pattern, texto, re.DOTALL)
 
+    # Termos simples a EXCLUIR (muito genéricos, aparecem em todo lado)
+    termos_excluidos = {'cão', 'gato', 'cadela', 'gata'}
+
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
         definicao_limpa = definicao.strip().replace('\n', ' ')
@@ -1410,7 +1413,15 @@ def extrair_glossario_pt(artigos):
         # U+2011 (non-breaking hyphen) → U+002D (regular hyphen)
         termo_normalizado = termo.strip().replace('\u2011', '-').replace('\u2010', '-').lower()
 
-        glossario[termo_normalizado] = definicao_limpa
+        # FILTRAR: não incluir termos simples muito genéricos
+        if termo_normalizado not in termos_excluidos:
+            glossario[termo_normalizado] = definicao_limpa
+
+            # ADICIONAR PLURAIS para termos compostos
+            # Exemplo: "cão de guarda de gado" → também adicionar "cães de guarda de gado"
+            if 'cão' in termo_normalizado or 'gato' in termo_normalizado:
+                termo_plural = termo_normalizado.replace('cão ', 'cães ').replace('gato ', 'gatos ')
+                glossario[termo_plural] = definicao_limpa
 
     return glossario
 
@@ -1433,6 +1444,9 @@ def extrair_glossario_en(artigos):
     pattern = r"\d+\.\s*'([^']+)'\s+means\s+(.+?)(?=\n\d+\.|$)"
     matches = re.findall(pattern, texto, re.DOTALL)
 
+    # Termos simples a EXCLUIR (muito genéricos, aparecem em todo lado)
+    termos_excluidos = {'dog', 'cat', 'female dog', 'female cat'}
+
     for termo, definicao in matches:
         # Limpar whitespace excessivo e quebras de linha
         definicao_limpa = definicao.strip().replace('\n', ' ')
@@ -1442,7 +1456,18 @@ def extrair_glossario_en(artigos):
         # NORMALIZAR: converter hífens especiais em hífens normais
         termo_normalizado = termo.strip().replace('\u2011', '-').replace('\u2010', '-').lower()
 
-        glossario[termo_normalizado] = definicao_limpa
+        # FILTRAR: não incluir termos simples muito genéricos
+        if termo_normalizado not in termos_excluidos:
+            glossario[termo_normalizado] = definicao_limpa
+
+            # ADICIONAR PLURAIS para termos compostos com 'dog' ou 'cat'
+            # Exemplo: "herding dog" → também adicionar "herding dogs"
+            if ' dog' in termo_normalizado:
+                termo_plural = termo_normalizado.replace(' dog', ' dogs')
+                glossario[termo_plural] = definicao_limpa
+            elif ' cat' in termo_normalizado:
+                termo_plural = termo_normalizado.replace(' cat', ' cats')
+                glossario[termo_plural] = definicao_limpa
 
     return glossario
 
