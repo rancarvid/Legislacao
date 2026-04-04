@@ -1,7 +1,7 @@
 # HANDOFF — Análise Comparativa da Legislação sobre Animais
 ## Documento de briefing para nova instância Claude
 
-> Este documento descreve o estado atual do projeto, as convenções estabelecidas, a arquitetura técnica dos scripts, o que já foi feito e o que ficou por fazer. Lê-o na íntegra antes de qualquer intervenção.
+> Este documento descreve o estado atual do projeto, as convenções estabelecidas, a arquitetura técnica dos scripts, o que já foi feito e o que ficou por fazer. Lê-lo na íntegra antes de qualquer intervenção.
 
 ---
 
@@ -24,7 +24,7 @@ O `@regulamento` é o **polo de referência** — toda a análise parte dele e a
 
 ## 2. Ficheiros no repositório (branch de trabalho)
 
-Branch: `claude/claude-md-mm6om6hd0ro2q4cd-HlaxD`
+Branch atual: `claude/review-recent-tasks-YROKh`
 
 ### 2.1 Documentos legislativos
 
@@ -33,17 +33,19 @@ Branch: `claude/claude-md-mm6om6hd0ro2q4cd-HlaxD`
 | `Código do Animal DL214.2013_OCR.docx.docx` | `@codigo` |
 | `RGBEAC_junh_2025 Original com Índice.docx` | `@rgbeac` |
 | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | `@regulamento` (EN original) |
-| `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` | Tradução PT do `@regulamento` (usada como fonte das `traducao` fields) |
-| `Regulamento - Primeira Versão portuguesa.docx` | Primeira versão PT do `@regulamento` (fonte auxiliar de tradução) |
-| `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` | Parecer EESC em PT — contexto complementar |
+| `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` | Tradução PT do `@regulamento` |
+| `Regulamento - Primeira Versão portuguesa.docx` | Primeira versão PT do `@regulamento` (auxiliar) |
+| `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` | Parecer EESC em PT |
 | `Decreto-Lei n.º 276-2001, de 17 de outubro v2.docx` | `@legislacao` |
 | `DL n. 82_2019, de 27 de Junho_ocred.docx` | `@legislacao` |
-| `Lei n.º 27_2016, de 23 de agosto - Aprova medidas...` | `@legislacao` |
+| `Lei n.º 27_2016, de 23 de agosto (...)` | `@legislacao` |
 | `Portaria 146-2017_ocred.docx` | `@legislacao` |
-| `Portaria 148_2016 - Estabelece a obrigatoriedade...` | `@legislacao` |
-| `Portaria n.º 264_2013 - Aprova as normas técnicas...` | `@legislacao` |
+| `Portaria 148_2016 (...)` | `@legislacao` |
+| `Portaria n.º 264_2013 (...)` | `@legislacao` |
 | `DECRET~1.DOC` | `@legislacao` |
 | `oexcel.xlsx` | `@oexcel` — comparativo temático de referência |
+
+Pasta `@opiniao/`: 52 opiniões externas de organizações (PDF) organizadas em 7 grupos temáticos. Ver análise integrada em `ad86f36`.
 
 ### 2.2 Scripts (não são documentos legislativos)
 
@@ -63,22 +65,48 @@ Branch: `claude/claude-md-mm6om6hd0ro2q4cd-HlaxD`
 | `reproducao_comparativo.csv` | CSV temático — reprodução |
 | `reproducao_infografia.html` | HTML infográfico — reprodução |
 
+### 2.4 Documentos de trabalho produzidos
+
+| Ficheiro | Descrição |
+|---|---|
+| `FICHA_RESPOSTA_AR_Regulamento_2023_0447.docx` | Ficha de resposta a inquirição parlamentar (Word, sem ícones) |
+| `legislacao_vigente_animais_completa.xlsx` | 19 diplomas vigentes em estrutura Excel filtrávelg |
+| `legislacao_vigente_animais_2026.csv` | Mesmos dados em CSV |
+| `artigos_15a_17a_20_correspondencias.md` | Correspondências para ART-15a, 17a–20 |
+| `artigos_17a_20_correspondencias.md` | Correspondências para ART-17a–20 |
+| `artigos_20a_21_22_correspondencias.md` | Correspondências para ART-20a, 21, 22 |
+
 ---
 
 ## 3. Estado atual dos artigos — array ARTIGOS
 
-O script `gerar_comparativo_reuniao.py` contém um array `ARTIGOS` com **6 entradas**, por esta ordem:
+O script `gerar_comparativo_reuniao.py` contém um array `ARTIGOS` com **21 entradas**, cobrindo os artigos 5.º a 22.º do Regulamento 2023/0447:
 
 | ID | Tema |
 |---|---|
-| `ART-17` | Identificação e Registo |
-| `ART-06` | Bem-Estar e Detenção |
-| `ART-07` | Reprodução e Criação |
 | `ART-05` | Princípios Gerais de Bem-Estar |
+| `ART-06` | Bem-Estar e Detenção |
 | `ART-06a` | Estratégias de Criação — Conformação e Consanguinidade |
+| `ART-07` | Reprodução e Criação |
+| `ART-08` | Detenção Responsável |
+| `ART-09` | Competências de Cuidadores |
+| `ART-10` | Avaliação e Supervisão de Bem-Estar |
+| `ART-11` | Alimentação e Hidratação |
+| `ART-12` | Alojamento |
 | `ART-13` | Saúde e Monitorização Sanitária |
+| `ART-14` | Necessidades Comportamentais |
+| `ART-15` | Práticas Dolorosas |
+| `ART-15a` | Espetáculos e Competições Estéticas |
+| `ART-17` | Identificação e Registo |
+| `ART-17a` | Requisitos de Publicidade em Linha |
+| `ART-18` | Treino de Cuidadores |
+| `ART-19` | Base de Dados de Cães e Gatos |
+| `ART-20` | Recolha de Dados sobre Bem-Estar |
+| `ART-20a` | Proteção de Dados |
+| `ART-21` | Entrada de Cães e Gatos na União |
+| `ART-22` | Alteração dos Anexos |
 
-Estes seis artigos cobrem uma fração do `@regulamento`. O trabalho fica a meio — há mais artigos do Regulamento por mapear e analisar.
+Artigos ainda **não cobertos**: 1–4, 16, 23–28 (preâmbulo, disposições gerais, transitórias e finais).
 
 ---
 
@@ -90,7 +118,7 @@ Estes seis artigos cobrem uma fração do `@regulamento`. O trabalho fica a meio
     "tema": "Saúde e Monitorização Sanitária",
     "regulamento": {
         "ref": "Art.º 13.º do Regulamento 2023/0447 (PE/Conselho)",
-        "titulo": "Health",           # Título inglês do artigo — aparece no cabeçalho da card EN
+        "titulo": "Health",           # Título inglês — aparece no cabeçalho da card EN
         "texto": "...",               # Verbatim EN — NUNCA tem [dim], NUNCA é truncado
         "traducao": "...",            # PT-PT — baseada nos ficheiros de tradução do repositório
     },
@@ -98,9 +126,9 @@ Estes seis artigos cobrem uma fração do `@regulamento`. O trabalho fica a meio
     "codigo":    { "ref": "...", "texto": "..." },
     "legislacao":{ "ref": "...", "texto": "..." },  # pode ter [dim] — ver secção 5
     "divergencia": {
-        "legislacao": "Texto da divergência face ao @regulamento — legislação vigente",
-        "codigo":     "Texto da divergência face ao @regulamento — @codigo",
-        "rgbeac":     "Texto da divergência face ao @regulamento — @rgbeac",
+        "legislacao": "Divergência face ao @regulamento — legislação vigente",
+        "codigo":     "Divergência face ao @regulamento — @codigo",
+        "rgbeac":     "Divergência face ao @regulamento — @rgbeac",
         "sumario":    "Síntese e proposta de implementação",
     },
     "necessidade_alteracao": "Sim",   # ou "Não"
@@ -109,20 +137,15 @@ Estes seis artigos cobrem uma fração do `@regulamento`. O trabalho fica a meio
 ```
 
 **Regras absolutas:**
-- O campo `regulamento.texto` é sempre verbatim EN, sem cortes, sem `[dim]`
-- O campo `regulamento.traducao` é sempre verbatim PT-PT, sem cortes, sem `[dim]`
+- `regulamento.texto` — sempre verbatim EN, sem cortes, sem `[dim]`
+- `regulamento.traducao` — sempre verbatim PT-PT, sem cortes, sem `[dim]`
 - `[dim]` aplica-se **apenas** a `legislacao.texto`, `codigo.texto`, `rgbeac.texto`
 
 ---
 
 ## 5. Convenção [dim] — texto cinzento
 
-Quando um n.º ou alínea de um artigo nacional não tem qualquer relação com o tema em análise, o bloco pode ser marcado com `[dim]`. O texto aparece a cinzento mas completamente legível — nunca é apagado.
-
-**Como funciona nos dados:**
-- O texto de cada coluna é uma string com blocos separados por `\n\n`
-- Cada bloco começa com a primeira linha do parágrafo
-- Para marcar um bloco como cinzento, coloca-se o prefixo `[dim]` **antes** do texto do bloco:
+Quando um n.º ou alínea de um artigo nacional não tem relação com o tema em análise, o bloco pode ser marcado com `[dim]`. O texto aparece a cinzento mas completamente legível — nunca é apagado.
 
 ```python
 "texto": """1 — Os detentores devem assegurar que:
@@ -137,9 +160,6 @@ b) O animal tem acesso a água potável.
 - O `[dim]` é prefixo do bloco inteiro (n.º com todas as suas alíneas)
 - Nunca se usa `[dim]` a meio de um bloco
 - Nunca se usa `[dim]` no `@regulamento`
-
-**Quando usar:**
-- Só em casos restritos em que o n.º está completamente desfasado do tema
 - A regra geral é citar o artigo todo — o `[dim]` é a exceção
 
 ---
@@ -156,8 +176,6 @@ Cada bloco é um parágrafo separado (n.º do artigo). Dentro de um bloco, `\n` 
 
 ### 6.2 Múltiplos artigos numa coluna
 
-Quando uma coluna cita mais do que um artigo, usa-se um cabeçalho de artigo como separador visual:
-
 ```python
 "texto": """Artigo 13.º — Saúde
 
@@ -172,19 +190,9 @@ Artigo 16.º — Identificação
 a) Microchip obrigatório."""
 ```
 
-A linha `Artigo X.º — Título` é detetada automaticamente por `formatarTexto()` (HTML) e `_classify_line()` (Word) e renderizada como separador visual em negrito.
-
 ### 6.3 Regra das alíneas
 
-As alíneas **nunca aparecem sozinhas**. Antes de qualquer bloco de alíneas, tem de aparecer o n.º que as introduz:
-
-```python
-# ERRADO:
-"texto": "a) Vacinação obrigatória.\nb) Desparasitação."
-
-# CORRETO:
-"texto": "1 — Os animais devem:\n\na) Vacinação obrigatória.\nb) Desparasitação."
-```
+As alíneas **nunca aparecem sozinhas** — são sempre precedidas pelo n.º que as introduz.
 
 ### 6.4 Padrões reconhecidos (PT e EN)
 
@@ -201,19 +209,17 @@ As alíneas **nunca aparecem sozinhas**. Antes de qualquer bloco de alíneas, te
 ## 7. Ordem de apresentação no HTML e Word
 
 ### Na coluna `@regulamento`:
-1. **Card EN** (primário, autoritativo) — com título inglês do artigo no cabeçalho
+1. **Card EN** (primário, autoritativo) — com título inglês no cabeçalho
 2. **Card PT-PT** (tradução, apoio de leitura) — a seguir
 
-O inglês é sempre mostrado primeiro. A tradução é leitura complementar, não substitui o original.
+O inglês é sempre mostrado primeiro.
 
 ### Nas colunas `@rgbeac`, `@codigo`, `@legislacao`:
-- Texto verbatim PT, sem order especial
+- Texto verbatim PT, sem ordem especial
 
 ---
 
 ## 8. Como extrair texto dos ficheiros DOCX
-
-Os ficheiros DOCX são por vezes mal formatados (OCR) — os parágrafos podem aparecer como strings vazias com o texto no XML. A forma mais robusta de extrair:
 
 ```python
 import docx
@@ -224,30 +230,21 @@ body = doc.element.body
 text = etree.tostring(body, method='text', encoding='unicode')
 ```
 
-Depois usa `re.finditer(r'Artigo (\d+)\.º', text)` para localizar os artigos por posição de caracter e extrair o texto entre eles.
+Depois usa `re.finditer(r'Artigo (\d+)\.º', text)` para localizar artigos por posição.
 
 ---
 
 ## 9. Como correr os scripts
 
-A partir da raiz do repositório:
-
 ```bash
 python3 gerar_comparativo_reuniao.py
-```
+# → gera comparativo_reuniao_exemplo.html + .xlsx + .docx
 
-Isto gera os três outputs em simultâneo:
-- `comparativo_reuniao_exemplo.html`
-- `comparativo_reuniao_exemplo.xlsx`
-- `comparativo_reuniao_exemplo.docx`
-
-```bash
 python3 gerar_word.py
+# → gera apenas o Word
 ```
 
-Gera apenas o Word (standalone).
-
-**Dependências Python necessá:**
+Dependências:
 ```bash
 pip install python-docx openpyxl
 ```
@@ -256,20 +253,13 @@ pip install python-docx openpyxl
 
 ## 10. Workflow Git
 
-Branch de trabalho: `claude/claude-md-mm6om6hd0ro2q4cd-HlaxD`
+Branch de trabalho: `claude/review-recent-tasks-YROKh`
 
 ```bash
-# Verificar sempre antes de commitar
 git status
-
-# Adicionar apenas ficheiros específicos
-git add gerar_comparativo_reuniao.py comparativo_reuniao_exemplo.html ...
-
-# Commitar com mensagem descritiva em PT-PT
-git commit -m "Adiciona ART-XX — Tema do artigo"
-
-# Push
-git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
+git add <ficheiros específicos>
+git commit -m "Descrição em PT-PT"
+git push -u origin claude/review-recent-tasks-YROKh
 ```
 
 **Nunca:**
@@ -281,35 +271,38 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
 
 ## 11. O que ficou por fazer
 
-### 11.1 Atualizar traduções (em pausa — aguarda instrução)
+### 11.1 Artigos do Regulamento ainda não cobertos
 
-Os campos `regulamento.traducao` dos 6 artigos existentes **não foram ainda revistos** com base nos três ficheiros de tradução que chegaram ao repositório:
+- **Art. 1.º–4.º**: Âmbito, definições, autoridades competentes
+- **Art. 16.º**: (em falta na sequência — verificar se existe no Regulamento)
+- **Art. 23.º–28.º**: Disposições transitórias, finais, entrada em vigor
+
+Para cada novo artigo:
+1. Extrair texto EN verbatim do ficheiro `sem rasuras`
+2. Extrair tradução PT do ficheiro `votação com tradução-ocr`
+3. Localizar correspondências em `@legislacao`, `@codigo`, `@rgbeac`
+4. Preencher campos `divergencia` (4 sub-campos)
+5. Determinar `necessidade_alteracao`
+
+### 11.2 Revisão de traduções
+
+Os campos `regulamento.traducao` dos 21 artigos existentes **não foram revistos sistematicamente** com base nos três ficheiros de tradução disponíveis:
 
 - `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` ← fonte principal
 - `Regulamento - Primeira Versão portuguesa.docx` ← fonte auxiliar
 - `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` ← contexto
 
-O utilizador disse explicitamente **"não pretendo que alteres agora"** — este passo está em pausa. Quando for altura, o processo é:
-1. Extrair o texto PT dos ficheiros de tradução usando `python-docx`
-2. Localizar cada artigo pelo número (ex.: `Artigo 13.º`)
-3. Copiar o texto verbatim para o campo `traducao` da entrada correspondente em ARTIGOS
-4. Regenerar os outputs e commitar
+### 11.3 Recomendações legislativas por tema
 
-### 11.2 Adicionar mais artigos do @regulamento
+Consolidar as divergências identificadas em recomendações concretas por eixo temático:
+- Detenção responsável
+- Reprodução
+- Rastreabilidade
+- Animais errantes
 
-O Regulamento 2023/0447 tem muitos mais artigos para além dos 6 já mapeados. O trabalho analítico principal é continuar a popular o array ARTIGOS com os artigos restantes, seguindo exatamente a mesma estrutura.
+### 11.4 Infografias temáticas
 
-Para cada novo artigo:
-1. Extrair o texto EN verbatim do `@regulamento` (ficheiro `sem rasuras`)
-2. Extrair a tradução PT do ficheiro `votação com tradução-ocr`
-3. Identificar o `titulo` (título inglês do artigo)
-4. Localizar as correspondências em `@legislacao`, `@codigo`, `@rgbeac`
-5. Analisar as divergências e preencher os 4 campos do dict `divergencia`
-6. Determinar `necessidade_alteracao` (Sim/Não)
-
-### 11.3 Cobertura do @regulamento
-
-O ficheiro `cobertura_regulamento.csv` rastreia quais artigos do Regulamento já foram cobertos. Consultar este ficheiro para saber o que falta.
+Desenvolver infografias adicionais para além da existente (`reproducao_infografia.html`).
 
 ---
 
@@ -324,6 +317,7 @@ O ficheiro `cobertura_regulamento.csv` rastreia quais artigos do Regulamento já
 | Opiniões | Só na coluna "Observações" / campo `notas` |
 | `[dim]` | Nunca no `@regulamento`; com parcimónia no resto |
 | `@regulamento` | Sempre citado na íntegra — sem cortes |
+| `@codigo` e `@rgbeac` | São PROPOSTAS — nunca citar como legislação vigente |
 
 ---
 
@@ -332,12 +326,12 @@ O ficheiro `cobertura_regulamento.csv` rastreia quais artigos do Regulamento já
 O `comparativo_reuniao_exemplo.html` é um ficheiro HTML/JS autónomo (sem servidor):
 
 - **Sidebar esquerda**: lista de artigos para navegação
-- **Pesquisa**: campo de texto com highlight de palavras — pesquisa no texto, título, tema e campo `titulo` do regulamento
+- **Pesquisa**: campo de texto com highlight — pesquisa no texto, título e tema
 - **Cards por artigo**: EN primeiro, PT depois, depois `@rgbeac`, `@codigo`, `@legislacao`
-- **Divergência**: 4 secções com bullet points (legislacao / codigo / rgbeac / sumario)
+- **Divergência**: 4 secções (legislacao / codigo / rgbeac / sumario)
 - **Campo de notas**: editável em reunião, exportável para CSV
 
-O HTML é gerado pelo script — nunca editar o `.html` diretamente. Qualquer alteração ao layout/dados vai para o script Python.
+O HTML é gerado pelo script — nunca editar o `.html` diretamente.
 
 ---
 
@@ -346,25 +340,25 @@ O HTML é gerado pelo script — nunca editar o `.html` diretamente. Qualquer al
 ### No HTML (dentro do script Python como f-string):
 
 - `formatarTexto(str)` — converte string com `\n\n` em HTML com classes CSS
-- `render(art)` — renderiza um artigo completo (todas as cards)
-- `artMatch(art, q)` — pesquisa por palavra-chave num artigo
+- `render(art)` — renderiza um artigo completo
+- `artMatch(art, q)` — pesquisa por palavra-chave
 
-Atenção: o HTML é gerado por uma f-string Python. As chaves JS têm de ser escapadas como `{{` e `}}`. Os template literals JS `${...}` ficam como `${{...}}` no código Python.
+Atenção: o HTML é gerado por uma f-string Python. Chaves JS devem ser escapadas como `{{` e `}}`.
 
 ### No Word (`gerar_word.py`):
 
 - `_classify_line(line)` — devolve `"art-header"`, `"sub"`, `"alinea"`, ou `"normal"`
-- `cell_body(cell, text, ...)` — preenche uma célula de tabela com o texto formatado
-- `add_article_section(doc, art)` — adiciona uma secção completa por artigo
+- `cell_body(cell, text, ...)` — preenche célula de tabela com texto formatado
+- `add_article_section(doc, art)` — adiciona secção completa por artigo
 
 ---
 
 ## 15. Ficheiro CLAUDE.md
 
-O `CLAUDE.md` é o documento metodológico oficial do projeto. Foi completamente revisto nesta sessão e está atualizado. Antes de qualquer trabalho analítico, lê o CLAUDE.md — define as convenções que este HANDOFF complementa com detalhe técnico.
+O `CLAUDE.md` é o documento metodológico oficial do projeto. Antes de qualquer trabalho analítico, ler o `CLAUDE.md` — define as convenções que este HANDOFF complementa com detalhe técnico.
 
-Se detetares incoerências entre CLAUDE.md e HANDOFF.md, o CLAUDE.md prevalece — mas reporta ao utilizador para que ambos sejam alinhados.
+Se detetares incoerências entre `CLAUDE.md` e `HANDOFF.md`, o `CLAUDE.md` prevalece — reportar ao utilizador para que ambos sejam alinhados.
 
 ---
 
-*Documento produzido em 2026-03-01. Estado do repositório: 6 artigos completos, outputs gerados e commitados, branch actualizado.*
+*Atualizado em 2026-04-04. Estado do repositório: 21 artigos completos (ART-05 a ART-22), outputs gerados e commitados, ficha parlamentar produzida, investigação legislativa (19 diplomas) concluída.*
