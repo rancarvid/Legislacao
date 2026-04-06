@@ -164,31 +164,6 @@ def modificar_html_para_adicionar_preamb(html_original, preamb_por_tema, artigos
 const PREAMB_POR_TEMA = {dados_preamb_json};
 const TEMAS_PREAMB = {json.dumps(temas_preamb, ensure_ascii=False)};
 
-// Estender renderSidebar() para incluir temas do preâmbulo
-const renderSidebarOriginal = renderSidebar;
-function renderSidebarExtendido() {{
-  renderSidebarOriginal();
-
-  const nav = document.getElementById('sidebar');
-
-  // Adicionar separador de preâmbulo
-  const sep = document.createElement('h2');
-  sep.style.marginTop = '1rem';
-  sep.style.borderTop = '1px solid rgba(255,255,255,0.2)';
-  sep.style.paddingTop = '1rem';
-  sep.textContent = 'Preâmbulo';
-  nav.appendChild(sep);
-
-  // Adicionar botões de temas
-  for (const tema of TEMAS_PREAMB) {{
-    const btn = document.createElement('button');
-    btn.className = 'preamb-theme-btn';
-    btn.innerHTML = tema + '<small>(' + PREAMB_POR_TEMA[tema].length + ' considerando)</small>';
-    btn.onclick = () => exibirTemaPreambulo(tema);
-    nav.appendChild(btn);
-  }}
-}}
-
 function exibirTemaPreambulo(tema) {{
   const considerandos = PREAMB_POR_TEMA[tema];
   const container = document.getElementById('main-content');
@@ -216,7 +191,7 @@ function exibirTemaPreambulo(tema) {{
         @regulamento — Considerando ${{cons.numero}} (EN)
         <span class="card-header-ref">Texto Original EN</span>
       </div>
-      <div class="card-body">${{escapeHtml(cons.regulamento.texto).replace(/\\n/g, '<br>')}}</div>
+      <div class="card-body">${{cons.regulamento.texto.replace(/\\n/g, '<br>')}}</div>
     `;
     container.appendChild(cardEn);
 
@@ -229,65 +204,57 @@ function exibirTemaPreambulo(tema) {{
         @regulamento — Considerando ${{cons.numero}} (PT)
         <span class="card-header-ref">Tradução PT-PT</span>
       </div>
-      <div class="card-body">${{escapeHtml(cons.regulamento.traducao).replace(/\\n/g, '<br>')}}</div>
+      <div class="card-body">${{cons.regulamento.traducao.replace(/\\n/g, '<br>')}}</div>
     `;
     container.appendChild(cardPt);
   }}
 }}
 
-function escapeHtml(text) {{
-  const map = {{'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'}};
-  return text.replace(/[&<>"']/g, m => map[m]);
-}}
+// Adicionar botões de preâmbulo à sidebar DEPOIS de renderSidebar() ser chamada
+setTimeout(function() {{
+  const nav = document.getElementById('sidebar');
+  if (!nav) return;
 
-// Substituir renderSidebar
-renderSidebar = renderSidebarExtendido;
+  // Adicionar separador de preâmbulo
+  const sep = document.createElement('h2');
+  sep.style.marginTop = '1rem';
+  sep.style.borderTop = '1px solid rgba(255,255,255,0.2)';
+  sep.style.paddingTop = '1rem';
+  sep.textContent = 'Preâmbulo';
+  nav.appendChild(sep);
 
-// Função para buscar em considerandos do preâmbulo
-function prembMatch(cons, q) {{
-  return cons.numero.toString().includes(q) ||
-         cons.tema.toLowerCase().includes(q) ||
-         cons.regulamento.texto.toLowerCase().includes(q) ||
-         cons.regulamento.traducao.toLowerCase().includes(q);
-}}
-
-// Estender pesquisa ORIGINAL (não sobrescrever)
-const pesquisarOriginalFunc = window.pesquisar;
-window.pesquisar = function(q) {{
-  // Chamar pesquisa original primeiro
-  pesquisarOriginalFunc(q);
-
-  // Depois adicionar lógica de busca no preâmbulo
-  const searchTerm = q.trim().toLowerCase();
-  if (!searchTerm) return;
-
-  // Procurar considerandos que match
-  let hasPreambMatch = false;
-  for (const tema in PREAMB_POR_TEMA) {{
-    for (const cons of PREAMB_POR_TEMA[tema]) {{
-      if (prembMatch(cons, searchTerm)) {{
-        hasPreambMatch = true;
-        break;
-      }}
-    }}
-    if (hasPreambMatch) break;
+  // Adicionar botões de temas
+  for (const tema of TEMAS_PREAMB) {{
+    const btn = document.createElement('button');
+    btn.className = 'preamb-theme-btn';
+    btn.innerHTML = tema + '<small>(' + PREAMB_POR_TEMA[tema].length + ' considerando)</small>';
+    btn.onclick = () => exibirTemaPreambulo(tema);
+    nav.appendChild(btn);
   }}
-}};
+}}, 100);
 
 // Estilos para preâmbulo
 const stylePreambulo = document.createElement('style');
 stylePreambulo.textContent = `
   .preamb-theme-btn {{
+    width: 100%;
     background: rgba(155, 139, 158, 0.1) !important;
-    border-left-color: #9B8B9E !important;
+    border: none;
+    border-left: 3px solid #9B8B9E;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
   }}
   .preamb-theme-btn:hover {{
     background: rgba(155, 139, 158, 0.2) !important;
   }}
   .preamb-theme-btn small {{
     display: block;
-    font-size: 0.74rem;
-    opacity: 0.85;
+    font-size: 0.75rem;
+    opacity: 0.7;
     margin-top: 2px;
   }}
   .preamb-titulo {{
@@ -314,40 +281,8 @@ stylePreambulo.textContent = `
   .card.preamb .card-header {{
     color: #9B8B9E !important;
   }}
-  .preamb-search-results {{
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #ddd;
-  }}
-  .search-group {{
-    margin-bottom: 1rem;
-  }}
-  .search-group strong {{
-    color: #9B8B9E;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-  }}
-  .search-group ul {{
-    list-style: none;
-    padding-left: 1rem;
-  }}
-  .search-group li {{
-    margin-bottom: 0.5rem;
-  }}
-  .search-group a {{
-    color: #7B68A6;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }}
-  .search-group a:hover {{
-    text-decoration: underline;
-  }}
 `;
 document.head.appendChild(stylePreambulo);
-
-// Re-render sidebar para incluir preâmbulo
-renderSidebar();
 """
 
     # Localizar onde injetar (antes de fechar </body>)
