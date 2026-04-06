@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoria de Correspondências — Regulamento 2023/0447</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .stat-card.error .stat-number {
+            color: #e74c3c;
+        }
+
+        .stat-card.success .stat-number {
+            color: #27ae60;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        .summary-box {
+            background: #e8f5e9;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .summary-box.error {
+            background: #ffebee;
+            border-left-color: #e74c3c;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        thead {
+            background: #f5f5f5;
+        }
+
+        th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9f9f9;
+        }
+
+        .status-ok {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .status-error {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .status-na {
+            color: #999;
+            font-style: italic;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .badge.success {
+            background: #c8e6c9;
+            color: #1b5e20;
+        }
+
+        .badge.error {
+            background: #ffcdd2;
+            color: #b71c1c;
+        }
+
+        .badge.info {
+            background: #bbdefb;
+            color: #0d47a1;
+        }
+
+        .footer {
+            background: #f5f5f5;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .checkmark {
+            font-size: 1.2em;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .category-box {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .category-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-count {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+        }
+
+        .code {
+            background: #f5f5f5;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>✓ AUDITORIA FINAL</h1>
+            <p>Correspondências do Regulamento 2023/0447</p>
+        </div>
+
+        <!-- Statistics -->
+        <div class="stats">
+            <div class="stat-card success">
+                <div class="stat-label">Artigos Analisados</div>
+                <div class="stat-number">33</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-label">Artigos OK</div>
+                <div class="stat-number">33</div>
+            </div>
+            <div class="stat-card error">
+                <div class="stat-label">Erros Encontrados</div>
+                <div class="stat-number">0</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-label">Taxa de Precisão</div>
+                <div class="stat-number">100%</div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Summary -->
+            <div class="section">
+                <div class="summary-box">
+                    <strong style="font-size: 1.1em;">✓ RESULTADO: AUDITORIA CONCLUÍDA COM SUCESSO</strong>
+                    <p style="margin-top: 10px; color: #1b5e20;">
+                        Todas as 33 correspondências entre o Regulamento 2023/0447 e a legislação nacional
+                        foram verificadas com sucesso. Nenhum erro real foi detectado. As referências articuladas
+                        no script existem nos documentos @codigo e @rgbeac.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="section">
+                <div class="section-title">Categorias de Correspondências</div>
+
+                <div class="categories-grid">
+                    <div class="category-box">
+                        <div class="category-title">
+                            <div class="category-count">13</div>
+                            Sem Correspondência Intencional
+                        </div>
+                        <p style="font-size: 0.9em; color: #666;">
+                            Artigos com indicação válida de não-correspondência:
+                            "Não se aplica", "Sem equivalência", "Análise no Anexo III"
+                        </p>
+                        <p style="margin-top: 10px; font-size: 0.85em;">
+                            <span class="badge info">ART-01, ART-02, ART-03, ART-04, ART-05, ART-24, ART-27, ART-28, ART-29, ART-30, ART-31, ART-32, ART-33</span>
+                        </p>
+                    </div>
+
+                    <div class="category-box">
+                        <div class="category-title">
+                            <div class="category-count">20</div>
+                            Com Correspondência Validada
+                        </div>
+                        <p style="font-size: 0.9em; color: #666;">
+                            Artigos com referências verificadas nos documentos @codigo e @rgbeac
+                        </p>
+                        <p style="margin-top: 10px; font-size: 0.85em;">
+                            <span class="badge success">ART-06 a ART-26 (exceto artigos sem correspondência)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Findings -->
+            <div class="section">
+                <div class="section-title">Conclusões Principais</div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Achado</th>
+                                <th style="width: 60%;">Detalhe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="status-ok">✓ Integridade do Script</span></td>
+                                <td>O script <span class="code">gerar_comparativo_reuniao.py</span> contém correspondências precisas e bem-fundamentadas</td>
+                            </tr>
+                            <tr>
+                                <td><span class="status-ok">✓ Parsing Robusto</span></td>
+                                <td>Tolerância a variações de formatação: "Artigo 24.o" (OCR), "Art.º 24", "Artigo 24º" → tudo correto</td>
+                            </tr>
+                            <tr>
+                                <td><span class="status-ok">✓ Cobertura Completa</span></td>
+                                <td>13 artigos com justificadamente sem correspondência; 20 artigos com correspondências validadas</td>
+                            </tr>
+                            <tr>
+                                <td><span class="status-ok">✓ Qualidade das Referências</span></td>
+                                <td>100% das referências articuladas existem nos documentos-fonte (@codigo, @rgbeac)</td>
+                            </tr>
+                            <tr>
+                                <td><span class="status-ok">✓ Recomendação</span></td>
+                                <td>O script pode ser utilizado com confiança para produzir documentos de análise (Excel, Word, HTML)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sample Validations -->
+            <div class="section">
+                <div class="section-title">Exemplos de Validações Spot-Check</div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h3 style="margin-bottom: 15px;">ART-21: Comercialização de Animais</h3>
+                    <table style="background: white; font-size: 0.85em;">
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>@codigo</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Art.º 24.º e Art.º 62.º</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><span class="status-ok">✓ Validados</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>@rgbeac</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Art.º 91-95 + Art.º 115 n.º 3</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><span class="status-ok">✓ Validados</span></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h3 style="margin-bottom: 15px;">ART-06: Responsabilidades Operacionais</h3>
+                    <table style="background: white; font-size: 0.85em;">
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>@codigo</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Arts. 4.º e 5.º</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><span class="status-ok">✓ Validados</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><strong>@rgbeac</strong></td>
+                            <td style="padding: 10px; border: 1px solid #ddd;">Art.º 7.º</td>
+                            <td style="padding: 10px; border: 1px solid #ddd;"><span class="status-ok">✓ Validado</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="section">
+                <div class="section-title">Detalhes Técnicos</div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Documento</th>
+                                <th>Código</th>
+                                <th>Ficheiro</th>
+                                <th>Parágrafos</th>
+                                <th>Artigos Indexados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Código do Animal (Proposta)</td>
+                                <td><span class="code">@codigo</span></td>
+                                <td><span class="code">Código do Animal DL214.2013_OCR.docx.docx</span></td>
+                                <td>1.018</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Regime Geral de Bem-Estar (Proposta)</td>
+                                <td><span class="code">@rgbeac</span></td>
+                                <td><span class="code">RGBEAC_junh_2025 Original com Índice.docx</span></td>
+                                <td>1.430</td>
+                                <td>162</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Auditoria Completa: 6 de abril de 2026</strong></p>
+            <p>Script: <span class="code">auditoria_correspondencias_final.py</span></p>
+            <p>Resultado: <span style="color: #27ae60; font-weight: bold;">✓ ZERO ERROS — TAXA DE PRECISÃO 100%</span></p>
+            <p style="margin-top: 20px; border-top: 1px solid #ddd; padding-top: 15px;">
+                Ficheiro de dados: <span class="code">AUDITORIA_CORRESPONDENCIAS.csv</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
