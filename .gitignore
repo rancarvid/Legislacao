@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 word/
 *.backup
+
+# Ficheiros de análise intermediários (duplicatas)
+analise_artigos_regulamento_detalhada.csv
+analise_disposicoes_detalhada.py
+disposicoes_regulamento_analise.csv
+extrair_disposicoes_json.py
