@@ -219,90 +219,108 @@ function considerandoMatch(cons, searchTerm) {{
          cons.regulamento.traducao.toLowerCase().includes(q);
 }}
 
-// Hook na pesquisa original para incluir preâmbulo
-const pesquisarOriginal = window.pesquisar;
-window.pesquisar = function(searchInput) {{
-  // Chamar pesquisa original
-  pesquisarOriginal.call(this, searchInput);
-
-  const q = searchInput.trim().toLowerCase();
-  if (!q) return;
-
-  // Procurar no preâmbulo
-  const matchingConsiderandos = [];
-  for (const tema of TEMAS_PREAMB) {{
-    const considerandos = PREAMB_POR_TEMA[tema];
-    for (const cons of considerandos) {{
-      if (considerandoMatch(cons, q)) {{
-        matchingConsiderandos.push({{ tema: tema, cons: cons }});
-      }}
-    }}
+// Hook na pesquisa original para incluir preâmbulo (com delay para garantir carregamento)
+setTimeout(function() {{
+  // Verificar se pesquisar existe
+  if (typeof window.pesquisar !== 'function') {{
+    console.warn('pesquisar function not found, retrying...');
+    return;
   }}
 
-  // Se há matches, adicionar à exibição
-  if (matchingConsiderandos.length > 0) {{
-    const container = document.getElementById('main-content');
-    if (!container) return;
+  const pesquisarOriginal = window.pesquisar;
 
-    // Adicionar seção de preâmbulo aos resultados
-    const prembSection = document.createElement('div');
-    prembSection.style.marginTop = '2rem';
-    prembSection.style.paddingTop = '1.5rem';
-    prembSection.style.borderTop = '2px solid #9B8B9E';
+  window.pesquisar = function(searchInput) {{
+    // Chamar pesquisa original
+    pesquisarOriginal.call(this, searchInput);
 
-    const prembTitle = document.createElement('h3');
-    prembTitle.textContent = 'Resultados no Preâmbulo';
-    prembTitle.style.color = '#9B8B9E';
-    prembTitle.style.marginBottom = '1rem';
-    prembSection.appendChild(prembTitle);
+    const q = searchInput.trim().toLowerCase();
+    if (!q) return;
 
-    // Agrupar por tema
-    const porTema = {{}};
-    for (const item of matchingConsiderandos) {{
-      if (!porTema[item.tema]) porTema[item.tema] = [];
-      porTema[item.tema].push(item.cons);
+    // Procurar no preâmbulo
+    const matchingConsiderandos = [];
+    for (const tema of TEMAS_PREAMB) {{
+      const considerandos = PREAMB_POR_TEMA[tema];
+      for (const cons of considerandos) {{
+        if (considerandoMatch(cons, q)) {{
+          matchingConsiderandos.push({{ tema: tema, cons: cons }});
+        }}
+      }}
     }}
 
-    for (const tema in porTema) {{
-      const temaDiv = document.createElement('div');
-      temaDiv.style.marginBottom = '1rem';
+    // Se há matches, adicionar à exibição
+    if (matchingConsiderandos.length > 0) {{
+      const container = document.getElementById('main-content');
+      if (!container) return;
 
-      const temaTit = document.createElement('strong');
-      temaTit.textContent = tema;
-      temaTit.style.color = '#9B8B9E';
-      temaTit.style.display = 'block';
-      temaTit.style.marginBottom = '0.5rem';
-      temaDiv.appendChild(temaTit);
-
-      const list = document.createElement('ul');
-      list.style.marginLeft = '1rem';
-      list.style.listStyle = 'none';
-
-      for (const cons of porTema[tema]) {{
-        const li = document.createElement('li');
-        li.style.marginBottom = '0.5rem';
-
-        const link = document.createElement('a');
-        link.href = 'javascript:void(0)';
-        link.textContent = 'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 70) + '…';
-        link.style.color = '#7B68A6';
-        link.style.textDecoration = 'none';
-        link.onclick = function() {{
-          exibirTemaPreambulo(tema);
-          return false;
-        }};
-
-        li.appendChild(link);
-        list.appendChild(li);
+      // Verificar se já existe seção de preâmbulo e remover
+      const existingPrembSection = container.querySelector('[data-preamb-results]');
+      if (existingPrembSection) {{
+        existingPrembSection.remove();
       }}
 
-      temaDiv.appendChild(list);
-      prembSection.appendChild(temaDiv);
-    }}
+      // Adicionar seção de preâmbulo aos resultados
+      const prembSection = document.createElement('div');
+      prembSection.setAttribute('data-preamb-results', 'true');
+      prembSection.style.marginTop = '2rem';
+      prembSection.style.paddingTop = '1.5rem';
+      prembSection.style.borderTop = '2px solid #9B8B9E';
 
-    container.appendChild(prembSection);
-  }}
-}};
+      const prembTitle = document.createElement('h3');
+      prembTitle.textContent = 'Resultados no Preâmbulo';
+      prembTitle.style.color = '#9B8B9E';
+      prembTitle.style.marginBottom = '1rem';
+      prembSection.appendChild(prembTitle);
+
+      // Agrupar por tema
+      const porTema = {{}};
+      for (const item of matchingConsiderandos) {{
+        if (!porTema[item.tema]) porTema[item.tema] = [];
+        porTema[item.tema].push(item.cons);
+      }}
+
+      for (const tema in porTema) {{
+        const temaDiv = document.createElement('div');
+        temaDiv.style.marginBottom = '1rem';
+
+        const temaTit = document.createElement('strong');
+        temaTit.textContent = tema;
+        temaTit.style.color = '#9B8B9E';
+        temaTit.style.display = 'block';
+        temaTit.style.marginBottom = '0.5rem';
+        temaDiv.appendChild(temaTit);
+
+        const list = document.createElement('ul');
+        list.style.marginLeft = '1rem';
+        list.style.listStyle = 'none';
+        list.style.padding = '0';
+
+        for (const cons of porTema[tema]) {{
+          const li = document.createElement('li');
+          li.style.marginBottom = '0.5rem';
+
+          const link = document.createElement('a');
+          link.href = 'javascript:void(0)';
+          link.textContent = 'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 70) + '…';
+          link.style.color = '#7B68A6';
+          link.style.textDecoration = 'none';
+          link.style.fontSize = '0.9rem';
+          link.onclick = function() {{
+            exibirTemaPreambulo(tema);
+            return false;
+          }};
+
+          li.appendChild(link);
+          list.appendChild(li);
+        }}
+
+        temaDiv.appendChild(list);
+        prembSection.appendChild(temaDiv);
+      }}
+
+      container.appendChild(prembSection);
+    }}
+  }};
+}}, 200);
 
 // Adicionar botões de preâmbulo à sidebar DEPOIS de renderSidebar() ser chamada
 setTimeout(function() {{
