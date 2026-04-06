@@ -123,12 +123,15 @@ def extrair_preamb():
                 }
             })
 
-    # Retornar organizado por tema para sidebar
+    # Retornar organizado por tema para sidebar (preservando ordem de TEMA_CONSIDERANDOS)
     preamb_por_tema = {}
+    # Inicializar dicionário na ordem correta dos temas
+    for tema in TEMA_CONSIDERANDOS.keys():
+        preamb_por_tema[tema] = []
+
+    # Preencher considerandos em cada tema
     for item in preamb:
         tema = item['tema']
-        if tema not in preamb_por_tema:
-            preamb_por_tema[tema] = []
         preamb_por_tema[tema].append(item)
 
     return preamb, preamb_por_tema
