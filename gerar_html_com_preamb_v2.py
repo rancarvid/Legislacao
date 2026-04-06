@@ -251,58 +251,28 @@ function prembMatch(cons, q) {{
          cons.regulamento.traducao.toLowerCase().includes(q);
 }}
 
-// Estender função de pesquisa para incluir preâmbulo
-const pesquisarOriginal = window.pesquisar || function() {{}};
-window.pesquisarComPreamb = function(q) {{
+// Estender pesquisa ORIGINAL (não sobrescrever)
+const pesquisarOriginalFunc = window.pesquisar;
+window.pesquisar = function(q) {{
+  // Chamar pesquisa original primeiro
+  pesquisarOriginalFunc(q);
+
+  // Depois adicionar lógica de busca no preâmbulo
   const searchTerm = q.trim().toLowerCase();
-
-  // Chamar pesquisa original para artigos
-  if (pesquisarOriginal) pesquisarOriginal(q);
-
-  // Se não há termo de busca, mostrar temas do preâmbulo normalmente
   if (!searchTerm) return;
 
   // Procurar considerandos que match
-  const matchingTemas = {{}};
+  let hasPreambMatch = false;
   for (const tema in PREAMB_POR_TEMA) {{
-    const considerandos = PREAMB_POR_TEMA[tema];
-    const matching = considerandos.filter(c => prembMatch(c, searchTerm));
-    if (matching.length > 0) {{
-      matchingTemas[tema] = matching;
-    }}
-  }}
-
-  // Se há matches no preâmbulo, mostrar
-  if (Object.keys(matchingTemas).length > 0) {{
-    const container = document.getElementById('main-content');
-    if (!container) return;
-
-    container.innerHTML = '<div class="search-results"><h2>Resultados da Pesquisa</h2>';
-
-    // Mostrar matches no preâmbulo
-    if (Object.keys(matchingTemas).length > 0) {{
-      container.innerHTML += '<div class="preamb-search-results"><h3>Preâmbulo</h3>';
-      for (const tema in matchingTemas) {{
-        const considerandos = matchingTemas[tema];
-        container.innerHTML += '<div class="search-group"><strong>' + tema + '</strong><ul>';
-        for (const cons of considerandos) {{
-          container.innerHTML += '<li><a href="javascript:void(0)" onclick="exibirTemaPreambulo(\'' + tema + '\')">' +
-            'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 80) + '...</a></li>';
-        }}
-        container.innerHTML += '</ul></div>';
+    for (const cons of PREAMB_POR_TEMA[tema]) {{
+      if (prembMatch(cons, searchTerm)) {{
+        hasPreambMatch = true;
+        break;
       }}
-      container.innerHTML += '</div>';
     }}
-    container.innerHTML += '</div>';
+    if (hasPreambMatch) break;
   }}
 }};
-
-// Substituir função de pesquisa
-if (document.getElementById('search-input')) {{
-  document.getElementById('search-input').oninput = function(e) {{
-    window.pesquisarComPreamb(this.value);
-  }};
-}}
 
 // Estilos para preâmbulo
 const stylePreambulo = document.createElement('style');
