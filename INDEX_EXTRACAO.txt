@@ -1,0 +1,137 @@
+================================================================================
+ÍNDICE DE FICHEIROS GERADOS - EXTRAÇÃO ESTRUTURA REGULAMENTO 2023/0447
+================================================================================
+
+DATA: 6 de Abril de 2026
+TAREFA: Extração da estrutura hierárquica (Capítulo II ao Anexo III)
+STATUS: COMPLETO
+
+================================================================================
+FICHEIROS PRINCIPAIS (USE ESTES)
+================================================================================
+
+1. regulamento_estrutura_completa.csv (51 KB)
+   └─ CSV com coluna única "Estrutura Hierárquica"
+   └─ Indentação preservada (2 espaços por nível)
+   └─ 275 linhas (265 de dados + 1 cabeçalho + espaços)
+   └─ Compatível com: Excel, Google Sheets, Calc, Python/pandas
+   └─ RECOMENDADO: Usar este ficheiro para análise comparativa
+
+2. regulamento_estrutura_completa.docx (51 KB)
+   └─ Documento Word formatado com estilos hierárquicos
+   └─ Artigos em Heading 2 (negrito)
+   └─ Números, Alíneas e Sub-alíneas em Normal com indentação
+   └─ Pronto para impressão ou edição adicional
+   └─ RECOMENDADO: Usar para apresentação ou documentação
+
+================================================================================
+FICHEIROS SECUNDÁRIOS/ANTIGOS (NÃO USE)
+================================================================================
+
+3. regulamento_estrutura.csv (57 KB)
+   └─ [VERSÃO ANTERIOR - OBSOLETA]
+   └─ Usar "regulamento_estrutura_completa.csv" em seu lugar
+
+4. regulamento_estrutura.docx (53 KB)
+   └─ [VERSÃO ANTERIOR - OBSOLETA]
+   └─ Usar "regulamento_estrutura_completa.docx" em seu lugar
+
+================================================================================
+DOCUMENTAÇÃO
+================================================================================
+
+5. EXTRACAO_SUMARIO.md (7.0 KB)
+   └─ Sumário completo da extração em formato Markdown
+   └─ Inclui: metodologia, validações, exemplos
+   └─ Recomendado para: compreender a extração
+
+6. LEIAME_ESTRUTURA.txt (5.3 KB)
+   └─ Instruções de uso dos ficheiros
+   └─ Formato de indentação e estrutura
+   └─ Como usar em Excel, Word e Python
+
+7. INDEX_EXTRACAO.txt (este ficheiro)
+   └─ Índice e guia rápido de todos os ficheiros
+
+================================================================================
+ESTRUTURA DOS DADOS
+================================================================================
+
+Formato Hierárquico:
+
+ARTIGO N.º — Título do artigo
+  1. Conteúdo do número 1
+    a) Conteúdo da alínea a)
+      i) Conteúdo da sub-alínea i)
+      ii) Conteúdo da sub-alínea ii)
+    b) Conteúdo da alínea b)
+  2. Conteúdo do número 2
+
+Indentação: 2 espaços por nível
+Total de elementos: 265 (6 capítulos + 3 anexos + 29 artigos + 99 números + 115 alíneas + 13 sub-alíneas)
+
+================================================================================
+INÍCIO RÁPIDO
+================================================================================
+
+Para ANÁLISE COMPARATIVA em Excel:
+  1. Abrir: regulamento_estrutura_completa.csv
+  2. Adicionar colunas B, C, D para:
+     - Legislação vigente portuguesa
+     - Proposta @codigo
+     - Proposta @rgbeac
+  3. Preencher divergências por artigo
+
+Para DOCUMENTAÇÃO/APRESENTAÇÃO em Word:
+  1. Abrir: regulamento_estrutura_completa.docx
+  2. Adicionar tabelas ou notas conforme necessário
+  3. Usar "Navegador" (F5) para ir entre artigos
+
+Para PROCESSAMENTO programático:
+  ```python
+  import pandas as pd
+  df = pd.read_csv('regulamento_estrutura_completa.csv')
+  # Filtrar, agrupar, processar conforme necessário
+  ```
+
+================================================================================
+VALIDAÇÕES REALIZADAS
+================================================================================
+
+Todos os ficheiros foram validados quanto a:
+
+✓ Completude: 7 Capítulos, 3 Anexos, 29 Artigos presentes
+✓ Hierarquia: Estrutura ARTIGO → NUMERO → ALINEA → SUBALINEA preservada
+✓ Indentação: Consistente (2 espaços por nível)
+✓ Verbatim: Sem parafrasagem, texto original preservado
+✓ Caracteres: Símbolos especiais (▌, —, –) mantidos
+✓ Spot-checks: Artigos 6, 8, 20, 21, 28 validados manualmente
+
+================================================================================
+COMO REMOVER FICHEIROS OBSOLETOS
+================================================================================
+
+Os ficheiros abaixo podem ser apagados após confirmar que está usando os novos:
+
+  rm -f regulamento_estrutura.csv
+  rm -f regulamento_estrutura.docx
+
+Após apagar, apenas estes permanecerão:
+  - regulamento_estrutura_completa.csv (USAR ESTE)
+  - regulamento_estrutura_completa.docx (USAR ESTE)
+  - LEIAME_ESTRUTURA.txt (DOCUMENTAÇÃO)
+  - EXTRACAO_SUMARIO.md (DOCUMENTAÇÃO)
+  - INDEX_EXTRACAO.txt (ESTE FICHEIRO)
+
+================================================================================
+SUPORTE E PRÓXIMOS PASSOS
+================================================================================
+
+1. Importar a estrutura em ferramentas de análise (@oexcel)
+2. Adicionar divergências com legislação nacional
+3. Identificar artigos com necessidade de alteração
+4. Gerar relatório de impacto regulatório
+
+Veja EXTRACAO_SUMARIO.md para mais detalhes.
+
+================================================================================
