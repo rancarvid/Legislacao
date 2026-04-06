@@ -163,6 +163,14 @@ def modificar_html_para_adicionar_preamb(html_original, preamb_por_tema, artigos
 
 const PREAMB_POR_TEMA = {dados_preamb_json};
 const TEMAS_PREAMB = {json.dumps(temas_preamb, ensure_ascii=False)};
+let currentPreambuloSearchResults = null; // Guardar resultados da pesquisa
+
+function highlightPreambuloText(text) {{
+  // Aplicar highlight igual aos artigos, usando a variável searchTerm global
+  if (!searchTerm || !text) return text;
+  const re = new RegExp(searchTerm.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&'), 'gi');
+  return text.replace(re, m => `<mark>${{m}}</mark>`);
+}}
 
 function exibirTemaPreambulo(tema) {{
   const considerandos = PREAMB_POR_TEMA[tema];
@@ -191,7 +199,7 @@ function exibirTemaPreambulo(tema) {{
         @regulamento — Considerando ${{cons.numero}} (EN)
         <span class="card-header-ref">Texto Original EN</span>
       </div>
-      <div class="card-body">${{cons.regulamento.texto.replace(/\\n/g, '<br>')}}</div>
+      <div class="card-body">${{highlightPreambuloText(cons.regulamento.texto).replace(/\\n/g, '<br>')}}</div>
     `;
     container.appendChild(cardEn);
 
@@ -204,7 +212,7 @@ function exibirTemaPreambulo(tema) {{
         @regulamento — Considerando ${{cons.numero}} (PT)
         <span class="card-header-ref">Tradução PT-PT</span>
       </div>
-      <div class="card-body">${{cons.regulamento.traducao.replace(/\\n/g, '<br>')}}</div>
+      <div class="card-body">${{highlightPreambuloText(cons.regulamento.traducao).replace(/\\n/g, '<br>')}}</div>
     `;
     container.appendChild(cardPt);
   }}
@@ -219,6 +227,61 @@ function considerandoMatch(cons, searchTerm) {{
          cons.regulamento.traducao.toLowerCase().includes(q);
 }}
 
+// Função para restaurar resultados da pesquisa do preâmbulo na sidebar
+function restorePreambuloSearchResults() {{
+  if (!currentPreambuloSearchResults || currentPreambuloSearchResults.length === 0) return;
+
+  const nav = document.getElementById('sidebar');
+  if (!nav) return;
+
+  // Remover seção anterior se existir
+  const existing = nav.querySelector('[data-preamb-search-results]');
+  if (existing) existing.remove();
+
+  // Recriar seção de resultados do preâmbulo
+  const prembSection = document.createElement('div');
+  prembSection.setAttribute('data-preamb-search-results', 'true');
+  prembSection.style.marginTop = '1rem';
+  prembSection.style.borderTop = '1px solid rgba(255,255,255,0.2)';
+  prembSection.style.paddingTop = '1rem';
+
+  const prembLabel = document.createElement('p');
+  prembLabel.textContent = 'Preâmbulo (' + currentPreambuloSearchResults.length + ')';
+  prembLabel.style.color = '#9B8B9E';
+  prembLabel.style.fontSize = '0.9rem';
+  prembLabel.style.fontWeight = 'bold';
+  prembLabel.style.marginBottom = '0.5rem';
+  prembSection.appendChild(prembLabel);
+
+  // Recriar botões
+  currentPreambuloSearchResults.forEach(function(item) {{
+    const btn = document.createElement('button');
+    btn.className = 'preamb-search-btn';
+    btn.innerHTML = 'PREAMB-' + String(item.cons.numero).padStart(2, '0') + ' — ' + item.tema +
+                   '<small>' + item.cons.regulamento.traducao.substring(0, 50) + '…</small>';
+    btn.style.width = '100%';
+    btn.style.background = 'rgba(155, 139, 158, 0.15)';
+    btn.style.border = 'none';
+    btn.style.borderLeft = '3px solid #9B8B9E';
+    btn.style.color = 'white';
+    btn.style.padding = '0.75rem 1rem';
+    btn.style.textAlign = 'left';
+    btn.style.cursor = 'pointer';
+    btn.style.fontSize = '0.85rem';
+    btn.style.marginBottom = '0.5rem';
+    btn.style.transition = 'all 0.2s';
+    btn.onmouseover = function() {{ this.style.background = 'rgba(155, 139, 158, 0.25)'; }};
+    btn.onmouseout = function() {{ this.style.background = 'rgba(155, 139, 158, 0.15)'; }};
+    btn.onclick = function() {{
+      exibirTemaPreambulo(item.tema);
+    }};
+
+    prembSection.appendChild(btn);
+  }});
+
+  nav.appendChild(prembSection);
+}}
+
 // Hook na pesquisa original para incluir preâmbulo na sidebar
 function setupPreambuloSearch() {{
   if (typeof window.pesquisar !== 'function') {{
@@ -228,6 +291,7 @@ function setupPreambuloSearch() {{
   }}
 
   const pesquisarOriginal = window.pesquisar;
+  const renderOriginal = typeof window.render !== 'undefined' ? window.render : null;
   console.log('Setting up preamble search hook');
 
   window.pesquisar = function(q) {{
@@ -237,7 +301,10 @@ function setupPreambuloSearch() {{
     pesquisarOriginal.call(this, q);
 
     const searchTerm = q.trim().toLowerCase();
-    if (!searchTerm) return;
+    if (!searchTerm) {{
+      currentPreambuloSearchResults = null;
+      return;
+    }}
 
     // Agora procurar no preâmbulo
     console.log('Procurando no preâmbulo por:', searchTerm);
@@ -255,66 +322,38 @@ function setupPreambuloSearch() {{
 
     console.log('Total de matches no preâmbulo:', matchingConsiderandos.length);
 
-    // Se há matches, adicionar à sidebar
+    // Guardar resultados para restaurar depois
     if (matchingConsiderandos.length > 0) {{
-      const nav = document.getElementById('sidebar');
-      if (!nav) {{
-        console.warn('sidebar not found');
-        return;
-      }}
-
-      // Remover seção anterior se existir
-      const existing = nav.querySelector('[data-preamb-search-results]');
-      if (existing) existing.remove();
-
-      // Criar seção de resultados do preâmbulo na sidebar
-      const prembSection = document.createElement('div');
-      prembSection.setAttribute('data-preamb-search-results', 'true');
-      prembSection.style.marginTop = '1rem';
-      prembSection.style.borderTop = '1px solid rgba(255,255,255,0.2)';
-      prembSection.style.paddingTop = '1rem';
-
-      const prembLabel = document.createElement('p');
-      prembLabel.textContent = 'Preâmbulo (' + matchingConsiderandos.length + ')';
-      prembLabel.style.color = '#9B8B9E';
-      prembLabel.style.fontSize = '0.9rem';
-      prembLabel.style.fontWeight = 'bold';
-      prembLabel.style.marginBottom = '0.5rem';
-      prembSection.appendChild(prembLabel);
-
-      // Criar botões para cada considerando encontrado
-      matchingConsiderandos.forEach(function(item) {{
-        const btn = document.createElement('button');
-        btn.className = 'preamb-search-btn';
-        btn.innerHTML = 'PREAMB-' + String(item.cons.numero).padStart(2, '0') + ' — ' + item.tema +
-                       '<small>' + item.cons.regulamento.traducao.substring(0, 50) + '…</small>';
-        btn.style.width = '100%';
-        btn.style.background = 'rgba(155, 139, 158, 0.15)';
-        btn.style.border = 'none';
-        btn.style.borderLeft = '3px solid #9B8B9E';
-        btn.style.color = 'white';
-        btn.style.padding = '0.75rem 1rem';
-        btn.style.textAlign = 'left';
-        btn.style.cursor = 'pointer';
-        btn.style.fontSize = '0.85rem';
-        btn.style.marginBottom = '0.5rem';
-        btn.style.transition = 'all 0.2s';
-        btn.onmouseover = function() {{ this.style.background = 'rgba(155, 139, 158, 0.25)'; }};
-        btn.onmouseout = function() {{ this.style.background = 'rgba(155, 139, 158, 0.15)'; }};
-        btn.onclick = function() {{
-          exibirTemaPreambulo(item.tema);
-        }};
-
-        prembSection.appendChild(btn);
-      }});
-
-      nav.appendChild(prembSection);
-      console.log('Resultados do preâmbulo adicionados à sidebar');
+      currentPreambuloSearchResults = matchingConsiderandos;
+      // Restaurar imediatamente
+      restorePreambuloSearchResults();
+    }} else {{
+      currentPreambuloSearchResults = null;
     }}
   }};
+
+  // Hook na função render() original para restaurar resultados após clicar em artigo
+  if (renderOriginal && typeof window.render === 'function') {{
+    window.render = function() {{
+      renderOriginal.call(this);
+      // Restaurar resultados do preâmbulo APÓS render
+      setTimeout(restorePreambuloSearchResults, 50);
+    }};
+  }}
 }}
 
 setupPreambuloSearch();
+
+// Hook na função limparPesquisa() para também limpar preâmbulo
+setTimeout(function() {{
+  if (typeof window.limparPesquisa === 'function') {{
+    const limparOriginal = window.limparPesquisa;
+    window.limparPesquisa = function() {{
+      currentPreambuloSearchResults = null;
+      limparOriginal.call(this);
+    }};
+  }}
+}}, 100);
 
 // Adicionar botões de preâmbulo à sidebar DEPOIS de renderSidebar() ser chamada
 setTimeout(function() {{
