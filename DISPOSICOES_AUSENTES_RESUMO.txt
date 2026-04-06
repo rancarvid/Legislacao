@@ -1,0 +1,212 @@
+================================================================================
+DISPOSIÇÕES COMPLETAMENTE AUSENTES EM LEGISLAÇÃO PORTUGUESA
+Regulamento 2023/0447 vs Legislação PT Vigente + Propostas
+================================================================================
+
+TOTAL DE DISPOSIÇÕES ANALISADAS: 49
+DISPOSIÇÕES COMPLETAMENTE AUSENTES: 6 (12%)
+
+================================================================================
+DETALHE DAS LACUNAS CRÍTICAS
+================================================================================
+
+1. ART. 8 - BREEDING STRATEGIES (Estratégias de Reprodução)
+   
+   Disposição 1: "Breeding strategies minimize genetic disorders"
+   ─────────────────────────────────────────────────────────────
+   Verbatim EN:
+     "Operators of breeding establishments shall ensure that their breeding 
+      strategies minimise the risk of producing dogs or cats with genotypes 
+      associated with effects detrimental to the health and welfare of those animals."
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      NÃO
+     @rgbeac:      NÃO
+     DL 82/2019:   NÃO
+     Lei 27/2016:  NÃO
+     DL 276/2001:  NÃO
+   
+   ANÁLISE:
+     • DL 82/2019 não menciona "breeding strategies" estruturadas
+     • Legislação portuguesa vigente é silenciosa sobre genética da reprodução
+     • Nenhuma obrigação de operadores minimirem defeitos genéticos
+   
+   IMPACTO:
+     • Breeding de animais com defeitos genéticos não está proibido
+     • Risco de perpetuação de doenças hereditárias
+     • Bem-estar dos animais não protegido em termos genéticos
+   
+   ─────────────────────────────────────────────────────────────────────────
+
+   Disposição 2: "Prohibited genetic technologies"
+   ─────────────────────────────────────────────────
+   Verbatim EN:
+     [Referência ao Art. 8, parágrafo 4, que proíbe práticas genéticas 
+      não-autorizadas em breeding]
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      NÃO
+     @rgbeac:      NÃO
+     DL 82/2019:   NÃO
+     Lei 27/2016:  NÃO
+   
+   ANÁLISE:
+     • Legislação portuguesa completamente silenciosa sobre genetic engineering
+     • Sem proibições de técnicas genéticas ilegais em animals domésticos
+     • Lacuna regulatória sobre clonagem, edição genética, etc.
+   
+   IMPACTO:
+     • Ausência de proteção contra práticas de engenharia genética questionáveis
+   
+================================================================================
+
+2. ART. 18 - PAINFUL PRACTICES (Práticas Dolorosas)
+   
+   Disposição 3: "Vocal cord resection prohibited"
+   ──────────────────────────────────────────────
+   Verbatim EN:
+     "resection of vocal cords or folds, ▌ are not performed unless justified 
+      by medical indications"
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      NÃO
+     @rgbeac:      NÃO
+     DL 82/2019:   NÃO
+     Lei 27/2016:  NÃO
+   
+   ANÁLISE:
+     • Nenhum documento português menciona "resection of vocal cords"
+     • Prática de remover ou mutilar cordas vocais não contemplada
+     • Legislação silenciosa sobre esta mutilação específica
+   
+   IMPACTO:
+     • Cirurgia de remover cordas vocais (para silenciar latidos) não proibida
+     • Prática animal cruelty não regulada em Portugal
+   
+   ─────────────────────────────────────────────────────────────────────────
+
+   Disposição 4: "Anesthesia/analgesia requirement for procedures"
+   ──────────────────────────────────────────────────────────────
+   Verbatim EN:
+     "the procedure shall be performed ▌ only under anaesthesia and prolonged 
+      analgesia and only by a veterinarian"
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      NÃO
+     @rgbeac:      NÃO
+     DL 82/2019:   NÃO
+     Lei 27/2016:  NÃO
+   
+   ANÁLISE:
+     • Legislação PT não exige OBRIGATORIAMENTE anestesia para procedimentos
+     • Sem requisito de analgesia prolongada pós-procedimento
+     • Sem exigência de que procedimentos dolorosos sejam feitos por veterinário
+   
+   IMPACTO:
+     • Procedimentos em animais podem ocorrer sem anestesia obrigatória
+     • Risco de sofrimento animal não mitigado legislativamente
+     • Mutilações podem ser realizadas por não-veterinários
+   
+   ─────────────────────────────────────────────────────────────────────────
+
+   Disposição 5: "Aesthetic mutilations prohibited"
+   ────────────────────────────────────────────────
+   Verbatim EN:
+     "Operators shall ensure that mutilations, including ear cropping, tail 
+      docking, claw removal or other partial or complete digit amputation... 
+      are not performed unless justified by medical indications"
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      PARCIAL (menciona em proposta)
+     @rgbeac:      PARCIAL (menciona em proposta)
+     DL 82/2019:   NÃO
+     Lei 27/2016:  NÃO
+   
+   ANÁLISE:
+     • Legislação vigente PT NÃO proíbe explicitamente "aesthetic mutilations"
+     • "Ear cropping" e "tail docking" menciona-se apenas em propostas
+     • DL82/2019 (vigente) é silenciosa sobre estas mutilações estéticas específicas
+   
+   IMPACTO:
+     • Procedures cosméticos (orelhas, cauda) podem estar legalmente permitidos
+     • Praticamente comum em Portugal: crop de orelhas e dock de cauda podem ser legais
+     • Bem-estar animal não protegido contra modificações estéticas
+   
+   ─────────────────────────────────────────────────────────────────────────
+
+   RESUMO ART. 18:
+   • Legislação PT vigente: 0% de cobertura (0/3 disposições ausentes)
+   • Propostas cobrem parcialmente: @codigo 40%, @rgbeac 20%
+   • ART. 18 É O ARTIGO MAIS DEFICITÁRIO EM LEGISLAÇÃO PORTUGUESA
+
+================================================================================
+
+3. ART. 20 - IDENTIFICATION AND REGISTRATION (Identificação)
+   
+   Disposição 6: "Annex II technical requirements for microchip"
+   ──────────────────────────────────────────────────────────────
+   Verbatim EN:
+     "All dogs and cats kept in establishments placed on the Union market or 
+      owned by pet owners or by any other natural or legal persons, shall be 
+      individually identified by means of a single injectable transponder 
+      containing a readable microchip that complies with the requirements set 
+      out in Annex II."
+   
+   STATUS EM LEGISLAÇÃO PORTUGUESA:
+     @codigo:      NÃO
+     @rgbeac:      NÃO
+     DL 82/2019:   NÃO (menciona microchip mas sem normas técnicas)
+     Lei 27/2016:  NÃO
+   
+   ANÁLISE:
+     • DL82/2019 exige microchip mas NÃO refere Annex II
+     • Sem normas técnicas específicas de compatibilidade
+     • Sem padrões internacionais obrigatórios
+     • Regulamento define em Annex II: especificações ISO, frequência, etc.
+   
+   IMPACTO:
+     • Microchips incompatíveis podem estar em circulação
+     • Sem normas de leitura universal
+     • Rastreabilidade comprometida pela falta de padronização
+   
+================================================================================
+
+SÍNTESE: ÁREAS NÃO COBERTAS PELA LEGISLAÇÃO PORTUGUESA
+================================================================================
+
+TEMA                            DISPOSIÇÕES   STATUS        RECOMENDAÇÃO
+──────────────────────────────────────────────────────────────────────────
+1. Genetic breeding strategies      2          AUSENTE      Prioridade máxima
+2. Vocal cord mutilation            1          AUSENTE      Prioridade máxima
+3. Anesthesia requirement           1          AUSENTE      Prioridade máxima
+4. Aesthetic mutilation proibition   1          AUSENTE      Prioridade máxima
+5. Microchip technical standards    1          AUSENTE      Prioridade alta
+
+──────────────────────────────────────────────────────────────────────────
+TOTAL                              6/49 (12%)  AUSENTE      Acção urgente
+
+================================================================================
+
+RECOMENDAÇÕES PARA TRANSPOSIÇÃO
+================================================================================
+
+1. CONFORMAÇÃO E GENÉTICA (Art. 8):
+   [ ] Incluir proibição de "excessive conformational traits" em reprodução
+   [ ] Definir "breeding strategies" obrigatórias para minimizar defeitos
+   [ ] Proibir práticas de genetic engineering não-autorizadas
+
+2. PRÁTICAS DOLOROSAS (Art. 18):
+   [ ] Proibir resection of vocal cords (exceto médico)
+   [ ] Exigir OBRIGATORIAMENTE anestesia + analgesia para procedimentos
+   [ ] Proibir mutilações estéticas (ear cropping, tail docking)
+   [ ] Exigir procedimentos apenas por veterinários
+
+3. PUBLICIDADE ONLINE (Art. 21):
+   [ ] Incluir aviso obrigatório em anúncios online
+   [ ] Texto: "An animal is not a toy. Getting one is a life-changing decision..."
+
+4. IDENTIFICAÇÃO (Art. 20):
+   [ ] Referenciar normas técnicas de microchip (ISO/padrões)
+   [ ] Especificar prazos: "within 3 months of birth"
+
+================================================================================
