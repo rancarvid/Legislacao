@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Disposições Novas — Regulamento 2023/0447</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.1rem; opacity: 0.9; }
+        
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        
+        .indice {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .indice h2 { color: #667eea; margin-bottom: 1rem; font-size: 1.4rem; }
+        .indice a {
+            display: inline-block;
+            margin: 0.5rem 1rem 0.5rem 0;
+            padding: 0.75rem 1.5rem;
+            background: #f0f0f0;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .indice a:hover { background: #667eea; color: white; }
+        
+        .categoria {
+            margin-bottom: 3rem;
+            scroll-margin-top: 100px;
+        }
+        .categoria-titulo {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            border-left: 5px solid #667eea;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+        .categoria-titulo h2 {
+            color: #667eea;
+            font-size: 1.6rem;
+            margin-bottom: 0.3rem;
+        }
+        .categoria-titulo .count {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .artigo-card {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        .artigo-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+        
+        .artigo-header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            user-select: none;
+        }
+        .artigo-header:hover { background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); }
+        
+        .artigo-numero {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+        .artigo-titulo {
+            font-size: 1.3rem;
+            color: #333;
+            font-weight: 500;
+            display: inline-block;
+        }
+        .artigo-toggle {
+            float: right;
+            font-size: 1.4rem;
+            color: #667eea;
+        }
+        
+        .artigo-corpo {
+            padding: 1.5rem;
+            display: none;
+        }
+        .artigo-corpo.expanded { display: block; }
+        
+        .secao {
+            margin-bottom: 1.5rem;
+        }
+        .secao-titulo {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .secao-conteudo {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-left: 3px solid #667eea;
+            border-radius: 4px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .texto-en {
+            font-style: italic;
+            color: #555;
+            border-left-color: #764ba2;
+        }
+        
+        .achados-pt {
+            border-left-color: #f39c12;
+        }
+        
+        .por-que-novo {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #f0f0f0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #667eea;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔍 Disposições Novas — Regulamento 2023/0447</h1>
+        <p>Artigos e normas sem correspondência na legislação portuguesa vigente</p>
+    </header>
+    
+    <div class="container">
+        <div class="indice">
+            <h2>Índice de Categorias</h2>
+<a href="#estrutural-escopo">Estrutural/Escopo (5)</a>
+<a href="#bem-estar-(novo-padrão)">Bem-estar (Novo Padrão) (7)</a>
+<a href="#estabelecimentos-aprovações">Estabelecimentos/Aprovações (4)</a>
+<a href="#informação-formação">Informação/Formação (2)</a>
+<a href="#práticas-dolorosas">Práticas Dolorosas (2)</a>
+<a href="#rastreabilidade-digital">Rastreabilidade Digital (5)</a>
+<a href="#controlo-de-importação">Controlo de Importação (1)</a>
+<a href="#procedimentos-aplicação">Procedimentos/Aplicação (7)</a>
+
+        </div>
+
+        <div class="categoria" id="estrutural-escopo">
+            <div class="categoria-titulo">
+                <h2>Estrutural/Escopo</h2>
+                <span class="count">5 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 1</span>
+                    <span class="artigo-titulo">Subject matter</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições que definem o âmbito material, pessoal e conceitual do Regulamento — sem correspondência em legislação nacional porque tratam de harmonização europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): objeto, âmbito, bem-estar animal | RGBEAC (@rgbeac): objeto, âmbito, bem-estar animal, rastreabilidade | DL 82/2019: objeto, âmbito, bem-estar animal | Lei 27/2016: objeto, âmbito, bem-estar animal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">This Regulation lays down minimum requirements for:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 2</span>
+                    <span class="artigo-titulo">Material scope</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições que definem o âmbito material, pessoal e conceitual do Regulamento — sem correspondência em legislação nacional porque tratam de harmonização europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): criação, manutenção | RGBEAC (@rgbeac): criação, manutenção, colocação no mercado | DL 82/2019: colocação no mercado | Lei 27/2016: criação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	This Regulation applies to the breeding, keeping, tracing, placing on the market and entry into the Union of dogs and cats ▌ .</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 3</span>
+                    <span class="artigo-titulo">Personal scope</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições que definem o âmbito material, pessoal e conceitual do Regulamento — sem correspondência em legislação nacional porque tratam de harmonização europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): operadores | RGBEAC (@rgbeac): operadores, proprietários | DL 82/2019: proprietários</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Chapter II of this Regulation applies to all operators.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 4</span>
+                    <span class="artigo-titulo">Definitions</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições que definem o âmbito material, pessoal e conceitual do Regulamento — sem correspondência em legislação nacional porque tratam de harmonização europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): definições, detentor, criador | RGBEAC (@rgbeac): definições, detentor, criador | DL 82/2019: definições, detentor, criador | Lei 27/2016: detentor</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">For the purposes of this Regulation, the following definitions apply:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 5</span>
+                    <span class="artigo-titulo">Exemptions from the obligations set out in this Chapter</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições que definem o âmbito material, pessoal e conceitual do Regulamento — sem correspondência em legislação nacional porque tratam de harmonização europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): ninhadas | RGBEAC (@rgbeac): ninhadas, abrigos | DL 82/2019: isenções</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	A breeding establishment where no more than two litters per calendar year are produced for placing on the market shall be subject to only the obligations laid down in Article 6, Article 7(1) (2), (3) and (4). Article 8, Article 9, Article 11, Article 14(2), (3) and (4), Article 15(3), (4) and (8), Article 16(1). points (b), (c) and (d), Article 17(2), (3), (5) and (7), Article 18, Article 19(1) and points 3 and 4.3 of Annex I.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="bem-estar-(novo-padrão)">
+            <div class="categoria-titulo">
+                <h2>Bem-estar (Novo Padrão)</h2>
+                <span class="count">7 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 6</span>
+                    <span class="artigo-titulo">General welfare principles ▌</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): princípios gerais, bem-estar, água, alimentação, ambiente | RGBEAC (@rgbeac): bem-estar, água, alimentação, ambiente | DL 82/2019: bem-estar, alimentação | Lei 27/2016: bem-estar, alimentação, ambiente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">Operators ▌ shall apply the following general welfare principles with respect to dogs or cats bred or kept in their establishment:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 7</span>
+                    <span class="artigo-titulo">General welfare obligations</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): obrigações, bem-estar, responsabilidade | RGBEAC (@rgbeac): obrigações, bem-estar, responsabilidade | DL 82/2019: obrigações, bem-estar, responsabilidade | Lei 27/2016: bem-estar, responsabilidade</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators ▌ shall be responsible for the welfare of dogs and cats kept in establishments under their responsibility and control, and shall be responsible for minimising any risks to the welfare of those animals.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 8</span>
+                    <span class="artigo-titulo">Breeding strategies obligations</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): genética, características | RGBEAC (@rgbeac): características, hereditárias | DL 82/2019: características</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators of breeding establishments shall ensure that their breeding strategies minimise the risk of producing dogs or cats with genotypes associated with effects detrimental to the health and welfare of those animals.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 14</span>
+                    <span class="artigo-titulo">Feeding and watering</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): alimentação | RGBEAC (@rgbeac): alimentação, nutrição | DL 82/2019: alimentação | Lei 27/2016: alimentação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators ▌ shall ensure that dogs and cats are fed in accordance with the requirements laid down in point 1 of Annex I ▌ .</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 15</span>
+                    <span class="artigo-titulo">Housing</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): alojamento, abrigo, espaço | RGBEAC (@rgbeac): alojamento, abrigo, espaço | DL 82/2019: alojamento, abrigo | Lei 27/2016: alojamento</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	The operators of breeding and selling establishments shall ensure that dogs and cats are housed in accordance with point 2 of Annex I. The operators of shelters shall ensure that dogs and cats are housed in accordance with point 2.2 of Annex I.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 16</span>
+                    <span class="artigo-titulo">Health</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): saúde, veterinário, doença | RGBEAC (@rgbeac): saúde, veterinário, doença | DL 82/2019: saúde, veterinário, doença | Lei 27/2016: saúde, veterinário, doença</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">▌</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 17</span>
+                    <span class="artigo-titulo">Behavioural needs</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações detalhadas sobre bem-estar baseadas em &#x27;five domains&#x27; — conceito científico não incorporado na legislação portuguesa existente</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): comportamento, exercício | RGBEAC (@rgbeac): comportamento, necessidades comportamentais, exercício | DL 82/2019: exercício | Lei 27/2016: comportamento, exercício</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators ▌ shall ensure that measures are taken to meet the behavioural needs of ▌ dogs and cats in accordance with point 4 of Annex I.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="estabelecimentos-aprovações">
+            <div class="categoria-titulo">
+                <h2>Estabelecimentos/Aprovações</h2>
+                <span class="count">4 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 9</span>
+                    <span class="artigo-titulo">Notification and registration of establishments</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema de notificação, registro, aprovação e supervisão de estabelecimentos — regime administrativo não previsto na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): notificação, estabelecimentos | RGBEAC (@rgbeac): notificação, estabelecimentos | DL 82/2019: estabelecimentos</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators ▌ shall notify ▌ the competent authorities of their activity, providing at least the following information for each of their establishments:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 10</span>
+                    <span class="artigo-titulo">Approval of breeding establishments</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema de notificação, registro, aprovação e supervisão de estabelecimentos — regime administrativo não previsto na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): aprovação, criador, inspeção | RGBEAC (@rgbeac): aprovação, criador, inspeção | DL 82/2019: aprovação, criador</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators of breeding establishments that either produce or intend to produce more than five litters per calendar year or that keep more than a combined total of five bitches or queens at any given time shall place dogs or cats on the market only after their establishment has been approved by the competent authority.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 12</span>
+                    <span class="artigo-titulo">Animal welfare competences of animal carers</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema de notificação, registro, aprovação e supervisão de estabelecimentos — regime administrativo não previsto na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): competências, educação | RGBEAC (@rgbeac): competências, educação | DL 82/2019: competências, educação | Lei 27/2016: educação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Animal carers, other than volunteers in shelters and interns who are acting under the responsibility of a competent animal carer, shall have the following competences as regards the dogs and cats they are handling:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 13</span>
+                    <span class="artigo-titulo">Advisory welfare visits</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema de notificação, registro, aprovação e supervisão de estabelecimentos — regime administrativo não previsto na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): bem-estar, veterinário | RGBEAC (@rgbeac): bem-estar, veterinário | DL 82/2019: bem-estar, veterinário | Lei 27/2016: bem-estar, veterinário</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators ▌ shall:</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="informação-formação">
+            <div class="categoria-titulo">
+                <h2>Informação/Formação</h2>
+                <span class="count">2 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 11</span>
+                    <span class="artigo-titulo">Obligation of informing on responsible ownership</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações de informação ao comprador e formação de cuidadores — requisitos não sistematizados na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): informação, vacinação | RGBEAC (@rgbeac): informação, vacinação | DL 82/2019: informação, vacinação | Lei 27/2016: vacinação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	▌Operators▌ shall provide to the acquirer of a dog or cat written information necessary to enable the acquirer to ensure the animal’s welfare, including information on responsible ownership and on the specific needs of the animal in terms of feeding, care, health and housing, as well as information on its behavioural needs and health history.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 22</span>
+                    <span class="artigo-titulo">Training</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Obrigações de informação ao comprador e formação de cuidadores — requisitos não sistematizados na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): formação, educação | RGBEAC (@rgbeac): formação, educação | DL 82/2019: formação, educação | Lei 27/2016: educação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	For the purposes of Article 12, ▌the competent authorities shall be responsible for:</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="práticas-dolorosas">
+            <div class="categoria-titulo">
+                <h2>Práticas Dolorosas</h2>
+                <span class="count">2 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 18</span>
+                    <span class="artigo-titulo">Painful practices</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Proibição de procedimentos estéticos dolorosos — expansão regulatória não contemplada na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): corte de orelhas, corte de cauda</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Operators shall ensure that mutilations, including ear cropping, tail docking, claw removal or other partial or complete digit amputation, and resection of vocal cords or folds, ▌ are not performed unless justified by medical indications, including where the procedure is prophylactic, with the sole purpose of maintaining or improving the health of dogs or cats or preventing their injury. In such cases, the procedure shall be performed ▌ only under anaesthesia and prolonged analgesia and only by a veterinarian.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 19</span>
+                    <span class="artigo-titulo">Aesthetic shows, exhibitions and competitions</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Proibição de procedimentos estéticos dolorosos — expansão regulatória não contemplada na legislação portuguesa</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): exposições, concursos | RGBEAC (@rgbeac): exposições, concursos</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	In aesthetic shows, exhibitions and competitions of dogs and cats, operators of breeding and selling establishments shall not use dogs or cats with excessive conformational traits, or dogs or cats which have been mutilated in a way that alters their physical characteristics.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="rastreabilidade-digital">
+            <div class="categoria-titulo">
+                <h2>Rastreabilidade Digital</h2>
+                <span class="count">5 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 20</span>
+                    <span class="artigo-titulo">Identification and registration of dogs and cats</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema integrado de identificação, registro e bases de dados de cães/gatos com requisitos técnicos e de proteção de dados — infraestrutura não existente em Portugal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): identificação, microchip, base de dados | RGBEAC (@rgbeac): identificação, base de dados | DL 82/2019: identificação, base de dados</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	▌All dogs and cats kept in establishments placed on the market or owned by pet owners or by any other natural or legal persons, shall be individually identified by means of a single injectable transponder containing a readable microchip that complies with the requirements set out in Annex II. ▌</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 21</span>
+                    <span class="artigo-titulo">Requirements on online advertising and placing on the market</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema integrado de identificação, registro e bases de dados de cães/gatos com requisitos técnicos e de proteção de dados — infraestrutura não existente em Portugal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): publicidade, venda | RGBEAC (@rgbeac): publicidade, online, colocação no mercado, venda | DL 82/2019: colocação no mercado</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	When operators advertise a dog or a cat online with a view to placing it on the Union market, they shall ensure that the following warning is included in the advertisement in clearly visible and bold characters:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 23</span>
+                    <span class="artigo-titulo">Databases of dogs and cats</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema integrado de identificação, registro e bases de dados de cães/gatos com requisitos técnicos e de proteção de dados — infraestrutura não existente em Portugal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): identificação | RGBEAC (@rgbeac): bases de dados, identificação | DL 82/2019: bases de dados, identificação</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	Member States shall be responsible for establishing and maintaining databases for the registration of identified dogs and cats in accordance with Article 20(1) and (2) and Article 26(3) and Article 26(4), second subparagraph.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 24</span>
+                    <span class="artigo-titulo">Collection of data on animal welfare and reporting</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema integrado de identificação, registro e bases de dados de cães/gatos com requisitos técnicos e de proteção de dados — infraestrutura não existente em Portugal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): relatório | RGBEAC (@rgbeac): relatório | Lei 27/2016: relatório</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	The competent authorities shall collect, analyse and publish the data on animal welfare set out in Annex III:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 25</span>
+                    <span class="artigo-titulo">Data protection</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Sistema integrado de identificação, registro e bases de dados de cães/gatos com requisitos técnicos e de proteção de dados — infraestrutura não existente em Portugal</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): proteção de dados | RGBEAC (@rgbeac): proteção de dados, dados pessoais | DL 82/2019: proteção de dados, dados pessoais</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	The competent authorities of the Member States shall be controllers within the meaning of Regulation (EU) 2016/679 in relation to the processing of personal data collected under Articles 9 and 10 of this Regulation, as well as under Article 23(1) of this Regulation when used for the purposes of official control.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="controlo-de-importação">
+            <div class="categoria-titulo">
+                <h2>Controlo de Importação</h2>
+                <span class="count">1 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 26</span>
+                    <span class="artigo-titulo">Entry of dogs and cats into the Union</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Requisitos específicos de bem-estar para cães/gatos importados de terceiros países — disposição nova</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): entrada, países terceiros | RGBEAC (@rgbeac): entrada, importação, países terceiros | DL 82/2019: entrada | Lei 27/2016: entrada</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	▌Dogs and cats may be brought into the Union for the purpose of being placed on the Union market  only if the following conditions are met:</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoria" id="procedimentos-aplicação">
+            <div class="categoria-titulo">
+                <h2>Procedimentos/Aplicação</h2>
+                <span class="count">7 artigo(s)</span>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 27</span>
+                    <span class="artigo-titulo">Amendment to the Annexes</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Nenhuma correspondência lexical</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">The Commission is empowered to adopt delegated acts in accordance with Article 28 to amend the Annexes to this Regulation to take account of scientific and technical progress, including, where relevant, the scientific opinions of EFSA, as regards:</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 28</span>
+                    <span class="artigo-titulo">Exercise of the delegation</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Nenhuma correspondência lexical</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 29</span>
+                    <span class="artigo-titulo">Committee procedure</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): procedimento | RGBEAC (@rgbeac): procedimento | DL 82/2019: procedimento</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	The Commission shall be assisted by the Standing Committee on Plants, Animals, Food and Feed established by Article 58(1) of Regulation (EC) No 178/2002. That Committee shall be a committee within the meaning of Regulation (EU) No 182/2011.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 30</span>
+                    <span class="artigo-titulo">Stricter national rules</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Nenhuma correspondência lexical</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	This Regulation shall not prevent Member States from maintaining or adopting stricter national rules aimed at providing more extensive protection of the welfare of dogs and cats kept in establishments, and a greater traceability of dogs and cats, provided that those rules are not inconsistent with this Regulation and do not interfere with the proper functioning of the internal market. ▌</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 31</span>
+                    <span class="artigo-titulo">Reporting and evaluation</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): relatório, avaliação | RGBEAC (@rgbeac): relatório, avaliação | Lei 27/2016: relatório</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">1.	On the basis of the reports received in accordance with Article 24 and any additional relevant information, the Commission shall publish, by ... [▌7 years from the date of entry into force of this Regulation] and thereafter at three-yearly intervals, a monitoring report on the welfare of dogs and cats placed on the market in the Union.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 32</span>
+                    <span class="artigo-titulo">Penalties</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): sanções | RGBEAC (@rgbeac): infrações, sanções | DL 82/2019: sanções</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">Member States shall lay down the rules on penalties applicable to infringements of this Regulation, including those resulting from the abandonment by operators of dogs and cats, and shall take all measures necessary to ensure that they are implemented. The penalties provided for shall be effective, proportionate and dissuasive.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artigo-card">
+                <div class="artigo-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.artigo-toggle').textContent = this.nextElementSibling.classList.contains('expanded') ? '▼' : '▶';">
+                    <span class="artigo-numero">ART. 33</span>
+                    <span class="artigo-titulo">Entry into force and application</span>
+                    <span class="artigo-toggle">▶</span>
+                </div>
+                <div class="artigo-corpo">
+                    <div class="secao">
+                        <div class="secao-titulo">ℹ️ Por que é novo:</div>
+                        <div class="secao-conteudo por-que-novo">Disposições procedimentais, delegação à Comissão, penalidades e entrada em vigor — infraestrutura regulatória europeia</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📋 O que existe em Portugal:</div>
+                        <div class="secao-conteudo achados-pt">Código do Animal (@codigo): entrada em vigor, data | RGBEAC (@rgbeac): entrada em vigor, data | DL 82/2019: entrada em vigor, data | Lei 27/2016: entrada em vigor, data</div>
+                    </div>
+                    
+                    <div class="secao">
+                        <div class="secao-titulo">📝 Texto do Regulamento (EN — resumido):</div>
+                        <div class="secao-conteudo texto-en">This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>Análise comparativa de disposições novas — Regulamento (UE) 2023/0447 vs. legislação portuguesa</p>
+        <p>Gerado em 6 de abril de 2026</p>
+    </footer>
+</body>
+</html>
