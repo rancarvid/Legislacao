@@ -278,3 +278,86 @@
 - **4 possíveis erros/incompletos** (ART-12, ART-17, ART-25, + ART-21/22/26 ainda a verificar)
 
 **Aproximadamente 28% dos artigos 1-26 têm problemas.**
+
+---
+
+## VERIFICAÇÃO FINAL — ARTIGOS 18, 21, 22, 26
+
+### ART-18 — Práticas Dolorosas
+
+**@codigo: Arts. 51.º e 52.º**
+- Art. 51.º = "Intervenções cirúrgicas" ✓
+- Art. 52.º = "Mutilações — proibição de mutilações que modifiquem aparência" ✓
+
+✓ **CORRESPONDE** — Tema é exatamente sobre "práticas que causam dor"
+
+---
+
+### ART-21 — Publicidade Online e Colocação no Mercado
+
+**Tema Regulamento**: "Requirements on online advertising and placing on the market"
+
+**@codigo: Arts. 24.º e 62.º**
+- Art. 24.º = "Condições particulares para a manutenção de **AVES**" ✗ **COMPLETAMENTE ERRADO**
+- Art. 62.º = "Entrada de animais de companhia suscetíveis à raiva" ✗ **ERRADO** (é sobre raiva, não publicidade)
+
+✗✗ **ERRO CONFIRMADO** — Ambos os artigos estão errados para este tema
+
+---
+
+### ART-22 — Treino de Cuidadores
+
+**Tema Regulamento**: "Training" — requisitos de formação para cuidadores profissionais
+
+**@codigo: Art. 7.º**
+- Art. 7.º = "Treino" — MAS é sobre **treino de cães pelos detentores**, não sobre treino de cuidadores profissionais
+
+⚠️ **POSSÍVEL ERRO** — Artigo é sobre "treino de cães", não sobre "formação de cuidadores"
+
+---
+
+### ART-26 — Entrada de Cães e Gatos na União
+
+**Tema Regulamento**: "Entry of dogs and cats into the Union" — requisitos para importação internacional
+
+**@codigo: Art. 62.º**
+- Art. 62.º = "Entrada de animais de companhia **suscetíveis à raiva em território nacional**"
+- Foco: raiva, não requisitos gerais de importação
+
+⚠️ **POSSÍVEL ERRO** — Artigo é sobre entrada DOMÉSTICA com foco em raiva, não sobre entrada na União
+
+---
+
+## RESUMO FINAL — TODOS OS ERROS (ART-01 A ART-26)
+
+### ERROS CONFIRMADOS (correspondência completamente errada):
+
+| Art | Tema | Art Citado | Conteúdo Real | Erro |
+|-----|------|-----------|--------------|------|
+| **10** | Aprovação Estabelecimentos | 37 | Divulgação dos alojamentos | Publicidade, não aprovação |
+| **11** | Informação Propriedade | 57 | Deveres do médico veterinário | Sobre identificação/registo, não informação |
+| **21a** | Publicidade Online | 24 | Condições manutenção de AVES | Completamente errado (AVES!) |
+| **21b** | Publicidade Online | 62 | Entrada de animais com raiva | Sobre raiva, não publicidade |
+| **23** | Base de Dados | 57 | Deveres do médico veterinário | Deve ser removido desta correspondência |
+
+### ERROS POSSÍVEIS/INCOMPLETOS:
+
+| Art | Tema | Art Citado | Problema |
+|-----|------|-----------|----------|
+| **12** | Competências Cuidadores | 19 | Incompleto (não menciona "documentado") |
+| **17** | Necessidades Comportamentais | 13 | Tema é "alojamento", não "comportamento" |
+| **22** | Treino Cuidadores | 7 | Sobre treino de cães, não treino de cuidadores |
+| **25** | Proteção de Dados | 55 | Sobre BD, não proteção de dados |
+| **26** | Entrada na União | 62 | Sobre entrada doméstica/raiva, não requisitos de importação |
+
+---
+
+## CONCLUSÃO REVISADA
+
+**Artigos 1-26: ~30% contêm erros ou correspondências inadequadas**
+
+- **5 erros confirmados** (ART-10, ART-11, ART-21x2, ART-23)
+- **5 possíveis erros** (ART-12, ART-17, ART-22, ART-25, ART-26)
+- **16 OK** (ART-01-09, ART-13-16, ART-18-20, ART-24)
+
+**Recomendação**: Verificação completa é NECESSÁRIA antes de usar o comparativo.
