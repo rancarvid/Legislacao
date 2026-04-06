@@ -219,7 +219,7 @@ function considerandoMatch(cons, searchTerm) {{
          cons.regulamento.traducao.toLowerCase().includes(q);
 }}
 
-// Hook na pesquisa original para incluir preâmbulo
+// Hook na pesquisa original para incluir preâmbulo na sidebar
 function setupPreambuloSearch() {{
   if (typeof window.pesquisar !== 'function') {{
     console.log('pesquisar not ready, retrying...');
@@ -255,80 +255,61 @@ function setupPreambuloSearch() {{
 
     console.log('Total de matches no preâmbulo:', matchingConsiderandos.length);
 
-    // Se há matches, adicionar à exibição
+    // Se há matches, adicionar à sidebar
     if (matchingConsiderandos.length > 0) {{
-      const container = document.getElementById('main-content');
-      if (!container) {{
-        console.warn('main-content not found');
+      const nav = document.getElementById('sidebar');
+      if (!nav) {{
+        console.warn('sidebar not found');
         return;
       }}
 
       // Remover seção anterior se existir
-      const existing = container.querySelector('[data-preamb-results]');
+      const existing = nav.querySelector('[data-preamb-search-results]');
       if (existing) existing.remove();
 
-      // Criar seção de resultados do preâmbulo
+      // Criar seção de resultados do preâmbulo na sidebar
       const prembSection = document.createElement('div');
-      prembSection.setAttribute('data-preamb-results', 'true');
-      prembSection.style.marginTop = '2rem';
-      prembSection.style.paddingTop = '1.5rem';
-      prembSection.style.borderTop = '2px solid #9B8B9E';
+      prembSection.setAttribute('data-preamb-search-results', 'true');
+      prembSection.style.marginTop = '1rem';
+      prembSection.style.borderTop = '1px solid rgba(255,255,255,0.2)';
+      prembSection.style.paddingTop = '1rem';
 
-      const prembTitle = document.createElement('h3');
-      prembTitle.textContent = 'Resultados no Preâmbulo (' + matchingConsiderandos.length + ')';
-      prembTitle.style.color = '#9B8B9E';
-      prembTitle.style.marginBottom = '1rem';
-      prembSection.appendChild(prembTitle);
+      const prembLabel = document.createElement('p');
+      prembLabel.textContent = 'Preâmbulo (' + matchingConsiderandos.length + ')';
+      prembLabel.style.color = '#9B8B9E';
+      prembLabel.style.fontSize = '0.9rem';
+      prembLabel.style.fontWeight = 'bold';
+      prembLabel.style.marginBottom = '0.5rem';
+      prembSection.appendChild(prembLabel);
 
-      // Agrupar por tema
-      const porTema = {{}};
+      // Criar botões para cada considerando encontrado
       matchingConsiderandos.forEach(function(item) {{
-        if (!porTema[item.tema]) porTema[item.tema] = [];
-        porTema[item.tema].push(item.cons);
+        const btn = document.createElement('button');
+        btn.className = 'preamb-search-btn';
+        btn.innerHTML = 'PREAMB-' + String(item.cons.numero).padStart(2, '0') + ' — ' + item.tema +
+                       '<small>' + item.cons.regulamento.traducao.substring(0, 50) + '…</small>';
+        btn.style.width = '100%';
+        btn.style.background = 'rgba(155, 139, 158, 0.15)';
+        btn.style.border = 'none';
+        btn.style.borderLeft = '3px solid #9B8B9E';
+        btn.style.color = 'white';
+        btn.style.padding = '0.75rem 1rem';
+        btn.style.textAlign = 'left';
+        btn.style.cursor = 'pointer';
+        btn.style.fontSize = '0.85rem';
+        btn.style.marginBottom = '0.5rem';
+        btn.style.transition = 'all 0.2s';
+        btn.onmouseover = function() {{ this.style.background = 'rgba(155, 139, 158, 0.25)'; }};
+        btn.onmouseout = function() {{ this.style.background = 'rgba(155, 139, 158, 0.15)'; }};
+        btn.onclick = function() {{
+          exibirTemaPreambulo(item.tema);
+        }};
+
+        prembSection.appendChild(btn);
       }});
 
-      Object.keys(porTema).forEach(function(tema) {{
-        const temaDiv = document.createElement('div');
-        temaDiv.style.marginBottom = '1rem';
-
-        const temaTit = document.createElement('strong');
-        temaTit.textContent = tema;
-        temaTit.style.color = '#9B8B9E';
-        temaTit.style.display = 'block';
-        temaTit.style.marginBottom = '0.5rem';
-        temaDiv.appendChild(temaTit);
-
-        const list = document.createElement('ul');
-        list.style.marginLeft = '1.5rem';
-        list.style.listStyle = 'disc';
-        list.style.padding = '0';
-
-        porTema[tema].forEach(function(cons) {{
-          const li = document.createElement('li');
-          li.style.marginBottom = '0.5rem';
-
-          const link = document.createElement('a');
-          link.href = '#';
-          link.textContent = 'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 60) + '…';
-          link.style.color = '#7B68A6';
-          link.style.textDecoration = 'none';
-          link.style.fontSize = '0.9rem';
-          link.onclick = function(e) {{
-            e.preventDefault();
-            exibirTemaPreambulo(tema);
-            return false;
-          }};
-
-          li.appendChild(link);
-          list.appendChild(li);
-        }});
-
-        temaDiv.appendChild(list);
-        prembSection.appendChild(temaDiv);
-      }});
-
-      container.appendChild(prembSection);
-      console.log('Seção de preâmbulo adicionada');
+      nav.appendChild(prembSection);
+      console.log('Resultados do preâmbulo adicionados à sidebar');
     }}
   }};
 }}
