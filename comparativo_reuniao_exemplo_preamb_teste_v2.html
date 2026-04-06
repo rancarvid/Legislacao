@@ -2158,46 +2158,55 @@ function considerandoMatch(cons, searchTerm) {
          cons.regulamento.traducao.toLowerCase().includes(q);
 }
 
-// Hook na pesquisa original para incluir preâmbulo (com delay para garantir carregamento)
-setTimeout(function() {
-  // Verificar se pesquisar existe
+// Hook na pesquisa original para incluir preâmbulo
+function setupPreambuloSearch() {
   if (typeof window.pesquisar !== 'function') {
-    console.warn('pesquisar function not found, retrying...');
+    console.log('pesquisar not ready, retrying...');
+    setTimeout(setupPreambuloSearch, 100);
     return;
   }
 
   const pesquisarOriginal = window.pesquisar;
+  console.log('Setting up preamble search hook');
 
-  window.pesquisar = function(searchInput) {
-    // Chamar pesquisa original
-    pesquisarOriginal.call(this, searchInput);
+  window.pesquisar = function(q) {
+    console.log('Pesquisando:', q);
 
-    const q = searchInput.trim().toLowerCase();
-    if (!q) return;
+    // Chamar pesquisa original PRIMEIRO
+    pesquisarOriginal.call(this, q);
 
-    // Procurar no preâmbulo
+    const searchTerm = q.trim().toLowerCase();
+    if (!searchTerm) return;
+
+    // Agora procurar no preâmbulo
+    console.log('Procurando no preâmbulo por:', searchTerm);
     const matchingConsiderandos = [];
+
     for (const tema of TEMAS_PREAMB) {
       const considerandos = PREAMB_POR_TEMA[tema];
       for (const cons of considerandos) {
-        if (considerandoMatch(cons, q)) {
+        if (considerandoMatch(cons, searchTerm)) {
+          console.log('Match encontrado:', cons.numero, tema);
           matchingConsiderandos.push({ tema: tema, cons: cons });
         }
       }
     }
 
+    console.log('Total de matches no preâmbulo:', matchingConsiderandos.length);
+
     // Se há matches, adicionar à exibição
     if (matchingConsiderandos.length > 0) {
       const container = document.getElementById('main-content');
-      if (!container) return;
-
-      // Verificar se já existe seção de preâmbulo e remover
-      const existingPrembSection = container.querySelector('[data-preamb-results]');
-      if (existingPrembSection) {
-        existingPrembSection.remove();
+      if (!container) {
+        console.warn('main-content not found');
+        return;
       }
 
-      // Adicionar seção de preâmbulo aos resultados
+      // Remover seção anterior se existir
+      const existing = container.querySelector('[data-preamb-results]');
+      if (existing) existing.remove();
+
+      // Criar seção de resultados do preâmbulo
       const prembSection = document.createElement('div');
       prembSection.setAttribute('data-preamb-results', 'true');
       prembSection.style.marginTop = '2rem';
@@ -2205,19 +2214,19 @@ setTimeout(function() {
       prembSection.style.borderTop = '2px solid #9B8B9E';
 
       const prembTitle = document.createElement('h3');
-      prembTitle.textContent = 'Resultados no Preâmbulo';
+      prembTitle.textContent = 'Resultados no Preâmbulo (' + matchingConsiderandos.length + ')';
       prembTitle.style.color = '#9B8B9E';
       prembTitle.style.marginBottom = '1rem';
       prembSection.appendChild(prembTitle);
 
       // Agrupar por tema
       const porTema = {};
-      for (const item of matchingConsiderandos) {
+      matchingConsiderandos.forEach(function(item) {
         if (!porTema[item.tema]) porTema[item.tema] = [];
         porTema[item.tema].push(item.cons);
-      }
+      });
 
-      for (const tema in porTema) {
+      Object.keys(porTema).forEach(function(tema) {
         const temaDiv = document.createElement('div');
         temaDiv.style.marginBottom = '1rem';
 
@@ -2229,37 +2238,41 @@ setTimeout(function() {
         temaDiv.appendChild(temaTit);
 
         const list = document.createElement('ul');
-        list.style.marginLeft = '1rem';
-        list.style.listStyle = 'none';
+        list.style.marginLeft = '1.5rem';
+        list.style.listStyle = 'disc';
         list.style.padding = '0';
 
-        for (const cons of porTema[tema]) {
+        porTema[tema].forEach(function(cons) {
           const li = document.createElement('li');
           li.style.marginBottom = '0.5rem';
 
           const link = document.createElement('a');
-          link.href = 'javascript:void(0)';
-          link.textContent = 'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 70) + '…';
+          link.href = '#';
+          link.textContent = 'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 60) + '…';
           link.style.color = '#7B68A6';
           link.style.textDecoration = 'none';
           link.style.fontSize = '0.9rem';
-          link.onclick = function() {
+          link.onclick = function(e) {
+            e.preventDefault();
             exibirTemaPreambulo(tema);
             return false;
           };
 
           li.appendChild(link);
           list.appendChild(li);
-        }
+        });
 
         temaDiv.appendChild(list);
         prembSection.appendChild(temaDiv);
-      }
+      });
 
       container.appendChild(prembSection);
+      console.log('Seção de preâmbulo adicionada');
     }
   };
-}, 200);
+}
+
+setupPreambuloSearch();
 
 // Adicionar botões de preâmbulo à sidebar DEPOIS de renderSidebar() ser chamada
 setTimeout(function() {
