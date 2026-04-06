@@ -34,9 +34,9 @@ from gerar_comparativo_reuniao import (
 # ─────────────────────────────────────────────────────────────────────────────
 
 TEMA_CONSIDERANDOS = {
-    # Posição 1: Âmbito e Exclusões (segundo na sidebar)
+    # Posição 1: Âmbito e Exclusões (PRIMEIRO na sidebar)
     "Âmbito e Exclusões": [19, 20, 21, 22, 23],
-    # Posição 2: Motivos e Objetivos (após Âmbito e Exclusões)
+    # Posição 2: Motivos e Objetivos (logo após Âmbito e Exclusões)
     "Motivos e Objetivos": [1, 2, 7, 16, 17, 3, 4, 5],
     # Resto em ordem alfabética
     "Abrigos": [27, 28, 84],
@@ -149,7 +149,7 @@ def modificar_html_para_adicionar_preamb(html_original, preamb_por_tema, artigos
     # Padrão: após </nav> há um comentário ou fim
     # Vamos injetar JavaScript que adiciona temas na sidebar
 
-    temas_preamb = sorted(preamb_por_tema.keys())
+    temas_preamb = list(preamb_por_tema.keys())  # Manter ordem do dicionário (Âmbito e Exclusões primeiro)
     dados_preamb_json = json.dumps(preamb_por_tema, ensure_ascii=False)
 
     # Injetar dados do preâmbulo no script
