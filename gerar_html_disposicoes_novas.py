@@ -1,65 +1,74 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Gera HTML interativo com as disposições novas do Regulamento 2023/0447
+"""
+
+import csv
+from html import escape
+
+html_template = """<!DOCTYPE html>
 <html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disposições Totalmente Novas — Regulamento 2023/0447</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 
-        body {
+        body {{
             font-family: 'Segoe UI', 'Trebuchet MS', sans-serif;
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             padding: 0;
-        }
+        }}
 
-        header {
+        header {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
             box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             margin-bottom: 3rem;
-        }
+        }}
 
-        header h1 {
+        header h1 {{
             font-size: 2.4rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
-        }
+        }}
 
-        header p {
+        header p {{
             font-size: 1.15rem;
             opacity: 0.95;
             margin-bottom: 1rem;
-        }
+        }}
 
-        .container {
+        .container {{
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
-        }
+        }}
 
-        .summary {
+        .summary {{
             background: white;
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 3rem;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+        }}
 
-        .summary h2 {
+        .summary h2 {{
             color: #667eea;
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             border-bottom: 3px solid #667eea;
             padding-bottom: 0.5rem;
-        }
+        }}
 
-        .stat {
+        .stat {{
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -69,37 +78,37 @@
             margin-bottom: 1rem;
             min-width: 200px;
             text-align: center;
-        }
+        }}
 
-        .stat-number {
+        .stat-number {{
             font-size: 2.5rem;
             font-weight: bold;
             display: block;
-        }
+        }}
 
-        .stat-label {
+        .stat-label {{
             font-size: 0.9rem;
             opacity: 0.9;
             margin-top: 0.3rem;
-        }
+        }}
 
-        .artigos-novos {
+        .artigos-novos {{
             background: white;
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 3rem;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+        }}
 
-        .artigos-novos h2 {
+        .artigos-novos h2 {{
             color: #e74c3c;
             margin-bottom: 1.5rem;
             font-size: 1.5rem;
             border-bottom: 3px solid #e74c3c;
             padding-bottom: 0.5rem;
-        }
+        }}
 
-        .artigo-novo {
+        .artigo-novo {{
             background: #fff5f5;
             border-left: 5px solid #e74c3c;
             padding: 1.5rem;
@@ -107,21 +116,21 @@
             border-radius: 4px;
             transition: all 0.3s ease;
             cursor: pointer;
-        }
+        }}
 
-        .artigo-novo:hover {
+        .artigo-novo:hover {{
             box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
             transform: translateX(5px);
-        }
+        }}
 
-        .artigo-novo-header {
+        .artigo-novo-header {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
-        }
+        }}
 
-        .artigo-numero {
+        .artigo-numero {{
             display: inline-block;
             background: #e74c3c;
             color: white;
@@ -130,16 +139,16 @@
             font-weight: bold;
             font-size: 1.1rem;
             margin-right: 1rem;
-        }
+        }}
 
-        .artigo-titulo {
+        .artigo-titulo {{
             font-size: 1.25rem;
             font-weight: 600;
             color: #333;
             flex-grow: 1;
-        }
+        }}
 
-        .artigo-tema {
+        .artigo-tema {{
             display: inline-block;
             background: #ffeaa7;
             color: #333;
@@ -147,50 +156,50 @@
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 500;
-        }
+        }}
 
-        .artigo-detalhes {
+        .artigo-detalhes {{
             display: none;
             margin-top: 1rem;
             padding-top: 1rem;
             border-top: 1px solid #f0f0f0;
-        }
+        }}
 
-        .artigo-detalhes.expanded {
+        .artigo-detalhes.expanded {{
             display: block;
-        }
+        }}
 
-        .artigo-secao {
+        .artigo-secao {{
             margin-bottom: 1rem;
-        }
+        }}
 
-        .artigo-secao-titulo {
+        .artigo-secao-titulo {{
             font-weight: 600;
             color: #667eea;
             margin-bottom: 0.5rem;
             font-size: 0.95rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
+        }}
 
-        .artigo-secao-conteudo {
+        .artigo-secao-conteudo {{
             background: #f9f9f9;
             padding: 0.8rem;
             border-left: 3px solid #667eea;
             border-radius: 4px;
             line-height: 1.7;
             font-size: 0.95rem;
-        }
+        }}
 
-        .motivo {
+        .motivo {{
             background: #fff3cd;
             border-left-color: #ffc107;
             padding: 1rem;
             border-radius: 4px;
             margin-top: 1rem;
-        }
+        }}
 
-        .badge-novo {
+        .badge-novo {{
             display: inline-block;
             background: #e74c3c;
             color: white;
@@ -200,52 +209,52 @@
             font-weight: 600;
             margin-left: 0.5rem;
             text-transform: uppercase;
-        }
+        }}
 
-        footer {
+        footer {{
             background: #333;
             color: white;
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
             font-size: 0.9rem;
-        }
+        }}
 
-        .metodologia {
+        .metodologia {{
             background: white;
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 3rem;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+        }}
 
-        .metodologia h2 {
+        .metodologia h2 {{
             color: #27ae60;
             margin-bottom: 1rem;
             font-size: 1.3rem;
-        }
+        }}
 
-        .metodologia p {
+        .metodologia p {{
             margin-bottom: 0.8rem;
             text-align: justify;
-        }
+        }}
 
-        .toggle-icon {
+        .toggle-icon {{
             font-size: 1.2rem;
             color: #667eea;
             transition: transform 0.3s;
-        }
+        }}
 
-        .artigo-novo.expanded .toggle-icon {
+        .artigo-novo.expanded .toggle-icon {{
             transform: rotate(180deg);
-        }
+        }}
 
-        @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .stat { min-width: 150px; padding: 0.8rem 1.5rem; }
-            .artigo-novo { padding: 1rem; }
-            .artigo-titulo { font-size: 1.1rem; }
-        }
+        @media (max-width: 768px) {{
+            header h1 {{ font-size: 1.8rem; }}
+            .stat {{ min-width: 150px; padding: 0.8rem 1.5rem; }}
+            .artigo-novo {{ padding: 1rem; }}
+            .artigo-titulo {{ font-size: 1.1rem; }}
+        }}
     </style>
 </head>
 <body>
@@ -316,111 +325,7 @@
         <div class="artigos-novos">
             <h2>Artigos Totalmente Novos</h2>
 
-            <div class="artigo-novo expanded">
-                <div class="artigo-novo-header">
-                    <div style="display: flex; align-items: center; flex-grow: 1;">
-                        <span class="artigo-numero">Art. 01</span>
-                        <span class="artigo-titulo">Subject matter</span>
-                        <span class="badge-novo">NOVO</span>
-                    </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <div class="artigo-detalhes expanded">
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Tema</div>
-                        <div class="artigo-secao-conteudo">Objeto</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Sumário</div>
-                        <div class="artigo-secao-conteudo">Artigo introdutório do Regulamento europeu — define o objeto geral do regulamento.</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Por que é novo?</div>
-                        <div class="artigo-secao-conteudo">
-                            Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="artigo-novo expanded">
-                <div class="artigo-novo-header">
-                    <div style="display: flex; align-items: center; flex-grow: 1;">
-                        <span class="artigo-numero">Art. 02</span>
-                        <span class="artigo-titulo">Material scope</span>
-                        <span class="badge-novo">NOVO</span>
-                    </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <div class="artigo-detalhes expanded">
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Tema</div>
-                        <div class="artigo-secao-conteudo">Âmbito de Aplicação Material</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Sumário</div>
-                        <div class="artigo-secao-conteudo">Define o âmbito material do Regulamento — aplica-se à criação, detenção, rastreio e colocação no mercado de cães e gatos.</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Por que é novo?</div>
-                        <div class="artigo-secao-conteudo">
-                            Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="artigo-novo expanded">
-                <div class="artigo-novo-header">
-                    <div style="display: flex; align-items: center; flex-grow: 1;">
-                        <span class="artigo-numero">Art. 03</span>
-                        <span class="artigo-titulo">Personal scope</span>
-                        <span class="badge-novo">NOVO</span>
-                    </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <div class="artigo-detalhes expanded">
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Tema</div>
-                        <div class="artigo-secao-conteudo">Âmbito de Aplicação Pessoal</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Sumário</div>
-                        <div class="artigo-secao-conteudo">Define o âmbito pessoal — quem está obrigado pelo Regulamento (operadores, proprietários, importadores).</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Por que é novo?</div>
-                        <div class="artigo-secao-conteudo">
-                            Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="artigo-novo expanded">
-                <div class="artigo-novo-header">
-                    <div style="display: flex; align-items: center; flex-grow: 1;">
-                        <span class="artigo-numero">Art. 04</span>
-                        <span class="artigo-titulo">Definitions</span>
-                        <span class="badge-novo">NOVO</span>
-                    </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <div class="artigo-detalhes expanded">
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Tema</div>
-                        <div class="artigo-secao-conteudo">Definições</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Sumário</div>
-                        <div class="artigo-secao-conteudo">Define os 39 conceitos-chave usados ao longo do Regulamento (cão, gato, bem-estar, criação, operador, estabelecimento, lar de acolhimento, amarração, etc.).</div>
-                    </div>
-                    <div class="artigo-secao">
-                        <div class="artigo-secao-titulo">Por que é novo?</div>
-                        <div class="artigo-secao-conteudo">
-                            Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+{artigos_html}
 
         </div>
 
@@ -432,18 +337,76 @@
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {{
             const artigos = document.querySelectorAll('.artigo-novo');
-            artigos.forEach(artigo => {
-                artigo.addEventListener('click', function() {
+            artigos.forEach(artigo => {{
+                artigo.addEventListener('click', function() {{
                     this.classList.toggle('expanded');
                     const detalhes = this.querySelector('.artigo-detalhes');
-                    if (detalhes) {
+                    if (detalhes) {{
                         detalhes.classList.toggle('expanded');
-                    }
-                });
-            });
-        });
+                    }}
+                }});
+            }});
+        }});
     </script>
 </body>
-</html>
+</html>"""
+
+def main():
+    print("\n" + "=" * 80)
+    print("GERANDO HTML INTERATIVO - DISPOSIÇÕES NOVAS")
+    print("=" * 80)
+
+    # Lê CSV
+    artigos = []
+    with open('/home/user/Legislacao/disposicoes_totalmente_novas.csv', 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            artigos.append(row)
+
+    print(f"  ✓ Lidos {len(artigos)} artigos novos")
+
+    # Gera HTML para cada artigo
+    artigos_html = ""
+    for art in artigos:
+        artigos_html += f"""            <div class="artigo-novo expanded">
+                <div class="artigo-novo-header">
+                    <div style="display: flex; align-items: center; flex-grow: 1;">
+                        <span class="artigo-numero">Art. {art['numero']}</span>
+                        <span class="artigo-titulo">{escape(art['titulo'])}</span>
+                        <span class="badge-novo">NOVO</span>
+                    </div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="artigo-detalhes expanded">
+                    <div class="artigo-secao">
+                        <div class="artigo-secao-titulo">Tema</div>
+                        <div class="artigo-secao-conteudo">{escape(art['tema'])}</div>
+                    </div>
+                    <div class="artigo-secao">
+                        <div class="artigo-secao-titulo">Sumário</div>
+                        <div class="artigo-secao-conteudo">{escape(art['sumario'])}</div>
+                    </div>
+                    <div class="artigo-secao">
+                        <div class="artigo-secao-titulo">Por que é novo?</div>
+                        <div class="artigo-secao-conteudo">
+                            {escape(art['justificacao'])}
+                        </div>
+                    </div>
+                </div>
+            </div>
+"""
+
+    # Substitui no template
+    html = html_template.format(artigos_html=artigos_html)
+
+    # Salva
+    output_path = '/home/user/Legislacao/disposicoes_novas_regulamento.html'
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print(f"\n✓ HTML gravado: {output_path}")
+
+if __name__ == "__main__":
+    main()
