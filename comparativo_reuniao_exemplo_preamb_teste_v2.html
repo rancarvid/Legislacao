@@ -2182,6 +2182,67 @@ function escapeHtml(text) {
 // Substituir renderSidebar
 renderSidebar = renderSidebarExtendido;
 
+// Função para buscar em considerandos do preâmbulo
+function prembMatch(cons, q) {
+  return cons.numero.toString().includes(q) ||
+         cons.tema.toLowerCase().includes(q) ||
+         cons.regulamento.texto.toLowerCase().includes(q) ||
+         cons.regulamento.traducao.toLowerCase().includes(q);
+}
+
+// Estender função de pesquisa para incluir preâmbulo
+const pesquisarOriginal = window.pesquisar || function() {};
+window.pesquisarComPreamb = function(q) {
+  const searchTerm = q.trim().toLowerCase();
+
+  // Chamar pesquisa original para artigos
+  if (pesquisarOriginal) pesquisarOriginal(q);
+
+  // Se não há termo de busca, mostrar temas do preâmbulo normalmente
+  if (!searchTerm) return;
+
+  // Procurar considerandos que match
+  const matchingTemas = {};
+  for (const tema in PREAMB_POR_TEMA) {
+    const considerandos = PREAMB_POR_TEMA[tema];
+    const matching = considerandos.filter(c => prembMatch(c, searchTerm));
+    if (matching.length > 0) {
+      matchingTemas[tema] = matching;
+    }
+  }
+
+  // Se há matches no preâmbulo, mostrar
+  if (Object.keys(matchingTemas).length > 0) {
+    const container = document.getElementById('main-content');
+    if (!container) return;
+
+    container.innerHTML = '<div class="search-results"><h2>Resultados da Pesquisa</h2>';
+
+    // Mostrar matches no preâmbulo
+    if (Object.keys(matchingTemas).length > 0) {
+      container.innerHTML += '<div class="preamb-search-results"><h3>Preâmbulo</h3>';
+      for (const tema in matchingTemas) {
+        const considerandos = matchingTemas[tema];
+        container.innerHTML += '<div class="search-group"><strong>' + tema + '</strong><ul>';
+        for (const cons of considerandos) {
+          container.innerHTML += '<li><a href="javascript:void(0)" onclick="exibirTemaPreambulo('' + tema + '')">' +
+            'Considerando ' + cons.numero + ': ' + cons.regulamento.traducao.substring(0, 80) + '...</a></li>';
+        }
+        container.innerHTML += '</ul></div>';
+      }
+      container.innerHTML += '</div>';
+    }
+    container.innerHTML += '</div>';
+  }
+};
+
+// Substituir função de pesquisa
+if (document.getElementById('search-input')) {
+  document.getElementById('search-input').oninput = function(e) {
+    window.pesquisarComPreamb(this.value);
+  };
+}
+
 // Estilos para preâmbulo
 const stylePreambulo = document.createElement('style');
 stylePreambulo.textContent = `
@@ -2221,6 +2282,35 @@ stylePreambulo.textContent = `
   }
   .card.preamb .card-header {
     color: #9B8B9E !important;
+  }
+  .preamb-search-results {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+  }
+  .search-group {
+    margin-bottom: 1rem;
+  }
+  .search-group strong {
+    color: #9B8B9E;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .search-group ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  .search-group li {
+    margin-bottom: 0.5rem;
+  }
+  .search-group a {
+    color: #7B68A6;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .search-group a:hover {
+    text-decoration: underline;
   }
 `;
 document.head.appendChild(stylePreambulo);
