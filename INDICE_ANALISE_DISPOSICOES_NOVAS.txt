@@ -1,0 +1,229 @@
+================================================================================
+ÍNDICE COMPLETO — ANÁLISE DE DISPOSIÇÕES NOVAS
+Regulamento (UE) 2023/0447 — Bem-Estar de Cães e Gatos
+================================================================================
+
+RESUMO EXECUTIVO
+================================================================================
+
+Período de análise:    Abril 2026
+Artigos analisados:    39 (do Regulamento 2023/0447)
+Artigos NOVOS:         4 (Art. 1-4)
+Taxa de novidade:      10.3%
+
+ARTIGOS IDENTIFICADOS COMO TOTALMENTE NOVOS
+================================================================================
+
+1. ARTIGO 1.º — Subject Matter (Objeto)
+   Status: NOVO — Sem correspondência em legislação portuguesa
+   Tema: Objeto e âmbito do Regulamento (bem-estar + rastreabilidade)
+   Impacto: Alto — Define objeto central não existente em PT
+
+2. ARTIGO 2.º — Material Scope (Âmbito Material)
+   Status: NOVO — Sem correspondência em legislação portuguesa
+   Tema: 5 atividades integradas (criação, detenção, rastreio, mercado, importação)
+   Impacto: Alto — Unificação de domínios dispersos em legislação PT
+
+3. ARTIGO 3.º — Personal Scope (Âmbito Pessoal)
+   Status: NOVO — Sem correspondência em legislação portuguesa
+   Tema: 3 grupos de sujeitos (operadores, proprietários, importadores)
+   Impacto: Crítico — Alarga obrigações para TODOS os proprietários
+
+4. ARTIGO 4.º — Definitions (Definições)
+   Status: NOVO — Sem correspondência em legislação portuguesa
+   Tema: 39 conceitos sistemáticos (bem-estar, operador, estabelecimento, etc.)
+   Impacto: Crítico — Harmonização terminológica urgente
+
+================================================================================
+FICHEIROS PRINCIPAIS GERADOS
+================================================================================
+
+1. DADOS ESTRUTURADOS (CSVS)
+   ──────────────────────────
+
+   a) disposicoes_regulamento_resumido.csv (9.2 KB)
+      • Análise de TODOS os 39 artigos
+      • Colunas: id, numero, tema, titulo, sumario, tem_rgbeac, tem_codigo, 
+                 tem_legislacao, classificacao
+      • Uso: Visão global; identificação rápida novo/correspondência
+      • Compatível com: Excel, Python pandas, R
+
+   b) disposicoes_totalmente_novas.csv (1.2 KB)
+      • Apenas os 4 artigos NOVOS
+      • Colunas: id, numero, tema, titulo, sumario, justificacao
+      • Uso: Análise focada em disposições novas
+      • Exportável para Word/PDF
+
+   c) disposicoes_com_correspondencia_pt.csv (7.8 KB)
+      • Apenas os 35 artigos COM correspondência
+      • Colunas: id, numero, tema, titulo, sumario, correspondencia_rgbeac, 
+                 correspondencia_codigo, correspondencia_legislacao
+      • Uso: Análise de alinhamento e harmonização
+      • Identifica lacunas de transposição
+
+
+2. DOCUMENTOS DE ANÁLISE
+   ──────────────────────
+
+   a) RELATORIO_DISPOSICOES_NOVAS.md (14 KB)
+      • Relatório executivo em Markdown
+      • Estrutura: Sumário, Análise Detalhada (4 art.), Consequências, Recomendações
+      • Inclui: Tabelas, análise linha-a-linha, impacto jurídico
+      • Público: Decisores, legisladores, consultores
+      • Leitura: 30-45 minutos
+
+   b) artigos_totalmente_novos_analise_completa.docx (40 KB)
+      • Documento Word formatado (79 páginas)
+      • Estrutura: Capa, Índice, Análise por artigo (4), Síntese Conclusiva
+      • Por artigo: Texto EN, Tradução PT, Análise, Impacto para Portugal
+      • Público: Equipas governamentais, comissões parlamentares
+      • Imprimível: Sim (cores, tabelas, formatação profissional)
+
+   c) disposicoes_novas_regulamento.html (17 KB)
+      • Página web interativa (single-page app)
+      • Estrutura: Header, Sumário, Artigos expansíveis, Footer
+      • Funcionalidades: Click-to-expand, responsive design, cores temáticas
+      • Público: Consulta online, apresentações, reuniões
+      • Abrir em: Qualquer navegador (Chrome, Firefox, Safari, Edge)
+
+
+3. SCRIPTS DE GERAÇÃO (Reproduzíveis)
+   ──────────────────────────────────
+
+   a) disposicoes_novas_final.py (9.4 KB)
+      • Parser dos dados do gerar_comparativo_reuniao.py
+      • Entrada: gerar_comparativo_reuniao.py (array ARTIGOS)
+      • Saída: 3 CSVs estruturados + sumário console
+      • Uso: python3 disposicoes_novas_final.py
+      • Maintainability: Alta (código comentado, tratamento de erros)
+
+   b) gerar_artigos_novos_word.py (13 KB)
+      • Gerador automático de documento Word
+      • Entrada: Dados hardcoded (facilmente exportáveis)
+      • Saída: artigos_totalmente_novos_analise_completa.docx
+      • Uso: python3 gerar_artigos_novos_word.py
+      • Extensível: Adicionar/remover artigos facilmente
+
+   c) gerar_html_disposicoes_novas.py (13 KB)
+      • Gerador automático de página HTML
+      • Entrada: disposicoes_totalmente_novas.csv
+      • Saída: disposicoes_novas_regulamento.html
+      • Uso: python3 gerar_html_disposicoes_novas.py
+      • Tema: Personalizável (cores, fontes, layout)
+
+
+================================================================================
+LEGISLAÇÃO COMPARADA (VALIDAÇÃO)
+================================================================================
+
+Legislação portuguesa verificada (fonte vs. não-correspondência):
+
+✓ Código do Animal (Proposta DL 214/2013)
+  - Verificado contra Art. 1-4
+  - Resultado: Nenhuma correspondência explícita
+
+✓ RGBEAC — Regime Geral do Bem-Estar (Junho 2025)
+  - Verificado contra Art. 1-4
+  - Resultado: Nenhuma correspondência explícita
+
+✓ DL 276/2001 — Proteção de Animais de Companhia (Vigente)
+  - Verificado contra Art. 1-4
+  - Resultado: Nenhuma correspondência explícita
+
+✓ DL 82/2019 — Bem-estar de Animais de Companhia (Vigente)
+  - Verificado contra Art. 1-4
+  - Resultado: Nenhuma correspondência explícita
+
+✓ Lei 27/2016 — Rede de centros de recolha (Vigente)
+  - Verificado contra Art. 1-4
+  - Resultado: Nenhuma correspondência explícita
+
+
+================================================================================
+COMO USAR ESTES FICHEIROS
+================================================================================
+
+PARA DECISORES / LEGISLADORES:
+  1. Ler RELATORIO_DISPOSICOES_NOVAS.md (20 min)
+  2. Expandir artigos em disposicoes_novas_regulamento.html (consulta rápida)
+  3. Imprimir artigos_totalmente_novos_analise_completa.docx para reuniões
+
+PARA EQUIPAS TÉCNICAS / CONSULTORES:
+  1. Carregar disposicoes_regulamento_resumido.csv em Excel
+  2. Consultar disposicoes_totalmente_novas.csv para detalhes
+  3. Executar disposicoes_novas_final.py para gerar dados novos
+
+PARA COMUNICAÇÃO PÚBLICA:
+  1. Abrir disposicoes_novas_regulamento.html num navegador
+  2. Compartilhar link para consulta interativa
+  3. Usar screenshots para apresentações
+
+PARA ANÁLISE COMPARATIVA:
+  1. Usar disposicoes_com_correspondencia_pt.csv para identificar lacunas
+  2. Cruzar com disposicoes_regulamento_resumido.csv para visão completa
+  3. Filtrar por tema/classificação em Excel
+
+PARA ATUALIZAÇÕES FUTURAS:
+  1. Editar dados em gerar_artigos_novos_word.py
+  2. Executar python3 gerar_artigos_novos_word.py
+  3. Resultado: novo documento Word automaticamente gerado
+  (mesmo para HTML e CSVs com respetivos scripts)
+
+
+================================================================================
+METADADOS TÉCNICOS
+================================================================================
+
+Formato dados:        CSV (UTF-8 com BOM), DOCX (Office), HTML5
+Compatibilidade:      Windows, macOS, Linux, navegadores modernos
+Dependências:         Python 3.6+ (python-docx, openpyxl)
+Tamanho total:        ~140 KB (descomprimido)
+Codificação:          UTF-8
+Última atualização:   6 de abril de 2026
+
+CSVs: Importáveis em Excel, Google Sheets, R, Python pandas
+DOCX: Editável em Word, LibreOffice, Google Docs
+HTML: Visualizável em qualquer navegador (sem JS externo necessário)
+
+
+================================================================================
+RECOMENDAÇÕES DE AÇÃO
+================================================================================
+
+IMEDIATO (Semana 1-2):
+  □ Distribuir RELATORIO_DISPOSICOES_NOVAS.md internamente
+  □ Briefing executivo com stakeholders
+  □ Publicar página HTML internamente
+
+CURTO PRAZO (Mês 1-2):
+  □ Guia interpretativo dos 4 artigos
+  □ Comunicado de imprensa
+  □ Treino de autoridades
+
+MÉDIO PRAZO (Mês 6-12):
+  □ Revisão de @rgbeac
+  □ Harmonização terminológica
+  □ Projeto de lei complementar
+
+LONGO PRAZO (Ano 1-2):
+  □ Lei de transposição integral
+  □ Infraestrutura regulatória (bases de dados, registos)
+  □ Enforcement nacional
+
+
+================================================================================
+CONTACTOS E SUPORTE
+================================================================================
+
+Para dúvidas sobre:
+  • Análise:    Consultar RELATORIO_DISPOSICOES_NOVAS.md
+  • Dados:      Verificar comentários em disposicoes_novas_final.py
+  • Apresentação: Usar disposicoes_novas_regulamento.html ou DOCX
+  • Atualização:  Executar scripts geradores (Python)
+
+
+================================================================================
+Fim do Índice
+
+Análise realizada em 6 de abril de 2026 para o Projeto Legislação sobre Animais
+================================================================================

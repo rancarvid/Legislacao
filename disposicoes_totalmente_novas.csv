@@ -1,0 +1,5 @@
+﻿id,numero,tema,titulo,sumario,justificacao
+ART-01,01,Objeto,Subject matter,Artigo introdutório do Regulamento europeu — define o objeto geral do regulamento.,"Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)"
+ART-02,02,Âmbito de Aplicação Material,Material scope,"Define o âmbito material do Regulamento — aplica-se à criação, detenção, rastreio e colocação no mercado de cães e gatos.","Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)"
+ART-03,03,Âmbito de Aplicação Pessoal,Personal scope,"Define o âmbito pessoal — quem está obrigado pelo Regulamento (operadores, proprietários, importadores).","Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)"
+ART-04,04,Definições,Definitions,"Define os 39 conceitos-chave usados ao longo do Regulamento (cão, gato, bem-estar, criação, operador, estabelecimento, lar de acolhimento, amarração, etc.).","Nenhuma correspondência em @codigo, @rgbeac ou legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)"

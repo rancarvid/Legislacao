@@ -26,7 +26,9 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 |---|---|---|
 | `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 |
 | `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025) |
-| `@regulamento` | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Regulamento Europeu 2023/0447 (cães e gatos) |
+| `@regulamento` (EN) | `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Regulamento Europeu 2023/0447 — **versão EN de referência** (após reunião, alterações aceites) |
+| `@regulamento` (PT) | `PT Revisão Jurídico-Linguística Sem Track changes até 15 de abril pe00002.pt26.PB.aftermeeting (003)1.docx` | Regulamento Europeu 2023/0447 — **versão PT de referência** (revisão jurídico-linguística, sem track changes, até 15 abril) |
+| `@regulamento` (arquivo) | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Regulamento Europeu 2023/0447 — versão anterior (arquivo; não usar como referência primária) |
 | `@oexcel` | `oexcel.xlsx` | Ficheiro Excel comparativo por temas |
 | `@legislacao` | `Decreto-Lei n.º 276-2001, de 17 de outubro v2.docx` | DL 276/2001 — Proteção dos animais de companhia |
 | `@legislacao` | `DL n. 82_2019, de 27 de Junho_ocred.docx` | DL n.º 82/2019 — Bem-estar de animais de companhia |

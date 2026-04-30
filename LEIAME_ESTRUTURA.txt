@@ -1,0 +1,131 @@
+================================================================================
+EXTRAÇÃO DA ESTRUTURA HIERÁRQUICA - REGULAMENTO 2023/0447
+================================================================================
+
+DATA: 6 de Abril de 2026
+DOCUMENTO FONTE: pe00002.pt26.PB.aftermeeting 2.docx
+COBERTURA: Capítulo II ao Anexo III (inclusive)
+
+================================================================================
+FICHEIROS GERADOS
+================================================================================
+
+1. regulamento_estrutura_completa.csv
+   - Formato: CSV com uma coluna única "Estrutura Hierárquica"
+   - Conteúdo: Hierarquia completa de Artigos, Números, Alíneas e Sub-alíneas
+   - Indentação: Preservada para mostrar nível estrutural
+   - Tamanho: 51 KB
+   - Linhas: 265 (incluindo cabeçalho)
+
+2. regulamento_estrutura_completa.docx
+   - Formato: Word (compatível com Microsoft Word, LibreOffice, etc.)
+   - Estilo: Formatado com estilos hierárquicos (Heading 1, Heading 2, Normal)
+   - Cores: Preto sobre branco, fonte 10-13pt
+   - Indentação: Visual com indents progressivos
+   - Tamanho: 51 KB
+
+3. LEIAME_ESTRUTURA.txt (este ficheiro)
+   - Instruções de uso e documentação
+
+================================================================================
+RESUMO DE CONTEÚDOS
+================================================================================
+
+Capítulos / Anexos:    9 (Capítulo II, III, IV, V, VI, VII + Anexo I, II, III)
+Artigos:               29 (Art. 5 até Art. 33)
+Números:               99 (1, 2, 3, ... em cada artigo)
+Alíneas:               111 (a), b), c), etc.)
+Sub-alíneas:           13 (i), ii), iii), etc.)
+─────────────────────────────────────────
+TOTAL:                 261 elementos estruturados
+
+================================================================================
+FORMATO DE INDENTAÇÃO
+================================================================================
+
+ARTIGO 5.º — Título do artigo
+  1. Número um do artigo
+    a) Alínea a do número 1
+      i) Sub-alínea i da alínea a
+    b) Alínea b do número 1
+  2. Número dois do artigo
+    a) Alínea a do número 2
+
+Cada nível usa 2 espaços de indentação adicional.
+
+================================================================================
+COMO USAR NO EXCEL/CALC
+================================================================================
+
+1. Abrir regulamento_estrutura_completa.csv com Excel/Calc
+2. A coluna única contém a estrutura completa com indentação preservada
+3. Para análise comparativa, inserir coluna ao lado para:
+   - Legislação nacional portuguesa
+   - Propostas @codigo ou @rgbeac
+   - Notas de divergência
+
+================================================================================
+COMO USAR NO WORD
+================================================================================
+
+1. Abrir regulamento_estrutura_completa.docx
+2. Todos os Artigos estão em Heading 2 (bold)
+3. Números, Alíneas e Sub-alíneas em Normal com indentação visual
+4. Pronto para impressão ou edição adicional
+
+Sugestões de edição:
+- Adicionar colunas de comparação (em tabela)
+- Destacar artigos específicos por tema
+- Adicionar notas de reunião ou observações
+
+================================================================================
+ESTRUTURA GERAL EXTRAÍDA
+================================================================================
+
+CAPÍTULO II - Obrigações dos Operadores de Estabelecimentos
+  Art. 5 - Isenções
+  Art. 6 - Princípios gerais de bem-estar
+  Art. 7 - Obrigações gerais em matéria de bem-estar
+  ... [Art. 8-19]
+
+CAPÍTULO III - Identificação, Registo e Publicidade
+  Art. 20 - Identificação e registo
+  Art. 21 - Publicidade em linha
+  ... [Art. 22-24]
+
+CAPÍTULO IV - Autoridades Competentes
+  Art. 25-26
+
+CAPÍTULO V - Entrada de Cães e Gatos na União
+  Art. 26-27
+
+CAPÍTULO VI - Disposições Processuais
+  Art. 28-29
+
+CAPÍTULO VII - Regras Nacionais e Disposições Finais
+  Art. 30-33
+
+ANEXO I - Requisitos de bem-estar
+ANEXO II - Identificação e registo (transponders)
+ANEXO III - Dados sobre bem-estar dos animais
+
+================================================================================
+NOTAS TÉCNICAS
+================================================================================
+
+- Todos os números, alíneas e sub-alíneas foram extraídos verbatim do documento
+- A indentação é baseada em espaços (não tabulações) para compatibilidade universal
+- Caracteres especiais (travessões, símbolos) foram preservados
+- O símbolo ▌ (marca de edição) foi mantido tal como no original
+- Quebras de linha dentro de números/alíneas foram preservadas
+
+================================================================================
+PRÓXIMOS PASSOS RECOMENDADOS
+================================================================================
+
+1. Verificação manual de completude (spot-check de artigos conhecidos)
+2. Comparação com legislação nacional via @oexcel
+3. Importação para ferramenta de análise (ex: Python/pandas para processamento)
+4. Integração em tabelas comparativas Word/Excel
+
+================================================================================
