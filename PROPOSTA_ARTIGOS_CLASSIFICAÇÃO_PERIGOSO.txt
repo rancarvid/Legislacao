@@ -1,0 +1,457 @@
+═══════════════════════════════════════════════════════════════════════════════
+  PROPOSTA DE ARTIGOS A INCLUIR NO CÓDIGO DO ANIMAL
+  Procedimento de Classificação como Animal Perigoso
+═══════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO: Esclarecer e completar a legislação atual nas matérias deficitárias
+          identificadas em DL 315/2009 — quem classifica, como, onde, quando,
+          e quais os direitos do animal e do detentor.
+
+LOCALIZAÇÃO PROPOSTA: A inserir em capítulo específico do Código do Animal,
+                       em sequência lógica após disposições sobre recolha
+                       (atual Art. 14.º) e antes do destino (atual Art. 15.º).
+
+REFERÊNCIA: 6 artigos articulados entre si, formando regime procedimental
+             coerente e respeitador dos direitos de detentor e animal.
+
+═══════════════════════════════════════════════════════════════════════════════
+ENQUADRAMENTO: O QUE PRETENDEM RESOLVER
+═══════════════════════════════════════════════════════════════════════════════
+
+Lacuna 1 (Quem/Como) → Artigo A (Procedimento de classificação)
+Lacuna 2 (Critérios objetivos) → Artigo B (Critérios de avaliação)
+Lacuna 3 (Direitos do detentor) → Artigo C (Audiência e contraditório)
+Lacuna 4 (Direitos do animal) → Artigo D (Bem-estar durante procedimento)
+Lacuna 5 (Duração/reabilitação) → Artigo E (Vigência e reabilitação)
+Lacuna 6 (Recurso/impugnação) → Artigo F (Garantias de impugnação)
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO A — PROCEDIMENTO DE CLASSIFICAÇÃO COMO ANIMAL PERIGOSO
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [A].º
+Procedimento administrativo de classificação como animal perigoso
+
+1 — A classificação de um animal como perigoso, nos termos do disposto na
+    alínea b) do artigo 3.º, constitui ato administrativo formal, emitido
+    pelo médico veterinário municipal da área de residência do detentor ou,
+    quando este seja desconhecido, da área onde ocorreu o facto que motiva
+    a classificação.
+
+2 — O procedimento de classificação inicia-se obrigatoriamente quando se
+    verifique uma das seguintes situações:
+
+    a) Comunicação de ofensa ao corpo ou à saúde de pessoa, nos termos do
+       n.º 2 do artigo 14.º;
+
+    b) Comunicação de animal ferido gravemente ou morto por outro animal,
+       fora da esfera dos bens imóveis que constituam a propriedade do seu
+       detentor;
+
+    c) Declaração voluntária do detentor, nos termos da subalínea iii) da
+       alínea b) do artigo 3.º;
+
+    d) Auto de notícia ou participação fundamentada de autoridade competente
+       que ateste comportamento agressivo do animal suscetível de constituir
+       risco para a segurança de pessoas ou de outros animais.
+
+3 — Recebida a comunicação ou auto referidos no número anterior, o médico
+    veterinário municipal procede, no prazo máximo de cinco dias úteis, à
+    abertura formal do procedimento, do qual deve constar:
+
+    a) Identificação completa do animal, incluindo número de transponder
+       quando aplicável, e do respetivo detentor;
+
+    b) Descrição circunstanciada do facto que motivou a abertura do
+       procedimento, com indicação de data, hora, local e circunstâncias;
+
+    c) Identificação da vítima, quando aplicável, e descrição clínica das
+       lesões, suportada por relatório médico ou veterinário;
+
+    d) Documentação fotográfica das lesões da vítima e do animal agressor,
+       sempre que possível;
+
+    e) Identificação de eventuais testemunhas.
+
+4 — A abertura do procedimento é registada no Sistema de Informação de
+    Animais de Companhia (SIAC) ou no Sistema de Identificação e Registo
+    de Caninos e Felinos (SICAFE), conforme aplicável, com indicação da
+    data, fundamento e estado processual.
+
+5 — No prazo de quarenta e oito horas após a abertura do procedimento, é
+    o detentor notificado, por carta registada com aviso de receção ou por
+    via eletrónica devidamente certificada, da abertura do mesmo, do seu
+    fundamento e dos direitos que lhe assistem nos termos do artigo [C].º
+
+6 — Quando o animal se encontre recolhido nos termos do n.º 1 do artigo
+    14.º, a recolha não constitui, por si só, classificação como animal
+    perigoso, sendo medida cautelar que cessa com a decisão final do
+    procedimento ou com a sua revogação fundamentada.
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO B — CRITÉRIOS OBJETIVOS DE AVALIAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [B].º
+Critérios de avaliação da gravidade da ofensa e do risco
+
+1 — Para efeitos do disposto no artigo 15.º, consideram-se ofensas graves
+    à integridade física aquelas que, por força do ataque do animal,
+    determinem:
+
+    a) Necessidade de internamento hospitalar da vítima;
+
+    b) Realização de intervenção cirúrgica, incluindo sutura de feridas
+       de profundidade ou extensão significativa;
+
+    c) Lesão permanente, ainda que parcial, da integridade anatómica ou
+       funcional da vítima;
+
+    d) Incapacidade temporária para o trabalho superior a oito dias,
+       devidamente atestada;
+
+    e) Perigo concreto para a vida da vítima.
+
+2 — Consideram-se ofensas simples à integridade física as lesões que,
+    embora exijam tratamento médico, não preencham nenhum dos requisitos
+    do número anterior, designadamente abrasões, contusões ou feridas
+    superficiais que não requeiram sutura.
+
+3 — A avaliação da gravidade compete ao médico veterinário municipal,
+    com base em:
+
+    a) Relatório médico da unidade prestadora de cuidados de saúde que
+       tenha assistido a vítima, o qual constitui meio de prova privilegiado;
+
+    b) Relatório clínico-comportamental do animal, elaborado nos termos
+       do n.º 4;
+
+    c) Documentação adicional considerada relevante, incluindo registos
+       audiovisuais, depoimentos e antecedentes do animal constantes do
+       SICAFE ou SIAC.
+
+4 — O relatório clínico-comportamental referido na alínea b) do número
+    anterior é elaborado no prazo máximo de quinze dias após a abertura
+    do procedimento e contempla, no mínimo:
+
+    a) Avaliação do estado físico e sanitário do animal;
+
+    b) Avaliação comportamental, com observação em contexto controlado,
+       quando possível na presença de etólogo, médico veterinário com
+       competência reconhecida em comportamento animal ou treinador
+       certificado nos termos do presente diploma;
+
+    c) Aferição do contexto da ofensa, designadamente eventual provocação,
+       atuação em legítima defesa do animal ou do detentor, e antecedentes
+       de comportamento;
+
+    d) Conclusão fundamentada quanto à existência ou inexistência de
+       comportamento agressivo estrutural suscetível de fundar a
+       classificação como animal perigoso.
+
+5 — Não pode ser determinada a eutanásia ao abrigo dos n.os 1 e 5 do
+    artigo 15.º sem que o relatório clínico-comportamental tenha sido
+    elaborado, salvo na situação prevista no n.º 5 do artigo 15.º
+    quando o risco grave e imediato seja documentado em auto fundamentado.
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO C — DIREITO DE AUDIÊNCIA E CONTRADITÓRIO DO DETENTOR
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [C].º
+Direitos procedimentais do detentor
+
+1 — No procedimento de classificação como animal perigoso, ao detentor
+    são reconhecidos os seguintes direitos:
+
+    a) Ser notificado, no prazo previsto no n.º 5 do artigo [A].º, da
+       abertura do procedimento, do facto que lhe está na base e da
+       autoridade que o instrui;
+
+    b) Consultar o processo e obter cópias dos elementos que o instruem,
+       gratuitamente nos termos da legislação aplicável ao procedimento
+       administrativo;
+
+    c) Pronunciar-se, por escrito, sobre os factos e provas que fundam a
+       proposta de classificação, no prazo de dez dias úteis a contar da
+       notificação a que se refere a alínea a);
+
+    d) Requerer a produção de prova adicional, incluindo a realização de
+       avaliação comportamental complementar por médico veterinário ou
+       etólogo da sua escolha, a expensas próprias, sem prejuízo do
+       disposto no n.º 4;
+
+    e) Ser ouvido presencialmente, sempre que o requeira no prazo previsto
+       na alínea c);
+
+    f) Fazer-se acompanhar e representar por mandatário, designadamente
+       advogado.
+
+2 — O exercício dos direitos previstos no número anterior suspende a
+    decisão final, sem prejuízo das medidas cautelares já adotadas,
+    designadamente a permanência do animal em centro de recolha oficial
+    quando a sua libertação possa pôr em risco a segurança de pessoas
+    ou de outros animais.
+
+3 — A audiência presencial referida na alínea e) do n.º 1 é registada em
+    ata, da qual constam, no mínimo, a identificação dos intervenientes,
+    a síntese das declarações do detentor e a indicação dos elementos
+    documentais que apresente.
+
+4 — Quando o detentor demonstre, por qualquer meio idóneo, insuficiência
+    económica para suportar os custos da avaliação comportamental
+    complementar referida na alínea d) do n.º 1, esta é assegurada pela
+    câmara municipal competente em razão do território, mediante
+    designação de profissional habilitado, sem encargos para o detentor.
+
+5 — O incumprimento do dever de notificação ou a preterição dos direitos
+    previstos nos n.os 1 a 3 fere de nulidade o ato de classificação,
+    nos termos gerais do procedimento administrativo.
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO D — DIREITOS DO ANIMAL DURANTE O PROCEDIMENTO
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [D].º
+Bem-estar do animal durante o procedimento
+
+1 — Durante o procedimento de classificação, e independentemente do seu
+    resultado, ao animal recolhido nos termos do n.º 1 do artigo 14.º
+    é garantido:
+
+    a) Alojamento em condições compatíveis com a sua espécie, raça e
+       comportamento, nos termos do presente diploma e do disposto no
+       Regulamento (UE) relativo ao bem-estar dos cães e dos gatos e à
+       sua rastreabilidade;
+
+    b) Alimentação adequada e acesso permanente a água potável;
+
+    c) Acompanhamento clínico regular por médico veterinário, com registo
+       de eventuais sintomas, alterações comportamentais ou patologias;
+
+    d) Possibilidade de exercício físico diário, em condições de segurança;
+
+    e) Tratamento sem dor, sofrimento, angústia ou lesões evitáveis.
+
+2 — A permanência do animal em centro de recolha oficial não pode exceder
+    o prazo máximo de quarenta e cinco dias contados da data da recolha,
+    sem prejuízo dos prazos de isolamento sanitário previstos em legislação
+    específica, designadamente em matéria de prevenção e controlo da raiva
+    animal.
+
+3 — Excedido o prazo previsto no número anterior sem que haja decisão final,
+    o animal é entregue ao detentor com aplicação das medidas cautelares
+    adequadas, designadamente a obrigação de uso permanente de meios de
+    contenção e a proibição de circulação em locais públicos, até à decisão
+    final do procedimento.
+
+4 — A entrega prevista no número anterior não prejudica a competência do
+    médico veterinário municipal para determinar, fundamentadamente, a
+    manutenção do animal em centro de recolha quando exista risco grave
+    e iminente para a segurança de pessoas ou de outros animais,
+    devidamente documentado.
+
+5 — Quando o animal apresente comportamento agressivo manifesto que
+    impossibilite o cumprimento integral do disposto no n.º 1, o médico
+    veterinário responsável pelo centro de recolha elabora plano de maneio
+    específico, a aprovar pelo médico veterinário municipal, garantindo o
+    nível mais elevado de bem-estar compatível com a segurança dos
+    trabalhadores e de outros animais.
+
+6 — As despesas decorrentes da permanência do animal em centro de recolha
+    são suportadas pelo detentor, salvo demonstração de insuficiência
+    económica nos termos do n.º 4 do artigo [C].º, caso em que são
+    suportadas pela câmara municipal competente.
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO E — DURAÇÃO, REVISÃO E REABILITAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [E].º
+Vigência da classificação e procedimento de reabilitação
+
+1 — A classificação como animal perigoso é averbada no SICAFE ou SIAC e
+    produz efeitos a partir da data do ato administrativo que a determine.
+
+2 — A classificação tem natureza temporária e vigora pelo período mínimo
+    de dois anos, contado da data referida no número anterior, sem prejuízo
+    do disposto nos números seguintes.
+
+3 — Decorrido o prazo mínimo previsto no número anterior, e desde que não
+    haja registo de novo incidente nesse período, o detentor pode requerer
+    a reavaliação do animal com vista à cessação da classificação,
+    instruindo o requerimento com:
+
+    a) Certificado de conclusão, com aproveitamento, de programa de
+       socialização e obediência, ministrado por treinador certificado nos
+       termos do presente diploma;
+
+    b) Relatório comportamental atualizado, emitido por médico veterinário
+       com competência em comportamento animal ou por etólogo;
+
+    c) Declaração do detentor quanto ao cumprimento integral das medidas
+       de segurança aplicáveis no período de classificação.
+
+4 — Recebido o requerimento, o médico veterinário municipal procede à
+    reavaliação do animal, com observância do disposto no n.º 4 do
+    artigo [B].º, no prazo máximo de trinta dias úteis.
+
+5 — A decisão de cessação da classificação:
+
+    a) É notificada ao detentor;
+
+    b) Determina a averbação no SICAFE ou SIAC do estado atualizado do
+       animal, com indicação expressa de que cessou a classificação como
+       perigoso, mantendo-se, contudo, o registo histórico do incidente
+       que a originou;
+
+    c) Não isenta o detentor do cumprimento das obrigações gerais
+       aplicáveis à detenção do animal nos termos do presente diploma.
+
+6 — O indeferimento do pedido de cessação deve ser fundamentado e indica
+    expressamente as medidas adicionais a adotar para que nova reavaliação
+    possa ser requerida, em prazo não inferior a seis meses.
+
+7 — A classificação cessa automaticamente, com averbação no SICAFE ou SIAC,
+    nas seguintes situações:
+
+    a) Morte do animal;
+
+    b) Trânsito em julgado de sentença absolutória em processo criminal
+       que tivesse por objeto os factos que fundaram a classificação,
+       quando a absolvição se baseie na inexistência ou imputabilidade
+       dos factos ao animal;
+
+    c) Revogação fundamentada do ato administrativo de classificação por
+       autoridade competente.
+
+8 — A ocorrência de novo facto suscetível de classificação como animal
+    perigoso, durante a vigência de classificação anterior, determina a
+    reabertura do procedimento e pode fundar a impossibilidade definitiva
+    de cessação da classificação, nos termos a fixar por portaria do
+    membro do Governo responsável pela área da agricultura.
+
+═══════════════════════════════════════════════════════════════════════════════
+ARTIGO F — GARANTIAS DE IMPUGNAÇÃO E RECURSO
+═══════════════════════════════════════════════════════════════════════════════
+
+Artigo [F].º
+Impugnação e recurso da decisão de classificação
+
+1 — Da decisão de classificação do animal como perigoso, bem como das
+    decisões previstas nos n.os 1 e 5 do artigo 15.º, cabe:
+
+    a) Reclamação para o próprio autor do ato, no prazo de dez dias úteis
+       contados da notificação, com fundamento em vício do procedimento
+       ou em erro manifesto na apreciação da matéria de facto;
+
+    b) Recurso hierárquico para o presidente da câmara municipal
+       territorialmente competente, no prazo de quinze dias úteis contados
+       da notificação;
+
+    c) Recurso contencioso para os tribunais administrativos, nos termos
+       gerais.
+
+2 — A reclamação e o recurso hierárquico têm efeito suspensivo da decisão
+    de eutanásia, salvo nas situações previstas no n.º 5 do artigo 15.º,
+    em que o risco grave e imediato impossibilite a suspensão, devendo,
+    nesse caso, a decisão ser fundamentada com expressa indicação dos
+    motivos de urgência.
+
+3 — Quando o efeito suspensivo seja excluído nos termos da parte final
+    do número anterior, e a decisão venha posteriormente a ser revogada
+    ou anulada, o detentor tem direito a indemnização pelos prejuízos
+    sofridos, nos termos gerais da responsabilidade civil extracontratual
+    do Estado.
+
+4 — O prazo para a decisão da reclamação e do recurso hierárquico não pode
+    exceder quinze dias úteis contados da sua receção, considerando-se
+    tacitamente indeferidos findo esse prazo, sem prejuízo do disposto
+    no número seguinte.
+
+5 — O indeferimento tácito não dispensa a autoridade competente do dever
+    de decidir expressamente, podendo a omissão fundar responsabilidade
+    disciplinar e civil dos titulares dos órgãos responsáveis.
+
+6 — A interposição de recurso contencioso pode ser acompanhada de
+    requerimento de providência cautelar destinada a suspender a execução
+    do ato impugnado, nos termos do Código de Processo nos Tribunais
+    Administrativos.
+
+═══════════════════════════════════════════════════════════════════════════════
+NOTAS FINAIS E ARTICULAÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+ARTICULAÇÃO COM ARTIGOS EXISTENTES:
+────────────────────────────────────────────────────────────────────────────────
+
+→ Artigo 3.º (Definições): Mantém-se inalterado quanto à definição de
+                            "animal perigoso", mas ganha procedimento formal
+                            de classificação.
+
+→ Artigo 14.º (Procedimento agressão): Continua a regular a recolha física
+                                        e comunicação. O novo Artigo [A].º
+                                        regula o procedimento administrativo
+                                        formal subsequente.
+
+→ Artigo 15.º (Destino animais agressores): Continua a regular eutanásia e
+                                              treino, mas agora articulado
+                                              com os novos critérios do
+                                              Artigo [B].º e direitos do
+                                              Artigo [C].º.
+
+→ Artigos 7.º e 9.º (Registo): Continuam a regular o SICAFE, mas o registo
+                                de classificação ganha natureza de averbamento
+                                formal (Artigo [E].º, n.º 1).
+
+→ Artigo 21.º (Treino): Mantém-se aplicável ao treino subsequente, agora
+                         articulado com a reabilitação prevista no Artigo
+                         [E].º, n.º 3.
+
+PRINCÍPIOS ESTRUTURANTES DA PROPOSTA:
+────────────────────────────────────────────────────────────────────────────────
+
+1. LEGALIDADE: Procedimento administrativo formal com prazos, atos e fases
+                claros.
+
+2. CONTRADITÓRIO E AUDIÊNCIA: Garantia de defesa material do detentor.
+
+3. PROPORCIONALIDADE: Critérios objetivos diferenciam agressões graves de
+                       simples; eutanásia é ultima ratio.
+
+4. BEM-ESTAR ANIMAL: Direitos do animal salvaguardados durante todo o
+                      procedimento, em coerência com o Regulamento UE
+                      2023/0447.
+
+5. REVERSIBILIDADE: Classificação não é marca permanente; reabilitação
+                     é possível mediante demonstração objetiva.
+
+6. CONTROLO JUDICIAL: Acesso a recurso administrativo e contencioso,
+                       com efeito suspensivo regra.
+
+7. RESPONSABILIZAÇÃO: Estado responde por decisões erradas; detentor
+                       responde por incumprimento das obrigações.
+
+QUESTÕES EM ABERTO (A DEFINIR EM PORTARIA REGULAMENTAR):
+────────────────────────────────────────────────────────────────────────────────
+
+• Conteúdo programático mínimo dos programas de socialização e obediência
+• Requisitos técnicos do relatório clínico-comportamental
+• Modelos de notificação ao detentor
+• Procedimento de avaliação pelo etólogo independente
+• Taxas devidas pelo procedimento
+
+═══════════════════════════════════════════════════════════════════════════════
+SÍNTESE DAS NOVIDADES INTRODUZIDAS
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ QUEM CLASSIFICA: Médico veterinário municipal (clarificação)
+✓ COMO: Procedimento administrativo formal com fases definidas
+✓ ONDE: Averbamento em SICAFE/SIAC + ato administrativo escrito
+✓ QUANDO: Prazos definidos (5 dias para abrir, 15 para relatório, 45 max)
+✓ DIREITOS DO DETENTOR: Audiência, contraditório, perito, recurso
+✓ DIREITOS DO ANIMAL: Bem-estar garantido + limites temporais de retenção
+✓ DURAÇÃO: 2 anos mínimo, com possibilidade de reabilitação
+✓ RECURSO: Reclamação + recurso hierárquico + contencioso
+
+═══════════════════════════════════════════════════════════════════════════════
