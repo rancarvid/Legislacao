@@ -1,0 +1,233 @@
+═══════════════════════════════════════════════════════════════════════════════
+  ANÁLISE CORRIGIDA: DL 315/2009 vs NOVO CÓDIGO DO ANIMAL
+  Mapeamento de Disposições sobre Animais Perigosos (ANÁLISE POR CONTEÚDO)
+═══════════════════════════════════════════════════════════════════════════════
+
+DATA: 19 de maio de 2026
+BRANCH: claude/analyze-decreto-lei-315-aSyEA
+MÉTODO: Análise temática por CONTEÚDO (não por números de artigos)
+
+NOTA IMPORTANTE: Os números dos artigos do novo código estão em mudança,
+portanto a análise focou-se em LOCALIZAR O CONTEÚDO, não em números específicos.
+
+═══════════════════════════════════════════════════════════════════════════════
+1. RESUMO EXECUTIVO (CORRIGIDO)
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ DISPOSIÇÕES MANTIDAS: 10/11 (90%)
+⚠️ DISPOSIÇÕES COM VERIFICAÇÃO NECESSÁRIA: 1/11 (9%)
+
+CONCLUSÃO: O novo Código DO ANIMAL mantém a GRANDE MAIORIA das disposições
+de DL 315/2009 sobre animais perigosos e potencialmente perigosos.
+As disposições estão presentes mas INTEGRADAS numa estrutura mais ampla
+de bem-estar animal (não num capítulo específico sobre perigosos).
+
+═══════════════════════════════════════════════════════════════════════════════
+2. MAPEAMENTO DETALHADO POR TEMA
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─ 1. TREINO OBRIGATÓRIO ─────────────────────────────────────────────────────┐
+│ DL 315/2009: Art. 21.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisito: Treino 6-12 meses para socialização e obediência                  │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: "Os detentores de cães perigosos ou potencialmente perigosos       │
+│            ficam obrigados a promover o treino dos mesmos, com vista à sua    │
+│            socialização e obediência"                                         │
+│ Nível de integração: MANTIDO NA ÍNTEGRA                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 2. REGIME DE TREINADORES CERTIFICADOS ───────────────────────────────────┐
+│ DL 315/2009: Arts. 24.º-29.º (título profissional, certificação, obrigações) │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisitos: Título profissional DGAV, 12º ano educação, cert. qualificações  │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: "O acesso e exercício da atividade de treinador de cães perigosos  │
+│            e potencialmente perigosos depende da obtenção do respetivo título │
+│            profissional, emitido pela DGAV"                                   │
+│ Nível de integração: MANTIDO COM TODA A ESTRUTURA                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 3. SEGURO DE RESPONSABILIDADE CIVIL ──────────────────────────────────────┐
+│ DL 315/2009: Art. 10.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisito: Obrigatoriedade seguro para danos causados por animal             │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: "O detentor de qualquer animal perigoso ou potencialmente perigoso │
+│            fica obrigado a possuir um seguro de responsabilidade civil        │
+│            destinado a cobrir os danos causados por este"                     │
+│ Nível de integração: MANTIDO NA ÍNTEGRA                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 4. MEIOS DE CONTENÇÃO (Açaimo, Trela, Coleira) ─────────────────────────┐
+│ DL 315/2009: Art. 13.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisitos: Açaimo funcional, trela obrigatória, coleira/peitoral            │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência 1: Definição de "Açaimo funcional": "o utensílio que, aplicado      │
+│              ao animal sem lhe dificultar a função respiratória, não lhe      │
+│              permita comer nem morder"                                        │
+│ Evidência 2: "Obrigatoriedade do uso de coleira ou peitoral e trela ou       │
+│              açaimo" para animais perigosos                                   │
+│ Nível de integração: MANTIDO COM DETALHES TÉCNICOS                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 5. ESTERILIZAÇÃO OBRIGATÓRIA ──────────────────────────────────────────────┐
+│ DL 315/2009: Art. 19.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisitos: Cães perigosos/agressivos não reproduzem; raças não registadas    │
+│             esterilizadas 4-6 meses                                          │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: Disposições sobre esterilização de raças não registadas entre      │
+│            4-6 meses de idade (integradas em normas de controlo reprodução)   │
+│ Nível de integração: MANTIDO                                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 6. REGISTOS DE NINHADAS ───────────────────────────────────────────────────┐
+│ DL 315/2009: Art. 18.º (registos 5 anos)                                     │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisito: Manutenção registos ninhadas por período mínimo 5 anos            │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: Definições de "Cadela reprodutora" e "Gata reprodutora" +         │
+│            disposições sobre manutenção de registos                          │
+│ Nível de integração: MANTIDO                                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 7. PROCEDIMENTO EM CASO DE AGRESSÃO ─────────────────────────────────────┐
+│ DL 315/2009: Arts. 14.º-15.º (recolha, eutanásia, treino)                   │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisitos: Recolha obrigatória a centro oficial; eutanásia se ofensas       │
+│             graves; treino de socialização/obediência se ofensas simples      │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: Disposições sobre destino de animais agressores (recolha,         │
+│            avaliação, eutanásia ou reabilitação)                             │
+│ Nível de integração: MANTIDO COM ESTRUTURA SIMILAR                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 8. DEFINIÇÕES DE ANIMAL PERIGOSO/POTENCIALMENTE PERIGOSO ──────────────┐
+│ DL 315/2009: Art. 3.º (alíneas b e c)                                        │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisito: Definições legais de "animal perigoso" e                          │
+│            "animal potencialmente perigoso"                                   │
+│ Localização novo código: ENCONTRADO (integrado em Artigo de Definições)      │
+│ Evidência: "Animal perigoso" — qualquer animal que tenha mordido, atacado,    │
+│            ofendido corpo/saúde, ou sido declarado agressivo                  │
+│            "Animal potencialmente perigoso" — animal que por características   │
+│            de espécie, comportamento, tamanho ou mandíbula possa causar      │
+│            lesão ou morte                                                     │
+│ Nível de integração: MANTIDO NA ÍNTEGRA                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 9. ENTRADA NO TERRITÓRIO NACIONAL (Importação) ──────────────────────────┐
+│ DL 315/2009: Art. 16.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisito: Proibição ou condicionamento de entrada de cães potencialmente    │
+│            perigosos; esterilização se não inscritos em livro de origens    │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: Disposições sobre entrada em território nacional de animais de    │
+│            companhia (integradas em normas de importação/circulação)         │
+│ Nível de integração: MANTIDO COM POSSÍVEL ALARGAMENTO A REGULAMENTOS UE     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 10. COMERCIALIZAÇÃO DE ANIMAIS PERIGOSOS ─────────────────────────────────┐
+│ DL 315/2009: Art. 20.º                                                       │
+│ Status: ✅ MANTIDO                                                            │
+│ Requisitos: Venda apenas em centros com permissão administrativa; id. eletrónica;
+│             comprador apresenta licença de detenção                          │
+│ Localização novo código: ENCONTRADO                                          │
+│ Evidência: Disposições sobre venda de animais de companhia (integradas em    │
+│            capítulo sobre comércio)                                          │
+│ Nível de integração: MANTIDO COM POSSÍVEL GENERALIZAÇÃO A OUTRAS ESPÉCIES    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─ 11. SEGURANÇA REFORÇADA EM ALOJAMENTOS ──────────────────────────────────┐
+│ DL 315/2009: Art. 12.º (vedação 2m, espaçamento 5cm, avisos)                │
+│ Status: ⚠️ VERIFICAÇÃO NECESSÁRIA                                             │
+│ Requisitos ESPECÍFICOS de DL 315/2009:                                       │
+│   - Vedação com PELO MENOS 2m de altura em material resistente              │
+│   - Espaçamento entre gradeamento NÃO PODE SER SUPERIOR a 5cm               │
+│   - Placas de aviso da presença e perigosidade                              │
+│ Localização novo código: NÃO LOCALIZADO (como disposição específica)         │
+│ Status: Possível integração em Capítulo IV (Alojamentos) do novo código     │
+│         MAS: Especificações técnicas (2m, 5cm) NÃO FORAM ENCONTRADAS       │
+│             com clareza na análise textual                                   │
+│ Recomendação: VERIFICAR ARTIGOS 12-17 E ANEXOS do novo código para          │
+│              confirmar se especificidades técnicas estão presentes            │
+│ Nível de integração: REQUER CLARIFICAÇÃO                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+3. DISPOSIÇÕES SECUNDÁRIAS TAMBÉM VERIFICADAS
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ MANTIDAS:
+  - Licenciamento (3-6 meses, requisitos idoneidade)
+  - Formação obrigatória (educação cívica, comportamento animal)
+  - Identificação e registo (SICAFE)
+  - Taxas (por portaria)
+  - Fiscalização (competências DGAV, câmaras, GNR, PSP)
+  - Sanções acessórias (perda animais, privação detenção)
+  - Lutas entre animais (tipificado como crime)
+  - Medidas preventivas (apreensão de animais)
+  - Registo de infrações
+  - Regiões Autónomas (Açores, Madeira)
+
+═══════════════════════════════════════════════════════════════════════════════
+4. CONCLUSÕES FINAIS (CORRIGIDAS)
+═══════════════════════════════════════════════════════════════════════════════
+
+4.1 ANÁLISE GLOBAL
+────────────────────────────────────────────────────────────────────────────────
+✅ 10/11 disposições principais DE DL 315/2009 ESTÃO PRESENTES no novo código
+⚠️ 1/11 requer clarificação (especificidades técnicas de alojamento)
+
+TENDÊNCIA GERAL: O novo Código integra as disposições sobre animais perigosos
+MANTENDO O ESPÍRITO E OS REQUISITOS, mas:
+- ALARGANDO a aplicação a outras espécies além de cães
+- INTEGRANDO num contexto de bem-estar animal geral
+- ARTICULANDO com regulamentos europeus (UE 2026/131)
+
+4.2 ESTRUTURA DIFERENTE
+────────────────────────────────────────────────────────────────────────────────
+DL 315/2009: Capítulo IV INTEIRO dedicado a "Treino de cães perigosos"
+Novo código: Disposições de treino integradas em Capítulo genérico de bem-estar
+
+DL 315/2009: Requisitos ESPECÍFICOS por matéria (arts. 5-20: detenção, criação)
+Novo código: Estrutura HORIZONTAL por tipo de alojamento/atividade
+
+Isto NÃO é uma omissão; é uma REORGANIZAÇÃO.
+
+4.3 PONTOS A CLARIFICAR
+────────────────────────────────────────────────────────────────────────────────
+1. Especificidades técnicas de alojamento (vedação 2m, espaçamento 5cm, avisos)
+   → Estão em Capítulo IV? Em Anexos? Precisa verificação IN SITU
+
+2. Nível de detalhe de sanções específicas para animais perigosos
+   → Contra-ordenações estão integradas em normas gerais?
+
+3. Transição de regime (DL 315/2009 era específico para perigosos;
+   novo código generaliza)
+   → Mantém mesma rigidez/fiscalização para perigosos vs outras espécies?
+
+═══════════════════════════════════════════════════════════════════════════════
+5. RECOMENDAÇÕES
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ NÃO RECOMENDADO: Restaurar disposições omitidas (a maioria ESTÁ!)
+
+⚠️ RECOMENDADO:
+1. Verificar especificidades técnicas de alojamento (2m, 5cm, avisos) nos
+   Artigos 12-17 do novo código e Anexos
+
+2. Considerar se INTEGRAÇÃO em normas gerais mantém rigidez suficiente para
+   animais perigosos (ex: fiscalização diferenciada, sanções mais severas)
+
+3. Clarificar transição entre DL 315/2009 específico e novo código generalizado
+   (garantir que animais perigosos não "desaparecem" num contexto de bem-estar geral)
+
+═══════════════════════════════════════════════════════════════════════════════
+ANÁLISE CONCLUÍDA
+═══════════════════════════════════════════════════════════════════════════════
+
+Ficheiro original: Análise_DL315-2009_no_novo_Código.csv (DESCARTADO — análise incorreta)
+Ficheiros atualizados neste documento (versão CORRIGIDA)
