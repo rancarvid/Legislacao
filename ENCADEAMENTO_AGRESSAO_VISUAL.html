@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encadeamento de Ações: Agressão de Cão</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .tab-button {
+            flex: 1;
+            padding: 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #666;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-button.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .tab-button:hover {
+            background: #f0f4ff;
+        }
+
+        .content {
+            display: none;
+            padding: 30px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .phase {
+            margin-bottom: 30px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .phase::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: white;
+            border: 4px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .phase::after {
+            content: '';
+            position: absolute;
+            left: 14px;
+            top: 30px;
+            width: 2px;
+            height: calc(100% + 10px);
+            background: #ddd;
+        }
+
+        .phase:last-child::after {
+            display: none;
+        }
+
+        .phase.imediata::before {
+            border-color: #ff6b6b;
+            background: #ffe0e0;
+        }
+
+        .phase.isolamento::before {
+            border-color: #ffa500;
+            background: #fff5e0;
+        }
+
+        .phase.investigacao::before {
+            border-color: #4ecdc4;
+            background: #e0f7f6;
+        }
+
+        .phase.decisao::before {
+            border-color: #95e1d3;
+            background: #e0f7f0;
+        }
+
+        .phase.sancao::before {
+            border-color: #667eea;
+            background: #e8f0ff;
+        }
+
+        .phase-header {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-header::before {
+            content: '▶';
+            display: inline-block;
+            transition: transform 0.3s;
+            font-size: 0.8em;
+        }
+
+        .phase-header.expanded::before {
+            transform: rotate(90deg);
+        }
+
+        .phase-content {
+            display: none;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 10px;
+            border-left: 4px solid;
+        }
+
+        .phase.imediata .phase-content {
+            border-left-color: #ff6b6b;
+        }
+
+        .phase.isolamento .phase-content {
+            border-left-color: #ffa500;
+        }
+
+        .phase.investigacao .phase-content {
+            border-left-color: #4ecdc4;
+        }
+
+        .phase.decisao .phase-content {
+            border-left-color: #95e1d3;
+        }
+
+        .phase.sancao .phase-content {
+            border-left-color: #667eea;
+        }
+
+        .phase-content.expanded {
+            display: block;
+        }
+
+        .action {
+            margin: 8px 0;
+            padding: 8px;
+            background: white;
+            border-radius: 4px;
+            border-left: 3px solid #667eea;
+        }
+
+        .action strong {
+            color: #667eea;
+        }
+
+        .decision-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+
+        .decision-box.positive {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+
+        .decision-box.negative {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+
+        .decision-box strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .imediata-color { background: #ff6b6b; }
+        .isolamento-color { background: #ffa500; }
+        .investigacao-color { background: #4ecdc4; }
+        .decisao-color { background: #95e1d3; }
+        .sancao-color { background: #667eea; }
+
+        .quick-reference {
+            background: #e8f0ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .quick-reference h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+        }
+
+        .quick-reference ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        .quick-reference li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .quick-reference li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .regulations {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 10px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                text-align: left;
+                border-bottom: none;
+                border-left: 3px solid transparent;
+            }
+
+            .tab-button.active {
+                border-left-color: #667eea;
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚖️ Agressão de Cão</h1>
+            <p>Encadeamento de Ações — DL 315/2009 + Portaria 264/2013</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab(event, 'cenario-a')">
+                📋 Cenário A: Leve + Identificado
+            </button>
+            <button class="tab-button" onclick="switchTab(event, 'cenario-b')">
+                ⚠️ Cenário B: Grave + Desconhecido
+            </button>
+            <button class="tab-button" onclick="switchTab(event, 'referencia')">
+                📖 Referência Rápida
+            </button>
+        </div>
+
+        <!-- CENÁRIO A -->
+        <div id="cenario-a" class="content active">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color imediata-color"></div>
+                    <span>Recolha (0-24h)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color isolamento-color"></div>
+                    <span>Isolamento (1-10 dias)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color investigacao-color"></div>
+                    <span>Investigação (2-15 dias)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color decisao-color"></div>
+                    <span>Decisão</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color sancao-color"></div>
+                    <span>Sanção</span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <!-- FASE 1 -->
+                <div class="phase imediata">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        ⏰ FASE 1: Recolha Imediata (0-24h)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>1.</strong> Agressão ocorre (pessoa + animal feridos)</div>
+                        <div class="action"><strong>2.</strong> Pessoa vai a urgências → Hospital higieniza ferida</div>
+                        <div class="action"><strong>3.</strong> GNR/PSP chamada → Localiza cão</div>
+                        <div class="action"><strong>4.</strong> Microchip lido → Cão IDENTIFICADO ✓</div>
+                        <div class="action"><strong>5.</strong> SICAFE consultado → Detentor localizado</div>
+                        <div class="action"><strong>6.</strong> Boletim sanitário → Vacinação VÁLIDA ✓</div>
+                        <div class="action"><strong>7.</strong> Cão recolhido a centro oficial (expensas detentor)</div>
+                        <div class="regulations">
+                            📜 <strong>DL 315/2009, Art. 14.º:</strong> Recolha obrigatória a centro oficial
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 2 -->
+                <div class="phase isolamento">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        🏥 FASE 2: Isolamento Raiva (10 dias)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>Dia 1-10:</strong> Observação diária no centro</div>
+                        <div class="decision-box positive">
+                            ✅ <strong>SEM sinais raiva</strong><br>
+                            Salivação normal, alimentação OK, sem paralisia
+                        </div>
+                        <div class="regulations">
+                            📜 <strong>Portaria 264/2013:</strong> 10 dias (vacinado válido)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 3 -->
+                <div class="phase investigacao">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        🔍 FASE 3: Investigação Agressão (2-15 dias)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>Dia 2-8:</strong> Detentor notificado pela junta</div>
+                        <div class="action"><strong>Dia 3-10:</strong> Recolha documentação do detentor</div>
+                        <div class="action"><strong>Dia 5:</strong> Médico veterinário avalia comportamento</div>
+                        <div class="action"><strong>Dia 10:</strong> Classificação: ofensa SIMPLES ou GRAVE?</div>
+                        <div class="regulations">
+                            📜 <strong>DL 315/2009, Art. 14.º, n.º 4:</strong> Prazo 15 dias para documentação
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 4 -->
+                <div class="phase decisao">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        ✅ FASE 4: Decisão Final
+                    </div>
+                    <div class="phase-content">
+                        <div class="decision-box positive">
+                            <strong>OPÇÃO 1: Ofensa Simples Confirmada</strong><br>
+                            Cão entregue ao detentor<br>
+                            Obrigação: Treino socialização/obediência<br>
+                            Prazo: 6-8 semanas
+                        </div>
+                        <div class="decision-box negative">
+                            <strong>OPÇÃO 2: Comportamento Agressivo</strong><br>
+                            Cão classificado como PERIGOSO<br>
+                            Eutanásia <strong>OU</strong> Restrições permanentes
+                        </div>
+                        <div class="regulations">
+                            📜 <strong>DL 315/2009, Art. 15.º:</strong> Ofensas graves → Eutanásia
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 5 -->
+                <div class="phase sancao">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        ⚖️ FASE 5: Sanção (Contraordenação/Crime)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>Possíveis infrações:</strong></div>
+                        <div class="action">❌ Falta de seguro responsabilidade civil</div>
+                        <div class="action">❌ Falta de treino obrigatório</div>
+                        <div class="action">❌ Circulação sem meios contenção</div>
+                        <div class="action">❌ Vigilância insuficiente</div>
+                        <div class="decision-box">
+                            💰 <strong>Coima:</strong> Conforme RJCE<br>
+                            ⚖️ <strong>Decisão:</strong> Diretor-Geral DGAV
+                        </div>
+                        <div class="regulations">
+                            📜 <strong>DL 315/2009, Art. 38.º:</strong> Contraordenações económicas graves
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CENÁRIO B -->
+        <div id="cenario-b" class="content">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color imediata-color"></div>
+                    <span>Recolha Urgente</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color isolamento-color"></div>
+                    <span>Isolamento Raiva (15 dias)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color investigacao-color"></div>
+                    <span>Investigação Agressão</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color decisao-color"></div>
+                    <span>Decisão</span>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <!-- FASE 1 -->
+                <div class="phase imediata">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        🚨 FASE 1: Protocolo Raiva (0-6h)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>1.</strong> Agressão com FERIDAS GRAVES</div>
+                        <div class="action"><strong>2.</strong> Pessoa vai urgências IMEDIATAMENTE</div>
+                        <div class="action"><strong>3.</strong> Hospital: Lavagem ferida (água + sabão 15 min)</div>
+                        <div class="action"><strong>4.</strong> GNR/PSP procura cão URGENTEMENTE</div>
+                        <div class="decision-box negative">
+                            ❌ <strong>Cão DESCONHECIDO</strong> (sem microchip)<br>
+                            OU vacinação desconhecida
+                        </div>
+                        <div class="action"><strong>5.</strong> Captura → Centro recolha com isolamento</div>
+                        <div class="regulations">
+                            📜 <strong>Portaria 264/2013:</strong> Isolamento obrigatório (presunção raiva)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 2 -->
+                <div class="phase isolamento">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        🔒 FASE 2: Isolamento Raiva MÁXIMO (15 dias)
+                    </div>
+                    <div class="phase-content">
+                        <div class="action"><strong>Dia 1-15:</strong> Observação rigorosa diária</div>
+                        <div class="action"><strong>Monitorizar sinais raiva:</strong></div>
+                        <div class="action">⚠️ Sialose (salivação excessiva)</div>
+                        <div class="action">⚠️ Dificuldade em engolir</div>
+                        <div class="action">⚠️ Agressividade anormal</div>
+                        <div class="action">⚠️ Paralisia (início pernas posteriores)</div>
+
+                        <div style="margin-top: 15px;">
+                            <div class="decision-box positive">
+                                ✅ <strong>DIA 1-15: SEM SINAIS</strong><br>
+                                Liberto após dia 15
+                            </div>
+                            <div class="decision-box negative" style="margin-top: 10px;">
+                                ☠️ <strong>QUALQUER DIA: COM SINAIS</strong><br>
+                                <strong>Eutanásia IMEDIATA obrigatória</strong><br>
+                                Corpo enviado a laboratório (IFI)
+                            </div>
+                        </div>
+                        <div class="regulations">
+                            📜 <strong>Portaria 264/2013:</strong> 15 dias (nunca vacinado)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 3 -->
+                <div class="phase investigacao">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        🔍 FASE 3: Investigação Agressão (paralela)
+                    </div>
+                    <div class="phase-content">
+                        <div class="decision-box negative">
+                            <strong>⚠️ Ofensas GRAVES confirmadas</strong><br>
+                            Feridas profundas, perdas de tecido
+                        </div>
+                        <div class="action" style="margin-top: 15px;">
+                            <strong>Resultado:</strong> Eutanásia obrigatória independentemente de raiva
+                        </div>
+                        <div class="regulations" style="margin-top: 10px;">
+                            📜 <strong>DL 315/2009, Art. 15.º:</strong> Ofensas graves à integridade física
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FASE 4 -->
+                <div class="phase decisao">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        ☠️ FASE 4: Eutanásia
+                    </div>
+                    <div class="phase-content">
+                        <div class="decision-box negative">
+                            <strong>Eutanásia Obrigatória por:</strong><br>
+                            1️⃣ Ofensas graves (Art. 15º DL 315/2009)<br>
+                            2️⃣ OU sinais raiva detectados
+                        </div>
+                        <div class="action" style="margin-top: 15px;">
+                            <strong>Procedimento:</strong>
+                        </div>
+                        <div class="action">✓ Método sem dor (injeção letal)</div>
+                        <div class="action">✓ Incineração (protocolo raiva)</div>
+                        <div class="action">✓ Amostra laboratório (teste IFI)</div>
+                        <div class="action">✓ Notificação detentor + vítima</div>
+                        <div class="action">✓ Sem direito a indenização</div>
+                        <div class="regulations" style="margin-top: 10px;">
+                            📜 <strong>DL 315/2009, Art. 15.º:</strong> "Eutanasiado através de método que não lhe cause dores"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REFERÊNCIA RÁPIDA -->
+        <div id="referencia" class="content">
+            <h2>📖 Referência Rápida</h2>
+
+            <div class="quick-reference">
+                <h3>🏥 Autoridades &amp; Responsabilidades</h3>
+                <ul>
+                    <li><strong>Hospital/Urgências:</strong> Higienização ferida, notificação</li>
+                    <li><strong>GNR/PSP:</strong> Captura cão, transporte</li>
+                    <li><strong>Médico Vet. Municipal:</strong> Decisão isolamento, eutanásia, agressão</li>
+                    <li><strong>Centro Recolha:</strong> Isolamento, observação diária</li>
+                    <li><strong>Junta de Freguesia:</strong> Notificação detentor, SICAFE</li>
+                    <li><strong>DGAV:</strong> Controlo raiva, contraordenações</li>
+                    <li><strong>Ministério Público:</strong> Crimes (se tipificados)</li>
+                </ul>
+            </div>
+
+            <div class="quick-reference">
+                <h3>⏰ Prazos Críticos</h3>
+                <ul>
+                    <li><strong>0-6h:</strong> Captura cão (raiva)</li>
+                    <li><strong>0-24h:</strong> Recolha a centro oficial</li>
+                    <li><strong>1-10 dias:</strong> Isolamento (vacinado)</li>
+                    <li><strong>1-15 dias:</strong> Isolamento (não vacinado)</li>
+                    <li><strong>2-8 dias:</strong> Notificação detentor</li>
+                    <li><strong>Dia 15:</strong> Prazo documentação detentor</li>
+                </ul>
+            </div>
+
+            <div class="quick-reference">
+                <h3>🎯 Decisões-Chave</h3>
+                <ul>
+                    <li><strong>Cão identificado + vacinado:</strong> 10 dias isolamento</li>
+                    <li><strong>Cão desconhecido/sem vacina:</strong> 15 dias isolamento</li>
+                    <li><strong>Sinais raiva:</strong> Eutanásia IMEDIATA</li>
+                    <li><strong>Ofensas graves:</strong> Eutanásia obrigatória</li>
+                    <li><strong>Ofensas simples:</strong> Possível treino + restrições</li>
+                </ul>
+            </div>
+
+            <div class="quick-reference">
+                <h3>📜 Regulamentos Chave</h3>
+                <ul>
+                    <li><strong>DL 315/2009:</strong> Art. 14.º (recolha), Art. 15.º (eutanásia), Art. 21.º (treino)</li>
+                    <li><strong>Portaria 264/2013:</strong> Isolamento raiva (10-15 dias)</li>
+                    <li><strong>Regulamento UE 2023/0447:</strong> Bem-estar cães e gatos (aplicável)</li>
+                </ul>
+            </div>
+
+            <div class="quick-reference">
+                <h3>⚠️ Riscos Críticos</h3>
+                <ul>
+                    <li><strong>Raiva não diagnosticada:</strong> Oferta PEP proactiva</li>
+                    <li><strong>Comunicação omitida:</strong> Obrigação legal (saúde pública)</li>
+                    <li><strong>Isolamento interrompido:</strong> Risco incubação raiva</li>
+                    <li><strong>Eutanásia por erro:</strong> Sempre com teste IFI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📋 Encadeamento de Ações: Agressão de Cão | DL 315/2009 + Portaria 264/2013</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Clique nas fases para expandir/colapsar conteúdo | Versão interativa visual</p>
+    </div>
+
+    <script>
+        function switchTab(e, tabName) {
+            // Hide all contents
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected content and activate button
+            document.getElementById(tabName).classList.add('active');
+            e.target.classList.add('active');
+        }
+
+        function togglePhase(header) {
+            header.classList.toggle('expanded');
+            const content = header.nextElementSibling;
+            content.classList.toggle('expanded');
+        }
+
+        // Auto-expand first phase on load
+        window.addEventListener('load', () => {
+            const firstHeader = document.querySelector('.phase-header');
+            if (firstHeader) {
+                firstHeader.click();
+            }
+        });
+    </script>
+</body>
+</html>
