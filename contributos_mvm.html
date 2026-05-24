@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributos MVM — Gestão Integrada de Animais Errantes</title>
+<style>
+  :root {
+    --blue: #1a4a7a;
+    --blue-light: #2d6db5;
+    --blue-pale: #e8f0fb;
+    --gray-dark: #2c2c2c;
+    --gray: #555;
+    --gray-light: #e0e4ea;
+    --gray-bg: #f5f7fa;
+    --white: #fff;
+    --border: #ccd4e0;
+    --tag-bg: #dde8f5;
+    --tag-text: #1a4a7a;
+    --shadow: 0 1px 4px rgba(0,0,0,.10);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; color: var(--gray-dark); background: var(--gray-bg); display: flex; min-height: 100vh; }
+
+  /* SIDEBAR */
+  #sidebar {
+    width: 260px; min-width: 220px; background: var(--blue); color: #fff;
+    display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  }
+  #sidebar-header { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,.15); }
+  #sidebar-header h1 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .7; margin-bottom: 6px; }
+  #sidebar-header p { font-size: 12px; opacity: .55; line-height: 1.4; }
+  #sidebar nav { padding: 10px 0; }
+  .nav-item {
+    display: block; padding: 9px 18px; font-size: 13px; color: rgba(255,255,255,.82);
+    text-decoration: none; cursor: pointer; border-left: 3px solid transparent;
+    transition: background .15s, border-color .15s;
+  }
+  .nav-item:hover { background: rgba(255,255,255,.08); color: #fff; }
+  .nav-item.active { background: rgba(255,255,255,.13); border-left-color: #7ec8f7; color: #fff; font-weight: 600; }
+  .nav-num { display: inline-block; background: rgba(255,255,255,.18); border-radius: 10px; padding: 1px 7px; font-size: 11px; margin-right: 7px; }
+
+  /* MAIN */
+  #main { flex: 1; padding: 32px 36px; overflow-y: auto; max-width: 960px; }
+  #page-title { margin-bottom: 4px; }
+  #page-title h2 { font-size: 22px; color: var(--blue); font-weight: 700; }
+  #page-title p { font-size: 13px; color: var(--gray); margin-top: 4px; }
+  #search-bar { margin: 18px 0 28px; }
+  #search-bar input {
+    width: 100%; padding: 9px 14px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: 14px; color: var(--gray-dark); background: var(--white);
+    outline: none; transition: border-color .2s;
+  }
+  #search-bar input:focus { border-color: var(--blue-light); }
+
+  /* SECTION */
+  .section { margin-bottom: 48px; scroll-margin-top: 20px; }
+  .section-header {
+    display: flex; align-items: center; gap: 12px;
+    border-bottom: 2px solid var(--blue); padding-bottom: 8px; margin-bottom: 18px;
+  }
+  .section-num { background: var(--blue); color: #fff; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+  .section-title { font-size: 17px; font-weight: 700; color: var(--blue); }
+  .section-count { margin-left: auto; font-size: 12px; color: var(--gray); background: var(--gray-light); padding: 2px 10px; border-radius: 12px; }
+
+  /* CARD */
+  .card {
+    background: var(--white); border: 1px solid var(--border); border-radius: 8px;
+    margin-bottom: 12px; box-shadow: var(--shadow); overflow: hidden;
+  }
+  .card-header {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 13px 16px; cursor: pointer; user-select: none;
+    transition: background .15s;
+  }
+  .card-header:hover { background: var(--blue-pale); }
+  .contributor-badge {
+    background: var(--tag-bg); color: var(--tag-text);
+    border-radius: 5px; padding: 4px 10px; font-size: 12px; font-weight: 600;
+    white-space: nowrap; flex-shrink: 0; margin-top: 2px;
+  }
+  .card-summary { flex: 1; font-size: 14px; color: var(--gray-dark); line-height: 1.5; }
+  .expand-btn {
+    color: var(--blue-light); font-size: 18px; flex-shrink: 0;
+    transition: transform .2s; margin-top: 2px;
+  }
+  .card.open .expand-btn { transform: rotate(180deg); }
+  .card-body {
+    display: none; padding: 0 16px 16px 16px;
+    border-top: 1px solid var(--gray-light); background: var(--gray-bg);
+    font-size: 13.5px; line-height: 1.65; color: var(--gray-dark);
+  }
+  .card.open .card-body { display: block; }
+  .card-body p { margin-top: 10px; }
+  .card-body ul { margin: 8px 0 4px 18px; }
+  .card-body li { margin-bottom: 4px; }
+  .card-body h4 { margin-top: 12px; color: var(--blue); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; }
+  .ref { font-size: 12px; color: var(--gray); background: var(--gray-light); padding: 2px 7px; border-radius: 4px; display: inline-block; margin-top: 4px; }
+
+  /* HIGHLIGHT */
+  mark { background: #fff3b0; border-radius: 2px; padding: 0 2px; }
+
+  /* NO RESULTS */
+  .no-results { color: var(--gray); font-style: italic; padding: 16px 0; }
+
+  @media (max-width: 700px) {
+    body { flex-direction: column; }
+    #sidebar { width: 100%; height: auto; position: static; }
+    #main { padding: 20px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<nav id="sidebar">
+  <div id="sidebar-header">
+    <h1>Contributos MVM</h1>
+    <p>Reunião 06.03.2026 · Quinta da Fonte Boa, Santarém</p>
+  </div>
+  <nav id="nav-links">
+    <a class="nav-item active" onclick="scrollTo('s1')" href="#s1"><span class="nav-num">1</span>Esterilização e Controlo Reprodutivo</a>
+    <a class="nav-item" onclick="scrollTo('s2')" href="#s2"><span class="nav-num">2</span>Identificação Eletrónica e SIAC</a>
+    <a class="nav-item" onclick="scrollTo('s3')" href="#s3"><span class="nav-num">3</span>Animais Errantes e Programas CED</a>
+    <a class="nav-item" onclick="scrollTo('s4')" href="#s4"><span class="nav-num">4</span>Centros de Recolha Oficial (CRO)</a>
+    <a class="nav-item" onclick="scrollTo('s5')" href="#s5"><span class="nav-num">5</span>Adoção, FAT e Figuras de Tutela</a>
+    <a class="nav-item" onclick="scrollTo('s6')" href="#s6"><span class="nav-num">6</span>Bem-Estar e Condições de Detenção</a>
+    <a class="nav-item" onclick="scrollTo('s7')" href="#s7"><span class="nav-num">7</span>Quadro Sancionatório e Penal</a>
+    <a class="nav-item" onclick="scrollTo('s8')" href="#s8"><span class="nav-num">8</span>Carreira e Estatuto do MVM</a>
+    <a class="nav-item" onclick="scrollTo('s9')" href="#s9"><span class="nav-num">9</span>Cães Perigosos e Pot. Perigosos</a>
+    <a class="nav-item" onclick="scrollTo('s10')" href="#s10"><span class="nav-num">10</span>Saúde Pública e Vacinação</a>
+  </nav>
+</nav>
+
+<div id="main">
+  <div id="page-title">
+    <h2>Contributos dos Médicos Veterinários Municipais</h2>
+    <p>Gestão Integrada da População de Animais Errantes · 15 contribuintes · 14 municípios</p>
+  </div>
+  <div id="search-bar">
+    <input type="text" id="search" placeholder="Pesquisar contributos, município ou tema…" oninput="filterCards()">
+  </div>
+
+  <!-- ========== S1 ========== -->
+  <div class="section" id="s1">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div class="section-title">Esterilização e Controlo Reprodutivo</div>
+      <div class="section-count">10 contributos</div>
+    </div>
+
+    <div class="card" id="c-s1-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Nuno Rosa · Castro Verde</div>
+        <div class="card-summary">Esterilização obrigatória com diferenciação no valor da licença anual: animais não esterilizados pagariam licenças substancialmente mais caras.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe a obrigatoriedade de esterilização, reconhecendo a dificuldade de aplicação. Como alternativa pragmática, sugere a diferenciação do valor da licença anual paga nas juntas de freguesia: licenças substancialmente mais caras para animais não esterilizados.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Bento · Leiria</div>
+        <div class="card-summary">Esterilização obrigatória de todos os canídeos e felídeos não pertencentes a criadores ou forças policiais/exército, com período de entrada em vigor de 2 anos.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe esterilização obrigatória de todos os canídeos e felídeos que não pertençam a criadores, forças policiais ou exército.</p>
+        <p>Caçadores/matilheiros registar-se-iam como criadores informais (alojamento sem fins lucrativos registado no SIAC). Detentores que não concordassem necessitariam de declaração do médico veterinário assistente responsabilizando-se pelo controlo reprodutivo, inserida no SIAC.</p>
+        <p>Período de entrada em vigor: <strong>2 anos</strong>.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Esterilização cirúrgica obrigatória de canídeos, felídeos e mustelídeos, com clarificação legal do método cirúrgico e regime de criadores registados na DGAV com LOP.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Obrigatoriedade</h4>
+        <p>Esterilização cirúrgica obrigatória de todos os animais de companhia (canídeos, felídeos e mustelídeos), com contraordenação significativa em caso de incumprimento, revertendo parcialmente para a DGAV.</p>
+        <h4>Criadores</h4>
+        <p>Reprodução permitida apenas a animais reprodutores de criadores registados na DGAV, licenciados, com LOP registado no CPC (Clube Português de Canicultura) e no Clube Português de Felinicultura, mediante taxa anual.</p>
+        <h4>Clarificação do conceito</h4>
+        <p>Substituição do termo "esterilização" por "esterilização cirúrgica" na legislação, ou atualização do conceito especificando o método (remoção de testículos em machos; ovários e útero em fêmeas), para evitar interpretações que admitam esterilização química.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Margarida Câmara · Évora</div>
+        <div class="card-summary">Programas de alto volume (HQHVSN) como única forma eficaz de alterar a dinâmica populacional; proposta de campanha nacional coordenada pela DGAV à semelhança da CVAR.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Evidência científica</h4>
+        <p>A literatura de medicina de abrigo é clara: esterilizar 75% dos animais produz redução clara da população; programas com 25% de cobertura praticamente não têm efeito. A intensidade é crucial.</p>
+        <h4>Centros HQHVSN</h4>
+        <p>Apenas centros de alto volume permitem atingir escala populacional. Mortalidade peri-operatória: 0,03% (mais baixa do que em clínicas de baixo volume). Incluem: TNR para gatos comunitários, esterilização antes da adoção, campanhas públicas acessíveis e esterilização pediátrica.</p>
+        <h4>Proposta operacional</h4>
+        <p>A DGAV desenvolver, à semelhança da CVAR, uma campanha nacional de vacinação, identificação e esterilização, nomeando os MVMs dos CRO como executores. Devem estar contempladas exceções legais para "hospitais de campanha", castramóveis ou serviços itinerantes, priorizando animais de programas CED, animais institucionalizados e munícipes em carência económica.</p>
+        <h4>Acesso universal</h4>
+        <p>O acesso a cuidados médico-veterinários não deve depender da condição económica dos detentores ou de associações. Animais que recebem cuidados veterinários vivem mais tempo — efeito positivo na redução do turn-over populacional.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Carolina Silva · Beja</div>
+        <div class="card-summary">Esterilização obrigatória e imediata de animais recolhidos ao CRO, sem aguardar os 15 dias, mesmo sem reincidência.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A legislação atual prevê prazo de 15 dias antes de esterilizar, para eventual identificação do detentor. Contudo, animais com detentor recolhidos ao CRO pressupõem incumprimento do dever de acompanhamento e, na maioria dos casos, inexistência de identificação eletrónica — o que revela negligência.</p>
+        <p>Propõe-se a alteração legislativa no sentido de implementar a obrigatoriedade de esterilização imediata de animais recolhidos ao CRO, sem aguardar os 15 dias e sem que implique reincidência.</p>
+        <span class="ref">Portaria n.º 146/2017, art.º 8.º, n.º 4 · Portaria n.º 146/2017, art.º 10.º, n.º 1</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-6">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="card-summary">Taxas diferenciadas de licença (5€ esterilizados / 50€ não esterilizados); esterilização pediátrica nos CRO; enquadramento contraordenacional para incumprimento da esterilização pós-adoção.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Taxas diferenciadas</h4>
+        <ul>
+          <li>Licença anual: <strong>5 €</strong> para animais esterilizados</li>
+          <li>Licença anual: <strong>50 €</strong> para animais não esterilizados</li>
+        </ul>
+        <p>Pagamento e validade registados no SIAC. Acompanhada de coimas mínimas de 500 € pelas forças de segurança a detentores sem licença válida.</p>
+        <h4>Esterilização pediátrica e pós-adoção</h4>
+        <p>A alínea a) do n.º 6 do art.º 8.º da Portaria n.º 146/2017 prevê regresso ao CRO para esterilização de animais adotados antes dos 6 meses. Na prática, há cerca de 150 animais por esterilizar que já tiveram ninhadas.</p>
+        <p>Propõe-se: enquadramento contraordenacional específico para detentores que não cumpram, e implementação da esterilização pediátrica nos CRO após vacinação.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-7">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Inês Grilo · Abrantes</div>
+        <div class="card-summary">Continuar a esterilizar, colocar microchip e registar todos os animais; fiscalização efetiva por autoridades policiais; fiscalização nas estradas na época de caça.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Partindo do pressuposto que o abate de animais não é opção, propõe:</p>
+        <ul>
+          <li>Continuar a esterilizar, colocar microchip e registar todos os animais</li>
+          <li>Fiscalização efetiva por autoridades policiais, com autuação dos incumpridores</li>
+          <li>Ações de fiscalização nas estradas na época de caça, prevenindo o abandono de cães de caça</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-8">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Joana Rua · Albufeira</div>
+        <div class="card-summary">Canídeos e felídeos sem microchip devem ser de esterilização obrigatória, mesmo que o detentor se identifique antes dos 15 dias.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe que a ausência de microchip seja condição suficiente para esterilização obrigatória, independentemente de o detentor se apresentar dentro do prazo legal de 15 dias.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-9">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Fidélia Aboim · Famalicão</div>
+        <div class="card-summary">Esterilização obrigatória de canídeos e felídeos com exceções para clubes de canicultura/felinicultura e reprodutores legalizados; maior fiscalização de criadores.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe esterilização obrigatória, com exceção para animais registados nos clubes de canicultura e felinicultura e animais reprodutores de canis e gatis legalizados pela DGAV.</p>
+        <p>Nota especial relativamente a cães de caça: fêmeas sem identificação eletrónica, prenhas ou com ninhadas, recolhidas na via pública, são quase todas de raças de caça ou seus cruzamentos. Os criadores, em qualquer contexto, devem ser fiscalizados com frequência — o que não acontece.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-10">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Júlia Fernandes</div>
+        <div class="card-summary">Controlo reprodutivo obrigatório para detentores não criadores; atividade de criação sujeita a registo e licenciamento.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A reprodução de animais de companhia deve ser objeto de controlo, visando prevenir a procriação descontrolada, o abandono e o aumento de animais errantes.</p>
+        <p>A atividade de criação com fins comerciais ou de cedência sistemática apenas pode ser exercida por criadores devidamente registados e licenciados. Os detentores não integrados em atividade de criação autorizada devem adotar medidas para evitar a reprodução não planeada (esterilização ou outros métodos legalmente admissíveis).</p>
+        <span class="ref">DL n.º 276/2001 (proposta de adição)</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s1-11">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Esterilização obrigatória com apoio financeiro do Estado para famílias carenciadas; licença especial para quem queira reproduzir; ninhadas têm de ser registadas.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A esterilização deve ser obrigatória, com o Estado (através das Câmaras Municipais) a apoiar financeiramente para famílias comprovadamente carenciadas. Não faz sentido capturar, esterilizar e devolver à rua animais que as pessoas abandonam.</p>
+        <p>Quem, por opção, queira que os seus animais se reproduzam deve ter licença própria, e as respetivas ninhadas devem ser registadas. Animais nascidos não podem ser cedidos sem identificação eletrónica prévia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S2 ========== -->
+  <div class="section" id="s2">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div class="section-title">Identificação Eletrónica e SIAC</div>
+      <div class="section-count">7 contributos</div>
+    </div>
+
+    <div class="card" id="c-s2-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Nuno Rosa · Castro Verde</div>
+        <div class="card-summary">Freguesias devem aceder ao SIAC para enviar solicitações de renovação de licença/vacinação aos proprietários com vacinação não válida.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Nas zonas rurais, a maioria dos canídeos é vacinada contra a raiva apenas uma ou duas vezes na vida. Com a vacinação a cada 3 anos, os proprietários esquecem-se de revacinar. Uma vez que os animais estão registados no SIAC, a solução seria as freguesias acederem ao sistema e enviarem solicitação de pagamento anual da licença, obrigando os proprietários a atualizar a vacinação.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Bento · Leiria</div>
+        <div class="card-summary">Criação no SIAC de lista negra de NIFs com histórico de maus-tratos; comunicação obrigatória dos tribunais ao SIAC; alertas automáticos por email a detentores em incumprimento.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Bloqueio por NIF</h4>
+        <p>Comunicação obrigatória dos tribunais ao SIAC da identificação (NIF) de todos os indivíduos com penas acessórias de impedimento de detenção, para que não possam registar-se como detentores. A informação visível seria apenas que "o NIF se encontra bloqueado" (proteção de dados).</p>
+        <h4>Lista de NIFs com histórico negativo</h4>
+        <p>Criação no SIAC de lista de NIFs com histórico negativo (adoções problemáticas, acumuladores, pessoas com histórico de maus-tratos, insalubridade). Apenas MVMs poderiam inserir entradas nesta lista.</p>
+        <h4>Comunicações automáticas</h4>
+        <ul>
+          <li>Envio de email/mensagem automática a detentores de animais perigosos/potencialmente perigosos com situação irregular (ausência de esterilização obrigatória ou vacina antirrábica)</li>
+          <li>Envio de email/mensagem automática a todos os detentores com vacina antirrábica não válida</li>
+          <li>Envio de listagem semestral a MVMs/autoridades com lista de detentores em incumprimento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Módulo de gestão de CRO integrado no SIAC com historial clínico; sistema de verificação de NIF de adotantes quanto a penas acessórias.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Plataforma de gestão de CRO</h4>
+        <p>Criação de módulo específico no SIAC para gestão de CRO, permitindo registo de todas as intervenções (profilaxias, cirurgias, diagnósticos, terapêuticas) e criando historial clínico acessível a médicos veterinários — útil quando os detentores perdem o Boletim Sanitário.</p>
+        <h4>Verificação de adotantes</h4>
+        <p>Plataforma integrada no SIAC com registo do NIF do adotante, permitindo verificar se está sujeito a pena acessória de proibição de detenção por condenação em crimes de maus-tratos ou abandono.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Carolina Silva · Beja</div>
+        <div class="card-summary">Obrigatoriedade de identificação eletrónica para execução de qualquer ato médico-veterinário, independentemente da idade do animal.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Atualmente não existe obrigatoriedade de identificação eletrónica para administração de vacinas (exceto antirrábica) ou outros procedimentos. Propõe-se que a identificação eletrónica seja condição prévia para qualquer ato médico-veterinário, independentemente da idade do animal.</p>
+        <p>Contexto: animais levados a CAMVs ainda jovens cumprem o protocolo vacinal não obrigatório mas acabam por nunca fazer a identificação eletrónica nem a vacinação antirrábica.</p>
+        <span class="ref">DL n.º 82/2019, de 27 de junho</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Dulcina Azevedo · Trofa</div>
+        <div class="card-summary">Registo obrigatório do licenciamento pelas Juntas de Freguesia no SIAC; consequências para JF que cobram taxa mas não emitem licença.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe tornar obrigatório o registo no SIAC do licenciamento pelas JF, para agilizar processos de fiscalização e captura de errantes. Atualmente há JF que não averba os licenciamentos ao Boletim Sanitário nem os regista no SIAC.</p>
+        <p>Acrescenta a necessidade de consequências para JF que cobram a taxa mas recusam emitir licença a animais adotados (situação já reportada com presidentes de junta a afirmar que "a lei não se aplica").</p>
+        <span class="ref">DL n.º 82/2019, n.º 1 e n.ºs 7 e 8 do art.º 27.º</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-6">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Fidélia Aboim · Famalicão</div>
+        <div class="card-summary">Campanha de identificação eletrónica de felídeos; criação de "census animal de estimação" por freguesia com colaboração das Juntas de Freguesia.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe a identificação eletrónica de felídeos em regime de campanha. Adicionalmente, sugere a criação de um "census animal de estimação" por Freguesia, com colaboração das JF, para registo de cães e gatos por habitação e caracterização do tipo de fogo.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s2-7">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Juntas de Freguesia devem registar as licenças no SIAC aquando da emissão, para evitar titulares incorretos e confirmar a identidade do titular.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Quando as JF emitem licenças de detenção, devem obrigatoriamente fazer o registo no SIAC. Esta obrigatoriedade evitaria titulares incorretos, pois obrigaria à confirmação do titular do animal no ato de emissão da licença.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S3 ========== -->
+  <div class="section" id="s3">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div class="section-title">Animais Errantes e Programas CED</div>
+      <div class="section-count">5 contributos</div>
+    </div>
+
+    <div class="card" id="c-s3-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Nuno Rosa · Castro Verde</div>
+        <div class="card-summary">Alimentadores de colónias felinas são os verdadeiros criadores — propõe coimas ou responsabilização formal pelo bem-estar dos animais que criam.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>No caso dos gatos não existe abandono mas sim criação e multiplicação por alimentadores irresponsáveis. Os programas CED não eliminam as colónias — mantêm controlado o número, mas as colónias persistem durante décadas.</p>
+        <p>Propõe aplicação de coimas a alimentadores (já proibido pela legislação). Se impossível, pelo menos considerá-los responsáveis formalmente pelo bem-estar dos animais que criam.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s3-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Criação da figura legal de "animal comunitário"; parques de acolhimento para matilhas e colónias assilvestradas como instrumento complementar.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Animal comunitário</h4>
+        <p>Criação da figura legal de animal comunitário: animal sem detentor individual identificado, cuidado regularmente por uma comunidade ou cuidadores reconhecidos. O enquadramento deve permitir: identificação e registo; designação de cuidador(es) responsável(is); esterilização, identificação eletrónica e acompanhamento sanitário; garantia de condições mínimas de bem-estar.</p>
+        <h4>Parques de acolhimento</h4>
+        <p>Enquadramento legal para parques de acolhimento de matilhas e colónias assilvestradas/ferais, avaliados quanto a: espaço, abrigo e acesso a água/alimentação; programas de esterilização, vacinação e identificação; acompanhamento por MVM; gestão municipal em articulação com AZ; localização adequada; integração em programas de adoção responsável.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s3-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Margarida Câmara · Évora</div>
+        <div class="card-summary">Necessidade de santuários para animais não adotáveis; CRO deve ser local de preparação e adoção, não de alojamento vitalício.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Os CRO não permitem garantir saúde e bem-estar em estadias prolongadas. Devem ser locais de preparação e adoção, não de alojamento até ao final de vida. Quando as normas de bem-estar falam de "quality of life" e "capacity of care", o Estado não pode manter animais confinados durante anos em canis sobrelotados.</p>
+        <p>Propõe a criação de santuários que dêem resposta a animais não adotáveis.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s3-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="card-summary">CED não é solução adequada — animais esterilizados continuam expostos a riscos; propõe figura do "detentor temporário" e reconhecimento do "cão comunitário" como alternativas.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Crítica ao CED</h4>
+        <p>Animais esterilizados, vacinados e identificados continuam expostos a atropelamentos, envenenamentos, armadilhas e maus-tratos. Animais de companhia, pela sua natureza, devem viver sob guarda de pessoas, não tratados como animais selvagens.</p>
+        <h4>Detentor temporário</h4>
+        <p>Muitos animais vadios permanecem semanas ou meses na via pública sem serem recolhidos, e há cidadãos disponíveis para adotar mas que não podem formalizar por o animal não ter dado entrada no CRO. Propõe que, sob supervisão do MVM, o animal cumpra o prazo legal de 15 dias à guarda de um detentor temporário, entrando no CRO apenas para esterilização e requisitos legais antes da adoção formal (máximo 48h de permanência).</p>
+        <h4>Cão comunitário</h4>
+        <p>Quando um animal se encontre integrado de forma estável num local e exista aceitação pela comunidade, o MVM pode reconhecê-lo como cão comunitário, condicionado a: esterilização; identificação eletrónica e registo no SIAC; vacinação atualizada; avaliação comportamental favorável; ausência de historial de agressões ou classificação como perigoso. Avaliação periódica máxima anual.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s3-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Contradições do CED em gatos: colónias em propriedade privada sem enquadramento; conflitos entre cuidadores e vizinhos sem solução legal clara.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Não faz sentido capturar, esterilizar e devolver à rua animais que as pessoas abandonam, com todas as contradições para a saúde pública, o bem-estar dos animais e o meio ambiente.</p>
+        <p>Nos programas CED em gatos surgem situações em que cuidadores solicitam a implementação mas vizinhos exigem recolha (insalubridade, estragos em propriedades). Este dilema carece de enquadramento legal. A maioria das colónias existe em propriedade privada (quintais), o que também deve ser regulado.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S4 ========== -->
+  <div class="section" id="s4">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <div class="section-title">Centros de Recolha Oficial (CRO)</div>
+      <div class="section-count">7 contributos</div>
+    </div>
+
+    <div class="card" id="c-s4-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Maria Antónia Fernandes · Vila Verde</div>
+        <div class="card-summary">CRO devem ser proporcionais à população servida: rácio população/capacidade e rácio animais/tratadores impostos por lei.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Os CRO devem ser proporcionais à população que servem. Devem ser fixados por lei rácios entre população e capacidade de alojamento, e entre número de animais e número de tratadores — não deixados ao critério de cada executivo municipal.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Inês Grilo · Abrantes</div>
+        <div class="card-summary">Contratos com CAMVs para tratamento e esterilizações; trabalhadores qualificados em número adequado; protocolos com países da UE com escassez de animais para adoção.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <ul>
+          <li>Contratos com CAMVs para tratamento e cirurgias quando os CRO não têm condições</li>
+          <li>Trabalhadores qualificados, em formação e sensibilidade, em número adequado</li>
+          <li>Instalações adequadas, com equipamentos e meios para recolha e transporte</li>
+          <li>Protocolos com entidades oficiais de países da UE com escassez de animais para adoção, garantindo bem-estar e adoção responsável, com responsabilização dos governos respetivos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Coimas mensais/anuais para municípios sem CRO; exclusão de apoios DGAV para incumpridores; obrigatoriedade de MVM com o mesmo regime sancionatório; direção técnica exclusiva do MVM.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>CRO em todos os municípios</h4>
+        <p>A lei que obriga os municípios a possuir CRO deve ser complementada com contraordenação mensal ou anual para os que não cumpram, revertendo para a DGAV. Municípios em incumprimento ficam excluídos dos apoios aos Programas de Bem-Estar de Animais de Companhia.</p>
+        <h4>MVM em todos os municípios</h4>
+        <p>O mesmo regime sancionatório para municípios que não garantam MVM.</p>
+        <h4>Direção técnica</h4>
+        <p>A direção técnica dos CRO é da exclusiva responsabilidade do MVM. A gestão operacional por entidades privadas não pode interferir nas decisões técnicas do MVM nem restringir o acesso à informação. Os trabalhadores, independentemente do vínculo laboral, atuam sob orientação técnica do Diretor Técnico.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="card-summary">AZ devem concentrar-se em retirar animais adotáveis já prontos dos CRO, e apoiar munícipes que deixem de poder deter os animais.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Para os CRO serem plenamente funcionais, os animais que concluíram o processo sanitário e administrativo para adoção devem sair das instalações. A colaboração das AZ seria mais eficaz se se concentrasse na retirada destes animais adotáveis, aumentando a rotatividade e libertando capacidade para recolha de errantes.</p>
+        <p>As AZ devem também poder apoiar munícipes que deixem de poder assegurar a detenção (falecimento, incapacidade física, doença, institucionalização, emigração).</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="card-summary">Aditamento à Portaria 146/2017: regime sancionatório para incumprimento de esterilização; possibilidade de entrega ao CRO por impossibilidade superveniente do detentor.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Art.º 8.º — Aditamento de alínea c) ao n.º 6</h4>
+        <p>O incumprimento da ordem de esterilização constitui contraordenação punível com coima, podendo a entidade competente promover a execução coerciva, com custos imputados ao detentor. <em>(Fundamentação: sem regime sancionatório, as ordens de esterilização não são cumpridas.)</em></p>
+        <h4>Art.º 10.º — Aditamento do n.º 4</h4>
+        <p>Detentores impossibilitados de manter a detenção por circunstâncias supervenientes (doença, limitações físicas) podem requerer a recolha do animal ao CRO, sujeito a disponibilidade do CRO e parecer favorável do MVM.</p>
+        <span class="ref">Portaria n.º 146/2017</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-6">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Margarida Câmara · Évora</div>
+        <div class="card-summary">Importância de um instituto médico-legal animal e de um gabinete de apoio jurídico de direito animal com manual de procedimentos nacional.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Muitas situações de maus-tratos não têm o encaminhamento técnico-legal adequado por incapacidade técnica e logística dos serviços. Seria importante a existência de um instituto médico-legal animal e de um gabinete de apoio jurídico de direito animal que criasse um manual de procedimentos nacional, ágil e robusto — evitando a confusão entre câmaras, forças de segurança, juristas e tribunais, e estadias longas de animais apreendidos que comprometem a saúde e bem-estar da "vítima".</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s4-7">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">AZ devem reportar à DGAV o movimento de animais nos seus alojamentos; regulamentação das AZ quanto a competências, área geográfica e formação dos elementos.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>À semelhança dos CRO, as AZ devem reportar junto da DGAV o movimento de animais nos seus alojamentos autorizados. O número de animais que as centenas de AZ albergam é desconhecido — inadmissível quando recebem apoios públicos financeiros.</p>
+        <p>É também necessário regulamentar as AZ quanto às suas reais competências, nível de atuação geográfico e formação dos elementos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S5 ========== -->
+  <div class="section" id="s5">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div class="section-title">Adoção, FAT e Figuras de Tutela</div>
+      <div class="section-count">5 contributos</div>
+    </div>
+
+    <div class="card" id="c-s5-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Bento · Leiria</div>
+        <div class="card-summary">Criação do termo legal de "Família de Acolhimento Temporário" (FAT) com definição clara de direitos e deveres; FAT pode restituir o animal ao CRO/AZ ou ter privilégio de adoção.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe a criação do termo legal de "Família de Acolhimento Temporário" ou Fiel Depositário, apenas em CROs e Associações, para clarificar direitos e deveres de todos os intervenientes:</p>
+        <ul>
+          <li>A FAT tem direito a ser reconhecida legalmente</li>
+          <li>Pode restituir o animal ao detentor (CRO ou AZ) se entender</li>
+          <li>Pode deter o privilégio de adoção</li>
+          <li>Deve ser imputado o dever de vigilância acordado entre as partes</li>
+          <li>A manutenção do animal seria definida com acordos e documentos próprios</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" id="c-s5-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Hugo Martins · Ponte de Sor</div>
+        <div class="card-summary">Idade avançada (+75 anos) não deve impedir adoção; criação da figura do "Padrinho de Responsabilidade" como co-tutor formal.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Considerando a esperança média de vida atual, a idade avançada (ex.: +75 anos) não deve ser impedimento automático para a adoção ou registo de animais.</p>
+        <p>Propõe a criação da figura do <strong>"Padrinho de Responsabilidade"</strong>: um co-tutor que assuma formalmente o compromisso de cuidar do animal caso o titular principal fique impossibilitado por motivos de saúde ou longevidade.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s5-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Consagração legal das figuras de cuidador, FAT e fiel depositário; adoções exclusivamente via CRO ou AZ legalmente reconhecidas; período de formação prévia à adoção.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Figuras jurídicas</h4>
+        <p>Consagração legal das figuras de cuidador, FAT e fiel depositário, com enquadramento jurídico, responsabilidades e articulação com CROs, AZ e autoridades competentes.</p>
+        <h4>Regulação das adoções</h4>
+        <p>Todas as adoções devem ser realizadas exclusivamente através de CROs, AZ legalmente reconhecidas ou cuidadores registados em articulação com estes, garantindo cumprimento das obrigações legais, rastreabilidade e controlo sobre o destino dos animais.</p>
+        <h4>Formação prévia à adoção</h4>
+        <p>Período obrigatório de informação e formação para futuros detentores, antes da adoção ou aquisição (bem-estar, necessidades da espécie, responsabilidades legais, custos). Propõe-se um período derrogatório de 10-15 anos em que a formação é optativa, tornando-se depois obrigatória.</p>
+        <h4>Rede nacional</h4>
+        <p>Criação de rede nacional de cuidadores, FAT e voluntários, com plataforma de gestão de disponibilidade, para apoio em situações de lotação do CRO, colaboração com CROs/AZ e mobilização em catástrofes ou evacuações.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s5-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="card-summary">Detentor temporário como figura que permite cumprir o prazo de 15 dias na via pública, sob supervisão do MVM, com permanência mínima no CRO.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Sob supervisão do MVM, animais vadios ou presumivelmente perdidos que não possam ser recolhidos para o CRO cumprem o prazo legal de 15 dias à guarda de um detentor temporário. O MVM verifica a situação e a existência de potencial adotante; o animal é fotografado e publicitado no SIAC como animal encontrado; o detentor temporário assina termo de responsabilidade. Decorrido o prazo sem reclamação, o animal entra no CRO exclusivamente para esterilização e requisitos legais, regressando ao adotante — permanência inferior a 48 horas.</p>
+        <span class="ref">Lei n.º 27/2016, art.º 3.º, n.º 1</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s5-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">FATs usadas por AZ sem enquadramento legal; necessidade de clarificar responsabilidades entre titular (AZ/coletivo) e detentor (particular); AZ com centenas de animais em habitações particulares sem controlo.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A maioria das AZ utiliza a figura de FAT sem qualquer enquadramento legal, para alojar centenas de animais de proveniências diversas quando ultrapassam a capacidade real dos seus alojamentos.</p>
+        <p>São frequentes reclamações de incomodidade/insalubridade em que os animais têm como titular no SIAC uma pessoa coletiva (AZ) mas estão detidos em habitações particulares. É essencial clarificar as responsabilidades entre titular e detentor.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S6 ========== -->
+  <div class="section" id="s6">
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <div class="section-title">Bem-Estar e Condições de Detenção</div>
+      <div class="section-count">5 contributos</div>
+    </div>
+
+    <div class="card" id="c-s6-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">Acorrentamento não deve ser totalmente proibido, mas regulamentado caso a caso; regulamentação de serviços de animais (grooming, treino, hotéis, pet sitting).</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Acorrentamento</h4>
+        <p>Deve ser amplamente recomendada a alternativa ao acorrentamento e objeto de regulamentação, avaliando caso a caso: condições de mobilidade e bem-estar do animal; condições socioeconómicas do detentor; segurança de pessoas e outros animais.</p>
+        <h4>Serviços de animais de companhia</h4>
+        <p>Revisão da legislação para integrar novas atividades: estabelecimentos de higiene/estética animal (pet grooming); escolas e centros de treino/educação; alojamento temporário (hotéis, creches); pet sitting e guarda domiciliária. As taxas de licenciamento revertendo para a DGAV.</p>
+        <h4>Ocisão/Eutanásia</h4>
+        <p>A legislação não deve reintroduzir a eutanásia por sobrepopulação, mas também não pode limitar a atuação médico-veterinária. Situações clínicas, sanitárias ou comportamentais específicas podem justificar a decisão, devendo a lei permitir avaliação caso a caso com critérios técnicos.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s6-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="card-summary">Proposta de artigo detalhado sobre condições de acorrentamento (baseado em doutoramento sobre stress crónico); alargamento do conceito de sofrimento no Código Penal.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Condições de acorrentamento</h4>
+        <p>O acorrentamento não deve ser forma permanente de contenção, apenas admissível sem alternativas adequadas e sem comprometer o bem-estar. Condições obrigatórias cumulativas:</p>
+        <ul>
+          <li>Comprimento da corrente compatível com a dimensão do animal</li>
+          <li>Sistema que previna enrolamento, estrangulamento ou lesões</li>
+          <li>Peso e tipo de corrente adequados ao porte, idade e condição física</li>
+          <li>Peitoral ou sistema que minimize risco de lesões cervicais</li>
+          <li>Acesso permanente a água, alimento adequado e abrigo</li>
+          <li>Períodos regulares de libertação diária para exercício e interação social</li>
+        </ul>
+        <p>Proibido quando constitua contenção contínua ininterrupta, provoque lesões, ou impeça comportamentos naturais da espécie.</p>
+        <h4>Conceito de sofrimento (Código Penal)</h4>
+        <p>Para efeitos legais, sofrimento abrange qualquer estado físico ou psicológico negativo — dor, medo, stress ou privação — aferido segundo o conhecimento científico e médico-veterinário.</p>
+        <span class="ref">DL n.º 276/2001 (aditamento art.º X) · Código Penal art.º 389.º-A (aditamento)</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s6-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Júlia Fernandes</div>
+        <div class="card-summary">Normas mínimas detalhadas para abrigo (dimensões, materiais), alimentação e acorrentamento (corrente mínima de 4 metros, afastamento da área de alimentação).</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Abrigo</h4>
+        <p>Abrigo adequado à espécie, dimensão e estado fisiológico, que permita: permanecer em estação em posição natural; deitar confortavelmente; rodar sobre si próprio sem impedimentos. Construído com materiais impermeáveis e isolantes.</p>
+        <h4>Alimentação e abeberamento</h4>
+        <p>Alimento e água em local protegido das condições climatéricas, garantindo salubridade.</p>
+        <h4>Acorrentamento</h4>
+        <p>Enquanto legalmente admissível:</p>
+        <ul>
+          <li>Comprimento mínimo de <strong>4 metros</strong></li>
+          <li>Possibilidade de o animal afastar-se da área de alimentação para satisfação de necessidades fisiológicas</li>
+          <li>Sistema de contenção sem provocar dor, lesão ou sofrimento, nem impedir acesso a abrigo, alimento e água</li>
+          <li>Recipientes de alimentação/abeberamento igualmente abrigados</li>
+        </ul>
+        <span class="ref">DL n.º 276/2001 (proposta de alteração)</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s6-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Joana Rua · Albufeira</div>
+        <div class="card-summary">Legislação deve permitir, de forma mais clara, a eutanásia de cães em CRO por agressividade com pessoas, devidamente documentada.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A legislação deveria permitir, de forma mais clara, a eutanásia de cães alojados nos CRO, ou errantes, por motivos de agressividade com pessoas — devidamente documentada. Os CRO, quando tenham condições, devem poder realizar mais esterilizações para além do CED e dos animais para adoção. Esta permissão/dever deve estar claro na lei, pois muitos colegas têm receio de esterilizar animais neste contexto.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s6-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Acorrentamento permanente e alojamento em varandas exíguas carecem de medidas além da mera contraordenação; necessidade de clarificar quem pode apreender animais e como atuar em propriedade privada.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Uma mera contraordenação não resolve o problema do bem-estar do animal em situações de acorrentamento permanente ou alojamento permanente em varandas exíguas. É necessário prever medidas efetivas.</p>
+        <p>Carece de clarificação: quem pode apreender animais (MVM ou apenas OPC)? Há OPC que entendem que os animais não podem ser apreendidos porque deixaram de ser "coisas".</p>
+        <p>Em situações de denúncias de animais em propriedade privada com detentores em parte incerta, como devem os MVM atuar com celeridade sem incorrer em crime de invasão de propriedade privada?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S7 ========== -->
+  <div class="section" id="s7">
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <div class="section-title">Quadro Sancionatório e Penal</div>
+      <div class="section-count">7 contributos</div>
+    </div>
+
+    <div class="card" id="c-s7-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Bento · Leiria</div>
+        <div class="card-summary">Reforço das coimas para insalubridade, maus-tratos, excesso de animais, incumprimento do dever de vigilância e ausência de microchip; perda do animal a favor do Estado em casos graves.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Reforçar os quadros sancionatórios com coimas para:</p>
+        <ul>
+          <li>Insalubridade</li>
+          <li>Número superior de animais ao permitido por lei, sem autorização do MVM</li>
+          <li>Maus-tratos</li>
+          <li>Incumprimento do dever de vigilância</li>
+          <li>Ausência de microchip</li>
+        </ul>
+        <p>Podendo existir, nestes casos, perda do animal a favor do Estado (CRO). Em casos de ruído de vizinhança causado por animais, os detentores seriam obrigados a cumprir pena acessória: levar o animal durante 2-3 meses a escola canina/ATL/petHotel registado e comprovar às autoridades.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Hugo Martins · Ponte de Sor</div>
+        <div class="card-summary">Regime de inelegibilidade para detenção de novos animais por infratores com antecedentes de maus-tratos ou abandono; GNR/SEPNA como primeira linha de intervenção na via pública.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Interdição de detenção</h4>
+        <p>Criação de regime de inelegibilidade (temporária ou definitiva) para detenção de novos animais por indivíduos condenados ou arguidos em processos de maus-tratos ou abandono. Atualmente infratores reincidentes podem adquirir novos animais mesmo na pendência de processos judiciais.</p>
+        <h4>Cadeia de atuação na via pública</h4>
+        <p>A primeira linha de intervenção perante um animal errante deve caber obrigatoriamente às autoridades policiais (GNR/SEPNA): averiguação da titularidade (leitura de microchip) e distinção entre perda, abandono ou vadiagem. Confere maior legitimidade jurídica e serve como prova testemunhal em caso de crime.</p>
+        <h4>Equipamento policial</h4>
+        <p>Todos os postos policiais devem estar dotados de leitores de microchip; o abandono animal deve ser tratado com o rigor criminal que a lei prevê, incluindo investigação sumária (inquirição de vizinhança) para identificar o autor, especialmente em casos de animais acorrentados ou zonas de baixa densidade.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Carolina Silva · Beja</div>
+        <div class="card-summary">Alteração do conceito de "abandono" no Código Penal para incluir deixar o animal em CAMV ou CRO sem que seja considerada uma situação segura para o animal.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>O art.º 388.º do Código Penal define abandono como colocar o animal "em perigo a sua alimentação e a prestação de cuidados que lhe são devidos". Isto significa que deixar um animal num CAMV ou CRO nunca pode ser considerado abandono — permitindo que detentores ponham termo à detenção sem penalização.</p>
+        <p>Proposta de nova redação: <em>"Quem, tendo o dever de guardar, vigiar ou assistir animal de companhia, o abandonar, <strong>deixando de o alimentar e de lhe prestar os cuidados que lhe são devidos</strong>, é punido (…)"</em></p>
+        <span class="ref">Código Penal, art.º 388.º</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Dulcina Azevedo · Trofa</div>
+        <div class="card-summary">Processo de notificação de detentores: 4 passos progressivos; agilização dos tempos de permanência no canil; falta de resposta do MP e GNR aos autos de notícia.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Clarificação do processo de notificação de detentores (DL 314/2003, art.º 9.º, n.º 6):</p>
+        <ol style="margin:8px 0 4px 18px;">
+          <li>Notificação por escrito com aviso de receção</li>
+          <li>Reenvio por registo simples 15 dias depois</li>
+          <li>Alteração de titularidade pelo MVM e encaminhamento para adoção</li>
+          <li>Auto de contraordenação à DGAV + Auto de Notícia ao MP se necessário</li>
+        </ol>
+        <p>Problema prático: todas as CO remetidas às JF são arquivadas, sem que os autuantes recebam informação sobre o resultado. O MP raramente comunica o número de processo ou o destino dos animais apreendidos. Exemplo concreto: cadáver de cabrito como fiel depositário há 2 anos sem resposta do MP; dois canídeos recolhidos a pedido da GNR que faleceram ao fim de 151 dias sem qualquer resposta sobre custos ou propriedade.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Joana Rua · Albufeira</div>
+        <div class="card-summary">Revisão da definição de abandono (deixar em hotel/CAMV deve ser abandono); melhoria dos quadros sancionatórios.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>É inadmissível que deixar um cão abandonado num hotel ou CAMV não seja considerado abandono. A definição legal deve ser revista.</p>
+        <p>Os quadros sancionatórios devem ser melhorados de forma geral.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-6">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="card-summary">Proposta de nova redação dos arts. 387.º, 388.º, 388.º-A e 389.º do Código Penal; conceito de abandono no DL 276/2001; morte de animal como crime autónomo.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Art.º 387.º — Maus-tratos (nova redação)</h4>
+        <p>Inclui: negligência grave nos deveres de cuidado; privação de alimentação, abrigo ou cuidados veterinários; exposição a medo, stress ou condições incompatíveis com as necessidades da espécie.</p>
+        <h4>Art.º 388.º — Abandono (nova redação)</h4>
+        <p>Considera-se abandono quando o detentor: cesse o dever de guarda/vigilância/assistência; coloque o animal fora do seu controlo sem entrega direta a terceiro responsável; abandone em espaço público ou junto de entidades sem aceitação expressa. Não é abandono a fuga acidental desde que o detentor adote medidas razoáveis.</p>
+        <h4>Art.º 388.º-A — Morte de animal (aditamento)</h4>
+        <p>A morte de um animal de companhia fora das situações legalmente admissíveis constitui crime, independentemente da existência de sofrimento.</p>
+        <h4>Art.º 389.º — Definição de animal de companhia</h4>
+        <p>Qualquer animal mantido pelo ser humano para companhia, guarda, lazer ou interação, independentemente da espécie.</p>
+        <span class="ref">Código Penal · DL n.º 276/2001, art.º 6.º-A (aditamento)</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s7-7">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Proibição da venda de animais em feiras e mercados e em sites como OLX; campanhas televisivas em horário nobre sobre crime de abandono.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A venda de animais de companhia em feiras e mercados deve ser proibida (art.º 35.º do DL 276/2001). A publicitação de animais em sites como o OLX deve igualmente ser proibida.</p>
+        <p>Para sensibilizar a população para o facto de o abandono e os maus-tratos serem crime, são necessárias campanhas televisivas em horário nobre, com maior alcance.</p>
+        <span class="ref">DL n.º 276/2001, art.º 35.º</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S8 ========== -->
+  <div class="section" id="s8">
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <div class="section-title">Carreira e Estatuto do MVM</div>
+      <div class="section-count">4 contributos</div>
+    </div>
+
+    <div class="card" id="c-s8-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Hugo Martins · Ponte de Sor</div>
+        <div class="card-summary">Estatuto especial para MVM na função pública, refletindo a penosidade, risco biológico e responsabilidade civil da função; risco de burnout é real e documentado.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>O MVM acumula funções de veterinário, gestor de CRO, logística de aprovisionamento, fiscalização, inspeção sanitária e jurista, frequentemente em condições de elevada insalubridade e sem horários definidos.</p>
+        <p>A carreira de Técnico Superior não reflete a penosidade, o risco biológico e a responsabilidade civil e técnica inerente à função. Esta sobrecarga constitui fator de risco para a saúde mental e burnout na profissão.</p>
+        <p>Propõe a criação de um estatuto especial para a carreira de MVM dentro da função pública.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s8-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Maria Antónia Fernandes · Vila Verde</div>
+        <div class="card-summary">MVM com função técnica e de gestão na função pública deve ter equivalência mínima a chefe de divisão, de forma normal e reconhecida.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Dado que o MVM exerce funções técnicas e de gestão, na carreira da função pública (especial ou não), a equivalência mínima a chefe de divisão deveria ser encarada como normalidade, de acordo com as funções exercidas.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s8-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Carolina Silva · Beja</div>
+        <div class="card-summary">Diferenciação entre Médicos Veterinários e Enfermeiros Veterinários na função pública; reconhecimento da diferença de complexidade e responsabilidade na posição remuneratória.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Tendo a carreira especial para o MVM na função pública sido proposta e rejeitada, propõe-se no mínimo a diferenciação entre Técnicos Superiores afetos à área da Medicina Veterinária: Médicos Veterinários e Enfermeiros Veterinários.</p>
+        <p>As funções possuem graus de complexidade muito diferentes, bem como o grau de responsabilidade. É justo que essa complexidade funcional e responsabilidade sejam reconhecidas na posição remuneratória.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s8-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">João Silva · Ílhavo</div>
+        <div class="card-summary">MVM integrado formalmente no sistema nacional de proteção civil; criação do Coordenador Nacional de Operações de Socorro a Animais.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Propõe a integração formal dos médicos veterinários no sistema de proteção civil, alterando a lei de bases da proteção civil, SIOPS e legislação complementar, criando:</p>
+        <ul>
+          <li>Figura de Coordenador Nacional de Operações de Socorro a Animais</li>
+          <li>Inclusão do MVM na Comissão Municipal de Proteção Civil</li>
+        </ul>
+        <p>Reconhece o papel dos MVMs em situações de emergência, catástrofe ou evacuação envolvendo animais.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S9 ========== -->
+  <div class="section" id="s9">
+    <div class="section-header">
+      <div class="section-num">9</div>
+      <div class="section-title">Cães Perigosos e Potencialmente Perigosos</div>
+      <div class="section-count">3 contributos</div>
+    </div>
+
+    <div class="card" id="c-s9-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="card-summary">Sistema de avaliação de lesões por mordedura baseado na Abbreviated Injury Scale (AIS 1-6) em substituição da classificação dicotómica simples/graves.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Para cumprir o disposto nos arts. 14.º e 15.º do DL n.º 315/2009, as alegadas agressões de canídeos a pessoas devem ser classificadas quanto à gravidade. Propõe-se substituir a classificação dicotómica por um sistema baseado na <strong>Abbreviated Injury Scale (AIS)</strong>:</p>
+        <ul>
+          <li>AIS 1 e AIS 2 — lesões simples</li>
+          <li>AIS 3, 4, 5 e 6 — lesões graves</li>
+        </ul>
+        <span class="ref">DL n.º 315/2009, arts. 14.º e 15.º</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s9-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="card-summary">Sistema de avaliação morfológica por pontuação (0-30); dispensa de açaime por aprovação em BH; novas raças a incluir; seguradoras recusam seguros para cães perigosos.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Avaliação morfológica</h4>
+        <p>Sistema de pontuação 0-2 por característica (estrutura craniana, corporal, musculatura, dimensões e características complementares). Limiar para classificação: ≥ 18 pontos. Reavaliação por junta de 3 veterinários.</p>
+        <p>Raças propostas para inclusão: Cane Corso, Dogo Canário (Presa Canario), Boerboel, American Bully.</p>
+        <h4>Dispensa de açaime</h4>
+        <p>Cão pode circular sem açaime se: tutor tiver formação; aprovação em prova de sociabilidade (BH); ausência de historial de agressão; conduzido com trela. Resultado registado no SIAC.</p>
+        <h4>Fatores atenuantes em agressões</h4>
+        <p>A classificação como perigoso deve considerar: provocação prévia; diferença de porte; circunstâncias de defesa; separação de animais em luta; reação defensiva; condução adequada do tutor.</p>
+        <h4>Seguros</h4>
+        <p>As seguradoras recusam-se a fazer seguros para cães classificados como perigosos (embora aceitem potencialmente perigosos), o que impede os titulares de cumprirem a lei. Deve ser enquadrado legalmente.</p>
+        <h4>Registo fotográfico mínimo</h4>
+        <p>8 fotografias padronizadas por avaliação (vistas laterais, frontal, posterior, superior do tronco, cabeça em perfil, cabeça frontal, com referência de escala).</p>
+        <span class="ref">DL n.º 315/2009 · Portaria n.º 422/2004 · DL n.º 82/2019</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s9-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Classificação de animal perigoso exige prova e análise das circunstâncias; notificação para documentação deve competir às CM/MVM e não às JF; proibição de detenção sem condições adequadas de alojamento.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Um cão que morde uma pessoa não pode ser simplesmente classificado como perigoso — as circunstâncias podem ser acidentais. As participações/autos das autoridades devem ser claras, com registo fotográfico e identificação inequívoca do animal agressor.</p>
+        <p>Devem ser as CM/MVM (e não as JF, como prevê a lei atual) a notificar os detentores de animais agressores para apresentarem documentação de cão perigoso.</p>
+        <p>Deve ser proibida a detenção de animais potencialmente perigosos e perigosos por quem não possua condições de alojamento adequadas que salvaguardem a segurança pública.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== S10 ========== -->
+  <div class="section" id="s10">
+    <div class="section-header">
+      <div class="section-num">10</div>
+      <div class="section-title">Saúde Pública e Vacinação Antirrábica</div>
+      <div class="section-count">5 contributos</div>
+    </div>
+
+    <div class="card" id="c-s10-1">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Nuno Rosa · Castro Verde</div>
+        <div class="card-summary">Vacinação antirrábica de 3 em 3 anos leva ao esquecimento da revacina; solução passa pelo SIAC e pelas freguesias para lembrar e pressionar os proprietários.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Nas zonas rurais, a maioria dos canídeos é vacinada contra a raiva apenas uma ou duas vezes na vida. O período de 3 anos leva os proprietários a esquecer-se de revacinar. A solução proposta passa pelas JF acederem ao SIAC e enviarem solicitação de pagamento anual da licença, obrigando os proprietários a regularizar a vacinação.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s10-2">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Joana Rua · Albufeira</div>
+        <div class="card-summary">Vacinação antirrábica deve voltar a ser anual — é muitas vezes a única visita ao veterinário, onde se fazem desparasitações e outros cuidados.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>A vacinação antirrábica deveria passar novamente a ser anual. É muitas vezes a única visita que os animais têm a um veterinário; nessa ocasião são também desparasitados e recebem outros cuidados. A periodicidade de 3 anos reduz significativamente estas oportunidades de intervenção preventiva.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s10-3">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="card-summary">Harmonização da idade mínima de vacinação (4 meses, após identificação eletrónica); sequestro sanitário domiciliário com condições detalhadas; registo obrigatório no SIAC; mandado de acesso a propriedade privada para MVM.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <h4>Vacinação antirrábica</h4>
+        <p>Harmonização: vacinação a partir dos 4 meses, após identificação eletrónica. Vacinação antes da identificação não é válida.</p>
+        <h4>Sequestro sanitário</h4>
+        <ul>
+          <li>Apresentação de animal suspeito de raiva: prazo máximo de 72 horas; incumprimento é contraordenação; possibilidade de apreensão</li>
+          <li>Sequestro domiciliário: condições cumulativas; mínimo de 2 observações clínicas; pode ser realizado por médico veterinário assistente autorizado pela DGAV</li>
+          <li>Registo obrigatório do sequestro no SIAC (data da agressão, início/término, resultado)</li>
+          <li>Declaração veterinária normalizada de acompanhamento do sequestro</li>
+        </ul>
+        <h4>Acesso a propriedade privada</h4>
+        <p>Em situações de insalubridade grave com oposição do proprietário, propõe-se que o MVM possa requerer diretamente ao tribunal judicial um mandado de acesso ao local.</p>
+        <span class="ref">Portaria n.º 264/2013 · DL n.º 314/2003</span>
+      </div>
+    </div>
+
+    <div class="card" id="c-s10-4">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Dulcina Azevedo · Trofa</div>
+        <div class="card-summary">Abertura da campanha CVAR a felídeos.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Sugere-se a abertura da Campanha CVAR (Campanha de Vacinação Antirrábica) a felídeos, atualmente restrita a canídeos.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c-s10-5">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Cláudia Barrela · Marinha Grande</div>
+        <div class="card-summary">Gatos devem ser incluídos na obrigatoriedade de vacinação antirrábica; despachos das campanhas publicados com atraso inaceitável.</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">
+        <p>Do ponto de vista médico-veterinário, não se compreende a exclusão dos gatos da obrigatoriedade de vacinação antirrábica: são igualmente espécies suscetíveis e, em Portugal, a maioria deambula no exterior e contacta com outras espécies selvagens.</p>
+        <p>Os Despachos que definem as normas das campanhas de vacinação antirrábica são publicados, regra geral, no final do 1.º Trimestre mas produzem efeitos desde 1 de janeiro — situação que deve ser corrigida. Devem ser publicados no primeiro mês do ano e incluir cães e gatos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="no-results" class="no-results" style="display:none">Nenhum contributo encontrado para esta pesquisa.</div>
+</div>
+
+<script>
+  function toggleCard(header) {
+    const card = header.parentElement;
+    card.classList.toggle('open');
+  }
+
+  function filterCards() {
+    const q = document.getElementById('search').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card');
+    const sections = document.querySelectorAll('.section');
+    let anyVisible = false;
+
+    cards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      const match = !q || text.includes(q);
+      card.style.display = match ? '' : 'none';
+      if (match) {
+        anyVisible = true;
+        if (q) {
+          card.classList.add('open');
+          highlightText(card, q);
+        } else {
+          removeHighlights(card);
+        }
+      } else {
+        removeHighlights(card);
+      }
+    });
+
+    sections.forEach(section => {
+      const visibleCards = section.querySelectorAll('.card:not([style*="display: none"])');
+      section.style.display = visibleCards.length > 0 ? '' : 'none';
+    });
+
+    document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
+  }
+
+  function highlightText(el, q) {
+    removeHighlights(el);
+    if (!q) return;
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+    const nodes = [];
+    let node;
+    while ((node = walker.nextNode())) nodes.push(node);
+    nodes.forEach(node => {
+      const idx = node.textContent.toLowerCase().indexOf(q);
+      if (idx === -1) return;
+      const parent = node.parentNode;
+      if (parent.tagName === 'MARK') return;
+      const before = document.createTextNode(node.textContent.slice(0, idx));
+      const mark = document.createElement('mark');
+      mark.textContent = node.textContent.slice(idx, idx + q.length);
+      const after = document.createTextNode(node.textContent.slice(idx + q.length));
+      parent.insertBefore(before, node);
+      parent.insertBefore(mark, node);
+      parent.insertBefore(after, node);
+      parent.removeChild(node);
+    });
+  }
+
+  function removeHighlights(el) {
+    el.querySelectorAll('mark').forEach(mark => {
+      const parent = mark.parentNode;
+      parent.replaceChild(document.createTextNode(mark.textContent), mark);
+      parent.normalize();
+    });
+  }
+
+  // Highlight active nav item on scroll
+  const sections = document.querySelectorAll('.section');
+  const navItems = document.querySelectorAll('.nav-item');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navItems.forEach(item => {
+      item.classList.toggle('active', item.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+</script>
+</body>
+</html>
