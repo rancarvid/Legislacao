@@ -45,13 +45,37 @@
   #page-title { margin-bottom: 4px; }
   #page-title h2 { font-size: 22px; color: var(--blue); font-weight: 700; }
   #page-title p { font-size: 13px; color: var(--gray); margin-top: 4px; }
-  #search-bar { margin: 18px 0 28px; }
+  #search-bar { margin: 18px 0 28px; position: relative; }
   #search-bar input {
-    width: 100%; padding: 9px 14px; border: 1px solid var(--border); border-radius: 6px;
+    width: 100%; padding: 9px 40px 9px 14px; border: 1px solid var(--border); border-radius: 6px;
     font-size: 14px; color: var(--gray-dark); background: var(--white);
     outline: none; transition: border-color .2s;
   }
   #search-bar input:focus { border-color: var(--blue-light); }
+  #search-clear { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--gray); font-size: 16px; display: none; user-select: none; }
+  #search-panel {
+    display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0; z-index: 100;
+    background: var(--white); border: 1px solid var(--border); border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.13); max-height: 480px; overflow-y: auto;
+  }
+  #search-panel.visible { display: block; }
+  #search-panel-header {
+    padding: 10px 14px; border-bottom: 1px solid var(--gray-light);
+    font-size: 12px; color: var(--gray); display: flex; justify-content: space-between; align-items: center;
+  }
+  #search-panel-header strong { color: var(--blue); }
+  .result-item {
+    padding: 11px 14px; border-bottom: 1px solid var(--gray-light); cursor: pointer;
+    transition: background .12s;
+  }
+  .result-item:last-child { border-bottom: none; }
+  .result-item:hover { background: var(--blue-pale); }
+  .result-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+  .result-badge { background: var(--tag-bg); color: var(--tag-text); border-radius: 4px; padding: 2px 8px; font-size: 11px; font-weight: 600; }
+  .result-theme { font-size: 11px; color: var(--gray); }
+  .result-excerpt { font-size: 13px; color: var(--gray-dark); line-height: 1.5; }
+  .result-excerpt mark { background: #fff3b0; border-radius: 2px; padding: 0 2px; }
+  #search-no-results { padding: 20px 14px; text-align: center; color: var(--gray); font-style: italic; font-size: 13px; }
 
   /* SECTION */
   .section { margin-bottom: 48px; scroll-margin-top: 20px; }
@@ -128,7 +152,13 @@
     <p>Gestão Integrada da População de Animais Errantes · 15 contribuintes · 14 municípios</p>
   </div>
   <div id="search-bar">
-    <input type="text" id="search" placeholder="Pesquisar contributos, município ou tema…" oninput="filterCards()">
+    <input type="text" id="search" placeholder="Pesquisar contributos, município ou tema…" oninput="onSearch()" onfocus="showPanel()" autocomplete="off">
+    <span id="search-clear" onclick="clearSearch()" title="Limpar">✕</span>
+    <div id="search-panel">
+      <div id="search-panel-header"><span>A mostrar <strong id="result-count">0</strong> resultado(s)</span><span id="panel-hint" style="font-size:11px;color:#aaa">Clique para ir ao contributo</span></div>
+      <div id="result-list"></div>
+      <div id="search-no-results" style="display:none">Nenhum resultado encontrado.</div>
+    </div>
   </div>
 
   <!-- ========== S1 ========== -->
@@ -136,7 +166,7 @@
     <div class="section-header">
       <div class="section-num">1</div>
       <div class="section-title">Esterilização e Controlo Reprodutivo</div>
-      <div class="section-count">11 contributos</div>
+      <div class="section-count">12 contributos</div>
     </div>
 
     <div class="card" id="c-s1-1">
@@ -269,12 +299,21 @@ A reprodução de animais de companhia deve ser objeto de controlo, visando prev
     </div>
   </div>
 
+    <div class="card" id="c-s1-12">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Dulcina Azevedo · Trofa</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">P 146/2017 — N.º 1, do artigo 9.º — Tornar obrigatória e imediata a esterilização de animais com detentor quando capturados na via pública.</div>
+    </div>
+  </div>
+
   <!-- ========== S2 ========== -->
   <div class="section" id="s2">
     <div class="section-header">
       <div class="section-num">2</div>
       <div class="section-title">Identificação Eletrónica e SIAC</div>
-      <div class="section-count">7 contributos</div>
+      <div class="section-count">8 contributos</div>
     </div>
 
     <div class="card" id="c-s2-1">
@@ -355,12 +394,23 @@ N.º 7 e 8, do artigo 27.º — Consequências para JF que cobram o licenciament
     </div>
   </div>
 
+    <div class="card" id="c-s2-8">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">António Almeida · Vila Real</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">Reforço do AVISO 4 como medida contra o abandono
+
+O AVISO n.º 4 da DGAV prevê apoio financeiro para a identificação eletrónica de animais de companhia. Contudo, a limitação do número de animais abrangidos (215 animais no caso do CRO em questão, face a cerca de 400 adoções anuais) levanta dificuldades práticas. Propõe-se o aumento do limite para 500 animais e que o AVISO n.º 4 possa também ser utilizado pelas autarquias para apoiar diretamente os detentores de animais na realização da identificação eletrónica.</div>
+    </div>
+  </div>
+
   <!-- ========== S3 ========== -->
   <div class="section" id="s3">
     <div class="section-header">
       <div class="section-num">3</div>
       <div class="section-title">Animais Errantes e Programas CED</div>
-      <div class="section-count">5 contributos</div>
+      <div class="section-count">6 contributos</div>
     </div>
 
     <div class="card" id="c-s3-1">
@@ -428,6 +478,29 @@ Com este procedimento, a permanência do animal nas instalações do CRO poderá
         <div class="expand-btn">▾</div>
       </div>
       <div class="card-body">- Relativamente aos programas CED em gatos, depara-se com situações em que os cuidadores dos animais solicitam a implementação do CED, mas alguns vizinhos não concordam, exigindo a recolha dos animais por motivos de insalubridade dos espaços, estragos em propriedades privadas, etc. Este dilema tem de ser devidamente enquadrado legalmente. De salientar igualmente que a maioria das colónias existentes formam-se e existem em propriedade privada (quintais) pelo que estas situações devem ser igualmente enquadradas.</div>
+    </div>
+  </div>
+
+    <div class="card" id="c-s3-6">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div class="contributor-badge">Ana Leonardo · Vila Franca de Xira</div>
+        <div class="expand-btn">▾</div>
+      </div>
+      <div class="card-body">Proposta de Enquadramento para Gestão Excecional de Cães Errantes e Cães Comunitários
+
+Artigo X.º – Gestão excecional de cães errantes
+Em situações pontuais em que não exista capacidade imediata de alojamento em CRO, e após avaliação pelo Médico-Veterinário Municipal, pode ser determinada a esterilização e manutenção temporária no território de cães errantes, dependendo cumulativamente de: avaliação favorável do MVM; inexistência de comportamento agressivo; inexistência de risco para segurança pública; identificação eletrónica e registo no SIAC; esterilização cirúrgica; vacinação obrigatória. Sempre que existam condições de alojamento em CRO, os animais devem ser recolhidos.
+
+Artigo X.º – Reconhecimento de cães comunitários
+Excecionalmente, quando um animal se encontre integrado de forma estável em determinado local e exista aceitação por parte da comunidade local, pode o MVM reconhecer o animal como cão comunitário, dependendo de: esterilização cirúrgica; identificação eletrónica e registo no SIAC; vacinação obrigatória atualizada; avaliação comportamental favorável.
+Não podem ser reconhecidos como cães comunitários: animais classificados como perigosos ou potencialmente perigosos; animais com historial de agressões; animais que representem risco para a segurança pública.
+A gestão e monitorização compete ao município, sob coordenação do MVM. A situação deve ser avaliada periodicamente com periodicidade máxima anual.
+
+Artigo X.º – Registo e acompanhamento municipal
+O município procede ao registo obrigatório dos cães comunitários reconhecidos nos termos do artigo anterior, assegurando a sua monitorização regular.
+
+Artigo X.º – Alimentação e cuidados
+A alimentação controlada dos cães comunitários deve ser assegurada em condições adequadas, evitando a proliferação de vetores e o incómodo para terceiros.</div>
     </div>
   </div>
 
@@ -811,7 +884,20 @@ Artigo 389.º – Definição de animal de companhia (alteração)
 Considera-se animal de companhia qualquer animal mantido pelo ser humano para companhia, guarda, lazer ou interação, independentemente da espécie.
 
 Artigo 389.º-A – Conceito de sofrimento (aditamento)
-Para efeitos legais, entende-se por sofrimento qualquer estado físico ou psicológico negativo, incluindo dor, medo, stress ou privação, aferido de acordo com o conhecimento científico e médico-veterinário.</div>
+Para efeitos legais, entende-se por sofrimento qualquer estado físico ou psicológico negativo, incluindo dor, medo, stress ou privação, aferido de acordo com o conhecimento científico e médico-veterinário.
+
+III. Alterações ao Decreto-Lei 276/2001
+
+Artigo 6.º-A — Conceito de abandono
+1 — Considera-se abandono qualquer ato pelo qual o detentor, de forma intencional ou por negligência grave:
+a) cesse o dever de guarda, vigilância ou assistência;
+b) coloque o animal fora do seu controlo sem assegurar a sua entrega direta a terceiro responsável;
+c) abandone o animal em espaço público ou junto de entidades, designadamente centros de recolha oficial, sem aceitação expressa.
+2 — Não se considera abandono a fuga acidental do animal, desde que o detentor demonstre ter adotado as medidas razoáveis para garantir a sua guarda e proceda à sua recuperação com a maior brevidade possível.
+
+Outras questões a considerar:
+- Inclusão da definição de tutor;
+- Creche canina: definição e obrigatoriedades legais.</div>
     </div>
 
     <div class="card" id="c-s7-7">
@@ -921,7 +1007,17 @@ Diplomas a alterar: DL n.º 315/2009; Portaria n.º 422/2004; DL n.º 82/2019.
 8. Alteração da idade máxima para início dos treinos obrigatórios — redução de 12 para 6 meses de idade.
 9. Regime após aprovação na prova de Obediência e Sociabilização (BH) — cão pode circular com os mesmos meios de contenção dos restantes cães; beneficia das mesmas condições de licenciamento; resultado registado no SIAC.
 
-Nota importante: as seguradoras recusam-se a fazer seguros para cães perigosos, embora façam para potencialmente perigosos, o que impede os titulares de cumprirem com a lei.</div>
+Nota importante: as seguradoras recusam-se a fazer seguros para cães perigosos, embora façam para potencialmente perigosos, o que impede os titulares de cumprirem com a lei.
+
+ANEXO I — Sistema de Avaliação Morfológica (pontuação 0-2 por característica):
+- Estrutura craniana (crânio largo, mandíbula forte, depressão naso-frontal, focinho largo);
+- Estrutura corporal (tórax largo, pescoço musculado, dorso curto, estrutura óssea robusta);
+- Musculatura e proporções (musculatura bem desenvolvida, corpo compacto, conformação molossóide);
+- Dimensões corporais (peso &gt;25 kg, altura &gt;45 cm ao garrote);
+- Características complementares (cauda espessa, mandíbulas largas).
+Classificação: 0–10 não compatível; 11–17 compatibilidade parcial; 18–23 tipologia provável; 24–30 tipologia fortemente compatível. Limiar para classificação: igual ou superior a 18 pontos.
+
+Registo fotográfico mínimo: 8 fotografias padronizadas (vistas lateral esquerda, lateral direita, frontal, posterior, superior do tronco anterior, cabeça em perfil, cabeça frontal, e com referência de escala para altura ao garrote).</div>
     </div>
 
     <div class="card" id="c-s9-3">
@@ -933,7 +1029,9 @@ Nota importante: as seguradoras recusam-se a fazer seguros para cães perigosos,
 
 - No DL 276/2001, de 17.01.2001, as meras comunicações prévias previstas no art.º 3.º-A não preveem a apresentação de qualquer licença de utilização/autorização por parte dos Municípios, onde os alojamentos para os animais irão ser ou estão instalados.
 
-- Nos casos da suspensão de atividade e encerramento dos alojamentos (art.º 3.º-G DL 276/2001) não se concorda que recaia exclusivamente sobre as câmaras municipais (e indiretamente sobre os MVM) a execução das medidas necessárias. Entende-se que a execução de todas as medidas necessárias deve ser repartida entre a DGAV, Municípios e entidades policiais e envolver, nos casos necessários, as Associações de Proteção Animal com alojamentos devidamente autorizados.</div>
+- Nos casos da suspensão de atividade e encerramento dos alojamentos (art.º 3.º-G DL 276/2001) não se concorda que recaia exclusivamente sobre as câmaras municipais (e indiretamente sobre os MVM) a execução das medidas necessárias. Entende-se que a execução de todas as medidas necessárias deve ser repartida entre a DGAV, Municípios e entidades policiais e envolver, nos casos necessários, as Associações de Proteção Animal com alojamentos devidamente autorizados.
+
+- É importante existir enquadramento legal para as centenas de treinadores de cães e escolas de treino espalhadas pelo país (excetuando os treinadores de cães potencialmente perigosos e perigosos que já se encontra regulamentada). Trata-se de uma área cinzenta em Portugal.</div>
     </div>
   </div>
 
@@ -1004,80 +1102,173 @@ Nota adicional: dificuldade de atuação em situações de insalubridade grave c
 </div>
 
 <script>
+  /* ── THEME MAP ── */
+  const THEME_NAMES = {
+    s1: 'Esterilização e Controlo Reprodutivo',
+    s2: 'Identificação Eletrónica e SIAC',
+    s3: 'Animais Errantes e Programas CED',
+    s4: 'Centros de Recolha Oficial (CRO)',
+    s5: 'Adoção, FAT e Figuras de Tutela',
+    s6: 'Bem-Estar e Condições de Detenção',
+    s7: 'Quadro Sancionatório e Penal',
+    s8: 'Carreira e Estatuto do MVM',
+    s9: 'Cães Perigosos e Pot. Perigosos',
+    s10: 'Saúde Pública e Vacinação'
+  };
+
+  /* ── TOGGLE CARD ── */
   function toggleCard(header) {
-    const card = header.parentElement;
-    card.classList.toggle('open');
+    header.parentElement.classList.toggle('open');
   }
 
-  function filterCards() {
-    const q = document.getElementById('search').value.toLowerCase().trim();
-    const cards = document.querySelectorAll('.card');
-    const sections = document.querySelectorAll('.section');
-    let anyVisible = false;
-
-    cards.forEach(card => {
-      const text = card.textContent.toLowerCase();
-      const match = !q || text.includes(q);
-      card.style.display = match ? '' : 'none';
-      if (match) {
-        anyVisible = true;
-        if (q) {
-          card.classList.add('open');
-          highlightText(card, q);
-        } else {
-          removeHighlights(card);
-        }
-      } else {
-        removeHighlights(card);
-      }
+  /* ── SEARCH ENGINE ── */
+  function getCardData() {
+    return Array.from(document.querySelectorAll('.card')).map(card => {
+      const badge = card.querySelector('.contributor-badge');
+      const body  = card.querySelector('.card-body');
+      const section = card.closest('.section');
+      return {
+        el:          card,
+        id:          card.id,
+        contributor: badge ? badge.textContent.trim() : '',
+        theme:       section ? (THEME_NAMES[section.id] || '') : '',
+        themeId:     section ? section.id : '',
+        text:        body ? body.textContent : ''
+      };
     });
-
-    sections.forEach(section => {
-      const visibleCards = section.querySelectorAll('.card:not([style*="display: none"])');
-      section.style.display = visibleCards.length > 0 ? '' : 'none';
-    });
-
-    document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
   }
 
-  function highlightText(el, q) {
-    removeHighlights(el);
+  const EXCERPT_RADIUS = 90;
+
+  function makeExcerpt(text, q) {
+    const lower = text.toLowerCase();
+    const idx   = lower.indexOf(q.toLowerCase());
+    if (idx === -1) return escHtml(text.slice(0, EXCERPT_RADIUS * 2)) + '…';
+    const start  = Math.max(0, idx - EXCERPT_RADIUS);
+    const end    = Math.min(text.length, idx + q.length + EXCERPT_RADIUS);
+    const before = escHtml(text.slice(start, idx));
+    const match  = escHtml(text.slice(idx, idx + q.length));
+    const after  = escHtml(text.slice(idx + q.length, end));
+    const prefix = start > 0 ? '…' : '';
+    const suffix = end < text.length ? '…' : '';
+    return `${prefix}${before}<mark>${match}</mark>${after}${suffix}`;
+  }
+
+  function escHtml(s) {
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function onSearch() {
+    const q = document.getElementById('search').value.trim();
+    document.getElementById('search-clear').style.display = q ? 'block' : 'none';
+    if (!q) { hidePanel(); return; }
+    showPanel();
+    const cards = getCardData();
+    const ql    = q.toLowerCase();
+    const hits  = cards.filter(c =>
+      c.contributor.toLowerCase().includes(ql) ||
+      c.theme.toLowerCase().includes(ql) ||
+      c.text.toLowerCase().includes(ql)
+    );
+
+    const list = document.getElementById('result-list');
+    const noR  = document.getElementById('search-no-results');
+    document.getElementById('result-count').textContent = hits.length;
+
+    if (hits.length === 0) {
+      list.innerHTML = '';
+      noR.style.display = 'block';
+      return;
+    }
+    noR.style.display = 'none';
+    list.innerHTML = hits.map(h => `
+      <div class="result-item" onclick="goToCard('${h.id}','${escHtml(q)}')">
+        <div class="result-meta">
+          <span class="result-badge">${escHtml(h.contributor)}</span>
+          <span class="result-theme">${escHtml(h.theme)}</span>
+        </div>
+        <div class="result-excerpt">${makeExcerpt(h.text, q)}</div>
+      </div>`).join('');
+  }
+
+  function goToCard(cardId, q) {
+    hidePanel();
+    clearAllHighlights();
+    document.getElementById('search').value = q;
+
+    const card = document.getElementById(cardId);
+    if (!card) return;
+    card.classList.add('open');
+    highlightInCard(card, q);
+    setTimeout(() => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  }
+
+  function clearSearch() {
+    document.getElementById('search').value = '';
+    document.getElementById('search-clear').style.display = 'none';
+    clearAllHighlights();
+    hidePanel();
+  }
+
+  function showPanel() {
+    const q = document.getElementById('search').value.trim();
+    if (q) document.getElementById('search-panel').classList.add('visible');
+  }
+
+  function hidePanel() {
+    document.getElementById('search-panel').classList.remove('visible');
+  }
+
+  /* Close panel when clicking outside */
+  document.addEventListener('click', e => {
+    const bar = document.getElementById('search-bar');
+    if (!bar.contains(e.target)) hidePanel();
+  });
+
+  /* ── HIGHLIGHT IN CARD BODY ── */
+  function highlightInCard(card, q) {
+    const body = card.querySelector('.card-body');
+    if (!body) return;
+    removeHighlightsFrom(body);
     if (!q) return;
-    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+    const ql = q.toLowerCase();
+    const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, null, false);
     const nodes = [];
     let node;
     while ((node = walker.nextNode())) nodes.push(node);
-    nodes.forEach(node => {
-      const idx = node.textContent.toLowerCase().indexOf(q);
-      if (idx === -1) return;
-      const parent = node.parentNode;
-      if (parent.tagName === 'MARK') return;
-      const before = document.createTextNode(node.textContent.slice(0, idx));
-      const mark = document.createElement('mark');
-      mark.textContent = node.textContent.slice(idx, idx + q.length);
-      const after = document.createTextNode(node.textContent.slice(idx + q.length));
-      parent.insertBefore(before, node);
-      parent.insertBefore(mark, node);
-      parent.insertBefore(after, node);
-      parent.removeChild(node);
+    nodes.forEach(n => {
+      const idx = n.textContent.toLowerCase().indexOf(ql);
+      if (idx === -1 || n.parentNode.tagName === 'MARK') return;
+      const before = document.createTextNode(n.textContent.slice(0, idx));
+      const mark   = document.createElement('mark');
+      mark.textContent = n.textContent.slice(idx, idx + q.length);
+      const after  = document.createTextNode(n.textContent.slice(idx + q.length));
+      n.parentNode.insertBefore(before, n);
+      n.parentNode.insertBefore(mark, n);
+      n.parentNode.insertBefore(after, n);
+      n.parentNode.removeChild(n);
     });
   }
 
-  function removeHighlights(el) {
-    el.querySelectorAll('mark').forEach(mark => {
-      const parent = mark.parentNode;
-      parent.replaceChild(document.createTextNode(mark.textContent), mark);
-      parent.normalize();
+  function removeHighlightsFrom(el) {
+    el.querySelectorAll('mark').forEach(m => {
+      m.parentNode.replaceChild(document.createTextNode(m.textContent), m);
+      m.parentNode.normalize();
     });
   }
 
+  function clearAllHighlights() {
+    document.querySelectorAll('.card-body').forEach(b => removeHighlightsFrom(b));
+  }
+
+  /* ── NAV HIGHLIGHT ON SCROLL ── */
   const sections = document.querySelectorAll('.section');
   const navItems = document.querySelectorAll('.nav-item');
   window.addEventListener('scroll', () => {
     let current = '';
-    sections.forEach(s => {
-      if (window.scrollY >= s.offsetTop - 80) current = s.id;
-    });
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
     navItems.forEach(item => {
       item.classList.toggle('active', item.getAttribute('href') === '#' + current);
     });
