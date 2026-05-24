@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<title>Tipologia das modalidades de transmissão de cães e gatos</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #d4d4d4;
+    --accent: #2c5f2d;
+    --accent-light: #97bc62;
+    --warn: #c97b3a;
+    --reg: #1f3a5f;
+    --reg-light: #c8d6e8;
+    --yes: #2c5f2d;
+    --no: #c0392b;
+    --partial: #d4a017;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    margin: 0;
+    padding: 32px 24px 64px;
+    line-height: 1.45;
+  }
+  .wrap { max-width: 1280px; margin: 0 auto; }
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.01em;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 28px;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    margin-bottom: 28px;
+    font-size: 12px;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .dot.yes { background: var(--yes); }
+  .dot.no { background: var(--no); }
+  .dot.partial { background: var(--partial); }
+
+  /* ─── Tier 1: 5 unifying terms ─── */
+  .terms-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .term-card {
+    background: var(--reg);
+    color: white;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    position: relative;
+  }
+  .term-card .term-num {
+    display: inline-block;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  /* ─── Tier 2: 7 categories ─── */
+  .cats-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .cat-card {
+    background: white;
+    border: 1.5px solid var(--accent);
+    border-radius: 6px;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cat-letter {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-right: 4px;
+    font-size: 11px;
+  }
+
+  /* ─── Tier 3: 21 modalities ─── */
+  .mods-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+  .mods-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .mod {
+    background: white;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent-light);
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 11.5px;
+    line-height: 1.35;
+    position: relative;
+  }
+  .mod-num {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  .mod-name {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .mod-source {
+    display: block;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 2px;
+    font-style: italic;
+  }
+  .mod .mark {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .mark.yes { background: var(--yes); }
+  .mark.no { background: var(--no); }
+  .mark.partial { background: var(--partial); }
+
+  /* ─── Connecting lines (using SVG-like effect with borders) ─── */
+  .connector {
+    height: 18px;
+    position: relative;
+    margin: -2px 0;
+  }
+  .connector::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1.5px;
+    background: var(--line);
+  }
+
+  /* ─── Article 4(7) box ─── */
+  .art47 {
+    background: linear-gradient(135deg, #f4ead2 0%, #e6d8a8 100%);
+    border: 2px solid var(--warn);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 28px;
+  }
+  .art47 h3 {
+    margin: 0 0 8px 0;
+    color: var(--warn);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .art47 p {
+    margin: 0;
+    font-size: 12.5px;
+    color: var(--ink);
+  }
+  .art47 .verbatim {
+    background: rgba(255,255,255,.6);
+    padding: 10px 12px;
+    border-radius: 4px;
+    margin-top: 8px;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.5;
+    border-left: 3px solid var(--warn);
+  }
+
+  /* ─── Notes / footer ─── */
+  .notes {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    font-size: 12.5px;
+    color: var(--ink);
+  }
+  .notes h4 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: var(--accent);
+  }
+  .notes ul { margin: 4px 0 12px; padding-left: 22px; }
+  .notes li { margin-bottom: 4px; }
+
+  @media (max-width: 1100px) {
+    .cats-row, .mods-row { grid-template-columns: repeat(4, 1fr); }
+    .terms-row { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Tipologia das modalidades de transmissão de cães e gatos</h1>
+  <div class="sub">
+    Análise comparativa entre o Regulamento (UE) 2023/0447 e a legislação portuguesa (vigente + propostas @codigo e @rgbeac).
+    Organigrama em três níveis: <b>21 modalidades</b> agrupadas em <b>7 categorias</b>, sintetizadas em <b>5 termos unificadores</b>.
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <span style="font-weight:600;">Cobertura por «Colocação no mercado» (Art.º 4.º, n.º 7 do Regulamento):</span>
+    <span class="legend-item"><span class="dot yes"></span> Coberta</span>
+    <span class="legend-item"><span class="dot partial"></span> Parcial / sujeita a interpretação</span>
+    <span class="legend-item"><span class="dot no"></span> Não coberta</span>
+  </div>
+
+  <!-- ART 4(7) BOX -->
+  <div class="art47">
+    <h3>Art.º 4.º, n.º 7 — «Colocação no mercado»</h3>
+    <div class="verbatim">
+      «Colocação no mercado», a venda, oferta para fins de venda, distribuição ou <b>qualquer outra forma de transferência de propriedade ou responsabilidade</b> relativa a cães e gatos, quer a título oneroso quer a título gratuito, assim como <b>a publicidade</b> de cães e gatos para esses fins, com exceção das <b>doações ocasionais a intervalos irregulares por pessoas singulares que não sejam operadores sem publicidade em linha</b>.
+    </div>
+  </div>
+
+  <!-- TIER 1: 5 UNIFYING TERMS -->
+  <div class="terms-row">
+    <div class="term-card"><span class="term-num">1</span><br>Transmissão</div>
+    <div class="term-card"><span class="term-num">2</span><br>Transferência temporária<br>de responsabilidade</div>
+    <div class="term-card"><span class="term-num">3</span><br>Intervenção<br>pública</div>
+    <div class="term-card"><span class="term-num">4</span><br>Transmissão<br>mortis causa</div>
+    <div class="term-card"><span class="term-num">5</span><br>Movimentação<br>transfronteiriça</div>
+  </div>
+
+  <div class="connector"></div>
+
+  <!-- TIER 2: 7 CATEGORIES -->
+  <div class="cats-row">
+    <div class="cat-card"><span class="cat-letter">A</span> Transmissão inter vivos<br>(propriedade)</div>
+    <div class="cat-card"><span class="cat-letter">B</span> Transferência temporária<br>de responsabilidade</div>
+    <div class="cat-card"><span class="cat-letter">C</span> Intervenção pública<br>compulsória</div>
+    <div class="cat-card"><span class="cat-letter">D</span> Transmissão<br>mortis causa</div>
+    <div class="cat-card"><span class="cat-letter">E</span> Movimentação<br>transfronteiriça</div>
+    <div class="cat-card"><span class="cat-letter">F</span> Cedência para<br>fim específico</div>
+    <div class="cat-card"><span class="cat-letter">G</span> Outras figuras<br>civis</div>
+  </div>
+
+  <!-- TIER 3: 21 MODALITIES -->
+  <div class="mods-row">
+
+    <!-- A: Transmissão inter vivos -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">A1</span><span class="mod-name">Venda / compra (onerosa)</span>
+        <span class="mod-source">Arts. 30-36 DL 276/2001 · Art. 80-83 @codigo · Arts. 91-95 @rgbeac</span>
+      </div>
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">A2</span><span class="mod-name">Doação ocasional (não-operador, sem publicidade online)</span>
+        <span class="mod-source">Excluída do n.º 7; capturada por Art. 20(4) reg.</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">A3</span><span class="mod-name">Doação com publicidade online ou por operador</span>
+        <span class="mod-source">Art. 21 reg.</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">A4</span><span class="mod-name">Permuta / troca</span>
+        <span class="mod-source">Art. 938.º CC · transferência de propriedade</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">A5</span><span class="mod-name">Adoção formal (associação ou CRO ao adotante)</span>
+        <span class="mod-source">Art. 4.º @rgbeac · Arts. 41-42 @rgbeac · Lei 27/2016</span>
+      </div>
+    </div>
+
+    <!-- B: Transferência temporária -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">B1</span><span class="mod-name">Acolhimento temporário (foster home)</span>
+        <span class="mod-source">Art. 4(19) reg. · Art. 4 @rgbeac</span>
+      </div>
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">B2</span><span class="mod-name">Hospedagem (pet boarding / pensão)</span>
+        <span class="mod-source">Considerando 20 reg.: «short-term and local activity»</span>
+      </div>
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">B3</span><span class="mod-name">Internamento veterinário</span>
+        <span class="mod-source">Não regulado; serviço médico, não comércio</span>
+      </div>
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">B4</span><span class="mod-name">Cedência para treino</span>
+        <span class="mod-source">Cedência tradicional sem mudança de propriedade</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">B5</span><span class="mod-name">Cedência para reprodução</span>
+        <span class="mod-source">Art. 8 reg. · Art. 70 @rgbeac · Anexo I, ponto 3 reg.</span>
+      </div>
+    </div>
+
+    <!-- C: Intervenção pública -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">C1</span><span class="mod-name">Recolha de errantes (CRO)</span>
+        <span class="mod-source">Lei 27/2016 · Portaria 146/2017 · não é colocação no mercado</span>
+      </div>
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">C2</span><span class="mod-name">Apreensão administrativa / judicial</span>
+        <span class="mod-source">DL 276/2001 · CPP · transferência por autoridade pública</span>
+      </div>
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">C3</span><span class="mod-name">Captura compulsória (saúde pública)</span>
+        <span class="mod-source">Portaria 264/2013 (raiva) · DL 314/2003</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">C4</span><span class="mod-name">Cedência pelo CRO ao adotante</span>
+        <span class="mod-source">Lei 27/2016 · transferência de propriedade gratuita</span>
+      </div>
+    </div>
+
+    <!-- D: Mortis causa -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">D1</span><span class="mod-name">Herança / sucessão legítima</span>
+        <span class="mod-source">Arts. 2024 e ss. CC · Art. 26 @rgbeac</span>
+      </div>
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">D2</span><span class="mod-name">Legado testamentário</span>
+        <span class="mod-source">Art. 2030 CC · transmissão por morte</span>
+      </div>
+    </div>
+
+    <!-- E: Transfronteiriça -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark no"></span>
+        <span class="mod-num">E1</span><span class="mod-name">Movimentação não comercial intra-UE</span>
+        <span class="mod-source">Reg. 576/2013 · Art. 4(39) reg. 0447</span>
+      </div>
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">E2</span><span class="mod-name">Importação para colocação no mercado UE</span>
+        <span class="mod-source">Art. 26 reg. 0447</span>
+      </div>
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">E3</span><span class="mod-name">Exportação para país terceiro</span>
+        <span class="mod-source">Não regulada pelo reg. 0447 (foco no mercado UE)</span>
+      </div>
+    </div>
+
+    <!-- F: Fim específico -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark yes"></span>
+        <span class="mod-num">F1</span><span class="mod-name">Consignação para revenda</span>
+        <span class="mod-source">«Distribution» no Art. 4(7); cadeia comercial</span>
+      </div>
+    </div>
+
+    <!-- G: Outros -->
+    <div class="mods-col">
+      <div class="mod">
+        <span class="mark partial"></span>
+        <span class="mod-num">G1</span><span class="mod-name">Comodato / empréstimo</span>
+        <span class="mod-source">Arts. 1129 e ss. CC · sem mudança de propriedade</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NOTES -->
+  <div class="notes">
+    <h4>Notas metodológicas</h4>
+    <ul>
+      <li><b>«Colocação no mercado» (Art. 4.º, n.º 7)</b> abrange toda a transferência de <i>propriedade</i> ou <i>responsabilidade</i>, onerosa ou gratuita, mais a publicidade para esses fins. Excluem-se exclusivamente as doações ocasionais a intervalos irregulares por pessoas singulares que não sejam operadores e sem publicidade em linha — exceção interpretada de forma estrita.</li>
+      <li><b>Categoria B</b> (transferência temporária de responsabilidade): a interpretação depende de saber se um arranjo de serviço (hospedagem, internamento) constitui «transferência de responsabilidade» na aceção do n.º 7. O Considerando 20 esclarece que <i>pet boarding</i> é «short-term and local» e não cabe no âmbito da colocação no mercado.</li>
+      <li><b>Categoria C</b>: a transferência por autoridade pública (recolha, apreensão, captura) não é uma «colocação no mercado» — é um ato de poder público. A subsequente cedência ao adotante (C4) já entra no n.º 7.</li>
+      <li><b>Categoria D</b> (mortis causa): a sucessão hereditária é um modo originário de aquisição da propriedade, distinto da «colocação no mercado». No entanto, alguma transmissão deve ser registada (Art. 20.º, n.º 4 reg. e Art. 26.º @rgbeac).</li>
+      <li><b>5 termos mínimos</b>: proposta de vocabulário unificado para a legislação portuguesa harmonizada com o Regulamento — agrupa as 21 modalidades sob 5 categorias jurídicas distintas e mutuamente exclusivas.</li>
+    </ul>
+    <h4>Fontes utilizadas</h4>
+    <ul>
+      <li><b>@regulamento</b> (Reg. (UE) 2023/0447, AFTERMEETING): Arts. 4.º (n.º 7, n.º 19, n.º 20, n.º 39), 8.º, 20.º, 21.º, 26.º; Considerando 20.</li>
+      <li><b>Legislação vigente</b>: DL 276/2001 (Arts. 30-36); Lei 27/2016; Portaria 146/2017; Portaria 264/2013; DL 82/2019 (SIAC); Reg. (UE) 576/2013.</li>
+      <li><b>@codigo</b> (DL 214/2013, proposta): Arts. 80-83 (comércio); Art. 9 (abandono).</li>
+      <li><b>@rgbeac</b> (proposta jun. 2025): Art. 4.º (definições); Arts. 26, 41-42, 70, 91-95, 114.</li>
+      <li><b>Código Civil</b>: Arts. 938 (permuta), 1129 e ss. (comodato), 2024 e ss. (sucessões).</li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>
