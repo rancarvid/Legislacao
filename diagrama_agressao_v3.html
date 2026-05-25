@@ -74,6 +74,7 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 .n.eut  .ref{color:#d4a0a0}
 .n.ok   {border-color:#27ae60;background:#eafaf1;color:#1a5c35}
 .n.warn {border-color:#e0a800;background:#fff8e1;color:#7d5a00;font-size:11px}
+.n.dgav {border-color:#8e44ad;background:#f5eeff;color:#4a235a;font-size:11px}
 
 .an{text-align:center;font-size:16px;color:#c4cad2;line-height:.9;margin:4px 0}
 
@@ -91,6 +92,7 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 .brtag.yes {background:#1f8a4c}
 .brtag.amber{background:#e6ac00;color:#5e4500}
 .brtag.dark{background:#4a1010}
+.brtag.grey{background:#888}
 .brbody{padding:7px 8px}
 
 /* sub-fluxo dentro de ramo */
@@ -125,10 +127,17 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 .dest-br{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:9px}
 .dest-card{border-radius:7px;overflow:hidden;border:1.5px solid}
 .dest-card .h{padding:4px 8px;font-size:10px;font-weight:800;color:#fff;letter-spacing:.2px;text-align:center}
-.dest-card .bd{padding:8px 9px;font-size:11.5px;line-height:1.4}
+.dest-card .bd{padding:8px 9px;font-size:11.5px;line-height:1.5}
 .dest-grave{border-color:#922b21}.dest-grave .h{background:#922b21}
 .dest-simples{border-color:#27ae60}.dest-simples .h{background:#1f8a4c}
 .dest-risco{border-color:#4a1010}.dest-risco .h{background:#4a1010}
+
+/* sub-caminho dentro da card destino */
+.dest-path{display:flex;gap:6px;margin-top:6px;flex-direction:column}
+.dest-path .dp{border-radius:4px;padding:4px 7px;font-size:11px;border:1px solid}
+.dp.red{background:#fdecea;border-color:#c0392b;color:#7b241c}
+.dp.grn{background:#eafaf1;border-color:#27ae60;color:#1a5c35}
+.dp-label{font-size:9px;font-weight:800;letter-spacing:.3px;color:#999;margin-bottom:2px}
 
 /* nota animal */
 .note-animal{background:#eef3f7;border:1.5px dashed #9bb4c9;border-radius:7px;
@@ -159,16 +168,17 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 <div class="page">
 
   <h1>Processo Integrado Pós-Agressão Animal</h1>
-  <p class="sub">Articulação dos dois regimes que correm em paralelo &nbsp;·&nbsp; DL n.º 315/2009 (perigosidade) + Portaria n.º 264/2013 (sanitário antirrábico) &nbsp;·&nbsp; v3</p>
+  <p class="sub">Articulação dos dois regimes que correm em paralelo &nbsp;·&nbsp; DL n.º 315/2009 · Portaria n.º 264/2013 · Plano de Contingência Raiva 2024 (DGAV) &nbsp;·&nbsp; v3</p>
 
   <div class="legend">
-    <span class="lg"><b>Refs:</b></span>
-    <span class="lg"><span class="sw" style="background:#922b21"></span> Regime de perigosidade — DL 315/2009</span>
-    <span class="lg"><span class="sw" style="background:#1f6aa5"></span> Regime sanitário — Port. 264/2013</span>
+    <span class="lg"><b>Regimes:</b></span>
+    <span class="lg"><span class="sw" style="background:#922b21"></span> Perigosidade — DL 315/2009</span>
+    <span class="lg"><span class="sw" style="background:#1f6aa5"></span> Sanitário antirrábico — Port. 264/2013 + Plano Cont. Raiva 2024</span>
     <span class="lg"><span class="sw" style="background:#e6ac00"></span> Decisão</span>
     <span class="lg"><span class="sw" style="background:#4a1010"></span> Eutanásia / occisão</span>
     <span class="lg"><span class="sw" style="background:#eafaf1;border-color:#27ae60"></span> Desfecho favorável</span>
-    <span class="lg"><span class="sw" style="background:#3b2f00"></span> Ponto de bloqueio (gate)</span>
+    <span class="lg"><span class="sw" style="background:#3b2f00"></span> Bloqueio / gate</span>
+    <span class="lg"><span class="sw" style="background:#f5eeff;border-color:#8e44ad"></span> Autorização DGAV</span>
   </div>
 
   <div class="canvas">
@@ -182,11 +192,11 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
     <div class="fork">
       <div class="fork-card fork-pessoa">
         <b>▸ Vítima = PESSOA</b>
-        Aciona recolha obrigatória e o regime de destino (art. 15.º). Pessoa encaminhada para cuidados de saúde humana (fora deste âmbito).
+        Aciona recolha obrigatória, classificação perigoso e regime de destino (art. 15.º). Pessoa encaminhada para cuidados de saúde humana (fora deste âmbito).
       </div>
       <div class="fork-card fork-animal">
         <b>▸ Vítima = ANIMAL</b>
-        O animal agredido entra também no regime sanitário como suspeito. Não há recolha obrigatória automática nem destino expresso no art. 15.º.
+        O animal agredido entra também no regime sanitário como suspeito. Sem recolha obrigatória automática; sem destino expresso no art. 15.º.
       </div>
     </div>
 
@@ -245,67 +255,122 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 
       <!-- ─────── LANE SANITÁRIO ─────── -->
       <div class="lane lane-sani">
-        <div class="lane-head">REGIME SANITÁRIO ANTIRRÁBICO · Port. 264/2013<small>incide sobre o AGRESSOR e o ANIMAL AGREDIDO</small></div>
+        <div class="lane-head">REGIME SANITÁRIO ANTIRRÁBICO · Port. 264/2013 + Plano Cont. Raiva 2024<small>incide sobre o AGRESSOR e o ANIMAL AGREDIDO</small></div>
         <div class="lane-body">
 
           <div class="n info">
             <b>Suspeitos de raiva</b>
             agressor + agredido observados pelo MVM no mais curto prazo
-            <span class="ref">art. 12.º</span>
+            <span class="ref">art. 12.º · Port. 264/2013</span>
           </div>
 
           <div class="an">↓</div>
 
           <div class="n info">
             <b>Inquérito epidemiológico</b>
-            <span class="ref">art. 12.º</span>
+            avaliação de ambos os animais pelo MVM
+            <span class="ref">art. 12.º · Port. 264/2013</span>
           </div>
 
           <div class="an">↓</div>
 
-          <div class="dec">Suspeita clínica de raiva?</div>
+          <!-- Sequestro split por vacina -->
+          <div class="dec">Agressor vacinado contra a raiva?</div>
 
           <div class="br br2">
-            <!-- SIM clínico -->
+            <!-- NÃO vacinado -->
             <div class="branch">
-              <div class="brtag dark">SIM — sinais clínicos</div>
+              <div class="brtag no">NÃO vacinado</div>
               <div class="brbody">
-                <div class="n eut">
-                  <b>Sequestro isolado · CRO</b>
-                  + análise laboratorial · occisão só com autorização da DGAV
-                  <span class="ref">art. 17.º n.os 1 e 2</span>
-                </div>
-                <div class="subarr">◆ confirmada?</div>
-                <div class="n eut" style="font-size:11px">
-                  <b>Occisão</b> (cães/gatos) · herbívoros 90 dias obs.
-                  <span class="ref">art. 21.º</span>
+                <div class="n act">
+                  <b>Quarentena · CRO · 15 dias</b>
+                  isolado · rigorosa observação do MVM
+                  <span class="ref">art. 13.º n.º 1 · Port. 264/2013</span>
                 </div>
               </div>
             </div>
-            <!-- NÃO clínico -->
+            <!-- Vacinado -->
             <div class="branch">
-              <div class="brtag amber">NÃO — sem sinais → vacinado?</div>
+              <div class="brtag yes">Vacinado</div>
               <div class="brbody">
-                <div class="n act" style="font-size:11px">
-                  <b>Não vacinado:</b> quarentena CRO 15 dias → vacinação obrigatória
-                  <span class="ref">art. 13.º n.º 1</span>
-                </div>
-                <div class="subarr">— ou —</div>
-                <div class="n ok" style="font-size:11px">
-                  <b>Vacinado:</b> vigilância clínica em local autorizado
-                  <span class="ref">art. 13.º n.º 5</span>
+                <div class="n ok">
+                  <b>Vigilância clínica 15 dias</b>
+                  em instalação aprovada ou <strong>domiciliária</strong><br>
+                  — Termo de Responsabilidade do MV a entregar no CRO/MVM
+                  <span class="ref">art. 13.º n.º 5 · Port. 264/2013 · Plano §8.1.2</span>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Decisão após 15 dias -->
           <div class="an" style="margin-top:8px">↓</div>
+          <div class="dec" style="font-size:11px">Após 15 dias: sintomas suspeitos?</div>
+          <div class="br br2" style="margin-top:6px">
+            <div class="branch">
+              <div class="brtag yes">SEM sintomas</div>
+              <div class="brbody">
+                <div class="n ok">
+                  <b>Suspeita eliminada</b>
+                  sequestro levantado → entregue ao detentor
+                  <span class="ref">Plano Cont. Raiva 2024 · §8.1.2</span>
+                </div>
+              </div>
+            </div>
+            <div class="branch">
+              <div class="brtag dark">COM sintomas</div>
+              <div class="brbody">
+                <div class="n eut">
+                  <b>Sequestro mantido</b>
+                  observação até à morte → material enviado para análise laboratorial
+                  <span class="ref">Plano Cont. Raiva 2024 · §8.1.2</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Suspeita clínica desde o início (separada) -->
+          <div class="an" style="margin-top:10px">— ou se apresentar sinais clínicos iniciais —</div>
+          <div class="n eut" style="margin-top:4px">
+            <b>Suspeita clínica: sequestro imediato · CRO · isolado</b>
+            sem contacto com outros animais · até eliminação da suspeita ou morte + laboratório
+            <span class="ref">art. 17.º n.os 1 e 2 · Port. 264/2013</span>
+          </div>
+
+          <div class="n dgav" style="margin-top:5px">
+            ⚠ <strong>Occisão de animal suspeito</strong> — apenas mediante <strong>autorização expressa da DGAV</strong>
+            <span class="ref">art. 17.º n.º 2 · Port. 264/2013 · Plano Cont. Raiva 2024 · §8.1.2</span>
+          </div>
+
+          <!-- Agredido -->
+          <div class="an" style="margin-top:10px">↓</div>
           <div class="n info">
             <span class="cond cond-a">ANIMAL AGREDIDO</span>
-            <b>Quarentena oficial ou vigilância</b>
-            quarentena se sem vacinação válida + agressor não vacinado; prazos de sequestro do art. 20.º (15 / 90 / 180 dias)
-            <span class="ref">art. 14.º n.º 3 + art. 20.º</span>
+            <b>Quarentena oficial · CRO ou vigilância</b>
+            se sem vacinação válida + agressor não vacinado → quarentena obrigatória
+            <span class="ref">art. 14.º n.º 3 · Port. 264/2013</span>
+          </div>
+
+          <div class="br br2" style="margin-top:6px">
+            <div class="branch">
+              <div class="brtag amber" style="font-size:9px">Prazos · art. 20.º</div>
+              <div class="brbody" style="font-size:11px">
+                • Agressor em observação → <b>15 dias</b><br>
+                • Agressor desaparecido → <b>180 dias</b><br>
+                &nbsp;&nbsp;(90 dias se agredido vacinado ≥ 21 dias e em validade)<br>
+                • Agressor morto + exame cerebral → <b>conforme resultado</b>
+                <span class="ref">art. 20.º · Port. 264/2013</span>
+              </div>
+            </div>
+            <div class="branch">
+              <div class="brtag grey">Opção do detentor</div>
+              <div class="brbody">
+                <div class="n warn">
+                  Detentor do animal agredido pode optar pela <strong>eutanásia</strong>, por escrito
+                  <span class="ref">Plano Cont. Raiva 2024 · §8.1.2.2</span>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -335,37 +400,57 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 
       <div class="dest-dec">
         DESTINO DO AGRESSOR — gravidade da ofensa?
-        <small>aplicável apenas quando a vítima é PESSOA (art. 15.º)</small>
+        <small>aplicável apenas quando a vítima é PESSOA · decisão compete ao MVM (art. 15.º n.º 2)</small>
       </div>
 
       <div class="dest-br">
+
+        <!-- OFENSA GRAVE -->
         <div class="dest-card dest-grave">
-          <div class="h">OFENSA GRAVE</div>
+          <div class="h">OFENSA GRAVE — relatório médico</div>
           <div class="bd">
-            <strong>Eutanásia obrigatória</strong>, sem dor, decidida pelo MVM
-            <span class="ref">art. 15.º n.os 1 e 2</span>
+            MVM <strong>pondera as circunstâncias concretas</strong>, designadamente o caráter agressivo do animal
+            <div class="dest-path">
+              <div class="dp red">
+                <div class="dp-label">SE EUTANASIADO</div>
+                Eutanásia, sem dor nem sofrimento desnecessários
+                <span class="ref" style="color:#c0392b">art. 15.º n.os 1 e 2</span>
+              </div>
+              <div class="dp grn">
+                <div class="dp-label">SE NÃO ABATIDO</div>
+                Entregue ao detentor + provas de socialização/treino no prazo fixado pelo MVM
+                <span class="ref">art. 15.º n.º 3</span>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- OFENSA SIMPLES -->
         <div class="dest-card dest-simples">
           <div class="h">OFENSA SIMPLES</div>
           <div class="bd">
-            <strong>Entregue ao detentor</strong> após cumprir obrigações + provas de socialização/treino
+            <strong>Entregue ao detentor</strong> após cumprimento de obrigações + provas de socialização/treino no prazo fixado pelo MVM
             <span class="ref">art. 15.º n.º 4</span>
           </div>
         </div>
+
+        <!-- RISCO GRAVE IMEDIATO -->
         <div class="dest-card dest-risco">
           <div class="h">RISCO GRAVE IMEDIATO</div>
           <div class="bd">
-            <strong>Eutanásia imediata</strong> (faculdade do MVM) se o detentor não controla o animal
+            <strong>Eutanásia imediata</strong> — faculdade do MVM<br>
+            detentor sem controlo do animal<br>
+            <em>sem prejuízo das normas de raiva</em>
             <span class="ref">art. 15.º n.º 5</span>
           </div>
         </div>
+
       </div>
 
       <div class="sem-ind">Ao detentor do animal abatido não cabe direito a indemnização &nbsp;·&nbsp; <em>art. 15.º n.º 6</em></div>
 
       <div class="note-animal">
-        <b>⚠ Se a vítima foi um ANIMAL:</b> o agressor é classificado como perigoso e o detentor é notificado, mas o <b>art. 15.º não prevê expressamente</b> a eutanásia nem a entrega condicionada — esse regime de destino refere-se a ofensas a <em>pessoas</em>. O percurso sanitário (quarentena / vigilância / occisão por raiva) mantém-se aplicável a ambos os animais.
+        <b>⚠ Se a vítima foi um ANIMAL:</b> o agressor é classificado como perigoso e o detentor é notificado. O <b>art. 15.º não prevê expressamente</b> a eutanásia nem a entrega condicionada — esse regime de destino refere-se a ofensas a <em>pessoas</em>. O percurso sanitário (quarentena / vigilância / occisão por raiva) mantém-se plenamente aplicável a ambos os animais.
       </div>
 
       <div class="costs">
@@ -377,7 +462,7 @@ h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing
 
   </div><!-- /canvas -->
 
-  <p class="foot">Diagrama único integrado &nbsp;·&nbsp; Ctrl+P → Guardar como PDF → A3 landscape</p>
+  <p class="foot">Diagrama único integrado · fontes: DL n.º 315/2009 · Portaria n.º 264/2013 · Plano de Contingência Raiva 2024 (DGAV) &nbsp;·&nbsp; Ctrl+P → Guardar como PDF → A3 landscape</p>
 </div>
 </body>
 </html>
