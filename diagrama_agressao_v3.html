@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Processo Integrado Pós-Agressão Animal v3 — DL 315/2009 + Port. 264/2013</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Helvetica Neue',Arial,sans-serif;background:#dfe3e8;font-size:12.5px;color:#1a1a1a}
+
+/* ── PÁGINA ── */
+.page{background:#fff;max-width:1360px;margin:18px auto;padding:24px 30px 30px}
+
+/* ── CABEÇALHO ── */
+h1{font-size:18px;font-weight:800;text-align:center;color:#13243b;letter-spacing:.2px}
+.sub{font-size:11px;text-align:center;color:#777;margin:3px 0 4px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:center;
+        font-size:10px;color:#666;margin:8px 0 18px;padding:7px 10px;
+        background:#f5f6f8;border-radius:6px}
+.legend b{color:#13243b}
+.lg{display:inline-flex;align-items:center;gap:4px}
+.sw{width:11px;height:11px;border-radius:3px;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+
+/* ── ESTRUTURA GERAL ── */
+.canvas{position:relative}
+
+/* ── EVENTO GATILHO ── */
+.trigger{background:#13243b;color:#fff;border-radius:8px;padding:13px 18px;
+         text-align:center;max-width:640px;margin:0 auto}
+.trigger .t1{font-size:16px;font-weight:800;letter-spacing:.3px}
+.trigger .t2{font-size:11px;color:#9fb3cc;margin-top:3px}
+
+/* fork vítima */
+.fork{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:10px auto 0}
+.fork-card{border-radius:7px;padding:8px 12px;font-size:11px;line-height:1.45;border:1.5px solid}
+.fork-pessoa{background:#fdecec;border-color:#d98880;color:#7b241c}
+.fork-animal{background:#eaf3fb;border-color:#7fb3d8;color:#1a5276}
+.fork-card b{display:block;font-size:12px;margin-bottom:2px}
+
+.flowdown{text-align:center;font-size:22px;color:#b9c0c9;line-height:.9;margin:6px 0}
+
+/* banda "em paralelo" */
+.parallel-band{display:flex;align-items:center;gap:12px;margin:10px 0 4px}
+.parallel-band span{font-size:10px;font-weight:800;letter-spacing:1.5px;color:#8a93a0;white-space:nowrap}
+.parallel-band::before,.parallel-band::after{content:'';flex:1;height:2px;
+   background:repeating-linear-gradient(90deg,#c4cad2 0 8px,transparent 8px 14px)}
+
+/* ── LANES PARALELAS ── */
+.lanes{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.lane{border-radius:10px;padding:0 0 14px;overflow:hidden;border:1.5px solid}
+.lane-peri{background:#fcf4f3;border-color:#e2b8b2}
+.lane-sani{background:#f1f7fc;border-color:#aecde6}
+.lane-head{padding:9px 14px;color:#fff;font-weight:800;font-size:12px;letter-spacing:.4px}
+.lane-head small{display:block;font-weight:500;font-size:10px;opacity:.85;margin-top:1px}
+.lane-peri .lane-head{background:#922b21}
+.lane-sani .lane-head{background:#1f6aa5}
+.lane-body{padding:12px 14px 0}
+
+/* ── NÓS ── */
+.n{border-radius:6px;border:1.5px solid transparent;padding:7px 10px;line-height:1.4;background:#fff}
+.n b{display:block;font-size:12.5px;font-weight:700;margin-bottom:1px}
+.ref{display:inline-block;font-size:9.5px;color:#9aa3ad;font-style:italic;margin-top:3px}
+.cond{display:inline-block;font-size:9px;font-weight:800;letter-spacing:.3px;
+      padding:1px 6px;border-radius:10px;margin-bottom:4px;vertical-align:middle}
+.cond-p{background:#fadbd8;color:#922b21}
+.cond-a{background:#d4e6f1;color:#1a5276}
+
+/* tipos */
+.n.info {border-color:#7fb3d8}
+.n.act  {border-color:#c0392b;background:#fdecec;color:#7b241c;font-weight:600}
+.n.peri {border-color:#7b241c;background:#922b21;color:#fff;font-weight:700}
+.n.peri .ref{color:#e8b0a0}
+.n.eut  {border-color:#3b0d0d;background:#4a1010;color:#fff;font-weight:700}
+.n.eut  .ref{color:#d4a0a0}
+.n.ok   {border-color:#27ae60;background:#eafaf1;color:#1a5c35}
+.n.warn {border-color:#e0a800;background:#fff8e1;color:#7d5a00;font-size:11px}
+
+.an{text-align:center;font-size:16px;color:#c4cad2;line-height:.9;margin:4px 0}
+
+/* ── DECISÃO (pill) ── */
+.dec{background:#fff4d1;border:2px solid #e6ac00;border-radius:20px;
+     padding:5px 12px;font-size:11.5px;font-weight:800;color:#7d5a00;text-align:center}
+.dec::before{content:'◆ ';font-size:9px}
+
+/* ramos */
+.br{display:grid;gap:8px;margin-top:7px}
+.br2{grid-template-columns:1fr 1fr}
+.branch{border:1.5px solid #d9dee3;border-radius:7px;background:#fff;overflow:hidden}
+.brtag{font-size:9.5px;font-weight:800;letter-spacing:.3px;color:#fff;padding:3px 8px}
+.brtag.no  {background:#c0392b}
+.brtag.yes {background:#1f8a4c}
+.brtag.amber{background:#e6ac00;color:#5e4500}
+.brtag.dark{background:#4a1010}
+.brbody{padding:7px 8px}
+
+/* sub-fluxo dentro de ramo */
+.subarr{text-align:center;font-size:13px;color:#cbd1d8;margin:3px 0}
+
+/* ── CONVERGÊNCIA / MERGE ── */
+.merge{position:relative;margin:2px 0 0}
+.merge-rail{height:26px;position:relative}
+.merge-rail::before,.merge-rail::after{content:'';position:absolute;top:0;width:2px;height:14px;background:#b9c0c9}
+.merge-rail::before{left:25%}
+.merge-rail::after{right:25%}
+.merge-rail .cross{position:absolute;top:13px;left:25%;right:25%;height:2px;background:#b9c0c9}
+.merge-rail .down{position:absolute;top:13px;left:50%;width:2px;height:13px;background:#b9c0c9;transform:translateX(-1px)}
+
+/* ── FASE RESOLUÇÃO ── */
+.phase-tag{display:block;text-align:center;font-size:10px;font-weight:800;
+           letter-spacing:1.5px;color:#8a93a0;margin:14px 0 8px}
+.resolution{max-width:1040px;margin:0 auto}
+
+/* gate */
+.gate{background:#3b2f00;color:#ffe9a8;border-radius:8px;padding:11px 16px;text-align:center;
+      border:2px solid #c79a00}
+.gate b{font-size:13px;font-weight:800;display:block;letter-spacing:.3px}
+.gate .ref{color:#caa94d}
+.gate .gicon{font-size:14px;margin-right:6px}
+
+/* destino decision */
+.dest-dec{background:#fff4d1;border:2px solid #e6ac00;border-radius:8px;padding:8px 14px;
+          text-align:center;font-weight:800;color:#7d5a00;font-size:13px;max-width:560px;margin:0 auto}
+.dest-dec small{display:block;font-weight:500;font-size:10px;color:#a07a00;margin-top:1px}
+
+.dest-br{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:9px}
+.dest-card{border-radius:7px;overflow:hidden;border:1.5px solid}
+.dest-card .h{padding:4px 8px;font-size:10px;font-weight:800;color:#fff;letter-spacing:.2px;text-align:center}
+.dest-card .bd{padding:8px 9px;font-size:11.5px;line-height:1.4}
+.dest-grave{border-color:#922b21}.dest-grave .h{background:#922b21}
+.dest-simples{border-color:#27ae60}.dest-simples .h{background:#1f8a4c}
+.dest-risco{border-color:#4a1010}.dest-risco .h{background:#4a1010}
+
+/* nota animal */
+.note-animal{background:#eef3f7;border:1.5px dashed #9bb4c9;border-radius:7px;
+             padding:8px 12px;font-size:10.5px;color:#3d5a72;line-height:1.45;margin-top:10px}
+.note-animal b{color:#1a5276}
+
+/* custos */
+.costs{background:#f3ecfb;border:1.5px solid #a569cf;border-radius:8px;padding:9px 14px;
+       font-size:11px;color:#4a235a;line-height:1.45;max-width:1040px;margin:10px auto 0}
+.costs b{font-size:12px}
+.costs .ref{color:#9b59b6}
+
+/* sem indemnização */
+.sem-ind{text-align:center;font-size:11px;color:#7b241c;font-weight:600;margin-top:8px}
+
+.foot{font-size:10px;color:#c2c8cf;text-align:center;margin-top:18px}
+
+/* ── PRINT ── */
+@media print{
+  body{background:#fff}
+  .page{margin:0;max-width:none;padding:6mm 8mm}
+  @page{size:A3 landscape;margin:5mm}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Processo Integrado Pós-Agressão Animal</h1>
+  <p class="sub">Articulação dos dois regimes que correm em paralelo &nbsp;·&nbsp; DL n.º 315/2009 (perigosidade) + Portaria n.º 264/2013 (sanitário antirrábico) &nbsp;·&nbsp; v3</p>
+
+  <div class="legend">
+    <span class="lg"><b>Refs:</b></span>
+    <span class="lg"><span class="sw" style="background:#922b21"></span> Regime de perigosidade — DL 315/2009</span>
+    <span class="lg"><span class="sw" style="background:#1f6aa5"></span> Regime sanitário — Port. 264/2013</span>
+    <span class="lg"><span class="sw" style="background:#e6ac00"></span> Decisão</span>
+    <span class="lg"><span class="sw" style="background:#4a1010"></span> Eutanásia / occisão</span>
+    <span class="lg"><span class="sw" style="background:#eafaf1;border-color:#27ae60"></span> Desfecho favorável</span>
+    <span class="lg"><span class="sw" style="background:#3b2f00"></span> Ponto de bloqueio (gate)</span>
+  </div>
+
+  <div class="canvas">
+
+    <!-- ══════════ EVENTO GATILHO ══════════ -->
+    <div class="trigger">
+      <div class="t1">AGRESSÃO POR ANIMAL</div>
+      <div class="t2">ofensa ao corpo / à saúde · ferimento grave ou morte</div>
+    </div>
+
+    <div class="fork">
+      <div class="fork-card fork-pessoa">
+        <b>▸ Vítima = PESSOA</b>
+        Aciona recolha obrigatória e o regime de destino (art. 15.º). Pessoa encaminhada para cuidados de saúde humana (fora deste âmbito).
+      </div>
+      <div class="fork-card fork-animal">
+        <b>▸ Vítima = ANIMAL</b>
+        O animal agredido entra também no regime sanitário como suspeito. Não há recolha obrigatória automática nem destino expresso no art. 15.º.
+      </div>
+    </div>
+
+    <div class="parallel-band"><span>↓ &nbsp; DOIS REGIMES ACIONADOS EM SIMULTÂNEO &nbsp; ↓</span></div>
+
+    <!-- ══════════ LANES PARALELAS ══════════ -->
+    <div class="lanes">
+
+      <!-- ─────── LANE PERIGOSIDADE ─────── -->
+      <div class="lane lane-peri">
+        <div class="lane-head">REGIME DE PERIGOSIDADE · DL 315/2009<small>incide sobre o animal AGRESSOR</small></div>
+        <div class="lane-body">
+
+          <div class="n info">
+            <span class="cond cond-p">SE VÍTIMA = PESSOA</span>
+            <b>Notificação imediata ao MVM</b>
+            por MV, autoridade ou unidade de saúde
+            <span class="ref">art. 14.º n.º 2</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="n act">
+            <span class="cond cond-p">SE VÍTIMA = PESSOA</span>
+            <b>Recolha obrigatória → CRO</b>
+            a expensas do detentor
+            <span class="ref">art. 14.º n.º 1</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="n info">
+            <b>Câmara comunica à junta de freguesia</b>
+            prazo máximo: 8 dias
+            <span class="ref">art. 14.º n.º 3</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="n peri">
+            <b>Classificação PERIGOSO → SICAFE</b>
+            automática, por força da lei
+            <span class="ref">art. 3.º b) + art. 9.º n.º 1</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="n info">
+            <b>Junta notifica o detentor</b>
+            15 dias para apresentar documentação (art. 5.º n.º 2)
+            <span class="ref">art. 14.º n.º 4</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ─────── LANE SANITÁRIO ─────── -->
+      <div class="lane lane-sani">
+        <div class="lane-head">REGIME SANITÁRIO ANTIRRÁBICO · Port. 264/2013<small>incide sobre o AGRESSOR e o ANIMAL AGREDIDO</small></div>
+        <div class="lane-body">
+
+          <div class="n info">
+            <b>Suspeitos de raiva</b>
+            agressor + agredido observados pelo MVM no mais curto prazo
+            <span class="ref">art. 12.º</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="n info">
+            <b>Inquérito epidemiológico</b>
+            <span class="ref">art. 12.º</span>
+          </div>
+
+          <div class="an">↓</div>
+
+          <div class="dec">Suspeita clínica de raiva?</div>
+
+          <div class="br br2">
+            <!-- SIM clínico -->
+            <div class="branch">
+              <div class="brtag dark">SIM — sinais clínicos</div>
+              <div class="brbody">
+                <div class="n eut">
+                  <b>Sequestro isolado · CRO</b>
+                  + análise laboratorial · occisão só com autorização da DGAV
+                  <span class="ref">art. 17.º n.os 1 e 2</span>
+                </div>
+                <div class="subarr">◆ confirmada?</div>
+                <div class="n eut" style="font-size:11px">
+                  <b>Occisão</b> (cães/gatos) · herbívoros 90 dias obs.
+                  <span class="ref">art. 21.º</span>
+                </div>
+              </div>
+            </div>
+            <!-- NÃO clínico -->
+            <div class="branch">
+              <div class="brtag amber">NÃO — sem sinais → vacinado?</div>
+              <div class="brbody">
+                <div class="n act" style="font-size:11px">
+                  <b>Não vacinado:</b> quarentena CRO 15 dias → vacinação obrigatória
+                  <span class="ref">art. 13.º n.º 1</span>
+                </div>
+                <div class="subarr">— ou —</div>
+                <div class="n ok" style="font-size:11px">
+                  <b>Vacinado:</b> vigilância clínica em local autorizado
+                  <span class="ref">art. 13.º n.º 5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="an" style="margin-top:8px">↓</div>
+
+          <div class="n info">
+            <span class="cond cond-a">ANIMAL AGREDIDO</span>
+            <b>Quarentena oficial ou vigilância</b>
+            quarentena se sem vacinação válida + agressor não vacinado; prazos de sequestro do art. 20.º (15 / 90 / 180 dias)
+            <span class="ref">art. 14.º n.º 3 + art. 20.º</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /lanes -->
+
+    <!-- ══════════ CONVERGÊNCIA ══════════ -->
+    <div class="merge">
+      <div class="merge-rail">
+        <span class="cross"></span>
+        <span class="down"></span>
+      </div>
+    </div>
+
+    <!-- ══════════ FASE RESOLUÇÃO ══════════ -->
+    <span class="phase-tag">RESOLUÇÃO — CONFLUÊNCIA NO CRO</span>
+    <div class="resolution">
+
+      <div class="gate">
+        <b><span class="gicon">⛔</span>BLOQUEIO SANITÁRIO</b>
+        O destino do animal só é executado <strong>após cumpridas as normas de isolamento profilático e sequestro</strong> em caso de suspeita de raiva
+        <span class="ref">art. 15.º n.os 2 e 5 · DL 315/2009</span>
+      </div>
+
+      <div class="flowdown">↓</div>
+
+      <div class="dest-dec">
+        DESTINO DO AGRESSOR — gravidade da ofensa?
+        <small>aplicável apenas quando a vítima é PESSOA (art. 15.º)</small>
+      </div>
+
+      <div class="dest-br">
+        <div class="dest-card dest-grave">
+          <div class="h">OFENSA GRAVE</div>
+          <div class="bd">
+            <strong>Eutanásia obrigatória</strong>, sem dor, decidida pelo MVM
+            <span class="ref">art. 15.º n.os 1 e 2</span>
+          </div>
+        </div>
+        <div class="dest-card dest-simples">
+          <div class="h">OFENSA SIMPLES</div>
+          <div class="bd">
+            <strong>Entregue ao detentor</strong> após cumprir obrigações + provas de socialização/treino
+            <span class="ref">art. 15.º n.º 4</span>
+          </div>
+        </div>
+        <div class="dest-card dest-risco">
+          <div class="h">RISCO GRAVE IMEDIATO</div>
+          <div class="bd">
+            <strong>Eutanásia imediata</strong> (faculdade do MVM) se o detentor não controla o animal
+            <span class="ref">art. 15.º n.º 5</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sem-ind">Ao detentor do animal abatido não cabe direito a indemnização &nbsp;·&nbsp; <em>art. 15.º n.º 6</em></div>
+
+      <div class="note-animal">
+        <b>⚠ Se a vítima foi um ANIMAL:</b> o agressor é classificado como perigoso e o detentor é notificado, mas o <b>art. 15.º não prevê expressamente</b> a eutanásia nem a entrega condicionada — esse regime de destino refere-se a ofensas a <em>pessoas</em>. O percurso sanitário (quarentena / vigilância / occisão por raiva) mantém-se aplicável a ambos os animais.
+      </div>
+
+      <div class="costs">
+        <b>💶 Responsabilidade pelas despesas:</b> o detentor do animal agressor responde por todos os danos causados e por todas as despesas de transporte e manutenção dos animais envolvidos durante a quarentena ou a vigilância.
+        <span class="ref">art. 14.º n.º 7 · Port. 264/2013</span>
+      </div>
+
+    </div><!-- /resolution -->
+
+  </div><!-- /canvas -->
+
+  <p class="foot">Diagrama único integrado &nbsp;·&nbsp; Ctrl+P → Guardar como PDF → A3 landscape</p>
+</div>
+</body>
+</html>
