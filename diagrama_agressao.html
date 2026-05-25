@@ -8,9 +8,14 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f0f0;
+  font-size: 10px;
+}
+.page {
   background: #fff;
   padding: 10mm 12mm;
-  font-size: 10px;
+  margin-bottom: 6mm;
+  min-height: 100vh;
 }
 h1 { font-size: 13px; font-weight: 700; text-align: center; margin-bottom: 2px; }
 .sub { font-size: 8.5px; text-align: center; color: #555; margin-bottom: 6px; }
@@ -22,32 +27,52 @@ h2 {
   font-size: 10px; font-weight: 700; background: #1c2f4a; color: #fff;
   padding: 4px 8px; margin: 8px 0 4px 0; letter-spacing: .5px;
 }
-.mermaid svg { width: 100% !important; height: auto !important; }
+.diagram-wrap {
+  overflow: auto;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 6px;
+  cursor: zoom-in;
+}
+.diagram-wrap .mermaid svg {
+  min-width: 900px;
+  height: auto !important;
+  display: block;
+}
 .paralelo {
   font-size: 8px; color: #777; text-align: center; margin: 2px 0 4px 0;
   border-top: 1px dashed #ccc; border-bottom: 1px dashed #ccc; padding: 2px 0;
 }
+.zoom-hint {
+  font-size: 7.5px; color: #aaa; text-align: right; margin: 2px 2px 0 0;
+}
 @media print {
-  body { padding: 7mm; }
-  @page { size: A3 landscape; margin: 7mm; }
+  body { background: #fff; }
+  .page { margin: 0; padding: 7mm; page-break-after: always; min-height: auto; }
+  .diagram-wrap { overflow: visible; border: none; background: none; padding: 0; }
+  .diagram-wrap .mermaid svg { min-width: unset; width: 100% !important; }
+  .zoom-hint { display: none; }
   h2 { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .aviso { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A3 landscape; margin: 7mm; }
 }
 </style>
 </head>
 <body>
 
+<div class="page">
 <h1>Procedimentos Pós-Agressão Animal</h1>
 <p class="sub">DL n.º 315/2009, de 29 de outubro (versão consolidada) · Portaria n.º 264/2013, de 16 de agosto</p>
 
 <div class="aviso">
-  ⚠ Os dois processos abaixo correm <strong>em paralelo e simultaneamente</strong> após uma agressão: o processo de classificação e destino (Diagrama 1) e o processo sanitário antirrábico (Diagrama 2). O sequestro no CRO é ponto de confluência de ambos.
+  ⚠ Os dois processos correm <strong>em paralelo e simultaneamente</strong> após uma agressão. O sequestro no CRO é ponto de confluência de ambos. Cada diagrama está numa página separada.
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════ -->
 <h2>DIAGRAMA 1 — CLASSIFICAÇÃO E DESTINO DO ANIMAL AGRESSOR · DL 315/2009</h2>
 <!-- ═══════════════════════════════════════════════════════════ -->
-
-<div class="mermaid">
+<p class="zoom-hint">← scroll horizontal para ver o diagrama completo</p>
+<div class="diagram-wrap"><div class="mermaid">
 %%{init: {"theme":"base","themeVariables":{"fontSize":"11px","fontFamily":"Helvetica Neue, Arial, sans-serif","primaryColor":"#eaf3fb","primaryBorderColor":"#2980b9","primaryTextColor":"#1a1a1a","lineColor":"#444","edgeLabelBackground":"#fffff8"}}}%%
 flowchart TD
 
@@ -172,14 +197,16 @@ flowchart TD
   classDef perigoso fill:#922b21,color:#fff,stroke:#7b241c,font-weight:700
   classDef perigo  fill:#7b1e1e,color:#fff,stroke:#5c1010,font-weight:700
   classDef end2    fill:#4a1010,color:#fff,stroke:#3b0d0d,font-weight:600,rx:20
-</div>
+</div></div>
+</div><!-- fim page 1 -->
 
+<div class="page">
 <!-- ═══════════════════════════════════════════════════════════ -->
 <h2>DIAGRAMA 2 — PROCESSO SANITÁRIO ANTIRRÁBICO · PORT. 264/2013 (PNLVERAZ)</h2>
 <p class="paralelo">Corre em paralelo com o Diagrama 1 · Aplica-se ao animal agressor E ao animal agredido</p>
 <!-- ═══════════════════════════════════════════════════════════ -->
-
-<div class="mermaid">
+<p class="zoom-hint">← scroll horizontal para ver o diagrama completo</p>
+<div class="diagram-wrap"><div class="mermaid">
 %%{init: {"theme":"base","themeVariables":{"fontSize":"11px","fontFamily":"Helvetica Neue, Arial, sans-serif","primaryColor":"#eaf3fb","primaryBorderColor":"#2980b9","primaryTextColor":"#1a1a1a","lineColor":"#444","edgeLabelBackground":"#fffff8"}}}%%
 flowchart LR
 
@@ -302,7 +329,8 @@ flowchart LR
   classDef alerta  fill:#fdecea,color:#7b1e1e,stroke:#c0392b,font-weight:600
   classDef ok      fill:#eafaf1,color:#1a5c35,stroke:#27ae60
   classDef perigo  fill:#7b1e1e,color:#fff,stroke:#5c1010,font-weight:700
-</div>
+</div></div>
+</div><!-- fim page 2 -->
 
 <script>
   mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
