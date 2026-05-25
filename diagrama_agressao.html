@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Procedimentos Pós-Agressão Animal — DL 315/2009 + Port. 264/2013</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #fff;
+  padding: 12mm 14mm 8mm 14mm;
+}
+h1 {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: .3px;
+  margin-bottom: 2px;
+}
+.sub {
+  font-size: 9px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+.mermaid svg { width: 100% !important; height: auto !important; }
+.legenda {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 8.5px;
+  color: #444;
+}
+.legenda span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dot {
+  width: 11px; height: 11px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.nota {
+  font-size: 8px;
+  color: #999;
+  text-align: center;
+  margin-top: 6px;
+}
+@media print {
+  body { padding: 8mm; }
+  @page { size: A3 landscape; margin: 8mm; }
+}
+</style>
+</head>
+<body>
+
+<h1>Procedimentos Pós-Agressão Animal</h1>
+<p class="sub">DL n.º 315/2009, de 29 de outubro &nbsp;·&nbsp; Portaria n.º 264/2013, de 16 de agosto</p>
+
+<div class="mermaid">
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontSize": "12px",
+    "fontFamily": "Helvetica Neue, Arial, sans-serif",
+    "primaryColor": "#eaf3fb",
+    "primaryBorderColor": "#2980b9",
+    "primaryTextColor": "#1a1a1a",
+    "lineColor": "#555",
+    "edgeLabelBackground": "#fffff0"
+  }
+}}%%
+flowchart TD
+
+  A(["AGRESSÃO
+  animal → humano · animal → animal"]):::start
+
+  A --> B
+
+  subgraph comum["① PROCEDIMENTO COMUM  ·  DL 315/2009 art. 14.º + Port. 264/2013 art. 12.º"]
+    direction TB
+    B["Notificação ao MVM
+    DL 315/2009, art. 14.º · Port. 264/2013, art. 12.º"]:::info
+    B --> C
+    C["Inquérito epidemiológico
+    Port. 264/2013, art. 12.º"]:::info
+  end
+
+  C --> D{{"Vítima?"}}:::dec
+
+  D -- "Humana" --> E["Profissional de saúde /
+  autoridade policial notifica MVM
+  DL 315/2009, art. 14.º n.º 2"]:::info
+  D -- "Animal" --> F["MVM avalia agressor
+  e animal agredido
+  Port. 264/2013, art. 12.º"]:::info
+
+  E --> G
+  F --> G
+
+  subgraph seq["② SEQUESTRO E AVALIAÇÃO SANITÁRIA  ·  Port. 264/2013 arts. 13.º–17.º"]
+    direction TB
+    G["Sequestro obrigatório do agressor
+    DL 315/2009, art. 14.º n.º 1"]:::alerta
+
+    G --> H{{"Agressor
+    vacinado?"}}:::dec
+
+    H -- "Sim" --> I["Vigilância clínica
+    em local autorizado
+    Port. 264/2013, art. 13.º n.º 5"]:::ok
+
+    H -- "Não" --> J["Quarentena no CRO
+    mínimo 15 dias
+    Port. 264/2013, art. 13.º n.º 1"]:::alerta
+
+    J --> K{{"Suspeita clínica
+    de raiva?"}}:::dec
+
+    K -- "Sim" --> L["Sequestro imediato no CRO
+    Port. 264/2013, art. 17.º"]:::perigo
+    L --> M["Occisão + análise laboratorial
+    Port. 264/2013, art. 17.º n.º 1"]:::perigo
+
+    K -- "Não" --> N["Raiva excluída
+    Vacinação obrigatória se não vacinado
+    Port. 264/2013, art. 13.º n.º 1"]:::ok
+  end
+
+  I --> O
+  N --> O
+  M --> RFIM(["FIM — via sanitária"]):::end2
+
+  subgraph class["③ CLASSIFICAÇÃO  ·  DL 315/2009 art. 14.º n.os 3–5"]
+    direction TB
+    O["Câmara actualiza SICAFE
+    DL 315/2009, art. 14.º n.º 4"]:::azul
+    O --> P
+    P["Notificação ao detentor
+    15 dias para apresentar documentação
+    DL 315/2009, art. 14.º n.º 5"]:::azul
+    P --> Q{{"MVM decide
+    destino"}}:::dec
+    Q -- "Risco controlado" --> R["Entregue ao detentor
+    com condições impostas
+    DL 315/2009, art. 14.º n.º 3"]:::ok
+    Q -- "Risco grave" --> S["Classificado PERIGOSO
+    Registo no SICAFE
+    DL 315/2009, art. 14.º n.º 4"]:::perigo
+  end
+
+  R --> CFIM1(["FIM — detentor"]):::end1
+  S --> CFIM2(["FIM — PERIGOSO"]):::end2
+
+  classDef start    fill:#1c2f4a,color:#fff,stroke:#1c2f4a,font-weight:700,rx:20
+  classDef info     fill:#eaf3fb,color:#1a1a1a,stroke:#2980b9
+  classDef dec      fill:#fff9e6,color:#1a1a1a,stroke:#e6ac00,font-weight:600
+  classDef alerta   fill:#fdecea,color:#7b1e1e,stroke:#c0392b,font-weight:600
+  classDef ok       fill:#eafaf1,color:#1a5c35,stroke:#27ae60
+  classDef perigo   fill:#7b1e1e,color:#fff,stroke:#5c1010,font-weight:700
+  classDef azul     fill:#d6eaf8,color:#1a1a1a,stroke:#2471a3
+  classDef end1     fill:#eafaf1,color:#1a5c35,stroke:#27ae60,font-weight:600,rx:20
+  classDef end2     fill:#7b1e1e,color:#fff,stroke:#5c1010,font-weight:600,rx:20
+</div>
+
+<div class="legenda">
+  <span><span class="dot" style="background:#eaf3fb;border:1px solid #2980b9"></span>Procedimento / notificação</span>
+  <span><span class="dot" style="background:#fff9e6;border:1px solid #e6ac00"></span>Decisão</span>
+  <span><span class="dot" style="background:#fdecea;border:1px solid #c0392b"></span>Sequestro / risco</span>
+  <span><span class="dot" style="background:#eafaf1;border:1px solid #27ae60"></span>Resultado favorável</span>
+  <span><span class="dot" style="background:#7b1e1e"></span>Occisão / Perigoso</span>
+  <span><span class="dot" style="background:#d6eaf8;border:1px solid #2471a3"></span>Classificação / SICAFE</span>
+</div>
+
+<p class="nota">Imprimir em A3 landscape: Ctrl+P → "Guardar como PDF" · Requer ligação à internet para renderização</p>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, securityLevel: 'loose' });
+</script>
+</body>
+</html>
