@@ -20,12 +20,14 @@
     --shadow: 0 1px 4px rgba(0,0,0,.10);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; color: var(--gray-dark); background: var(--gray-bg); display: flex; min-height: 100vh; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 15px; color: var(--gray-dark); background: var(--gray-bg); }
 
   /* SIDEBAR */
   #sidebar {
-    width: 260px; min-width: 220px; background: var(--blue); color: #fff;
-    display: flex; flex-direction: column; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+    width: 260px; background: var(--blue); color: #fff;
+    display: flex; flex-direction: column;
+    position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto;
+    z-index: 10;
   }
   #sidebar-header { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,.15); }
   #sidebar-header h1 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; opacity: .7; margin-bottom: 6px; }
@@ -41,7 +43,7 @@
   .nav-num { display: inline-block; background: rgba(255,255,255,.18); border-radius: 10px; padding: 1px 7px; font-size: 11px; margin-right: 7px; }
 
   /* MAIN */
-  #main { flex: 1; padding: 32px 36px; overflow-y: auto; max-width: 960px; }
+  #main { margin-left: 260px; padding: 32px 36px; max-width: 960px; min-height: 100vh; display: block; }
   #page-title { margin-bottom: 4px; }
   #page-title h2 { font-size: 22px; color: var(--blue); font-weight: 700; }
   #page-title p { font-size: 13px; color: var(--gray); margin-top: 4px; }
@@ -119,9 +121,8 @@
   .no-results { color: var(--gray); font-style: italic; padding: 16px 0; }
 
   @media (max-width: 700px) {
-    body { flex-direction: column; }
-    #sidebar { width: 100%; height: auto; position: static; }
-    #main { padding: 20px 14px; }
+    #sidebar { position: static; width: 100%; height: auto; }
+    #main { margin-left: 0; padding: 20px 14px; }
   }
 </style>
 </head>
