@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destino dos Animais Recolhidos — Organigrama Legal</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --border: #dee2e6;
+    --text: #212529;
+    --muted: #6c757d;
+    --blue: #1565c0;
+    --red: #b71c1c;
+    --green: #1b5e20;
+    --orange: #e65100;
+    --purple: #4a148c;
+    --teal: #004d40;
+    --yellow-bg: #fff8e1;
+    --red-bg: #ffebee;
+    --green-bg: #e8f5e9;
+    --blue-bg: #e3f2fd;
+    --orange-bg: #fff3e0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+  }
+
+  header {
+    background: var(--blue);
+    color: white;
+    padding: 20px 28px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 1.35rem; font-weight: 700; margin-bottom: 4px; }
+  header p { font-size: 0.85rem; opacity: 0.85; }
+
+  .legend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+  .dot {
+    width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0;
+  }
+  .dot-decision { background: #fff3cd; border: 2px solid #e65100; }
+  .dot-action   { background: #e3f2fd; border: 2px solid #1565c0; }
+  .dot-end-eutanasia { background: #ffebee; border: 2px solid #b71c1c; }
+  .dot-end-devolucao { background: #e8f5e9; border: 2px solid #1b5e20; }
+  .dot-end-cessao    { background: #e8f5e9; border: 2px solid #1b5e20; }
+  .dot-base-legal    { background: #f3e5f5; border: 2px solid #6a1b9a; }
+
+  .tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .tab {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 2px solid var(--border);
+    background: var(--card);
+    cursor: pointer;
+    font-size: 0.83rem;
+    font-weight: 600;
+    transition: all 0.15s;
+  }
+  .tab:hover { border-color: var(--blue); color: var(--blue); }
+  .tab.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  .diagram-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    overflow-x: auto;
+  }
+
+  .note-box {
+    background: var(--yellow-bg);
+    border-left: 4px solid #f9a825;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-top: 16px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+  }
+  .note-box strong { color: var(--orange); }
+
+  .base-legal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+    margin-top: 0;
+  }
+  .bl-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .bl-card h4 {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .bl-card ul { padding-left: 16px; }
+  .bl-card li { font-size: 0.8rem; line-height: 1.7; color: #333; }
+  .bl-card .badge {
+    display: inline-block;
+    background: #e3f2fd;
+    color: var(--blue);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  .mermaid { min-height: 200px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Destino dos Animais Recolhidos por Serviços Municipais</h1>
+  <p>Organigrama legal completo · Baseado em: DL 276/2001 · Portaria 146/2017 · DL 82/2019 · @rgac (rev. 16 mar 2026)</p>
+</header>
+
+<div class="legend-bar">
+  <div class="legend-item"><div class="dot dot-decision"></div> Decisão / condição</div>
+  <div class="legend-item"><div class="dot dot-action"></div> Ação / procedimento</div>
+  <div class="legend-item"><div class="dot dot-end-eutanasia"></div> Fim: Eutanásia / Abate</div>
+  <div class="legend-item"><div class="dot dot-end-devolucao"></div> Fim: Devolução ao titular</div>
+  <div class="legend-item"><div class="dot dot-end-cessao"></div> Fim: Cedência / Adoção</div>
+  <div class="legend-item"><div class="dot dot-base-legal"></div> Base legal referenciada</div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" onclick="showPanel('fluxo-principal')">Fluxo principal</div>
+  <div class="tab" onclick="showPanel('fluxo-sanitario')">Saúde e raiva</div>
+  <div class="tab" onclick="showPanel('fluxo-cessao')">Preparação para cedência</div>
+  <div class="tab" onclick="showPanel('base-legal')">Base legal por etapa</div>
+</div>
+
+<!-- PAINEL 1: FLUXO PRINCIPAL -->
+<div class="panel active" id="fluxo-principal">
+  <div class="diagram-container">
+    <div class="mermaid">
+flowchart TD
+    START([🐾 Animal recolhido por serviços municipais\nArt. 70.º @rgac · Art. 19.º DL 276/2001])
+    START --> CHIP
+
+    CHIP{Tem microchip?}
+
+    CHIP -->|✅ Sim| SIAC[Consultar SIAC\nidentificar titular]
+    CHIP -->|❌ Não| SEMTIT
+
+    SIAC --> TITID{Titular\nidentificado?}
+    TITID -->|❌ Não| SEMTIT
+    TITID -->|✅ Sim| NOTIF[Notificar titular\ncarta AR + contacto telefónico\nArt. 72.º @rgac]
+
+    NOTIF --> RECLAMA{Titular reclama\nem 15 dias?\nPortaria 146/2017\nart. 8.º n.º 4}
+
+    RECLAMA -->|✅ Sim,\naparece| ABANDONO{Animal foi\nabandonado\nou perdido?}
+
+    ABANDONO -->|Perdido involuntariamente| SANIT_TITUL{Vacinação antirrábica\nválida?}
+    ABANDONO -->|Abandono\ncomprovado| ABANDON_PROC[Auto CO por abandono\nDL 276/2001 art. 68.º n.º 2c\n+ esterilização obrigatória\na expensas do titular\nArt. 75.º n.ºs 7-8 @rgac]
+
+    SANIT_TITUL -->|✅ Válida| DEV_OK[DEVOLUÇÃO\nao titular\n+ pagamento despesas CRO\n+ coima se aplicável]
+    SANIT_TITUL -->|❌ Inválida /\nexpirada| VACINA_FORC[Vacinação antirrábica\nobrigatória a expensas\ndo titular → devolução\n+ coima]
+
+    ABANDON_PROC --> ESTER_TITUL{CRO tem meios\npara esterilizar?}
+    ESTER_TITUL -->|Sim| ESTER_CRO_T[Esterilização no CRO\na expensas do titular]
+    ESTER_TITUL -->|Não| PRAZO_ESTER[MVM fixa prazo\npara esterilização\nem CAMV pelo titular]
+    ESTER_CRO_T --> DEV_ABAN[DEVOLUÇÃO ao titular\nesterilizado + despesas + coima]
+    PRAZO_ESTER --> CUMPRIDO{Comprovativo\napresentado\nno prazo?}
+    CUMPRIDO -->|Sim| DEV_ABAN
+    CUMPRIDO -->|Não| SEMTIT
+
+    RECLAMA -->|❌ Não reclama\nem 15 dias| SEMTIT
+
+    SEMTIT([⬇ PERCURSO SEM TITULAR\nou animal não reclamado])
+
+    style START fill:#e3f2fd,stroke:#1565c0,color:#000
+    style SEMTIT fill:#fff3e0,stroke:#e65100,color:#000,font-weight:bold
+    style DEV_OK fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style VACINA_FORC fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style DEV_ABAN fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style CHIP fill:#fff8e1,stroke:#e65100
+    style TITID fill:#fff8e1,stroke:#e65100
+    style RECLAMA fill:#fff8e1,stroke:#e65100
+    style ABANDONO fill:#fff8e1,stroke:#e65100
+    style SANIT_TITUL fill:#fff8e1,stroke:#e65100
+    style ESTER_TITUL fill:#fff8e1,stroke:#e65100
+    style CUMPRIDO fill:#fff8e1,stroke:#e65100
+    </div>
+  </div>
+  <div class="note-box">
+    <strong>Nota:</strong> O prazo de 15 dias conta a partir da data de entrada no CRO (Portaria 146/2017, art. 8.º, n.º 4), não da data de notificação do titular. O MVM decide do destino do animal em todos os percursos (art. 75.º @rgac). A devolução ao titular exige: cumprimento das normas sanitárias + pagamento de despesas + regularização de identificação eletrónica.
+  </div>
+</div>
+
+<!-- PAINEL 2: SAÚDE E RAIVA -->
+<div class="panel" id="fluxo-sanitario">
+  <div class="diagram-container">
+    <div class="mermaid">
+flowchart TD
+    SEMTIT([⬇ Percurso sem titular\nou animal não reclamado])
+    SEMTIT --> CLINICO
+
+    CLINICO[Exame clínico pelo MVM\nrelatório obrigatório\nPermanência mínima: 10 dias\nArt. 72.º @rgac]
+
+    CLINICO --> EMERGENCIA{Animal em estado\nterminal ou sofrimento\nirrecuperável?}
+    EMERGENCIA -->|✅ Sim| EUT_IMD[EUTANÁSIA IMEDIATA\nArt. 75.º n.º 3 @rgac]
+
+    EMERGENCIA -->|❌ Não| RAIVA{Suspeita\nde raiva?}
+
+    RAIVA -->|✅ Sim| SEQUEST[SEQUESTRO\nisolamento mínimo 10 dias\nCela quarentena CRO\nPNLVERAZ / DL 314/2003]
+    RAIVA -->|❌ Não| DOENCA
+
+    SEQUEST --> CONF_RAIVA{Raiva\nconfirmada?}
+    CONF_RAIVA -->|✅ Sim| ABATE[ABATE\nnormas PNLVERAZ\nPortaria 264/2013]
+    CONF_RAIVA -->|❌ Não| DOENCA
+
+    DOENCA{Doença\ninfecto-contagiosa\nou zoonose\napparente?}
+
+    DOENCA -->|✅ Sim,\ntratável| TRAT[Tratamento veterinário\nno CRO ou CAMV\nArt. 75.º n.º 4 @rgac]
+    DOENCA -->|✅ Sim,\nresultado + teste\nzoonose irrecuperável| EUT_ZOONOSE[EUTANÁSIA\nArt. 75.º n.º 4 @rgac\nArt. 76.º n.º 5 @rgac]
+    DOENCA -->|❌ Não| COMPORT
+
+    TRAT --> RECUP{Recuperou?}
+    RECUP -->|✅ Sim| COMPORT
+    RECUP -->|❌ Não| EUT_ZOONOSE
+
+    COMPORT{Comportamento\nagressivo ou\nassilvestrado?}
+    COMPORT -->|✅ Sim,\ngrave| AVAL_COMP[Avaliação comportamental\ndocumentada pelo MVM\nArt. 75.º n.º 4-5 @rgac]
+    COMPORT -->|❌ Não| CESSAO([⬇ Preparação\npara cedência])
+
+    AVAL_COMP --> SOC{Socialização\nviável?\nInviabiliza\nencaminhamento\npara cessão?}
+    SOC -->|❌ Não — inviável| EUT_COMP[EUTANÁSIA\nArt. 75.º n.º 4-5 @rgac]
+    SOC -->|✅ Sim — viável| CESSAO
+
+    POLICIA[Abate imediato\npelas entidades policiais\nem caso de perigo\nimediato urgente\nArt. 75.º n.º 7 @rgac]
+
+    style SEMTIT fill:#fff3e0,stroke:#e65100,color:#000
+    style CESSAO fill:#e8f5e9,stroke:#1b5e20,color:#000,font-weight:bold
+    style EUT_IMD fill:#ffebee,stroke:#b71c1c,color:#000
+    style ABATE fill:#ffebee,stroke:#b71c1c,color:#000
+    style EUT_ZOONOSE fill:#ffebee,stroke:#b71c1c,color:#000
+    style EUT_COMP fill:#ffebee,stroke:#b71c1c,color:#000
+    style POLICIA fill:#ffebee,stroke:#b71c1c,color:#000
+    style EMERGENCIA fill:#fff8e1,stroke:#e65100
+    style RAIVA fill:#fff8e1,stroke:#e65100
+    style CONF_RAIVA fill:#fff8e1,stroke:#e65100
+    style DOENCA fill:#fff8e1,stroke:#e65100
+    style RECUP fill:#fff8e1,stroke:#e65100
+    style COMPORT fill:#fff8e1,stroke:#e65100
+    style SOC fill:#fff8e1,stroke:#e65100
+    </div>
+  </div>
+  <div class="note-box">
+    <strong>Art. 75.º, n.º 4 @rgac:</strong> Animais com doenças infectocontagiosas ou zoonoses não podem ser cedidos. <strong>Art. 75.º, n.º 5:</strong> Excetuam-se animais com alterações comportamentais não incompatíveis com a segurança — podem ser encaminhados para entidades especializadas. <strong>Art. 75.º, n.º 6:</strong> A eutanásia compete ao médico veterinário, segundo boas práticas DGAV. <strong>Art. 75.º, n.º 7:</strong> Abate imediato pelas entidades policiais apenas em caso de perigo urgente para pessoas ou outros animais.
+  </div>
+</div>
+
+<!-- PAINEL 3: CESSÃO -->
+<div class="panel" id="fluxo-cessao">
+  <div class="diagram-container">
+    <div class="mermaid">
+flowchart TD
+    CESSAO([⬇ Preparação para cedência\nAnimal saudável · sem titular · ou não reclamado])
+
+    CESSAO --> SOBRELOT{CRO com\ncapacidade?}
+
+    SOBRELOT -->|✅ Sim| PREPARA
+    SOBRELOT -->|❌ Não — sobrelotação| FAT[FAT-CRO\nFamília de acolhimento do CRO\nvoluntário registado\nSIAC averba localização\n@rgac linha 1405 + proposta]
+
+    FAT --> PRAZO_CONT[Contagem dos 15 dias\ncontinua a correr\na partir da entrada no CRO]
+    PRAZO_CONT --> TITULAR_FAT{Titular aparece\ndurante os 15 dias?}
+    TITULAR_FAT -->|Sim| DEVOL_FAT[Animal recolhido\ndo voluntário\ne devolvido ao titular]
+    TITULAR_FAT -->|Não| PREPARA
+
+    PREPARA[Preparação para cedência\nMVM avalia condições\nArt. 76.º @rgac]
+
+    PREPARA --> CHIP_PREP{Tem chip?}
+    CHIP_PREP -->|❌ Não| CHIPAR[Marcação eletrónica\nSIAC em nome do CRO\nDL 82/2019 art. 11.º n.º 5]
+    CHIP_PREP -->|✅ Sim| SIAC_CRO[Atualizar SIAC:\ntitularidade → CRO\nDL 82/2019 art. 11.º n.º 5]
+    CHIPAR --> SIAC_CRO
+
+    SIAC_CRO --> IDADE{Idade\n< 6 meses?}
+
+    IDADE -->|✅ Sim\n< 6 meses| CEDER_ANTES[Pode ser cedido\nANTES da esterilização\nPortaria 146/2017\nart. 8.º n.º 6]
+    IDADE -->|❌ Não\n≥ 6 meses| ESTER_OBRIG[Esterilização obrigatória\nno CRO ou CAMV autorizado\nPortaria 146/2017 art. 8.º n.º 4]
+
+    CEDER_ANTES --> OBRIG_ESTER_POST[Novo titular obrigado\na esterilizar\naté aos 6 meses\nRegisto obrigação no SIAC\nCRO regista prazo]
+    ESTER_OBRIG --> SANIT
+
+    OBRIG_ESTER_POST --> SANIT
+
+    SANIT[Vacinação antirrábica\nDesparasitação\nTestes zoonoses se indicado\nArt. 76.º n.º 3 @rgac]
+
+    SANIT --> TESTE_ZOO{Resultado\nteste zoonose\nleishmania / sarna\ndirofilariose?}
+
+    TESTE_ZOO -->|✅ Negativo| CEDENCIA
+    TESTE_ZOO -->|❌ Positivo| EUT_ZOO[EUTANÁSIA\nNão pode ser cedido\nArt. 76.º n.º 5 @rgac]
+
+    CEDENCIA[CEDÊNCIA\nMVM emite parecer\nobrigatório e vinculativo\nArt. 75.º n.º 2 @rgac]
+
+    CEDENCIA --> DEST1[🏠 Adoção\npor particular\nSIAC → nome do adotante]
+    CEDENCIA --> DEST2[🏢 Cedência\na associação zoófila\nregistada na DGAV]
+    CEDENCIA --> DEST3[🏠 FAT com\ndireito de preferência\nna adoção]
+
+    DESPESAS[Despesas: alojamento + tratamentos\na cargo do novo titular\nArt. 73.º e 76.º n.º 4 @rgac]
+
+    DEST1 --> DESPESAS
+    DEST2 --> DESPESAS
+    DEST3 --> DESPESAS
+
+    style CESSAO fill:#fff3e0,stroke:#e65100,color:#000
+    style DEST1 fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style DEST2 fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style DEST3 fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style EUT_ZOO fill:#ffebee,stroke:#b71c1c,color:#000
+    style DEVOL_FAT fill:#e8f5e9,stroke:#1b5e20,color:#000
+    style SOBRELOT fill:#fff8e1,stroke:#e65100
+    style TITULAR_FAT fill:#fff8e1,stroke:#e65100
+    style CHIP_PREP fill:#fff8e1,stroke:#e65100
+    style IDADE fill:#fff8e1,stroke:#e65100
+    style TESTE_ZOO fill:#fff8e1,stroke:#e65100
+    </div>
+  </div>
+  <div class="note-box">
+    <strong>Nota sobre leilões (art. 76.º n.º 2 @rgac):</strong> O texto atual ainda admite "leilões" para cedência. Esta modalidade está proposta para eliminação por incompatibilidade com a Lei 8/2017 (estatuto jurídico dos animais como seres sensíveis) — não deve ser representada como destino válido. <br><br>
+    <strong>Nota sobre o prazo de esterilização pós-adoção (< 6 meses):</strong> O texto vigente (Portaria 146/2017) fixa 8 meses. A proposta de alteração ao @rgac reduz para 6 meses, alinhando com o @rgbeac (art. 41.º, n.º 2).
+  </div>
+</div>
+
+<!-- PAINEL 4: BASE LEGAL -->
+<div class="panel" id="base-legal">
+  <div class="base-legal-grid">
+
+    <div class="bl-card">
+      <h4>Entrada no CRO e exame clínico</h4>
+      <ul>
+        <li><span class="badge">Art. 70.º @rgac</span> Obrigação de captura/recolha pela câmara municipal</li>
+        <li><span class="badge">Art. 72.º @rgac</span> Exame clínico pelo MVM; permanência mínima 10 dias</li>
+        <li><span class="badge">Art. 71.º @rgac</span> CRO obrigatório; direção técnica do MVM</li>
+        <li><span class="badge">P. 146/2017 art. 7.º</span> Competência exclusiva da CM na captura</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Titular identificado — devolução</h4>
+      <ul>
+        <li><span class="badge">P. 146/2017 art. 8.º n.º 4</span> Prazo 15 dias para reclamação</li>
+        <li><span class="badge">DL 82/2019 art. 11.º n.º 5</span> Após 15 dias, SIAC → nome do CRO</li>
+        <li><span class="badge">Art. 75.º n.º 1 @rgac</span> Condições para devolução ao titular</li>
+        <li><span class="badge">Art. 73.º @rgac</span> Despesas a cargo do titular</li>
+        <li><span class="badge">DL 276/2001 art. 68.º n.º 2c</span> CO por abandono</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Vacinação antirrábica</h4>
+      <ul>
+        <li><span class="badge">DL 314/2003 art. 3.º</span> Vacinação antirrábica obrigatória</li>
+        <li><span class="badge">P. 264/2013</span> Normas técnicas PNLVERAZ</li>
+        <li><span class="badge">DL 82/2019 art. 12.º</span> Registo obrigatório de profilaxias no SIAC</li>
+        <li><span class="badge">Art. 76.º n.º 3b @rgac</span> Vacinação antirrábica antes da cedência</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Raiva e sequestro</h4>
+      <ul>
+        <li><span class="badge">P. 146/2017 art. 11.º n.º 2</span> Suspeita de raiva → abate após normas de isolamento</li>
+        <li><span class="badge">DL 314/2003</span> PNLVERAZ — sequestro mínimo e critérios de abate</li>
+        <li><span class="badge">Art. 71.º n.º 3 @rgac</span> CRO obrigado a ter celas de isolamento e quarentena</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Eutanásia / abate</h4>
+      <ul>
+        <li><span class="badge">Art. 75.º n.º 3 @rgac</span> Eutanásia imediata: estado terminal / sofrimento irrecuperável</li>
+        <li><span class="badge">Art. 75.º n.º 4 @rgac</span> Eutanásia: doenças infectocontagiosas/zoonoses; comportamento agressivo irrecuperável</li>
+        <li><span class="badge">Art. 75.º n.º 6 @rgac</span> Eutanásia compete ao MV segundo boas práticas DGAV</li>
+        <li><span class="badge">Art. 75.º n.º 7 @rgac</span> Abate imediato pelas forças policiais: perigo urgente</li>
+        <li><span class="badge">Lei 27/2016 art. 3.º n.º 5</span> Proibição do abate como controlo populacional</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Esterilização obrigatória</h4>
+      <ul>
+        <li><span class="badge">P. 146/2017 art. 8.º n.º 4</span> Obrigatória antes da cedência (animais não reclamados em 15 dias)</li>
+        <li><span class="badge">P. 146/2017 art. 8.º n.º 6</span> Exceção: < 6 meses → ceder antes, esterilizar até 8 meses</li>
+        <li><span class="badge">Art. 75.º n.ºs 7-8 @rgac</span> Esterilização obrigatória por abandono ou reincidência</li>
+        <li><span class="badge">Proposta @rgac</span> Reduzir prazo 8 → 6 meses (alinhamento com @rgbeac)</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Preparação e cedência</h4>
+      <ul>
+        <li><span class="badge">Art. 75.º n.º 2 @rgac</span> Parecer obrigatório e vinculativo do MVM</li>
+        <li><span class="badge">Art. 76.º @rgac</span> Condições da cedência: chip, SIAC, vacinação, desparasitação, esterilização, testes zoonoses</li>
+        <li><span class="badge">DL 82/2019 art. 11.º n.º 5-6</span> Registo SIAC em nome do CRO → depois do novo titular</li>
+        <li><span class="badge">Art. 76.º n.º 5 @rgac</span> Proibição de cedência se teste zoonose positivo → eutanásia</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Sobrelotação e FAT-CRO</h4>
+      <ul>
+        <li><span class="badge">@rgac linha 1405</span> Sobrelotação → animais podem transitar para estabelecimentos registados antes dos 15 dias, com averbação no SIAC</li>
+        <li><span class="badge">Art. 77.º n.º 2 @rgac</span> Lares de acolhimento de voluntários para associações</li>
+        <li><span class="badge">@rgbeac art. 101.º</span> FAT — mecanismo de reconhecimento pela DGAV</li>
+        <li><span class="badge">Proposta</span> FAT-CRO: estender o mecanismo diretamente ao CRO, com bolsa municipal de voluntários</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Responsabilidade pelas despesas</h4>
+      <ul>
+        <li><span class="badge">Art. 73.º @rgac</span> Despesas de alojamento e coimas → titular do animal</li>
+        <li><span class="badge">Art. 76.º n.º 4 @rgac</span> Despesas de preparação para cedência → futuro titular</li>
+        <li><span class="badge">Art. 73.º n.º 2 @rgac</span> CM pode executar judicialmente dívidas não pagas</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Animais perigosos e potencialmente perigosos</h4>
+      <ul>
+        <li><span class="badge">DL 315/2009</span> Regime especial — recolha, sequestro, destino</li>
+        <li><span class="badge">Art. 75.º n.º 1c @rgac</span> Condições específicas para devolução de animal perigoso</li>
+        <li><span class="badge">DL 82/2019 art. 16.º n.º 1e</span> Deveres específicos do titular de cão PP</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Animal encontrado por cidadão</h4>
+      <ul>
+        <li><span class="badge">P. 146/2017 art. 7.º n.º 2</span> Comunicação aos serviços municipais ou polícia; entrega se capturado</li>
+        <li><span class="badge">DL 82/2019 art. 16.º n.º 2</span> Titular deve comunicar desaparecimento ao SIAC — presunção de abandono se não o fizer</li>
+        <li><strong>Lacuna:</strong> Nenhuma obrigação legal exigível ao cidadão achador com sanção associada</li>
+      </ul>
+    </div>
+
+    <div class="bl-card">
+      <h4>Entidades cedentes alternativas</h4>
+      <ul>
+        <li><span class="badge">Art. 77.º @rgac</span> Cedência por associações zoófilas — regras aplicáveis com adaptações</li>
+        <li><span class="badge">Art. 76.º n.º 6 @rgac</span> CRO não pode ceder mais animais do que a capacidade autorizada das associações</li>
+        <li><span class="badge">Proposta</span> Eliminar "leilões" (art. 76.º n.º 2) — incompatível com Lei 8/2017</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<script>
+mermaid.initialize({
+  startOnLoad: true,
+  theme: 'base',
+  themeVariables: {
+    primaryColor: '#e3f2fd',
+    primaryBorderColor: '#1565c0',
+    primaryTextColor: '#000000',
+    secondaryColor: '#fff8e1',
+    tertiaryColor: '#e8f5e9',
+    background: '#ffffff',
+    mainBkg: '#e3f2fd',
+    nodeBorder: '#1565c0',
+    clusterBkg: '#f8f9fa',
+    titleColor: '#1565c0',
+    edgeLabelBackground: '#ffffff',
+    fontSize: '13px'
+  },
+  flowchart: {
+    htmlLabels: true,
+    curve: 'basis',
+    padding: 20
+  }
+});
+
+function showPanel(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
