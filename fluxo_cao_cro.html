@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Cão recolhido na rua — Fluxo MVM</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f5f5;
+  padding: 30px 20px;
+  color: #1a1a1a;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+.sub {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+.flow {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ---------- BOXES ---------- */
+.box {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+
+.box.start {
+  background: #1a237e;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  padding: 12px 24px;
+}
+
+.box.action {
+  background: #e8eaf6;
+  border: 2px solid #3949ab;
+  color: #1a237e;
+}
+
+.box.decision {
+  background: #fff8e1;
+  border: 2px solid #f9a825;
+  color: #333;
+  transform: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.box.decision .q {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #e65100;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.box.end-eutanasia {
+  background: #b71c1c;
+  color: white;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  max-width: 220px;
+}
+
+.box.end-devolver {
+  background: #1b5e20;
+  color: white;
+  border-radius: 30px;
+  font-size: 0.85rem;
+}
+
+.box.end-adotar {
+  background: #1b5e20;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+
+.box .note {
+  font-size: 0.68rem;
+  font-weight: 400;
+  opacity: 0.8;
+  display: block;
+  margin-top: 3px;
+}
+
+/* ---------- ARROWS ---------- */
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #555;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  gap: 1px;
+  margin: 2px 0;
+}
+.arrow .line {
+  width: 2px;
+  height: 18px;
+  background: #888;
+}
+.arrow .head {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #888;
+}
+.arrow .label {
+  background: #e0e0e0;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.65rem;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* ---------- BRANCH ---------- */
+.branch-row {
+  display: flex;
+  width: 100%;
+  max-width: 680px;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin: 2px 0;
+}
+
+.branch-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0 8px;
+}
+
+.branch-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+.sim { background: #c8e6c9; color: #1b5e20; }
+.nao { background: #ffcdd2; color: #b71c1c; }
+
+.h-line {
+  width: 100%;
+  max-width: 540px;
+  height: 2px;
+  background: #888;
+  margin: 6px 0 0 0;
+}
+
+.connector-down {
+  width: 2px;
+  height: 20px;
+  background: #888;
+  margin: 0 auto;
+}
+.arrow-tip {
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #888;
+  margin: 0 auto;
+}
+
+/* indent blocks */
+.indent {
+  margin-left: 24px;
+  border-left: 3px solid #bdbdbd;
+  padding-left: 16px;
+}
+
+@media print {
+  body { background: white; padding: 10px; }
+}
+</style>
+</head>
+<body>
+
+<h1>Cão recolhido na rua — O que faz o MVM</h1>
+<p class="sub">DL 276/2001 · Portaria 146/2017 · DL 82/2019 · @rgac rev. 16 mar 2026</p>
+
+<div class="flow">
+
+  <!-- ENTRADA -->
+  <div class="box start">🐕 Cão entrado no CRO</div>
+
+  <div class="arrow"><div class="line"></div><div class="head"></div></div>
+
+  <!-- EXAME CLÍNICO -->
+  <div class="box action">Exame clínico pelo MVM<br><span class="note">Permanência mínima: 10 dias · Art. 72.º @rgac</span></div>
+
+  <div class="arrow"><div class="line"></div><div class="head"></div></div>
+
+  <!-- ESTADO CRÍTICO -->
+  <div class="box decision"><span class="q">decisão imediata</span>Estado terminal ou sofrimento irrecuperável?</div>
+
+  <!-- BRANCH: CRÍTICO -->
+  <div style="display:flex; width:100%; max-width:540px; margin:4px 0;">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px;">
+      <span class="branch-label sim">NÃO</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px;">
+      <span class="branch-label nao">SIM</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box end-eutanasia">EUTANÁSIA IMEDIATA<span class="note">Art. 75.º n.º 3</span></div>
+    </div>
+  </div>
+
+  <!-- CHIP -->
+  <div style="width:100%; max-width:540px; display:flex; flex-direction:column; align-items:flex-start; padding-left:0; margin-top:8px;">
+    <div style="display:flex; flex-direction:column; align-items:center; width:100%;">
+      <div class="box decision" style="max-width:420px;"><span class="q">identificação</span>Tem microchip?</div>
+
+      <!-- BRANCH CHIP -->
+      <div style="display:flex; width:100%; max-width:520px; margin-top:6px; gap:0;">
+
+        <!-- SIM -->
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 6px;">
+          <span class="branch-label sim">SIM — consultar SIAC</span>
+          <div class="connector-down"></div><div class="arrow-tip"></div>
+          <div class="box action" style="max-width:240px; font-size:0.78rem;">Contactar titular<br><span class="note">carta + telefone</span></div>
+          <div class="connector-down"></div><div class="arrow-tip"></div>
+          <div class="box decision" style="max-width:240px; font-size:0.78rem;"><span class="q">prazo</span>Reclama em 15 dias?</div>
+          <!-- sub-branch 15 dias -->
+          <div style="display:flex; width:100%; max-width:320px; margin-top:6px;">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+              <span class="branch-label sim" style="font-size:0.62rem;">SIM</span>
+              <div class="connector-down"></div><div class="arrow-tip"></div>
+              <div class="box decision" style="max-width:160px; font-size:0.72rem; padding:7px 10px;"><span class="q">sanidade</span>Vacina antirrábica válida?</div>
+              <div style="display:flex; width:100%; max-width:200px; margin-top:5px;">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 2px;">
+                  <span class="branch-label sim" style="font-size:0.6rem;">SIM</span>
+                  <div class="connector-down"></div><div class="arrow-tip"></div>
+                  <div class="box end-devolver" style="max-width:140px; font-size:0.72rem; padding:8px 10px;">DEVOLUÇÃO<span class="note">+ pagamento despesas</span></div>
+                </div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 2px;">
+                  <span class="branch-label nao" style="font-size:0.6rem;">NÃO</span>
+                  <div class="connector-down"></div><div class="arrow-tip"></div>
+                  <div class="box end-devolver" style="max-width:140px; font-size:0.72px; padding:8px 10px; font-size:0.72rem;">VACINAR<br>+ devolver<span class="note">+ coima</span></div>
+                </div>
+              </div>
+              <div style="margin-top:8px; font-size:0.65rem; color:#b71c1c; background:#ffebee; border-radius:4px; padding:4px 8px; text-align:center; max-width:180px;">Se abandono comprovado:<br>esterilização obrigatória<br>a expensas do titular</div>
+            </div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+              <span class="branch-label nao" style="font-size:0.62rem;">NÃO (15 dias)</span>
+              <div class="connector-down"></div><div class="arrow-tip"></div>
+              <div style="font-size:0.7rem; color:#e65100; font-weight:700; text-align:center; background:#fff3e0; border-radius:4px; padding:5px 8px; border:1px dashed #e65100;">→ percurso<br>sem titular</div>
+              <div style="margin-top:4px; font-size:0.63rem; color:#666; text-align:center;">Auto CO + SIAC<br>→ nome do CRO<br>DL 82/2019 art. 11.º</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NÃO -->
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 6px;">
+          <span class="branch-label nao">NÃO — sem titular</span>
+          <div class="connector-down"></div><div class="arrow-tip"></div>
+          <div class="box decision" style="max-width:240px; font-size:0.78rem;"><span class="q">saúde pública</span>Suspeita de raiva?</div>
+          <div style="display:flex; width:100%; max-width:280px; margin-top:5px;">
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+              <span class="branch-label sim" style="font-size:0.62rem;">NÃO</span>
+              <div class="connector-down"></div><div class="arrow-tip"></div>
+              <div style="font-size:0.7rem; color:#e65100; font-weight:700; text-align:center; background:#fff3e0; border-radius:4px; padding:5px 8px; border:1px dashed #e65100;">→ percurso<br>sem titular</div>
+            </div>
+            <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+              <span class="branch-label nao" style="font-size:0.62rem;">SIM</span>
+              <div class="connector-down"></div><div class="arrow-tip"></div>
+              <div class="box action" style="max-width:150px; font-size:0.72rem; padding:7px 10px; background:#fff3e0; border-color:#e65100;">SEQUESTRO<br>≥ 10 dias<span class="note">cela isolamento CRO</span></div>
+              <div class="connector-down"></div><div class="arrow-tip"></div>
+              <div class="box decision" style="max-width:160px; font-size:0.72rem; padding:7px 10px;"><span class="q">diagnóstico</span>Raiva confirmada?</div>
+              <div style="display:flex; width:100%; margin-top:4px;">
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:2px; padding:0 2px;">
+                  <span class="branch-label sim" style="font-size:0.6rem;">NÃO</span>
+                  <div class="connector-down"></div><div class="arrow-tip"></div>
+                  <div style="font-size:0.68rem; color:#e65100; font-weight:700; background:#fff3e0; border-radius:4px; padding:4px 6px; text-align:center; border:1px dashed #e65100;">→ percurso<br>sem titular</div>
+                </div>
+                <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:2px; padding:0 2px;">
+                  <span class="branch-label nao" style="font-size:0.6rem;">SIM</span>
+                  <div class="connector-down"></div><div class="arrow-tip"></div>
+                  <div class="box end-eutanasia" style="font-size:0.72rem; padding:7px 10px;">ABATE<span class="note">PNLVERAZ</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- DIVISOR PERCURSO SEM TITULAR -->
+  <div style="margin-top:24px; margin-bottom:6px; width:100%; max-width:540px; text-align:center;">
+    <div style="background:#e65100; color:white; border-radius:20px; padding:6px 20px; font-size:0.8rem; font-weight:700; display:inline-block;">PERCURSO SEM TITULAR (ou não reclamado)</div>
+  </div>
+  <div class="connector-down" style="background:#e65100;"></div>
+  <div class="arrow-tip" style="border-top-color:#e65100;"></div>
+
+  <!-- DOENÇA -->
+  <div class="box decision">
+    <span class="q">clínica</span>Doença infecto-contagiosa / zoonose grave?
+  </div>
+
+  <div style="display:flex; width:100%; max-width:540px; margin-top:6px;">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label sim">NÃO</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label nao">SIM</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box action" style="max-width:220px; font-size:0.78rem; background:#fff3e0; border-color:#e65100;">Tratamento veterinário<span class="note">Art. 75.º n.º 4</span></div>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box decision" style="max-width:220px; font-size:0.78rem;"><span class="q">prognóstico</span>Recuperável?</div>
+      <div style="display:flex; width:100%; max-width:280px; margin-top:5px;">
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+          <span class="branch-label sim" style="font-size:0.62rem;">SIM</span>
+          <div class="connector-down"></div><div class="arrow-tip"></div>
+          <div style="font-size:0.68rem; font-weight:700; color:#1b5e20; background:#e8f5e9; border-radius:4px; padding:4px 8px; text-align:center;">→ continua</div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; padding:0 4px;">
+          <span class="branch-label nao" style="font-size:0.62rem;">NÃO</span>
+          <div class="connector-down"></div><div class="arrow-tip"></div>
+          <div class="box end-eutanasia" style="font-size:0.72rem; padding:7px 10px;">EUTANÁSIA<span class="note">Art. 75.º n.º 4</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector-down"></div><div class="arrow-tip"></div>
+
+  <!-- COMPORTAMENTO -->
+  <div class="box decision">
+    <span class="q">comportamento</span>Agressividade irrecuperável? Inviabiliza cedência?
+  </div>
+
+  <div style="display:flex; width:100%; max-width:540px; margin-top:6px;">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label sim">NÃO — pode ser cedido</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label nao">SIM</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box end-eutanasia" style="max-width:180px;">EUTANÁSIA<span class="note">avaliação comportamental<br>documentada · Art. 75.º n.º 4-5</span></div>
+    </div>
+  </div>
+
+  <div class="connector-down"></div><div class="arrow-tip"></div>
+
+  <!-- PREPARAÇÃO CEDÊNCIA -->
+  <div class="box action" style="background:#e3f2fd; border-color:#1565c0; color:#0d1b6e;">
+    Preparação para cedência — MVM<br>
+    <span class="note" style="color:#1565c0; opacity:1;">
+      1. Chip se ausente + SIAC → nome CRO (DL 82/2019 art. 11.º n.º 5)<br>
+      2. Esterilização no CRO ou CAMV (obrigatória se ≥ 6 meses)<br>
+      3. Vacinação antirrábica + desparasitação<br>
+      4. Testes zoonoses (leishmaniose, sarna, dirofilariose)
+    </span>
+  </div>
+
+  <div class="connector-down"></div><div class="arrow-tip"></div>
+
+  <!-- TESTE ZOONOSES -->
+  <div class="box decision">
+    <span class="q">teste zoonoses</span>Resultado positivo?
+  </div>
+
+  <div style="display:flex; width:100%; max-width:540px; margin-top:6px;">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label sim">NEGATIVO</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label nao">POSITIVO</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box end-eutanasia" style="max-width:180px;">EUTANÁSIA<span class="note">não pode ser cedido<br>Art. 76.º n.º 5</span></div>
+    </div>
+  </div>
+
+  <div class="connector-down"></div><div class="arrow-tip"></div>
+
+  <!-- SOBRELOTAÇÃO -->
+  <div class="box decision">
+    <span class="q">capacidade</span>CRO tem espaço?
+  </div>
+
+  <div style="display:flex; width:100%; max-width:540px; margin-top:6px;">
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label sim">SIM</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; padding:0 8px;">
+      <span class="branch-label nao">NÃO — sobrelotação</span>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+      <div class="box action" style="max-width:220px; font-size:0.75rem; background:#f3e5f5; border-color:#7b1fa2; color:#4a148c;">FAT-CRO (proposta)<br>voluntário registado<br><span class="note" style="color:#6a1b9a; opacity:1;">SIAC averba localização<br>titular continua: CRO</span></div>
+      <div class="connector-down"></div><div class="arrow-tip"></div>
+    </div>
+  </div>
+
+  <div class="connector-down"></div><div class="arrow-tip"></div>
+
+  <!-- CESSÃO FINAL -->
+  <div class="box end-adotar">
+    CEDÊNCIA · parecer vinculativo do MVM · Art. 75.º n.º 2<br>
+    <span class="note" style="opacity:1; font-size:0.75rem;">
+      🏠 Adoção por particular &nbsp;·&nbsp; 🏢 Associação zoófila registada &nbsp;·&nbsp; 🏠 FAT (direito de preferência)
+    </span>
+  </div>
+
+  <div style="margin-top:10px; font-size:0.68rem; color:#555; text-align:center; max-width:440px; line-height:1.6;">
+    ⚠️ Se &lt; 6 meses: pode ceder sem esterilização, com obrigação de esterilizar até 6 meses (proposta; atual: 8 meses)<br>
+    ⚠️ Despesas de preparação para cedência a cargo do adotante · Art. 76.º n.º 4 @rgac
+  </div>
+
+</div>
+</body>
+</html>
