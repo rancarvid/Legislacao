@@ -10,7 +10,7 @@ Projeto de análise comparativa entre a legislação portuguesa vigente, duas pr
 
 | Fase | Trabalho realizado | Estado |
 |---|---|---|
-| **Organização do repositório** | Catalogação de todos os ficheiros legislativos com códigos internos (`@legislacao`, `@codigo`, `@rgbeac`, `@regulamento`) | ✅ Completo |
+| **Organização do repositório** | Catalogação de todos os ficheiros legislativos com códigos internos (`@legislacao`, `@codigo`, `@rgbeac`, `@regulamento`, `@rgac`) | ✅ Completo |
 | **Investigação legislativa** | Levantamento exaustivo de 19 diplomas portugueses vigentes (leis, DLs, portarias, DR) em 12 temáticas | ✅ Completo |
 | **Análise comparativa — Art. 5.º a 22.º** | 21 artigos do Regulamento 2023/0447 mapeados artigo a artigo com correspondências em `@rgbeac`, `@codigo` e `@legislacao` | ✅ Completo |
 | **Ferramenta de reunião** | HTML SPA interativo + Excel + Word gerados automaticamente pelo script `gerar_comparativo_reuniao.py` | ✅ Operacional |
@@ -25,9 +25,10 @@ Projeto de análise comparativa entre a legislação portuguesa vigente, duas pr
 | Código interno | Diploma | Tipo |
 |---|---|---|
 | `@legislacao` | Legislação vigente (DL 276/2001, DL 82/2019, Lei 27/2016, Portarias, etc.) | ✅ Vigente |
-| `@codigo` | Código do Animal — DL n.º 214/2013 | Proposta de consolidação |
-| `@rgbeac` | Regime Geral do Bem-Estar dos Animais de Companhia (jun. 2025) | Proposta de consolidação |
-| `@regulamento` | Regulamento Europeu 2023/0447 — cães e gatos | ✅ Vigente (aplicação direta) |
+| `@codigo` | Código do Animal — DL n.º 214/2013 | Proposta de consolidação (incorporada em `@rgac`) |
+| `@rgbeac` | Regime Geral do Bem-Estar dos Animais de Companhia (jun. 2025) | Proposta de consolidação (incorporada em `@rgac`) |
+| `@regulamento` | Regulamento Europeu 2023/0447 — cães e gatos | ✅ Vigente (aplicação direta; incorporado em `@rgac`) |
+| `@rgac` ⭐ | Diploma final — integra `@codigo` + `@regulamento` + `@rgbeac` | Diploma final (trabalho em curso; ficheiro "MAIS ATUAL") |
 
 ---
 
@@ -119,8 +120,9 @@ Destaques:
 
 ## Próximos Passos Possíveis
 
+- [ ] Integrar `@rgac` na ferramenta de reunião (coluna adicional nos scripts geradores)
 - [ ] Expandir cobertura para artigos 1–4 e 23–28 do Regulamento
-- [ ] Rever traduções PT dos artigos já mapeados (com base nos ficheiros de tradução disponíveis)
+- [ ] Rever traduções PT dos artigos já mapeados com base no texto consolidado de `@rgac`
 - [ ] Consolidar recomendações legislativas por tema (detenção, reprodução, rastreabilidade, errantes)
 - [ ] Desenvolver infografias temáticas adicionais
 
