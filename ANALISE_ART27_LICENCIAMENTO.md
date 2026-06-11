@@ -94,7 +94,17 @@ O debate honesto tem dois lados. **Pela abolição**: redundância com o SIAC (a
 > d) Os cães adotados em centro de recolha oficial **ou cedidos por associação zoófila registada**;
 > e) Os cães cujo titular se encontre em situação de insuficiência económica, aferida nos termos do regime de acesso à proteção jurídica.
 >
-> 9 — A taxa de licenciamento é **reduzida em [50%] para os cães esterilizados**, comprovando-se a esterilização pelo registo no SIAC.
+> 9 — A taxa de licenciamento dos cães esterilizados não pode exceder [€ 5], podendo a assembleia de freguesia isentar do pagamento os cães esterilizados.
+>
+> 9-A — A taxa de licenciamento dos cães não esterilizados é fixada em valor **não inferior ao triplo** da taxa aplicável aos cães esterilizados na mesma freguesia e nunca inferior a [€ 30].
+>
+> 9-B — O disposto no número anterior não se aplica:
+> a) Aos cães cuja esterilização se encontre clinicamente contraindicada, mediante declaração de médico veterinário registada no SIAC, enquanto se mantiver a contraindicação;
+> b) Aos cães reprodutores detidos por criador responsável por estabelecimento de criação autorizado nos termos do presente diploma, ou inscritos em livro de origens oficialmente reconhecido;
+> c) [Aos cães com idade inferior a [12] meses;]
+> d) [Ao titular inscrito em campanha de esterilização municipal, enquanto aguarda a intervenção.]
+>
+> 9-C — A condição de esterilizado, a contraindicação clínica e a qualidade de reprodutor são verificadas automaticamente pela junta de freguesia através do registo no SIAC, sem necessidade de apresentação de qualquer documento.
 >
 > 10 — As taxas de licenciamento são aprovadas pela **assembleia de freguesia**, sob proposta da junta, nos termos do regime geral das taxas das autarquias locais, sendo [X%] do respetivo produto afeto a ações locais de promoção do bem-estar animal, designadamente campanhas de esterilização e apoio a detentores em situação de vulnerabilidade, podendo a execução ser protocolada com o município.
 >
