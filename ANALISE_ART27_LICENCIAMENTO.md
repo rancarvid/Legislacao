@@ -94,19 +94,19 @@ O debate honesto tem dois lados. **Pela abolição**: redundância com o SIAC (a
 > d) Os cães adotados em centro de recolha oficial **ou cedidos por associação zoófila registada**;
 > e) Os cães cujo titular se encontre em situação de insuficiência económica, aferida nos termos do regime de acesso à proteção jurídica.
 >
-> 9 — A taxa de licenciamento dos cães esterilizados não pode exceder [€ 5], podendo a assembleia de freguesia isentar do pagamento os cães esterilizados.
+> 9 — A taxa aplicável aos cães esterilizados corresponde obrigatoriamente ao limite mínimo fixado nos termos do n.º [10], sendo a taxa aplicável aos cães não esterilizados fixada em valor não inferior ao triplo daquela, sem prejuízo do disposto no número seguinte e das isenções previstas no n.º [8].
 >
-> 9-A — A taxa de licenciamento dos cães não esterilizados é fixada em valor **não inferior ao triplo** da taxa aplicável aos cães esterilizados na mesma freguesia e nunca inferior a [€ 30].
+> 9-A — Para efeitos do pagamento da taxa de licenciamento, **são equiparados aos cães esterilizados**:
+> a) Os cães cuja esterilização se encontre clinicamente contraindicada, mediante declaração de médico veterinário registada no SIAC, com indicação do prazo previsível de reavaliação, e enquanto a contraindicação se mantiver registada;
+> b) Os cães reprodutores detidos por criador responsável por estabelecimento de criação autorizado nos termos do presente diploma, ou inscritos em livro de origens oficialmente reconhecido;
+> c) [Os cães com idade inferior a [12] meses;]
+> d) [Os cães cujo titular se encontre inscrito em campanha de esterilização municipal, até à realização da intervenção.]
 >
-> 9-B — O disposto no número anterior não se aplica:
-> a) Aos cães cuja esterilização se encontre clinicamente contraindicada, mediante declaração de médico veterinário registada no SIAC, enquanto se mantiver a contraindicação;
-> b) Aos cães reprodutores detidos por criador responsável por estabelecimento de criação autorizado nos termos do presente diploma, ou inscritos em livro de origens oficialmente reconhecido;
-> c) [Aos cães com idade inferior a [12] meses;]
-> d) [Ao titular inscrito em campanha de esterilização municipal, enquanto aguarda a intervenção.]
+> 9-B — A condição de esterilizado e as equiparações previstas no número anterior são verificadas automaticamente pela junta de freguesia através do registo no SIAC, sem necessidade de apresentação de qualquer documento.
 >
-> 9-C — A condição de esterilizado, a contraindicação clínica e a qualidade de reprodutor são verificadas automaticamente pela junta de freguesia através do registo no SIAC, sem necessidade de apresentação de qualquer documento.
+> *Nota de técnica legislativa: usa-se a **equiparação positiva** («são equiparados aos cães esterilizados») em vez da desaplicação («o disposto no número anterior não se aplica»), porque num sistema de duas taxas a desaplicação deixaria o animal sem taxa definida; a equiparação aponta inequivocamente para a taxa mínima. O prazo de reavaliação na declaração de contraindicação impede equiparações perpétuas e replica o mecanismo já usado pelo diploma no art.º 58.º, n.º 7 (contraindicação à marcação) e na dispensa de esterilização dos cães perigosos. Pressupõe-se que o n.º [10] cria os limites mínimo e máximo da taxa (portaria) — sem essa norma a montante, a referência ao «limite mínimo» fica pendurada.*
 >
-> 10 — As taxas de licenciamento são aprovadas pela **assembleia de freguesia**, sob proposta da junta, nos termos do regime geral das taxas das autarquias locais, sendo [X%] do respetivo produto afeto a ações locais de promoção do bem-estar animal, designadamente campanhas de esterilização e apoio a detentores em situação de vulnerabilidade, podendo a execução ser protocolada com o município.
+> 10 — Os limites mínimo e máximo das taxas de licenciamento são fixados por portaria dos membros do Governo responsáveis pelas áreas das autarquias locais e da agricultura, sendo os valores concretos aprovados, dentro desses limites, pela **assembleia de freguesia**, sob proposta da junta, nos termos do regime geral das taxas das autarquias locais; [X%] do respetivo produto é afeto a ações locais de promoção do bem-estar animal, designadamente campanhas de esterilização e apoio a detentores em situação de vulnerabilidade, podendo a execução ser protocolada com o município.
 >
 > 11 — Os gatos e os furões não estão sujeitos a licença, sem prejuízo das obrigações de identificação e registo previstas no presente diploma.
 >
