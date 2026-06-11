@@ -123,6 +123,60 @@ O debate honesto tem dois lados. **Pela abolição**: redundância com o SIAC (a
 
 ---
 
+## 6. Proposta final: n.ºs 12-B e 12-C
+
+*Redação com a numeração original do @rgac (n.º 12 = taxa geral; n.º 13 = isenções), adicionando 12-B e 12-C como normas intercalares. Esta é a versão de referência final para os incentivos à esterilização no art.º 27.º.*
+
+### 6.1 Texto proposto pelo utilizador
+
+> **12-B** — A taxa aplicável aos cães esterilizados corresponde obrigatoriamente ao limite mínimo fixado nos termos do número anterior, sendo a taxa aplicável aos cães não esterilizados fixada em valor não inferior ao triplo daquela, sem prejuízo do disposto no número seguinte e das isenções previstas no número 13.
+>
+> **12-C** — O disposto no número anterior não se aplica aos cães cuja esterilização se encontre clinicamente contraindicada, mediante declaração de médico veterinário registada no SIAC, enquanto se mantiver a contraindicação, aplicando-se as taxas definidas nos termos do número 12.
+
+### 6.2 Avaliação
+
+**12-B — sólido; uma questão terminológica a confirmar**
+
+A norma articula os dois patamares de incentivo numa única disposição, com máxima legibilidade: esterilizados pagam o mínimo, não esterilizados pagam pelo menos o triplo, com ressalva das isenções do n.º 13 e da exceção do 12-C. O encadeamento "sem prejuízo do disposto no número seguinte e das isenções previstas no número 13" é tecnicamente correto e previne conflitos de aplicação.
+
+**Questão a confirmar**: "o limite mínimo fixado nos termos do número anterior" — se o n.º 12 permitir mínimos diferenciados por categoria (ex.: mínimo de €3 para companhia, mínimo de €8 para fins económicos), o artigo definido "**o** limite mínimo" é ambíguo: pode ser lido como o mínimo da categoria do animal ou como o mínimo absoluto entre todas as categorias. Para garantir o incentivo universal — que era o objetivo explícito — e eliminar esta dúvida, pode acrescentar-se **"independentemente da categoria"** após "limite mínimo", ou reformular como "ao valor mínimo previsto na portaria referida no n.º [10], independentemente da categoria". Se o n.º 12 fixar um único mínimo universal (e máximos diferenciados por categoria), a ambiguidade desaparece sem alteração de texto. Esta distinção é de política legislativa — a redação atual funciona desde que o n.º 12 seja redigido com mínimo único.
+
+**12-C — elegante; dois pontos a notar**
+
+1. **Ausência de prazo de reavaliação** *(opção consciente — registar-se)*: versões anteriores exigiam que a declaração de contraindicação indicasse "prazo previsível de reavaliação" registado no SIAC — mecanismo já presente no art.º 58.º, n.º 7 (contraindicação de microchip) e na dispensa de esterilização dos cães perigosos. A versão final elimina esse requisito. A cláusula "enquanto se mantiver a contraindicação" pressupõe atualização veterinária periódica, mas sem mecanismo que force a renovação: na prática, uma declaração registada uma vez pode permanecer no SIAC indefinidamente sem reavaliação. Risco de uso como exceção permanente de facto. Se no futuro o prazo de reavaliação for considerado necessário, a redação a acrescentar seria: «, com indicação do prazo previsível de reavaliação,» após "registada no SIAC".
+
+2. **Pontuação**: a versão submetida termina com ponto e vírgula. A legislação portuguesa encerra normas numeradas com ponto final — corrigido na versão acima.
+
+3. **Integridade da remissão interna**: "aplicando-se as taxas definidas nos termos do número 12" funciona corretamente desde que o n.º 12 do art.º 27.º seja o número que define a estrutura geral de taxas diferenciadas por categoria. A renumeração do artigo na versão final do @rgac deve preservar este alinhamento.
+
+### 6.3 Contexto de inserção — n.ºs adjacentes exigidos
+
+Para que as remissões internas de 12-B e 12-C sejam válidas, os n.ºs adjacentes devem ter o seguinte conteúdo:
+
+| N.º | Conteúdo exigido |
+|---|---|
+| 12 | Taxa geral de licenciamento, podendo ser diferenciada por categorias, fixada pela assembleia de freguesia dentro dos limites mínimo e máximo definidos por portaria — **com mínimo único universal** para que 12-B funcione sem ambiguidade |
+| **12-B** | Esterilizados = mínimo; não esterilizados = ≥ triplo; ressalva 12-C e n.º 13 |
+| **12-C** | Exceção por contraindicação clínica verificada no SIAC → retorno ao n.º 12 |
+| 13 | Isenções de taxa: assistência, utilidade pública, municípios/associações zoófilas registadas, adotados de CRO ou cedidos por associações, insuficiência económica |
+
+### 6.4 Comparação com versão intermédia (n.ºs 9-A/9-B/9-C/9-D)
+
+| Aspeto | Versão intermédia | Proposta final |
+|---|---|---|
+| Estrutura | 4 normas (9-A, 9-B, 9-C, 9-D) | 2 normas (12-B, 12-C) |
+| Esterilizado | 9-A: mínimo "independentemente da categoria" | 12-B: mínimo (sem especificar "independentemente da categoria") |
+| Não esterilizado | 9-B: ≥ triplo do mínimo | 12-B: ≥ triplo (numa única norma com 9-A) |
+| Exceções | 9-C: 4 alíneas (contraindicação, criadores, idade <12m, campanha municipal) | 12-C: apenas contraindicação clínica |
+| Prazo de reavaliação | Exigido no SIAC | Eliminado |
+| Verificação automática | 9-D autónomo | Implícita (SIAC registado) |
+| Fallback para exceções | Taxa da categoria do n.º 9 | Taxa do n.º 12 (idem, mais simples) |
+| Legibilidade | Mais completa, mais complexa | Mais simples, mais legível |
+
+**Preferência**: a proposta final é tecnicamente mais limpa para inserção no diploma; a versão intermédia tem mais salvaguardas (prazo de reavaliação, verificação explícita, cobertura de criadores). A escolha é de política legislativa.
+
+---
+
 ### Observações
 *(deduções e opiniões do analista — secção 5.4 do CLAUDE.md)*
 - A escolha estrutural mais importante não está no texto do artigo, mas na **filosofia da taxa**: enquanto a licença for um encargo recorrente sobre quem está registado, trabalhará contra a rastreabilidade; modulada pela esterilização e pela adoção, torna-se o único instrumento económico de massa que o diploma tem para atuar sobre a reprodução não controlada — a um custo administrativo nulo, porque todos os factos relevantes (esterilização, adoção, vacinação) já constam do SIAC.
