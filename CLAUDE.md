@@ -104,6 +104,14 @@ A legislação relevante que não conste do repositório deve ser consultada onl
 - ❌ Usar ficheiros repositório como única fonte de legislação
 - ❌ Não distinguir claramente entre "vigente" e "proposta/diploma final" na análise
 
+### 2.5 Notas Temáticas Avulsas ("Temas Extra Tratados")
+
+Temas que não cabem nos ficheiros/códigos internos acima, mas que já foram objeto de pesquisa e análise dedicada, ficam registados em ficheiros `.md` próprios na raiz do repositório. **Antes de repetir uma pesquisa, verificar esta lista** — se o tema já foi tratado, partir da nota existente em vez de investigar do zero.
+
+| Ficheiro | Tema | Âmbito coberto |
+|---|---|---|
+| `CRIAÇÃO COMERCIAL E PLATAFORMAS.md` | Anúncios de venda de cães/gatos, criação comercial e plataformas de Internet | Legislação vigente (DL 276/2001, arts. 2.º, 3.º, 53.º a 58.º, 66.º, 68.º a 71.º; Lei 95/2017; DL 20/2019); requisitos do anúncio, registo de alojamento/criador, fiscalização, contraordenações, e reflexão sobre atuação da DGAV perante denúncias de anúncios irregulares. **Não inclui** ainda comparação com `@codigo`/`@rgbeac`/`@rgac`/`@regulamento` (ver secção "Por fazer" no próprio ficheiro). |
+
 ---
 
 ## 3. Estrutura das Categorias Documentais
