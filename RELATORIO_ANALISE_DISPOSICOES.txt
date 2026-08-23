@@ -1,0 +1,237 @@
+================================================================================
+ANÁLISE PROFUNDA E ESPECÍFICA DE DISPOSIÇÕES DO REGULAMENTO 2023/0447
+Comparação com Legislação Portuguesa Vigente e Propostas
+================================================================================
+Data: 2026-04-06
+Status: Análise de 49 disposições específicas extraídas de 18 artigos do Regulamento
+
+================================================================================
+1. RESUMO EXECUTIVO
+================================================================================
+
+TAXA GLOBAL DE COBERTURA LEGISLATIVA PORTUGUESA:
+
+  @codigo (Código do Animal - proposta):        69% (34/49 disposições)
+  @rgbeac (RGBEAC junho 2025 - proposta):       63% (31/49 disposições)
+  DL 82/2019 (legislação vigente):              27% (13/49 disposições)
+  Lei 27/2016 (legislação vigente):             20% (10/49 disposições)
+  DL 276/2001 (legislação vigente):              0% (0/49 disposições)
+
+INTERPRETAÇÃO:
+✓ Ambas as propostas portuguesas cobrem ~2/3 das disposições do Regulamento
+✗ Legislação portuguesa vigente cobre apenas ~1/4 das disposições
+✗ Alinhamento significativo necessário para transposição do Regulamento
+
+================================================================================
+2. DISPOSIÇÕES COMPLETAMENTE AUSENTES EM LEGISLAÇÃO PORTUGUESA
+================================================================================
+
+[TOTAL: 6 disposições ausentes em TODA a legislação PT]
+
+ART. 8 - Breeding Strategies (Estratégias de Reprodução):
+  1. "Breeding strategies minimize genetic disorders"
+     - ANÁLISE: Nem DL82 nem legislação vigente mencionam 'estratégias de 
+       reprodução' estruturadas
+     - IMPACTO: Genética e conformação animal não reguladas em detalhe
+     
+  2. "Prohibited genetic technologies"
+     - ANÁLISE: Legislação PT silenciosa sobre proibições de técnicas genéticas
+     - IMPACTO: Lacuna regulatória sobre engenharia genética/seleção artificial
+
+ART. 18 - Painful Practices (Práticas Dolorosas):
+  3. "Vocal cord resection prohibited"
+     - ANÁLISE: Nenhum documento PT menciona 'resection of vocal cords'
+     - IMPACTO: Prática de mutilar cordas vocais não contemplada em legislação PT
+     
+  4. "Anesthesia/analgesia requirement for procedures"
+     - ANÁLISE: Legislação PT silenciosa sobre exigência de anestesia em 
+       procedimentos veterinários
+     - IMPACTO: Procedimentos podem ocorrer sem proteção anestésica obrigatória
+     
+  5. "Aesthetic mutilations prohibited"
+     - ANÁLISE: Legislação PT não proíbe explicitamente 'mutilações estéticas'
+     - IMPACTO: Procedimentos cosméticos (orelhas, cauda) podem ser legais
+
+ART. 20 - Identification (Identificação):
+  6. "Annex II technical requirements for microchip"
+     - ANÁLISE: Legislação PT não refere normas técnicas específicas de microchip
+     - IMPACTO: Compatibilidade técnica de microchips não regulada
+
+================================================================================
+3. DISPOSIÇÕES PARCIALMENTE COBERTAS
+================================================================================
+
+[Existem em alguns diplomas mas com diferenças de âmbito ou detalhe]
+
+ART. 5 - Exemptions (Isenções):
+  • Shelter exemption: "Max 15 animals" - AUSENTE
+    Legislação PT tem isenções para pequenos abrigos mas SEM limiar numérico de 15
+    
+ART. 6 - General Welfare Principles (Princípios Gerais):
+  • "Water and feed of quality and quantity" - Existe mas genérico
+  • "Secure and comfortable environment" - Parcial (RGBEAC melhor)
+  • "Adequate space" - @codigo e @rgbeac cobrem, DL82 não
+  
+ART. 7 - General Obligations (Obrigações Gerais):
+  • "Sufficient number of animal carers" - Ausente em legislação vigente
+  • "Monitoring and recording" - Apenas @codigo/@rgbeac especificam bem
+  
+ART. 8 - Breeding Strategies:
+  • "Excessive conformational traits" - COMPLETAMENTE AUSENTE
+    Regulamento proíbe breeding com traços conformacionais excessivos
+    Legislação PT (vigente) não menciona isto
+    
+ART. 10 - Breeding Establishment Approval:
+  • "More than 5 litters requires approval" - Ausente
+  • "Publicly available list of approved" - Completamente ausente
+  
+ART. 12 - Animal Carers Competence:
+  • "Recognize suffering and identify needs" - Ausente completamente
+  • Formação de cuidadores apenas em @codigo e DL82
+  
+ART. 16 - Health:
+  • "Health programme established" - AUSENTE completamente
+    Regulamento exige programa de saúde; legislação PT não
+    
+ART. 18 - Painful Practices:
+  • "Mutilation prohibition" - Existe em @codigo mas parcial
+  • "Ear cropping and tail docking" - Apenas @codigo menciona especificamente
+  
+ART. 20 - Identification:
+  • "3 months birth deadline" - Apenas @codigo menciona
+  
+ART. 21 - Online Advertising:
+  • "Online advertising warning required" - AUSENTE EM LEGISLAÇÃO VIGENTE
+  • "Specific warning content" - Apenas @rgbeac menciona
+
+================================================================================
+4. DISPOSIÇÕES MELHOR COBERTAS
+================================================================================
+
+[Taxa >75% de cobertura nas propostas]
+
+ART. 6 - General Welfare:    100% (@codigo/@rgbeac)
+ART. 7 - General Obligations: 100% (@codigo/@rgbeac)
+ART. 9 - Notification:        100% (@codigo/@rgbeac)
+ART. 11 - Responsible Ownership: 100% (@codigo)
+ART. 13 - Welfare Visits:     100% (@codigo/@rgbeac)
+ART. 14 - Feeding:            100% (@codigo/@rgbeac)
+ART. 15 - Housing:            100% (@codigo/@rgbeac)
+ART. 23 - Databases:          100% (@codigo/@rgbeac)
+
+CONCLUSÃO: Ambas as propostas (Código Animal e RGBEAC) cobrem bem os 
+temas básicos de bem-estar animal, mas têm lacunas em áreas específicas 
+e técnicas (traços conformacionais, práticas dolorosas, publicidade online).
+
+================================================================================
+5. LACUNAS CRÍTICAS POR TEMA
+================================================================================
+
+TEMA: CONFORMAÇÃO ANIMAL (Breeding Strategies - Art. 8)
+  STATUS: ✗ LACUNA CRÍTICA
+  DISPOSIÇÕES AUSENTES:
+    - Proibição de "excessive conformational traits"
+    - "Breeding strategies" estruturadas
+    - Seleção para minimizar defeitos genéticos
+  IMPACTO: Regulamento proíbe breeding de animais com conformações extremas
+           Legislação PT (vigente) não contempla isto
+  RECOMENDAÇÃO: Adicionar ao regime português proibições sobre conformação excessiva
+
+TEMA: PRÁTICAS DOLOROSAS (Art. 18)
+  STATUS: ✗ LACUNAS MÚLTIPLAS
+  DISPOSIÇÕES AUSENTES (5/5):
+    1. Resection of vocal cords
+    2. Anesthesia/analgesia requirement
+    3. Aesthetic mutilations prohibition
+  PARCIAIS:
+    - Ear cropping/tail docking (em @codigo apenas)
+  IMPACTO: Legislação PT não cobre mutilações estéticas nem exige anestesia
+  RECOMENDAÇÃO: Transpor integralmente proibições de práticas dolorosas
+
+TEMA: PUBLICIDADE ONLINE (Art. 21)
+  STATUS: ✗ AUSENTE COMPLETAMENTE EM LEGISLAÇÃO VIGENTE
+  DISPOSIÇÕES AUSENTES (2/2):
+    - Online advertising warning requirement
+    - Specific warning text: "An animal is not a toy..."
+  NOTA: Apenas @rgbeac menciona publicidade online
+  RECOMENDAÇÃO: Incluir requisitos de publicidade online
+
+TEMA: IDENTIFICAÇÃO E RASTREABILIDADE (Art. 20)
+  STATUS: ⚠ PARCIAL
+  EXISTE: Microchip obrigatório (DL82)
+  AUSENTE:
+    - Normas técnicas de microchip (Annex II)
+    - Prazo específico de 3 meses pós-nascimento
+    - "Identified before placed on market"
+  RECOMENDAÇÃO: Especificar prazos e normas técnicas
+
+TEMA: BASES DE DADOS (Art. 23)
+  STATUS: ✓ BEM COBERTO
+  DISPOSIÇÕES: 100% (@codigo/@rgbeac)
+  NOTA: Lei 27/2016 menciona recolha de dados em abrigos
+
+TEMA: COMPETÊNCIA DE CUIDADORES (Art. 12)
+  STATUS: ⚠ PARCIAL (75% @codigo/@rgbeac)
+  AUSENTE: "Recognize suffering and identify needs"
+  RECOMENDAÇÃO: Detalhar competências de cuidadores para reconhecer sinais de sofrimento
+
+================================================================================
+6. FICHEIROS GERADOS
+================================================================================
+
+  1. disposicoes_detalhadas.csv
+     - Matriz 49 disposições x 4 documentos PT
+     - Formato pivotado (SIM/NÃO por documento)
+     
+  2. analise_disposicoes_completa.csv
+     - Inclui análise de ausência para disposições não-existentes
+     - Contextualização de cada lacuna
+     
+  3. disposicoes_regulamento_analise.csv
+     - Versão anterior com termos-chave de busca
+     
+  4. RELATORIO_ANALISE_DISPOSICOES.txt (este ficheiro)
+     - Sumário executivo e recomendações
+
+================================================================================
+7. RECOMENDAÇÕES PARA TRANSPOSIÇÃO DO REGULAMENTO
+================================================================================
+
+PRIORIDADE MÁXIMA:
+  1. Conformação animal: Adicionar proibição de "excessive conformational traits"
+  2. Práticas dolorosas: Transpor integralmente Art. 18 (resection, anesthesia, aesthetic)
+  3. Publicidade online: Incluir requisitos de Art. 21 com aviso obrigatório
+
+PRIORIDADE ALTA:
+  4. Competência de cuidadores: Detalhar capacidade de reconhecer sofrimento
+  5. Programas de saúde: Exigir plano de saúde em Art. 16
+  6. Prazos de identificação: Especificar 3 meses após nascimento
+
+PRIORIDADE MÉDIA:
+  7. Bases de dados: Especificar normas técnicas de microchip (Annex II)
+  8. Listas públicas: Publicar registos de estabelecimentos aprovados
+  9. Técnicas genéticas: Proibir genetic engineering não-autorizado
+
+================================================================================
+8. CONCLUSÃO
+================================================================================
+
+ESTADO ATUAL:
+  • Legislação vigente portuguesa (DL82/2019 + Lei27/2016) cobre ~27% do Regulamento
+  • Ambas as propostas (Código Animal + RGBEAC) cobrem ~65-70% do Regulamento
+  
+LACUNAS MAIS GRAVES:
+  1. Conformação animal (Art. 8): NÃO EXISTE EM NENHUM DOCUMENTO
+  2. Práticas dolorosas (Art. 18): 60% ausente em legislação vigente
+  3. Publicidade online (Art. 21): 100% ausente em legislação vigente
+  4. Competência de cuidadores (Art. 12): Parcial
+
+RECOMENDAÇÃO FINAL:
+  Ambas as propostas são melhorias significativas. Porém, ambas necessitam:
+  • Clarificação em temas de conformação animal (Art. 8)
+  • Transposição integral de práticas dolorosas (Art. 18)
+  • Inclusão de requisitos de publicidade online (Art. 21)
+  
+  O Código Animal (@codigo) cobre ligeiramente melhor (~69%) que RGBEAC (~63%).
+
+================================================================================

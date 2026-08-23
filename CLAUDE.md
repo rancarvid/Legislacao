@@ -9,10 +9,11 @@ Documento metodológico estruturante do projeto. Referência para produção ana
 Este repositório suporta uma **análise comparativa da legislação portuguesa e europeia sobre animais**, com foco em animais de companhia. A análise abrange:
 
 - Legislação portuguesa e europeia vigente
-- Duas propostas de nova legislação que compilam e alteram a vigente
-- Um novo Regulamento Europeu de aplicação direta (2023/0447)
+- Duas propostas de nova legislação que compilam e alteram a vigente (`@codigo`, `@rgbeac`)
+- Um novo Regulamento Europeu de aplicação direta (2023/0447) — `@regulamento`
+- Um diploma final consolidado que integra os três anteriores — **`@rgac`**
 
-**Objetivo central**: avaliar o impacto da aplicação do Regulamento europeu na legislação nacional, considerando que já existem duas propostas de consolidação e revisão do regime jurídico.
+**Objetivo central**: avaliar o impacto da aplicação do Regulamento europeu na legislação nacional e acompanhar a evolução do diploma final `@rgac`, que integra `@codigo`, `@regulamento` e `@rgbeac` numa proposta consolidada única.
 
 ---
 
@@ -24,9 +25,12 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 | Código Interno | Ficheiro | Descrição |
 |---|---|---|
-| `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 |
-| `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025) |
-| `@regulamento` | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Regulamento Europeu 2023/0447 (cães e gatos) |
+| `@rgac` ⭐ | `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Versão DAJA V1, junho 2026. Ficheiro canónico mais recente do projeto. |
+| `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 (proposta de consolidação original; incorporada em `@rgac`) |
+| `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025; incorporada em `@rgac`) |
+| `@regulamento` (EN) | `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Regulamento Europeu 2023/0447 — **versão EN de referência** (após reunião, alterações aceites) |
+| `@regulamento` (PT) | `PT Revisão Jurídico-Linguística Sem Track changes até 15 de abril pe00002.pt26.PB.aftermeeting (003)1.docx` | Regulamento Europeu 2023/0447 — **versão PT de referência** (revisão jurídico-linguística, sem track changes, até 15 abril) |
+| `@regulamento` (arquivo) | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Regulamento Europeu 2023/0447 — versão anterior (arquivo; não usar como referência primária) |
 | `@oexcel` | `oexcel.xlsx` | Ficheiro Excel comparativo por temas |
 | `@legislacao` | `Decreto-Lei n.º 276-2001, de 17 de outubro v2.docx` | DL 276/2001 — Proteção dos animais de companhia |
 | `@legislacao` | `DL n. 82_2019, de 27 de Junho_ocred.docx` | DL n.º 82/2019 — Bem-estar de animais de companhia |
@@ -39,7 +43,9 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 | `@legislacao` | `Portaria n.º 264_2013 - (...).docx` | Portaria n.º 264/2013 — PNLVERAZ (raiva e zoonoses) |
 | `@legislacao` | `DECRET~1.DOC` | Decreto-Lei n. 74_2007, de 27 de Março - Direito de acesso das pessoas com deficiência acompanhadas de cães de assistência.docx |
 
-> **Regra de classificação**: Tudo o que não for `@codigo`, `@rgbeac` ou `@regulamento` integra o grupo `@legislacao`.
+> **Regra de classificação**: Tudo o que não for `@rgac`, `@codigo`, `@rgbeac` ou `@regulamento` integra o grupo `@legislacao`.
+
+> **Nota de versão — `@rgac`**: O documento `@rgac` é atualizado periodicamente. A versão canónica é sempre o ficheiro cujo nome contém o sufixo **"MAIS ATUAL"**. Versões anteriores são arquivadas com sufixo numérico entre parênteses — e.g., `(1)`, `(2)` — e não devem ser usadas como referência primária. Sempre que o utilizador fizer upload de uma versão nova, o ficheiro "MAIS ATUAL" deve ser considerado a referência vigente de `@rgac`, independentemente da data de revisão inscrita no nome.
 
 ### 2.2 Ficheiros de Trabalho Gerados
 
@@ -75,24 +81,28 @@ A legislação relevante que não conste do repositório deve ser consultada onl
 2. Usar ficheiros repositório como **segunda validação**, não como fonte primária
 3. **NUNCA confundir**: DL 276/2001 (vigente) com @codigo (proposta)
 
-#### PASSO 3: ANÁLISE DE PROPOSTAS (@CODIGO, @RGBEAC)
-1. **APENAS DEPOIS** de analisar legislação vigente, comparar com propostas
-2. **REGRA CRÍTICA**: `@codigo` e `@rgbeac` são PROPOSTAS, NÃO LEGISLAÇÃO VIGENTE
-3. Na análise, indicar claramente: "Proposta @rgbeac" ≠ "Legislação vigente"
+#### PASSO 3: ANÁLISE DE PROPOSTAS E DIPLOMA FINAL (@CODIGO, @RGBEAC, @RGAC)
+1. **APENAS DEPOIS** de analisar legislação vigente, comparar com propostas e diploma final
+2. **REGRA CRÍTICA**: `@codigo`, `@rgbeac` e `@rgac` são PROPOSTAS / TRABALHO EM CURSO, NÃO LEGISLAÇÃO VIGENTE
+3. Na análise, indicar claramente: "Diploma final @rgac" ≠ "Legislação vigente"
+4. **`@rgac` tem precedência analítica** sobre `@codigo` e `@rgbeac` quando se pretende compreender o estado consolidado atual do projeto legislativo
 
 #### REGRA DE DISTINÇÃO ABSOLUTA
 | Categoria | Status | Como Tratar |
 |-----------|--------|------------|
 | **@legislacao** | ✅ VIGENTE | Consultar online consolidado; citar como "legislação vigente" |
-| **@codigo** | ❌ PROPOSTA | Citar como "proposta de consolidação"; NUNCA como legislação vigente |
-| **@rgbeac** | ❌ PROPOSTA | Citar como "proposta (jun. 2025)"; NUNCA como legislação vigente |
+| **@codigo** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta de consolidação original"; usar @rgac para texto atual |
+| **@rgbeac** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta (jun. 2025)"; usar @rgac para texto atual |
 | **@regulamento** | ✅ VIGENTE | Legislação europeia; aplicação direta; citar verbatim EN + tradução PT |
+| **@rgac** | ⚠️ DIPLOMA FINAL (trabalho em curso) | Citar como "diploma final @rgac"; versão "MAIS ATUAL" é a referência canónica; NUNCA como legislação vigente |
 
 #### ERROS A EVITAR
 - ❌ Tratar @codigo (proposta) como legislação que "revoga" DL 276/2001
+- ❌ Tratar @rgac como legislação vigente — é o diploma final em desenvolvimento
+- ❌ Usar versões arquivadas de @rgac (com numeração em parênteses) em vez do ficheiro "MAIS ATUAL"
 - ❌ Omitir legislação vigente (ex: DL 82/2019) que não está no repositório
 - ❌ Usar ficheiros repositório como única fonte de legislação
-- ❌ Não distinguir claramente entre "vigente" e "proposta" na análise
+- ❌ Não distinguir claramente entre "vigente" e "proposta/diploma final" na análise
 
 ---
 
@@ -103,11 +113,19 @@ Toda a legislação vigente relevante que não seja `@codigo`, `@rgbeac` ou `@re
 
 ### b) Propostas compiladoras da legislação nacional
 
-- **`@codigo`** — Código do Animal (DL 214/2013): proposta de consolidação do regime jurídico nacional.
-- **`@rgbeac`** — Regime Geral do Bem-Estar dos Animais de Companhia: segunda proposta de consolidação, versão de junho de 2025.
+- **`@codigo`** — Código do Animal (DL 214/2013): proposta de consolidação do regime jurídico nacional. Incorporada no diploma final `@rgac`.
+- **`@rgbeac`** — Regime Geral do Bem-Estar dos Animais de Companhia: segunda proposta de consolidação, versão de junho de 2025. Incorporada no diploma final `@rgac`.
 
 ### c) Novo Regulamento Europeu — `@regulamento`
-Regulamento 2023/0447, de aplicação direta nos Estados-Membros. Ponto de referência central para a análise de impacto.
+Regulamento 2023/0447, de aplicação direta nos Estados-Membros. Ponto de referência central para a análise de impacto. Incorporado no diploma final `@rgac`.
+
+### e) Diploma final consolidado — `@rgac`
+
+**`@rgac`** — `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx`
+
+Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa. A versão anterior (`Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx`) fica como arquivo.
+
+**Convenção de versão**: O ficheiro canónico é sempre o que contém o sufixo **"MAIS ATUAL"** no nome. Versões anteriores são arquivadas com sufixo numérico — e.g., `(1)`, `(2)`. O utilizador pode fazer upload de versões mais recentes; o ficheiro "MAIS ATUAL" será sempre substituído pelo mais recente. Nunca usar versões arquivadas como referência primária.
 
 ### d) Ficheiros Excel comparativos — `@oexcel` e ferramenta de reunião
 
@@ -184,7 +202,7 @@ Regras de formatação que se aplicam tanto à produção analítica como aos sc
 **Integridade da citação**
 - Cada artigo é citado na íntegra. Não se omitem n.ºs ou alíneas por conveniência de espaço.
 - Quando um n.º ou alínea está citado por integridade mas não tem correspondência direta com o tema em análise, é marcado com `[dim]` — texto exibido a cinza mas perfeitamente legível.
-- O marcador `[dim]` aplica-se **exclusivamente à legislação nacional** (`@legislacao`, `@codigo`, `@rgbeac`). **Nunca ao `@regulamento`**, que é sempre citado sem supressões.
+- O marcador `[dim]` aplica-se **exclusivamente à legislação nacional** (`@legislacao`, `@codigo`, `@rgbeac`, `@rgac`). **Nunca ao `@regulamento`**, que é sempre citado sem supressões.
 
 **Cabeçalho de artigo**
 - Quando uma coluna cita múltiplos artigos do mesmo diploma, cada artigo é precedido de um cabeçalho `Artigo X.º — Título` que funciona como separador visual.
@@ -218,6 +236,7 @@ Cada linha deve conter os seguintes campos:
 | Div. vs `@legislacao` | Divergência face ao Regulamento — legislação vigente |
 | Div. vs `@codigo` | Divergência face ao Regulamento — `@codigo` |
 | Div. vs `@rgbeac` | Divergência face ao Regulamento — `@rgbeac` |
+| Div. vs `@rgac` | Divergência face ao Regulamento — diploma final `@rgac` |
 | Sumário / Proposta | Síntese da divergência e proposta de implementação |
 | Necessidade de alteração | Sim / Não |
 | Observações | Deduções, inferências ou recomendações |
@@ -297,12 +316,14 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
 2. **SEGUNDO**: Verificar ficheiros do repositório
    - Verificar quais ficheiros estão presentes
    - Usar como VALIDAÇÃO (não como fonte primária)
-   - Identificar o código interno correto (`@codigo`, `@rgbeac`, `@regulamento`, `@legislacao`, `@oexcel`)
+   - Identificar o código interno correto (`@rgac`, `@codigo`, `@rgbeac`, `@regulamento`, `@legislacao`, `@oexcel`)
+   - Para `@rgac`: usar **sempre** o ficheiro com sufixo "MAIS ATUAL"; ignorar versões arquivadas com número em parênteses
 
-3. **TERCEIRO**: Para propostas (@codigo, @rgbeac)
+3. **TERCEIRO**: Para propostas e diploma final (@codigo, @rgbeac, @rgac)
    - Comparar com legislação vigente
-   - Indicar claramente se são "propostas" ou "legislação vigente"
-   - **NUNCA confundir** DL 276/2001 (vigente) com @codigo (proposta)
+   - Indicar claramente se são "propostas/diploma final" ou "legislação vigente"
+   - **`@rgac`** é o diploma final mais avançado — tem precedência sobre `@codigo` e `@rgbeac` quando se pretende o estado atual consolidado
+   - **NUNCA confundir** DL 276/2001 (vigente) com @codigo (proposta) nem com @rgac (diploma final)
 
 ### 10.2 Ao produzir análises
 
@@ -310,6 +331,8 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
 - **Nunca misturar** descrição analítica com opiniões — opiniões vão em "Observações".
 - **Sempre referenciar** no formato `al. X), do n.º Y, do art.º Z.º`.
 - **Sempre produzir em PT-PT**, exceto citações europeias (com tradução imediata).
+- Ao citar `@rgac`, indicar sempre: "diploma final @rgac (versão: [data/rev indicada no nome do ficheiro])".
+- `@rgac` é documento vivo — ao trabalhar com ele, confirmar que o ficheiro usado é o "MAIS ATUAL" disponível no repositório.
 
 ### 10.3 Ao trabalhar com o Excel (`@oexcel`)
 
@@ -365,6 +388,9 @@ regulamento
   titulo                  — título oficial do artigo em inglês
   texto                   — verbatim EN
   traducao                — tradução PT-PT
+rgac
+  ref                     — referência no diploma final @rgac
+  texto                   — verbatim PT (versão "MAIS ATUAL")
 rgbeac
   ref                     — referência no diploma
   texto                   — verbatim PT
@@ -378,6 +404,7 @@ divergencia
   legislacao              — divergência face ao @regulamento — legislação vigente
   codigo                  — divergência face ao @regulamento — @codigo
   rgbeac                  — divergência face ao @regulamento — @rgbeac
+  rgac                    — divergência face ao @regulamento — diploma final @rgac
   sumario                 — síntese e proposta de implementação
 necessidade_alteracao     — "Sim" / "Não"
 notas                     — notas de reunião (campo livre)

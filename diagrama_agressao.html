@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Procedimentos Pós-Agressão Animal — DL 315/2009 + Port. 264/2013</title>
+<style>
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #e8e8e8; }
+
+/* ── PÁGINA ── */
+.page {
+  background: #fff;
+  width: 100%;
+  max-width: 1100px;
+  margin: 16px auto;
+  padding: 24px 28px;
+}
+
+/* ── CABEÇALHOS ── */
+h1 { font-size: 17px; font-weight: 700; text-align: center; color: #1c2f4a; margin-bottom: 3px; }
+.sub { font-size: 11px; text-align: center; color: #666; margin-bottom: 10px; }
+h2 {
+  font-size: 12px; font-weight: 700;
+  background: #1c2f4a; color: #fff;
+  padding: 6px 12px; margin: 18px 0 14px 0;
+  letter-spacing: .5px; text-transform: uppercase;
+}
+.aviso {
+  background: #fff8e1; border-left: 4px solid #f9a825;
+  padding: 8px 12px; font-size: 11px; color: #555;
+  margin-bottom: 4px; line-height: 1.5;
+}
+
+/* ── LAYOUT DOS FLUXOS ── */
+.flow-cols {
+  display: grid;
+  gap: 20px;
+}
+.flow-cols-2 { grid-template-columns: 3fr 2fr; }
+.flow-cols-1 { grid-template-columns: 1fr; }
+
+.col-title {
+  font-size: 11px; font-weight: 700; color: #fff;
+  background: #34495e; padding: 5px 10px;
+  margin-bottom: 10px; text-align: center;
+  letter-spacing: .3px;
+}
+
+/* ── NÓS ── */
+.node {
+  padding: 9px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  border: 1.5px solid transparent;
+  position: relative;
+}
+.node .ref {
+  display: block;
+  font-size: 10px;
+  color: #888;
+  margin-top: 4px;
+  font-style: italic;
+}
+.node.evento   { background: #1c2f4a; color: #fff; border-color: #1c2f4a; font-weight: 700; text-align: center; }
+.node.evento .ref { color: #aac; }
+.node.info     { background: #eaf3fb; color: #1a1a1a; border-color: #2980b9; }
+.node.obrig    { background: #fdecea; color: #7b1e1e; border-color: #c0392b; font-weight: 600; }
+.node.perigoso { background: #922b21; color: #fff; border-color: #7b241c; font-weight: 700; }
+.node.perigoso .ref { color: #e8b0a0; }
+.node.eutanasia { background: #4a1010; color: #fff; border-color: #3b0d0d; font-weight: 700; }
+.node.eutanasia .ref { color: #d4a0a0; }
+.node.ok       { background: #eafaf1; color: #1a5c35; border-color: #27ae60; }
+.node.ok .ref  { color: #5d8a6b; }
+.node.custos   { background: #f5f0ff; color: #4a235a; border-color: #8e44ad; font-size: 11px; }
+.node.custos .ref { color: #9b59b6; }
+
+/* ── SETAS ── */
+.arrow {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  line-height: 1;
+  margin: 3px 0;
+}
+.arrow-h { /* seta horizontal entre colunas */
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; color: #555; padding: 0 4px;
+}
+
+/* ── DECISÃO ── */
+.decision-box {
+  background: #fff9e6;
+  border: 2px solid #e6ac00;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #7d5a00;
+  text-align: center;
+}
+.branches {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+}
+.branches-3 { grid-template-columns: 1fr 1fr 1fr; }
+.branches-2 { grid-template-columns: 1fr 1fr; }
+.branch-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #666;
+  text-align: center;
+  margin-bottom: 4px;
+  padding: 2px 6px;
+  background: #f0f0f0;
+  border-radius: 2px;
+}
+
+/* ── SEPARADOR ── */
+.sep {
+  border: none; border-top: 2px dashed #ccc;
+  margin: 20px 0;
+}
+
+/* ── NOTA ── */
+.nota { font-size: 10px; color: #aaa; text-align: right; margin-top: 10px; }
+
+/* ══ PRINT ══ */
+@media print {
+  body { background: #fff; }
+  .page {
+    margin: 0; max-width: none;
+    padding: 10mm 12mm;
+    page-break-after: always;
+  }
+  @page { size: A3 landscape; margin: 8mm; }
+  h2 { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .node, .decision-box, .branch-label, .aviso, .col-title {
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  PÁGINA 1 — DIAGRAMA DE CLASSIFICAÇÃO E DESTINO             ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<div class="page">
+  <h1>Procedimentos Pós-Agressão Animal</h1>
+  <p class="sub">DL n.º 315/2009, de 29 de outubro · Portaria n.º 264/2013, de 16 de agosto</p>
+
+  <div class="aviso">
+    ⚠ Após uma agressão correm <strong>dois processos em paralelo</strong>: o processo de <strong>classificação e destino</strong> (este diagrama) e o processo <strong>sanitário antirrábico</strong> (diagrama 2). O sequestro no CRO é ponto de confluência de ambos.
+  </div>
+
+  <h2>Diagrama 1 — Classificação e destino do animal agressor · DL 315/2009</h2>
+
+  <div class="flow-cols flow-cols-2">
+
+    <!-- ── COLUNA ESQUERDA: agressão a pessoa ── -->
+    <div>
+      <div class="col-title">AGRESSÃO A PESSOA</div>
+
+      <div class="node evento">
+        Qualquer ofensa ao corpo ou à saúde de uma pessoa
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info">
+        <strong>Notificação imediata ao MVM</strong><br>
+        por: médico veterinário, autoridade judicial, administrativa, policial ou unidade prestadora de cuidados de saúde
+        <span class="ref">art. 14.º n.º 2 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node obrig">
+        <strong>Recolha OBRIGATÓRIA para CRO</strong><br>
+        pela autoridade competente, a expensas do detentor
+        <span class="ref">art. 14.º n.º 1 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info">
+        <strong>Câmara municipal</strong> comunica à junta de freguesia<br>
+        prazo máximo: <strong>8 dias</strong>
+        <span class="ref">art. 14.º n.º 3 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node perigoso">
+        <strong>Junta de freguesia actualiza SICAFE</strong><br>
+        Animal classificado como <strong>PERIGOSO</strong><br>
+        ⚠ Classificação AUTOMÁTICA — qualquer ofensa a pessoa determina a classificação por força da lei
+        <span class="ref">art. 3.º b) i) + art. 9.º n.º 1 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info">
+        <strong>Junta de freguesia notifica o detentor</strong><br>
+        prazo: <strong>15 dias consecutivos</strong> para apresentar documentação do art. 5.º n.º 2
+        <span class="ref">art. 14.º n.º 4 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="decision-box">
+        Gravidade da ofensa?<br>
+        <span style="font-size:10px;font-weight:400;color:#888">(determina o destino — art. 15.º · DL 315/2009)</span>
+      </div>
+
+      <div class="arrow" style="opacity:0">↓</div>
+
+      <div class="branches branches-3">
+
+        <div>
+          <div class="branch-label">OFENSA GRAVE<br>comprovada por relatório médico</div>
+          <div class="node eutanasia">
+            <strong>Eutanásia OBRIGATÓRIA</strong><br>
+            método sem dor nem sofrimento<br>
+            MVM decide, após cumprimento das normas de isolamento e sequestro em caso de suspeita de raiva
+            <span class="ref">art. 15.º n.os 1 e 2</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="branch-label">OFENSA SIMPLES</div>
+          <div class="node ok">
+            <strong>Entregue ao detentor</strong><br>
+            após cumprimento das obrigações e procedimento previstos no decreto-lei<br>
+            + provas de socialização e/ou treino de obediência quando aplicável, no prazo fixado pelo MVM
+            <span class="ref">art. 15.º n.º 4</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="branch-label">RISCO GRAVE IMEDIATO<br>detentor não consegue controlar</div>
+          <div class="node eutanasia">
+            <strong>Eutanásia PODE ser imediata</strong><br>
+            pelo MVM ou sob a sua direção<br>
+            excepção ao procedimento normal — sem prejuízo das normas de isolamento/sequestro por suspeita de raiva
+            <span class="ref">art. 15.º n.º 5</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="arrow" style="margin-top:8px">↓</div>
+
+      <div class="node info" style="text-align:center">
+        Ao detentor do animal abatido <strong>não cabe direito a indemnização</strong>
+        <span class="ref">art. 15.º n.º 6</span>
+      </div>
+
+    </div><!-- /coluna esquerda -->
+
+    <!-- ── COLUNA DIREITA: agressão a animal ── -->
+    <div>
+      <div class="col-title">AGRESSÃO A ANIMAL</div>
+
+      <div class="node evento">
+        Ferimento grave ou morte de outro animal<br>
+        fora da esfera de bens imóveis que constituem a propriedade do detentor
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info">
+        <strong>Junta de freguesia toma conhecimento</strong><br>
+        ⚠ Sem recolha obrigatória automática prevista no art. 14.º n.º 1
+        <span class="ref">art. 14.º n.º 4 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node perigoso">
+        Animal classificado como <strong>PERIGOSO</strong><br>
+        ⚠ Classificação AUTOMÁTICA — ferimento grave ou morte de outro animal (fora da propriedade) determina a classificação por força da lei
+        <span class="ref">art. 3.º b) ii) · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info">
+        <strong>Junta de freguesia notifica o detentor</strong><br>
+        prazo: <strong>15 dias consecutivos</strong> para apresentar documentação do art. 5.º n.º 2
+        <span class="ref">art. 14.º n.º 4 · DL 315/2009</span>
+      </div>
+
+      <div class="arrow">↓</div>
+
+      <div class="node info" style="background:#f9f9f9; border-color:#ccc; color:#555; font-size:11px">
+        <strong>Nota:</strong> a lei não prevê para este caso o procedimento de destino do art. 15.º (eutanásia ou entrega ao detentor) de forma expressa e directa. O art. 15.º refere-se a "ofensas à integridade física" de pessoas. A classificação como perigoso e a notificação ao detentor para apresentação de documentação são as consequências expressas na lei.
+      </div>
+
+    </div><!-- /coluna direita -->
+
+  </div><!-- /flow-cols -->
+
+  <p class="nota">Imprimir: Ctrl+P → Guardar como PDF → A3 landscape · Página 1 de 2</p>
+</div><!-- /page 1 -->
+
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  PÁGINA 2 — PROCESSO SANITÁRIO ANTIRRÁBICO                  ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<div class="page">
+  <h1>Procedimentos Pós-Agressão Animal</h1>
+  <p class="sub">DL n.º 315/2009, de 29 de outubro · Portaria n.º 264/2013, de 16 de agosto</p>
+
+  <h2>Diagrama 2 — Processo sanitário antirrábico · Portaria 264/2013 (PNLVERAZ)</h2>
+  <p style="font-size:11px;color:#666;margin-bottom:12px">
+    Corre <strong>em paralelo</strong> com o Diagrama 1 · Aplica-se ao animal <strong>agressor</strong> e ao animal <strong>agredido</strong>
+  </p>
+
+  <!-- ── TRONCO COMUM ── -->
+  <div class="node evento" style="text-align:center">
+    Após qualquer agressão (animal → humano · animal → animal)
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="node info">
+    <strong>Animal agressor E animal agredido são considerados suspeitos de raiva</strong><br>
+    Devem ser observados pelo MVM no mais curto espaço de tempo
+    <span class="ref">art. 12.º · Port. 264/2013</span>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="node info">
+    <strong>Inquérito epidemiológico pelo MVM</strong><br>
+    Todas as situações de agressão — agressor e agredido — são objeto de avaliação e inquérito epidemiológico
+    <span class="ref">art. 12.º · Port. 264/2013</span>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="decision-box">
+    Suspeita CLÍNICA de raiva?<br>
+    <span style="font-size:10px;font-weight:400;color:#888">(sinais clínicos exibidos pelo animal)</span>
+  </div>
+
+  <div class="branches branches-2" style="margin-top:8px">
+    <div>
+      <div class="branch-label">SIM — sinais clínicos presentes</div>
+      <div class="node eutanasia">
+        <strong>Sequestro imediato no CRO</strong><br>
+        Isolado, sem contacto com outros animais<br>
+        Até eliminação da suspeita ou occisão<br>
+        ⚠ Occisão carece de <strong>autorização expressa da DGAV</strong>
+        <span class="ref">art. 17.º n.os 1 e 2 · Port. 264/2013</span>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="node info">
+        Análise laboratorial do material biológico
+        <span class="ref">art. 17.º n.º 1 · Port. 264/2013</span>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="decision-box" style="font-size:11px">Resultado laboratorial?</div>
+      <div class="branches branches-2" style="margin-top:6px">
+        <div>
+          <div class="branch-label">RAIVA CONFIRMADA</div>
+          <div class="node eutanasia">
+            <strong>Cães e gatos:</strong> occisão imediata<br>
+            <strong>Herbívoros/omnívoros:</strong> observação mínima 90 dias
+            <span class="ref">art. 21.º · Port. 264/2013</span>
+          </div>
+        </div>
+        <div>
+          <div class="branch-label">RAIVA EXCLUÍDA</div>
+          <div class="node ok">
+            Continua para avaliação do estatuto vacinal
+            <span class="ref">→ ver coluna "Não" →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="branch-label">NÃO — sem sinais clínicos</div>
+
+      <div class="node info" style="font-weight:600; margin-bottom:10px">
+        ANIMAL AGRESSOR
+      </div>
+
+      <div class="decision-box" style="font-size:11px">Agressor vacinado?</div>
+
+      <div class="branches branches-2" style="margin-top:6px">
+        <div>
+          <div class="branch-label">NÃO vacinado</div>
+          <div class="node obrig">
+            <strong>Quarentena no CRO</strong><br>
+            mínimo <strong>15 dias</strong><br>
+            sem contacto com outros animais
+            <span class="ref">art. 13.º n.º 1 · Port. 264/2013</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="node ok">
+            Findo o prazo — raiva eliminada:<br>
+            <strong>vacinação antirrábica obrigatória</strong>
+            <span class="ref">art. 13.º n.º 1 · Port. 264/2013</span>
+          </div>
+        </div>
+        <div>
+          <div class="branch-label">Vacinado</div>
+          <div class="node ok">
+            <strong>Vigilância clínica</strong><br>
+            em local autorizado, sob responsabilidade clínica de MV<br>
+            (avaliação prévia pelo MVM)
+            <span class="ref">art. 13.º n.º 5 · Port. 264/2013</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="sep">
+
+      <div class="node info" style="font-weight:600; margin-bottom:10px">
+        ANIMAL AGREDIDO
+      </div>
+
+      <div class="decision-box" style="font-size:11px">
+        Agredido sem vacinação antirrábica válida<br>+ agressor não vacinado?
+      </div>
+
+      <div class="branches branches-2" style="margin-top:6px">
+        <div>
+          <div class="branch-label">SIM</div>
+          <div class="node obrig">
+            <strong>Quarentena oficial no CRO</strong>
+            <span class="ref">art. 14.º n.º 3 · Port. 264/2013</span>
+          </div>
+          <div class="arrow">↓</div>
+          <div class="node info" style="font-size:11px">
+            <strong>Prazo do sequestro — art. 20.º:</strong><br>
+            • Agressor confinado em observação → <strong>15 dias</strong><br>
+            • Agressor desaparecido → <strong>180 dias</strong><br>
+            &nbsp;&nbsp;(90 dias se agredido vacinado há ≥ 21 dias<br>
+            &nbsp;&nbsp;e dentro do prazo de validade imunológica)<br>
+            • Agressor morto + exame cerebral → <strong>conforme resultado</strong>
+            <span class="ref">art. 20.º · Port. 264/2013</span>
+          </div>
+        </div>
+        <div>
+          <div class="branch-label">Restantes casos</div>
+          <div class="node ok">
+            <strong>Vigilância clínica</strong>
+            <span class="ref">art. 14.º n.º 3 · Port. 264/2013</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /branches principais -->
+
+  <div class="arrow" style="margin-top:12px">↓</div>
+
+  <div class="node custos">
+    <strong>Responsabilidade pelas despesas:</strong> o detentor do animal agressor é responsável por todos os danos causados e por todas as despesas relacionadas com o transporte e a manutenção dos animais envolvidos durante o período de quarentena ou de vigilância
+    <span class="ref">art. 14.º n.º 7 · Port. 264/2013</span>
+  </div>
+
+  <p class="nota">Imprimir: Ctrl+P → Guardar como PDF → A3 landscape · Página 2 de 2</p>
+</div><!-- /page 2 -->
+
+</body>
+</html>

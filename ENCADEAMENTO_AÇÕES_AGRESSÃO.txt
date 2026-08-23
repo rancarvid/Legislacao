@@ -1,0 +1,683 @@
+═══════════════════════════════════════════════════════════════════════════════
+  ENCADEAMENTO DE AÇÕES: AGRESSÃO DE CÃO A PESSOA + ANIMAL
+  À Luz de DL 315/2009 e Portaria 264/2013 (PNLVERAZ)
+═══════════════════════════════════════════════════════════════════════════════
+
+DATA: 19 de maio de 2026
+FOCO: Sequência completa (imediata + investigação + sanção)
+CENÁRIOS: A) Leve + identificado/vacinado | B) Grave + desconhecido/sem vacina
+FORMATO: Fluxogramas + Tabelas + Narrativa
+
+═══════════════════════════════════════════════════════════════════════════════
+0. FASE PRELIMINAR: O QUE DISPARA O PROCEDIMENTO
+═══════════════════════════════════════════════════════════════════════════════
+
+EVENTO: Um cão agride uma pessoa E um animal (simultaneamente ou em sequência)
+
+QUEM DETETA:
+  - Vítima (pessoa)
+  - Testemunhas
+  - Autoridades (GNR, PSP, polícia municipal)
+  - Médicos/urgências (vítima procura cuidados)
+  - Médicos veterinários
+
+OBRIGAÇÃO DE COMUNICAÇÃO:
+  Art. 14.º DL 315/2009: "As ofensas causadas por animal ao corpo ou à saúde
+  de pessoas de que tenham conhecimento médicos veterinários, autoridades
+  judiciais, administrativas, policiais ou unidades prestadoras de cuidados
+  de saúde SÃO IMEDIATAMENTE COMUNICADAS ao médico veterinário municipal"
+
+  Portaria 264/2013: Se há SUSPEITA de raiva, comunicação a médico veterinário
+  municipal para isolamento/avaliação
+
+═══════════════════════════════════════════════════════════════════════════════
+1. CENÁRIO A: OFENSAS LEVES + CÃO IDENTIFICADO E VACINADO
+═══════════════════════════════════════════════════════════════════════════════
+
+SITUAÇÃO:
+- Agressão com feridas pequenas/contusões (não requer internamento)
+- Cão identificado no SICAFE (microchip registado)
+- Detentor localizado
+- Boletim sanitário com vacinação antirrabica VÁLIDA
+- SEM sinais clínicos de raiva no cão
+- Animal também agredido tem feridas leves
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FLUXOGRAMA CENÁRIO A                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+FASE 1: IMEDIATA (0-24h)
+────────────────────────────────────────────────────────────────────────────────
+
+        [AGRESSÃO OCORRE]
+               ↓
+        [PESSOA FERIDA]
+               ↓
+    [Vítima / testemunha reporta]
+               ↓
+    [GNR/PSP/Polícia municipal chega]
+               ↓
+    [Tira identificação do cão (microchip)]
+               ↓
+    [Cão IDENTIFICADO ✓]
+               ↓
+    [Consulta SICAFE — cão tem registo]
+               ↓
+    [DETENTOR LOCALIZADO]
+               ↓
+    [Verifica boletim sanitário]
+               ↓
+    [Vacinação VÁLIDA ✓ + sem sinais raiva ✓]
+               ↓
+    [Cão NÃO É recolhido para isolamento raiva]
+       (Portaria 264/2013 — risco baixo)
+               ↓
+    [MAS: Cão PODE ser recolhido para avaliação agressão]
+       (DL 315/2009 Art. 14.º — "obrigatoriamente recolhido")
+               ↓
+    [RECOLHA A CENTRO OFICIAL]
+               ↓
+    [Médico veterinário municipal examina]
+       - Avalia se é "perigoso" ou "potencialmente perigoso"
+       - Regista no SICAFE: tipo de ofensa (leve/grave)
+       - Observação clínica de sinais comportamentais
+               ↓
+    [COMUNICAÇÃO AO DETENTOR]
+       - Junta de freguesia notifica detentor
+       - Prazo: 15 dias para apresentar documentação
+         (Art. 14.º, n.º 4 DL 315/2009)
+               ↓
+    [AVALIAÇÃO COMPORTAMENTAL do cão]
+       - Se ofensas leves: possível treino socialização/obediência
+       - Se comportamento agressivo confirmado: classificação como "perigoso"
+
+
+FASE 2: INVESTIGAÇÃO (dias 2-15)
+────────────────────────────────────────────────────────────────────────────────
+
+    [Detentor apresenta documentação]
+       ✓ Termo responsabilidade
+       ✓ Certificado registo criminal
+       ✓ Comprovativo seguro responsabilidade civil
+       ✓ Comprovativo esterilização (se aplicável)
+       ✓ Boletim sanitário
+       ✓ Comprovativo aprovação em formação
+               ↓
+    [Câmara municipal + médico veterinário municipal decidem]
+               ↓
+    ┌─ OPÇÃO 1: Ofensa "simples" confirmada ─────────────┐
+    │ (sem agressividade generalizada)                    │
+    │ → Cão entregue ao detentor                          │
+    │ → Obrigatório: treino de socialização/obediência    │
+    │ → Prazo: indicado pelo médico veterinário           │
+    │ → Acompanhamento: médico veterinário municipal      │
+    └────────────────────────────────────────────────────┘
+               ↓
+    ┌─ OPÇÃO 2: Comportamento agressivo confirmado ───────┐
+    │ → Cão classificado como "PERIGOSO"                  │
+    │ → SICAFE atualizado                                │
+    │ → Detentor precisa:                                │
+    │    * Formação obrigatória (educação cívica)         │
+    │    * Treino profissional (Art. 21º DL 315/2009)     │
+    │    * Renovação licença de detenção                 │
+    │    * Medidas segurança reforçadas (coleira, etc.)   │
+    └────────────────────────────────────────────────────┘
+               ↓
+    [VÍTIMA: Informada do resultado]
+       (Pode ser consultada; pode requerer ação criminal
+        se achar que crime intencional — Art. 32º DL 315/2009)
+
+
+FASE 3: SANÇÃO E SEGUIMENTO (dias 16+)
+────────────────────────────────────────────────────────────────────────────────
+
+    [Se contraordenação confirmada — Art. 38º DL 315/2009]
+       Possíveis infrações:
+       - Falta de treino (Art. 38º, alínea m)
+       - Falta de aprovação em formação (Art. 38º, alínea m)
+       - Falta de seguro de responsabilidade civil (Art. 38º, alínea b)
+       - Circulação sem meios de contenção (Art. 38º, alínea d)
+       - Vigilância insuficiente (Art. 38º, alínea r)
+               ↓
+    [DGAV: Instrui processo de contraordenação]
+       Multa: conforme RJCE (Regime Jurídico Contraordenações Económicas)
+               ↓
+    [Se CRIME tipificado — Arts. 32-33 DL 315/2009]
+       - Art. 33º: Negligência — até 2 anos ou 240 dias multa
+       - Ou Art. 32º: Incitamento intencional — até 3 anos
+               ↓
+    [MINISTÉRIO PÚBLICO: Investigação criminal]
+       (Se autoridades competentes remetem caso — Art. 35º)
+               ↓
+    [SEGUIMENTO: Treino e re-avaliação]
+       - Comprovativo de treino após 6-8 semanas
+       - Nova avaliação comportamental
+       - Se aprovado: cão liberto com restrições
+       - Se reprovado: decisão de eutanásia (Art. 15º)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+2. CENÁRIO B: OFENSAS GRAVES + CÃO DESCONHECIDO/SEM VACINA
+═══════════════════════════════════════════════════════════════════════════════
+
+SITUAÇÃO:
+- Agressão com feridas profundas, perdas de tecido
+- Pessoa requer internamento/sutura
+- Cão DESCONHECIDO (sem ID, vadio)
+  OU cão com ID MAS sem comprovativo de vacinação antirrabica
+- SEM informação sobre vacinação ou estado sanitário
+- Animal também agredido com lesões graves
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ FLUXOGRAMA CENÁRIO B                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+FASE 1: IMEDIATA (0-6h) — PROTOCOLO DE RAIVA
+────────────────────────────────────────────────────────────────────────────────
+
+        [AGRESSÃO GRAVE]
+               ↓
+        [PESSOA COM FERIDAS PROFUNDAS]
+               ↓
+    [Vítima procura urgências IMEDIATAMENTE]
+               ↓
+    [HOSPITAL: Procede a higienização de ferida]
+       - Lavagem com água + sabão 15 minutos
+       - Desinfetante (álcool 70%, ou clorexidina)
+       - Notifica autoridades da agressão
+       - Documenta: tipo ferida, local, hora, descrição cão
+               ↓
+    [GNR/PSP: Procura e captura do cão URGENTEMENTE]
+       Portaria 264/2013: Isolamento obrigatório de precaução
+               ↓
+    [Cão CAPTURADO]
+               ↓
+    ┌─ SE CÁPSULA DE MICROCHIP ──────┐
+    │ → Lê identificação             │
+    │ → Consulta SICAFE              │
+    │ → Localiza detentor            │
+    │ → Verifica vacinação           │
+    └────────────────────────────────┘
+               ↓
+    ┌─ SE SEM IDENTIFICAÇÃO ─────────┐
+    │ → Cão considerado "vadio"      │
+    │ → Risco raiva = MÁXIMO         │
+    │ → Protocolo de isolamento      │
+    │   obrigatório                  │
+    └────────────────────────────────┘
+               ↓
+    [RECOLHA IMEDIATA A CENTRO OFICIAL]
+       (Art. 14.º DL 315/2009 + Portaria 264/2013)
+       - Centro com capacidade de isolamento
+       - Separação de outros animais
+       - Registo completo (foto, comportamento, lesões)
+               ↓
+    [ISOLAMENTO OBRIGATÓRIO]
+       Portaria 264/2013, Art. (presunção raiva):
+       - MÍNIMO 10 dias (se cão vacinado anteriormente)
+       - MÍNIMO 15 dias (se cão NUNCA vacinado OU vacinação desconhecida)
+       - Observação diária de sinais clínicos
+       - Registo de comportamento alimentar, salivação, agressividade
+               ↓
+    [COMUNICAÇÕES URGENTES]
+       1. Médico veterinário municipal → centro isolamento
+       2. Câmara municipal → detentor (se identificado)
+       3. Autoridade de saúde → setor sanitário humano
+          (vítima pode precisar profilaxia pós-exposição — PEP)
+       4. DGAV → registo de incidente raiva
+
+
+FASE 2A: SE CÃO IDENTIFICADO + COM VACINAÇÃO VÁLIDA
+────────────────────────────────────────────────────────────────────────────────
+
+    [Boletim sanitário consultado — VACINAÇÃO VÁLIDA]
+               ↓
+    [RISCO RAIVA REDUZIDO, MAS ISOLAMENTO CONTINUA]
+       Portaria 264/2013: Mesmo com vacinação, isolamento de precaução
+               ↓
+    [Dias 1-10: Observação isolamento]
+       - Se SEM sinais raiva: liberto após dia 10
+       - Se COM sinais: eutanásia imediata (Art. 15º DL 315/2009)
+               ↓
+    [Paralelamente: Investigação agressão (DL 315/2009)]
+       - Detentor notificado
+       - Documentação recolhida
+       - Classificação como "perigoso" confirmada
+       - Decisão sobre permanente controlo vs eutanásia
+
+
+FASE 2B: SE CÃO DESCONHECIDO OU SEM VACINAÇÃO VÁLIDA
+────────────────────────────────────────────────────────────────────────────────
+
+    [Isolamento MÁXIMO: 15 dias obrigatório]
+       Portaria 264/2013: Presunção de risco raiva
+               ↓
+    [Dias 1-15: Observação rigorosa]
+       Sinais a monitorizar (Portaria 264/2013):
+       - Sialose (salivação excessiva)
+       - Dificuldade em engolir
+       - Fotofobia (medo de luz)
+       - Hidrofobia (medo de água)
+       - Agressividade anormal / docilidade excessiva
+       - Paralisia (início geralmente membros posteriores)
+       - Desorientação
+               ↓
+    ┌─ RESULTADO 1: SEM SINAIS ──────────────────┐
+    │ (Dias 1-15: observação negativa)            │
+    │                                             │
+    │ → Cão considerado "livre de raiva"          │
+    │ → Liberto após dia 15                       │
+    │   (se detentor identificado) OU              │
+    │   encaminhado para abrigo (se vadio)        │
+    │                                             │
+    │ → MAS: Continua investigação de agressão    │
+    │   (DL 315/2009)                             │
+    └─────────────────────────────────────────────┘
+               ↓
+    ┌─ RESULTADO 2: COM SINAIS DE RAIVA ────────┐
+    │ (Qualquer altura durante dias 1-15)         │
+    │                                             │
+    │ → EUTANÁSIA IMEDIATA obrigatória             │
+    │   (Art. 15º DL 315/2009)                    │
+    │ → Método sem dor                            │
+    │ → Corpo enviado para laboratório p/ confirmar│
+    │   (Teste de imunofluorescência indireta      │
+    │    — IFI — em tecido cerebral)               │
+    │                                             │
+    │ → NOTIFICAÇÃO à vítima                      │
+    │ → Avaliação de risco para vítima e contactos│
+    │ → Se raiva CONFIRMADA:                      │
+    │    * Oferta de profilaxia pós-exposição     │
+    │    * Seguimento clínico                     │
+    └─────────────────────────────────────────────┘
+
+
+FASE 3: INVESTIGAÇÃO AGRESSÃO (paralela ao isolamento raiva)
+────────────────────────────────────────────────────────────────────────────────
+
+    [Enquanto cão está isolado: investigação DL 315/2009]
+               ↓
+    [Classificação de ofensa]
+       Art. 15º DL 315/2009:
+       - Ofensas GRAVES à integridade física
+         → Eutanásia obrigatória (independentemente de raiva)
+               ↓
+    [OFENSAS GRAVES = eutanásia dupla motivo]
+       1. Se raiva confirmada: eutanásia por raiva
+       2. Se ofensa grave: eutanásia por agressão (Art. 15º)
+
+
+FASE 4: SEGUIMENTO (após isolamento raiva + decisão agressão)
+────────────────────────────────────────────────────────────────────────────────
+
+    ┌─ SE EUTANÁSIA (raiva OU ofensa grave) ──┐
+    │ → Processo termina                       │
+    │ → Corpo incinerado (protocolo raiva)     │
+    │ → Detentor notificado                    │
+    │ → Sem direito a indenização (Art. 15º)   │
+    │ → Se crime intencional: referência a MP  │
+    └──────────────────────────────────────────┘
+               ↓
+    ┌─ SE LIBERTADO (após raiva negativa) ───┐
+    │ → Continua investigação agressão        │
+    │ → Se comportamento agressivo confirmado:│
+    │    * Classificação como "PERIGOSO"      │
+    │    * Obrigação treino + formação        │
+    │    * Restrições permanentes             │
+    │    * Fiscalização intensiva             │
+    │ → Detentor pode sofrer contraordenação  │
+    │   (Art. 38º DL 315/2009)                │
+    │ → Possibilidade de crime (Art. 33º)     │
+    └──────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+3. TABELA COMPARATIVA: DL 315/2009 vs PORTARIA 264/2013
+═══════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────┬──────────────────────────┬──────────────────────────┐
+│ ASPECTO              │ DL 315/2009              │ PORTARIA 264/2013        │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ FOCO PRINCIPAL       │ AGRESSÃO + PERIGOSIDADE  │ RAIVA (zoonose)          │
+│                      │ do cão                   │ & Outras zoonoses        │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ RECOLHA OBRIGATÓRIA  │ Art. 14º: "Obrigatória  │ Protocolo de raiva:      │
+│                      │ para centro recolha      │ Isolamento obrigatório   │
+│                      │ oficial, a expensas do   │ mesmo se vacinado        │
+│                      │ detentor"                │ (presunção raiva)        │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ PRAZOS               │ Art. 14º: Câmara         │ 10 dias (vacinado)       │
+│ ISOLAMENTO           │ municipal comunica à     │ OU                       │
+│                      │ junta dentro 8 dias      │ 15 dias (nunca vacinado) │
+│                      │                          │ Observação diária        │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ AVALIAÇÃO            │ Comportamento agressivo  │ Sinais clínicos de raiva:│
+│                      │ (capacidade ofender)     │ Sialose, agressividade   │
+│                      │                          │ anormal, paralisia, etc. │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ EUTANÁSIA            │ Art. 15º: Se ofensas     │ IMEDIATA se sinais raiva │
+│ INDICAÇÃO            │ graves ou agressividade  │ detectados               │
+│                      │ confirmada; com avaliação│ (Portaria 264/2013)      │
+│                      │ caso a caso              │                          │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ EUTANÁSIA MÉTODO     │ Art. 15º: "Sem dor e     │ Idem: método sem dor     │
+│                      │ sofrimentos desnecessários│ & sofrimento             │
+│                      │"                         │                          │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ CORPO APÓS EUTANÁSIA │ Não especificado;        │ Incineração (protocolo   │
+│                      │ detentor pode reclamar   │ raiva obrigatório)       │
+│                      │                          │ Laboratório: teste IFI   │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ AUTORIDADE DECISÃO   │ Médico veterinário       │ Médico veterinário       │
+│                      │ municipal (DL 315/2009   │ municipal + protocolo    │
+│                      │ Art. 15º)                │ DGAV (Portaria 264)      │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ NOTIFICAÇÃO VÍTIMA   │ Indiretamente via junta  │ URGENTE: hospital notifica│
+│                      │ de freguesia             │ autoridade sanitária     │
+│                      │                          │ & veterinária            │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ PROFILAXIA RAIVA     │ Não aplica               │ Profilaxia pós-exposição │
+│ (VÍTIMA)             │                          │ (PEP) oferta obrigatória │
+│                      │                          │ se raiva suspeita        │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ SEGUIMENTO           │ Se cão libertado: treino │ Se cão libertado: registo│
+│                      │ socialização/obediência  │ sanitário + vacinação    │
+│                      │ (Art. 21º DL 315)        │ obrigatória futura       │
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ COMUNICAÇÕES URGENTES│ 1. Médico veterinário    │ 1. Médico veterinário    │
+│                      │    municipal             │    municipal             │
+│                      │ 2. Câmara municipal      │ 2. DGAV (incidente raiva)│
+│                      │ 3. Junta de freguesia    │ 3. Autoridade sanitária  │
+│                      │                          │ 4. Laboratório (se raiva)│
+├──────────────────────┼──────────────────────────┼──────────────────────────┤
+│ CRIMES APLICÁVEIS    │ Art. 32º: Incitamento    │ Comunicação omissão pode │
+│                      │ Art. 33º: Negligência    │ ser crime público        │
+│                      │ Art. 33-A: Álcool/droga  │ (saúde pública)          │
+└──────────────────────┴──────────────────────────┴──────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+4. NARRATIVA: CÃO AGRIDE PESSOA E ANIMAL — PASSO A PASSO
+═══════════════════════════════════════════════════════════════════════════════
+
+HORA 0: AGRESSÃO
+────────────────────────────────────────────────────────────────────────────────
+13:45 — Cão agride pessoa (ferida braço) + animal (gato/cão ferido).
+        Vizinho testemunha. Cão desconhecido (possível vadio).
+
+AÇÃO IMEDIATA (primeiras horas):
+
+1. PESSOA AGREDIDA
+   └─ Vai urgências
+   └─ Hospital: higienização ferida (água + sabão 15 min)
+   └─ Desinfetante
+   └─ Documentação: tipo ferida, tamanho, localização, hora
+   └─ Hospital notifica polícia / autoridade veterinária
+
+2. ANIMAL AGREDIDO
+   └─ Se ferido:
+      * Avaliador por veterinário (se possível urgências)
+      * Ou encaminhado para abrigo/clínica
+
+3. AUTORIDADES (GNR/PSP/Polícia Municipal)
+   └─ Chamadas para local
+   └─ Tentam captura do cão URGENTEMENTE
+   └─ Se encontrado: verifica microchip
+   └─ Notificam médico veterinário municipal
+
+HORA 6-24: RECOLHA E ISOLAMENTO RAIVA
+────────────────────────────────────────────────────────────────────────────────
+
+[Se cão capturado]
+
+4. CENTRO OFICIAL DE RECOLHA (Canil/Gatil municipal)
+   └─ Cão colocado em isolamento
+   └─ Separado de outros animais
+   └─ Exame clínico: busca sinais raiva
+   └─ Registo foto + comportamento
+   └─ Identificação: se microchip → SICAFE
+                    se sem ID → consignado como "vadio"
+
+5. MÉDICO VETERINÁRIO MUNICIPAL
+   └─ Recebe aviso agressão
+   └─ Avalia cão em isolamento
+   └─ Verifica vacinação (se disponível boletim)
+   └─ Inicia protocolo isolamento:
+      * Se vacinado + sem sinais: 10 dias
+      * Se sem vacinação/desconhecido: 15 dias
+   └─ Comunicações urgentes:
+      * Câmara municipal
+      * DGAV (incidente raiva)
+      * Autoridade de saúde (vítima pode precisar PEP)
+
+6. DETENTOR (se identificado)
+   └─ Notificado por junta de freguesia
+   └─ Informado de recolha obrigatória
+   └─ Solicitação documentação:
+      * Certificado vacinação
+      * Prova seguro RC
+      * Boletim sanitário
+   └─ Prazo: 15 dias para apresentar documentação
+
+DIA 1-10 (vacinado) OU DIA 1-15 (não vacinado): ISOLAMENTO OBSERVAÇÃO
+────────────────────────────────────────────────────────────────────────────────
+
+7. OBSERVAÇÃO DIÁRIA
+   └─ Médico veterinário visita centro (1x por dia, mínimo)
+   └─ Registo comportamento:
+      * Ingestão alimento/água
+      * Salivação
+      * Agressividade
+      * Paralisia
+      * Desorientação
+   └─ Se sinais normais: processo continua 10/15 dias
+
+8. [CENÁRIO ALTERNATIVO: Sinais raiva detectados (DIA 3, 5, 8, etc.)]
+   └─ EUTANÁSIA IMEDIATA (Art. 15º DL 315/2009)
+   └─ Método: injeção letal (sem dor)
+   └─ Corpo: incineração (protocolo raiva)
+   └─ Laboratório: amostra cérebro para IFI
+   └─ Resultado: Confirmação/exclusão raiva
+   └─ Notificação: Detentor, vítima, autoridades
+   └─ Vítima: Oferta de PEP imediata
+
+DIA 10/15: FIM ISOLAMENTO RAIVA
+────────────────────────────────────────────────────────────────────────────────
+
+9. [SE SEM SINAIS RAIVA]
+   └─ Cão "livre de raiva"
+   └─ Liberto de isolamento (Portaria 264/2013)
+   └─ MAS: Prossegue investigação AGRESSÃO (DL 315/2009)
+
+DIA 11-30: INVESTIGAÇÃO AGRESSÃO
+────────────────────────────────────────────────────────────────────────────────
+
+10. AVALIAÇÃO COMPORTAMENTAL
+    └─ Médico veterinário municipal avalia:
+       * Agressividade geral
+       * Resposta a estimulação
+       * Reatividade a pessoas/animais
+    └─ Classificação:
+       ✓ Comportamento normal (um incidente isolado)
+       ✓ Comportamento agressivo (padrão comportamental)
+
+11. [CENÁRIO A: Ofensa simples, sem agressividade generalizada]
+    └─ Cão REENTREGUE ao detentor
+    └─ Obrigação: Treino socialização/obediência (Art. 21º)
+    └─ Prazo: estabelecido pelo médico veterinário (6-8 semanas)
+    └─ Comprovativo: Documento de treino após conclusão
+    └─ Vigilância: Médico veterinário acompanha
+
+12. [CENÁRIO B: Ofensa grave OU agressividade confirmada]
+    └─ EUTANÁSIA OBRIGATÓRIA (Art. 15º)
+    └─ Método: Sem dor
+    └─ Justificação: Risco grave para segurança pública
+    └─ Detentor: Sem direito a indemnização (Art. 15º)
+    └─ Possível crime (Art. 33º — negligência):
+       * Se proprietário não exerceu vigilância adequada
+
+DIA 31+: CONTRAORDENAÇÃO (SE APLICÁVEL)
+────────────────────────────────────────────────────────────────────────────────
+
+13. [SE PROCESSO CONTRAORDENACIONAL]
+    └─ Possíveis infrações (Art. 38º DL 315/2009):
+       * Falta seguro responsabilidade civil (alínea b)
+       * Falta treino obrigatório (alínea m)
+       * Falta aprovação formação (alínea m)
+       * Circulação sem meios contenção (alínea d)
+       * Vigilância insuficiente (alínea r)
+    └─ DGAV: Instrução processo
+    └─ Coima: Conforme RJCE
+    └─ Decisão: Diretor-Geral DGAV
+
+14. [SE PROCESSO CRIMINAL]
+    └─ Autoridades competentes enviam a Ministério Público
+    └─ Possíveis crimes:
+       * Art. 32º: Incitamento intencional a ataque (até 3 anos)
+       * Art. 33º: Negligência (até 2 anos ou 240 dias multa)
+    └─ Tribunal: Julgamento e eventual condenação
+
+═══════════════════════════════════════════════════════════════════════════════
+5. DIAGRAMA SÍNTESE: DECISÕES-CHAVE
+═══════════════════════════════════════════════════════════════════════════════
+
+                        ┌─ AGRESSÃO ─┐
+                        │ (pessoa+animal)
+                        └──────┬──────┘
+                               │
+                    ┌──────────┴──────────┐
+                    │                     │
+              CÃO IDENTIFICADO     CÃO DESCONHECIDO
+                    │                     │
+          ┌─────────┴──────────┐          │
+          │                    │          │
+       VACINADO            SEM VACINA     │
+       (válida)            ou desconhecido │
+          │                    │          │
+       10 DIAS              15 DIAS    15 DIAS
+      ISOLAMENTO          ISOLAMENTO  ISOLAMENTO
+          │                    │          │
+       ┌──┴──┐            ┌────┴─────┐   │
+       │     │            │          │   │
+     OK   RAIVA         OK  RAIVA    │   │
+     │     │            │    │       │   │
+     ▼     ▼            ▼    ▼       ▼   ▼
+  INVST  EUTAN      INVST  EUTAN   INVST EUTAN
+  AGRES  IMDT       AGRES  IMDT    AGRES IMDT
+     │              │              │
+  ┌──┴──┐        ┌──┴──┐       ┌──┴──┐
+  │     │        │     │       │     │
+ LEVE GRAVE     LEVE GRAVE    LEVE GRAVE
+  │     │        │     │       │     │
+  ▼     ▼        ▼     ▼       ▼     ▼
+TREINO EUTAN   TREINO EUTAN  TREINO EUTAN
+
+LEGENDA:
+  INVST AGRES = Investigação agressão (DL 315/2009)
+  EUTAN = Eutanásia
+  IMDT = Imediata
+  TREINO = Treino socialização/obediência obrigatório
+
+═══════════════════════════════════════════════════════════════════════════════
+6. RESUMO DE RESPONSABILIDADES (QUEM FAZ O QUÊ)
+═══════════════════════════════════════════════════════════════════════════════
+
+┌──────────────────────┬────────────────────────────────────────────────────┐
+│ ENTIDADE             │ RESPONSABILIDADE                                   │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ HOSPITAL /           │ ✓ Higienização ferida (Portaria 264/2013)         │
+│ URGÊNCIAS            │ ✓ Notificação autoridade veterinária               │
+│                      │ ✓ Aconselhamento sobre PEP raiva se suspeita      │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ GNR / PSP /          │ ✓ Captura do cão URGENTE                           │
+│ POLÍCIA MUNICIPAL    │ ✓ Verificação microchip                            │
+│                      │ ✓ Transporte para centro isolamento                │
+│                      │ ✓ Recolha informação local (testemunhas)           │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ MÉDICO VETERINÁRIO   │ ✓ Avaliação clínica cão (raiva + comportamento)    │
+│ MUNICIPAL            │ ✓ Decisão isolamento (10/15 dias)                  │
+│ (AUTORIDADE +        │ ✓ Decisão eutanásia (se sinais raiva)              │
+│  FISCALIZADOR)       │ ✓ Avaliação agressão (ofensa simples vs grave)    │
+│                      │ ✓ Classificação cão (perigoso? potencialmente?)    │
+│                      │ ✓ Decisão permanente (eutanásia vs liberdade+treino)
+│                      │ ✓ Comunicações urgentes                            │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ CENTRO RECOLHA       │ ✓ Isolamento seguro do cão                         │
+│ OFICIAL              │ ✓ Observação diária (registo)                      │
+│                      │ ✓ Alimentação/água                                 │
+│                      │ ✓ Limpeza/higiene                                  │
+│                      │ ✓ Relatório clínico ao vet. municipal              │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ JUNTA DE FREGUESIA   │ ✓ Notificação ao detentor (se identificado)        │
+│                      │ ✓ Recolha documentação (formulário Art. 5º)        │
+│                      │ ✓ Atualização SICAFE (classificação)               │
+│                      │ ✓ Comunicação decisão final ao detentor            │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ CÂMARA MUNICIPAL     │ ✓ Coordenação entre entidades                      │
+│                      │ ✓ Financiamento centro recolha (custos detentor)  │
+│                      │ ✓ Fiscalização treino (se libertado com obrig.)    │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ DGAV                 │ ✓ Informação incidente raiva (Portaria 264/2013)   │
+│ (DIREÇÃO GERAL)      │ ✓ Instrução processo contraordenação (se aplicável)│
+│                      │ ✓ Aplicação coima                                  │
+│                      │ ✓ Registo nacional incidentes                      │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ MINISTÉRIO PÚBLICO   │ ✓ Investigação criminal (se crime tipificado)      │
+│ (se crime)           │ ✓ Ação penal contra detentor                       │
+├──────────────────────┼────────────────────────────────────────────────────┤
+│ TRIBUNAL             │ ✓ Julgamento (crime + contraordenação concorrentes)│
+│ (se crime            │ ✓ Sentença condenatória                            │
+│  + contraordenação)  │ ✓ Aplicação sanções acessórias (Art. 30-A DL 315) │
+└──────────────────────┴────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+7. PONTOS CRÍTICOS E RISCOS
+═══════════════════════════════════════════════════════════════════════════════
+
+⚠️ RISCO 1: RAIVA NÃO DIAGNOSTICADA
+   └─ Cão libertado após isolamento sem raiva confirmada
+   └─ Mas laboratorio mostra resultado positivo após eutanásia
+   └─ Vítima pode ter sido exposta a risco real
+   └─ PROTEÇÃO: PEP (profilaxia) proactiva se qualquer dúvida
+
+⚠️ RISCO 2: OMISSÃO DE COMUNICAÇÃO
+   └─ Hospital não notifica autoridade veterinária
+   └─ Cão circula sem isolamento
+   └─ Risco saúde pública
+   └─ OBRIGAÇÃO: Art. 14º DL 315/2009 + Portaria 264/2013
+
+⚠️ RISCO 3: EUTANÁSIA POR ERRO
+   └─ Cão eutanasiado por suspeita raiva que era falso
+   └─ SEM confirmação laboratorial
+   └─ PROTEÇÃO: Biópsia sempre (teste IFI)
+
+⚠️ RISCO 4: DETENTOR DESAPARECE
+   └─ Cão liberado após isolamento SEM detentor identificado
+   └─ Risco agressão futura (se perigoso)
+   └─ PROTEÇÃO: Se sem detentor, permanente encerramento ou eutanásia
+
+⚠️ RISCO 5: INTERRUPÇÃO ISOLAMENTO
+   └─ Centro cheio; cão removido antes 10/15 dias
+   └─ Risco incubação raiva
+   └─ PROTEÇÃO: Lei obriga 10/15 dias completos
+
+═══════════════════════════════════════════════════════════════════════════════
+CONCLUSÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+O encadeamento de ações é RIGOROSO porque envolve:
+1. Segurança pública (agressão)
+2. Saúde pública (raiva — zoonose mortal)
+3. Bem-estar animal (eutanásia humanitária se necessário)
+4. Direitos do detentor (devido process, documentação)
+
+Dois regimes SOBREPOSTOS:
+  • DL 315/2009: Foco em AGRESSÃO e risco futuro
+  • Portaria 264/2013: Foco em RAIVA e zoonoses
+
+PRIORIDADE ABSOLUTA:
+  1. Isolamento raiva (Portaria 264/2013)
+  2. Investigação agressão (DL 315/2009)
+  3. Decisão permanente (treino vs eutanásia)
+  4. Sanção detentor (contraordenação/crime)
+
+═══════════════════════════════════════════════════════════════════════════════

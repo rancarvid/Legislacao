@@ -1,0 +1,64 @@
+EXTRAÇÃO DA ESTRUTURA DO REGULAMENTO 2023/0447 - RESUMO EXECUTIVO
+=================================================================
+
+TAREFA CONCLUÍDA: 6 de Abril de 2026
+
+O QUE FOI FEITO:
+- Extraído a estrutura hierárquica completa do Regulamento 2023/0447 (versão portuguesa)
+- De: Capítulo II até Anexo III (inclusive)
+- Formato: CSV (para Excel/análise) + Word (para documentação)
+- Indentação preservada para mostrar a hierarquia
+
+FICHEIROS CRIADOS:
+1. regulamento_estrutura_completa.csv (51 KB) - USE ESTE PARA ANÁLISE
+2. regulamento_estrutura_completa.docx (51 KB) - USE ESTE PARA DOCUMENTAÇÃO
+3. Documentação e guias de uso
+
+QUANTIDADE DE ELEMENTOS EXTRAÍDOS:
+- Capítulos: 6 (II, III, IV, V, VI, VII)
+- Anexos: 3 (I, II, III)
+- Artigos: 29 (Art. 5 até Art. 33)
+- Números: 99 (os "1.", "2.", "3.", etc. dentro de cada artigo)
+- Alíneas: 115 (as "a)", "b)", "c)", etc.)
+- Sub-alíneas: 13 (as "i)", "ii)", "iii)", etc.)
+TOTAL: 265 elementos estruturados
+
+ESTRUTURA DE INDENTAÇÃO:
+Artigo 6.º — Princípios gerais de bem‑estar
+    a) Os cães e os gatos recebem água e alimentos...
+    b) Os cães e os gatos são detidos num ambiente...
+    [etc.]
+
+Artigo 8.º — Obrigações em matéria de estratégia de reprodução
+  1. Os operadores de estabelecimentos de criação asseguram...
+    a) As características dos genótipos...
+      i) [texto da sub-alínea]
+    b) As características de conformação extremas...
+  2. Os operadores de estabelecimentos de criação não podem...
+    a) Reprodução entre progenitores e descendência...
+    b) Reprodução para produção de híbridos.
+
+VALIDAÇÃO:
+✓ Todos os artigos (5-33) presentes
+✓ Hierarquia preservada
+✓ Texto verbatim (sem alterações)
+✓ Caracteres especiais mantidos
+✓ Artigos-chave testados (6, 8, 20, 21, 28)
+
+COMO USAR:
+1. Para análise comparativa → Abrir regulamento_estrutura_completa.csv em Excel
+2. Para documentação → Abrir regulamento_estrutura_completa.docx em Word
+3. Para programação → Usar pandas/Python com o CSV
+
+PRÓXIMOS PASSOS:
+1. Comparar com legislação nacional vigente (@legislacao)
+2. Adicionar colunas para propostas @codigo e @rgbeac
+3. Identificar divergências
+4. Preparar relatório de impacto
+
+Para mais detalhes, ver:
+- EXTRACAO_SUMARIO.md (metodologia completa)
+- LEIAME_ESTRUTURA.txt (instruções de uso)
+- INDEX_EXTRACAO.txt (índice de ficheiros)
+
+=================================================================
