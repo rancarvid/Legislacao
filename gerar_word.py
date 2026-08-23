@@ -264,7 +264,7 @@ def add_page_title(doc):
     p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p2.paragraph_format.space_before = Pt(2)
     p2.paragraph_format.space_after = Pt(14)
-    add_run_styled(p2, "Regulamento 2023/0447 — Cães e Gatos",
+    add_run_styled(p2, "Regulamento (UE) 2026/1818 (17.06.2026) — Cães e Gatos",
                    bold=False, font_size=11, color_hex="7EC8E3")
     doc.add_paragraph()  # espaço
 
