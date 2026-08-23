@@ -25,7 +25,7 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 | Código Interno | Ficheiro | Descrição |
 |---|---|---|
-| `@rgac` ⭐ | `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Ficheiro canónico identificado pelo sufixo **"MAIS ATUAL"** no nome. Ver nota de versão abaixo. |
+| `@rgac` ⭐ | `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Versão DAJA V1, junho 2026. Ficheiro canónico mais recente do projeto. |
 | `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 (proposta de consolidação original; incorporada em `@rgac`) |
 | `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025; incorporada em `@rgac`) |
 | `@regulamento` (EN) | `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Regulamento Europeu 2023/0447 — **versão EN de referência** (após reunião, alterações aceites) |
@@ -121,9 +121,9 @@ Regulamento 2023/0447, de aplicação direta nos Estados-Membros. Ponto de refer
 
 ### e) Diploma final consolidado — `@rgac`
 
-**`@rgac`** — `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx`
+**`@rgac`** — `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx`
 
-Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa.
+Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa. A versão anterior (`Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx`) fica como arquivo.
 
 **Convenção de versão**: O ficheiro canónico é sempre o que contém o sufixo **"MAIS ATUAL"** no nome. Versões anteriores são arquivadas com sufixo numérico — e.g., `(1)`, `(2)`. O utilizador pode fazer upload de versões mais recentes; o ficheiro "MAIS ATUAL" será sempre substituído pelo mais recente. Nunca usar versões arquivadas como referência primária.
 
