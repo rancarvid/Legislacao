@@ -1437,7 +1437,7 @@ def criar_html(path, artigos):
 
   /* FORMATAÇÃO DE TEXTO LEGAL */
   .leg-block + .leg-block {{ margin-top: 7px; }}
-  .leg-p {{ margin: 0; line-height: 1.65; text-align: justify !important; }}
+  .leg-p {{ margin: 0; line-height: 1.65; text-align: justify !important; text-justify: auto; word-spacing: normal; }}
   p {{ text-align: justify !important; }}
   .leg-alinea {{
     margin: 2px 0; line-height: 1.6;
