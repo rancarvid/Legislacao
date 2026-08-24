@@ -1555,7 +1555,7 @@ def criar_html(path, artigos):
     font-size: .7rem; font-weight: 400; opacity: .7;
     text-transform: none; letter-spacing: 0;
   }}
-  .card-body {{ padding: 14px 16px; font-size: .88rem; line-height: 1.65; }}
+  .card-body {{ padding: 14px 16px; font-size: .88rem; line-height: 1.65; text-align: justify !important; }}
   .card-ref {{ font-size: .75rem; font-weight: 700; margin-bottom: 10px; opacity: .75; }}
 
   .card.reg .card-header {{ background: var(--reg); }}
