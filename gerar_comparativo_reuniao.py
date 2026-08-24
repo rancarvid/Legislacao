@@ -1437,10 +1437,12 @@ def criar_html(path, artigos):
 
   /* FORMATAÇÃO DE TEXTO LEGAL */
   .leg-block + .leg-block {{ margin-top: 7px; }}
-  .leg-p {{ margin: 0; line-height: 1.65; text-align: justify; }}
+  .leg-p {{ margin: 0; line-height: 1.65; text-align: justify !important; }}
+  p {{ text-align: justify !important; }}
   .leg-alinea {{
     margin: 2px 0; line-height: 1.6;
     padding-left: 1.8em; text-indent: -1.8em;
+    text-align: justify !important;
   }}
   .leg-sub {{
     margin: 2px 0; line-height: 1.55;
