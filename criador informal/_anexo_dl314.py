@@ -110,6 +110,68 @@ def construir(doc):
          'circunscrita à fracção autónoma, mas a direção da intervenção é inequívoca e vale como elemento '
          'interpretativo quanto à relação entre os dois regimes.')
 
+    h3(doc, 'Alcance exato da exceção')
+    para(doc,
+         'Conjugada com a al. a) do n.º 1 do artigo 3.º, que sujeita a mera comunicação prévia os alojamentos '
+         'para hospedagem com ou sem fins lucrativos, a exceção produz o seguinte resultado.')
+    tabela(doc,
+           ['Situação', 'Qualificação', 'Título de acesso'],
+           [
+            ['Animais detidos sem intuito de rendimento em fracção autónoma',
+             'Excluída da hospedagem sem fins lucrativos pela al. p)',
+             'Nenhum. Rege o regulamento de condomínio e, em caso de excesso, a remoção municipal do n.º 5 do '
+             'artigo 3.º do Decreto-Lei n.º 314/2003'],
+            ['Alojamento sem intuito de rendimento explorado fora de fracção autónoma, designadamente abrigo '
+             'de associação',
+             'Hospedagem sem fins lucrativos',
+             'Mera comunicação prévia'],
+            ['Alojamento para reprodução, criação, manutenção ou venda com interesse comercial ou lucrativo, '
+             'em qualquer tipo de prédio, incluindo fracção autónoma',
+             'Hospedagem com fins lucrativos, al. q), **sem qualquer exceção**',
+             'Mera comunicação prévia ou permissão administrativa'],
+           ],
+           [Cm(5.0), Cm(5.4), Cm(6.2)])
+
+    h3(doc, 'Argumento a contrario: a alínea q) nunca foi excecionada')
+    para(doc,
+         'A alínea q) define a hospedagem com fins lucrativos como o alojamento para reprodução, criação, '
+         'manutenção e venda de animais de companhia. É a norma que qualifica o estabelecimento de criação. '
+         'Nunca conteve, em nenhuma das dez versões do diploma entre 2001 e a redação atual, qualquer remissão '
+         'para o regime da raiva ou para os limites de detenção.')
+    para(doc,
+         'O contraste é decisivo. No mesmo ato em que criou os limites por fogo, o legislador introduziu a '
+         'exceção na alínea p) e não a introduziu na alínea q). Soube excecionar quando quis excecionar. Se '
+         'tivesse pretendido que os limites de detenção do Decreto-Lei n.º 314/2003 condicionassem os '
+         'alojamentos de reprodução e criação, teria feito na alínea q) o que fez na alínea p). A ausência é '
+         'deliberada e opõe-se à tese de que aqueles limites valem como teto de lotação dos estabelecimentos.')
+
+    h3(doc, 'Defeitos de redação da remissão')
+    para(doc,
+         'A remissão é imperfeita, em três planos que importa distinguir, porque nenhum deles afeta a '
+         'conclusão anterior.')
+    numlist(doc, [
+        '**Designação incorreta do diploma remetido.** A alínea p) refere o «Plano Nacional de Luta e '
+        'Vigilância da Raiva Animal e outras Zoonoses». A designação legal, fixada no artigo 1.º tanto do '
+        'Decreto-Lei n.º 91/2001 como do Decreto-Lei n.º 314/2003, é «Programa Nacional de Luta e Vigilância '
+        'Epidemiológica da Raiva Animal e Outras Zoonoses». Erram o substantivo e omite-se o qualificativo. '
+        'É lapso objetivo, e subsiste desde 2003.',
+
+        '**Remissão indireta.** O n.º 3 do artigo 3.º não define uma categoria de alojamento: é norma '
+        'habilitante do regulamento de condomínio. As fracções autónomas aparecem nele como cenário de '
+        'aplicação, não como objeto regulado. A remissão capta o referente pretendido por acidente da redação '
+        'e não por técnica legislativa. A formulação correta seria excecionar diretamente «as fracções '
+        'autónomas em regime de propriedade horizontal».',
+
+        '**Incompletude.** A exceção cobre apenas a fracção autónoma. A detenção doméstica em moradia, em '
+        'prédio rústico ou em prédio misto fica formalmente fora dela. Se o propósito era subtrair a detenção '
+        'doméstica ao conceito de alojamento, a exceção é mais estreita do que o seu fim.',
+    ])
+    para(doc,
+         'Não há, em contrapartida, erro no número remetido. O n.º 3 é o único do artigo 3.º onde figura um '
+         'substantivo feminino plural, «fracções autónomas», com o qual concorda a expressão «das referidas» '
+         'usada na alínea p). A concordância gramatical confirma que o legislador visou aquele número e não '
+         'outro. Os lapsos de designação e de técnica não permitem, por si, concluir por lapso de numeração.')
+
     h1(doc, '4.', 'Argumento do critério de aplicação')
     para(doc,
          'Os dois regimes acionam-se por factos distintos e logicamente independentes. O Decreto-Lei n.º '
@@ -280,10 +342,13 @@ def construir(doc):
         'Explicitar no futuro regime que os limites de detenção previstos na legislação sanitária não '
         'constituem limiar de capacidade dos estabelecimentos, cuja lotação é declarada no título de acesso e '
         'aferida pelos parâmetros técnicos aplicáveis.',
-        'Ponderar o alargamento da exceção da al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, hoje '
-        'circunscrita às fracções autónomas em regime de propriedade horizontal, a toda a detenção doméstica '
-        'abrangida pelo artigo 3.º do Decreto-Lei n.º 314/2003, eliminando a assimetria entre quem detém '
-        'animais em apartamento e quem os detém em moradia.',
+        'Reformular a exceção da al. p) do artigo 2.º do Decreto-Lei n.º 276/2001. Deve excecionar '
+        'diretamente a detenção doméstica, sem remissão, corrigindo simultaneamente a designação do diploma '
+        'remetido, hoje incorreta, e a assimetria entre quem detém animais em fracção autónoma e quem os '
+        'detém em moradia ou em prédio rústico.',
+
+        'Manter a alínea q), relativa ao alojamento para reprodução, criação, manutenção e venda, sem qualquer '
+        'exceção fundada em limites de detenção, em linha com a opção seguida desde 2001.',
         'Assegurar que a definição nacional de estabelecimento de criação acompanha o Regulamento quanto à '
         'inclusão das casas particulares, afastando qualquer relevância da classificação predial.',
     ])
