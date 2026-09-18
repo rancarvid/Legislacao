@@ -1,4 +1,4 @@
-# CHECKLIST — Auditoria de Correspondências do Regulamento 2023/0447
+# CHECKLIST — Auditoria de Correspondências do Regulamento (UE) 2026/1818
 
 **Data:** 6 de abril de 2026  
 **Status Final:** ✅ **APROVADO — ZERO ERROS**
@@ -141,7 +141,7 @@ O script `gerar_comparativo_reuniao.py` contém correspondências precisas e bem
 
 **Status:** ✅ APROVADO PARA UTILIZAÇÃO EM PRODUÇÃO
 
-**Recomendação:** O script pode ser utilizado com confiança total para gerar análises comparativas (Excel, Word, HTML) do Regulamento 2023/0447 contra a legislação nacional.
+**Recomendação:** O script pode ser utilizado com confiança total para gerar análises comparativas (Excel, Word, HTML) do Regulamento (UE) 2026/1818 contra a legislação nacional.
 
 ---
 

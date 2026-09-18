@@ -1,4 +1,4 @@
-# ÍNDICE — Auditoria de Correspondências do Regulamento 2023/0447
+# ÍNDICE — Auditoria de Correspondências do Regulamento (UE) 2026/1818
 
 **Data:** 6 de abril de 2026  
 **Resultado Final:** ✅ **ZERO ERROS REAIS DETECTADOS** — Taxa de Precisão 100%
@@ -176,7 +176,7 @@ O script utiliza padrões regex tolerantes a variações OCR:
 
 3. **Robustez:** O parsing trata adequadamente variações de formatação comuns em documentos OCR.
 
-4. **Cobertura:** Os 33 artigos do Regulamento 2023/0447 estão completamente mapeados:
+4. **Cobertura:** Os 33 artigos do Regulamento (UE) 2026/1818 estão completamente mapeados:
    - 13 artigos justificadamente sem correspondência
    - 20 artigos com correspondências validadas
 
@@ -195,7 +195,7 @@ python3 auditoria_correspondencias_final.py
 **Output esperado:**
 ```
 ====================================================================================================
-AUDITORIA FINAL — Regulamento 2023/0447
+AUDITORIA FINAL — Regulamento (UE) 2026/1818
 ====================================================================================================
 ...
 [6] RESUMO
