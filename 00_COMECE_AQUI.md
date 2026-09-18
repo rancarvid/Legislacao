@@ -8,6 +8,32 @@
 
 ---
 
+## ⚖️ Texto final do `@regulamento` publicado no Jornal Oficial
+
+**Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade**
+
+| | |
+|---|---|
+| Publicação | JO da União Europeia, série L, 2026/1818, de **10.8.2026** |
+| ELI | <http://data.europa.eu/eli/reg/2026/1818/oj> |
+| Assinatura | Estrasburgo, 17 de junho de 2026 |
+| Base jurídica | art.º 43.º, n.º 2, e art.º 114.º do TFUE |
+| Estrutura | 7 capítulos, 33 artigos, 3 anexos |
+| Entrada em vigor | 20.º dia seguinte ao da publicação no JO (art.º 33.º) |
+| Início de aplicação | **31 de agosto de 2028**, com datas diferidas no art.º 33.º (art.º 16.º: 2029; art.º 21.º, n.º 3 e art.º 23.º, n.º 1: 2030; art.º 8.º, n.º 2: 1.7.2030; art.º 15.º e outros: 2031; art.º 12.º, n.os 2 e 3: 2033; art.º 10.º: 2034; art.º 8.º, n.º 1: 1.7.2036; art.º 26.º, n.º 4: 2036) |
+
+**Ficheiros canónicos no repositório**
+
+| Ficheiro | Versão linguística |
+|---|---|
+| `Regulamento 2026_01818_PT.pdf` | PT — texto publicado no JO |
+| `Regulamento Versao final en-en.pdf` | EN — texto publicado no JO |
+
+O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o ato publicado. Os ficheiros `.docx` anteriores (`pe00002.*`, `11.12.2025 Regulamento…`) são **arquivo** e não devem ser usados como fonte primária.
+
+
+---
+
 ## 🎯 Guia Rápido (5 Minutos)
 
 ### O que foi feito?
@@ -45,7 +71,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 1. Abra: legislacao_vigente_animais_completa.xlsx
 2. Filtre por: Tema Principal (coluna D)
 3. Identifique: Diplomas relacionados com seu tema
-4. Consulte: Coluna "Impacto Regulamento 2023/0447"
+4. Consulte: Coluna "Impacto Regulamento (UE) 2026/1818"
 ```
 **Para**: Juristas, analistas, consultores
 
@@ -54,7 +80,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 1. Comece por: INDICE_REMISSIVO_LEGISLACAO.md (Secção 7 "Busca por Conceito-Chave")
 2. Encontre: Seu conceito (ex: "Maus Tratos", "SIAC", "Animais Errantes")
 3. Leia: Diplomas relacionados em LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md
-4. Cruzar: Com Regulamento 2023/0447 para análise comparativa
+4. Cruzar: Com Regulamento (UE) 2026/1818 para análise comparativa
 ```
 **Para**: Investigadores, académicos, especialistas
 
@@ -118,7 +144,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 - **Lei 27/2016**: Inversão paradigmática de abate para proteção de animais errantes
 - **Lei 8/2017**: Reconhecimento legal de animais como seres sensíveis (revolução jurídica)
 - **Portaria 264/2013**: Programa nacional de raiva com vacinação obrigatória
-- **Compatibilidade EU**: Legislação PT altamente alinhada com Regulamento 2023/0447
+- **Compatibilidade EU**: Legislação PT altamente alinhada com Regulamento (UE) 2026/1818
 
 ### ⚠️ ÁREAS A MELHORAR
 
@@ -130,7 +156,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 
 ---
 
-## 🌍 Impacto do Regulamento Europeu 2023/0447
+## 🌍 Impacto do Regulamento (UE) 2026/1818
 
 | Área | Status | Diploma PT |
 |---|---|---|
@@ -142,7 +168,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 | Transportes | ⚠️ Verificar técnico | Portaria 968/2009 |
 | Sanções | ❌ Questão constitucional | Lei 69/2014 |
 
-**Conclusão**: Portugal está ALTAMENTE PREPARADO para aplicação do Regulamento 2023/0447
+**Conclusão**: Portugal está ALTAMENTE PREPARADO para aplicação do Regulamento (UE) 2026/1818
 
 ---
 
@@ -209,7 +235,7 @@ PASSO 3: Abra LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md
          ↓ Procure secção "2.7 Decreto-Lei n.º 82/2019"
          ↓ Leia análise detalhada com remissões
 
-PASSO 4: Compare com Regulamento 2023/0447
+PASSO 4: Compare com Regulamento (UE) 2026/1818
          ↓ Consulte coluna "Impacto Regulamento" em Excel
          ↓ Identifique pontos de harmonização necessária
 ```
@@ -232,7 +258,7 @@ PASSO 4: Compare com Regulamento 2023/0447
 - [ ] Explorar legislacao_vigente_animais_completa.xlsx (10-15 min)
 - [ ] Consultar INDICE_REMISSIVO_LEGISLACAO.md para seu tema (5 min)
 - [ ] Aprofundar em LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md (conforme necessário)
-- [ ] Cruzar com Regulamento 2023/0447 para análise comparativa
+- [ ] Cruzar com Regulamento (UE) 2026/1818 para análise comparativa
 
 ---
 
@@ -242,7 +268,7 @@ PASSO 4: Compare com Regulamento 2023/0447
 - [x] 19 diplomas vigentes identificados
 - [x] Nenhuma legislação revogada incluída
 - [x] 12 temáticas cobertas
-- [x] Impacto Regulamento 2023/0447 documentado
+- [x] Impacto Regulamento (UE) 2026/1818 documentado
 - [x] Lacunas identificadas
 - [x] 7 ficheiros estruturados gerados
 - [x] Remissões cruzadas verificadas

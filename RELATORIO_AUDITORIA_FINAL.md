@@ -1,14 +1,14 @@
-# AUDITORIA FINAL — Correspondências do Regulamento 2023/0447
+# AUDITORIA FINAL — Correspondências do Regulamento (UE) 2026/1818
 
 **Data:** 6 de abril de 2026  
-**Escopo:** Verificação de 33 artigos do Regulamento Europeu 2023/0447 e suas correspondências declaradas no script `gerar_comparativo_reuniao.py`  
+**Escopo:** Verificação de 33 artigos do Regulamento (UE) 2026/1818 e suas correspondências declaradas no script `gerar_comparativo_reuniao.py`  
 **Resultado Final:** ✅ **ZERO ERROS REAIS DETECTADOS** — Taxa de precisão 100%
 
 ---
 
 ## SUMÁRIO EXECUTIVO
 
-A auditoria verificou sistematicamente se as correspondências entre o Regulamento 2023/0447 e a legislação nacional (`@codigo`, `@rgbeac`, `@legislacao`) declaradas no script de geração de comparativos existem realmente nos documentos.
+A auditoria verificou sistematicamente se as correspondências entre o Regulamento (UE) 2026/1818 e a legislação nacional (`@codigo`, `@rgbeac`, `@legislacao`) declaradas no script de geração de comparativos existem realmente nos documentos.
 
 **Metodologia:**
 1. Extração de 33 artigos principais do Regulamento do script
@@ -155,7 +155,7 @@ Resultado: ✅ Todos encontrados
 
 1. **Integridade do script:** O script `gerar_comparativo_reuniao.py` contém correspondências precisas e bem-fundamentadas.
 
-2. **Cobertura legislativa:** Os 33 artigos do Regulamento 2023/0447 estão adequadamente mapeados contra a legislação nacional:
+2. **Cobertura legislativa:** Os 33 artigos do Regulamento (UE) 2026/1818 estão adequadamente mapeados contra a legislação nacional:
    - 13 artigos têm justificadamente sem correspondência (novos regulamentos europeus)
    - 20 artigos têm correspondências verificadas com sucesso em @codigo e/ou @rgbeac
 

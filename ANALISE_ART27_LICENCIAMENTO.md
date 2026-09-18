@@ -25,7 +25,7 @@ Como o @rgac **revoga o DL 314/2003** (art.º 98.º), o regime de licenciamento 
 - **ENAE/ICNF**: pilares identificação e esterilização; pede expressamente «pacote de medidas de **discriminação positiva dos detentores de cães e gatos esterilizados**», «pacote de incentivos **fiscais à adoção**» e o controlo da deambulação com histórico no SIAC — a licença anual é o veículo natural destes incentivos; as juntas surgem no próprio @rgac como pontos de acesso ao SIAC (emissão do DIAC — n.º 4 do art.º 59.º+3; comunicação de alterações — art.º 59.º+5).
 - **FEDRA**: fiscalização efetiva com consequências; proteção dos detentores em vulnerabilidade económica (a isenção por insuficiência económica do final da proposta vai-lhe diretamente ao encontro).
 - **Contributos MVM** (repositório): proposta de esterilização obrigatória com contraordenação cujo produto reverta «parcialmente a favor da DGAV, para financiamento de políticas públicas de bem-estar animal, controlo populacional e fiscalização» — a lógica da consignação de receita a políticas de bem-estar pode ser transposta para a taxa de licença.
-- **@regulamento (2023/0447)**: não regula licenças nacionais, mas faz da **identificação e registo** a pedra angular da rastreabilidade — qualquer desenho nacional que **desincentive o registo** é contrário ao seu espírito (ver §4.1).
+- **@regulamento (Regulamento (UE) 2026/1818)**: não regula licenças nacionais, mas faz da **identificação e registo** a pedra angular da rastreabilidade — qualquer desenho nacional que **desincentive o registo** é contrário ao seu espírito (ver §4.1).
 
 ## 3. Análise crítica da redação proposta, norma a norma
 

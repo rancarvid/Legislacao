@@ -1,5 +1,5 @@
 # Lista de Legislação Portuguesa Vigente para Análise Comparativa
-## Análise de Impacto do @regulamento (2023/0447) em Contexto de @rgbeac e @codigo
+## Análise de Impacto do @regulamento (Regulamento (UE) 2026/1818) em Contexto de @rgbeac e @codigo
 
 Documento consolidado de toda a legislação portuguesa não revogada relevante para análise comparativa com as propostas de consolidação do regime jurídico de bem-estar de animais de companhia.
 
@@ -168,7 +168,7 @@ Transportes:
 1. **Todas as referências consolidadas** conforme versões em vigor em dre.pt
 2. **Legislação revogada não incluída** (ex: DL 118/99, revogado por DL 74/2007)
 3. **Portaria 422/2004** e outras portarias complementares existem mas estão subsumidas nas referências principais
-4. **Regulamento Europeu 2023/0447** — aplicação direta; exige análise de harmonização com cada diploma acima
+4. **Regulamento (UE) 2026/1818** — aplicação direta; exige análise de harmonização com cada diploma acima
 5. **@codigo (DL 214/2013)** e **@rgbeac** — propostas, não legislação vigente; análise a comparar com todos os diplomas acima
 
 ---
