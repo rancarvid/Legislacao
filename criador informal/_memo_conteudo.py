@@ -246,10 +246,17 @@ def construir(doc, modo):
         'Decreto-Lei n.º 276/2001 tem por objeto o exercício de uma atividade.',
 
         '**Articulação expressa feita pelo legislador.** O Decreto-Lei n.º 315/2003, publicado no mesmo dia do '
-        'Decreto-Lei n.º 314/2003, alterou o Decreto-Lei n.º 276/2001 para introduzir na definição de '
-        '«hospedagem sem fins lucrativos» uma exceção por remissão para o artigo 3.º do diploma da raiva. O '
-        'legislador delimitou os dois planos num só ato: subtraiu a detenção doméstica ao conceito de '
-        'alojamento sujeito a título de acesso, em vez de a converter em limite de capacidade.',
+        'Decreto-Lei n.º 314/2003, alterou o Decreto-Lei n.º 276/2001 para excecionar da definição de '
+        '«hospedagem sem fins lucrativos» as fracções autónomas em regime de propriedade horizontal a que se '
+        'refere o n.º 3 do artigo 3.º do diploma da raiva. Confrontado com a coexistência dos dois regimes, o '
+        'legislador subtraiu a detenção doméstica ao conceito de alojamento sujeito a título de acesso, em vez '
+        'de a converter em limite de capacidade.',
+
+        '**Leitura confirmada pela doutrina.** A propósito do mesmo artigo 3.º, sustentou-se que «a limitação '
+        'prevista nesta norma vale para efeito de prevenção de zoonoses» e que seria abusivo dela extrair uma '
+        'limitação geral aos poderes do proprietário. Se os limites não conformam sequer o direito de '
+        'propriedade e as relações de vizinhança, menos podem condicionar o acesso a uma atividade económica '
+        'regulada por diploma próprio.',
 
         '**Critérios logicamente independentes.** O Decreto-Lei n.º 276/2001 desencadeia-se com uma fêmea '
         'reprodutora; o Decreto-Lei n.º 314/2003 com o quarto animal adulto no fogo. Pode haver atividade sem '

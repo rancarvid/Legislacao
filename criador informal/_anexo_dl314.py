@@ -40,6 +40,29 @@ def construir(doc):
          'transmissíveis ao homem. O bem jurídico é a saúde pública na sua dimensão de vizinhança, não a '
          'proteção do animal na atividade económica, que é o objeto do Decreto-Lei n.º 276/2001 enquanto '
          'diploma de execução da Convenção Europeia para a Proteção dos Animais de Companhia.')
+    para(doc,
+         'A doutrina que se debruçou sobre o artigo 3.º recusou, pelas mesmas razões, que os seus limites '
+         'valham fora do domínio sanitário. A propósito da tentativa de deles extrair uma limitação geral aos '
+         'poderes do proprietário de fracção autónoma, escreveu-se o seguinte.')
+    citacao(doc,
+            ['Seria no mínimo abusivo pretender retirar daqui uma limitação geral em termos de detenção de '
+             'animais numa fracção autónoma, numa limitação matreira aos poderes conferidos pelo código civil '
+             'aos proprietários.',
+             'A limitação prevista nesta norma vale para efeito de prevenção de zoonoses. Mal se compreenderia, '
+             'num diploma desta natureza, uma limitação geral, feita em abstracto (sem qualquer atenção, por '
+             'exemplo, à dimensão da fracção autónoma) aos poderes conferidos ao proprietário pelo Direito '
+             'Civil.',
+             'O limite máximo aqui estabelecido releva para efeitos de luta e vigilância epidemiológica, '
+             'indiciando riscos higío-sanitários, não pretende regular relações de vizinhança, nem tutelar '
+             'direitos de personalidade dos outros conviventes no prédio.'],
+            'Sandra Passinhas, «Os animais e o regime português da propriedade horizontal», Revista da Ordem '
+            'dos Advogados, Ano 66, Vol. II, setembro de 2006')
+    para(doc,
+         'O raciocínio vale por maioria de razão no caso presente. Se os limites do artigo 3.º não podem ser '
+         'invocados para conformar o conteúdo do direito de propriedade e as relações de vizinhança, que são '
+         'matéria civil próxima do seu campo de incidência material, menos ainda podem sê-lo para condicionar '
+         'o acesso a uma atividade económica regulada por diploma próprio, com autoridade competente, '
+         'procedimento e regime sancionatório distintos.')
 
     h1(doc, '3.', 'Argumento sistemático: a articulação feita pelo legislador')
     para(doc,
@@ -68,11 +91,24 @@ def construir(doc):
          'não converteu os limites de detenção em limiar de capacidade dos alojamentos. Fez o inverso: '
          'subtraiu ao conceito de alojamento sujeito a título de acesso as situações de detenção que o diploma '
          'sanitário regula. Delimitou os planos em vez de os sobrepor.')
-    nota(doc, [
-        'Assinala-se que a remissão ficou desatualizada. A numeração do artigo 3.º do Decreto-Lei n.º 314/2003 '
-        'foi posteriormente afetada, pelo que a referência ao seu n.º 3 já não corresponde à disposição visada '
-        'em 2003. A correção da remissão deve ser considerada no âmbito da revisão em curso. A imprecisão '
-        'sobrevinda não altera o sentido da opção legislativa originária.'])
+    para(doc,
+         'O n.º 3 do artigo 3.º para que se remete permanece hoje na redação originária de 2003, tal como todo '
+         'o artigo 3.º, que nunca foi alterado. Tem o seguinte teor.')
+    citacao(doc,
+            ['3 — No caso de fracções autónomas em regime de propriedade horizontal, o regulamento do '
+             'condomínio pode estabelecer um limite de animais inferior ao previsto no número anterior.'],
+            'N.º 3 do artigo 3.º do Decreto-Lei n.º 314/2003, redação originária')
+    para(doc,
+         'A concordância gramatical fixa o sentido da exceção: «das referidas» reporta-se às fracções '
+         'autónomas. O alojamento de animais numa fracção autónoma em regime de propriedade horizontal não é, '
+         'para efeitos do Decreto-Lei n.º 276/2001, hospedagem sem fins lucrativos, e não fica por isso sujeito '
+         'a mera comunicação prévia nos termos da al. a) do n.º 1 do seu artigo 3.º.')
+    para(doc,
+         'A opção é significativa. O legislador podia ter transformado os limites de detenção em teto de '
+         'lotação dos alojamentos, e não o fez. Retirou do universo dos alojamentos sujeitos a título de acesso '
+         'a situação doméstica que o diploma sanitário passava a regular. A exceção é estreita, porque '
+         'circunscrita à fracção autónoma, mas a direção da intervenção é inequívoca e vale como elemento '
+         'interpretativo quanto à relação entre os dois regimes.')
 
     h1(doc, '4.', 'Argumento do critério de aplicação')
     para(doc,
@@ -244,8 +280,10 @@ def construir(doc):
         'Explicitar no futuro regime que os limites de detenção previstos na legislação sanitária não '
         'constituem limiar de capacidade dos estabelecimentos, cuja lotação é declarada no título de acesso e '
         'aferida pelos parâmetros técnicos aplicáveis.',
-        'Corrigir a remissão da al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, hoje desatualizada por '
-        'efeito da renumeração do artigo 3.º do Decreto-Lei n.º 314/2003.',
+        'Ponderar o alargamento da exceção da al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, hoje '
+        'circunscrita às fracções autónomas em regime de propriedade horizontal, a toda a detenção doméstica '
+        'abrangida pelo artigo 3.º do Decreto-Lei n.º 314/2003, eliminando a assimetria entre quem detém '
+        'animais em apartamento e quem os detém em moradia.',
         'Assegurar que a definição nacional de estabelecimento de criação acompanha o Regulamento quanto à '
         'inclusão das casas particulares, afastando qualquer relevância da classificação predial.',
     ])
