@@ -3,7 +3,7 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from _memo_engine import novo_doc
-import _memo_conteudo, _anexo_dl314
+import _memo_conteudo, _anexo_dl314, _anexo_juris
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 COR = 'Criação de cães e gatos em pequena escala'
@@ -18,5 +18,11 @@ for modo, suf in (('A', 'refs-completas'), ('B', 'refs-leves')):
 d = novo_doc('Delimitação DL 314/2003 · DL 276/2001')
 _anexo_dl314.construir(d)
 out = os.path.join(BASE, 'Anexo_Delimitacao_DL314_2003.docx')
+d.save(out)
+print('gerado:', os.path.basename(out))
+
+d = novo_doc('Jurisprudência e doutrina · DL 314/2003')
+_anexo_juris.construir(d)
+out = os.path.join(BASE, 'Anexo_Jurisprudencia_Doutrina_DL314.docx')
 d.save(out)
 print('gerado:', os.path.basename(out))
