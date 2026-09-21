@@ -237,47 +237,37 @@ def construir(doc, modo):
         'Decreto-Lei n.º 314/2003', 'artigo 3.º',
         'N.os 1, 2 e 4 do artigo 3.º do Decreto-Lei n.º 314/2003')
     para(doc,
-         'Estes limites regulam a detenção doméstica. Não constituem limiar de capacidade dos estabelecimentos '
-         'de criação nem condicionam o acesso à atividade. Os fundamentos desta leitura desenvolvem-se em anexo '
-         'autónomo; sintetizam-se aqui os essenciais.')
+         'A questão que se coloca é a de saber se estes limites constituem limiar de capacidade dos '
+         'estabelecimentos de criação. O anexo autónomo examina-a confrontando os elementos nos dois '
+         'sentidos; resumem-se aqui a conclusão e os pontos que a sustentam ou a condicionam.')
     bullets(doc, [
-        '**Objeto e destinatário.** O diploma é legislação sanitária de luta contra a raiva. A epígrafe do '
-        'artigo 3.º é «Detenção de cães e gatos» e o seu destinatário é o detentor, referido ao fogo. O '
-        'Decreto-Lei n.º 276/2001 tem por objeto o exercício de uma atividade.',
+        '**O diploma sanitário aplica-se a quem cria.** A al. d) do seu artigo 2.º define detentor por '
+        'referência expressa à reprodução e à criação, com ou sem fins comerciais. Sustentar que o '
+        'Decreto-Lei n.º 314/2003 é alheio à criação não tem apoio no texto.',
 
-        '**Articulação expressa feita pelo legislador.** O Decreto-Lei n.º 315/2003, publicado no mesmo dia do '
-        'Decreto-Lei n.º 314/2003, alterou o Decreto-Lei n.º 276/2001 para excecionar da definição de '
-        '«hospedagem sem fins lucrativos» as fracções autónomas em regime de propriedade horizontal a que se '
-        'refere o n.º 3 do artigo 3.º do diploma da raiva. Confrontado com a coexistência dos dois regimes, o '
-        'legislador subtraiu a detenção doméstica ao conceito de alojamento sujeito a título de acesso, em vez '
-        'de a converter em limite de capacidade.',
+        '**O artigo 3.º não é, porém, norma de acesso à atividade.** Não tipifica o exercício sem título, '
+        'não fixa lotação de estabelecimento e é executado por autoridades diversas. A norma sancionatória '
+        'que lhe corresponde descreve a conduta como «permanência de cães e gatos em habitações e terrenos '
+        'anexos». O diploma trata os estabelecimentos em artigo próprio, o artigo 5.º.',
 
-        '**Leitura confirmada pela doutrina.** A propósito do mesmo artigo 3.º, sustentou-se que «a limitação '
-        'prevista nesta norma vale para efeito de prevenção de zoonoses» e que seria abusivo dela extrair uma '
-        'limitação geral aos poderes do proprietário. Se os limites não conformam sequer o direito de '
-        'propriedade e as relações de vizinhança, menos podem condicionar o acesso a uma atividade económica '
-        'regulada por diploma próprio.',
+        '**Os dois regimes são cumulativos, não alternativos.** Quem cria na sua habitação é detentor para '
+        'efeitos sanitários e operador para efeitos do diploma dos alojamentos. A capacidade do '
+        'estabelecimento é declarada na mera comunicação prévia e aferida pelas dimensões mínimas do anexo '
+        'III do Decreto-Lei n.º 276/2001.',
 
-        '**Critérios logicamente independentes.** O Decreto-Lei n.º 276/2001 desencadeia-se com uma fêmea '
-        'reprodutora; o Decreto-Lei n.º 314/2003 com o quarto animal adulto no fogo. Pode haver atividade sem '
-        'excesso de lotação e lotação sem atividade.',
+        '**O diploma dos alojamentos admite expressamente que um alojamento se situe numa habitação**, ao '
+        'prever, no n.º 2 do seu artigo 67.º-A, o acesso das autoridades a casas de habitação e terrenos '
+        'privados para controlo do alojamento e do seu titular. É a solução que o Regulamento viria a '
+        'consagrar ao incluir as casas particulares.',
 
-        '**A capacidade tem regime próprio.** É declarada na mera comunicação prévia e aferida pelos parâmetros '
-        'do anexo I do Decreto-Lei n.º 276/2001, por força do n.º 6 do artigo 25.º. A lei especial dos '
-        'alojamentos é essa.',
+        '**Ponto que fica em aberto.** Em prédios rústicos e mistos o n.º 4 não fixa teto. Em prédios '
+        'urbanos o n.º 2 fixa um máximo de seis animais adultos. A situação do estabelecimento titulado em '
+        'prédio urbano acima desse número não está resolvida na lei nem na jurisprudência conhecida, e deve '
+        'ser objeto de norma expressa no futuro regime.',
 
         '**Consequência da tese contrária.** Se os limites por fogo valessem como capacidade dos '
-        'estabelecimentos, nenhum criador em prédio urbano poderia deter mais de quatro animais adultos, e o '
-        'limiar europeu de cinco fêmeas reprodutoras seria inaplicável em meio urbano. O resultado contraria a '
-        'arquitetura do Regulamento e a do próprio projeto de regime.',
-
-        '**Classificação predial é critério tributário.** Prédio urbano, rústico e misto são categorias do '
-        'Código do Imposto Municipal sobre Imóveis. Fazer depender a licitude de uma atividade económica da '
-        'matriz predial não encontra apoio na lei nem resiste a um juízo de proporcionalidade.',
-
-        '**O direito da União afasta a relevância do tipo de prédio.** O Regulamento define estabelecimento de '
-        'criação como qualquer instalação ou estrutura, incluindo casas particulares, onde são mantidos cães ou '
-        'gatos para fins de reprodução com vista à colocação da sua descendência no mercado.',
+        'estabelecimentos, o limiar europeu de cinco fêmeas reprodutoras seria inaplicável em meio urbano. O '
+        'resultado contraria a arquitetura do Regulamento e a do próprio projeto de regime.',
     ])
     para(doc,
          'O que o Decreto-Lei n.º 314/2003 efetivamente impõe a quem comercializa consta do seu artigo 5.º e '

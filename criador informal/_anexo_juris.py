@@ -7,17 +7,18 @@ def construir(doc):
     capa(doc,
          'Anexo de jurisprudência e doutrina',
          'Delimitação entre o Decreto-Lei n.º 314/2003 e o Decreto-Lei n.º 276/2001',
-         'Elementos jurisprudenciais, doutrinais e de prática administrativa recolhidos em apoio da '
-         'interpretação exposta no anexo de delimitação',
+         'Elementos jurisprudenciais, doutrinais e de prática administrativa recolhidos sobre a '
+         'aplicação do artigo 3.º, incluindo os de sentido divergente',
          'Direção-Geral de Alimentação e Veterinária   ·   setembro de 2026')
 
     enquadramento(doc, [
-        'Este anexo reúne os elementos externos que sustentam a conclusão do anexo de delimitação: os '
-        'limites de alojamento por prédio do artigo 3.º do Decreto-Lei n.º 314/2003 não constituem '
-        'limiar de capacidade dos estabelecimentos de criação. A pesquisa cobriu a base de dados do '
-        'Instituto de Gestão Financeira e Equipamentos da Justiça (dgsi.pt) em todas as bases '
-        'disponíveis, a jurisprudência do Tribunal Constitucional, doutrina publicada e prática '
-        'administrativa. Os limites da pesquisa constam do ponto 11.'])
+        'Este anexo reúne o material externo recolhido sobre a aplicação do artigo 3.º do Decreto-Lei '
+        'n.º 314/2003 — genealogia da norma, jurisprudência constitucional, administrativa e comum, '
+        'doutrina e prática administrativa. Serve de suporte documental ao anexo de delimitação e '
+        'segue o mesmo critério: os elementos que apontam em sentido divergente da conclusão são aqui '
+        'transcritos e discutidos, e não remetidos para nota de rodapé. A pesquisa cobriu a base de '
+        'dados dgsi.pt em todas as bases disponíveis e a jurisprudência do Tribunal Constitucional. '
+        'Os limites do método constam do ponto 11.'])
 
     # ------------------------------------------------------------------ 1
     h1(doc, '1.', 'Genealogia da norma')
@@ -244,23 +245,32 @@ def construir(doc):
         'retroativamente em teto de lotação dos estabelecimentos.'])
 
     # ------------------------------------------------------------------ 7
-    h1(doc, '7.', 'O anexo I do Decreto-Lei n.º 276/2001')
+    h1(doc, '7.', 'O dimensionamento por superfície no Decreto-Lei n.º 276/2001')
     para(doc,
          'O argumento anterior confirma-se pelo modo como o próprio diploma dos alojamentos dimensiona '
          'a capacidade: por superfície disponível por animal, e não por contagem de cabeças.')
     citacao(doc,
-            ['Num canil, cada animal deverá dispor de uma superfície de base de, pelo menos, 1,22 m × '
+            ['e) A superfície mínima do chão do recinto para uma cadela e respetiva ninhada deve estar '
+             'compreendida entre 4 m2 e 6 m2.'],
+            'Al. e) do anexo III do Decreto-Lei n.º 276/2001, para que remete o n.º 1 do artigo 27.º')
+    citacao(doc,
+            ['Num canil, cada animal deve dispor de uma superfície de base de, pelo menos, 1,22 m x '
              '1,22 m;',
-             'Um recinto com as dimensões 1,50 m × 3 m não poderá alojar mais de dois cães de raça '
-             'média ou grande, ou três cães de raça pequena.',
-             'A superfície mínima do chão do recinto para uma cadela e respectiva ninhada deve estar '
-             'compreendida entre 4 m² e 6 m².'],
-            'Anexo I do Decreto-Lei n.º 276/2001, para que remete o n.º 6 do artigo 25.º')
+             'Um recinto com as dimensões 1,50 m x 3 m não pode alojar mais de dois cães de raça média '
+             'ou grande, ou três cães de raça pequena.'],
+            'Al. g.2) do anexo III do Decreto-Lei n.º 276/2001')
+    nota(doc, [
+        '**Precisão quanto ao alcance.** A al. g) do anexo III respeita a centros de recolha oficiais e '
+        'a hospedagem sem fins lucrativos, não aos alojamentos de criação, cujas medidas constam da '
+        'al. d). O valor do elemento não está, por isso, na aplicação direta daquelas medidas aos '
+        'criadores, mas no método: a lei dimensiona o alojamento por superfície disponível por animal '
+        'e nunca por contagem de cabeças.'])
     para(doc,
-         'Se o teto de quatro ou de seis animais valesse para os alojamentos, todo este sistema de '
-         'dimensionamento seria inútil: nenhum estabelecimento chegaria alguma vez ao ponto em que as '
-         'medidas do anexo se tornam operativas. A existência do anexo pressupõe, necessariamente, '
-         'alojamentos com mais animais do que os limites do diploma da raiva admitem por fogo.')
+         'O argumento que daqui se extrai deve ser formulado com esta contenção. Não se demonstra que o '
+         'anexo III pressuponha necessariamente estabelecimentos acima dos limites do diploma da raiva '
+         '— demonstra-se que o critério de capacidade do Decreto-Lei n.º 276/2001 é de outra natureza, '
+         'e que o diploma dispõe de regime próprio para a fixar, o que retira fundamento à integração '
+         'por recurso a norma de diploma com objeto diverso.')
 
     # ------------------------------------------------------------------ 8
     h1(doc, '8.', 'Doutrina')
@@ -310,10 +320,11 @@ def construir(doc):
          'diferentes domínios materiais.')
 
     # ------------------------------------------------------------------ 10
-    h1(doc, '10.', 'Elemento em sentido aparentemente contrário')
+    h1(doc, '10.', 'Elementos em sentido divergente')
     para(doc,
-         'Por dever de rigor assinala-se a única decisão recolhida que aplica o artigo 3.º a uma '
-         'instalação descrita como canil.')
+         'Dois elementos recolhidos apontam em sentido contrário à leitura restritiva do alcance do '
+         'artigo 3.º e são aqui tratados em texto, não em ressalva.')
+    h3(doc, '10.1  O artigo 3.º aplicado a uma instalação descrita como canil')
     citacao(doc,
             ['I – Deve ser deferida a providência que visa a remoção de animais alojados num canil '
              'clandestino, instalado no logradouro de um prédio urbano, de onde emana um cheiro '
@@ -321,7 +332,10 @@ def construir(doc):
              'artigo 3.º/1 do Decreto-lei n.º 314/2003, de 17 de Dezembro.'],
             'Sumário do Acórdão do TRL de 28 de junho de 2007, processo n.º 1692/2007-8')
     para(doc,
-         'A decisão não infirma a conclusão deste anexo, por três razões cumulativas.')
+         'O caso envolvia mais de cinquenta cães de grande porte no logradouro de uma vivenda '
+         'geminada. Mostra que o artigo 3.º é efetivamente mobilizado contra instalações que são, de '
+         'facto, canis, e não apenas contra a detenção familiar. Três circunstâncias limitam, porém, o '
+         'alcance que dele se pode extrair.')
     numlist(doc, [
         'Aplicou o **n.º 1** do artigo 3.º, que é cláusula geral de salubridade de alcance universal, e '
         'não os limites numéricos dos n.os 2 e 4.',
@@ -333,10 +347,40 @@ def construir(doc):
     ])
     para(doc,
          'Retira-se daqui uma precisão útil: o n.º 1 do artigo 3.º pode alcançar qualquer situação de '
-         'alojamento insalubre, incluindo a de um estabelecimento não titulado. O que não faz, em caso '
-         'algum, é fixar a lotação de um estabelecimento regularmente autorizado, matéria que o '
-         'Decreto-Lei n.º 276/2001 regula por declaração na comunicação prévia e pelos parâmetros do '
-         'seu anexo I.')
+         'alojamento insalubre, incluindo a de um estabelecimento não titulado. Não se encontrou, em '
+         'contrapartida, decisão que dele extraia a lotação de um estabelecimento regularmente '
+         'autorizado — matéria que o Decreto-Lei n.º 276/2001 regula por declaração na comunicação '
+         'prévia e pelos parâmetros do seu anexo III.')
+    para(doc,
+         'Merece registo um segundo aspeto do mesmo aresto, incómodo para qualquer das teses: o '
+         'Decreto-Lei n.º 276/2001 não é sequer mencionado, apesar de estar em causa uma instalação '
+         'que, com cinquenta cães, seria manifestamente um alojamento não titulado. A leitura mais '
+         'natural não é a de que o diploma dos alojamentos não se aplicava, mas a de que a via '
+         'sanitária e a tutela da personalidade foram as escolhidas por serem as eficazes.')
+
+    h3(doc, '10.2  O artigo 3.º como regra geral de vizinhança')
+    para(doc,
+         'A doutrina citada no ponto 8 sustenta que os limites do artigo 3.º valem apenas para efeitos '
+         'de prevenção de zoonoses e que seria abusivo deles extrair uma limitação geral. Essa posição '
+         'não foi acolhida pelo Tribunal da Relação de Guimarães, que integrou o preceito no elenco '
+         'das regras de higiene, sossego e boa vizinhança relevantes para a resolução do contrato de '
+         'arrendamento, a par do Regulamento Geral do Ruído e das restrições de vizinhança do Código '
+         'Civil.')
+    citacao(doc,
+            ['[…] o DL n.º 314/2003, de 17 de Dezembro, que aprova o Programa Nacional de Luta e '
+             'Vigilância Epidemiológica da Raiva e que em cuja art.º 3º n.º 2 dispõe que nos prédios '
+             'urbanos podem ser alojados até três cães ou quatro gatos adultos por cada fogo, não '
+             'podendo no total ser excedido o número de quatro animais […] e cujo n.º 3 dispõe que '
+             '[n]o caso de fracções autónomas em regime de propriedade horizontal, o regulamento do '
+             'condomínio pode estabelecer um limite de animais inferior ao previsto no número '
+             'anterior;'],
+            'Acórdão do Tribunal da Relação de Guimarães de 19 de maio de 2022, processo n.º '
+            '119/20.1T8FAF.G1, a propósito da al. a) do n.º 2 do artigo 1083.º do Código Civil')
+    para(doc,
+         'O elemento é relevante e não deve ser minimizado: mostra que os limites do artigo 3.º são '
+         'mobilizados como padrão de conduta fora do domínio da polícia sanitária. Não respeita, ainda '
+         'assim, à questão da capacidade de estabelecimentos, e é isso — e só isso — que o distingue '
+         'da questão aqui tratada.')
 
     # ------------------------------------------------------------------ 11
     h1(doc, '11.', 'Método e limites da pesquisa')
@@ -360,17 +404,26 @@ def construir(doc):
 
     # ------------------------------------------------------------------ 12
     h1(doc, '12.', 'Síntese')
+    para(doc,
+         'O material recolhido consente a seguinte leitura de conjunto, e não mais do que ela.')
+    bullets(doc, [
+        'A **genealogia** da norma, que remonta ao artigo 10.º do Decreto-Lei n.º 317/85, teve sempre '
+        'por objeto a permanência de animais em habitações.',
+        'A **jurisprudência constitucional** qualifica-a, há quarenta anos, como matéria de polícia '
+        'sanitária municipal, com uma declaração de inconstitucionalidade com força obrigatória geral.',
+        'A **jurisprudência administrativa** aplica-a à detenção em prédios, mesmo perante números '
+        'elevados de animais, e trata os estabelecimentos num plano distinto, o do licenciamento.',
+        'A **doutrina** recusa extrair do preceito uma limitação geral — mas essa posição não foi '
+        'acolhida pela jurisprudência civil, como o ponto 10.2 demonstra.',
+        'A **prática administrativa** da DGAV e dos municípios não cruza os dois planos.',
+        'Nenhuma das decisões lidas fixa, a partir do artigo 3.º, a lotação de um estabelecimento '
+        'titulado; nenhuma, em sentido inverso, afasta expressamente essa possibilidade.',
+    ])
     destaque(doc, [
-        'A interpretação segundo a qual os limites do artigo 3.º do Decreto-Lei n.º 314/2003 não fixam '
-        'a capacidade dos estabelecimentos de criação encontra apoio convergente em quatro planos: na '
-        '**genealogia** da norma, que remonta a 1985 e sempre teve por objeto a permanência de animais '
-        'em habitações; na **jurisprudência constitucional**, que há quarenta anos a qualifica como '
-        'polícia sanitária municipal, com uma declaração de inconstitucionalidade com força '
-        'obrigatória geral; na **jurisprudência administrativa e comum**, que a aplica exclusivamente a '
-        'situações de detenção doméstica, mesmo perante quarenta e cinco cães, e que remete os '
-        'estabelecimentos para o licenciamento; e na **doutrina**, que recusa extrair do preceito '
-        'qualquer limitação geral. A tudo acresce o dado decisivo de o regime dos alojamentos ter sido '
-        'aprovado num período em que nenhum limite de detenção vigorava.'])
+        'O que o material demonstra é que o artigo 3.º **não foi construído nem tem sido aplicado como '
+        'norma de acesso a atividade**. O que não demonstra — porque nenhuma decisão o aborda — é o que '
+        'sucede a um estabelecimento titulado instalado em prédio urbano com mais de seis animais '
+        'adultos. Essa questão fica em aberto e é tratada no ponto 5 do anexo de delimitação.'])
 
     h1(doc, '13.', 'Elementos citados')
     bullets(doc, [

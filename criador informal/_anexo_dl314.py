@@ -6,349 +6,465 @@ from docx.shared import Cm
 def construir(doc):
     capa(doc,
          'Anexo ao memorando técnico',
-         'Delimitação entre o Decreto-Lei n.º 314/2003 e o Decreto-Lei n.º 276/2001',
-         'Os limites de alojamento por prédio não constituem limiar de capacidade dos estabelecimentos de '
-         'criação',
+         'Articulação entre o Decreto-Lei n.º 314/2003 e o Decreto-Lei n.º 276/2001',
+         'Análise da questão dos limites de alojamento por prédio e do seu efeito sobre os '
+         'estabelecimentos de criação',
          'Direção-Geral de Alimentação e Veterinária   ·   setembro de 2026')
 
-    h1(doc, '1.', 'Questão')
+    # ------------------------------------------------------------------ 1
+    h1(doc, '1.', 'Questão e método')
     para(doc,
-         'Discute-se se os limites de animais por fogo fixados no artigo 3.º do Decreto-Lei n.º 314/2003 '
-         'condicionam a capacidade dos estabelecimentos de criação de cães e gatos e, por essa via, o acesso à '
-         'atividade regulada pelo Decreto-Lei n.º 276/2001. A leitura afirmativa tem sido sustentada sem '
-         'demonstração e conduz a resultados que a própria arquitetura dos dois diplomas não comporta.')
-    destaque(doc, [
-        'Conclusão: os limites do artigo 3.º do Decreto-Lei n.º 314/2003 são normas de polícia sanitária sobre '
-        'a detenção doméstica de animais. Não fixam a lotação dos alojamentos sujeitos ao Decreto-Lei n.º '
-        '276/2001, cuja capacidade tem regime próprio, e não constituem condição de acesso à atividade de '
-        'criação.'])
+         'Pergunta-se se os limites de animais por fogo fixados no artigo 3.º do Decreto-Lei n.º 314/2003 '
+         'condicionam a capacidade dos estabelecimentos de criação de cães e gatos e, por essa via, o acesso '
+         'à atividade regulada pelo Decreto-Lei n.º 276/2001.')
+    para(doc,
+         'A pergunta tem sido respondida nos dois sentidos, em regra sem demonstração. Este anexo não parte '
+         'de uma resposta. Expõe primeiro os elementos que sustentam a tese da sobreposição, depois os que '
+         'sustentam a tese da delimitação, pondera-os e só então formula a conclusão que os elementos '
+         'consentem — que não coincide inteiramente com nenhuma das duas formulações correntes.')
+    enquadramento(doc, [
+        'A ordem de exposição é deliberada. Os elementos desfavoráveis à conclusão final são apresentados em '
+        'primeiro lugar e sem atenuação, porque uma delimitação que só resista quando se omite o que a '
+        'contraria não serve para fundamentar uma posição institucional nem para sustentar uma opção '
+        'legislativa.'])
 
-    h1(doc, '2.', 'Argumento literal e teleológico')
+    # ------------------------------------------------------------------ 2
+    h1(doc, '2.', 'Elementos que sustentam a leitura da sobreposição')
+
+    h3(doc, '2.1  O artigo 3.º emprega a palavra «alojamento»')
+    para(doc,
+         'O primeiro obstáculo à tese da separação está no próprio texto. O artigo 3.º não fala de «detenção» '
+         'no seu corpo dispositivo: fala de alojamento, que é precisamente o conceito que define o objeto do '
+         'Decreto-Lei n.º 276/2001.')
+    citacao(doc,
+            ['1 — O alojamento de cães e gatos em prédios urbanos, rústicos ou mistos, fica sempre '
+             'condicionado à existência de boas condições do mesmo e ausência de riscos hígio-sanitários '
+             'relativamente à conspurcação ambiental e doenças transmissíveis ao homem.',
+             '2 — Nos prédios urbanos podem ser alojados até três cães ou quatro gatos adultos por cada fogo '
+             '[…]'],
+            'N.ºs 1 e 2 do artigo 3.º do Decreto-Lei n.º 314/2003')
+    para(doc,
+         'A definição do Decreto-Lei n.º 276/2001 é, por seu turno, suficientemente ampla para abranger uma '
+         'habitação.')
+    citacao(doc,
+            ['n) «Alojamento» qualquer instalação, edifício, grupo de edifícios ou outro local, podendo '
+             'incluir zona não completamente fechada, onde os animais de companhia se encontram mantidos;'],
+            'Al. n) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001')
+    para(doc,
+         'Qualquer argumento que assente numa alegada divergência de vocabulário entre os dois diplomas tem '
+         'de ser construído sobre esta base, e não contra ela.')
+
+    h3(doc, '2.2  O «detentor» do diploma sanitário abrange expressamente quem cria com fins comerciais')
+    para(doc,
+         'Este é o elemento mais forte contra a tese da separação de planos, e não pode ser contornado. O '
+         'Decreto-Lei n.º 314/2003 define detentor por referência expressa à reprodução e à criação, com ou '
+         'sem fins comerciais.')
+    citacao(doc,
+            ["d) 'Detentor' qualquer pessoa, singular ou colectiva, responsável pelos animais de companhia "
+             "para efeitos de reprodução, criação, manutenção, acomodação ou utilização, com ou sem fins "
+             "comerciais;"],
+            'Al. d) do artigo 2.º do Decreto-Lei n.º 314/2003')
+    para(doc,
+         'A definição do Decreto-Lei n.º 276/2001 é praticamente a mesma, com substituição de «comerciais» '
+         'por «lucrativos».')
+    citacao(doc,
+            ['v) «Detentor» qualquer pessoa, singular ou coletiva, responsável pelos animais de companhia '
+             'para efeitos de reprodução, criação, manutenção, acomodação ou utilização, com ou sem fins '
+             'lucrativos;'],
+            'Al. v) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001')
+    destaque(doc, [
+        'Daqui resulta uma conclusão que deve ser afirmada sem rodeios: **é incorreto sustentar que o '
+        'Decreto-Lei n.º 314/2003 não se aplica a quem cria.** Aplica-se. Quem cria é detentor para efeitos '
+        'do diploma sanitário, e o artigo 3.º dirige-se-lhe. A questão em aberto não é essa; é apenas a de '
+        'saber se os números do artigo 3.º funcionam como teto de lotação do estabelecimento.'])
+
+    h3(doc, '2.3  O n.º 4 do artigo 3.º tem estrutura de norma de capacidade')
+    para(doc,
+         'O artigo 3.º não se limita a impor condições higiossanitárias. No n.º 4 gradua o número admissível '
+         'em função da área disponível, que é a lógica própria das normas de lotação.')
+    citacao(doc,
+            ['4 — Nos prédios rústicos ou mistos podem ser alojados até seis animais adultos, podendo tal '
+             'número ser excedido se a dimensão do terreno o permitir e desde que as condições de alojamento '
+             'obedeçam aos requisitos estabelecidos no n.º 1.'],
+            'N.º 4 do artigo 3.º do Decreto-Lei n.º 314/2003')
+    para(doc,
+         'A jurisprudência administrativa leu a norma exatamente nesses termos, impondo à Administração o '
+         'dever de aferir, caso a caso, se a dimensão do prédio permite exceder os seis animais.')
+    citacao(doc,
+            ['I — A posse de animais [cães ou gatos] em qualquer número em prédios urbanos, rústicos ou '
+             'mistos, nos termos do n.º 1 do artigo 3.º do DL n.º 314/2003, de 17/12, depende da existência '
+             'de uma situação de salubridade ambiental, com vista a evitar um perigo para a saúde pública.',
+             'II — Porém, o n.º 4 do preceito em causa prevê que «nos prédios rústicos ou mistos podem ser '
+             'alojados até seis animais adultos, podendo tal número ser excedido se a dimensão do terreno o '
+             'permitir […]», o que significa que incumbe à Administração aferir sempre se o prédio onde se '
+             'encontram alojados animais [cães e gatos] permite ou não o enquadramento na situação especial '
+             'contida na norma […]'],
+            'Acórdão do Tribunal Central Administrativo Sul de 4 de fevereiro de 2010, processo n.º 04784/09')
+
+    h3(doc, '2.4  A existência da exceção da al. p) pressupõe sobreposição')
+    para(doc,
+         'O argumento que se costuma extrair da alteração introduzida pelo Decreto-Lei n.º 315/2003 funciona, '
+         'na verdade, nos dois sentidos, e o sentido desfavorável merece ser explicitado. Se os dois regimes '
+         'não se tocassem, não teria sido necessária exceção nenhuma. A inserção de uma ressalva na definição '
+         'de hospedagem sem fins lucrativos demonstra que o legislador reconheceu que, sem ela, situações de '
+         'detenção doméstica ficariam abrangidas pelo conceito de alojamento do Decreto-Lei n.º 276/2001.')
+    citacao(doc,
+            ['p) «Hospedagem sem fins lucrativos» o alojamento, permanente ou temporário, de animais de '
+             'companhia que não vise a obtenção de rendimentos, com exceção das referidas no n.º 3 do artigo '
+             '3.º do diploma que aprova o Plano Nacional de Luta e Vigilância da Raiva Animal e outras '
+             'Zoonoses;'],
+            'Al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001, na redação em vigor')
+    para(doc,
+         'E a exceção é estreita: «das referidas» é feminino plural e só pode reportar-se às fracções '
+         'autónomas mencionadas no n.º 3 do artigo 3.º. Quem detém animais em moradia ou em prédio rústico '
+         'não está abrangido pela ressalva. Lido literalmente, o preceito conduz a que a generalidade da '
+         'detenção doméstica caia na definição de hospedagem sem fins lucrativos — e, por via da al. a) do '
+         'n.º 1 do artigo 3.º, fique sujeita a mera comunicação prévia. Um argumento a contrario construído '
+         'sobre a al. p) pode, por isso, voltar-se contra quem o invoca.')
+
+    h3(doc, '2.5  Não há prova de que a articulação tenha sido deliberada')
+    para(doc,
+         'Sustentou-se por vezes que, tendo os dois diplomas a mesma data, o legislador teria conscientemente '
+         'delimitado os regimes. A afirmação não resiste à consulta do preâmbulo do Decreto-Lei n.º 315/2003, '
+         'que enuncia como finalidades a autonomização do regime dos animais potencialmente perigosos, a '
+         'correção de inexatidões do texto anterior e o reforço de normas de bem-estar, e que **não faz '
+         'qualquer referência ao Decreto-Lei n.º 314/2003 nem ao programa da raiva**.')
+    para(doc,
+         'A ressalva da al. p) apresenta-se, assim, com maior verosimilhança como uma das «correções de '
+         'inexatidões» do que como um ato de delimitação pensado. O seu valor interpretativo é, nessa medida, '
+         'limitado, e não deve ser apresentado como demonstração.')
+
+    h3(doc, '2.6  Os tribunais dão ao artigo 3.º efeitos fora do plano sanitário')
+    para(doc,
+         'A doutrina que adiante se cita sustenta que os limites do artigo 3.º valem apenas para efeitos de '
+         'prevenção de zoonoses. A jurisprudência civil não tem seguido essa contenção. O Tribunal da Relação '
+         'de Guimarães integrou o artigo 3.º no elenco das regras de higiene, sossego e boa vizinhança cuja '
+         'violação releva para a resolução do contrato de arrendamento, a par do Regulamento Geral do Ruído e '
+         'das restrições de vizinhança do Código Civil.')
+    citacao(doc,
+            ['[…] o DL n.º 314/2003, de 17 de Dezembro, que aprova o Programa Nacional de Luta e Vigilância '
+             'Epidemiológica da Raiva e que em cuja art.º 3º n.º 2 dispõe que nos prédios urbanos podem ser '
+             'alojados até três cães ou quatro gatos adultos por cada fogo, não podendo no total ser excedido '
+             'o número de quatro animais […]'],
+            'Acórdão do Tribunal da Relação de Guimarães de 19 de maio de 2022, processo n.º '
+            '119/20.1T8FAF.G1, a propósito da al. a) do n.º 2 do artigo 1083.º do Código Civil')
+    para(doc,
+         'O acórdão mostra que os limites do artigo 3.º são mobilizados como padrão geral de conduta, fora do '
+         'domínio da polícia sanitária. Quem sustente que a norma tem alcance estritamente sanitário tem de '
+         'contar com este elemento.')
+
+    h3(doc, '2.7  Os tribunais aplicam o artigo 3.º a canis de facto')
+    para(doc,
+         'Também não é exato que o artigo 3.º só seja convocado em situações de detenção familiar. Foi ao '
+         'abrigo do seu n.º 1 — e não da falta de título de acesso — que se ordenou a remoção dos animais de '
+         'um canil instalado no logradouro de um prédio urbano.')
+    citacao(doc,
+            ['I — Deve ser deferida a providência que visa a remoção de animais alojados num canil '
+             'clandestino, instalado no logradouro de um prédio urbano, de onde emana um cheiro nauseabundo, '
+             'ladrando os 30 canídeos dia e noite o que traduz violação do disposto no artigo 3.º/1 do '
+             'Decreto-Lei n.º 314/2003, de 17 de Dezembro.'],
+            'Acórdão do Tribunal da Relação de Lisboa de 28 de junho de 2007, processo n.º 1692/2007-8')
+    para(doc,
+         'O caso envolvia mais de cinquenta cães de grande porte num logradouro residencial. O Decreto-Lei '
+         'n.º 276/2001 não é sequer mencionado. A leitura mais natural do aresto não é a de que o diploma dos '
+         'alojamentos não se aplicava, mas a de que a via sanitária foi a escolhida por ser a eficaz.')
+
+    # ------------------------------------------------------------------ 3
+    h1(doc, '3.', 'Elementos que sustentam a leitura da delimitação')
+
+    h3(doc, '3.1  Objeto e finalidade dos diplomas')
     para(doc,
          'O Decreto-Lei n.º 314/2003 aprova o Programa Nacional de Luta e Vigilância Epidemiológica da Raiva '
-         'Animal e Outras Zoonoses e estabelece as regras relativas à posse e detenção, comércio, exposições e '
-         'entrada em território nacional de animais suscetíveis à raiva. O seu objeto é sanitário e '
-         'epidemiológico. A epígrafe do artigo 3.º é «Detenção de cães e gatos»; o sujeito das suas normas é o '
-         'detentor; a unidade de referência é o fogo.')
+         'Animal e Outras Zoonoses. O bem jurídico do artigo 3.º é enunciado no seu n.º 1 e é a salubridade: '
+         'ausência de riscos relativamente à conspurcação ambiental e a doenças transmissíveis ao homem. O '
+         'Decreto-Lei n.º 276/2001 executa a Convenção Europeia para a Proteção dos Animais de Companhia e '
+         'regula, nos termos do seu artigo 1.º, o exercício da atividade de exploração de alojamentos e de '
+         'venda. Um protege a vizinhança e a saúde pública; o outro protege o animal na atividade económica.')
+
+    h3(doc, '3.2  O tipo contraordenacional qualifica o objeto do artigo 3.º')
     para(doc,
-         'O Decreto-Lei n.º 276/2001 tem objeto distinto. Nos termos do seu artigo 1.º, regula o exercício da '
-         'atividade de exploração de alojamentos, independentemente do seu fim, e de venda de animais de '
-         'companhia. Uma norma dirige-se a quem detém; a outra a quem exerce uma atividade.')
+         'Quando teve de nomear a realidade que o artigo 3.º disciplina, o legislador não empregou '
+         '«alojamento», «estabelecimento» nem «canil». Empregou «habitações e terrenos anexos».')
+    citacao(doc,
+            ['c) A permanência de cães e gatos em habitações e terrenos anexos em desrespeito pelas condições '
+             'previstas no artigo 3.º;'],
+            'Al. c), do n.º 3, do artigo 14.º do Decreto-Lei n.º 314/2003')
     para(doc,
-         'A finalidade confirma a leitura. O n.º 1 do artigo 3.º do Decreto-Lei n.º 314/2003 condiciona o '
-         'alojamento à ausência de riscos hígio-sanitários relativamente à conspurcação ambiental e a doenças '
-         'transmissíveis ao homem. O bem jurídico é a saúde pública na sua dimensão de vizinhança, não a '
-         'proteção do animal na atividade económica, que é o objeto do Decreto-Lei n.º 276/2001 enquanto '
-         'diploma de execução da Convenção Europeia para a Proteção dos Animais de Companhia.')
+         'O elemento é relevante porque provém da norma sancionatória, que delimita condutas puníveis e, por '
+         'isso, exige precisão. Não existe no Decreto-Lei n.º 314/2003 qualquer tipo que puna o exercício de '
+         'atividade em estabelecimento acima de determinada lotação.')
+
+    h3(doc, '3.3  O diploma sanitário sabe distinguir estabelecimento de habitação')
     para(doc,
-         'A doutrina que se debruçou sobre o artigo 3.º recusou, pelas mesmas razões, que os seus limites '
-         'valham fora do domínio sanitário. A propósito da tentativa de deles extrair uma limitação geral aos '
-         'poderes do proprietário de fracção autónoma, escreveu-se o seguinte.')
+         'O Decreto-Lei n.º 314/2003 conhece e regula estabelecimentos — mas fá-lo em artigo próprio, '
+         'distinto do artigo 3.º e com alínea sancionatória distinta.')
+    citacao(doc,
+            ['1 — Os cães e gatos que se encontrem em estabelecimentos destinados ao seu comércio devem estar '
+             'acompanhados do respectivo boletim sanitário de cães e gatos […]'],
+            'N.º 1 do artigo 5.º do Decreto-Lei n.º 314/2003')
+    para(doc,
+         'A arrumação interna do diploma é, pois, a seguinte: artigo 3.º para as habitações e terrenos '
+         'anexos, punido pela al. c); artigo 5.º para os estabelecimentos de comércio, punido pela al. f). A '
+         'distinção é do próprio legislador sanitário. O que não existe é um artigo do Decreto-Lei '
+         'n.º 314/2003 dedicado aos estabelecimentos de criação.')
+
+    h3(doc, '3.4  Autoridade competente e procedimento não coincidem')
+    tabela(doc,
+           ['', 'Decreto-Lei n.º 314/2003, artigo 3.º', 'Decreto-Lei n.º 276/2001'],
+           [
+            ['Facto regulado', 'Condições de alojamento num prédio',
+             'Exercício da atividade de exploração de alojamentos e de criação comercial'],
+            ['Intervenção prévia', 'Parecer vinculativo do médico veterinário municipal e do delegado de '
+             'saúde, a pedido do detentor',
+             'Mera comunicação prévia à DGAV; permissão administrativa nos casos do art.º 3.º, n.º 1, al. b)'],
+            ['Reação ao incumprimento', 'Notificação camarária para remoção dos animais; contraordenação da '
+             'al. c) do n.º 3 do art.º 14.º',
+             'Regime sancionatório próprio dirigido ao titular da exploração, com suspensão e encerramento'],
+            ['Fixação da lotação', 'Não estabelece procedimento de fixação',
+             'Declarada na mera comunicação prévia (art.º 3.º-A, n.º 1, al. h)) e limitada pelas dimensões '
+             'mínimas do anexo III (art.º 27.º, n.º 1)'],
+           ],
+           [Cm(3.2), Cm(6.6), Cm(6.8)])
+
+    h3(doc, '3.5  O Decreto-Lei n.º 276/2001 admite expressamente alojamentos em casas de habitação')
+    para(doc,
+         'Se a classificação do prédio fosse determinante para o acesso à atividade, o diploma dos '
+         'alojamentos não teria de prever o acesso das autoridades a casas de habitação para controlar o '
+         'alojamento e o seu titular.')
+    citacao(doc,
+            ['2 — Caso o titular da exploração do alojamento se recuse a facultar o acesso ao alojamento, '
+             'pode ser solicitado mandado judicial para permitir às autoridades competentes o acesso aos '
+             'locais onde os animais se encontrem, nomeadamente casas de habitação e terrenos privados.'],
+            'N.º 2 do artigo 67.º-A do Decreto-Lei n.º 276/2001')
+    para(doc,
+         'A norma pressupõe que um alojamento com titular de exploração possa situar-se numa casa de '
+         'habitação. É a mesma opção que o Regulamento (UE) 2026/1818 viria a consagrar ao incluir as casas '
+         'particulares no conceito de estabelecimento.')
+
+    h3(doc, '3.6  A capacidade tem regime próprio no diploma dos alojamentos')
+    para(doc,
+         'O Decreto-Lei n.º 276/2001 dispõe de mecanismo completo de fixação e de controlo da lotação: é '
+         'declarada pelo interessado no título de acesso e materialmente limitada pelos parâmetros mínimos de '
+         'espaço. Havendo regime especial completo, não há lacuna que justifique ir buscar a norma de '
+         'capacidade a diploma com outro objeto.')
+    citacao(doc,
+            ['h) A capacidade máxima de animais e respetivas espécies a alojar;'],
+            'Al. h) do n.º 1 do artigo 3.º-A do Decreto-Lei n.º 276/2001')
+
+    h3(doc, '3.7  Doutrina')
+    para(doc,
+         'A doutrina que se debruçou sobre o artigo 3.º recusou que os seus limites valham fora do domínio '
+         'sanitário, a propósito da tentativa de deles extrair uma limitação geral aos poderes do '
+         'proprietário de fracção autónoma.')
     citacao(doc,
             ['Seria no mínimo abusivo pretender retirar daqui uma limitação geral em termos de detenção de '
              'animais numa fracção autónoma, numa limitação matreira aos poderes conferidos pelo código civil '
              'aos proprietários.',
-             'A limitação prevista nesta norma vale para efeito de prevenção de zoonoses. Mal se compreenderia, '
-             'num diploma desta natureza, uma limitação geral, feita em abstracto (sem qualquer atenção, por '
-             'exemplo, à dimensão da fracção autónoma) aos poderes conferidos ao proprietário pelo Direito '
-             'Civil.',
+             'A limitação prevista nesta norma vale para efeito de prevenção de zoonoses. […]',
              'O limite máximo aqui estabelecido releva para efeitos de luta e vigilância epidemiológica, '
              'indiciando riscos higío-sanitários, não pretende regular relações de vizinhança, nem tutelar '
              'direitos de personalidade dos outros conviventes no prédio.'],
             'Sandra Passinhas, «Os animais e o regime português da propriedade horizontal», Revista da Ordem '
             'dos Advogados, Ano 66, Vol. II, setembro de 2006')
-    para(doc,
-         'O raciocínio vale por maioria de razão no caso presente. Se os limites do artigo 3.º não podem ser '
-         'invocados para conformar o conteúdo do direito de propriedade e as relações de vizinhança, que são '
-         'matéria civil próxima do seu campo de incidência material, menos ainda podem sê-lo para condicionar '
-         'o acesso a uma atividade económica regulada por diploma próprio, com autoridade competente, '
-         'procedimento e regime sancionatório distintos.')
+    nota(doc, [
+        'Registe-se que esta posição doutrinária **não foi acolhida** pelo acórdão do Tribunal da Relação de '
+        'Guimarães referido em 2.6, que mobilizou o artigo 3.º precisamente como regra de vizinhança. A '
+        'doutrina é, neste ponto, elemento de peso mas não pacífico.'])
 
-    h1(doc, '3.', 'Argumento sistemático: a articulação feita pelo legislador')
+    h3(doc, '3.8  A prática administrativa não cruza os dois planos')
     para(doc,
-         'Este é o elemento decisivo e resulta da sequência legislativa. O Decreto-Lei n.º 314/2003 e o '
-         'Decreto-Lei n.º 315/2003 têm a mesma data, 17 de dezembro de 2003. O segundo alterou o Decreto-Lei '
-         'n.º 276/2001. No mesmo momento em que introduziu no ordenamento os limites de detenção por fogo, o '
-         'legislador interveio no diploma dos alojamentos para articular os dois regimes.')
-    para(doc,
-         'A redação original de 2001 da definição de hospedagem sem fins lucrativos não continha qualquer '
-         'remissão para legislação sanitária.')
-    citacao(doc,
-            ["p) 'Hospedagem sem fins lucrativos' alojamento, permanente ou temporário, de animais de companhia "
-             "que não vise a obtenção de rendimentos;"],
-            'Al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, redação originária de 17 de outubro de 2001')
-    para(doc,
-         'O Decreto-Lei n.º 315/2003 acrescentou-lhe uma exceção expressa, por remissão para o artigo 3.º do '
-         'diploma da raiva.')
-    citacao(doc,
-            ["p) 'Hospedagem sem fins lucrativos', alojamento, permanente ou temporário, de animais de "
-             "companhia que não vise a obtenção de rendimentos, com excepção das referidas no n.º 3 do artigo "
-             "3.º do diploma que aprova o Plano Nacional de Luta e Vigilância da Raiva Animal e outras "
-             "Zoonoses;"],
-            'Al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, na redação do Decreto-Lei n.º 315/2003')
-    para(doc,
-         'O sentido da intervenção é inequívoco. Confrontado com a coexistência dos dois regimes, o legislador '
-         'não converteu os limites de detenção em limiar de capacidade dos alojamentos. Fez o inverso: '
-         'subtraiu ao conceito de alojamento sujeito a título de acesso as situações de detenção que o diploma '
-         'sanitário regula. Delimitou os planos em vez de os sobrepor.')
-    para(doc,
-         'O n.º 3 do artigo 3.º para que se remete permanece hoje na redação originária de 2003, tal como todo '
-         'o artigo 3.º, que nunca foi alterado. Tem o seguinte teor.')
-    citacao(doc,
-            ['3 — No caso de fracções autónomas em regime de propriedade horizontal, o regulamento do '
-             'condomínio pode estabelecer um limite de animais inferior ao previsto no número anterior.'],
-            'N.º 3 do artigo 3.º do Decreto-Lei n.º 314/2003, redação originária')
-    para(doc,
-         'A concordância gramatical fixa o sentido da exceção: «das referidas» reporta-se às fracções '
-         'autónomas. O alojamento de animais numa fracção autónoma em regime de propriedade horizontal não é, '
-         'para efeitos do Decreto-Lei n.º 276/2001, hospedagem sem fins lucrativos, e não fica por isso sujeito '
-         'a mera comunicação prévia nos termos da al. a) do n.º 1 do seu artigo 3.º.')
-    para(doc,
-         'A opção é significativa. O legislador podia ter transformado os limites de detenção em teto de '
-         'lotação dos alojamentos, e não o fez. Retirou do universo dos alojamentos sujeitos a título de acesso '
-         'a situação doméstica que o diploma sanitário passava a regular. A exceção é estreita, porque '
-         'circunscrita à fracção autónoma, mas a direção da intervenção é inequívoca e vale como elemento '
-         'interpretativo quanto à relação entre os dois regimes.')
-
-    h3(doc, 'Alcance exato da exceção')
-    para(doc,
-         'Conjugada com a al. a) do n.º 1 do artigo 3.º, que sujeita a mera comunicação prévia os alojamentos '
-         'para hospedagem com ou sem fins lucrativos, a exceção produz o seguinte resultado.')
-    tabela(doc,
-           ['Situação', 'Qualificação', 'Título de acesso'],
-           [
-            ['Animais detidos sem intuito de rendimento em fracção autónoma',
-             'Excluída da hospedagem sem fins lucrativos pela al. p)',
-             'Nenhum. Rege o regulamento de condomínio e, em caso de excesso, a remoção municipal do n.º 5 do '
-             'artigo 3.º do Decreto-Lei n.º 314/2003'],
-            ['Alojamento sem intuito de rendimento explorado fora de fracção autónoma, designadamente abrigo '
-             'de associação',
-             'Hospedagem sem fins lucrativos',
-             'Mera comunicação prévia'],
-            ['Alojamento para reprodução, criação, manutenção ou venda com interesse comercial ou lucrativo, '
-             'em qualquer tipo de prédio, incluindo fracção autónoma',
-             'Hospedagem com fins lucrativos, al. q), **sem qualquer exceção**',
-             'Mera comunicação prévia ou permissão administrativa'],
-           ],
-           [Cm(5.0), Cm(5.4), Cm(6.2)])
-
-    h3(doc, 'Argumento a contrario: a alínea q) nunca foi excecionada')
-    para(doc,
-         'A alínea q) define a hospedagem com fins lucrativos como o alojamento para reprodução, criação, '
-         'manutenção e venda de animais de companhia. É a norma que qualifica o estabelecimento de criação. '
-         'Nunca conteve, em nenhuma das dez versões do diploma entre 2001 e a redação atual, qualquer remissão '
-         'para o regime da raiva ou para os limites de detenção.')
-    para(doc,
-         'O contraste é decisivo. No mesmo ato em que criou os limites por fogo, o legislador introduziu a '
-         'exceção na alínea p) e não a introduziu na alínea q). Soube excecionar quando quis excecionar. Se '
-         'tivesse pretendido que os limites de detenção do Decreto-Lei n.º 314/2003 condicionassem os '
-         'alojamentos de reprodução e criação, teria feito na alínea q) o que fez na alínea p). A ausência é '
-         'deliberada e opõe-se à tese de que aqueles limites valem como teto de lotação dos estabelecimentos.')
-
-    h3(doc, 'Defeitos de redação da remissão')
-    para(doc,
-         'A remissão é imperfeita, em três planos que importa distinguir, porque nenhum deles afeta a '
-         'conclusão anterior.')
-    numlist(doc, [
-        '**Designação incorreta do diploma remetido.** A alínea p) refere o «Plano Nacional de Luta e '
-        'Vigilância da Raiva Animal e outras Zoonoses». A designação legal, fixada no artigo 1.º tanto do '
-        'Decreto-Lei n.º 91/2001 como do Decreto-Lei n.º 314/2003, é «Programa Nacional de Luta e Vigilância '
-        'Epidemiológica da Raiva Animal e Outras Zoonoses». Erram o substantivo e omite-se o qualificativo. '
-        'É lapso objetivo, e subsiste desde 2003.',
-
-        '**Remissão indireta.** O n.º 3 do artigo 3.º não define uma categoria de alojamento: é norma '
-        'habilitante do regulamento de condomínio. As fracções autónomas aparecem nele como cenário de '
-        'aplicação, não como objeto regulado. A remissão capta o referente pretendido por acidente da redação '
-        'e não por técnica legislativa. A formulação correta seria excecionar diretamente «as fracções '
-        'autónomas em regime de propriedade horizontal».',
-
-        '**Incompletude.** A exceção cobre apenas a fracção autónoma. A detenção doméstica em moradia, em '
-        'prédio rústico ou em prédio misto fica formalmente fora dela. Se o propósito era subtrair a detenção '
-        'doméstica ao conceito de alojamento, a exceção é mais estreita do que o seu fim.',
-    ])
-    para(doc,
-         'Não há, em contrapartida, erro no número remetido. O n.º 3 é o único do artigo 3.º onde figura um '
-         'substantivo feminino plural, «fracções autónomas», com o qual concorda a expressão «das referidas» '
-         'usada na alínea p). A concordância gramatical confirma que o legislador visou aquele número e não '
-         'outro. Os lapsos de designação e de técnica não permitem, por si, concluir por lapso de numeração.')
-
-    h1(doc, '4.', 'Argumento do critério de aplicação')
-    para(doc,
-         'Os dois regimes acionam-se por factos distintos e logicamente independentes. O Decreto-Lei n.º '
-         '276/2001 desencadeia-se pela atividade: basta possuir uma fêmea reprodutora cujas crias se destinem '
-         'ao comércio. O Decreto-Lei n.º 314/2003 desencadeia-se pelo número de animais adultos no fogo.')
-    tabela(doc,
-           ['Situação', 'Decreto-Lei n.º 276/2001', 'Decreto-Lei n.º 314/2003'],
-           [
-            ['Uma fêmea reprodutora, uma ninhada por ano, em apartamento',
-             'Atividade sujeita a mera comunicação prévia',
-             'Dentro do limite de detenção'],
-            ['Quatro cães adultos sem qualquer reprodução',
-             'Sem atividade; não sujeito',
-             'No limite; carece de parecer para exceder'],
-            ['Seis cães adultos em prédio rústico, sem reprodução',
-             'Sem atividade; não sujeito',
-             'Dentro do limite'],
-            ['Doze cães adultos em estabelecimento de criação licenciado',
-             'Capacidade declarada e aferida pelo anexo I',
-             'Norma de detenção doméstica não aplicável'],
-           ],
-           [Cm(5.4), Cm(5.7), Cm(5.5)])
-    para(doc,
-         'A independência dos critérios demonstra que nenhum deles é condição do outro. Se os limites de '
-         'detenção funcionassem como limiar de capacidade, o segundo e o terceiro casos configurariam '
-         'atividade regulada, o que manifestamente não sucede.')
-
-    h1(doc, '5.', 'A capacidade dos alojamentos tem regime próprio')
-    para(doc,
-         'O Decreto-Lei n.º 276/2001 dispõe de mecanismo autónomo e completo de fixação da capacidade. Esta é '
-         'declarada pelo interessado no procedimento de acesso e aferida por parâmetros dimensionais '
-         'constantes do próprio diploma.')
-    citacao(doc,
-            ['h) A capacidade máxima de animais e respetivas espécies a alojar;'],
-            'Al. h) do n.º 1 do artigo 3.º-A do Decreto-Lei n.º 276/2001')
-    citacao(doc,
-            ['6 — Os alojamentos referidos neste capítulo devem obedecer aos parâmetros mínimos adequados à '
-             'espécie, nomeadamente os constantes do anexo i do presente diploma, do qual faz parte '
-             'integrante.'],
-            'N.º 6 do artigo 25.º do Decreto-Lei n.º 276/2001')
-    para(doc,
-         'Havendo regime especial completo para a capacidade dos alojamentos, não há lacuna que justifique '
-         'recorrer a norma de outro diploma, com objeto diverso, para a integrar. A regra da especialidade '
-         'impõe a prevalência do Decreto-Lei n.º 276/2001 nesta matéria.')
-
-    h1(doc, '6.', 'Argumento da arquitetura sancionatória')
-    para(doc,
-         'Os dois diplomas reagem ao incumprimento por vias que não se comunicam. O Decreto-Lei n.º 314/2003 '
-         'confere à câmara municipal, após vistoria conjunta do delegado de saúde e do médico veterinário '
-         'municipal, o poder de notificar o detentor para retirar os animais para o canil ou gatil municipal. '
-         'É medida de polícia sanitária sobre um agregado doméstico.')
-    citacao(doc,
-            ['5 — Em caso de não cumprimento do disposto nos números anteriores, as câmaras municipais, após '
-             'vistoria conjunta do delegado de saúde e do médico veterinário municipal, notificam o detentor '
-             'para retirar os animais para o canil ou gatil municipal no prazo estabelecido por aquelas '
-             'entidades, caso o detentor não opte por outro destino que reúna as condições estabelecidas pelo '
-             'presente diploma.'],
-            'N.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003')
-    para(doc,
-         'O Decreto-Lei n.º 276/2001 dispõe de regime sancionatório próprio aplicável ao titular da exploração, '
-         'com medidas de suspensão e encerramento e responsabilidade contraordenacional. A diferença de '
-         'destinatário, de autoridade competente e de consequência jurídica confirma que os planos são '
-         'distintos.')
-
-    h1(doc, '7.', 'A classificação predial é critério tributário')
-    para(doc,
-         'Prédio urbano, prédio rústico e prédio misto são categorias definidas nos artigos 2.º a 6.º do Código '
-         'do Imposto Municipal sobre Imóveis, para efeitos de incidência e avaliação. Não exprimem aptidão '
-         'sanitária, dimensão útil nem adequação ao alojamento de animais. Um apartamento de trezentos metros '
-         'quadrados com logradouro e uma habitação exígua integram a mesma categoria.')
-    para(doc,
-         'Fazer depender a licitude de uma atividade económica, e o respetivo limiar de exercício, da '
-         'classificação matricial do imóvel conduziria a diferenciação sem fundamento material bastante. A '
-         'mesma atividade, com o mesmo número de animais e as mesmas condições efetivas, seria lícita ou '
-         'ilícita consoante a inscrição na matriz predial. Uma interpretação com este resultado não satisfaz '
-         'as exigências de necessidade e de proporcionalidade que vinculam a restrição de direitos económicos.')
-    para(doc,
-         'Acresce que o Decreto-Lei n.º 314/2003 usa a classificação predial para um fim que lhe é adequado: '
-         'aproximar, de forma expedita, o risco de conspurcação e de transmissão de zoonoses em contexto de '
-         'vizinhança. Transpor esse critério para a regulação de uma atividade desvirtua-o.')
-
-    h1(doc, '8.', 'O direito da União afasta a relevância do tipo de prédio')
-    para(doc,
-         'O Regulamento (UE) 2026/1818 define o estabelecimento de criação em termos que abrangem '
-         'expressamente a habitação particular, sem qualquer distinção quanto à natureza do imóvel.')
-    citacao(doc,
-            ['«Estabelecimento de criação», qualquer instalação ou estrutura, incluindo casas particulares, '
-             'onde são mantidos cães ou gatos para fins de reprodução com vista à colocação da sua '
-             'descendência no mercado.'],
-            'Al. o) do artigo 4.º do Regulamento (UE) 2026/1818')
-    para(doc,
-         'O critério europeu é funcional: releva a afetação do espaço à reprodução com vista à colocação no '
-         'mercado, não a sua qualificação jurídica ou tributária. A partir de 31 de agosto de 2028, uma leitura '
-         'nacional que fizesse depender o conceito de estabelecimento da classificação predial colidiria com '
-         'esta definição.')
-
-    h1(doc, '9.', 'Consequências da tese contrária')
-    para(doc,
-         'A leitura que converte os limites de detenção em limiar de capacidade produz resultados que o sistema '
-         'não comporta e que, por isso, a infirmam.')
+         'A prática seguida pelas autoridades competentes é convergente e verificável em fontes públicas '
+         'atuais.')
     bullets(doc, [
-        'Nenhum estabelecimento de criação instalado em prédio urbano poderia deter mais de quatro animais '
-        'adultos, ou seis mediante parecer vinculativo. O limiar europeu de mais de cinco cadelas ou gatas '
-        'reprodutoras, que aciona a aprovação do artigo 10.º do Regulamento, seria inaplicável em meio urbano.',
-
-        'A permissão administrativa prevista na al. b) do n.º 1 do artigo 45.º do projeto de regime ficaria '
-        'esvaziada de conteúdo quanto a uma parte substancial do território.',
-
-        'A capacidade máxima declarada na mera comunicação prévia e os parâmetros do anexo I do Decreto-Lei '
-        'n.º 276/2001 tornar-se-iam inúteis, por serem sempre precedidos de um teto fixado alhures.',
-
-        'Um alojamento licenciado com capacidade para doze cães, aprovado pela autoridade competente ao abrigo '
-        'do Decreto-Lei n.º 276/2001, estaria simultaneamente em infração ao Decreto-Lei n.º 314/2003. A '
-        'antinomia seria permanente e insanável.',
+        'As perguntas frequentes da DGAV para alojamentos de criação, na versão de julho de 2025, descrevem '
+        'o título de acesso, os documentos exigidos e os requisitos das instalações por remissão para o '
+        'Decreto-Lei n.º 276/2001, e **não invocam em momento algum o Decreto-Lei n.º 314/2003, os limites '
+        'por fogo ou a classificação do prédio**.',
+        'O serviço municipal de «autorização de alojamento de animais em n.º superior ao previsto na lei» '
+        'dirige-se a detentores em prédios urbanos e distingue-o expressamente das situações de alojamento '
+        'de animais, com ou sem fins comerciais, sujeitas a título próprio.',
+        'Os regulamentos municipais recentes reproduzem o artigo 3.º e acrescentam-lhe apenas o procedimento '
+        'de vistoria e a taxa devida, sem o ligarem ao licenciamento de alojamentos — assim, o artigo 13.º do '
+        'Regulamento n.º 181/2025, de 31 de janeiro, do Município do Cartaxo.',
     ])
-    para(doc,
-         'Presumindo o intérprete que o legislador consagrou as soluções mais acertadas e soube exprimir o seu '
-         'pensamento em termos adequados, nos termos do artigo 9.º do Código Civil, deve ser afastada a '
-         'interpretação que gera antinomia permanente entre dois diplomas que o próprio legislador articulou '
-         'no mesmo dia.')
 
-    h1(doc, '10.', 'O que o Decreto-Lei n.º 314/2003 efetivamente impõe a quem comercializa')
+    # ------------------------------------------------------------------ 4
+    h1(doc, '4.', 'Ponderação')
     para(doc,
-         'A única disposição do diploma que intersecta estabelecimentos é o artigo 5.º, e refere-se a '
-         'estabelecimentos destinados ao comércio. Não menciona criação nem reprodução, e o seu conteúdo '
-         'esgota-se em documentação sanitária.')
-    citacao(doc,
-            ['1 — Os cães e gatos que se encontrem em estabelecimentos destinados ao seu comércio devem estar '
-             'acompanhados do respectivo boletim sanitário de cães e gatos, onde deve estar aposta a etiqueta '
-             'autocolante comprovativa da identificação electrónica, quando aplicável, e ter asseguradas as '
-             'acções de profilaxia médica e sanitária obrigatórias ou consideradas adequadas à saúde e idade '
-             'dos animais pelo médico veterinário.',
-             '2 — Os cães com idade superior a 3 meses de idade devem possuir certificado das acções de '
-             'profilaxia consideradas obrigatórias para a espécie.'],
-            'Artigo 5.º do Decreto-Lei n.º 314/2003')
+         'Os elementos do ponto 2 provam que os dois diplomas se tocam: partilham o conceito de detentor, '
+         'partilham o vocábulo alojamento, e o artigo 3.º é efetivamente aplicado a quem detém muitos animais '
+         'numa habitação, incluindo quando a situação é materialmente um canil. Não provam, porém, aquilo '
+         'que seria necessário para a tese da sobreposição: que os números do artigo 3.º operem como limite '
+         'de lotação de um estabelecimento titulado.')
     para(doc,
-         'Estas obrigações são cumulativas com as do Decreto-Lei n.º 276/2001 e serão absorvidas pelo regime de '
-         'rastreabilidade do Capítulo III do Regulamento. Não têm qualquer incidência sobre a capacidade do '
-         'estabelecimento nem sobre o título de acesso.')
-
-    h1(doc, '11.', 'Síntese')
-    tabela(doc,
-           ['', 'Decreto-Lei n.º 314/2003', 'Decreto-Lei n.º 276/2001'],
-           [
-            ['Objeto', 'Luta e vigilância epidemiológica da raiva e outras zoonoses; posse e detenção',
-             'Exercício da atividade de exploração de alojamentos e de venda'],
-            ['Destinatário', 'Detentor', 'Titular da exploração'],
-            ['Unidade de referência', 'Fogo; prédio urbano, rústico ou misto', 'Alojamento'],
-            ['Facto gerador', 'Número de animais adultos no fogo',
-             'Exercício da atividade; uma fêmea reprodutora basta'],
-            ['Bem jurídico', 'Saúde pública e salubridade de vizinhança',
-             'Saúde e bem-estar animal na atividade económica'],
-            ['Reação ao incumprimento',
-             'Notificação municipal para remoção dos animais, após vistoria conjunta',
-             'Suspensão, encerramento e contraordenação'],
-            ['Fixação da capacidade', 'Não regula',
-             'Declarada na mera comunicação prévia e aferida pelo anexo I'],
-           ],
-           [Cm(3.3), Cm(6.6), Cm(6.7)])
+         'Os elementos do ponto 3 provam que o artigo 3.º não foi construído como norma de acesso a '
+         'atividade: não tipifica o exercício sem título, não fixa lotação de estabelecimento, é executado '
+         'por autoridades diferentes e convive com um regime de capacidade completo no diploma dos '
+         'alojamentos. Não provam, porém, que o artigo 3.º deixe de se aplicar a quem cria.')
     destaque(doc, [
-        'Os dois diplomas são cumulativamente aplicáveis a quem cria cães ou gatos na sua habitação: enquanto '
-        'detentor, observa os limites e as condições higiossanitárias do Decreto-Lei n.º 314/2003; enquanto '
-        'operador, cumpre o Decreto-Lei n.º 276/2001 e, a partir de 2028, o Regulamento. **Cumulação não é '
-        'sobreposição.** Nenhum dos regimes fixa o limiar do outro.'])
+        'As duas séries de elementos são compatíveis entre si, e a incompatibilidade só surge se se insistir '
+        'em formular a questão como exclusão recíproca. **Os regimes são cumulativos.** Quem cria cães na sua '
+        'habitação é, simultaneamente, detentor para efeitos do diploma sanitário e — se a atividade for de '
+        'criação comercial — operador para efeitos do diploma dos alojamentos. Cumular não é sobrepor: '
+        'nenhum dos regimes fixa o limiar do outro.'])
 
-    h1(doc, '12.', 'Recomendação')
+    # ------------------------------------------------------------------ 5
+    h1(doc, '5.', 'O ponto de fricção real')
+    para(doc,
+         'Assente a cumulação, a questão prática reduz-se muito, e convém enunciá-la com exatidão, porque é '
+         'mais estreita do que o debate público sugere.')
+    para(doc,
+         'Nos prédios rústicos e mistos **não existe teto**: o n.º 4 admite exceder os seis animais sempre que '
+         'a dimensão do terreno o permita e se verifiquem as condições do n.º 1. Nestes prédios, portanto, o '
+         'artigo 3.º não constitui obstáculo à existência de um estabelecimento de criação de qualquer '
+         'dimensão, desde que salubre. É neles que se situa a esmagadora maioria dos estabelecimentos.')
+    para(doc,
+         'Nos prédios urbanos existe um máximo absoluto de seis animais adultos, alcançável apenas mediante '
+         'parecer vinculativo do médico veterinário municipal e do delegado de saúde. Aqui, e só aqui, há '
+         'colisão possível entre o que o artigo 3.º consente ao detentor e o que a mera comunicação prévia '
+         'permitiria declarar ao operador.')
+    tabela(doc,
+           ['Situação', 'Artigo 3.º do DL n.º 314/2003', 'Efeito prático'],
+           [
+            ['Prédio rústico ou misto', 'Sem teto; depende da dimensão do terreno e da salubridade (n.º 4)',
+             'Não limita a lotação do estabelecimento'],
+            ['Prédio urbano, até 4 animais', 'Admitido sem formalidade (n.º 2, 1.ª parte)',
+             'Não limita a lotação do estabelecimento'],
+            ['Prédio urbano, 5 ou 6 animais', 'Admitido mediante parecer vinculativo (n.º 2, parte final)',
+             'Exigência sanitária cumulativa, não título de acesso'],
+            ['Prédio urbano, mais de 6 animais', 'Não admitido pela letra do n.º 2',
+             'Ponto de fricção — ver texto'],
+           ],
+           [Cm(3.9), Cm(6.4), Cm(6.3)],
+           shades=[None, None, None, {0: NO_BG, 1: NO_BG, 2: NO_BG}])
+    para(doc,
+         'Sobre a última linha, a posição que os elementos consentem é a seguinte. O n.º 2 não proíbe o '
+         'exercício da atividade nem revoga o título de acesso; impõe uma condição higiossanitária ao '
+         'alojamento naquele prédio. Um estabelecimento de criação em prédio urbano com mais de seis adultos '
+         'encontra-se, à face da letra da lei, em incumprimento do artigo 3.º, com a consequência prevista no '
+         'seu n.º 5 e a contraordenação da al. c) do n.º 3 do artigo 14.º — e não com a consequência de o '
+         'título de acesso ser inválido. É matéria de conformidade sanitária, não de acesso à atividade.')
+    nota(doc, [
+        'Este é o único ponto em que a resposta não é inteiramente segura e em que a interpretação contrária '
+        'é sustentável. Não se conhece decisão judicial nem parecer publicado que o tenha resolvido. É '
+        'também o ponto que o futuro regime deve resolver por via expressa, em vez de o deixar à '
+        'interpretação.'])
+
+    # ------------------------------------------------------------------ 6
+    h1(doc, '6.', 'O que a prática revela — dedução a partir da aplicação')
+    para(doc,
+         'Vale a pena olhar para o que efetivamente acontece, e não apenas para o que os textos consentem.')
+    para(doc,
+         'Na pesquisa realizada na base de dados de jurisprudência das relações, do Supremo Tribunal de '
+         'Justiça, dos tribunais centrais administrativos e do Supremo Tribunal Administrativo, foram '
+         'identificadas e lidas trinta e duas decisões que citam o Decreto-Lei n.º 314/2003 e trinta e seis '
+         'que citam o Decreto-Lei n.º 276/2001. Em nenhuma delas alguém foi sancionado por criar ou alojar '
+         'animais de companhia sem o título de acesso do Decreto-Lei n.º 276/2001. As situações de detenção '
+         'em massa que chegaram aos tribunais — incluindo um canil de facto com mais de cinquenta cães em '
+         'logradouro urbano — foram tratadas pela via sanitária municipal ou pela via dos direitos de '
+         'personalidade.')
+    para(doc,
+         'Acrescente-se um elemento sistemático. A única hipótese em que a lei tipifica autonomamente a '
+         'criação sem título é a dos cães potencialmente perigosos, na al. j) do artigo 38.º do Decreto-Lei '
+         'n.º 315/2009. Para as restantes raças não existe tipo equivalente.')
+    destaque(doc, [
+        'A dedução que daqui se retira é relevante para o debate em curso: **o chamado «criador informal» não '
+        'existe por falta de norma, mas por ausência de aplicação da que existe.** A criação comercial já '
+        'depende de mera comunicação prévia desde 2001, e a ausência de casuística mostra que o incumprimento '
+        'desse dever não tem sido objeto de reação. Transferir a discussão para os limites de detenção por '
+        'prédio desloca o problema do plano em que ele efetivamente se coloca.'])
+    para(doc,
+         'A isto acresce um segundo fator, que o exame dos requisitos exigidos torna evidente. As condições '
+         'que a DGAV enuncia para os alojamentos de criação — instalações individualizadas para maternidade e '
+         'criação até à idade adulta, enfermaria, quarentena, zonas separadas de armazenagem e manuseamento '
+         'de alimentos, sistema de proteção contra incêndios com alarme de avaria, área de recreio coberta e '
+         'descoberta — não são cumpríveis numa habitação corrente. O obstáculo ao cumprimento não está na '
+         'classificação do prédio nem no número de animais: está na calibração dos requisitos, concebidos '
+         'para estabelecimentos de dimensão industrial e aplicados sem graduação a quem tem uma ninhada por '
+         'ano.')
+
+    # ------------------------------------------------------------------ 7
+    h1(doc, '7.', 'A incidência do Regulamento (UE) 2026/1818')
+    para(doc,
+         'O Regulamento aplica-se aos estabelecimentos de criação independentemente do local em que se '
+         'situem, incluindo casas particulares, e prevê para os criadores de pequena dimensão um regime '
+         'aligeirado. A partir de 31 de agosto de 2028 a questão nacional passa a colocar-se num quadro '
+         'diferente.')
+    bullets(doc, [
+        'Se Portugal quiser manter os limites de detenção por prédio como restrição oponível a '
+        'estabelecimentos abrangidos pelo Regulamento, está a manter uma regra nacional mais restritiva, '
+        'sujeita ao artigo 30.º e ao dever de notificação à Comissão **até 31 de agosto de 2028**.',
+        'Se entender, como aqui se conclui, que os limites operam no plano sanitário da detenção e não no '
+        'plano do acesso à atividade, nada há a notificar quanto a este ponto — mas a clarificação deve '
+        'ficar expressa no diploma nacional, para que a questão não continue a ser decidida caso a caso.',
+    ])
+    nota(doc, [
+        'A escolha entre as duas vias não é técnica; é uma opção de política legislativa com prazo. Não a '
+        'fazer é, na prática, fazer a primeira sem a notificar.'])
+
+    # ------------------------------------------------------------------ 8
+    h1(doc, '8.', 'Nota sobre a estabilidade do artigo 3.º')
+    para(doc,
+         'O artigo 3.º nunca foi alterado. A verificação é direta: o seu texto é idêntico, palavra por '
+         'palavra, nas três versões oficiais do Decreto-Lei n.º 314/2003 — a redação originária de 17 de '
+         'dezembro de 2003, a resultante do Decreto-Lei n.º 20/2019, de 30 de janeiro, e a versão em vigor. '
+         'As duas alterações sofridas pelo diploma incidiram sobre o n.º 2 do artigo 4.º e sobre o artigo '
+         '14.º, e a Resolução da Assembleia da República n.º 138/2019, de 8 de agosto, fez cessar a vigência '
+         'das normas alteradas, repristinando nessa parte a redação de 2003.')
+    para(doc,
+         'Em consequência, o n.º 3 para que remete a al. p) do n.º 1 do artigo 2.º do Decreto-Lei '
+         'n.º 276/2001 é hoje o mesmo que era em 2003 — a regra do regulamento do condomínio. A remissão não '
+         'está desatualizada por efeito de renumeração; está apenas mal calibrada quanto ao seu alcance, pelas '
+         'razões expostas em 2.4.')
+
+    # ------------------------------------------------------------------ 9
+    h1(doc, '9.', 'Limites desta análise')
+    bullets(doc, [
+        'Não se localizou decisão judicial, parecer publicado nem orientação administrativa que resolva '
+        'expressamente a questão do prédio urbano com mais de seis animais em estabelecimento titulado. A '
+        'conclusão formulada em 5. é, nesse ponto, interpretativa.',
+        'A pesquisa jurisprudencial foi feita na base de dados pública dos tribunais superiores. Não cobre a '
+        'primeira instância, onde se decide a maior parte das impugnações de atos municipais, nem os '
+        'processos de contraordenação decididos administrativamente. A inexistência de casuística publicada '
+        'não equivale, por isso, a inexistência de casos.',
+        'O motor de pesquisa dessa base devolve zero resultados quando se combina o operador AND com termos '
+        'que contenham barra ou acentuação, ainda que existam documentos que satisfazem a consulta. As '
+        'pesquisas foram por isso feitas com termos simples e o cruzamento realizado sobre o texto integral '
+        'das decisões descarregadas.',
+        'Não foi consultado o texto original do Diário da República de 17 de dezembro de 2003 em suporte '
+        'oficial, nem o processo legislativo do Decreto-Lei n.º 315/2003, que poderiam esclarecer a génese da '
+        'ressalva da al. p).',
+    ])
+
+    # ------------------------------------------------------------------ 10
+    h1(doc, '10.', 'Conclusões')
+    numlist(doc, [
+        'O Decreto-Lei n.º 314/2003 **aplica-se** a quem cria cães ou gatos: o criador é detentor nos termos '
+        'da al. d) do seu artigo 2.º. Afirmar o contrário é insustentável.',
+        'O artigo 3.º **não é norma de acesso à atividade** e os seus números não constituem a lotação dos '
+        'estabelecimentos, que é declarada no título de acesso e aferida pelos parâmetros de espaço do '
+        'Decreto-Lei n.º 276/2001.',
+        'Os dois regimes são **cumulativos**. Em prédios rústicos e mistos não há teto legal de animais; em '
+        'prédios urbanos há um máximo de seis adultos, que constitui exigência sanitária e não condição de '
+        'validade do título.',
+        'A situação do estabelecimento de criação em prédio urbano com mais de seis adultos é o único ponto '
+        'genuinamente duvidoso e deve ser resolvido por norma expressa no futuro regime.',
+        'A ausência de casuística sobre criação sem título indica que a questão prática do «criador informal» '
+        'é de fiscalização e de calibração dos requisitos, e não de insuficiência normativa.',
+        'Qualquer opção que mantenha os limites por prédio como restrição a estabelecimentos abrangidos pelo '
+        'Regulamento tem de ser notificada à Comissão ao abrigo do artigo 30.º até 31 de agosto de 2028.',
+    ])
+
+    h1(doc, '11.', 'Recomendações')
     numlist(doc, [
         'Explicitar no futuro regime que os limites de detenção previstos na legislação sanitária não '
-        'constituem limiar de capacidade dos estabelecimentos, cuja lotação é declarada no título de acesso e '
-        'aferida pelos parâmetros técnicos aplicáveis.',
-        'Reformular a exceção da al. p) do artigo 2.º do Decreto-Lei n.º 276/2001. Deve excecionar '
-        'diretamente a detenção doméstica, sem remissão, corrigindo simultaneamente a designação do diploma '
-        'remetido, hoje incorreta, e a assimetria entre quem detém animais em fracção autónoma e quem os '
-        'detém em moradia ou em prédio rústico.',
-
-        'Manter a alínea q), relativa ao alojamento para reprodução, criação, manutenção e venda, sem qualquer '
-        'exceção fundada em limites de detenção, em linha com a opção seguida desde 2001.',
-        'Assegurar que a definição nacional de estabelecimento de criação acompanha o Regulamento quanto à '
-        'inclusão das casas particulares, afastando qualquer relevância da classificação predial.',
+        'constituem limiar de capacidade dos estabelecimentos, e regular expressamente a situação do '
+        'estabelecimento em prédio urbano.',
+        'Reformular a ressalva da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001, excecionando '
+        'diretamente a detenção doméstica sem remissão e sem a assimetria atual entre fracção autónoma, '
+        'moradia e prédio rústico.',
+        'Graduar os requisitos das instalações em função da escala da criação, à semelhança do que o '
+        'Regulamento faz, em vez de manter um padrão único calibrado para estabelecimentos de grande '
+        'dimensão.',
+        'Decidir, e fundamentar, a opção quanto ao artigo 30.º do Regulamento dentro do prazo de notificação.',
     ])

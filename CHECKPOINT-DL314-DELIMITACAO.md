@@ -206,3 +206,92 @@ DGAV.
 - A pesquisa combinada no DGSI («314/2003» AND termo) produz falsos negativos: verificou-se que
   devolve zero para combinações que existem no corpus. As conclusões da secção E assentam na leitura
   dos 33 acórdãos efetivamente descarregados, não em contagens dessa pesquisa combinada.
+
+---
+
+## Revisão de 21.9.2026 — reformulação metodológica e fontes primárias
+
+### Crítica aceite
+
+A análise anterior foi construída a partir de uma conclusão e procurou os elementos que a
+confirmavam. Os documentos foram refeitos como análise bilateral: os elementos contrários são
+expostos primeiro, com o mesmo peso, e a conclusão foi reformulada em função do que os elementos
+consentem.
+
+### Fontes primárias obtidas (carregadas no repositório pelo utilizador)
+
+As três versões oficiais do DL 314/2003 estão em `criador informal/`:
+`1o ...pdf` (redação originária), `2o ...pdf` (DL n.º 20/2019) e `3o e atual ...pdf`.
+
+- **O artigo 3.º nunca foi alterado.** Texto byte a byte idêntico nas três versões
+  (MD5 do artigo extraído: `745db9eaca77368cb870a4e84ae56b6c` nas três). Fecha o ponto que estava
+  em aberto.
+- As duas alterações do diploma incidiram no **n.º 2 do art. 4.º** e no **art. 14.º**. A
+  **Resolução da AR n.º 138/2019, de 8.8** fez cessar a vigência das normas alteradas pelo
+  DL 20/2019, repristinando a redação de 2003. O diploma em vigor é, em substância, o de 2003.
+- O **n.º 3 do art. 3.º** é, desde 2003 e até hoje, a regra do regulamento do condomínio.
+  A remissão da al. p) do art. 2.º do DL 276/2001 não está desatualizada por renumeração.
+
+### Elementos novos, internos aos diplomas
+
+| Elemento | Sentido |
+|---|---|
+| Al. d) do art. 2.º do DL 314/2003 — «detentor … para efeitos de **reprodução, criação** … com ou sem fins comerciais» | **Contra** a separação: o criador é detentor |
+| Art. 3.º usa a palavra «alojamento»; al. n) do art. 2.º do DL 276/2001 define alojamento de forma amplíssima | **Contra** |
+| N.º 4 do art. 3.º gradua o número pela dimensão do terreno | **Contra** (lógica de capacidade) |
+| Al. c) do n.º 3 do art. 14.º do DL 314/2003 — «permanência … em **habitações e terrenos anexos**» | **A favor** |
+| Art. 5.º do DL 314/2003 trata estabelecimentos em artigo próprio, punido pela al. f) | **A favor** |
+| N.º 2 do art. 67.º-A do DL 276/2001 — acesso a «casas de habitação e terrenos privados» do alojamento | **A favor** |
+| Al. h) do n.º 1 do art. 3.º-A — capacidade declarada na MCP; anexo III (art. 27.º, n.º 1) | **A favor** |
+
+### Correções de erros próprios
+
+- As dimensões mínimas de cães e gatos estão no **anexo III** (art. 27.º, n.º 1), não no anexo I
+  (que é temperatura e humidade). A passagem dos 1,22 m está na al. g.2), relativa a **centros de
+  recolha e hospedagem sem fins lucrativos** — não a alojamentos de criação. O argumento foi
+  reformulado em conformidade.
+- O **preâmbulo do DL 315/2003 não menciona o DL 314/2003 nem o programa da raiva**. A tese de que
+  a ressalva da al. p) foi um ato deliberado de delimitação não tem suporte e foi retirada.
+
+### Jurisprudência — incluindo a divergente
+
+- **TCA Sul, 4.2.2010, proc. 04784/09** — n.º 4 do art. 3.º sem teto; a Administração tem de aferir
+  se a dimensão do terreno permite exceder os seis.
+- **TRL, 28.6.2007, proc. 1692/2007-8** — «canil clandestino» com mais de 50 cães em logradouro
+  urbano, removido ao abrigo do **n.º 1 do art. 3.º** e dos direitos de personalidade. O DL 276/2001
+  não é mencionado.
+- **TRG, 19.5.2022, proc. 119/20.1T8FAF.G1** — art. 3.º integrado nas regras de higiene, sossego e
+  boa vizinhança da al. a) do n.º 2 do art. 1083.º do CC. **Contraria a doutrina de Passinhas.**
+
+### Dedução a partir da prática
+
+Em 32 acórdãos que citam o DL 314/2003 e 36 que citam o DL 276/2001 (bases jtrl, jtrp, jtrg, jtre,
+jtrc, jstj, jtca, jsta, jtcn), **nenhum** sanciona criação ou alojamento sem título de acesso. O
+único tipo autónomo de criação sem título é o dos cães potencialmente perigosos (al. j) do art. 38.º
+do DL 315/2009). As FAQ da DGAV para alojamentos de criação (julho de 2025) não invocam o
+DL 314/2003, os limites por fogo nem a classificação predial; exigem, porém, maternidade, enfermaria
+e quarentena individualizadas, zonas separadas de armazenagem e manuseamento de alimentos e sistema
+de deteção de incêndios com alarme de avaria — requisitos não cumpríveis numa habitação.
+
+> **Conclusão da dedução**: o «criador informal» não resulta de falta de norma, mas de ausência de
+> aplicação da que existe desde 2001 e de requisitos calibrados para estabelecimentos industriais.
+
+### Conclusão revista
+
+1. O DL 314/2003 **aplica-se** a quem cria — o criador é detentor.
+2. O art. 3.º **não é norma de acesso à atividade**.
+3. Os regimes são **cumulativos**. Prédios rústicos/mistos: sem teto. Prédios urbanos: máximo de 6
+   adultos, como exigência sanitária e não como condição de validade do título.
+4. **Fica em aberto** o estabelecimento titulado em prédio urbano acima de 6 adultos. Não há decisão
+   nem parecer conhecido. É o ponto a resolver por norma expressa no RGAC.
+5. Manter os limites como restrição oponível a estabelecimentos abrangidos pelo Regulamento é regra
+   nacional mais restritiva, a **notificar à Comissão até 31.8.2028** (art. 30.º).
+
+### Continua em aberto
+
+- Texto do DR de 17.12.2003 em suporte oficial e processo legislativo do DL 315/2003.
+- Primeira instância e processos de contraordenação decididos administrativamente (não cobertos
+  pelo dgsi.pt).
+- Nota de método: na base dgsi.pt, o operador `AND` combinado com termos com barra ou acentuação
+  devolve zero resultados mesmo havendo documentos que satisfazem a consulta. Usar termos simples e
+  cruzar sobre o texto integral descarregado.
