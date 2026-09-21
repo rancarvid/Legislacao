@@ -65,3 +65,144 @@ contrária · **argumento a contrario da al. q)** · doutrina (Passinhas).
 - Manter a al. q) sem qualquer exceção fundada em limites de detenção.
 - Explicitar no RGAC que os limites sanitários de detenção não constituem limiar de capacidade dos
   estabelecimentos.
+
+---
+
+## Investigação online — 21 de setembro de 2026
+
+Pesquisa sistemática em DGSI (todas as bases), Tribunal Constitucional, doutrina e prática
+administrativa. **A tese confirma-se, e com material mais forte do que o anterior.**
+
+### A. Linhagem histórica: a norma sempre foi de polícia sanitária municipal
+
+O artigo 3.º do DL 314/2003 descende diretamente do **artigo 10.º do Decreto-Lei n.º 317/85, de 2
+de agosto**, epigrafado «Remoção dos animais por decisão camarária; processo aplicável», inserido
+no capítulo respeitante aos cães, secção do alojamento, do então Programa Nacional de Luta e
+Vigilância Epidemiológica da Raiva Animal:
+
+> «1 - A permanência de cães em habitações situadas em zonas urbanas fica condicionada à existência
+> de boas condições de alojamento dos mesmos, ausência de riscos sob o aspecto sanitário e
+> inexistência nestes animais de doenças transmissíveis ao homem.
+> 2 - As câmaras municipais, sempre que razões de salubridade ou tranquilidade da vizinhança o
+> imponham, poderão determinar a remoção de quaisquer cães ou outros animais de companhia.»
+
+A unidade de referência era a **habitação**. O DL 314/2003 substituiu-a por «prédios urbanos,
+rústicos ou mistos» sem alterar a natureza da norma.
+
+### B. Tribunal Constitucional — quatro décadas de qualificação constante
+
+| Acórdão | Objeto |
+|---|---|
+| **158/95** (2.ª Secção, Guilherme da Fonseca) | Inconstitucionalidade orgânica do n.º 4 do art. 10.º do DL 317/85. Qualifica a decisão camarária de remoção como **ato administrativo**: «um comando de um órgão autárquico, prosseguindo e realizando interesses públicos relativamente à remoção de um animal de raça canina» |
+| **190/95 e 193/95** | Remetem integralmente para o 158/95 |
+| **579/95** (Plenário, Maria Fernanda Palma) | **Declaração de inconstitucionalidade com força obrigatória geral**. «As razões de salubridade ou tranquilidade da vizinhança» integram a decisão «no âmbito das atribuições cometidas às câmaras» |
+| **229/2007** (2.ª Secção, Maria Fernanda Palma) | Mesma solução para o n.º 6 do art. 3.º do DL 314/2003 |
+
+O bem jurídico é, invariavelmente, a **salubridade e a tranquilidade da vizinhança** — nunca o
+acesso a uma atividade económica.
+
+### C. Jurisprudência administrativa — o plano da detenção
+
+**TCA Sul, 4 de fevereiro de 2010, proc. 04784/09** (Rui Pereira), «ALOJAMENTO DE ANIMAIS / PRÉDIO
+MISTO». Sumário I:
+
+> «A posse de animais [cães ou gatos] em qualquer número em prédios urbanos, rústicos ou mistos,
+> nos termos do n.º 1 do artigo 3.º do DL n.º 314/2003, de 17/12, depende da existência de uma
+> situação de salubridade ambiental, **com vista a evitar um perigo para a saúde pública**.»
+
+Caso decisivo: detentora com **cerca de 45 cães** no quintal da residência. O município atuou
+exclusivamente ao abrigo do art. 3.º do DL 314/2003, após vistoria conjunta do delegado de saúde e
+do médico veterinário municipal, ordenando remoção para o canil municipal. **O DL 276/2001 não é
+sequer mencionado** em todo o processo. Nem a Administração nem o tribunal equacionaram
+licenciamento de alojamento.
+
+**TCA Sul, 10 de outubro de 2013, proc. 10348/13** — «Mandado judicial para remoção de animais,
+forma processual».
+
+**Tribunal da Relação de Évora, 18 de abril de 2013, proc. 78/12** (Elisabete Valente). Detentora
+com 10 cães. Sumário: «Deve recorrer-se aos mecanismos previstos no Decreto-Lei n.º 314/2003 (…)
+É competente o Tribunal Administrativo (…) pois a decisão para a remoção de animais, tendo em
+conta a saúde pública, é um acto administrativo.» E, no corpo: **«A situação está legalmente
+prevista no DL e o meio de reacção é só um, aquele que a lei prevê.»**
+
+### D. O plano oposto — quando está em causa um estabelecimento
+
+| Decisão | Enquadramento invocado |
+|---|---|
+| **STA, 7 de março de 2006, proc. 0794/05** — canil com **capacidade para cem cães** | PDM, licenciamento de construção, DL 380/99. Os limites do DL 314/2003 não são convocados |
+| **TCA Norte, 21 de abril de 2023, proc. 01571/22.6BEPRT** — encerramento de alojamento de associação | DL 276/2001 |
+| **TRG, 1 de fevereiro de 2022, proc. 4718/18.3T8GMR.G1** | Taxonomia judicial expressa: DL 314/2003 trata «das suas condições sanitárias (combate à raiva)»; DL 82/2019 «do seu rastreio, registo e licenciamento»; DL 315/2009 «da criação, reprodução e detenção (animais perigosos)» |
+
+### E. Aplicação do art. 3.º na Relação — sempre contexto doméstico
+
+Do corpus de 33 acórdãos recolhidos que citam o DL 314/2003, o art. 3.º é aplicado em: arrendamento
+e boa vizinhança (TRL 31180/22.3T8LSB.L1-6, 18.12.2025); tutela da personalidade e direito ao
+sossego (TRC 856/22.6T8GRD.C1, 13.12.2022); ruído de animal doméstico (TRP 6599/24.9T8MAI.P1,
+30.4.2026); proibição de cães no locado (TRP 3091/15.6T8GDM.P1); execução para remoção de canídeos
+(TRG 585/08.3TBPVL.G1, 19.2.2026). **Nenhum o aplica como limiar de capacidade de estabelecimento
+licenciado.**
+
+### F. Ressalva honesta — o único caso a considerar
+
+**TRL, 28 de junho de 2007, proc. 1692/2007-8** (Salazar Casanova) deferiu providência de remoção de
+animais alojados num **«canil clandestino», instalado no logradouro de um prédio urbano**, com 30
+canídeos, por violação do **n.º 1** do art. 3.º. Não contraria a tese: (i) aplicou o n.º 1, a
+cláusula geral de salubridade, e não os limites numéricos dos n.os 2 e 4; (ii) tratava-se de
+instalação **não licenciada**; (iii) a causa de pedir era de direitos de personalidade. Confirma que
+o n.º 1 funciona como norma de salubridade de alcance geral, não como regra de dimensionamento de
+alojamentos autorizados.
+
+### G. O argumento decisivo — a janela 2001-2003
+
+Sequência verificada nos textos:
+
+1. **DL 317/85** fixava a regra da permanência em habitações (art. 10.º).
+2. **DL 91/2001, de 23 de março**, revogou-o (art. 9.º, n.º 1) e **não reproduziu qualquer limite por
+   fogo nem qualquer poder camarário de remoção**. A palavra «alojamento» não ocorre uma única vez
+   no diploma.
+3. **DL 276/2001, de 17 de outubro** — todo o regime dos alojamentos, da criação comercial, do
+   licenciamento e do Anexo I — **foi aprovado dentro dessa janela**.
+4. **DL 314/2003, de 17 de dezembro**, revogou o DL 91/2001 (art. 19.º) e reintroduziu os limites.
+
+Ou seja: durante **dois anos e nove meses** o ordenamento português não conheceu qualquer limite de
+animais por fogo, e foi exatamente nesse período que se construiu o regime dos alojamentos. O DL
+276/2001 **não podia pressupor** um limite que não existia, e não pode agora passar a depender dele.
+
+### H. Argumento complementar — o Anexo I do DL 276/2001
+
+A capacidade dos alojamentos é fixada por **superfície por animal**: «Num canil, cada animal deverá
+dispor de uma superfície de base de, pelo menos, 1,22 m × 1,22 m»; «Um recinto com as dimensões
+1,50 m × 3 m não poderá alojar mais de dois cães de raça média ou grande, ou três cães de raça
+pequena»; «A superfície mínima do chão do recinto para uma cadela e respectiva ninhada deve estar
+compreendida entre 4 m² e 6 m²». Se o teto de quatro ou seis animais valesse para os alojamentos,
+todo este sistema de dimensionamento seria inútil.
+
+### I. Doutrina
+
+- **Sandra Passinhas**, «Os animais e o regime português da propriedade horizontal», ROA, Ano 66,
+  Vol. II, set. 2006: «A limitação prevista nesta norma vale para efeito de prevenção de zoonoses»;
+  «Seria no mínimo abusivo pretender retirar daqui uma limitação geral em termos de detenção de
+  animais numa fracção autónoma».
+- **Bruno Branco**, «A detenção de animais de companhia — uma análise do ponto de vista
+  contraordenacional», RJLB, Ano 5 (2019), n.º 2, pp. 229-260: o quadro contraordenacional autonomiza
+  «Exceder o n.º de animais **por fogo urbano**» (art. 14.º, n.º 3, al. c), do DL 314/2003) das
+  infrações de atividade do art. 68.º do DL 276/2001.
+- **APMVEAC**, revisão crítica legislativa: lê o art. 3.º como «número de animais de companhia que
+  legalmente é possível **deter**».
+
+### J. Prática administrativa
+
+A página da DGAV sobre autorização e requisitos de funcionamento dos alojamentos invoca apenas o DL
+276/2001 e o DL 260/2012. **Não menciona o DL 314/2003 nem qualquer limite por fogo.** A competência
+contraordenacional do DL 314/2003 reparte-se por juntas de freguesia e municípios (parecer da CCDR
+Algarve sobre o art. 14.º, n.º 1), ao passo que as infrações do DL 276/2001 são instruídas pela
+DGAV.
+
+### Limites desta pesquisa
+
+- O texto original publicado no DR de 17.12.2003 continua por obter (DRE protegido por JavaScript).
+- Não se obteve o articulado de regulamentos municipais com cláusula expressa de exclusão dos
+  alojamentos licenciados; as páginas municipais consultadas são geradas dinamicamente.
+- A pesquisa combinada no DGSI («314/2003» AND termo) produz falsos negativos: verificou-se que
+  devolve zero para combinações que existem no corpus. As conclusões da secção E assentam na leitura
+  dos 33 acórdãos efetivamente descarregados, não em contagens dessa pesquisa combinada.
