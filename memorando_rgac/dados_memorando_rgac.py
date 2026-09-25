@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.2"
+VERSAO_MEMORANDO = "1.3"
 DATA_MEMORANDO = "25.9.2026"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
@@ -36,6 +36,10 @@ INTRODUCAO = [
     "As referências a artigos são sempre à versão do RGAC indicada acima, salvo indicação em contrário. "
     "A legislação vigente citada foi confirmada online (DRE e PGDL), na pasta Legislação vigente e nos "
     "ficheiros do repositório.",
+    "As posições de entidades externas apoiam-se, sempre que possível, em documentos: diplomas, pareceres, "
+    "relatórios, estratégias, recomendações, acórdãos, doutrina e artigos científicos. Quando uma posição só "
+    "é conhecida pela imprensa, a ficha indica «fonte: imprensa» e a entrada fica numa nota própria no "
+    "Anexo B, até se encontrar o documento de origem.",
 ]
 
 CAMPOS_FICHA = [
@@ -286,7 +290,7 @@ TEMA_T = {
             ],
             "proposta": "Norma que diga que o titular e o detentor respondem nos termos gerais do Código Civil e "
                         "que, entre operador e lar de acolhimento, a responsabilidade se reparte por contrato.",
-            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1 (11.7.2012)", "Tribunal da Relação do Porto (11.11.2024)", "CDU (resposta de 2024)"],
+            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1 (11.7.2012)", "Tribunal da Relação do Porto (11.11.2024), fonte: imprensa", "CDU (resposta de 2024)"],
             "estado": "Aberto",
             "rel": ["T-14", "C-08"],
         },
@@ -306,7 +310,7 @@ TEMA_T = {
             "proposta": "Decidir se a família de acolhimento informal fica proibida ou se passa a ter um registo "
                         "simples no SIAC, como detentor, com limite de animais e dever de comunicação.",
             "levantado": ["Estratégia Nacional para os Animais Errantes (ENAE), pp. 30-31",
-                          "Contributos dos médicos veterinários municipais (6.3.2026)", "PAN (estatuto da família de acolhimento, 2024)", "Iniciativa Liberal (programa 2024)", "SNMV (contra registos provisórios no SIAC)"],
+                          "Contributos dos médicos veterinários municipais (6.3.2026)", "PAN (estatuto da família de acolhimento, 2024)", "Iniciativa Liberal (programa 2024), fonte: imprensa", "SNMV (contra registos provisórios no SIAC)"],
             "estado": "Parcialmente resolvido",
             "rel": ["T-13", "C-02"],
         },
@@ -341,7 +345,7 @@ TEMA_T = {
             ],
             "proposta": "Presunção de detenção para quem, de forma regular, aloja, alimenta ou controla o acesso aos "
                         "animais num prédio de que dispõe.",
-            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "ANVETEM (falta de regulação das entidades privadas de proteção animal, 2020)"],
+            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "ANVETEM (falta de regulação das entidades privadas de proteção animal, 2020), fonte: imprensa"],
             "estado": "Aberto",
             "rel": ["C-10"],
         },
@@ -414,7 +418,7 @@ TEMA_C = {
             "proposta": "Manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou "
                         "por protocolo, programas CED para gatos, sempre que se justifique».",
             "levantado": ["ENAE, p. 35 («Os programas CED não estão instituídos em todo o território»)",
-                          "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)", "Chega (programa 2024)", "Animais de Rua (18.11.2024)"],
+                          "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)", "Chega (programa 2024), fonte: imprensa", "Animais de Rua (18.11.2024), fonte: imprensa"],
             "estado": "Aberto",
             "rel": ["C-02"],
         },
@@ -435,7 +439,7 @@ TEMA_C = {
                         "em nome do município, com deveres e limites de responsabilidade definidos.",
             "levantado": ["ENAE, p. 35 («não está definido o conceito de "
                           "\"cuidador da colónia\"»)", "Contributos dos médicos veterinários municipais (6.3.2026)",
-                          "PAN (figura do animal comunitário, PJL 662/XV)", "BE, Chega e Livre (animal comunitário, programas 2024)", "Assembleia Municipal de Coimbra (regulamento de cuidadores, 30.6.2026)", "Câmara Municipal do Porto (gestão diária pelas associações, 2021)"],
+                          "PAN (figura do animal comunitário, PJL 662/XV)", "BE, Chega e Livre (animal comunitário, programas 2024), fonte: imprensa", "Assembleia Municipal de Coimbra (regulamento de cuidadores, 30.6.2026), fonte: imprensa", "Câmara Municipal do Porto (gestão diária pelas associações, 2021), fonte: imprensa"],
             "estado": "Aberto",
             "rel": ["C-03", "T-13", "T-14"],
         },
@@ -491,7 +495,7 @@ TEMA_C = {
             ],
             "proposta": "Substituir a entrega no CRO por avaliação feita pelo médico veterinário do programa, com "
                         "registo no SIAC.",
-            "levantado": ["Relatório final do GTBEA (DGAV, 2021)", "Projeto de revisão da Portaria 146/2017 (ANMP, 2021)", "ANMP (2018)", "Provedora do Animal (cerca de 80 mil animais nos CRO, 25.10.2023)"],
+            "levantado": ["Relatório final do GTBEA (DGAV, 2021)", "Projeto de revisão da Portaria 146/2017 (ANMP, 2021)", "ANMP (2018), fonte: imprensa", "Provedora do Animal (cerca de 80 mil animais nos CRO, 25.10.2023), fonte: imprensa"],
             "estado": "Aberto",
             "rel": [],
         },
@@ -511,7 +515,7 @@ TEMA_C = {
             "proposta": "Manter a exclusão da devolução de cães à via pública, mas prever uma alternativa: parques de "
                         "realojamento de matilhas ou um regime excecional de cão comunitário com critérios "
                         "de segurança.",
-            "levantado": ["OMV (25.11.2025)", "APMVEAC (parecer set. 2023)", "PAN e BE (2024)",
+            "levantado": ["OMV (25.11.2025), fonte: imprensa", "APMVEAC (parecer set. 2023)", "PAN e BE (2024)",
                           "Contributos dos médicos veterinários municipais (6.3.2026)", "FEDRA", "PCP (proposta ao OE2026)", "Livre (programa 2024)", "Movimento de Intervenção pelas Matilhas (Coimbra)", "Projeto de alteração da Portaria 146/2017 (esterilização excecional de cães)"],
             "estado": "Aberto",
             "rel": [],
@@ -548,7 +552,7 @@ TEMA_C = {
             ],
             "proposta": "Definir as duas entidades no art. 3.º ou no próprio art. 86.º, e dizer que o município, "
                         "como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável.",
-            "levantado": ["CDU (resposta de 2024)", "Análise interna", "Câmara Municipal do Porto (2021)", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)"],
+            "levantado": ["CDU (resposta de 2024)", "Análise interna", "Câmara Municipal do Porto (2021), fonte: imprensa", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)"],
             "estado": "Aberto",
             "rel": ["T-13", "C-04"],
         },
@@ -566,7 +570,7 @@ TEMA_C = {
             "proposta": "Número nacional de colónia, atualização pela entidade responsável, cuidadores associados "
                         "e registo anual de entradas, saídas e mortes.",
             "levantado": ["ENAE, p. 35 («não é possível aferir o número de animais nem o número e localização das "
-                          "colónias»)", "ENAE, §33 (número de registo nacional da colónia)", "Assembleia Municipal de Coimbra (mapeamento georreferenciado, 30.6.2026)", "Provedoria dos Animais de Lisboa (sinalização de colónias, 10.9.2024)"],
+                          "colónias»)", "ENAE, §33 (número de registo nacional da colónia)", "Assembleia Municipal de Coimbra (mapeamento georreferenciado, 30.6.2026), fonte: imprensa", "Provedoria dos Animais de Lisboa (sinalização de colónias, 10.9.2024), fonte: imprensa"],
             "estado": "Parcialmente resolvido",
             "rel": ["C-02"],
         },
@@ -671,7 +675,7 @@ TEMA_C = {
             "proposta": "Admitir médico veterinário contratado ou partilhado entre municípios e ligar o CED às linhas "
                         "de apoio da DGAV.",
             "levantado": ["Relatório final do GTBEA (DGAV, 2021): financiamento como principal constrangimento",
-                          "Inventário interno de zonas cinzentas do CED (zona 20)", "DGAV (140 médicos veterinários reconhecidos para 138 municípios, 8.1.2026)", "OMV (cerca de 45% dos municípios com médico veterinário municipal, 22.8.2026)", "Provedoria dos Animais de Lisboa (9.1.2026)", "PCP (2021)", "ANMP (OE2025 sem verbas próprias para CRO)"],
+                          "Inventário interno de zonas cinzentas do CED (zona 20)", "DGAV (140 médicos veterinários reconhecidos para 138 municípios, 8.1.2026), fonte: imprensa", "OMV (cerca de 45% dos municípios com médico veterinário municipal, 22.8.2026), fonte: imprensa", "Provedoria dos Animais de Lisboa (9.1.2026), fonte: imprensa", "PCP (2021)", "ANMP (OE2025 sem verbas próprias para CRO), fonte: imprensa"],
             "estado": "Aberto",
             "rel": [],
         },
@@ -707,7 +711,7 @@ TEMA_C = {
                         "do CRO), retirá-los do SIAC sempre que possível e ligar o acesso a apoios públicos à entrega "
                         "do plano.",
             "levantado": ["Comentário do grupo de trabalho ao art. 85.º («prever sanções para os Municípios que não "
-                          "informam a DGAV»)", "Provedora do Animal (25.10.2023)", "Paulo Afonso (21.4.2026)"],
+                          "informam a DGAV»)", "Provedora do Animal (25.10.2023), fonte: imprensa", "Paulo Afonso (21.4.2026), fonte: imprensa"],
             "estado": "Aberto",
             "rel": ["C-09"],
         },
@@ -912,6 +916,16 @@ STAKEHOLDERS = [
      "https://www.dn.pt/sociedade/ha-que-manter-os-gatos-sem-dono-fora-do-meio-ambiente-16178512.html"),
 ]
 
+# Fontes de imprensa: as entradas cuja fonte seja destes dominios vao para a nota final do Anexo B
+# e nao para a tabela principal. Preferir sempre o documento primario (parecer, relatorio, acordao,
+# artigo, estrategia). Quando se encontrar o documento primario, substituir a fonte.
+DOMINIOS_IMPRENSA = [
+    "observador.pt", "publico.pt", "sapo.pt/artigo", "veterinaria-atual.pt", "lexpoint.pt",
+    "greensavers.sapo.pt", "jornaleconomico", "tvi.iol.pt", "omirante.pt", "poligrafo.sapo.pt",
+    "pit.nit.pt", "rtp.pt", "diariocoimbra.pt", "dn.pt", "jn.pt", "expresso.pt", "sabado.pt",
+    "cmjornal.pt", "postal.pt", "interiordoavesso.pt", "gazetadascaldas.pt",
+]
+
 FONTES = [
     "RGAC: RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx (repositório).",
     "RGBEAC (jun. 2025) e versões comentadas de out. 2025 e fev. 2026 (repositório).",
@@ -933,4 +947,5 @@ REGISTO_ALTERACOES = [
     ("1", "25.9.2026", "Primeira versão. Tema T (18 fichas) e tema C (17 fichas). Anexo B com posições de entidades externas recolhidas no repositório e online."),
     ("1.1", "25.9.2026", "Correção de formatação: larguras fixas das colunas em todas as tabelas; anexos A e B em páginas na horizontal. Sem alterações de conteúdo."),
     ("1.2", "25.9.2026", "Correção das tabelas: as propriedades de largura estavam fora da ordem exigida pelo Word e eram ignoradas. Ficheiro validado contra o esquema. Sem alterações de conteúdo."),
+    ("1.3", "25.9.2026", "Fontes: as posições conhecidas só pela imprensa passam para uma nota no fim do Anexo B e ficam marcadas nas fichas com «fonte: imprensa». A tabela principal do Anexo B fica reservada a documentos. Nenhuma posição foi retirada."),
 ]

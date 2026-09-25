@@ -330,16 +330,13 @@ def quadro_resumo(doc):
     par(doc, f"Total: {total} fichas, das quais {abertas} em aberto.")
 
 
-def anexo_stakeholders(doc):
-    titulo(doc, "Anexo B. Posições de entidades externas", 1)
-    par(doc, "Posições públicas e contributos recolhidos sobre os dois temas deste memorando. As citações "
-             "estão entre aspas e foram transcritas das fontes indicadas. Tema T: titular, detentor, "
-             "proprietário e operador. Tema C: CED, colónias e animais errantes.")
-    if not D.STAKEHOLDERS:
-        par(doc, "Por preencher.")
-        return
+def e_imprensa(fonte):
+    return any(d in fonte for d in getattr(D, "DOMINIOS_IMPRENSA", []))
+
+
+def tabela_stakeholders(doc, entradas, larg):
     grupos = {}
-    for s in D.STAKEHOLDERS:
+    for s in entradas:
         grupos.setdefault(s[0], []).append(s)
     t = doc.add_table(rows=1, cols=4)
     bordas(t)
@@ -357,7 +354,29 @@ def anexo_stakeholders(doc):
             celula(r.cells[1], tema)
             celula(r.cells[2], posicao)
             celula(r.cells[3], fonte)
-    larguras(t, [5.0, 1.6, 12.1, 7.0])
+    larguras(t, larg)
+
+
+def anexo_stakeholders(doc):
+    titulo(doc, "Anexo B. Posições de entidades externas", 1)
+    par(doc, "Posições recolhidas em documentos oficiais, pareceres, estratégias, doutrina, artigos "
+             "científicos e decisões judiciais sobre os dois temas deste memorando. As citações estão entre "
+             "aspas e foram transcritas das fontes indicadas. Tema T: titular, detentor, proprietário e "
+             "operador. Tema C: CED, colónias e animais errantes.")
+    if not D.STAKEHOLDERS:
+        par(doc, "Por preencher.")
+        return
+    principais = [s for s in D.STAKEHOLDERS if not e_imprensa(s[5])]
+    imprensa = [s for s in D.STAKEHOLDERS if e_imprensa(s[5])]
+    tabela_stakeholders(doc, principais, [5.0, 1.6, 12.1, 7.0])
+    if imprensa:
+        doc.add_paragraph()
+        titulo(doc, "Nota. Posições conhecidas apenas através da imprensa", 2)
+        par(doc, "As posições seguintes foram recolhidas em notícias, entrevistas ou resumos publicados na "
+                 "imprensa. Ficam registadas como indicação, mas não servem de fundamento sem confirmação no "
+                 "documento de origem (comunicado, audição parlamentar, recomendação, programa eleitoral ou "
+                 "acórdão). Quando esse documento for encontrado, a entrada passa para a tabela principal.")
+        tabela_stakeholders(doc, imprensa, [5.0, 1.6, 12.1, 7.0])
 
 
 def gerar():

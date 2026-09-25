@@ -68,3 +68,9 @@ Quando um problema fica resolvido numa versão nova do RGAC: mudar o `estado`, a
 2. Gerar o Word e confirmar que o gerador não deu erros. Validar o ficheiro contra o esquema (por exemplo, com o validador da skill docx: `scripts/office/validate.py`). O Word ignora propriedades de tabela fora da ordem do esquema; o gerador reordena-as em `ordenar_tblpr()`, que não deve ser removida.
 3. Rever o texto gerado (por exemplo, com python-docx a listar títulos e tabelas).
 4. Fazer commit dos três ficheiros de `memorando_rgac/` e push para o ramo de trabalho.
+
+## Prioridade das fontes
+
+1. Documentos primários: diplomas e projetos, pareceres, relatórios, estratégias, recomendações do Provedor de Justiça, acórdãos, doutrina publicada e artigos científicos. São a base das fichas e da tabela principal do Anexo B.
+2. Imprensa (notícias, entrevistas, resumos de audições): não se apaga, mas não serve de fundamento. Na ficha, acrescentar «, fonte: imprensa» à entrada de `levantado`. No Anexo B, a entrada vai automaticamente para a nota «Posições conhecidas apenas através da imprensa» se o domínio da fonte constar de `DOMINIOS_IMPRENSA` (acrescentar domínios novos a essa lista).
+3. Quando se encontrar o documento de origem de uma posição da imprensa, substituir a fonte pelo documento e tirar a marca «fonte: imprensa».
