@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.1"
+VERSAO_MEMORANDO = "1.2"
 DATA_MEMORANDO = "25.9.2026"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
@@ -932,4 +932,5 @@ FONTES = [
 REGISTO_ALTERACOES = [
     ("1", "25.9.2026", "Primeira versão. Tema T (18 fichas) e tema C (17 fichas). Anexo B com posições de entidades externas recolhidas no repositório e online."),
     ("1.1", "25.9.2026", "Correção de formatação: larguras fixas das colunas em todas as tabelas; anexos A e B em páginas na horizontal. Sem alterações de conteúdo."),
+    ("1.2", "25.9.2026", "Correção das tabelas: as propriedades de largura estavam fora da ordem exigida pelo Word e eram ignoradas. Ficheiro validado contra o esquema. Sem alterações de conteúdo."),
 ]

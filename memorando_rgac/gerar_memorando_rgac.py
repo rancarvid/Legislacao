@@ -223,6 +223,27 @@ def rodape_paginas(doc):
                 run._r.append(it)
 
 
+ORDEM_TBLPR = ["tblStyle", "tblpPr", "tblOverlap", "bidiVisual", "tblStyleRowBandSize",
+               "tblStyleColBandSize", "tblW", "jc", "tblCellSpacing", "tblInd", "tblBorders",
+               "shd", "tblLayout", "tblCellMar", "tblLook", "tblCaption", "tblDescription"]
+
+
+def ordenar_tblpr(doc):
+    """O Word ignora propriedades de tabela fora da ordem do esquema (ex.: largura e layout fixo
+    depois de tblLook). Reordena os filhos de w:tblPr de todas as tabelas."""
+    for tbl in doc.element.body.iter(qn("w:tbl")):
+        tblPr = tbl.find(qn("w:tblPr"))
+        if tblPr is None:
+            continue
+        filhos = list(tblPr)
+        pos = {qn("w:" + n): i for i, n in enumerate(ORDEM_TBLPR)}
+        filhos.sort(key=lambda e: pos.get(e.tag, 99))
+        for e in list(tblPr):
+            tblPr.remove(e)
+        for e in filhos:
+            tblPr.append(e)
+
+
 def paisagem(doc):
     from docx.enum.section import WD_SECTION, WD_ORIENT
     s = doc.add_section(WD_SECTION.NEW_PAGE)
@@ -411,6 +432,10 @@ def gerar():
     larguras(t, [1.8, 2.5, 11.7])
 
     rodape_paginas(doc)
+    ordenar_tblpr(doc)
+    zoom = doc.settings.element.find(qn("w:zoom"))
+    if zoom is not None and zoom.get(qn("w:percent")) is None:
+        zoom.set(qn("w:percent"), "100")
     doc.save(SAIDA)
     print("Gerado:", SAIDA)
 

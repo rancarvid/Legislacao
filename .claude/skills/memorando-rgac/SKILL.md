@@ -65,6 +65,6 @@ Quando um problema fica resolvido numa versão nova do RGAC: mudar o `estado`, a
 ## Depois de alterar
 
 1. Subir `VERSAO_MEMORANDO`, atualizar `DATA_MEMORANDO` e acrescentar uma linha a `REGISTO_ALTERACOES` a dizer o que mudou (fichas novas, fichas fechadas, versão do RGAC).
-2. Gerar o Word e confirmar que o gerador não deu erros.
+2. Gerar o Word e confirmar que o gerador não deu erros. Validar o ficheiro contra o esquema (por exemplo, com o validador da skill docx: `scripts/office/validate.py`). O Word ignora propriedades de tabela fora da ordem do esquema; o gerador reordena-as em `ordenar_tblpr()`, que não deve ser removida.
 3. Rever o texto gerado (por exemplo, com python-docx a listar títulos e tabelas).
 4. Fazer commit dos três ficheiros de `memorando_rgac/` e push para o ramo de trabalho.
