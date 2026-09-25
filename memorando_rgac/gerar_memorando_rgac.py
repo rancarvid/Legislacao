@@ -146,9 +146,40 @@ def bordas(tabela):
 
 
 def larguras(tabela, cms):
+    """Fixa as larguras das colunas de forma que o Word as respeite:
+    largura total da tabela, grelha de colunas, layout fixo e largura de cada celula."""
+    tabela.autofit = False
+    tbl = tabela._tbl
+    tblPr = tbl.tblPr
+    total = sum(cms)
+    for tag in ("w:tblW", "w:tblLayout"):
+        for e in tblPr.findall(qn(tag)):
+            tblPr.remove(e)
+    w = OxmlElement("w:tblW")
+    w.set(qn("w:w"), str(int(Cm(total).twips)))
+    w.set(qn("w:type"), "dxa")
+    tblPr.append(w)
+    lay = OxmlElement("w:tblLayout")
+    lay.set(qn("w:type"), "fixed")
+    tblPr.append(lay)
+    grid = tbl.tblGrid
+    cols = grid.findall(qn("w:gridCol"))
+    for i, gc in enumerate(cols):
+        if i < len(cms):
+            gc.set(qn("w:w"), str(int(Cm(cms[i]).twips)))
     for row in tabela.rows:
-        for i, c in enumerate(row.cells):
-            c.width = Cm(cms[i])
+        idx = 0
+        for tc in row._tr.tc_lst:
+            span = tc.grid_span
+            largura = sum(cms[idx:idx + span])
+            tcPr = tc.get_or_add_tcPr()
+            for e in tcPr.findall(qn("w:tcW")):
+                tcPr.remove(e)
+            tcw = OxmlElement("w:tcW")
+            tcw.set(qn("w:w"), str(int(Cm(largura).twips)))
+            tcw.set(qn("w:type"), "dxa")
+            tcPr.insert(0, tcw)
+            idx += span
 
 
 def celula(c, textos, negrito=False):
@@ -172,7 +203,8 @@ def cabecalho_tabela(row):
 
 
 def rodape_paginas(doc):
-    for sec in doc.sections:
+    # As secções seguintes herdam o rodapé da primeira (ligação à anterior).
+    for sec in doc.sections[:1]:
         p = sec.footer.paragraphs[0]
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         r = p.add_run("Memorando de acompanhamento do RGAC, versão " + D.VERSAO_MEMORANDO + ". Página ")
@@ -189,6 +221,24 @@ def rodape_paginas(doc):
                 it.set(qn("xml:space"), "preserve")
                 it.text = txt
                 run._r.append(it)
+
+
+def paisagem(doc):
+    from docx.enum.section import WD_SECTION, WD_ORIENT
+    s = doc.add_section(WD_SECTION.NEW_PAGE)
+    s.orientation = WD_ORIENT.LANDSCAPE
+    s.page_width, s.page_height = Cm(29.7), Cm(21.0)
+    s.left_margin = s.right_margin = Cm(2.0)
+    s.top_margin = s.bottom_margin = Cm(2.0)
+
+
+def retrato(doc):
+    from docx.enum.section import WD_SECTION, WD_ORIENT
+    s = doc.add_section(WD_SECTION.NEW_PAGE)
+    s.orientation = WD_ORIENT.PORTRAIT
+    s.page_width, s.page_height = Cm(21.0), Cm(29.7)
+    s.left_margin = s.right_margin = Cm(2.5)
+    s.top_margin = s.bottom_margin = Cm(2.2)
 
 
 # ------------------------------------------------------------------ blocos
@@ -252,7 +302,7 @@ def quadro_resumo(doc):
         celula(r.cells[2], f["onde"][0])
         celula(r.cells[3], curtas[f["origem"]])
         celula(r.cells[4], f["estado"])
-    larguras(t, [1.5, 5.5, 4.0, 2.7, 2.3])
+    larguras(t, [1.8, 9.2, 7.0, 4.2, 3.4])
     doc.add_paragraph()
     abertas = sum(1 for f in D.TEMA_T["fichas"] + D.TEMA_C["fichas"] if f["estado"] == "Aberto")
     total = len(D.TEMA_T["fichas"]) + len(D.TEMA_C["fichas"])
@@ -286,7 +336,7 @@ def anexo_stakeholders(doc):
             celula(r.cells[1], tema)
             celula(r.cells[2], posicao)
             celula(r.cells[3], fonte)
-    larguras(t, [3.2, 1.2, 7.6, 4.0])
+    larguras(t, [5.0, 1.6, 12.1, 7.0])
 
 
 def gerar():
@@ -340,11 +390,11 @@ def gerar():
         r.bold = True
         p.add_run(b)
 
-    doc.add_page_break()
+    paisagem(doc)
     quadro_resumo(doc)
     doc.add_page_break()
     anexo_stakeholders(doc)
-    doc.add_page_break()
+    retrato(doc)
     titulo(doc, "Anexo C. Fontes", 1)
     for f in D.FONTES:
         par(doc, f, depois=3)
