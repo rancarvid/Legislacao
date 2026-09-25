@@ -1,6 +1,13 @@
 # CHECKPOINT — Os limites por fogo do art.º 3.º do DL 314/2003 aplicam-se a um alojamento registado ao abrigo do art.º 3.º-A do DL 276/2001?
 
-**Estado**: análise concluída em 22.9.2026. Material completo, pronto a converter em documento Word extenso.
+**Designação convencionada**: `314 vs alojamentos`. Sempre que o utilizador usar esta expressão,
+refere-se a este tema — os limites de detenção por fogo do art.º 3.º do DL n.º 314/2003 confrontados com
+a lotação dos alojamentos registados ao abrigo do art.º 3.º-A do DL n.º 276/2001. Convenção fixada em
+25.9.2026; vale entre sessões.
+
+**Estado**: análise concluída em 22.9.2026; documento Word extenso produzido em 25.9.2026 —
+`criador informal/Estudo_Limites_por_Fogo.docx` (20 pp.), gerado por `criador informal/_estudo_fogo.py`
+e registado em `criador informal/gerar_memorando.py`.
 **Âmbito**: questão isolada de direito interno vigente. **Não** mobiliza o Regulamento (UE) 2026/1818,
 o projeto RGAC nem o debate público sobre «criador informal». Esses planos ficam expressamente de fora;
 a ponte, se vier a fazer-se, faz-se depois e noutro documento.
