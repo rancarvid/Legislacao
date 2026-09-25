@@ -2,6 +2,8 @@
 
 **Data**: 25.9.2026 · Complemento a `CHECKPOINT-CED-ZONAS-CINZENTAS.md` e `CED/Reflexoes_sobre_CED.docx`.
 
+> **Cruzamento**: o §7 do `CHECKPOINT-CED-ZONAS-CINZENTAS.md` confronta este ficheiro com o inventário das zonas cinzentas do regime vigente — o que aqui se descreve resolve três delas (cadastro de colónias, titular do registo SIAC, prédios privados), agrava duas (cuidador, família de acolhimento temporário) e acrescenta uma nova (proibição nacional de alimentar na via pública). Os dois ficheiros devem ser lidos em conjunto.
+
 **Âmbito**: percurso do regime CED nas versões de trabalho do projeto legislativo e comentários
 Word dos revisores. Todos os documentos aqui tratados são **propostas / documentos internos em
 curso** — não são legislação vigente e não servem, por si, de fundamento a atos perante entidades.
