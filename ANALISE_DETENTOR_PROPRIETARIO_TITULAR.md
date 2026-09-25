@@ -15,6 +15,8 @@ Os projetos `@rgbeac` e `@rgac` aparecem só no §6, como termo de comparação.
 | **PGDL — Código Civil** (arts. 493.º, 502.º, 1251.º, 1253.º, 1268.º, 1305.º-A) e **Código Penal** (arts. 387.º a 389.º) | versões em vigor |
 | Repositório: `1a` a `10a DL 276_2001*.pdf` (PGDL, versão original → consolidada) | datação de cada alteração ao DL n.º 276/2001 |
 | Repositório: `@legislacao` DL 82/2019, DL 314/2003 (consolidado a 8.8.2019), DL 315/2009, Lei 8/2017, Portaria 146/2017, Lei 92/95 | validação e termos usados |
+| **DRE — Lei n.º 2/2020 (art. 425.º) e Lei n.º 12/2022 (art. 335.º)**, texto integral publicado | teor exato das alterações ao art. 27.º do DL 82/2019 |
+| **DRE — DL 314/2003 consolidado e «Modificações» da Portaria 146/2017** | confirmação de que não houve alterações posteriores |
 | Repositório: `Regulamento 2026_01818_PT.pdf` e `Regulamento Versao final en-en.pdf` | art. 3.º e art. 20.º |
 | DGSI — Ac. TRL de 30.4.2025, proc. 1642/24.4T8AMD.L1-8 | valor do registo SIAC |
 
@@ -117,7 +119,11 @@ respondia.
 > «3 - Os animais recolhidos em canil ou gatil municipal só podem ser entregues aos detentores depois
 > de identificados, […] e sob termo de responsabilidade do presumível dono ou detentor, donde conste a
 > sua identificação completa.»
-> — n.º 3 do art.º 9.º do DL n.º 314/2003 (versão consolidada a 8.8.2019, repositório)
+> — n.º 3 do art.º 9.º do DL n.º 314/2003
+
+No DRE, a última alteração ao DL 314/2003 é de **8.8.2019** (Resolução da AR n.º 138/2019, que fez
+cessar a vigência do DL 20/2019). O texto do repositório está atualizado e as duas citações acima
+conferem com a versão consolidada do DRE.
 
 > «f) «Detentor» qualquer pessoa singular, maior de 16 anos, sobre a qual recai o dever de vigilância
 > de um animal perigoso ou potencialmente perigoso para efeitos de criação, reprodução, manutenção,
@@ -201,7 +207,8 @@ ou assistência**.
 
 Usa sempre «detentor»: animais «não […] reclamados pelos seus detentores no prazo de 15 dias»,
 esterilização «a expensas dos respetivos detentores», «novos detentores» na adoção, «detentores que
-queiram pôr termo à detenção». Não foi alterada depois de 2017.
+queiram pôr termo à detenção». No DRE, a «Análise Jurídica – Modificações» da Portaria n.º 146/2017, de
+26 de abril, indica «Não existe informação associada ao ato», ou seja, **não sofreu alterações**.
 
 ---
 
@@ -294,7 +301,7 @@ versão e a versão atual:
 | n.º 5 art. 9.º | titulares só «pessoas singulares», com exceções | «pessoas singulares **ou coletivas**», com exceções; acrescenta «centros de alojamento sem fins lucrativos» |
 | art. 16.º | «Deveres do titular do animal de companhia» | «Deveres do titular **e do detentor** do animal de companhia» + **novo n.º 2** (abaixo) |
 | n.º 2 art. 17.º | isenção de taxa para animais registados em nome dos CRO | alarga às **associações zoófilas** legalmente constituídas |
-| art. 27.º | licença só quando a lei a preveja | **licenciamento anual de todos os cães** na junta da área do titular; n.º 8: isenção para «os **detentores** que tenham adotado os cães» |
+| art. 27.º | licença só quando a lei a preveja | **licenciamento anual de todos os cães** na junta da área do titular; n.º 8: isenção para «os **detentores** que tenham recolhido os cães em centros de recolha oficial de animais» (redação depois alterada pela Lei 12/2022, ver §4.3) |
 
 > «2 - O detentor ou o seu representante devem comunicar a morte ou desaparecimento do animal de
 > companhia ao SIAC, sob pena de presunção de abandono, punido nos termos do disposto na alínea c) do
@@ -324,9 +331,21 @@ Redação atual da al. f) do art. 3.º:
 - **DL n.º 46/2021** (art. 10.º): o ICNF sucede à DGAV nas competências SIAC. O texto do DL 82/2019
   não muda. Segundo `CHECKPOINT-CED-ZONAS-CINZENTAS.md`, a competência voltou à DGAV com o DL n.º
   63/2025, com efeitos a 1.7.2025. O DRE não lista o DL 63/2025 entre as modificações do DL 82/2019.
-- **Lei n.º 12/2022** (OE 2022, art. 335.º): altera o art. 27.º (licença). A redação atual publicada
-  no DRE coincide com a registada no PGDL; não se apurou diferença material quanto aos conceitos aqui
-  em análise.
+- **Lei n.º 12/2022** (OE 2022, art. 335.º, em vigor a 28.6.2022): altera **só o n.º 8 do art.
+  27.º**. Os n.ºs 1 a 7 e 9 ficam como estavam («1 - ...» a «9 - ...» no texto da lei).
+
+> «8 - Ficam igualmente isentos do pagamento de taxa os titulares de canídeos em situação de
+> insuficiência económica, bem como os detentores que tenham recolhido os cães em centros de recolha
+> oficial de animais.»
+> — n.º 8 do art.º 27.º do DL n.º 82/2019 (redação da Lei n.º 2/2020)
+
+> «8 - Ficam igualmente isentos do pagamento de taxa os titulares de canídeos em situação de
+> insuficiência económica, bem como os detentores que tenham adotado os cães em centros de recolha
+> oficial de animais ou em associações zoófilas legalmente constituídas.»
+> — n.º 8 do art.º 27.º do DL n.º 82/2019 (redação da Lei n.º 12/2022, em vigor)
+
+  Diferenças: «recolhido» passa a «adotado» e a isenção alarga-se às adoções em associações zoófilas.
+  A palavra «detentores» mantém-se nas duas redações.
 
 ### 4.4 Jurisprudência sobre o valor do registo — TRL, 30.4.2025, proc. 1642/24.4T8AMD.L1-8
 
@@ -422,10 +441,7 @@ sejam proprietários de cães ou gatos» (EN *pet owners […] who own*).
 
 ## 8. Limites
 
-- Texto do DL 314/2003 e da Portaria 146/2017 conferido apenas nas cópias do repositório (consolidação
-  de 8.8.2019 e OCR de 2017). Não se confirmou online a inexistência de alterações posteriores a essas
-  datas.
-- Não se apurou o teor exato da alteração da Lei 12/2022 ao art. 27.º (sem diferença visível entre
-  PGDL e DRE).
+- A Portaria 146/2017 não tem versão consolidada no DRE. As expressões citadas no §2.6 vêm do OCR do
+  repositório. Como a Portaria não sofreu alterações, correspondem ao texto publicado em 26.4.2017.
 - Pesquisa de jurisprudência limitada a uma pesquisa geral. O acórdão do TRL é um procedimento
   cautelar entre unidos de facto e não trata do conceito de detentor.
