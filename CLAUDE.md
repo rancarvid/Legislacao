@@ -25,7 +25,7 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 | Código Interno | Ficheiro | Descrição |
 |---|---|---|
-| `@rgac` ⭐ | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Revisão formal DAJA V1 revista pelo grupo, **30.6.2026, 18h00**. Ficheiro canónico mais recente do projeto. Identifica-se pela frase «Privação do direito de titularidade e detenção» (art. 141.º). |
+| `@rgac` ⭐ | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` | **Diploma final — versão de trabalho do projeto.** Revisão formal DAJA V1 revista pelo grupo, **30.6.2026, 18h00**. É **o texto que vai ser trabalhado**: recolhe contributos do `@rgbeac` e do `@codigo` e integra diretamente o `@regulamento`. Ficheiro canónico mais recente do projeto. Identifica-se pela frase «Privação do direito de titularidade e detenção» (art. 141.º). |
 | `@rgac` (arquivo) | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` | Revisão formal DAJA V1, 30.6.2026, antes da revisão do grupo. **Arquivo.** Tem «Mantêm-se transitoriamente em vigor» (n.º 2 do art. 149.º), mas não tem a frase da linha anterior. |
 | `@rgac` (arquivo) | `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` | Versão DAJA V1 de 29.6.2026, anterior à revisão formal. **Arquivo.** Identifica-se pela nota «ACRESCENTAR os RESTANTES» na norma revogatória. |
 | `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 (proposta de consolidação original; incorporada em `@rgac`) |
@@ -58,7 +58,7 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 > - Estrutura: **7 capítulos, 33 artigos e 3 anexos** (Anexo I — requisitos aplicáveis a todos os estabelecimentos; Anexo II — identificação e registo; Anexo III — dados sobre o bem-estar dos animais)
 > - O número **2023/0447** é o número do **procedimento legislativo (COD)**, não do ato publicado. Em produção analítica nova, citar sempre **Regulamento (UE) 2026/1818**; `2023/0447` só é admissível como referência histórica ao processo.
 
-> **Nota de versão — `@rgac`**: O documento `@rgac` é atualizado periodicamente. A versão canónica é sempre o ficheiro cujo nome contém o sufixo **"MAIS ATUAL"**. Versões anteriores são arquivadas com sufixo numérico entre parênteses — e.g., `(1)`, `(2)` — e não devem ser usadas como referência primária. Sempre que o utilizador fizer upload de uma versão nova, o ficheiro "MAIS ATUAL" deve ser considerado a referência vigente de `@rgac`, independentemente da data de revisão inscrita no nome.
+> **Nota de versão — `@rgac`**: O `@rgac` é o texto de trabalho do projeto e é atualizado periodicamente. A versão canónica é **o ficheiro assinalado com ⭐ na tabela acima** — atualmente `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`. O sufixo «MAIS ATUAL» deixou de ser critério: o ficheiro `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` é arquivo (março 2026). Sempre que o utilizador carregar uma versão nova, atualiza-se a linha ⭐ desta tabela e as versões anteriores passam a «arquivo». Versões de arquivo nunca são referência primária.
 
 ### 2.2 Ficheiros de Trabalho Gerados
 
@@ -107,12 +107,12 @@ A legislação relevante que não conste do repositório deve ser consultada onl
 | **@codigo** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta de consolidação original"; usar @rgac para texto atual |
 | **@rgbeac** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta (jun. 2025)"; usar @rgac para texto atual |
 | **@regulamento** | ✅ PUBLICADO / EM VIGOR (aplicação diferida) | Regulamento (UE) 2026/1818, de 17.6.2026 (JO L de 10.8.2026). Aplicação direta, sem transposição. Citar verbatim a partir do texto publicado no JO: EN (`Regulamento Versao final en-en.pdf`) + PT (`Regulamento 2026_01818_PT.pdf`) — a versão PT é autêntica, não é tradução. Atenção: **em vigor ≠ aplicável** — regra geral de aplicação a partir de 31.8.2028, com datas diferidas no art.º 33.º |
-| **@rgac** | ⚠️ DIPLOMA FINAL (trabalho em curso) | Citar como "diploma final @rgac"; versão "MAIS ATUAL" é a referência canónica; NUNCA como legislação vigente |
+| **@rgac** | ⚠️ DIPLOMA FINAL (trabalho em curso) | Citar como "diploma final @rgac"; a referência canónica é o ficheiro ⭐ da tabela 2.1 (`RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`); NUNCA como legislação vigente |
 
 #### ERROS A EVITAR
 - ❌ Tratar @codigo (proposta) como legislação que "revoga" DL 276/2001
 - ❌ Tratar @rgac como legislação vigente — é o diploma final em desenvolvimento
-- ❌ Usar versões arquivadas de @rgac (com numeração em parênteses) em vez do ficheiro "MAIS ATUAL"
+- ❌ Usar versões arquivadas de @rgac (a cópia de 29.6.2026, a revisão formal anterior às 18h00, o ficheiro «rev 16mar26 MAIS ATUAL» ou versões com numeração em parênteses) em vez do ficheiro ⭐ da tabela 2.1
 - ❌ Omitir legislação vigente (ex: DL 82/2019) que não está no repositório
 - ❌ Usar ficheiros repositório como única fonte de legislação
 - ❌ Não distinguir claramente entre "vigente" e "proposta/diploma final" na análise
@@ -178,9 +178,9 @@ Esta calendarização é determinante para a análise de impacto: o `@rgac` deve
 
 **`@rgac`** — `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` (revisão formal DAJA V1 revista pelo grupo, 30.6.2026, 18h00)
 
-Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa. Ficam como arquivo as versões anteriores: `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` (30.6.2026, antes da revisão do grupo), `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` (29.6.2026) e `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` (março 2026, apesar do sufixo).
+Diploma final e **texto de trabalho do projeto**: é sobre ele que se trabalha a partir de agora, recolhendo os contributos do `@rgbeac` e do `@codigo` e integrando diretamente o `@regulamento` (Regulamento (UE) 2026/1818). É o documento mais avançado do projeto e o ponto de chegada da análise comparativa. Ficam como arquivo as versões anteriores: `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` (30.6.2026, antes da revisão do grupo), `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` (29.6.2026) e `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` (março 2026, apesar do sufixo).
 
-**Convenção de versão**: O ficheiro canónico é sempre o que contém o sufixo **"MAIS ATUAL"** no nome. Versões anteriores são arquivadas com sufixo numérico — e.g., `(1)`, `(2)`. O utilizador pode fazer upload de versões mais recentes; o ficheiro "MAIS ATUAL" será sempre substituído pelo mais recente. Nunca usar versões arquivadas como referência primária.
+**Convenção de versão**: O ficheiro canónico é o assinalado com ⭐ na tabela 2.1. Quando o utilizador carregar uma versão nova, essa passa a ⭐ e as anteriores a arquivo. Nunca usar versões arquivadas como referência primária.
 
 ### d) Ficheiros Excel comparativos — `@oexcel` e ferramenta de reunião
 
@@ -376,7 +376,7 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
    - Verificar quais ficheiros estão presentes
    - Usar como VALIDAÇÃO (não como fonte primária)
    - Identificar o código interno correto (`@rgac`, `@codigo`, `@rgbeac`, `@regulamento`, `@legislacao`, `@oexcel`)
-   - Para `@rgac`: usar **sempre** o ficheiro com sufixo "MAIS ATUAL"; ignorar versões arquivadas com número em parênteses
+   - Para `@rgac`: usar **sempre** o ficheiro ⭐ da tabela 2.1 (`RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`); ignorar as versões de arquivo
    - Para `@regulamento`: usar **sempre** o texto publicado no JO — `Regulamento 2026_01818_PT.pdf` (PT) e `Regulamento Versao final en-en.pdf` (EN); ignorar as versões `.docx` pré-publicação (arquivo)
 
 3. **TERCEIRO**: Para propostas e diploma final (@codigo, @rgbeac, @rgac)
@@ -392,7 +392,7 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
 - **Sempre referenciar** no formato `al. X), do n.º Y, do art.º Z.º`.
 - **Sempre produzir em PT-PT**, exceto citações europeias (com tradução imediata).
 - Ao citar `@rgac`, indicar sempre: "diploma final @rgac (versão: [data/rev indicada no nome do ficheiro])".
-- `@rgac` é documento vivo — ao trabalhar com ele, confirmar que o ficheiro usado é o "MAIS ATUAL" disponível no repositório.
+- `@rgac` é documento vivo — ao trabalhar com ele, confirmar que o ficheiro usado é o ⭐ da tabela 2.1 e verificar se o utilizador carregou entretanto uma versão mais recente.
 - Ao citar `@regulamento`, identificar o ato pela designação publicada: **Regulamento (UE) 2026/1818**. Nunca `2023/0447`, salvo quando o que se refere é o próprio procedimento legislativo.
 - Ao afirmar que uma obrigação do `@regulamento` "já se aplica", confirmar a data no **art.º 33.º** — a regra geral é 31.8.2028 e há obrigações diferidas até 2036.
 
@@ -453,7 +453,7 @@ regulamento
                             o nome do campo é histórico, já não contém tradução de trabalho
 rgac
   ref                     — referência no diploma final @rgac
-  texto                   — verbatim PT (versão "MAIS ATUAL")
+  texto                   — verbatim PT (ficheiro ⭐ da tabela 2.1)
 rgbeac
   ref                     — referência no diploma
   texto                   — verbatim PT
