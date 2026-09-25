@@ -1,6 +1,32 @@
 # Análise Comparativa da Legislação sobre Animais de Companhia
 
-Projeto de análise comparativa entre a legislação portuguesa vigente, duas propostas de consolidação nacional e o novo Regulamento Europeu 2023/0447 (cães e gatos).
+Projeto de análise comparativa entre a legislação portuguesa vigente, duas propostas de consolidação nacional e o novo Regulamento (UE) 2026/1818 (cães e gatos).
+
+---
+
+## ⚖️ Texto final do `@regulamento` publicado no Jornal Oficial
+
+**Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade**
+
+| | |
+|---|---|
+| Publicação | JO da União Europeia, série L, 2026/1818, de **10.8.2026** |
+| ELI | <http://data.europa.eu/eli/reg/2026/1818/oj> |
+| Assinatura | Estrasburgo, 17 de junho de 2026 |
+| Base jurídica | art.º 43.º, n.º 2, e art.º 114.º do TFUE |
+| Estrutura | 7 capítulos, 33 artigos, 3 anexos |
+| Entrada em vigor | 20.º dia seguinte ao da publicação no JO (art.º 33.º) |
+| Início de aplicação | **31 de agosto de 2028**, com datas diferidas no art.º 33.º (art.º 16.º: 2029; art.º 21.º, n.º 3 e art.º 23.º, n.º 1: 2030; art.º 8.º, n.º 2: 1.7.2030; art.º 15.º e outros: 2031; art.º 12.º, n.os 2 e 3: 2033; art.º 10.º: 2034; art.º 8.º, n.º 1: 1.7.2036; art.º 26.º, n.º 4: 2036) |
+
+**Ficheiros canónicos no repositório**
+
+| Ficheiro | Versão linguística |
+|---|---|
+| `Regulamento 2026_01818_PT.pdf` | PT — texto publicado no JO |
+| `Regulamento Versao final en-en.pdf` | EN — texto publicado no JO |
+
+O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o ato publicado. Os ficheiros `.docx` anteriores (`pe00002.*`, `11.12.2025 Regulamento…`) são **arquivo** e não devem ser usados como fonte primária.
+
 
 ---
 
@@ -12,11 +38,11 @@ Projeto de análise comparativa entre a legislação portuguesa vigente, duas pr
 |---|---|---|
 | **Organização do repositório** | Catalogação de todos os ficheiros legislativos com códigos internos (`@legislacao`, `@codigo`, `@rgbeac`, `@regulamento`, `@rgac`) | ✅ Completo |
 | **Investigação legislativa** | Levantamento exaustivo de 19 diplomas portugueses vigentes (leis, DLs, portarias, DR) em 12 temáticas | ✅ Completo |
-| **Análise comparativa — Art. 5.º a 22.º** | 21 artigos do Regulamento 2023/0447 mapeados artigo a artigo com correspondências em `@rgbeac`, `@codigo` e `@legislacao` | ✅ Completo |
+| **Análise comparativa — Art. 5.º a 22.º** | 21 artigos do Regulamento (UE) 2026/1818 mapeados artigo a artigo com correspondências em `@rgbeac`, `@codigo` e `@legislacao` | ✅ Completo |
 | **Ferramenta de reunião** | HTML SPA interativo + Excel + Word gerados automaticamente pelo script `gerar_comparativo_reuniao.py` | ✅ Operacional |
 | **Análise de opiniões** | 52 opiniões externas organizadas em 7 grupos; integradas na análise dos preâmbulos | ✅ Completo |
 | **Tema cães de caça** | Documento de reflexão e integração de contexto específico nos artigos ART-05, ART-17, ART-18 | ✅ Completo |
-| **Ficha parlamentar** | Ficha de resposta a inquirição parlamentar sobre o Regulamento 2023/0447 (formato Word) | ✅ Completo |
+| **Ficha parlamentar** | Ficha de resposta a inquirição parlamentar sobre o Regulamento (UE) 2026/1818 (formato Word) | ✅ Completo |
 
 ---
 
@@ -27,12 +53,12 @@ Projeto de análise comparativa entre a legislação portuguesa vigente, duas pr
 | `@legislacao` | Legislação vigente (DL 276/2001, DL 82/2019, Lei 27/2016, Portarias, etc.) | ✅ Vigente |
 | `@codigo` | Código do Animal — DL n.º 214/2013 | Proposta de consolidação (incorporada em `@rgac`) |
 | `@rgbeac` | Regime Geral do Bem-Estar dos Animais de Companhia (jun. 2025) | Proposta de consolidação (incorporada em `@rgac`) |
-| `@regulamento` | Regulamento Europeu 2023/0447 — cães e gatos | ✅ Vigente (aplicação direta; incorporado em `@rgac`) |
-| `@rgac` ⭐ | Diploma final — integra `@codigo` + `@regulamento` + `@rgbeac` | Diploma final (trabalho em curso; ficheiro "MAIS ATUAL") |
+| `@regulamento` | Regulamento (UE) 2026/1818 — cães e gatos | ✅ Publicado no JO (aplicação direta; aplicável a partir de 31.8.2028; incorporado em `@rgac`) |
+| `@rgac` ⭐ | Diploma final — texto de trabalho do projeto: recolhe contributos do `@codigo` e do `@rgbeac` e integra diretamente o `@regulamento` | Diploma final (trabalho em curso; ficheiro `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`) |
 
 ---
 
-## Artigos do Regulamento 2023/0447 Cobertos
+## Artigos do Regulamento (UE) 2026/1818 Cobertos
 
 21 artigos mapeados em sequência (Art. 5.º a 22.º):
 
@@ -71,7 +97,9 @@ Projeto de análise comparativa entre a legislação portuguesa vigente, duas pr
 | `comparativo_reuniao_exemplo.html` | HTML SPA | Ferramenta de reunião interativa — pesquisa, navegação artigo a artigo, notas exportáveis |
 | `comparativo_reuniao_exemplo.xlsx` | Excel | Estrutura artigo a artigo com 4 sub-colunas de divergência |
 | `comparativo_reuniao_exemplo.docx` | Word | Versão imprimível com tabelas e cores por diploma |
-| `FICHA_RESPOSTA_AR_Regulamento_2023_0447.docx` | Word | Ficha de resposta a inquirição parlamentar |
+| `FICHA_RESPOSTA_AR_Regulamento_2023_0447.docx` | Word | Ficha de resposta a inquirição parlamentar (nome do ficheiro mantém o n.º de procedimento) |
+| `Regulamento 2026_01818_PT.pdf` | PDF | `@regulamento` — texto PT publicado no JO **(fonte canónica)** |
+| `Regulamento Versao final en-en.pdf` | PDF | `@regulamento` — texto EN publicado no JO **(fonte canónica)** |
 
 ### Scripts
 

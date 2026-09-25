@@ -1,5 +1,5 @@
 # ANÁLISE DE DISPOSIÇÕES TOTALMENTE NOVAS
-## Regulamento (UE) 2023/0447 — Bem-Estar de Cães e Gatos
+## Regulamento (UE) 2026/1818 — Bem-Estar de Cães e Gatos
 
 **Data de análise:** 6 de abril de 2026  
 **Âmbito:** Identificação de artigos sem correspondência em legislação portuguesa vigente
@@ -10,7 +10,7 @@
 
 ### Achado Principal
 
-**4 artigos do Regulamento 2023/0447 são TOTALMENTE NOVOS** no ordenamento jurídico português — não encontram correspondência explícita ou material em nenhum dos seguintes diplomas:
+**4 artigos do Regulamento (UE) 2026/1818 são TOTALMENTE NOVOS** no ordenamento jurídico português — não encontram correspondência explícita ou material em nenhum dos seguintes diplomas:
 
 - **@codigo** — Código do Animal (DL 214/2013) — proposta de consolidação
 - **@rgbeac** — Regime Geral do Bem-Estar dos Animais de Companhia (junho 2025) — proposta

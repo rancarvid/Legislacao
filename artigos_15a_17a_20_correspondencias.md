@@ -8,7 +8,7 @@
 
 ## ART-15a - ESPETÁCULOS E COMPETIÇÕES ESTÉTICAS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Aesthetic shows, exhibitions and competitions
 
 **Conteúdo**: Proíbe operadores de estabelecimentos de criação e venda de usar em espetáculos, exposições e competições estéticas, cães ou gatos com características conformacionais excessivas ou mutilados de forma que altere suas características físicas. Organizadores de eventos devem excluir tais animais.
@@ -66,7 +66,7 @@ c) Possuam vacinações contra as principais doenças infecto-contagiosas
 
 ## ART-17a - REQUISITOS DE PUBLICIDADE EM LINHA E COLOCAÇÃO NO MERCADO
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Requirements on online advertising and placing on the market
 
 **Conteúdo**:
@@ -136,7 +136,7 @@ Regulamento EU permite venda online com sistema de verificação. Ajuste legisla
 
 ## ART-18 - TREINO DE CUIDADORES DE ANIMAIS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Professional training of dog and cat caretakers
 
 **Conteúdo**:
@@ -219,7 +219,7 @@ para adestradores e criadores. Sistema de certificação profissional para opera
 
 ## ART-19 - BASE DE DADOS DE CÃES E GATOS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Database on dogs and cats
 
 **Conteúdo**:
@@ -326,7 +326,7 @@ Sistema totalmente operacional desde 2019.
 
 ## ART-20 - RECOLHA DE DADOS SOBRE BEM-ESTAR ANIMAL E RELATÓRIO
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Collection of data on animal welfare and reporting
 
 **Conteúdo**:
