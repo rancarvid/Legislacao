@@ -3,10 +3,11 @@
 **Data**: 25.9.2026 · Base: `TABELA_DETENTOR_PROPRIETARIO_TITULAR_VIGENTE.md` (vigente, validação tripla),
 `ANALISE_DETENTOR_PROPRIETARIO_TITULAR.md` e `ANALISE_SIAC_TITULARIDADE_DIPLOMAS_TRABALHO.md`.
 
-**Versão do @rgac usada**: a mais recente, a **revisão formal DAJA V1** (`RGAC_DAJA_REV. FORMAL_V1_Versão
-TRABALHO.docx`, último comentário 30.6.2026). Sempre que a cópia canónica indicada no `CLAUDE.md`
-(`RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx`, 29.6.2026) diverge, assinala-se. O @rgac é **diploma final em
-trabalho, não legislação vigente**.
+**Versão do @rgac usada**: revisão formal DAJA V1 (`RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx`,
+30.6.2026), **atualizada pela versão canónica** `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto
+30-06-2026 18h00 Grupo.docx` (ver §5). A numeração dos artigos citados é igual nas duas. Sempre que a
+cópia de 29.6.2026 (`RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx`, arquivo) diverge, assinala-se. O @rgac é
+**diploma final em trabalho, não legislação vigente**.
 
 ---
 
@@ -53,9 +54,9 @@ trabalho, não legislação vigente**.
 | R3 | **Particular que encontra ou recolhe um animal** (achado, art. 1323.º CC) | O @rgac manda comunicar ou entregar ao MVM. Não se articula com o regime civil do achado (anúncio, aquisição ao fim de um ano, direito de retenção) nem com o registo SIAC do achador. |
 | R4 | **FAT informal** (acolhimento sem operador) | Só é enquadrado o lar associado a operador. A dúvida deixada no texto do art. 46.º da cópia canónica fica sem resposta: «Até onde vão as responsabilidades do operador e as responsabilidades do responsável do lar de acolhimento!» |
 | R5 | **Responsabilidade civil por danos** fora dos perigosos | O @rgac não indica se responde o titular ou o detentor. Continuam a aplicar-se o art. 493.º (quem tem o encargo de vigilância) e o art. 502.º CC (quem usa o animal no seu interesse). A pergunta dos MVM («Quais são aqui as responsabilidades dos titulares (Associações) e quais as responsabilidades dos detentores dos animais (FAT)?») fica aberta. |
-| R6 | **Terminologia do CRO** (P4) | Continua dispersa. Para o mesmo prazo de 15 dias: «proprietários» e «titulares» (n.ºs 8 e 9 do art. 70.º); «titulares ou detentores» (n.º 3 do art. 89.º); «não sejam reclamados pelos seus detentores no prazo de quinze dias […] sem direito a compensação financeira dos detentores» (n.º 13 do art. 98.º). As despesas da cedência cabem ao «futuro titular» (n.º 4 do art. 99.º). O preâmbulo fala da «ligação efetiva do animal ao seu detentor». |
+| R6 | **Terminologia do CRO** (P4) | **Parcialmente resolvido na versão das 18h00** (§5). Na versão anterior continuava dispersa. Para o mesmo prazo de 15 dias: «proprietários» e «titulares» (n.ºs 8 e 9 do art. 70.º); «titulares ou detentores» (n.º 3 do art. 89.º); «não sejam reclamados pelos seus detentores no prazo de quinze dias […] sem direito a compensação financeira dos detentores» (n.º 13 do art. 98.º). As despesas da cedência cabem ao «futuro titular» (n.º 4 do art. 99.º). O preâmbulo fala da «ligação efetiva do animal ao seu detentor». |
 | R7 | **Detentores de facto** que alegam tratar-se de errantes (MVM) | Não há presunção de detenção nem mecanismo de responsabilização. |
-| R8 | **Lacunas de redação** | «no prazo XXX dias» (n.º 9 do art. 70.º); remissões ainda por fixar («artigo 59º+4», «artigo XX»). |
+| R8 | **Lacunas de redação** | «no prazo XXX dias» (n.º 9 do art. 70.º), **fixado em 15 dias na versão das 18h00**; remissões ainda por fixar («artigo 59º+4», «artigo XX»). |
 
 ---
 
@@ -94,3 +95,41 @@ trabalho, não legislação vigente**.
    em nome do município, com deveres e limites de responsabilidade. Articular com o regime do achado (art.
    1323.º CC). Resolve R2 a R4.
 7. **CRO**: uniformizar arts. 70.º, 89.º, 98.º e 99.º em «titular» (registo) e «detentor» (guarda). Resolve R6.
+
+---
+
+## 5. Atualização — versão «Revisto 30-06-2026 18h00 Grupo» (versão canónica)
+
+Ficheiro `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`: 259
+comentários, 189 inserções e 155 eliminações registadas. A numeração dos artigos citados neste balanço
+mantém-se.
+
+**Novidades que resolvem pontos do balanço**
+
+| Ponto | Versão anterior (30.6.2026) | Versão das 18h00 |
+|---|---|---|
+| R6 — CRO | «não sejam reclamados pelos seus **detentores** no prazo de quinze dias […] dos **detentores** que venham a identificar-se» (n.º 13 do art. 98.º) | «não sejam reclamados pelos seus **titulares** no prazo de quinze dias […] dos **titulares** que venham a identificar-se como tal» (n.º 13 do art. 98.º) |
+| R6 — CRO | «Sempre que não seja possível identificar o **detentor** do animal» (n.º 1 do art. 99.º) | «Sempre que não seja possível identificar o **titular** do animal» (n.º 1 do art. 99.º) |
+| R6 / P4 — entrega do animal recolhido | «sob termo de responsabilidade do **presumível dono ou detentor**» | «só podem ser **devolvidos** ou colocados no mercado […] sob termo de responsabilidade do **presumível titular ou detentor**» (n.º 2 do art. 95.º) |
+| R8 — prazo em branco | «no prazo XXX dias» | «no prazo 15 dias» (n.º 9 do art. 70.º) |
+| CRO como operador | «Operador» abrangia criação, venda, abrigo e lar de acolhimento | «[…] por um estabelecimento de venda , **por um CRO** ou por um abrigo […]» (art. 3.º). O CRO passa expressamente a operador e, por essa via, a titular (definição de «Titular»). |
+| Circulação na via pública | «acompanhados de detentor»; errante o cão «sem estarem acompanhados por detentor» | «acompanhados de **titular ou detentor**»; «sem estarem acompanhados por **titular ou detentor**» |
+| Sanção | — | Nova pena acessória: «Privação do direito de titularidade e detenção de animais perigosos ou potencialmente perigosos» (art. 141.º) |
+| Perigosos | «Câmara Municipal» | «**Município**» (n.º 7 do art. 69.º), como pedia o comentário DAJA |
+
+**Pontos que se mantêm sem alteração**
+
+C1 (definição de titular), C2 («detidos por», n.º 5 do art. 69.º), C3 (n.º 2 do art. 76.º: só o
+titular comunica a morte), C4 (n.º 7 do art. 73.º: remissão para «n.º 2 e 3» e presunção sem
+destinatário), C5 (n.º 2 do art. 149.º: portarias mantidas), C6 (n.ºs 3 e 6 do art. 69.º), R1 (sem
+regra sobre o valor do registo), R2 (0 ocorrências de «cuidador») e o resíduo «titulares ou detentores»
+do n.º 3 do art. 89.º.
+
+**Nova imprecisão**
+
+> «1 - Os detentores Operadores ??de animais de companhia que se dediquem à sua reprodução, criação,
+> manutenção ou venda devem cumprir as condições previstas no presente capítulo.»
+> — n.º 1 do art. 22.º do diploma final @rgac (versão: Revisto 30-06-2026 18h00 Grupo)
+
+A substituição de «detentores» por «Operadores» ficou por decidir no texto. A escolha tem de ser
+«operadores», que é a figura que se dedica à reprodução, criação ou venda como atividade.

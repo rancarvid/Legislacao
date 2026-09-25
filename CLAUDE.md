@@ -25,7 +25,8 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 | Código Interno | Ficheiro | Descrição |
 |---|---|---|
-| `@rgac` ⭐ | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Revisão formal DAJA V1, **30.6.2026**. Ficheiro canónico mais recente do projeto. Identifica-se pela frase «Mantêm-se transitoriamente em vigor» (n.º 2 do art. 149.º). |
+| `@rgac` ⭐ | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Revisão formal DAJA V1 revista pelo grupo, **30.6.2026, 18h00**. Ficheiro canónico mais recente do projeto. Identifica-se pela frase «Privação do direito de titularidade e detenção» (art. 141.º). |
+| `@rgac` (arquivo) | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` | Revisão formal DAJA V1, 30.6.2026, antes da revisão do grupo. **Arquivo.** Tem «Mantêm-se transitoriamente em vigor» (n.º 2 do art. 149.º), mas não tem a frase da linha anterior. |
 | `@rgac` (arquivo) | `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` | Versão DAJA V1 de 29.6.2026, anterior à revisão formal. **Arquivo.** Identifica-se pela nota «ACRESCENTAR os RESTANTES» na norma revogatória. |
 | `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 (proposta de consolidação original; incorporada em `@rgac`) |
 | `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025; incorporada em `@rgac`) |
@@ -175,9 +176,9 @@ Esta calendarização é determinante para a análise de impacto: o `@rgac` deve
 
 ### e) Diploma final consolidado — `@rgac`
 
-**`@rgac`** — `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` (revisão formal DAJA V1, 30.6.2026)
+**`@rgac`** — `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` (revisão formal DAJA V1 revista pelo grupo, 30.6.2026, 18h00)
 
-Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa. Ficam como arquivo as versões anteriores: `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` (29.6.2026) e `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` (março 2026, apesar do sufixo).
+Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa. Ficam como arquivo as versões anteriores: `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` (30.6.2026, antes da revisão do grupo), `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` (29.6.2026) e `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` (março 2026, apesar do sufixo).
 
 **Convenção de versão**: O ficheiro canónico é sempre o que contém o sufixo **"MAIS ATUAL"** no nome. Versões anteriores são arquivadas com sufixo numérico — e.g., `(1)`, `(2)`. O utilizador pode fazer upload de versões mais recentes; o ficheiro "MAIS ATUAL" será sempre substituído pelo mais recente. Nunca usar versões arquivadas como referência primária.
 
