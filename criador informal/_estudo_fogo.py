@@ -60,6 +60,11 @@ def construir(doc):
         'lucrativos o alojamento em fração autónoma — o único espaço onde a diferenciação material é '
         'impossível. Tendo o legislador cruzado os dois diplomas uma única vez e para efeito tão '
         'estreito, o silêncio quanto à lotação é qualificado. Capítulo 14.',
+        'O **n.º 4** do artigo 3.º, para prédios rústicos e mistos, não fixa número: seis animais, «podendo '
+        'tal número ser excedido se a dimensão do terreno o permitir», sem teto e sem autorização '
+        'prévia. Uma norma que não fixa número não pode ser a norma de lotação de um estabelecimento. '
+        'O artigo 3.º gradua densidade doméstica; a capacidade dos alojamentos mede-se pelo anexo III. '
+        'Capítulo 15.',
         'O **n.º 1** do artigo 3.º — dever geral de salubridade — **aplica-se sempre**, incluindo ao '
         'alojamento registado. Registar não isenta; a al. j) do n.º 1 do artigo 3.º-A obriga o '
         'interessado a declarar o cumprimento de toda a legislação aplicável em matéria de higiene.',
@@ -120,7 +125,7 @@ def construir(doc):
 
     h2(doc, '4.1', 'Decreto-Lei n.º 314/2003, de 17 de dezembro')
     para(doc,
-         'O artigo 3.º transcreve-se na íntegra, por ser a peça central da questão. O ponto 16 demonstra '
+         'O artigo 3.º transcreve-se na íntegra, por ser a peça central da questão. O ponto 18 demonstra '
          'que nunca foi alterado.')
     citacao(doc,
             ['1 - O alojamento de cães e gatos em prédios urbanos, rústicos ou mistos, fica sempre '
@@ -473,17 +478,15 @@ def construir(doc):
              '**Sem teto**: seis animais, excedíveis se a dimensão do terreno o permitir'],
             ['Fracção autónoma em propriedade horizontal',
              'Acresce o n.º 3 do artigo 3.º e o regime da propriedade horizontal',
-             'Hipótese **não analisada** neste estudo — ver ponto 15'],
+             'Hipótese **não analisada** neste estudo — ver ponto 17'],
             ['Qualquer das anteriores', '—',
              '**N.º 1 aplica-se sempre**: boas condições e ausência de riscos hígio-sanitários'],
            ],
            [Cm(5.0), Cm(4.0), Cm(7.6)])
     nota(doc, [
-        '**Precisão quanto ao logradouro.** O logradouro de uma moradia integra o prédio urbano, entrando '
-        'na avaliação como área de terreno livre. Não converte o conjunto em prédio misto: o artigo 5.º do '
-        'Código do Imposto Municipal sobre Imóveis exige, para essa qualificação, que nenhuma das partes '
-        'seja a principal. A área do quintal é, por isso, juridicamente irrelevante para o n.º 2 — o que é '
-        'precisamente o que o ponto 13 problematiza.'])
+        '**Precisão quanto ao logradouro.** O logradouro de uma moradia integra o prédio urbano e não '
+        'converte o conjunto em prédio misto, pelo que a área do quintal é juridicamente irrelevante para '
+        'o n.º 2. O ponto 15.4 desenvolve-o.'])
 
     # ------------------------------------------------------------------ 11
     pagebreak(doc)
@@ -771,20 +774,85 @@ def construir(doc):
         'Decreto-Lei n.º 314/2003 e das definições do Decreto-Lei n.º 276/2001, mas não a menciona.'])
 
     # ------------------------------------------------------------------ 15
-    h1(doc, '15.', 'A assimetria entre os n.ºs 2 e 4 e o critério matricial')
-    para(doc,
-         'O n.º 4 usa como critério a dimensão do terreno. O n.º 2 ignora o terreno por completo. Lido '
-         'como teto predial, o n.º 2 faria a licitude depender da **inscrição matricial** — categorias dos '
-         'artigos 2.º a 6.º do Código do Imposto Municipal sobre Imóveis, de natureza fiscal, sem qualquer '
-         'conexão material com o bem jurídico protegido pelo n.º 1, que é a salubridade e a prevenção de '
-         'doenças transmissíveis ao homem. Duas situações fisicamente idênticas — a mesma moradia, o mesmo '
-         'quintal, os mesmos animais, as mesmas condições — teriam tratamento distinto consoante a '
-         'inscrição na matriz.')
+    h1(doc, '15.', 'Os prédios rústicos e mistos: a assimetria dos n.ºs 2 e 4')
     destaque(doc, [
-        'A leitura pelo fogo dissolve a assimetria. **O n.º 2 não é norma de capacidade do terreno; é '
-        'norma sobre detenção doméstica.** Não compete com o n.º 4 porque regulam coisas diferentes — e a '
-        'razão de o legislador ter usado critérios distintos é simples: o prédio rústico não tem, por '
-        'definição, fogo. Para um estabelecimento, nenhum dos dois é a norma de lotação; é o anexo III.'])
+        'O n.º 4 é, à primeira vista, o melhor argumento a favor da aplicação dos limites aos '
+        'estabelecimentos — gradua o número pelo espaço, que é a lógica das normas de lotação. Mas é '
+        'também o que a destrói: **uma norma que não fixa número nenhum não pode ser a norma de lotação '
+        'de coisa alguma.**'])
+
+    h2(doc, '15.1', 'Duas unidades de contagem dentro do mesmo artigo')
+    para(doc,
+         'O n.º 2 conta por **fogo**; o n.º 4 conta por **prédio**. O mesmo artigo usa duas unidades '
+         'diferentes, e a razão é simples: o prédio rústico não tem, por definição, fogo. Esta é a '
+         'primeira consequência a extrair, e vale contra a leitura predial do n.º 2 — se o legislador '
+         'quisesse contar por prédio no n.º 2, tinha a palavra à mão e usou-a três números adiante.')
+
+    h2(doc, '15.2', 'O n.º 4 não fixa número, e não tem controlo prévio')
+    para(doc,
+         'O n.º 2 fixa quatro animais, elevável a seis, e exige para isso parecer vinculativo do médico '
+         'veterinário municipal e do delegado de saúde. O n.º 4 fixa seis, «podendo tal número ser '
+         'excedido se a dimensão do terreno o permitir», e não exige parecer, autorização ou comunicação '
+         'de espécie alguma. O único travão é o n.º 1 — boas condições e ausência de riscos '
+         'hígio-sanitários. Não há teto e não há porteiro.')
+    para(doc,
+         'O Tribunal Central Administrativo Sul confirmou-o: incumbe à Administração «aferir sempre se o '
+         'prédio onde se encontram alojados animais permite ou não o enquadramento na situação especial '
+         'contida na norma» — acórdão de 4 de fevereiro de 2010, transcrito no ponto 11.1.')
+
+    h2(doc, '15.3', 'A consequência decisiva')
+    para(doc,
+         'O ponto 6.3 registou, entre os elementos favoráveis à aplicação, que o n.º 4 tem estrutura de '
+         'norma de capacidade. É verdade quanto à forma e falso quanto ao efeito. Uma norma de lotação '
+         'diz quantos cabem; o n.º 4 diz que cabem seis, ou mais, consoante o terreno, sem limite '
+         'superior e sem quem o verifique antes. Se o artigo 3.º fosse a norma de lotação dos '
+         'alojamentos, um alojamento registado num prédio urbano teria lotação de quatro animais e um '
+         'alojamento registado num prédio rústico teria lotação ilimitada.')
+    destaque(doc, [
+        'Nenhum regime de capacidade de estabelecimentos funciona assim. A lotação dos alojamentos tem '
+        'regime próprio e mensurável — o n.º 1 do artigo 27.º do Decreto-Lei n.º 276/2001 e as tabelas do '
+        'anexo III, que fixam superfícies mínimas por animal. O artigo 3.º gradua densidade doméstica; o '
+        'anexo III mede capacidade. São operações diferentes.'])
+
+    h2(doc, '15.4', 'A fronteira é fiscal, e isso agrava o problema')
+    para(doc,
+         'Lido como teto predial, o n.º 2 faria a licitude depender da **inscrição matricial** — '
+         'categorias dos artigos 2.º a 6.º do Código do Imposto Municipal sobre Imóveis, de natureza '
+         'fiscal, sem qualquer conexão material com o bem jurídico protegido pelo n.º 1, que é a '
+         'salubridade e a prevenção de doenças transmissíveis ao homem. Duas situações fisicamente '
+         'idênticas — a mesma moradia, o mesmo quintal, os mesmos animais, as mesmas condições — teriam '
+         'tratamento distinto consoante a inscrição na matriz: quatro animais se o prédio for urbano, '
+         'seis ou mais se for misto.')
+    nota(doc, [
+        '**Precisão quanto ao logradouro.** O logradouro de uma moradia integra o prédio urbano, entrando '
+        'na avaliação como área de terreno livre. Não converte o conjunto em prédio misto: o artigo 5.º '
+        'do Código do Imposto Municipal sobre Imóveis exige, para essa qualificação, que nenhuma das '
+        'partes seja a principal. A área do quintal é, por isso, juridicamente irrelevante para o n.º 2.'])
+
+    h2(doc, '15.5', 'A lacuna sancionatória no prédio rústico')
+    para(doc,
+         'Das sete alíneas do n.º 3 do artigo 14.º, só a al. c) remete para o artigo 3.º, e o seu objeto '
+         'é «a permanência de cães e gatos em **habitações e terrenos anexos** em desrespeito pelas '
+         'condições previstas no artigo 3.º». Num prédio rústico sem habitação não há habitação, nem '
+         'terreno anexo a habitação alguma.')
+    destaque(doc, [
+        'Nessa hipótese o n.º 4 é **norma sem sanção**. O incumprimento aciona o n.º 5 — vistoria '
+        'conjunta e notificação para remoção —, mas não é contraordenação. É mais um indício de que o '
+        'artigo 3.º foi pensado a partir da casa, e que o n.º 4 é a sua extensão ao meio rural, não uma '
+        'norma sobre estabelecimentos.'])
+
+    h2(doc, '15.6', 'Resposta à questão 3')
+    numlist(doc, [
+        'O n.º 4 aplica-se a quem detém animais em prédio rústico ou misto, e o limite de seis é '
+        'indicativo: cede perante a dimensão do terreno, sem teto e sem autorização prévia.',
+        'A elasticidade não é defeito de redação: é a marca de uma norma de **densidade**, que mede '
+        'animais contra espaço disponível, e não de uma norma de **capacidade**, que fixa um número.',
+        'Por isso o n.º 4 não fixa a lotação de um alojamento registado instalado em prédio rústico — '
+        'não fixa lotação nenhuma. A capacidade desse alojamento resulta do n.º 1 do artigo 27.º do '
+        'Decreto-Lei n.º 276/2001 e do anexo III.',
+        'A assimetria entre os n.ºs 2 e 4 dissolve-se pela leitura do fogo. Mantida a leitura predial, a '
+        'assimetria torna-se arbitrária, porque passa a depender da matriz fiscal.',
+    ])
 
     # ------------------------------------------------------------------ 16
     h1(doc, '16.', 'O caso residual')
@@ -823,7 +891,7 @@ def construir(doc):
              'Como tratar a aplicação que o n.º 4 do artigo 3.º do Decreto-Lei n.º 314/2003 faz aos '
              'prédios rústicos e mistos, incluindo a possibilidade de o número ser excedido em função da '
              'dimensão do terreno?',
-             'Em aberto'],
+             'Respondida — capítulo 15'],
             ['4',
              'O que é um «fogo» para efeitos do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003, não o '
              'definindo nenhum dos dois diplomas?',
