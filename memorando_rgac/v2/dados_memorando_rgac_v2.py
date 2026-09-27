@@ -34,8 +34,8 @@ BIBLIOGRAFIA = _V1.BIBLIOGRAFIA
 DOMINIOS_IMPRENSA = _V1.DOMINIOS_IMPRENSA
 DATA_LIGACOES = _V1.DATA_LIGACOES
 
-VERSAO_MEMORANDO = "2.0 (ensaio)"
-DATA_MEMORANDO = "27.9.2026"
+VERSAO_MEMORANDO = "2.0 (ensaio), com o conteúdo da versão " + _V1.VERSAO_MEMORANDO
+DATA_MEMORANDO = _V1.DATA_MEMORANDO
 
 INTRODUCAO = [
     "Este memorando serve para acompanhar o trabalho sobre o RGAC. Regista os problemas que vamos "

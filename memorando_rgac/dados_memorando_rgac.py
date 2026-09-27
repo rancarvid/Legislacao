@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.7"
+VERSAO_MEMORANDO = "1.8"
 DATA_MEMORANDO = "27.9.2026"
 DATA_LIGACOES = "27.9.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -809,7 +809,7 @@ LAPSOS = [
      "lapso": "O art. 73.º, n.º 7 remete para os prazos «previstos no n.º 2 e 3» e para a «alínea e) do artigo 139.º», que não tem alíneas.",
      "correcao": "Ver a ficha T-05."},
     {"cod": "L-08", "onde": ["86"], "estado": "Aberto", "ficha": "C-07",
-     "lapso": "O art. 86.º tem dois n.º 5 e dois n.º 6, remete no n.º 1 para os arts. 65.º e 66.º (agora 84.º e 85.º) e no n.º 9 para o «n.º 4».",
+     "lapso": "O art. 86.º tem dois n.º 5 e dois n.º 6, remete no n.º 1 para os «artigos 65.º e 66.º» (agora arts. 84.º e 85.º) e no n.º 9 para o «n.º 4».",
      "correcao": "Ver a ficha C-07."},
     {"cod": "L-09", "onde": ["140"], "estado": "Aberto", "ficha": "T-11",
      "lapso": "O art. 140.º, n.º 2 pune o incumprimento «dos deveres previstos no artigo XX.º».",
@@ -1172,4 +1172,5 @@ REGISTO_ALTERACOES = [
     ("1.5", "27.9.2026", "Retiradas do memorando todas as notícias de imprensa: 26 entradas do Anexo B, 20 referências nas fichas e uma frase da ficha C-17. O Anexo B passa a ter só fontes documentais."),
     ("1.6", "27.9.2026", "Bibliografia no fim do documento, por tipo de fonte, com ligações clicáveis, verificadas uma a uma. O Anexo C (Fontes) passa para a bibliografia. Corrigidas as ligações do parlamento, de artigos científicos e da Universidade de Évora. A entrada sobre regulamentos municipais de Oeiras e outros foi substituída pelo Edital 145/2023 do Fundão, por não ser possível verificar a fonte."),
     ("1.7", "27.9.2026", "Estrutura para a revisão do RGAC inteiro: um tema por capítulo, com letra própria; Anexo C com lapsos formais (L-01 a L-09, dos quais cinco novos: artigos 81.º e 142.º repetidos, segundo art. 142.º fora do lugar, subsecção com epígrafe que não corresponde, numeração de secções nos caps. IV e X); Anexo D com a cobertura da revisão artigo a artigo."),
+    ("1.8", "27.9.2026", "O memorando passa a ser mantido em três versões com o mesmo conteúdo: a principal (esta) e os ensaios 2.0 e 3.0 de organização. Lapso L-08: a remissão do art. 86.º, n.º 1 passa a citar «artigos 65.º e 66.º» entre aspas, como está no RGAC."),
 ]

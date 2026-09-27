@@ -1,6 +1,6 @@
 ---
 name: memorando-rgac
-description: Atualizar o Memorando de acompanhamento do RGAC (Word), que regista os problemas encontrados no projeto de Regime Geral do Animal de Companhia (fichas por tema ou capítulo, lapsos formais, cobertura da revisão artigo a artigo, posições de entidades externas e bibliografia verificada). Usar sempre que o utilizador identifique um problema, lapso ou melhoria no RGAC, peça para rever um artigo ou capítulo, acrescentar ou fechar uma ficha, carregue uma versão nova do RGAC, ou peça o memorando de acompanhamento.
+description: Atualizar o Memorando de acompanhamento do RGAC (Word), mantido em três versões paralelas (principal 1.x e ensaios 2.0 e 3.0), que regista os problemas encontrados no projeto de Regime Geral do Animal de Companhia (fichas por tema ou capítulo, lapsos formais, cobertura da revisão artigo a artigo, posições de entidades externas e bibliografia verificada). Usar sempre que o utilizador identifique um problema, lapso ou melhoria no RGAC, peça para rever um artigo ou capítulo, acrescentar ou fechar uma ficha, carregue uma versão nova do RGAC, ou peça o memorando de acompanhamento.
 ---
 
 # Memorando de acompanhamento do RGAC
@@ -18,6 +18,39 @@ O memorando é um documento vivo. O conteúdo está todo num ficheiro de dados e
 | `memorando_rgac/pistas_imprensa_uso_interno.md` | Notícias de imprensa, só para uso interno. Não entram no memorando |
 
 Gerar: `python3 memorando_rgac/gerar_memorando_rgac.py` (requer `pip install python-docx`).
+
+## Três versões em paralelo (obrigatório)
+
+O memorando é mantido em três versões com o mesmo conteúdo, até o utilizador escolher o modelo definitivo
+(ver `memorando_rgac/PROPOSTAS_ORGANIZACAO.md`):
+
+| Versão | Pasta | Códigos | Artigos |
+|---|---|---|---|
+| Principal (1.x) | `memorando_rgac/` | T-, C- e letras de capítulo (A, P, H, E, M, R, Z, G, K, D, S, F) | Números escritos à mão |
+| Ensaio 2.0 (opção A) | `memorando_rgac/v2/` | P-NN, pela ordem de criação | `[[epígrafe]]`, número calculado |
+| Ensaio 3.0 (opção B) | `memorando_rgac/v3/` | SIGLA-NN do tema principal (TIT, CED, REG, EST, REP, BEM, ZOO, PER, SAN, FIN) | `[[epígrafe]]`, número calculado |
+
+Quando atualizar:
+- Sempre que esta skill for acionada, a alteração faz-se nas três versões.
+- Quando for o assistente a achar que é preciso atualizar o memorando (por exemplo, encontrou um problema durante outra análise), pergunta primeiro ao utilizador se é para atualizar os memorandos. Não atualiza sem resposta.
+
+Como atualizar:
+1. Fazer a alteração em `dados_memorando_rgac.py` (principal).
+2. Fazer a mesma alteração em `v2/dados_memorando_rgac_v2.py` e `v3/dados_memorando_rgac_v3.py`, com as regras de cada ensaio: referências a artigos do RGAC como `art. [[epígrafe]]`, referências a outros diplomas à mão com o nome do diploma.
+3. Ficha nova, um código em cada versão:
+   - principal: T- ou C- se o tema for titularidade ou CED; senão, a letra do capítulo do artigo principal (lista `CAPITULOS`), com o próximo número dessa letra;
+   - ensaio 2.0: próximo P-NN livre;
+   - ensaio 3.0: sigla do tema principal (primeira etiqueta) e próximo número desse tema (o gerador 3.0 mostra os próximos livres);
+   - juntar o trio à lista `CORRESPONDENCIA` do ensaio 3.0 e o par ao dicionário `CORRESPONDENCIA` do ensaio 2.0; preencher `cod_antigo` (2.0 e 3.0) e `cod_ensaio_2` (3.0).
+4. Lapso novo: o mesmo código L nas três versões. Na principal, `onde` usa a chave do artigo (`"86"`, `"81-b"`); nos ensaios, a epígrafe.
+5. Revisão de artigo (`REVISAO`): na principal pela chave, nos ensaios pela epígrafe.
+6. Subir `VERSAO_MEMORANDO` e acrescentar a linha em `REGISTO_ALTERACOES` só na principal. Os ensaios herdam a versão, a data, o registo, a bibliografia e as posições externas.
+7. Correr `python3 memorando_rgac/verificar_versoes.py`. Só se avança com as três alinhadas.
+8. Gerar e validar os três Word:
+   `python3 memorando_rgac/gerar_memorando_rgac.py`, `python3 memorando_rgac/v2/gerar_memorando_rgac_v2.py`, `python3 memorando_rgac/v3/gerar_memorando_rgac_v3.py`.
+9. Commit dos três e envio dos três ao utilizador.
+
+Versão nova do RGAC: correr `extrair_estrutura_rgac.py`. Nos ensaios, se o gerador mostrar epígrafes «a reconciliar», acrescentar a linha em `RENOMEACOES` de cada ensaio. Na principal, rever à mão os números de artigo.
 
 ## Estrutura do memorando
 
