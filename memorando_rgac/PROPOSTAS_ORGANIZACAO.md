@@ -76,6 +76,41 @@ Usa-se `[[...#1]]` e `[[...#2]]`.
 Se o ensaio for aprovado: a 2.0 passa a ser o memorando principal (a pasta v2 funde-se com a pasta
 principal), a skill é reescrita para o novo modelo e a versão 1.7 fica como arquivo.
 
+## Opção B (códigos). Sigla do tema principal + número dentro do tema
+
+Nota: a letra B foi usada duas vezes na conversa. Esta secção é a opção B da escolha de códigos
+(A: números P simples; B: sigla do tema + número; C: blocos de números por tema). A opção «um Word por
+tema», também chamada B antes, está mais abaixo e foi posta de lado.
+
+Problema que resolve: com números P simples, as fichas do mesmo tema ficam com números espalhados
+(P-02, P-30, P-66) e o código não diz nada numa reunião.
+
+Regra: código = sigla do tema principal (primeira etiqueta) + próximo número livre desse tema.
+TIT-19, CED-18, REG-01, ... Nunca muda nem se reutiliza. O tema não depende da numeração do RGAC,
+por isso o código resiste à renumeração. Tudo o resto é igual ao ensaio 2.0 (ordem do RGAC, localização
+pela epígrafe, etiquetas secundárias, Anexo E).
+
+Siglas: TIT titularidade e detenção; CED CED, colónias e errantes; REG identificação e registo;
+EST estabelecimentos e operadores; REP reprodução e comércio; BEM bem-estar e deveres de detenção;
+ZOO zoonoses e saúde pública; PER animais perigosos; SAN fiscalização e contraordenações;
+FIN disposições finais e revogações. Lapsos formais continuam com L.
+
+### Ensaio da opção B (versão 3.0)
+
+Feito a 27.9.2026 na pasta `memorando_rgac/v3/`, a partir do ensaio 2.0. A 1.7 e o ensaio 2.0 não mudaram.
+
+| Ficheiro | Função |
+|---|---|
+| `v3/dados_memorando_rgac_v3.py` | Fichas TIT-01 a TIT-18 e CED-01 a CED-17, com o código do ensaio 2.0 e da versão 1.x para rastreio |
+| `v3/gerar_memorando_rgac_v3.py` | Gera o Word. Recusa códigos cuja sigla não seja a do tema principal. No fim mostra os próximos códigos livres de cada tema |
+| `v3/Memorando_Acompanhamento_RGAC_v3_ensaio.docx` | Resultado do ensaio |
+
+Gerar: `python3 memorando_rgac/v3/gerar_memorando_rgac_v3.py`
+
+Verificado: conteúdo das 35 fichas e dos 9 lapsos igual ao do ensaio 2.0, tirando os códigos (0 diferenças);
+códigos P só aparecem no Anexo F (correspondência 1.x, 2.0 e 3.0). Próximos códigos livres: TIT-19,
+CED-18, REG-01, EST-01, SAN-01, FIN-01, BEM-01, REP-01, ZOO-01, PER-01.
+
 ## Opção B. Um documento Word por tema em revisão
 
 Posta de lado a 27.9.2026: o utilizador preferiu um só Word. Vantagens e custos analisados na conversa:
