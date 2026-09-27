@@ -355,23 +355,33 @@ par("A al. dd) do n.º 1 do art.º 2.º do DL 276/2001 define «animal selvagem�
     "e venda na Internet do art.º 55.º. Esta leitura é de afastar, por quatro razões: o próprio DL 276/2001 regula "
     "a criação de pequenos roedores como animais de companhia (art.º 26.º e anexo II); a espécie consta da parte B "
     "do anexo I do Reg. (UE) 2016/429; o ICNF, que é a autoridade para a fauna selvagem, não a trata como tal; e o "
-    "@rgac define «animal de companhia» por remissão para esse anexo.")
+    "@rgac inclui expressamente essas espécies (n.º 2 do art.º 2.º).")
 
 # ---------------------------------------------------------------- 5
 h("5. Diploma final @rgac (trabalho em curso — não é legislação vigente)")
-par("Versão analisada: RGAC_Rev. DAJA _V1_06_2026.", italic=True, cor=CINZA, size=9)
-bullet("Mantém a identificação obrigatória só para cães, gatos e furões. Define «animal de companhia» por remissão "
-       "para o anexo I do Reg. (UE) 2016/429, o que inclui os roedores.")
-bullet("Resolve a dúvida da al. c) do n.º 1 do art.º 53.º. Para «outros animais de companhia», o anúncio deve conter "
-       "o «Número de identificação da cria e da fêmea reprodutora, quando aplicável». Na transmissão, esses animais "
-       "devem ser acompanhados de «documento que ateste a origem, emitido pelo criador».")
-bullet("Lacuna a corrigir: o anúncio de outras espécies exige o «Número de registo do estabelecimento de criação». "
-       "Porém, «Estabelecimento de criação» está definido só para instalações onde se mantêm «cães ou gatos». "
-       "Assim, não fica claro se os criadores de roedores estão sujeitos a mera comunicação prévia. Sugere-se "
-       "alargar a definição, ou prever expressamente os criadores de outras espécies.")
-bullet("Os parâmetros das caixas para pequenos roedores passam para portaria. Os parâmetros dos alojamentos de "
-       "outras espécies passam para despacho do DG. Esta é a sede adequada para uma solução proporcional à "
-       "pequena escala.")
+par("Versão analisada: diploma final @rgac (versão: RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO — Revisto 30-06-2026 "
+    "18h00 Grupo). A leitura foi confirmada contra a versão RGAC_Rev. DAJA _V1_06_2026, que tem o mesmo "
+    "conteúdo nesta matéria.", italic=True, cor=CINZA, size=9)
+citacao("n.º 2, do art.º 2.º do diploma final @rgac", [
+    "2 - Para efeitos do presente decreto-lei, são animais de companhia os animais das espécies constantes da Parte A "
+    "do Anexo I do Regulamento (UE) 2016/429 do Parlamento Europeu e do Conselho, de 9 de março de 2016, e, quando "
+    "detidos para fins de companhia, os das espécies constantes da Parte B do mesmo anexo."])
+bullet("O hamster fica incluído de forma expressa (n.º 2 do art.º 2.º). A identificação obrigatória com registo no "
+       "SIAC mantém-se só para cães, gatos e furões (n.º 1 do art.º 65.º).")
+bullet("A dúvida da al. c) do n.º 1 do art.º 53.º do DL 276/2001 fica resolvida. No anúncio de «outros animais de "
+       "companhia», o número de identificação só é exigido «quando aplicável» (n.º 4 do art.º 106.º). Na "
+       "transmissão, estes animais devem ser acompanhados de «documento que ateste a origem, emitido pelo criador» "
+       "(n.º 7 do art.º 105.º).")
+bullet("Lacuna a corrigir: o anúncio de outras espécies exige o «N.º de registo do estabelecimento de criação» "
+       "(n.º 4 do art.º 106.º). Porém, «Estabelecimento de criação» (art.º 3.º) está definido só para a instalação "
+       "onde são mantidos «cães ou gatos». Assim, não fica claro se os criadores de roedores estão sujeitos a mera "
+       "comunicação prévia (al. a) do n.º 1 do art.º 42.º). Sugere-se alargar a definição, ou prever expressamente "
+       "os estabelecimentos de criação de outras espécies.")
+bullet("O n.º 9 do art.º 2.º repete a exclusão das espécies da «fauna selvagem autóctone e exótica». Convém "
+       "esclarecer que as espécies da parte B do anexo I do Reg. (UE) 2016/429 detidas para fins de companhia, como "
+       "os roedores domesticados, não ficam abrangidas por essa exclusão.")
+bullet("Os parâmetros das caixas para pequenos roedores passam para portaria (n.º 2 do art.º 35.º). Esta é a sede "
+       "adequada para uma solução proporcional à pequena escala.")
 
 # ---------------------------------------------------------------- 6
 h("6. Proposta de atuação")
@@ -389,7 +399,7 @@ tabela(
         ["4", "Publicar uma FAQ ou orientação da DGAV sobre a criação de pequenos mamíferos não sujeitos a "
               "identificação: mera comunicação prévia; al. c) do n.º 1 do art.º 53.º «quando aplicável»; documentos "
               "de transmissão.", "DSBEA", "Média"],
-        ["5", "@rgac: alargar a definição de «estabelecimento de criação» a outras espécies ou prever norma própria; "
+        ["5", "@rgac: alargar a definição de «estabelecimento de criação» (art.º 3.º) a outras espécies ou prever norma própria; clarificar o n.º 9 do art.º 2.º; "
               "prever um regime proporcional para a pequena escala (equivalência funcional das instalações do "
               "art.º 25.º), como no memorando sobre criação em pequena escala de 14.9.2026.", "Grupo RGAC / DAJA", "Média"],
     ],
@@ -493,7 +503,7 @@ for f in [
     "ICNF — Espécies exóticas ocorrentes em Portugal Continental não incluídas na LNEI "
     "(https://www.icnf.pt/api/file/doc/1fb57e0009a04d41).",
     "SIAC — Perguntas frequentes (https://siac.pt/pt/faq).",
-    "Diploma final @rgac (versão: RGAC_Rev. DAJA _V1_06_2026) — trabalho em curso.",
+    "Diploma final @rgac (versão: RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO — Revisto 30-06-2026 18h00 Grupo) — trabalho em curso.",
 ]:
     bullet(f)
 
