@@ -31,25 +31,40 @@ def construir(doc):
 
     # ------------------------------------------------------------------ 2
     h1(doc, '2.', 'Conclusões')
+    para(doc,
+         'Esta síntese é o resumo de leitura rápida do estudo. Cada ponto é autónomo e cabe num '
+         'parágrafo, com remissão para o capítulo que o desenvolve. É atualizada sempre que uma das '
+         'questões do capítulo 16 recebe resposta.')
     destaque(doc, [
         'Os limites do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003 **não fixam a lotação de um '
         'alojamento registado** — mas por uma razão precisa, e com um caso residual em que a resposta é '
         'afirmativa.'])
     numlist(doc, [
         'A unidade de contagem do n.º 2 é o **fogo**, não o prédio. Onde não há fogo, a norma não tem '
-        'campo operativo.',
+        'campo operativo. Capítulo 5.',
         'Um alojamento registado não é um fogo: o artigo 25.º do Decreto-Lei n.º 276/2001 obriga-o a '
-        'possuir **instalações individualizadas**, o que o diferencia necessariamente da habitação.',
+        'possuir **instalações individualizadas**, o que o diferencia necessariamente da habitação. '
+        'Capítulo 7.',
+        'O próprio Decreto-Lei n.º 276/2001 **prevê e regula os hotéis para animais** — al. q) do n.º 1 '
+        'do artigo 2.º e n.º 4 do artigo 25.º —, exigindo-lhes instalações individualizadas. A licitude '
+        'da hospedagem remunerada não depende, por isso, de um argumento de absurdidade: está na letra '
+        'do diploma. Capítulo 8.',
+        'Os **títulos de acesso** às atividades com animais deixaram de ser municipais. A guarda '
+        'remunerada e a criação comercial passaram a mera comunicação prévia à DGAV; o comércio a '
+        'retalho passou ao regime do Decreto-Lei n.º 10/2015. A autorização municipal do artigo 2.º da '
+        'Lei n.º 92/95 subsiste apenas quanto a atividades que não são de alojar, pelo que não é via de '
+        'entrada dos limites do artigo 3.º. Capítulo 13.',
         'O **n.º 1** do artigo 3.º — dever geral de salubridade — **aplica-se sempre**, incluindo ao '
         'alojamento registado. Registar não isenta; a al. j) do n.º 1 do artigo 3.º-A obriga o '
         'interessado a declarar o cumprimento de toda a legislação aplicável em matéria de higiene.',
         '**Caso residual.** Quem tem o alojamento registado mas mantém os animais integrados na casa, '
         'como animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima '
-        'de seis animais dentro do fogo.',
+        'de seis animais dentro do fogo. Capítulo 15.',
     ])
     nota(doc, [
         'Não se localizou decisão judicial, parecer publicado nem orientação administrativa que resolva '
-        'expressamente a questão. A conclusão é interpretativa e o ponto 15 declara os seus limites.'])
+        'expressamente a questão. A conclusão é interpretativa e o capítulo 16 declara os seus limites e '
+        'enumera as questões ainda por responder.'])
 
     # ------------------------------------------------------------------ 3
     pagebreak(doc)
@@ -204,6 +219,30 @@ def construir(doc):
              'pode ser solicitado mandado judicial para permitir às autoridades competentes o acesso aos '
              'locais onde os animais se encontrem, nomeadamente casas de habitação e terrenos privados.'],
             'N.º 2 do artigo 67.º-A do Decreto-Lei n.º 276/2001')
+
+    h2(doc, '4.3', 'Lei n.º 92/95, de 12 de setembro, e Decreto-Lei n.º 10/2015, de 16 de janeiro')
+    citacao(doc,
+            ['Sem prejuízo do disposto no capítulo III quanto aos animais de companhia, qualquer pessoa '
+             'física ou colectiva que explore o comércio de animais, que guarde animais mediante uma '
+             'remuneração, que os crie para fins comerciais, que os alugue, que se sirva de animais para '
+             'fins de transporte, que os exponha ou que os exiba com um fim comercial só poderá fazê-lo '
+             'mediante autorização municipal, a qual só poderá ser concedida desde que os serviços '
+             'municipais verifiquem que as condições previstas na lei destinadas a assegurar o bem-estar '
+             'e a sanidade dos animais serão cumpridas.'],
+            'Artigo 2.º da Lei n.º 92/95, sob a epígrafe «Licença municipal»')
+    para(doc,
+         'O artigo 4.º do Decreto-Lei n.º 10/2015 enumera as atividades sujeitas a mera comunicação '
+         'prévia. Entre elas, na al. c) do seu n.º 1:')
+    citacao(doc,
+            ['c) A exploração de estabelecimentos de comércio a retalho de animais de companhia e '
+             'respetivos alimentos, em estabelecimentos especializados;'],
+            'Al. c) do n.º 1 do artigo 4.º do Decreto-Lei n.º 10/2015')
+    citacao(doc,
+            ['1 - As meras comunicações prévias referidas nas alíneas a) a c) e g) a m) do artigo 4.º, '
+             'são apresentadas ao município territorialmente competente através do «Balcão do '
+             'empreendedor», nos termos do artigo 20.º, devendo, para efeitos de reporte estatístico, ser '
+             'remetidas de imediato para a Direção-Geral das Atividades Económicas (DGAE).'],
+            'N.º 1 do artigo 7.º do Decreto-Lei n.º 10/2015')
 
     # ------------------------------------------------------------------ 5
     pagebreak(doc)
@@ -543,7 +582,85 @@ def construir(doc):
         'elemento a ponderar na interpretação.'])
 
     # ------------------------------------------------------------------ 13
-    h1(doc, '13.', 'A assimetria entre os n.ºs 2 e 4 e o critério matricial')
+    pagebreak(doc)
+    h1(doc, '13.', 'Os títulos de acesso às atividades e a autorização municipal')
+    para(doc,
+         'A Lei n.º 92/95 sujeitou, em 1995, sete atividades a um único título municipal de controlo '
+         'prévio: explorar o comércio de animais, guardá-los mediante remuneração, criá-los para fins '
+         'comerciais, alugá-los, servir-se deles para transporte, expô-los ou exibi-los com fim '
+         'comercial. Interessa saber o que resta dessa norma, porque uma autorização municipal cujo '
+         'pressuposto é a verificação das «condições previstas na lei destinadas a assegurar o bem-estar '
+         'e a sanidade dos animais» seria via possível de entrada dos limites do artigo 3.º no regime dos '
+         'alojamentos.')
+
+    h2(doc, '13.1', 'Três deslocamentos sucessivos')
+    numlist(doc, [
+        '**A guarda remunerada e a criação comercial passaram para a DGAV.** A al. a) do n.º 1 do artigo '
+        '3.º do Decreto-Lei n.º 276/2001, na redação do Decreto-Lei n.º 260/2012, sujeita a mera '
+        'comunicação prévia os centros de recolha, os alojamentos para hospedagem e a criação comercial '
+        'de animais de companhia; a al. b) sujeita a permissão administrativa a criação de animais '
+        'potencialmente perigosos. A comunicação é dirigida à DGAV através do balcão único eletrónico. O '
+        'município saiu do procedimento.',
+        '**O comércio a retalho passou para o regime das atividades económicas.** A al. c) do n.º 1 do '
+        'artigo 4.º do Decreto-Lei n.º 10/2015 sujeita a exploração de estabelecimentos de comércio a '
+        'retalho de animais de companhia a mera comunicação prévia, dirigida ao município através do '
+        '«Balcão do empreendedor», nos termos do n.º 1 do artigo 7.º. O município continua destinatário, '
+        'mas deixou de autorizar: passou a ser notificado. A diferença não é de forma — o controlo '
+        'prévio desapareceu.',
+        '**Os dois regimes foram encaixados, não sobrepostos.** A al. a) do n.º 1 do artigo 3.º do '
+        'Decreto-Lei n.º 276/2001 exclui expressamente da comunicação à DGAV os alojamentos destinados '
+        'exclusivamente à venda, precisamente porque estes caem no regime anterior.',
+    ])
+    citacao(doc,
+            ['O funcionamento das lojas de animais não depende de mera comunicação prévia junto da DGAV, '
+             'estando aquele sujeito às normas previstas no regime jurídico de acesso e exercício de '
+             'atividades de comércio, serviços e restauração.'],
+            'DGAV, Esclarecimento n.º 4/2018 sobre a Lei n.º 95/2017, junho de 2018')
+
+    h2(doc, '13.2', 'O que subsiste do artigo 2.º')
+    para(doc,
+         'Três das sete atividades: o aluguer de animais, o servir-se deles para fins de transporte e a '
+         'sua exposição ou exibição com fim comercial. Nenhuma tem outro título de acesso, e aí o artigo '
+         '2.º opera sozinho. Nenhuma delas é, porém, uma atividade de **alojar** — o artigo 3.º do '
+         'Decreto-Lei n.º 314/2003 não tem aí objeto sobre que incidir.')
+
+    h2(doc, '13.3', 'Vigência formal e revogação tácita parcial')
+    para(doc,
+         'A construção assenta em duas normas, e não em argumento próprio. Quanto à paridade de valor, o '
+         'n.º 2 do artigo 112.º da Constituição dispõe que «as leis e os decretos-leis têm igual valor, '
+         'sem prejuízo da subordinação às correspondentes leis dos decretos-leis publicados no uso de '
+         'autorização legislativa e dos que desenvolvam as bases gerais dos regimes jurídicos». A Lei n.º '
+         '92/95 foi aprovada ao abrigo da competência legislativa comum — o preâmbulo invoca os artigos '
+         '164.º, alínea d), e 169.º, n.º 3, da Constituição na numeração anterior à revisão de 1997 — e '
+         'não é lei de valor reforçado. Um decreto-lei posterior pode, pois, derrogá-la.')
+    citacao(doc,
+            ['2 - A revogação pode resultar de declaração expressa, da incompatibilidade entre as novas '
+             'disposições e as regras precedentes ou da circunstância de a nova lei regular toda a '
+             'matéria da lei anterior.'],
+            'N.º 2 do artigo 7.º do Código Civil')
+    para(doc,
+         'São as duas últimas hipóteses que relevam: substituir o controlo prévio municipal por mera '
+         'comunicação prévia é incompatível com a exigência de autorização, e o Decreto-Lei n.º 10/2015 '
+         'regula toda a matéria do acesso àquela atividade. O artigo 2.º nunca foi expressamente '
+         'revogado, e a Assembleia da República voltou ao diploma em 2002, 2014, 2020 e 2022 sem lhe '
+         'tocar.')
+    destaque(doc, [
+        'A construção defensável é a de **revogação tácita parcial por incompatibilidade**: a norma '
+        'subsiste, mas o seu objeto foi sendo ocupado por regimes especiais posteriores, restando-lhe o '
+        'que estes não ocuparam. Não sendo o título dos alojamentos municipal, a autorização do artigo '
+        '2.º não é via por onde os limites do artigo 3.º possam entrar no regime dos alojamentos '
+        'registados. **Efeito na questão central: neutro.**'])
+    nota(doc, [
+        '**Ressalva.** O município não desapareceu do regime. Continua a ser autoridade competente para '
+        'efeitos do Decreto-Lei n.º 276/2001, nos termos da al. x) do n.º 1 do artigo 2.º, e detém o '
+        'poder do n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003. Mas isso é fiscalização, não '
+        'titulação. **Por confirmar:** se algum município ainda pratica autorizações ao abrigo do artigo '
+        '2.º, e se existe jurisprudência sobre esta derrogação. Nada foi localizado. Não se localizou '
+        'doutrina que trate especificamente desta derrogação; o raciocínio é próprio, embora as premissas '
+        'normativas sejam as citadas.'])
+
+    # ------------------------------------------------------------------ 14
+    h1(doc, '14.', 'A assimetria entre os n.ºs 2 e 4 e o critério matricial')
     para(doc,
          'O n.º 4 usa como critério a dimensão do terreno. O n.º 2 ignora o terreno por completo. Lido '
          'como teto predial, o n.º 2 faria a licitude depender da **inscrição matricial** — categorias dos '
@@ -558,8 +675,8 @@ def construir(doc):
         'razão de o legislador ter usado critérios distintos é simples: o prédio rústico não tem, por '
         'definição, fogo. Para um estabelecimento, nenhum dos dois é a norma de lotação; é o anexo III.'])
 
-    # ------------------------------------------------------------------ 14
-    h1(doc, '14.', 'O caso residual')
+    # ------------------------------------------------------------------ 15
+    h1(doc, '15.', 'O caso residual')
     para(doc,
          'Resta a situação do titular de alojamento registado que mantém os animais integrados na casa, '
          'como animais do agregado, e não em instalações diferenciadas.')
@@ -573,31 +690,82 @@ def construir(doc):
         'também o ponto que uma revisão legislativa deve resolver por via expressa, em vez de o deixar à '
         'interpretação.'])
 
-    # ------------------------------------------------------------------ 15
+    # ------------------------------------------------------------------ 16
     pagebreak(doc)
-    h1(doc, '15.', 'Pontos em aberto e limites da análise')
+    h1(doc, '16.', 'Questões em aberto e limites da análise')
+    para(doc,
+         'Registo das questões cuja resposta condiciona a conclusão. São tratadas uma a uma; à medida que '
+         'cada uma recebe resposta, o capítulo 2 é atualizado. As questões 1 a 3 foram enumeradas pelo '
+         'grupo; as 4 a 9 resultaram da análise.')
+    tabela(doc,
+           ['N.º', 'Questão', 'Estado'],
+           [['1',
+             'Como se articula a licença ou autorização municipal do artigo 2.º da Lei n.º 92/95 com o '
+             'registo dos alojamentos do Decreto-Lei n.º 276/2001 e com o limite por fogo do artigo 3.º '
+             'do Decreto-Lei n.º 314/2003?',
+             'Respondida — capítulo 13'],
+            ['2',
+             'Como tratar a remissão da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001 para o '
+             'n.º 3 do artigo 3.º do Decreto-Lei n.º 314/2003?',
+             'Em aberto'],
+            ['3',
+             'Como tratar a aplicação que o n.º 4 do artigo 3.º do Decreto-Lei n.º 314/2003 faz aos '
+             'prédios rústicos e mistos, incluindo a possibilidade de o número ser excedido em função da '
+             'dimensão do terreno?',
+             'Em aberto'],
+            ['4',
+             'O que é um «fogo» para efeitos do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003, não o '
+             'definindo nenhum dos dois diplomas?',
+             'Em aberto'],
+            ['5',
+             'No n.º 1 do artigo 3.º do Decreto-Lei n.º 314/2003, «alojamento» designa o facto de alojar '
+             'ou o estabelecimento, sentido em que a mesma palavra é usada no Decreto-Lei n.º 276/2001?',
+             'Em aberto'],
+            ['6',
+             'Que alcance tem a al. c) do n.º 3 do artigo 14.º do Decreto-Lei n.º 314/2003 ao qualificar '
+             'o objeto da infração como «habitações e terrenos anexos»?',
+             'Em aberto'],
+            ['7',
+             'Havendo excesso de animais num alojamento registado, há concurso de contraordenações entre '
+             'o artigo 14.º do Decreto-Lei n.º 314/2003 e o regime sancionatório do Decreto-Lei n.º '
+             '276/2001, ou consunção?',
+             'Em aberto'],
+            ['8',
+             'Pode a câmara municipal, ao abrigo do n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003, '
+             'notificar o titular de um alojamento registado na DGAV para retirar animais para o canil '
+             'ou gatil municipal?',
+             'Em aberto'],
+            ['9',
+             'Havendo conflito entre os dois diplomas, prevalece a especialidade do Decreto-Lei n.º '
+             '276/2001 quanto aos alojamentos ou a posterioridade do Decreto-Lei n.º 314/2003, à luz do '
+             'n.º 3 do artigo 7.º do Código Civil?',
+             'Em aberto']],
+           [Cm(1.2), Cm(12.2), Cm(3.0)])
+
+    h2(doc, '16.1', 'Limites materiais da análise')
     numlist(doc, [
         'Não há decisão judicial, parecer publicado nem orientação administrativa que resolva '
-        'expressamente a questão. A conclusão é interpretativa.',
+        'expressamente a questão central. A conclusão é interpretativa.',
         'O elemento textual mais incómodo é a al. c) do n.º 3 do artigo 14.º — «habitações **e terrenos '
-        'anexos**». A resposta proposta é que essa alínea delimita o âmbito do artigo 3.º no seu conjunto, '
-        'e que o n.º 1 alcança efetivamente o quintal; o que não faz é converter o «fogo» do n.º 2 em '
-        '«prédio».',
+        'anexos**». A resposta proposta é que essa alínea delimita o âmbito do artigo 3.º no seu '
+        'conjunto, e que o n.º 1 alcança efetivamente o quintal; o que não faz é converter o «fogo» do '
+        'n.º 2 em «prédio». É matéria da questão 6.',
         'Não se obtiveram as **tabelas do anexo III**, que as versões eletrónicas apresentam como «ver '
         'documento original». Seriam necessárias para demonstrar numericamente a lotação por superfície.',
         'Não foi consultado o **texto original do Diário da República de 17 de dezembro de 2003** em '
-        'suporte oficial, nem o processo legislativo do Decreto-Lei n.º 315/2003, que poderia esclarecer a '
-        'génese da ressalva da al. p).',
+        'suporte oficial, nem o processo legislativo do Decreto-Lei n.º 315/2003, que poderia esclarecer '
+        'a génese da ressalva da al. p). É matéria da questão 2.',
         'A pesquisa jurisprudencial cobre apenas os tribunais superiores. **Não cobre a primeira '
-        'instância**, onde se decide a maior parte das impugnações de atos municipais, nem os processos de '
-        'contraordenação decididos administrativamente. Ausência de casuística publicada não equivale a '
-        'ausência de casos.',
-        'Não se testou a hipótese de o alojamento estar em **fracção autónoma**, caso em que acrescem o '
-        'n.º 3 do artigo 3.º e o regime da propriedade horizontal. Fica por analisar.',
+        'instância**, onde se decide a maior parte das impugnações de atos municipais, nem os processos '
+        'de contraordenação decididos administrativamente. Ausência de casuística publicada não equivale '
+        'a ausência de casos.',
+        'Os textos do n.º 2 do artigo 112.º da Constituição e do artigo 7.º do Código Civil, usados no '
+        'capítulo 13, foram lidos em compilador privado, por as fontes oficiais consultadas não terem '
+        'devolvido esses artigos. **A conferir** contra o texto oficial.',
     ])
 
-    # ------------------------------------------------------------------ 16
-    h1(doc, '16.', 'Nota metodológica')
+    # ------------------------------------------------------------------ 17
+    h1(doc, '17.', 'Nota metodológica')
     para(doc,
          'Os textos legais foram obtidos das versões consolidadas e confrontados com as cópias do '
          'repositório. A pesquisa de jurisprudência foi feita na base de dados pública dos tribunais '
