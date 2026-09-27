@@ -71,3 +71,9 @@ Retiradas do memorando na versão 1.5 (27.9.2026).
 - Proposta aprovada pela Assembleia Municipal de Coimbra (30.6.2026): ata ou edital municipal.
 - Provedoria dos Animais de Lisboa: relatórios anuais ou recomendações publicadas pela CML.
 - Dados da OMV sobre municípios com médico veterinário municipal (22.8.2026): comunicado ou estudo da OMV.
+
+## Outras entradas retiradas por não se conseguir verificar a fonte
+
+| Entrada | Motivo |
+|---|---|
+| Regulamentos municipais (Lisboa, Porto, Oeiras, Cascais, Sintra, Leiria): proíbem alimentar animais na via pública, coimas até 8 000 euros em Oeiras, exceção para cuidadores registados. Fonte: https://www.oeiras.pt/-/alimentacao-animais-via-publica | O sítio de Oeiras não respondeu nas verificações de 27.9.2026 e os restantes regulamentos não foram lidos. Substituída no memorando pelo Edital 145/2023 do Fundão. Procurar os regulamentos no Diário da República, 2.ª série. |

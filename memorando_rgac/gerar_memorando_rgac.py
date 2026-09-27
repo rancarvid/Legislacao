@@ -23,6 +23,7 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
+RAIZ = os.path.dirname(AQUI)
 SAIDA = os.path.join(AQUI, "Memorando_Acompanhamento_RGAC.docx")
 
 spec = importlib.util.spec_from_file_location("dados", os.path.join(AQUI, "dados_memorando_rgac.py"))
@@ -66,6 +67,17 @@ def verificar_texto():
     for s in D.STAKEHOLDERS:
         if e_imprensa(s[5]):
             erros.append(f"Anexo B com fonte de imprensa: {s[1]} ({s[5][:60]})")
+    biblio = {b[2] for b in D.BIBLIOGRAFIA}
+    for s in D.STAKEHOLDERS:
+        if s[5] not in biblio:
+            erros.append(f"Fonte do Anexo B fora da bibliografia: {s[1]} ({s[5][:60]})")
+    for b in D.BIBLIOGRAFIA:
+        ver(b[1], "BIBLIOGRAFIA")
+        if b[2].startswith("repositório: "):
+            if not os.path.exists(os.path.join(RAIZ, b[2][len("repositório: "):])):
+                erros.append(f"Ficheiro do repositório inexistente: {b[2]}")
+        elif not b[2].startswith("http"):
+            erros.append(f"Ligação inválida na bibliografia: {b[2]}")
     for f in D.TEMA_T["fichas"] + D.TEMA_C["fichas"]:
         for x in f["levantado"]:
             if "imprensa" in x:
@@ -301,8 +313,8 @@ def indice(doc):
         ("4.", "Pontos já resolvidos no RGAC", []),
         ("Anexo A.", "Quadro-resumo das fichas", []),
         ("Anexo B.", "Posições de entidades externas", []),
-        ("Anexo C.", "Fontes", []),
         ("", "Registo de alterações", []),
+        ("", "Bibliografia", []),
     ]
     for num, nome, fichas in entradas:
         p = par(doc, (num + " " if num else "") + nome, negrito=True, depois=2)
@@ -375,6 +387,49 @@ def anexo_stakeholders(doc):
     tabela_stakeholders(doc, D.STAKEHOLDERS, [5.0, 1.6, 12.1, 7.0])
 
 
+
+def hiperligacao(p, url, texto):
+    rid = p.part.relate_to(url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+                           is_external=True)
+    h = OxmlElement("w:hyperlink")
+    h.set(qn("r:id"), rid)
+    r = OxmlElement("w:r")
+    rpr = OxmlElement("w:rPr")
+    u = OxmlElement("w:u")
+    u.set(qn("w:val"), "single")
+    rpr.append(u)
+    r.append(rpr)
+    t = OxmlElement("w:t")
+    t.text = texto
+    t.set(qn("xml:space"), "preserve")
+    r.append(t)
+    h.append(r)
+    p._p.append(h)
+
+
+def bibliografia(doc):
+    titulo(doc, "Bibliografia", 1)
+    par(doc, f"Todas as ligações foram verificadas em {D.DATA_LIGACOES}. Os documentos do repositório estão na "
+             "pasta do projeto. Os textos legais citados foram confirmados online, na pasta Legislação vigente "
+             "e no repositório.")
+    grupos = []
+    for g, *_ in D.BIBLIOGRAFIA:
+        if g not in grupos:
+            grupos.append(g)
+    for g in grupos:
+        titulo(doc, g, 2)
+        for gg, ref, lig, _ in D.BIBLIOGRAFIA:
+            if gg != g:
+                continue
+            p = par(doc, ref + " ", depois=4)
+            p.paragraph_format.left_indent = Cm(0.8)
+            p.paragraph_format.first_line_indent = Cm(-0.8)
+            if lig.startswith("http"):
+                hiperligacao(p, lig, lig)
+            else:
+                p.add_run(lig[0].upper() + lig[1:] + ".")
+
+
 def gerar():
     verificar_texto()
     doc = Document()
@@ -431,9 +486,6 @@ def gerar():
     doc.add_page_break()
     anexo_stakeholders(doc)
     retrato(doc)
-    titulo(doc, "Anexo C. Fontes", 1)
-    for f in D.FONTES:
-        par(doc, f, depois=3)
     titulo(doc, "Registo de alterações", 1)
     t = doc.add_table(rows=1, cols=3)
     bordas(t)
@@ -446,6 +498,7 @@ def gerar():
         celula(r.cells[2], txt)
     larguras(t, [1.8, 2.5, 11.7])
 
+    bibliografia(doc)
     rodape_paginas(doc)
     ordenar_tblpr(doc)
     zoom = doc.settings.element.find(qn("w:zoom"))

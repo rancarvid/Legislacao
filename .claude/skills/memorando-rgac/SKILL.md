@@ -12,6 +12,7 @@ O memorando é um documento vivo. O conteúdo está todo num ficheiro de dados e
 | `memorando_rgac/dados_memorando_rgac.py` | Conteúdo: fichas, pontos resolvidos, entidades externas, fontes, registo de alterações |
 | `memorando_rgac/gerar_memorando_rgac.py` | Gera o Word. Recusa gerar se houver travessões longos, códigos repetidos ou campos inválidos |
 | `memorando_rgac/Memorando_Acompanhamento_RGAC.docx` | Resultado. Nunca editar à mão: é reescrito a cada geração |
+| `memorando_rgac/verificar_ligacoes.py` | Verifica todas as ligações da bibliografia (curl, browser real e Europe PMC) e escreve `verificacao_ligacoes.md` |
 | `memorando_rgac/pistas_imprensa_uso_interno.md` | Notícias de imprensa, só para uso interno. Não entram no memorando |
 
 Gerar: `python3 memorando_rgac/gerar_memorando_rgac.py` (requer `pip install python-docx`).
@@ -24,8 +25,8 @@ Gerar: `python3 memorando_rgac/gerar_memorando_rgac.py` (requer `pip install pyt
 4. Pontos já resolvidos no RGAC
 5. Anexo A: quadro-resumo (gerado automaticamente)
 6. Anexo B: posições de entidades externas
-7. Anexo C: fontes
-8. Registo de alterações
+7. Registo de alterações
+8. Bibliografia (gerada a partir de `BIBLIOGRAFIA`, por tipo de fonte, com ligações clicáveis)
 
 Um tema novo cria uma letra nova (por exemplo R para reprodução, E para estabelecimentos). Acrescentar o dicionário do tema em `dados_memorando_rgac.py`, incluí-lo em `verificar_texto()`, `indice()`, no ciclo dos temas em `gerar()` e em `quadro_resumo()` no gerador. A ordem dos temas segue, mais ou menos, a ordem do RGAC.
 
@@ -75,3 +76,11 @@ Quando um problema fica resolvido numa versão nova do RGAC: mudar o `estado`, a
 1. O memorando usa só documentos: diplomas e projetos, pareceres, relatórios, estratégias, recomendações do Provedor de Justiça, acórdãos, doutrina publicada e artigos científicos. Só se cita entre «» texto transcrito do próprio documento.
 2. Notícias de imprensa (notícias, entrevistas, resumos de audições) nunca entram no memorando, nem no Anexo B nem nas fichas. O gerador recusa gerar se uma fonte do Anexo B for de um domínio de `DOMINIOS_IMPRENSA` ou se um campo `levantado` mencionar imprensa. Acrescentar domínios novos a essa lista.
 3. As notícias guardam-se em `memorando_rgac/pistas_imprensa_uso_interno.md`. Servem para formular hipóteses, preparar propostas e procurar o documento de origem. Quando esse documento for encontrado e lido, a posição pode entrar no memorando com a fonte documental.
+
+## Bibliografia e ligações
+
+1. Toda a fonte usada no memorando entra em `BIBLIOGRAFIA` como (grupo, referência, ligação, palavra de controlo). A ligação é um URL ou `repositório: <ficheiro>`.
+2. A fonte de cada entrada do Anexo B tem de ser exatamente uma ligação da bibliografia. O gerador recusa gerar se não for, ou se um ficheiro do repositório não existir.
+3. A palavra de controlo é uma expressão que tem de aparecer no documento. Serve para confirmar que a ligação abre o documento certo, e não só uma página qualquer.
+4. Depois de acrescentar ou mudar fontes, correr `python3 memorando_rgac/verificar_ligacoes.py`. Só se faz commit com 0 falhas. Atualizar `DATA_LIGACOES` com a data da verificação.
+5. Preferir ligações estáveis: PDF do Diário da República, PGDL, DGSI ou jurisprudencia.pt, EUR-Lex por ELI, DOI ou PubMed Central para artigos científicos.
