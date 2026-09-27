@@ -48,13 +48,19 @@ def verificar_texto():
     for i, p in enumerate(D.INTRODUCAO):
         ver(p, f"INTRODUCAO[{i}]")
     codigos = set()
-    for tema in (D.TEMA_T, D.TEMA_C):
+    letras = set()
+    for tema in D.TEMAS:
+        if tema["letra"] in letras or tema["letra"] == "L":
+            erros.append(f"Letra de tema repetida ou reservada: {tema['letra']}")
+        letras.add(tema["letra"])
         ver(tema["titulo"], "tema")
         for p in tema["intro"]:
             ver(p, tema["titulo"])
         for f in tema["fichas"]:
             if f["cod"] in codigos:
                 erros.append(f"Código repetido: {f['cod']}")
+            if not f["cod"].startswith(tema["letra"] + "-"):
+                erros.append(f"{f['cod']}: código não começa pela letra do tema {tema['letra']}")
             codigos.add(f["cod"])
             if f["origem"] not in D.ORIGENS:
                 erros.append(f"{f['cod']}: origem inválida {f['origem']}")
@@ -78,7 +84,29 @@ def verificar_texto():
                 erros.append(f"Ficheiro do repositório inexistente: {b[2]}")
         elif not b[2].startswith("http"):
             erros.append(f"Ligação inválida na bibliografia: {b[2]}")
-    for f in D.TEMA_T["fichas"] + D.TEMA_C["fichas"]:
+    chaves = {a["chave"] for a in estrutura()}
+    lcod = set()
+    for l in D.LAPSOS:
+        if l["cod"] in lcod or not l["cod"].startswith("L-"):
+            erros.append(f"Lapso com código repetido ou inválido: {l['cod']}")
+        lcod.add(l["cod"])
+        if l["estado"] not in D.ESTADOS:
+            erros.append(f"{l['cod']}: estado inválido {l['estado']}")
+        for k in l["onde"]:
+            if k not in chaves:
+                erros.append(f"{l['cod']}: artigo inexistente {k}")
+        if l["ficha"] and l["ficha"] not in codigos:
+            erros.append(f"{l['cod']}: ficha inexistente {l['ficha']}")
+        ver(l["lapso"] + l["correcao"], l["cod"])
+    for k, v in D.REVISAO.items():
+        if k not in chaves:
+            erros.append(f"REVISAO: artigo inexistente {k}")
+        if v.get("estado") not in D.ESTADOS_REVISAO:
+            erros.append(f"REVISAO {k}: estado inválido {v.get('estado')}")
+        if v.get("regulamento", "A verificar") not in D.ESTADOS_REGULAMENTO:
+            erros.append(f"REVISAO {k}: valor inválido em regulamento")
+        ver(v.get("nota", ""), f"REVISAO {k}")
+    for f in todas_fichas():
         for x in f["levantado"]:
             if "imprensa" in x:
                 erros.append(f"{f['cod']}: referência de imprensa em levantado -> {x[:60]}")
@@ -95,6 +123,40 @@ def verificar_texto():
         for e in erros:
             print("  -", e)
         sys.exit(1)
+
+
+# ------------------------------------------------------------------ estrutura e temas
+import json
+import re as _re
+
+
+def estrutura():
+    with open(os.path.join(AQUI, "estrutura_rgac.json"), encoding="utf-8") as f:
+        e = json.load(f)
+    if e["ficheiro"] != D.FICHEIRO_RGAC:
+        print("AVISO: estrutura_rgac.json foi extraída de outro ficheiro. Correr extrair_estrutura_rgac.py.")
+        sys.exit(1)
+    return e["artigos"]
+
+
+def todas_fichas():
+    return [f for tema in D.TEMAS for f in tema["fichas"]]
+
+
+def temas_com_fichas():
+    return [t for t in D.TEMAS if t["fichas"]]
+
+
+def artigos_citados(textos):
+    """Números de artigo do RGAC citados em referências «art. N.º» (sem nome de outro diploma)."""
+    nums = set()
+    for x in textos:
+        if _re.search(r"\b(DL|Lei|Portaria|Código|Regulamento)\b", x):
+            continue
+        for m in _re.finditer(r"arts?\.\s*(\d+)\.º(?:\s*(?:,|e)\s*(\d+)\.º)*", x):
+            for n in _re.findall(r"(\d+)\.º", m.group(0)):
+                nums.add(n)
+    return nums
 
 
 # ------------------------------------------------------------------ utilitarios
@@ -306,13 +368,15 @@ def ficha(doc, f):
 
 def indice(doc):
     titulo(doc, "Índice", 1)
-    entradas = [
-        ("1.", "Como ler este memorando", []),
-        ("2.", D.TEMA_T["titulo"], D.TEMA_T["fichas"]),
-        ("3.", D.TEMA_C["titulo"], D.TEMA_C["fichas"]),
-        ("4.", "Pontos já resolvidos no RGAC", []),
+    entradas = [("1.", "Como ler este memorando", [])]
+    for i, tema in enumerate(temas_com_fichas(), start=2):
+        entradas.append((f"{i}.", tema["titulo"], tema["fichas"]))
+    entradas += [
+        (f"{len(entradas) + 1}.", "Pontos já resolvidos no RGAC", []),
         ("Anexo A.", "Quadro-resumo das fichas", []),
         ("Anexo B.", "Posições de entidades externas", []),
+        ("Anexo C.", "Lapsos formais", []),
+        ("Anexo D.", "Cobertura da revisão, artigo a artigo", []),
         ("", "Registo de alterações", []),
         ("", "Bibliografia", []),
     ]
@@ -334,7 +398,7 @@ def quadro_resumo(doc):
         celula(t.rows[0].cells[i], h, negrito=True)
     cabecalho_tabela(t.rows[0])
     curtas = {"RGAC": "Criado pelo RGAC", "VIGENTE": "Já existia", "PARCIAL": "Resolvido em parte"}
-    for f in D.TEMA_T["fichas"] + D.TEMA_C["fichas"]:
+    for f in todas_fichas():
         r = t.add_row()
         celula(r.cells[0], f["cod"])
         celula(r.cells[1], f["titulo"])
@@ -343,8 +407,8 @@ def quadro_resumo(doc):
         celula(r.cells[4], f["estado"])
     larguras(t, [1.8, 9.2, 7.0, 4.2, 3.4])
     doc.add_paragraph()
-    abertas = sum(1 for f in D.TEMA_T["fichas"] + D.TEMA_C["fichas"] if f["estado"] == "Aberto")
-    total = len(D.TEMA_T["fichas"]) + len(D.TEMA_C["fichas"])
+    abertas = sum(1 for f in todas_fichas() if f["estado"] == "Aberto")
+    total = len(todas_fichas())
     par(doc, f"Total: {total} fichas, das quais {abertas} em aberto.")
 
 
@@ -386,6 +450,103 @@ def anexo_stakeholders(doc):
         return
     tabela_stakeholders(doc, D.STAKEHOLDERS, [5.0, 1.6, 12.1, 7.0])
 
+
+
+
+def anexo_lapsos(doc):
+    titulo(doc, "Anexo C. Lapsos formais", 1)
+    par(doc, "Remissões erradas, números repetidos, gralhas e marcas de trabalho no texto. Quando o mesmo ponto "
+             "já tem ficha, a correção remete para ela. A coluna Onde usa o número do artigo; «81-b» é a segunda "
+             "ocorrência de um número repetido.")
+    if not D.LAPSOS:
+        par(doc, "Sem lapsos registados.")
+        return
+    t = doc.add_table(rows=1, cols=5)
+    bordas(t)
+    for i, h in enumerate(["Código", "Onde", "Lapso", "Correção proposta", "Estado"]):
+        celula(t.rows[0].cells[i], h, negrito=True)
+    cabecalho_tabela(t.rows[0])
+    for l in D.LAPSOS:
+        r = t.add_row()
+        celula(r.cells[0], l["cod"])
+        celula(r.cells[1], ", ".join(f"art. {k}" for k in l["onde"]))
+        celula(r.cells[2], l["lapso"])
+        celula(r.cells[3], l["correcao"])
+        celula(r.cells[4], l["estado"])
+    larguras(t, [1.6, 3.0, 11.0, 7.6, 2.5])
+    doc.add_paragraph()
+    abertos = sum(1 for l in D.LAPSOS if l["estado"] == "Aberto")
+    par(doc, f"Total: {len(D.LAPSOS)} lapsos, dos quais {abertos} em aberto.")
+
+
+def anexo_cobertura(doc):
+    titulo(doc, "Anexo D. Cobertura da revisão, artigo a artigo", 1)
+    par(doc, "Por rever: o artigo ainda não foi lido com esse fim. Parcial: tem fichas ou lapsos, mas ainda não "
+             "foi revisto por inteiro. Em revisão e Revisto: estado indicado pelo grupo. A última coluna diz a "
+             "relação com o Regulamento (UE) 2026/1818.")
+    arts = estrutura()
+    fichas_por, lapsos_por = {}, {}
+    for f in todas_fichas():
+        for n in artigos_citados(f["onde"]):
+            fichas_por.setdefault(n, []).append(f["cod"])
+    for l in D.LAPSOS:
+        for k in l["onde"]:
+            lapsos_por.setdefault(k, []).append(l["cod"])
+
+    def estado(a):
+        if a["chave"] in D.REVISAO:
+            return D.REVISAO[a["chave"]]["estado"]
+        if fichas_por.get(a["chave"]) or lapsos_por.get(a["chave"]):
+            return "Parcial"
+        return "Por rever"
+
+    # resumo por capítulo
+    caps = []
+    for a in arts:
+        if a["capitulo"] not in caps:
+            caps.append(a["capitulo"])
+    t = doc.add_table(rows=1, cols=6)
+    bordas(t)
+    for i, h in enumerate(["Capítulo", "Artigos", "Revistos", "Em revisão", "Parcial", "Por rever"]):
+        celula(t.rows[0].cells[i], h, negrito=True)
+    cabecalho_tabela(t.rows[0])
+    tot = [0, 0, 0, 0, 0]
+    for c in caps:
+        est = [estado(a) for a in arts if a["capitulo"] == c]
+        v = [len(est), est.count("Revisto"), est.count("Em revisão"), est.count("Parcial"), est.count("Por rever")]
+        tot = [x + y for x, y in zip(tot, v)]
+        r = t.add_row()
+        celula(r.cells[0], c)
+        for i, x in enumerate(v, start=1):
+            celula(r.cells[i], str(x))
+    r = t.add_row()
+    celula(r.cells[0], "Total", negrito=True)
+    for i, x in enumerate(tot, start=1):
+        celula(r.cells[i], str(x), negrito=True)
+    larguras(t, [6.0, 3.0, 3.0, 3.0, 3.0, 3.0])
+    doc.add_paragraph()
+
+    t = doc.add_table(rows=1, cols=6)
+    bordas(t)
+    for i, h in enumerate(["Artigo", "Epígrafe", "Revisão", "Fichas e lapsos", "Regulamento (UE) 2026/1818", "Nota"]):
+        celula(t.rows[0].cells[i], h, negrito=True)
+    cabecalho_tabela(t.rows[0])
+    cap = None
+    for a in arts:
+        if a["capitulo"] != cap:
+            cap = a["capitulo"]
+            r = t.add_row()
+            celula(r.cells[0].merge(r.cells[5]), f"{cap}. {a['epigrafe_capitulo']}", negrito=True)
+        rv = D.REVISAO.get(a["chave"], {})
+        r = t.add_row()
+        celula(r.cells[0], f"{a['chave']}.º" if "-" not in a["chave"] else a["chave"])
+        celula(r.cells[1], a["epigrafe"])
+        e = estado(a)
+        celula(r.cells[2], e + (f" ({rv['data']})" if rv.get("data") else ""))
+        celula(r.cells[3], ", ".join(fichas_por.get(a["chave"], []) + lapsos_por.get(a["chave"], [])))
+        celula(r.cells[4], rv.get("regulamento", "A verificar"))
+        celula(r.cells[5], rv.get("nota", ""))
+    larguras(t, [1.8, 7.5, 3.2, 4.0, 3.6, 5.6])
 
 
 def hiperligacao(p, url, texto):
@@ -459,12 +620,19 @@ def gerar():
         q = par(doc, f"{k}: {v}", depois=1)
         q.paragraph_format.left_indent = Cm(0.8)
     par(doc, "")
+    par(doc, "Letras dos códigos das fichas:", depois=2)
+    for tema in D.TEMAS:
+        q = par(doc, f"{tema['letra']}: {tema['titulo']}", depois=1)
+        q.paragraph_format.left_indent = Cm(0.8)
+    q = par(doc, "L: lapsos formais (Anexo C)", depois=1)
+    q.paragraph_format.left_indent = Cm(0.8)
+    par(doc, "")
     par(doc, "Origem do problema:", depois=2)
     for v in D.ORIGENS.values():
         q = par(doc, v + ".", depois=1)
         q.paragraph_format.left_indent = Cm(0.8)
 
-    for n, tema in (("2", D.TEMA_T), ("3", D.TEMA_C)):
+    for n, tema in enumerate(temas_com_fichas(), start=2):
         doc.add_page_break()
         titulo(doc, f"{n}. {tema['titulo']}", 1)
         for p in tema["intro"]:
@@ -473,7 +641,7 @@ def gerar():
             ficha(doc, f)
 
     doc.add_page_break()
-    titulo(doc, "4. Pontos já resolvidos no RGAC", 1)
+    titulo(doc, f"{len(temas_com_fichas()) + 2}. Pontos já resolvidos no RGAC", 1)
     par(doc, "Registo dos problemas do regime vigente que o RGAC já resolve, para não se perderem em revisões futuras.")
     for a, b in D.RESOLVIDOS:
         p = doc.add_paragraph()
@@ -485,6 +653,10 @@ def gerar():
     quadro_resumo(doc)
     doc.add_page_break()
     anexo_stakeholders(doc)
+    doc.add_page_break()
+    anexo_lapsos(doc)
+    doc.add_page_break()
+    anexo_cobertura(doc)
     retrato(doc)
     titulo(doc, "Registo de alterações", 1)
     t = doc.add_table(rows=1, cols=3)

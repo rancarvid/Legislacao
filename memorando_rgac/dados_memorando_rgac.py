@@ -11,9 +11,10 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.6"
+VERSAO_MEMORANDO = "1.7"
 DATA_MEMORANDO = "27.9.2026"
 DATA_LIGACOES = "27.9.2026"
+FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
 
@@ -24,16 +25,22 @@ ORIGENS = {
     "PARCIAL": "Já existia; o RGAC resolve em parte",
 }
 ESTADOS = ("Aberto", "Parcialmente resolvido", "Resolvido")
+ESTADOS_REVISAO = ("Por rever", "Em revisão", "Revisto")
+ESTADOS_REGULAMENTO = ("A verificar", "Sem correspondência", "Conforme", "Divergente", "Integra o Regulamento")
 
 INTRODUCAO = [
     "Este memorando serve para acompanhar o trabalho sobre o RGAC. Regista os problemas que vamos "
     "encontrando no texto, os que já existem na legislação em vigor e continuam por resolver, e as "
     "críticas feitas por entidades externas. É um documento vivo: cada nova versão acrescenta fichas "
     "ou muda o estado das que já existem.",
-    "Cada problema tem uma ficha com um código fixo. As fichas do tema titular, detentor, proprietário e "
-    "operador começam por T. As fichas dos programas CED, colónias e animais errantes começam por C. "
+    "Cada problema de fundo tem uma ficha com um código fixo. Há dois temas transversais: T (titular, "
+    "detentor, proprietário e operador) e C (programas CED, colónias e animais errantes). Os restantes "
+    "problemas arrumam-se pelo capítulo do RGAC onde estão, cada um com a sua letra (ver a lista abaixo). "
     "Os códigos não se reutilizam. Quando um problema fica resolvido, a ficha mantém-se com o estado "
     "Resolvido.",
+    "Os lapsos formais (remissões erradas, números repetidos, gralhas, marcas de trabalho no texto) não têm "
+    "ficha: ficam numa tabela própria no Anexo C, com código L. O Anexo D mostra, artigo a artigo, o que já "
+    "foi revisto, as fichas e os lapsos de cada artigo e a relação com o Regulamento (UE) 2026/1818.",
     "As referências a artigos são sempre à versão do RGAC indicada acima, salvo indicação em contrário. "
     "A legislação vigente citada foi confirmada online (DRE e PGDL), na pasta Legislação vigente e nos "
     "ficheiros do repositório.",
@@ -55,6 +62,7 @@ CAMPOS_FICHA = [
 # Tema T: titular, detentor, proprietario e operador
 # ---------------------------------------------------------------------------
 TEMA_T = {
+    "letra": "T",
     "titulo": "Titular, detentor, proprietário e operador",
     "intro": [
         "Na legislação em vigor, detentor tem dois sentidos. No DL 276/2001, no DL 314/2003 e na Portaria "
@@ -403,6 +411,7 @@ TEMA_T = {
 # Tema C: programas CED, colonias e animais errantes
 # ---------------------------------------------------------------------------
 TEMA_C = {
+    "letra": "C",
     "titulo": "Programas CED, colónias e animais errantes",
     "intro": [
         "Hoje o regime CED está na Lei 27/2016 (art. 4.º) e na Portaria 146/2017 (art. 9.º). A Lei diz que o "
@@ -746,6 +755,76 @@ TEMA_C = {
 # ---------------------------------------------------------------------------
 # Pontos ja resolvidos pelo RGAC (para registo)
 # ---------------------------------------------------------------------------
+
+# ------------------------------------------------------------------ temas por capítulo
+# Um tema por capítulo do RGAC. A letra é o prefixo dos códigos das fichas (por exemplo R-01).
+# Para acrescentar uma ficha, basta pô-la na lista "fichas" do capítulo. Só aparecem no corpo do
+# memorando os capítulos com fichas. Se a estrutura do RGAC mudar numa versão nova, rever
+# "capitulos" (lista de capítulos do RGAC abrangidos, como aparecem em estrutura_rgac.json).
+CAPITULOS = [
+    {"letra": "A", "capitulos": ["Capítulo I"], "titulo": "Disposições gerais e definições (cap. I)", "intro": [], "fichas": []},
+    {"letra": "P", "capitulos": ["Capítulo II"], "titulo": "Princípios gerais (cap. II)", "intro": [], "fichas": []},
+    {"letra": "H", "capitulos": ["Capítulo III"], "titulo": "Detenção (cap. III)", "intro": [], "fichas": []},
+    {"letra": "E", "capitulos": ["Capítulo IV"], "titulo": "Detenção em estabelecimentos (cap. IV)", "intro": [], "fichas": []},
+    {"letra": "M", "capitulos": ["Capítulo V", "Capítulo VI", "Capítulo VII"],
+     "titulo": "Alimentação, maneio, transporte, contenção e intervenções cirúrgicas (caps. V a VII)", "intro": [], "fichas": []},
+    {"letra": "R", "capitulos": ["Capítulo VIII"], "titulo": "Registo, identificação e sistemas de informação (cap. VIII)", "intro": [], "fichas": []},
+    {"letra": "Z", "capitulos": ["Capítulo IX"], "titulo": "Zoonoses (cap. IX)", "intro": [], "fichas": []},
+    {"letra": "G", "capitulos": ["Capítulo X"], "titulo": "Gestão das populações animais (cap. X)", "intro": [], "fichas": []},
+    {"letra": "K", "capitulos": ["Capítulo XI", "Capítulo XII", "Capítulo XIII"],
+     "titulo": "Cadáveres, exposições, comércio e livros genealógicos (caps. XI a XIII)", "intro": [], "fichas": []},
+    {"letra": "D", "capitulos": ["Capítulo XIV"], "titulo": "Animais perigosos e potencialmente perigosos (cap. XIV)", "intro": [], "fichas": []},
+    {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": []},
+    {"letra": "F", "capitulos": ["Capítulo XVI", "Anexo I", "Anexo II"],
+     "titulo": "Disposições finais e transitórias e anexos (cap. XVI e anexos)", "intro": [], "fichas": []},
+]
+
+# Ordem dos temas no memorando: primeiro os transversais, depois os capítulos.
+TEMAS = [TEMA_T, TEMA_C] + CAPITULOS
+
+
+# ------------------------------------------------------------------ lapsos formais
+# Um lapso por entrada. "onde" usa a chave do artigo em estrutura_rgac.json (ex.: "86", "81-b").
+# "ficha": código da ficha que já trata o mesmo ponto, se houver. Estados: os de ESTADOS.
+LAPSOS = [
+    {"cod": "L-01", "onde": ["81", "81-b"], "estado": "Aberto", "ficha": "",
+     "lapso": "Há dois artigos 81.º: «Plataforma Nacional de Adoção de Animais de Companhia» (cap. VIII) e «Programa de vigilância e controlo em animais de companhia» (cap. IX).",
+     "correcao": "Renumerar a partir do segundo art. 81.º e rever todas as remissões para os artigos seguintes."},
+    {"cod": "L-02", "onde": ["81"], "estado": "Aberto", "ficha": "",
+     "lapso": "O art. 81.º (Plataforma Nacional de Adoção) está sob uma subsecção sem número, com a epígrafe «PLATAFORMA NACIONAL DE REGISTO DOS ALOJAMENTOS» (seguida de SIAC), que não corresponde ao conteúdo do artigo.",
+     "correcao": "Numerar a subsecção e dar-lhe epígrafe que corresponda ao artigo, ou retirar a subsecção."},
+    {"cod": "L-03", "onde": ["142", "142-b"], "estado": "Aberto", "ficha": "",
+     "lapso": "Há dois artigos 142.º. O segundo («Exames médico-veterinários, laboratoriais ou outros») está depois do Anexo II e da proposta de nota para a comunicação social, sob o título «SUBSECÇÃO III», com a nota «ALTERAR localização no documento!».",
+     "correcao": "Decidir onde fica o artigo, colocá-lo no capítulo certo, renumerar e retirar a nota de trabalho."},
+    {"cod": "L-04", "onde": ["32", "40", "49"], "estado": "Aberto", "ficha": "",
+     "lapso": "No cap. IV, a secção I tem subsecções II e III sem subsecção I, e a secção II tem subsecção II sem subsecção I.",
+     "correcao": "Criar a subsecção I em cada secção ou retirar a divisão em subsecções."},
+    {"cod": "L-05", "onde": ["88", "91", "98", "99"], "estado": "Aberto", "ficha": "",
+     "lapso": "No cap. X, as secções começam na II e saltam da III para a V (existem II, III, V e VI).",
+     "correcao": "Renumerar as secções do cap. X."},
+    {"cod": "L-06", "onde": ["22"], "estado": "Aberto", "ficha": "T-12",
+     "lapso": "O art. 22.º, n.º 1 diz «Os detentores Operadores ??de animais de companhia».",
+     "correcao": "Ver a ficha T-12."},
+    {"cod": "L-07", "onde": ["73"], "estado": "Aberto", "ficha": "T-05",
+     "lapso": "O art. 73.º, n.º 7 remete para os prazos «previstos no n.º 2 e 3» e para a «alínea e) do artigo 139.º», que não tem alíneas.",
+     "correcao": "Ver a ficha T-05."},
+    {"cod": "L-08", "onde": ["86"], "estado": "Aberto", "ficha": "C-07",
+     "lapso": "O art. 86.º tem dois n.º 5 e dois n.º 6, remete no n.º 1 para os arts. 65.º e 66.º (agora 84.º e 85.º) e no n.º 9 para o «n.º 4».",
+     "correcao": "Ver a ficha C-07."},
+    {"cod": "L-09", "onde": ["140"], "estado": "Aberto", "ficha": "T-11",
+     "lapso": "O art. 140.º, n.º 2 pune o incumprimento «dos deveres previstos no artigo XX.º».",
+     "correcao": "Ver a ficha T-11."},
+]
+
+
+# ------------------------------------------------------------------ cobertura da revisão
+# Uma entrada por artigo já trabalhado, com a chave de estrutura_rgac.json.
+#   "estado": um de ESTADOS_REVISAO; "data": data da revisão; "regulamento": um de ESTADOS_REGULAMENTO;
+#   "nota": texto curto (por exemplo, o artigo do Regulamento (UE) 2026/1818 em causa).
+# Artigos sem entrada: aparecem «Por rever», ou «Parcial» se já tiverem fichas ou lapsos.
+REVISAO = {
+}
+
 RESOLVIDOS = [
     ("Dois sentidos de detentor em leis diferentes",
      "O RGAC revoga o DL 276/2001, o DL 314/2003, o DL 315/2009 e o DL 82/2019 e fica com um só conjunto de "
@@ -1092,4 +1171,5 @@ REGISTO_ALTERACOES = [
     ("1.4", "25.9.2026", "Anexo B: 24 entradas novas com base em documentos lidos (relatórios do Provedor de Justiça 2020 e 2023, nota técnica da AR, SWD(2024) 88 da Comissão Europeia, WOAH, parecer da OMV ao PJL 662/XV, e-book do CEJ, RJLB, acórdãos do STJ, TRL, TRC e TC, regulamentos do Fundão e da Moita, artigos científicos sobre CED e predação). Novos grupos: Organizações internacionais e União Europeia; Investigação científica. Fichas T-06, T-13, T-14, T-16, T-18, C-01, C-02, C-03, C-05, C-06, C-09 e C-11 com fontes documentais acrescentadas."),
     ("1.5", "27.9.2026", "Retiradas do memorando todas as notícias de imprensa: 26 entradas do Anexo B, 20 referências nas fichas e uma frase da ficha C-17. O Anexo B passa a ter só fontes documentais."),
     ("1.6", "27.9.2026", "Bibliografia no fim do documento, por tipo de fonte, com ligações clicáveis, verificadas uma a uma. O Anexo C (Fontes) passa para a bibliografia. Corrigidas as ligações do parlamento, de artigos científicos e da Universidade de Évora. A entrada sobre regulamentos municipais de Oeiras e outros foi substituída pelo Edital 145/2023 do Fundão, por não ser possível verificar a fonte."),
+    ("1.7", "27.9.2026", "Estrutura para a revisão do RGAC inteiro: um tema por capítulo, com letra própria; Anexo C com lapsos formais (L-01 a L-09, dos quais cinco novos: artigos 81.º e 142.º repetidos, segundo art. 142.º fora do lugar, subsecção com epígrafe que não corresponde, numeração de secções nos caps. IV e X); Anexo D com a cobertura da revisão artigo a artigo."),
 ]
