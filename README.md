@@ -54,7 +54,7 @@ O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o 
 | `@codigo` | Código do Animal — DL n.º 214/2013 | Proposta de consolidação (incorporada em `@rgac`) |
 | `@rgbeac` | Regime Geral do Bem-Estar dos Animais de Companhia (jun. 2025) | Proposta de consolidação (incorporada em `@rgac`) |
 | `@regulamento` | Regulamento (UE) 2026/1818 — cães e gatos | ✅ Publicado no JO (aplicação direta; aplicável a partir de 31.8.2028; incorporado em `@rgac`) |
-| `@rgac` ⭐ | Diploma final — integra `@codigo` + `@regulamento` + `@rgbeac` | Diploma final (trabalho em curso; ficheiro "MAIS ATUAL") |
+| `@rgac` ⭐ | Diploma final — texto de trabalho do projeto: recolhe contributos do `@codigo` e do `@rgbeac` e integra diretamente o `@regulamento` | Diploma final (trabalho em curso; ficheiro `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`) |
 
 ---
 

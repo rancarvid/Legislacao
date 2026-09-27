@@ -4,6 +4,12 @@
 **Produto**: `CED/Reflexoes_sobre_CED.docx` (22 pp.), gerado por `CED/gerar_reflexoes.py`
 sobre `criador informal/_memo_engine.py`.
 
+**Documento complementar**: `CED/CED_documentos_trabalho_RGBEAC_RGAC.md` — percurso do regime CED
+nas versões de trabalho do projeto legislativo e comentários Word dos revisores, produzido em
+sessão paralela (commit `f633c78`). Ver §7, que cruza os dois. **Os dois checkpoints devem ser
+lidos em conjunto**: este cobre o regime vigente e as lacunas; aquele cobre o que o projeto
+legislativo faz — ou deixa de fazer — quanto a cada uma delas.
+
 **Âmbito**: regime jurídico dos programas de captura, esterilização e devolução. Levantamento
 das lacunas, controvérsias e posições das partes interessadas. Não mobiliza o Regulamento (UE)
 2026/1818 nem o projeto RGAC.
@@ -154,3 +160,72 @@ Três citações da ENAE mudam o peso da resposta ao pedido de esclarecimento
 2. O Estado reconhece que **FAT e cuidador não estão regulados** — é o vazio em que ela caiu.
 3. O Estado assinala que **há regulamentos municipais que proíbem alimentar errantes** e
    contrapõe-lhes o art. 4.º da Lei n.º 27/2016 — aplicável ao n.º 1 do art. 8.º do RSBEAMS.
+
+---
+
+## 7. Cruzamento com `CED/CED_documentos_trabalho_RGBEAC_RGAC.md`
+
+Aquele ficheiro analisa o art. 44.º do RGBEAC (jun. 2025), o art. 67.º do @rgac (rev. 16mar26),
+os arts. 86.º e 87.º das revisões DAJA (jun. 2026) e os contributos dos MVM de 06.03.2026.
+**Não contradiz este checkpoint; completa-o.** Cinco interações relevantes.
+
+### 7.1 Confirma o §1.2 por outra via
+O **art. 44.º do RGBEAC (jun. 2025) adotou ponto por ponto o modelo do projeto de revisão da
+Portaria de dez. 2021**: «**devem** as câmaras municipais […] **executar**»; «a entidade responsável
+pelo programa CED **é a câmara municipal**»; cuidadores identificados no plano de gestão; registo
+SIAC em nome da câmara; sem al. d) e sem exclusão de cães. O **@rgac (rev. 16mar26) recuou para o
+modelo da Portaria** — «podem […] autorizar», al. d) reposta, cães excluídos, cuidadores
+desaparecem. A opção de 2021 chegou a ser texto de projeto legislativo e foi depois abandonada.
+
+### 7.2 Corrige um erro factual que reforça a zona cinzenta 7
+Comentário de revisora ao art. 67.º do @rgac: «**A Lei 27 diz podem**». **Não diz.** O art. 4.º da
+Lei n.º 27/2016 diz «**assegura**»; o «podem» está no n.º 1 do art. 9.º da Portaria, norma
+regulamentar. Consequência: o «podem» regulamentar lê-se à luz de um dever legal, e não como
+discricionariedade municipal pura. É argumento utilizável perante municípios que recusem o CED ou
+que o inviabilizem por via regulamentar.
+
+### 7.3 Três zonas cinzentas em vias de resolução no projeto
+| Zona cinzenta deste checkpoint | O que o projeto faz |
+|---|---|
+| 3 — ausência de cadastro de colónias | al. f) do n.º 6 do art. 86.º (rev. formal DAJA): «O registo da colónia no SIAC, designadamente quanto à georreferenciação, n.º de animais, entidade responsável» |
+| 9 — titular do registo SIAC | al. e) do @rgac: «em nome da câmara municipal promotora do programa CED» |
+| 13 — colónias em propriedade privada | art. 87.º (rev. formal DAJA): anuência escrita do proprietário, dever de colaboração e **contraordenação** por recusa ou obstrução |
+
+Corrige-se, em conformidade, o §2 deste checkpoint: a zona cinzenta 13 não é silêncio absoluto —
+é silêncio do **direito vigente**, com solução já redigida no projeto.
+
+### 7.4 Duas zonas cinzentas agravadas no projeto
+- **Zona 1 (cuidador)**: presente no art. 44.º do RGBEAC, **desaparece** no @rgac.
+- **Zona 2 (FAT)**: regulada nos arts. 4.º e 101.º do RGBEAC (45 dias prorrogáveis, bolsas
+  municipais, registo SIAC, titularidade inalterada); comentário de revisora em 21.7.2025 —
+  «ELIMINAR ESTE CAPÍTULO»; substituída por «**lar de acolhimento**», definido como casa particular
+  onde animais anteriormente errantes são mantidos «em nome de um operador responsável, **para
+  efeitos de colocação no mercado**». Quem acolhe por iniciativa própria, sem operador e sem
+  colocação no mercado, continua sem figura.
+
+### 7.5 Um risco novo, não inventariado neste checkpoint
+> «É proibido fornecer alimento a animais na via pública, exceto quando esta atividade for incluída
+> em plano aprovado pelas câmaras municipais.»
+> — n.º 3 do art. 65.º do @codigo, mantido no @rgac e na revisão formal DAJA
+
+Tornaria **nacional** a proibição que a ENAE (p. 35) aponta como obstáculo ao CED. Combinada com a
+eliminação do cuidador e com o CED dependente de autorização, pode tornar ilícita a conduta de quem
+hoje sustenta colónias não autorizadas. **Nenhum revisor comentou a norma.** Acrescenta-se ao
+inventário do §2 como zona cinzenta **22**.
+
+### 7.6 Os contributos dos MVM confirmam o terreno
+Confirmam as zonas 1, 2, 10, 13 e 19, com destaque para: «a maioria das colónias existentes (no meu
+concelho) formam-se e existem em propriedade privada (quintais)»; e, sobre a FAT, «A maioria das
+Associações de Proteção Animal utiliza esta figura, **sem qualquer enquadramento legal** […] Quais
+são aqui as responsabilidades dos titulares (Associações) e quais as responsabilidades dos
+detentores dos animais (FAT)?».
+
+### 7.7 Reserva de método
+Os documentos de trabalho são **internos e em curso**. Não foram submetidos a consulta pública e
+não se invocam perante entidades externas. Nada deles entra na resposta ao pedido de esclarecimento
+referido no §6. Servem para saber para onde a Administração se inclina.
+
+### 7.8 Por fazer, na sequência deste cruzamento
+Acrescentar ao `CED/Reflexoes_sobre_CED.docx` uma secção sobre o percurso RGBEAC → @rgac. O
+documento descreve hoje o regime vigente e as lacunas, mas ignora que três delas têm solução
+redigida e que duas regrediram.
