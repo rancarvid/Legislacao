@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.4"
-DATA_MEMORANDO = "25.9.2026"
+VERSAO_MEMORANDO = "1.5"
+DATA_MEMORANDO = "27.9.2026"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
 
@@ -36,10 +36,9 @@ INTRODUCAO = [
     "As referências a artigos são sempre à versão do RGAC indicada acima, salvo indicação em contrário. "
     "A legislação vigente citada foi confirmada online (DRE e PGDL), na pasta Legislação vigente e nos "
     "ficheiros do repositório.",
-    "As posições de entidades externas apoiam-se, sempre que possível, em documentos: diplomas, pareceres, "
-    "relatórios, estratégias, recomendações, acórdãos, doutrina e artigos científicos. Quando uma posição só "
-    "é conhecida pela imprensa, a ficha indica «fonte: imprensa» e a entrada fica numa nota própria no "
-    "Anexo B, até se encontrar o documento de origem.",
+    "As posições de entidades externas assentam só em documentos: diplomas e projetos, pareceres, relatórios, "
+    "estratégias, recomendações, acórdãos, doutrina e artigos científicos. Notícias de imprensa não são usadas "
+    "como fonte.",
 ]
 
 CAMPOS_FICHA = [
@@ -293,7 +292,7 @@ TEMA_T = {
             ],
             "proposta": "Norma que diga que o titular e o detentor respondem nos termos gerais do Código Civil e "
                         "que, entre operador e lar de acolhimento, a responsabilidade se reparte por contrato.",
-            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1 (11.7.2012)", "Tribunal da Relação do Porto (11.11.2024), fonte: imprensa",
+            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1 (11.7.2012)",
                           "STJ, proc. 478/05.6TBMGL.C1.S1 (14.11.2013): os arts. 493.º e 502.º do Código Civil podem coexistir",
                           "Tribunal da Relação de Lisboa, proc. 3121/03.4TBCSC.L1-6 (24.11.2009)",
                           "Tribunal da Relação de Coimbra, proc. 6/22.9GCPBL.C1 (7.2.2024): dever de vigilância do detentor", "CDU (resposta de 2024)"],
@@ -316,7 +315,7 @@ TEMA_T = {
             "proposta": "Decidir se a família de acolhimento informal fica proibida ou se passa a ter um registo "
                         "simples no SIAC, como detentor, com limite de animais e dever de comunicação.",
             "levantado": ["Estratégia Nacional para os Animais Errantes (ENAE), pp. 30-31",
-                          "Contributos dos médicos veterinários municipais (6.3.2026)", "PAN (estatuto da família de acolhimento, 2024)", "Iniciativa Liberal (programa 2024), fonte: imprensa", "SNMV (contra registos provisórios no SIAC)",
+                          "Contributos dos médicos veterinários municipais (6.3.2026)", "PAN (estatuto da família de acolhimento, 2024)", "SNMV (contra registos provisórios no SIAC)",
                           "Raúl Farias, e-book do CEJ (2022): as associações, como pessoas coletivas, não respondem pelo crime de abandono"],
             "estado": "Parcialmente resolvido",
             "rel": ["T-13", "C-02"],
@@ -352,7 +351,7 @@ TEMA_T = {
             ],
             "proposta": "Presunção de detenção para quem, de forma regular, aloja, alimenta ou controla o acesso aos "
                         "animais num prédio de que dispõe.",
-            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "ANVETEM (falta de regulação das entidades privadas de proteção animal, 2020), fonte: imprensa",
+            "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)",
                           "Tribunal da Relação de Lisboa, proc. 3121/03.4TBCSC.L1-6 (24.11.2009): detentor é aquele em cuja casa o animal é albergado",
                           "ENAE (família de acolhimento temporário e cuidador não regulados)",
                           "Lei 8/2017, art. 493.º-A do Código Civil (despesas de quem socorreu o animal)"],
@@ -429,7 +428,7 @@ TEMA_C = {
             "proposta": "Manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou "
                         "por protocolo, programas CED para gatos, sempre que se justifique».",
             "levantado": ["ENAE, p. 35 («Os programas CED não estão instituídos em todo o território»)",
-                          "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)", "Chega (programa 2024), fonte: imprensa", "Animais de Rua (18.11.2024), fonte: imprensa",
+                          "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)",
                           "Gunther e outros, PNAS 2022, e Boone e outros, 2019 (o CED só resulta com esterilização intensa e contínua)",
                           "Comissão Europeia, SWD(2024) 88 (errantes fora do âmbito do Regulamento (UE) 2026/1818)"],
             "estado": "Aberto",
@@ -452,7 +451,7 @@ TEMA_C = {
                         "em nome do município, com deveres e limites de responsabilidade definidos.",
             "levantado": ["ENAE, p. 35 («não está definido o conceito de "
                           "\"cuidador da colónia\"»)", "Contributos dos médicos veterinários municipais (6.3.2026)",
-                          "PAN (figura do animal comunitário, PJL 662/XV)", "BE, Chega e Livre (animal comunitário, programas 2024), fonte: imprensa", "Assembleia Municipal de Coimbra (regulamento de cuidadores, 30.6.2026), fonte: imprensa", "Câmara Municipal do Porto (gestão diária pelas associações, 2021), fonte: imprensa",
+                          "PAN (figura do animal comunitário, PJL 662/XV)",
                           "OMV, parecer ao PJL 662/XV (5.1.2024): contra o animal comunitário por diluir a responsabilidade",
                           "PAN, PJL 662/XV (definição de animal comunitário)",
                           "Município do Fundão, Edital 145/2023, art. 4.º, n.º 1 (cuidador registado responsável pela colónia)",
@@ -513,7 +512,7 @@ TEMA_C = {
             ],
             "proposta": "Substituir a entrega no CRO por avaliação feita pelo médico veterinário do programa, com "
                         "registo no SIAC.",
-            "levantado": ["Relatório final do GTBEA (DGAV, 2021)", "Projeto de revisão da Portaria 146/2017 (ANMP, 2021)", "ANMP (2018), fonte: imprensa", "Provedora do Animal (cerca de 80 mil animais nos CRO, 25.10.2023), fonte: imprensa",
+            "levantado": ["Relatório final do GTBEA (DGAV, 2021)", "Projeto de revisão da Portaria 146/2017 (ANMP, 2021)",
                           "Provedor de Justiça, Relatório 2023 (queixas sobre sobrelotação dos CRO)"],
             "estado": "Aberto",
             "rel": [],
@@ -534,7 +533,7 @@ TEMA_C = {
             "proposta": "Manter a exclusão da devolução de cães à via pública, mas prever uma alternativa: parques de "
                         "realojamento de matilhas ou um regime excecional de cão comunitário com critérios "
                         "de segurança.",
-            "levantado": ["OMV (25.11.2025), fonte: imprensa",
+            "levantado": [
                           "OMV, parecer ao PJL 662/XV (5.1.2024): contra o CED em cães",
                           "WOAH, Código Sanitário dos Animais Terrestres, cap. 7.7 (CED em cães só como medida complementar)", "APMVEAC (parecer set. 2023)", "PAN e BE (2024)",
                           "Contributos dos médicos veterinários municipais (6.3.2026)", "FEDRA", "PCP (proposta ao OE2026)", "Livre (programa 2024)", "Movimento de Intervenção pelas Matilhas (Coimbra)", "Projeto de alteração da Portaria 146/2017 (esterilização excecional de cães)"],
@@ -573,7 +572,7 @@ TEMA_C = {
             ],
             "proposta": "Definir as duas entidades no art. 3.º ou no próprio art. 86.º, e dizer que o município, "
                         "como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável.",
-            "levantado": ["CDU (resposta de 2024)", "Análise interna", "Câmara Municipal do Porto (2021), fonte: imprensa", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)"],
+            "levantado": ["CDU (resposta de 2024)", "Análise interna", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)"],
             "estado": "Aberto",
             "rel": ["T-13", "C-04"],
         },
@@ -591,7 +590,7 @@ TEMA_C = {
             "proposta": "Número nacional de colónia, atualização pela entidade responsável, cuidadores associados "
                         "e registo anual de entradas, saídas e mortes.",
             "levantado": ["ENAE, p. 35 («não é possível aferir o número de animais nem o número e localização das "
-                          "colónias»)", "ENAE, §33 (número de registo nacional da colónia)", "Assembleia Municipal de Coimbra (mapeamento georreferenciado, 30.6.2026), fonte: imprensa", "Provedoria dos Animais de Lisboa (sinalização de colónias, 10.9.2024), fonte: imprensa",
+                          "colónias»)", "ENAE, §33 (número de registo nacional da colónia)",
                           "Provedor de Justiça, Relatório 2023 (planos CED autorizados sem divulgação pública)"],
             "estado": "Parcialmente resolvido",
             "rel": ["C-02"],
@@ -700,7 +699,7 @@ TEMA_C = {
             "proposta": "Admitir médico veterinário contratado ou partilhado entre municípios e ligar o CED às linhas "
                         "de apoio da DGAV.",
             "levantado": ["Relatório final do GTBEA (DGAV, 2021): financiamento como principal constrangimento",
-                          "Inventário interno de zonas cinzentas do CED (zona 20)", "DGAV (140 médicos veterinários reconhecidos para 138 municípios, 8.1.2026), fonte: imprensa", "OMV (cerca de 45% dos municípios com médico veterinário municipal, 22.8.2026), fonte: imprensa", "Provedoria dos Animais de Lisboa (9.1.2026), fonte: imprensa", "PCP (2021)", "ANMP (OE2025 sem verbas próprias para CRO), fonte: imprensa"],
+                          "Inventário interno de zonas cinzentas do CED (zona 20)", "PCP (2021)"],
             "estado": "Aberto",
             "rel": [],
         },
@@ -730,13 +729,13 @@ TEMA_C = {
                 "As câmaras devem apresentar à DGAV, todos os anos, um plano de controlo das populações errantes. "
                 "O artigo não diz que dados são obrigatórios, não liga o plano ao registo das colónias no SIAC e não "
                 "prevê consequências para quem não o apresenta. Um comentário do grupo de trabalho pede isso mesmo.",
-                "A Provedora do Animal diz que os dados anuais não permitem definir políticas.",
+               
             ],
             "proposta": "Fixar os dados mínimos (colónias, número de gatos esterilizados, capturas, entradas e saídas "
                         "do CRO), retirá-los do SIAC sempre que possível e ligar o acesso a apoios públicos à entrega "
                         "do plano.",
             "levantado": ["Comentário do grupo de trabalho ao art. 85.º («prever sanções para os Municípios que não "
-                          "informam a DGAV»)", "Provedora do Animal (25.10.2023), fonte: imprensa", "Paulo Afonso (21.4.2026), fonte: imprensa"],
+                          "informam a DGAV»)"],
             "estado": "Aberto",
             "rel": ["C-09"],
         },
@@ -785,21 +784,6 @@ STAKEHOLDERS = [
     ("Administração pública", "ICNF, projeto de alteração da Portaria 146/2017 enviado à ANMP", "2021", "C",
      "Tornava o CED um dever das câmaras, com a câmara como entidade responsável e registo SIAC em seu nome; incluía os cuidadores no plano de gestão; revogava a entrega prévia no CRO; exigia articulação com o ICNF em habitats de vida selvagem; admitia excecional e transitoriamente a esterilização de cães errantes sem capacidade no CRO. Citação: «Os programas CED nos refúgios de vida selvagem ou outros locais públicos que sirvam de habitat à vida selvagem devem ser articulados com o ICNF I.P.»",
      "https://anmp.pt/file-viewer/?pstid=41508"),
-    ("Administração pública", "DGAV, diretora-geral (audição na Comissão de Agricultura)", "8.1.2026", "C",
-     "Defende que todos os concelhos tenham autoridade sanitária veterinária concelhia. Indica 140 médicos veterinários reconhecidos para 138 municípios.",
-     "https://sapo.pt/artigo/diretora-da-dgav-defende-que-todos-os-municipios-tenham-medico-veterinario-concelhio-69600006ab728f90f0c5c2cf"),
-    ("Administração pública", "Provedora do Animal (audição parlamentar)", "25.10.2023", "C",
-     "Cerca de 80 mil animais a viver nos CRO, com tendência para 100 mil, e custos muito elevados. Os dados anuais não permitem definir políticas.",
-     "https://observador.pt/2023/10/25/ha-80-000-animais-habitantes-nos-centros-de-recolha-alerta-provedora-do-animal/"),
-    ("Administração pública", "Provedora do Animal", "24.7.2026", "C",
-     "Defende a esterilização obrigatória com vales de livre escolha do centro veterinário e equipas nacionais de resgate.",
-     "https://www.veterinaria-atual.pt/na-gestao/word-spay-day-esterilizacao/"),
-    ("Administração pública", "Provedoria dos Animais de Lisboa", "9.1.2026", "C",
-     "Recomenda a nomeação do médico veterinário municipal em Lisboa, que não existe. Sem ele ficam comprometidos a direção técnica do CRO, o destino dos animais e o parecer exigido para os CED.",
-     "https://www.veterinaria-atual.pt/na-gestao/veterinario-municipal/"),
-    ("Administração pública", "Provedoria dos Animais de Lisboa", "10.9.2024", "C",
-     "Propõe sinalização das colónias CED (cerca de 12 000 gatos em mais de 1 500 colónias em Lisboa) e contactos de cuidadores para emergências.",
-     "https://www.publico.pt/2024/09/10/local/noticia/provedoria-animais-lisboa-propoe-nova-sinaletica-proteger-animais-casos-emergencias-2103558"),
     ("Administração pública", "Provedor de Justiça, Recomendação 4/A/2013 (Síndrome de Diógenes)", "6.5.2013", "T",
      "Pede um guia para as autoridades de saúde nos casos de acumulação de animais, com articulação entre saúde, câmara, Ministério Público e tribunais.",
      "https://www.provedor-jus.pt/documentos/ambiente-salubridade-habitacao-acumulacao-de-residuos-saude-mental-sindrome-de-diogenes-004-a-2013/"),
@@ -814,12 +798,6 @@ STAKEHOLDERS = [
      "Pedem as figuras de cuidador, família de acolhimento temporário, fiel depositário e animal comunitário; um regime excecional de cães comunitários; responsabilização dos detentores de facto; enquadramento das colónias em quintais e do conflito entre cuidadores e vizinhos; clareza sobre responsabilidades entre associação titular e família de acolhimento. Um MVM pede coimas aos alimentadores; outro opõe-se ao CED.",
      "Contributos MVM.docx (repositório)"),
     # --- Ordens e associacoes profissionais
-    ("Ordens e associações profissionais", "OMV, comunicado sobre CED em cães", "21.11.2025", "C",
-     "Contra o CED em cães, que considera tecnicamente infundado e socialmente perigoso e uma desistência da administração local. Apoia o CED em gatos. Propõe reforço da captura e do alojamento em CRO.",
-     "https://www.veterinaria-atual.pt/na-gestao/omv-programa-ced-caes/"),
-    ("Ordens e associações profissionais", "OMV, bastonário", "22.8.2026", "T e C",
-     "Esterilização obrigatória com financiamento público, registo SIAC com rastreio de ninhadas e um médico veterinário municipal por concelho. Refere que só cerca de 45% dos municípios têm médico veterinário municipal.",
-     "https://observador.pt/2026/08/22/veterinarios-e-associacoes-defendem-mais-investimento-na-esterilizacao-de-animais/"),
     ("Ordens e associações profissionais", "OMV, parecer sobre abandono em centros veterinários", "nov. 2015", "T",
      "A lei é omissa sobre animais que os donos não vão buscar depois do tratamento. Propõe termo de responsabilidade com prazo a partir do qual se presume o abandono. Citação: «A legislação é omissa quanto à situação de animais abandonados, após tratamento, em CAMV's».",
      "https://www.omv.pt/dmdocuments/vi_formacao_omv/abandono_animais_camv_ultimoparecer_nov2015.pdf"),
@@ -832,9 +810,6 @@ STAKEHOLDERS = [
     ("Ordens e associações profissionais", "APMVEAC, parecer à ENAE", "set. 2023", "C",
      "Contra a dispersão de tutelas e contra o CED em cães. Diz que o enquadramento legal é parte do problema e que a eutanásia é ato clínico da responsabilidade exclusiva do médico veterinário.",
      "https://apmveac.pt/wp-content/uploads/2023/09/Parecer-APMVEAC-Consulta-Publica-ENAE.pdf"),
-    ("Ordens e associações profissionais", "ANVETEM", "2020", "C",
-     "Diz que a Lei 27/2016 assentou em pressupostos errados e que os CRO estão sobrelotados. Aponta a falta de regulação das entidades privadas de proteção animal. Refere que só 172 dos 308 municípios tinham médico veterinário municipal.",
-     "https://observador.pt/2020/03/08/associacao-de-veterinarios-diz-que-situacao-nos-canis-municipais-e-dramatica/"),
     # --- Juristas, academia e tribunais
     ("Juristas, academia e tribunais", "Teresa Quintela de Brito, «O abandono de animais de companhia», RJLB", "2019", "T",
      "O crime de abandono só pode ser cometido por quem já tem o dever de guardar, vigiar ou assistir o animal. Citação: «Não é possível a imputação de responsabilidade por estes crimes a associações ou sociedades zoófilas ou a quaisquer outras pessoas colectivas».",
@@ -842,50 +817,26 @@ STAKEHOLDERS = [
     ("Juristas, academia e tribunais", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1", "11.7.2012", "T",
      "O dever de vigilância do art. 493.º, n.º 1 do Código Civil decorre do poder de facto sobre o animal e não tem de recair sobre o dono.",
      "https://trc.pt/responsabilidade-civil-danos-causados-por-animais-dever-de-vigilancia/"),
-    ("Juristas, academia e tribunais", "Tribunal da Relação do Porto", "11.11.2024", "T",
-     "O detentor que mantinha o cão em sua casa responde pelos danos, ainda que não seja proprietário.",
-     "https://www.lexpoint.pt/conteudos/987/133651/noticias/responsabilidade-por-danos-causados-por-animal"),
     ("Juristas, academia e tribunais", "Tribunal da Relação de Lisboa, proc. 1642/24.4T8AMD.L1-8", "30.4.2025", "T",
      "O registo no SIAC pode relevar para presumir a propriedade, mas não afasta a prova da posse. O tribunal revogou uma decisão que se apoiava só no registo.",
      "https://www.dgsi.pt/jtrl.nsf/33182fc732316039802565fa00497eec/7462ba7a0546bac680258c8b0049a31e?OpenDocument"),
     ("Juristas, academia e tribunais", "Tribunal Constitucional, Acórdãos 70/2024 e 478/2024", "2024", "T",
      "Não julgam inconstitucionais os arts. 387.º e 388.º do Código Penal (maus-tratos e abandono), invertendo a jurisprudência anterior.",
      "https://www.tribunalconstitucional.pt/tc/acordaos/20240070.html"),
-    ("Juristas, academia e tribunais", "Paulo Afonso, docente e médico veterinário", "21.4.2026", "C",
-     "A Lei 27/2016 ficou aquém: os CRO recolhem o mesmo número de animais que antes, sem coordenação nacional nem identificação suficiente.",
-     "https://greensavers.sapo.pt/problema-dos-animais-errantes-persiste-uma-decada-depois-da-proibicao-de-abate/"),
     # --- ONG
     ("ONG e associações de proteção animal", "ARPA, parecer sobre o DL 82/2019", "dez. 2022", "T e C",
      "Registar gatos de colónia em nome do cuidador torna-o responsável por animais que não controla, desincentiva a esterilização e cria falsas presunções de abandono. Defende o registo em nome do município nos CED municipais e que o CED é um dever legal dos municípios. Citação: «o que não podem é onerá-las com responsabilidades que além de não estarem legamente previstas, apenas as desencorajam a agir».",
      "https://www.arpa-associacao.pt/media/attachments/2022/12/14/parecer-arpa-versAo-4-final.pdf"),
-    ("ONG e associações de proteção animal", "FEDRA (federação de associações)", "22.8.2026", "C",
-     "Esterilização obrigatória como serviço público, financiamento estável e CED para cães. Diz que as associações suportam as falhas do sistema.",
-     "https://observador.pt/2026/08/22/veterinarios-e-associacoes-defendem-mais-investimento-na-esterilizacao-de-animais/"),
     ("ONG e associações de proteção animal", "FEDRA, plano de políticas públicas", "2024", "C",
      "Diz que o microchip nos gatos de colónia não é viável na maioria dos casos e pede exceções. Propõe CED para cães e parques de matilhas.",
      "FEDRA - Plano de políticas públcias.pdf (repositório)"),
-    ("ONG e associações de proteção animal", "Animais de Rua", "18.11.2024", "C",
-     "Pede mais pressão sobre os municípios para cumprirem o CED e colaboração com as ONG. Contra o corte de apoios no OE2025.",
-     "https://jornaleconomico.sapo.pt/noticias/estamos-perante-um-retrocesso-inaceitavel-se-bem-estar-animal-nao-for-incluido-no-oe2025-diz-animais-de-rua/"),
-    ("ONG e associações de proteção animal", "SOS Animal e ANIMAL", "25.10.2019", "T",
-     "O Estado não cumpre a lei: CRO lotados e listas de espera, com os animais a ficarem a cargo das associações.",
-     "https://tvi.iol.pt/noticias/sociedade/canis/associacoes-culpam-o-estado-nao-ha-capacidade-para-receber-os-animais"),
-    ("ONG e associações de proteção animal", "Abraços de 4 Patas (Entroncamento)", "14.9.2025", "C",
-     "O CED municipal perdeu eficácia, as esterilizações caíram e os voluntários fazem trabalho do médico veterinário municipal.",
-     "https://omirante.pt/sociedade/2025-09-14-associacao-do-entroncamento-critica-falta-de-controlo-de-colonias-de-gatos-1a4940a3"),
     ("ONG e associações de proteção animal", "Movimento de Intervenção pelas Matilhas (Coimbra)", "s/d", "C",
      "Defende o CED em cães, com devolução ao território acompanhada por cuidadores, vacinação e microchip.",
      "https://matilhascoimbra.pt/pages/projecto-2"),
-    ("ONG e associações de proteção animal", "Associação São Francisco de Assis (Cascais)", "29.1.2021", "C",
-     "Defendeu a proibição de alimentar animais na via pública para gerir uma matilha no Guincho.",
-     "https://poligrafo.sapo.pt/fact-check/proibido-alimentar-os-animais-punivel-com-coima-imagem-deste-cartaz-em-cascais-e-autentica"),
     # --- Partidos
     ("Partidos", "PAN", "2021 a 2025", "T e C",
      "Figura do animal comunitário (projeto aprovado na generalidade em 2021, caducado, retomado nos PJL 662/XV e 88/XVI). Estatuto da família de acolhimento temporário (2024). Critica o OE2026 por nenhum avanço para animais comunitários e matilhas.",
      "https://www.pan.com.pt/pan-destaca-vitorias-no-bem-estar-animal-mas-denuncia-retrocesso-grave-no-orcamento-do-estado-para-2026/"),
-    ("Partidos", "PAN, Inês Sousa Real", "1.9.2026", "C",
-     "A execução da Lei 27/2016 fica aquém: esterilizações em queda, pelo menos 96 municípios sem CRO e só 45% com médico veterinário municipal.",
-     "https://pit.nit.pt/animais/10-anos-sem-abate-nos-canis-ha-leis-que-salvam-vidas"),
     ("Partidos", "PCP, proposta ao OE2026", "5.11.2025", "T e C",
      "Campanha nacional de esterilização com CED para cães não perigosos, registados no SIAC sem responsabilidade do município. Citação: «a título exclusivamente informativo, mediante a identificação genérica ‘Cães CED’ e com a exclusão das responsabilidades desses municípios inerentes à propriedade ou detenção desses animais».",
      "https://www.pcp.pt/campanha-nacional-de-esterilizacao-de-animais-errantes-0"),
@@ -895,37 +846,10 @@ STAKEHOLDERS = [
     ("Partidos", "Livre, programa eleitoral", "2024", "C",
      "Reforço dos CED e alargamento a cães errantes, valorização do animal comunitário, protocolos com associações com metas e financiamento.",
      "https://programa.partidolivre.pt/propostas/N.13/"),
-    ("Partidos", "Bloco de Esquerda, programa eleitoral", "2024", "C",
-     "CED, figura do animal comunitário e um médico veterinário municipal a tempo inteiro por município.",
-     "https://pit.nit.pt/animais/legislativas-estao-ai-prometem-os-partidos-defesa-do-bem-estar-animal"),
-    ("Partidos", "Chega, programa eleitoral", "2024", "C",
-     "Garantir o CED em todos os municípios e criar o estatuto do animal comunitário.",
-     "https://pit.nit.pt/animais/legislativas-estao-ai-prometem-os-partidos-defesa-do-bem-estar-animal"),
-    ("Partidos", "PS, programa eleitoral", "2024", "C",
-     "Programas de esterilização e vacinação para matilhas errantes. Não se pronuncia sobre CED de gatos.",
-     "https://pit.nit.pt/animais/legislativas-estao-ai-prometem-os-partidos-defesa-do-bem-estar-animal"),
-    ("Partidos", "PSD/AD e Iniciativa Liberal, programas eleitorais", "2024", "T",
-     "PSD/AD: campanhas contra o abandono e reforço dos CRO. IL: permitir que os CRO entreguem animais a particulares com apoio do Estado e financiar as associações em função dos animais a cargo.",
-     "https://pit.nit.pt/animais/legislativas-estao-ai-prometem-os-partidos-defesa-do-bem-estar-animal"),
     ("Partidos", "Respostas dos partidos (Maratona pelos Animais)", "mar. 2024", "C",
      "Sobre o CED em cães: PAN e BE a favor; Chega a favor em local circunscrito com cuidadores designados; CDU prudente por questões práticas e de responsabilidade civil; AD disponível para refletir; PS e IL não responderam.",
      "https://maratonapelosanimais.pt/wp-content/uploads/2024/03/respostas-completas.pdf"),
     # --- Municipios
-    ("Municípios e ANMP", "ANMP", "2018 e 2024", "C",
-     "Em 2018 disse ser impossível cumprir ao mesmo tempo a recolha obrigatória e a proibição do abate. Em 2024 lamentou que o OE2025 deixasse de prever verbas próprias para os CRO.",
-     "https://www.rtp.pt/noticias/economia/anmp-lamenta-que-orcamento-do-estado-nao-contemple-verbas-para-centros-de-recolha-animal_n1612994"),
-    ("Municípios e ANMP", "Representante dos municípios (audição parlamentar)", "25.10.2023", "C",
-     "Só cerca de 200 dos 308 municípios têm CRO, mas todos estão obrigados a recolher.",
-     "https://observador.pt/2023/10/25/ha-80-000-animais-habitantes-nos-centros-de-recolha-alerta-provedora-do-animal/"),
-    ("Municípios e ANMP", "Câmara Municipal do Porto", "6.8.2021", "T e C",
-     "Os gatos das colónias CED estão registados no SIAC em nome da câmara, mas a gestão diária cabe às associações. Mais de 70 colónias.",
-     "https://poligrafo.sapo.pt/fact-check/colonia-de-gatos-sinalizada-por-placa-no-porto-esta-legalizada-e-os-animais-sao-propriedade-da-autarquia/"),
-    ("Municípios e ANMP", "Câmara Municipal do Entroncamento", "14.9.2025", "C",
-     "O médico veterinário municipal está sob grande pressão; a câmara vai contratar clínicas para esterilizações.",
-     "https://omirante.pt/sociedade/2025-09-14-associacao-do-entroncamento-critica-falta-de-controlo-de-colonias-de-gatos-1a4940a3"),
-    ("Municípios e ANMP", "Assembleia Municipal de Coimbra (proposta aprovada)", "30.6.2026", "C",
-     "Mapeamento georreferenciado das colónias, regulamento municipal de cuidadores com formação, identificação, direitos e deveres, metas anuais de CED e apoio alimentar aos cuidadores.",
-     "https://www.diariocoimbra.pt/2026/06/30/municipio-planeia-fazer-uma-melhor-gestao-das-colonias-de-gatos/"),
     ("Municípios e ANMP", "Regulamentos municipais (Lisboa, Porto, Oeiras, Cascais, Sintra, Leiria, entre outros)", "vários", "C",
      "Proíbem alimentar animais na via pública, com coimas que em Oeiras chegam a 8 000 euros. Em regra excecionam os cuidadores registados.",
      "https://www.oeiras.pt/-/alimentacao-animais-via-publica"),
@@ -936,9 +860,6 @@ STAKEHOLDERS = [
     ("Conservação da natureza", "SPEA", "27.12.2021", "C",
      "Recomenda gestão responsável dos gatos com dono, incluindo recolhimento noturno, para reduzir a predação de aves.",
      "https://spea.pt/um-gato-feliz-e-alimentado-mantem-o-passarinho-afastado/"),
-    ("Conservação da natureza", "Miguel Clavero, Estação Biológica de Doñana (Espanha), entrevista ao DN", "14.4.2023", "C",
-     "Cientista espanhol. Defende que os gatos sem dono sejam retirados do meio natural, por métodos não letais sempre que possível, porque as colónias alimentadas continuam a caçar.",
-     "https://www.dn.pt/sociedade/ha-que-manter-os-gatos-sem-dono-fora-do-meio-ambiente-16178512.html"),
     # --- Fontes documentais acrescentadas na versão 1.4
     ('Administração pública', 'Provedor de Justiça, Relatório à Assembleia da República 2023', '2024', 'C',
      'Queixas sobre sobrelotação dos CRO, falta de recolha de matilhas e colónias de gatos. Muitas colónias são afinal CED autorizados, sem divulgação pública. Citação: «Em muitos casos verifica-se estarem afinal em causa planos de gestão devidamente autorizados pelos serviços veterinários municipais, o que levanta a questão da falta da sua divulgação pública.»',
@@ -1014,9 +935,8 @@ STAKEHOLDERS = [
      'https://www.nature.com/articles/ncomms2380'),
 ]
 
-# Fontes de imprensa: as entradas cuja fonte seja destes dominios vao para a nota final do Anexo B
-# e nao para a tabela principal. Preferir sempre o documento primario (parecer, relatorio, acordao,
-# artigo, estrategia). Quando se encontrar o documento primario, substituir a fonte.
+# Dominios de imprensa: o gerador recusa gerar se alguma fonte do Anexo B for destes dominios.
+# As noticias ficam em pistas_imprensa_uso_interno.md, fora do memorando.
 DOMINIOS_IMPRENSA = [
     "observador.pt", "publico.pt", "sapo.pt/artigo", "veterinaria-atual.pt", "lexpoint.pt",
     "greensavers.sapo.pt", "jornaleconomico", "tvi.iol.pt", "omirante.pt", "poligrafo.sapo.pt",
@@ -1047,4 +967,5 @@ REGISTO_ALTERACOES = [
     ("1.2", "25.9.2026", "Correção das tabelas: as propriedades de largura estavam fora da ordem exigida pelo Word e eram ignoradas. Ficheiro validado contra o esquema. Sem alterações de conteúdo."),
     ("1.3", "25.9.2026", "Fontes: as posições conhecidas só pela imprensa passam para uma nota no fim do Anexo B e ficam marcadas nas fichas com «fonte: imprensa». A tabela principal do Anexo B fica reservada a documentos. Nenhuma posição foi retirada."),
     ("1.4", "25.9.2026", "Anexo B: 24 entradas novas com base em documentos lidos (relatórios do Provedor de Justiça 2020 e 2023, nota técnica da AR, SWD(2024) 88 da Comissão Europeia, WOAH, parecer da OMV ao PJL 662/XV, e-book do CEJ, RJLB, acórdãos do STJ, TRL, TRC e TC, regulamentos do Fundão e da Moita, artigos científicos sobre CED e predação). Novos grupos: Organizações internacionais e União Europeia; Investigação científica. Fichas T-06, T-13, T-14, T-16, T-18, C-01, C-02, C-03, C-05, C-06, C-09 e C-11 com fontes documentais acrescentadas."),
+    ("1.5", "27.9.2026", "Retiradas do memorando todas as notícias de imprensa: 26 entradas do Anexo B, 20 referências nas fichas e uma frase da ficha C-17. O Anexo B passa a ter só fontes documentais."),
 ]

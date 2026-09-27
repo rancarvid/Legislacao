@@ -12,6 +12,7 @@ O memorando é um documento vivo. O conteúdo está todo num ficheiro de dados e
 | `memorando_rgac/dados_memorando_rgac.py` | Conteúdo: fichas, pontos resolvidos, entidades externas, fontes, registo de alterações |
 | `memorando_rgac/gerar_memorando_rgac.py` | Gera o Word. Recusa gerar se houver travessões longos, códigos repetidos ou campos inválidos |
 | `memorando_rgac/Memorando_Acompanhamento_RGAC.docx` | Resultado. Nunca editar à mão: é reescrito a cada geração |
+| `memorando_rgac/pistas_imprensa_uso_interno.md` | Notícias de imprensa, só para uso interno. Não entram no memorando |
 
 Gerar: `python3 memorando_rgac/gerar_memorando_rgac.py` (requer `pip install python-docx`).
 
@@ -69,8 +70,8 @@ Quando um problema fica resolvido numa versão nova do RGAC: mudar o `estado`, a
 3. Rever o texto gerado (por exemplo, com python-docx a listar títulos e tabelas).
 4. Fazer commit dos três ficheiros de `memorando_rgac/` e push para o ramo de trabalho.
 
-## Prioridade das fontes
+## Fontes
 
-1. Documentos primários: diplomas e projetos, pareceres, relatórios, estratégias, recomendações do Provedor de Justiça, acórdãos, doutrina publicada e artigos científicos. São a base das fichas e da tabela principal do Anexo B.
-2. Imprensa (notícias, entrevistas, resumos de audições): não se apaga, mas não serve de fundamento. Na ficha, acrescentar «, fonte: imprensa» à entrada de `levantado`. No Anexo B, a entrada vai automaticamente para a nota «Posições conhecidas apenas através da imprensa» se o domínio da fonte constar de `DOMINIOS_IMPRENSA` (acrescentar domínios novos a essa lista).
-3. Quando se encontrar o documento de origem de uma posição da imprensa, substituir a fonte pelo documento e tirar a marca «fonte: imprensa».
+1. O memorando usa só documentos: diplomas e projetos, pareceres, relatórios, estratégias, recomendações do Provedor de Justiça, acórdãos, doutrina publicada e artigos científicos. Só se cita entre «» texto transcrito do próprio documento.
+2. Notícias de imprensa (notícias, entrevistas, resumos de audições) nunca entram no memorando, nem no Anexo B nem nas fichas. O gerador recusa gerar se uma fonte do Anexo B for de um domínio de `DOMINIOS_IMPRENSA` ou se um campo `levantado` mencionar imprensa. Acrescentar domínios novos a essa lista.
+3. As notícias guardam-se em `memorando_rgac/pistas_imprensa_uso_interno.md`. Servem para formular hipóteses, preparar propostas e procurar o documento de origem. Quando esse documento for encontrado e lido, a posição pode entrar no memorando com a fonte documental.
