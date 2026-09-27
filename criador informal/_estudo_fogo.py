@@ -34,7 +34,7 @@ def construir(doc):
     para(doc,
          'Esta síntese é o resumo de leitura rápida do estudo. Cada ponto é autónomo e cabe num '
          'parágrafo, com remissão para o capítulo que o desenvolve. É atualizada sempre que uma das '
-         'questões do capítulo 16 recebe resposta.')
+         'questões do capítulo 17 recebe resposta.')
     destaque(doc, [
         'Os limites do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003 **não fixam a lotação de um '
         'alojamento registado** — mas por uma razão precisa, e com um caso residual em que a resposta é '
@@ -54,16 +54,22 @@ def construir(doc):
         'retalho passou ao regime do Decreto-Lei n.º 10/2015. A autorização municipal do artigo 2.º da '
         'Lei n.º 92/95 subsiste apenas quanto a atividades que não são de alojar, pelo que não é via de '
         'entrada dos limites do artigo 3.º. Capítulo 13.',
+        'A **única ponte expressa** entre os dois diplomas é a al. p) do n.º 1 do artigo 2.º do '
+        'Decreto-Lei n.º 276/2001, acrescentada pelo Decreto-Lei n.º 315/2003 no mesmo Diário da '
+        'República em que saiu o Decreto-Lei n.º 314/2003. Exclui do conceito de hospedagem sem fins '
+        'lucrativos o alojamento em fração autónoma — o único espaço onde a diferenciação material é '
+        'impossível. Tendo o legislador cruzado os dois diplomas uma única vez e para efeito tão '
+        'estreito, o silêncio quanto à lotação é qualificado. Capítulo 14.',
         'O **n.º 1** do artigo 3.º — dever geral de salubridade — **aplica-se sempre**, incluindo ao '
         'alojamento registado. Registar não isenta; a al. j) do n.º 1 do artigo 3.º-A obriga o '
         'interessado a declarar o cumprimento de toda a legislação aplicável em matéria de higiene.',
         '**Caso residual.** Quem tem o alojamento registado mas mantém os animais integrados na casa, '
         'como animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima '
-        'de seis animais dentro do fogo. Capítulo 15.',
+        'de seis animais dentro do fogo. Capítulo 16.',
     ])
     nota(doc, [
         'Não se localizou decisão judicial, parecer publicado nem orientação administrativa que resolva '
-        'expressamente a questão. A conclusão é interpretativa e o capítulo 16 declara os seus limites e '
+        'expressamente a questão. A conclusão é interpretativa e o capítulo 17 declara os seus limites e '
         'enumera as questões ainda por responder.'])
 
     # ------------------------------------------------------------------ 3
@@ -660,7 +666,112 @@ def construir(doc):
         'normativas sejam as citadas.'])
 
     # ------------------------------------------------------------------ 14
-    h1(doc, '14.', 'A assimetria entre os n.ºs 2 e 4 e o critério matricial')
+    pagebreak(doc)
+    h1(doc, '14.', 'A remissão da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001')
+    destaque(doc, [
+        'A remissão é **coerente e deliberada**, e não um lapso. O seu efeito é o inverso do que aparenta: '
+        'reforça a conclusão de que os limites por fogo não fixam a lotação dos alojamentos registados.'])
+
+    h2(doc, '14.1', 'A génese, documentada')
+    para(doc,
+         'A remissão não existia em 2001. No Diário da República n.º 241, de 17 de outubro de 2001, a '
+         'alínea lia-se apenas:')
+    citacao(doc,
+            ['p) «Hospedagem sem fins lucrativos» alojamento, permanente ou temporário, de animais de '
+             'companhia que não vise a obtenção de rendimentos;'],
+            'Al. p) do artigo 2.º do Decreto-Lei n.º 276/2001, texto original de 17.10.2001')
+    para(doc,
+         'A ressalva foi acrescentada pelo **Decreto-Lei n.º 315/2003, de 17 de dezembro**, que alterou o '
+         'artigo 2.º do Decreto-Lei n.º 276/2001. Esse diploma foi publicado no **Diário da República '
+         'n.º 290, de 17 de dezembro de 2003 — o mesmo número em que foi publicado o Decreto-Lei n.º '
+         '314/2003**. São diplomas gémeos, saídos juntos.')
+    citacao(doc,
+            ['p) «Hospedagem sem fins lucrativos», alojamento, permanente ou temporário, de animais de '
+             'companhia que não vise a obtenção de rendimentos, com excepção das referidas no n.º 3 do '
+             'artigo 3.º do diploma que aprova o Plano Nacional de Luta e Vigilância da Raiva Animal e '
+             'outras Zoonoses;'],
+            'Al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001, na redação do Decreto-Lei '
+            'n.º 315/2003')
+    para(doc,
+         'O referente só pode ser o Decreto-Lei n.º 314/2003. O Decreto-Lei n.º 91/2001, de 23 de março, '
+         'que aquele revogou, tem no artigo 3.º uma norma de definições com alíneas e sem números, pelo '
+         'que não tem n.º 3; e a Portaria n.º 81/2002, de 24 de janeiro, tem no artigo 3.º a vacinação '
+         'anti-rábica em regime de campanha, com dois números apenas. Nenhum dos dois comporta a '
+         'remissão.')
+    nota(doc, [
+        '**Designação usada.** A alínea fala em «Plano Nacional de Luta e Vigilância da Raiva Animal e '
+        'outras Zoonoses». O Decreto-Lei n.º 314/2003 chama-lhe «Programa Nacional de Luta e Vigilância '
+        '**Epidemiológica** da Raiva Animal e Outras Zoonoses». A designação da alínea é a do vocabulário '
+        'de 2001, que oscilava entre «Plano» e «Programa» dentro do próprio Decreto-Lei n.º 91/2001. É '
+        'desleixo de redação, não vício de remissão.'])
+
+    h2(doc, '14.2', 'As duas leituras possíveis')
+    para(doc,
+         'O n.º 3 do artigo 3.º do Decreto-Lei n.º 314/2003 dispõe: «No caso de fracções autónomas em '
+         'regime de propriedade horizontal, o regulamento do condomínio pode estabelecer um limite de '
+         'animais inferior ao previsto no número anterior.»')
+    tabela(doc,
+           ['Leitura', 'Conteúdo', 'Efeito'],
+           [['Gramatical',
+             '«As referidas» são as **fracções autónomas** — único plural feminino da norma remetida. A '
+             'al. p) exclui do conceito de hospedagem sem fins lucrativos o alojamento em fração '
+             'autónoma.',
+             'Aplica'],
+            ['Lapso de numeração',
+             'Pretendia-se remeter para o n.º 2, excluindo do conceito a detenção doméstica dentro dos '
+             'limites. Teleologicamente atraente, mas sem antecedente feminino plural.',
+             'Não aplica']],
+           [Cm(2.6), Cm(10.4), Cm(3.0)])
+    destaque(doc, [
+        'A conclusão resiste às duas leituras. Na primeira, a remissão é uma exclusão cirúrgica de um '
+        'tipo de espaço. Na segunda, a al. p) afirma que abaixo do limite há lar e acima há hospedagem — '
+        'o que também afasta a aplicação dos números à lotação.'])
+
+    h2(doc, '14.3', 'Por que razão só a hospedagem sem fins lucrativos')
+    para(doc,
+         'O Decreto-Lei n.º 315/2003 alterou a al. p) e deixou a al. q) intacta. A assimetria tem '
+         'explicação, e não é o favorecimento do comércio.')
+    bullets(doc, [
+        'A al. q) define-se **pela positiva** e é auto-limitada: exige que o alojamento «vise interesses '
+        'comerciais ou lucrativos», o que uma casa particular nunca satisfaz.',
+        'A al. p) define-se **pela negativa** — «que não vise a obtenção de rendimentos» — e, sem '
+        'ressalva, abrange literalmente todos os lares: manter animais em casa, em permanência, sem '
+        'auferir rendimento, é exatamente isso. Era esta definição, e só ela, que estava sem chão.',
+        'O chão dado não foi «a habitação» em geral, foi a **fração autónoma** — precisamente o espaço '
+        'onde a diferenciação material é impossível. Numa moradia com logradouro podem construir-se as '
+        'instalações individualizadas do artigo 25.º; num apartamento não podem. O critério da exclusão '
+        'acompanha a possibilidade de separação física, que é o critério do próprio artigo 25.º.',
+    ])
+    para(doc,
+         'Quanto à função, a al. p) fecha uma via de fuga. Sem ela, quem tivesse vinte cães num '
+         'apartamento poderia sustentar que não é detentor doméstico sujeito ao n.º 2 do artigo 3.º do '
+         'Decreto-Lei n.º 314/2003, mas titular de um alojamento de hospedagem sem fins lucrativos ao '
+         'abrigo do Decreto-Lei n.º 276/2001, e reclamar licença nessa qualidade. O legislador de 17 de '
+         'dezembro de 2003 tapou essa via no mesmo dia em que publicou os limites por fogo. Para a '
+         'hospedagem lucrativa nada havia a tapar: a licença de funcionamento, com parecer da DRA, e os '
+         'requisitos do artigo 25.º já filtravam os apartamentos.')
+    nota(doc, [
+        '**Observação.** O preâmbulo do Decreto-Lei n.º 315/2003 nada diz sobre este ponto. Declara três '
+        'propósitos: retirar do Decreto-Lei n.º 276/2001 as normas sobre animais potencialmente '
+        'perigosos, «proceder a rectificações ao seu texto, o qual foi publicado com algumas '
+        'inexactidões», e «acrescentar aspectos que reforçam as normas de bem-estar dos animais de '
+        'companhia». O que fica dito em 14.3 é inferência a partir do texto e do contexto, não intenção '
+        'documentada.'])
+
+    h2(doc, '14.4', 'O argumento decisivo')
+    destaque(doc, [
+        'A remissão prova que o legislador **sabia cruzar os dois diplomas e sabia como se faz**. Fê-lo '
+        'expressamente uma única vez, para um efeito estreitíssimo, e não o fez para aquilo que '
+        'verdadeiramente importaria — mandar os números do n.º 2 valerem como lotação dos alojamentos. '
+        'Onde o legislador falou uma vez e calou no resto, o silêncio é qualificado.'])
+    nota(doc, [
+        'Não se localizou doutrina, jurisprudência nem parecer que se debruce sobre esta remissão. A '
+        'revisão crítica legislativa da Associação Portuguesa de Médicos Veterinários Especialistas em '
+        'Animais de Companhia, de abril de 2021, percorre ambos os diplomas e trata do artigo 3.º do '
+        'Decreto-Lei n.º 314/2003 e das definições do Decreto-Lei n.º 276/2001, mas não a menciona.'])
+
+    # ------------------------------------------------------------------ 15
+    h1(doc, '15.', 'A assimetria entre os n.ºs 2 e 4 e o critério matricial')
     para(doc,
          'O n.º 4 usa como critério a dimensão do terreno. O n.º 2 ignora o terreno por completo. Lido '
          'como teto predial, o n.º 2 faria a licitude depender da **inscrição matricial** — categorias dos '
@@ -675,8 +786,8 @@ def construir(doc):
         'razão de o legislador ter usado critérios distintos é simples: o prédio rústico não tem, por '
         'definição, fogo. Para um estabelecimento, nenhum dos dois é a norma de lotação; é o anexo III.'])
 
-    # ------------------------------------------------------------------ 15
-    h1(doc, '15.', 'O caso residual')
+    # ------------------------------------------------------------------ 16
+    h1(doc, '16.', 'O caso residual')
     para(doc,
          'Resta a situação do titular de alojamento registado que mantém os animais integrados na casa, '
          'como animais do agregado, e não em instalações diferenciadas.')
@@ -690,9 +801,9 @@ def construir(doc):
         'também o ponto que uma revisão legislativa deve resolver por via expressa, em vez de o deixar à '
         'interpretação.'])
 
-    # ------------------------------------------------------------------ 16
+    # ------------------------------------------------------------------ 17
     pagebreak(doc)
-    h1(doc, '16.', 'Questões em aberto e limites da análise')
+    h1(doc, '17.', 'Questões em aberto e limites da análise')
     para(doc,
          'Registo das questões cuja resposta condiciona a conclusão. São tratadas uma a uma; à medida que '
          'cada uma recebe resposta, o capítulo 2 é atualizado. As questões 1 a 3 foram enumeradas pelo '
@@ -707,7 +818,7 @@ def construir(doc):
             ['2',
              'Como tratar a remissão da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001 para o '
              'n.º 3 do artigo 3.º do Decreto-Lei n.º 314/2003?',
-             'Em aberto'],
+             'Respondida — capítulo 14'],
             ['3',
              'Como tratar a aplicação que o n.º 4 do artigo 3.º do Decreto-Lei n.º 314/2003 faz aos '
              'prédios rústicos e mistos, incluindo a possibilidade de o número ser excedido em função da '
@@ -742,7 +853,7 @@ def construir(doc):
              'Em aberto']],
            [Cm(1.2), Cm(12.2), Cm(3.0)])
 
-    h2(doc, '16.1', 'Limites materiais da análise')
+    h2(doc, '17.1', 'Limites materiais da análise')
     numlist(doc, [
         'Não há decisão judicial, parecer publicado nem orientação administrativa que resolva '
         'expressamente a questão central. A conclusão é interpretativa.',
@@ -750,11 +861,12 @@ def construir(doc):
         'anexos**». A resposta proposta é que essa alínea delimita o âmbito do artigo 3.º no seu '
         'conjunto, e que o n.º 1 alcança efetivamente o quintal; o que não faz é converter o «fogo» do '
         'n.º 2 em «prédio». É matéria da questão 6.',
-        'Não se obtiveram as **tabelas do anexo III**, que as versões eletrónicas apresentam como «ver '
-        'documento original». Seriam necessárias para demonstrar numericamente a lotação por superfície.',
-        'Não foi consultado o **texto original do Diário da República de 17 de dezembro de 2003** em '
-        'suporte oficial, nem o processo legislativo do Decreto-Lei n.º 315/2003, que poderia esclarecer '
-        'a génese da ressalva da al. p). É matéria da questão 2.',
+        'As **tabelas do anexo III** foram obtidas do Diário da República n.º 241, de 17 de outubro de '
+        '2001, que publica os anexos I a VII. Falta incorporá-las e demonstrar numericamente a lotação '
+        'por superfície.',
+        'O **texto original do Diário da República n.º 290, de 17 de dezembro de 2003**, foi obtido e '
+        'está usado no capítulo 14. Falta o processo legislativo do Decreto-Lei n.º 315/2003, cujo '
+        'preâmbulo nada diz sobre a ressalva da al. p).',
         'A pesquisa jurisprudencial cobre apenas os tribunais superiores. **Não cobre a primeira '
         'instância**, onde se decide a maior parte das impugnações de atos municipais, nem os processos '
         'de contraordenação decididos administrativamente. Ausência de casuística publicada não equivale '
@@ -764,8 +876,8 @@ def construir(doc):
         'devolvido esses artigos. **A conferir** contra o texto oficial.',
     ])
 
-    # ------------------------------------------------------------------ 17
-    h1(doc, '17.', 'Nota metodológica')
+    # ------------------------------------------------------------------ 18
+    h1(doc, '18.', 'Nota metodológica')
     para(doc,
          'Os textos legais foram obtidos das versões consolidadas e confrontados com as cópias do '
          'repositório. A pesquisa de jurisprudência foi feita na base de dados pública dos tribunais '
