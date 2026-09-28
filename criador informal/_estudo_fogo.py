@@ -854,6 +854,103 @@ def construir(doc):
         'assimetria torna-se arbitrária, porque passa a depender da matriz fiscal.',
     ])
 
+    h2(doc, '15.7', 'O detentor não declarado, em prédio rústico ou misto')
+    para(doc,
+         'A questão 3 tem uma face prática que a sua formulação não revela: quem detém um número muito '
+         'elevado de animais em prédio rústico ou misto, sem declarar atividade e sem registar '
+         'alojamento, está sujeito a quê, e quem o controla?')
+
+    h3(doc, 'O gatilho do regime é a atividade, nunca o número')
+    para(doc,
+         'O que faz nascer a obrigação de comunicação prévia é o exercício de uma atividade — hospedagem, '
+         'criação comercial, venda —, nos termos da al. a) do n.º 1 do artigo 3.º do Decreto-Lei n.º '
+         '276/2001. A al. q) do n.º 1 do artigo 2.º exige, para a hospedagem com fins lucrativos, que o '
+         'alojamento «vise interesses comerciais ou lucrativos». Quem acumula sem fim lucrativo nunca tem '
+         'alojamento a comunicar, tenha dez animais ou duzentos.')
+    destaque(doc, [
+        '**O número, por si, não desencadeia obrigação nenhuma de registo.** É a peça estrutural do '
+        'problema, e vale igualmente para prédios rústicos e mistos.'])
+    para(doc,
+         'Não declarar não isenta quem efetivamente exerce a atividade: a falta da mera comunicação '
+         'prévia é contraordenação económica grave, nos termos da al. a) do n.º 1 do artigo 68.º. Mas se '
+         'não há fim lucrativo, não há infração nesse plano, e a fiscalização fica sem porta de entrada.')
+
+    h3(doc, 'O que se aplica mesmo sem registo, e o que não se aplica')
+    para(doc,
+         'O Decreto-Lei n.º 276/2001 tem dois andares, e a distinção é decisiva. O **Capítulo II**, sob a '
+         'epígrafe «Normas gerais de detenção, alojamento, maneio, intervenções cirúrgicas, captura e '
+         'abate», vincula qualquer detentor: o artigo 6.º impõe o dever especial de cuidado a «o detentor '
+         'do animal», e o artigo 8.º, sob a epígrafe «Condições dos alojamentos», dispõe que «os animais '
+         'devem dispor do espaço adequado às suas necessidades fisiológicas e etológicas». Os **Capítulos '
+         'III a VI** dependem da atividade — o artigo 24.º abre precisamente com «os detentores de '
+         'animais de companhia que se dediquem à sua reprodução, criação, manutenção ou venda devem '
+         'cumprir as condições previstas no presente capítulo».')
+    nota(doc, [
+        '**Consequência a reter.** As tabelas do anexo III, para que remete o n.º 1 do artigo 27.º, estão '
+        'no Capítulo III e **não vinculam o detentor doméstico**. Podem servir de referência técnica numa '
+        'vistoria, não de norma aplicável. E o artigo 8.º, esse sim de aplicação geral, é puramente '
+        'qualitativo: não contém número algum.'])
+    destaque(doc, [
+        'Em parte alguma do sistema existe um número para o detentor não comercial em prédio rústico ou '
+        'misto. O artigo 8.º é qualitativo, o anexo III não lhe é aplicável, e o n.º 4 do artigo 3.º do '
+        'Decreto-Lei n.º 314/2003 é elástico. **O limite é o n.º 1 do artigo 3.º, aferido por vistoria.**'])
+
+    h3(doc, 'Os instrumentos de controlo existentes')
+    tabela(doc,
+           ['Instrumento', 'Norma', 'Natureza'],
+           [['Vistoria conjunta do delegado de saúde e do médico veterinário municipal, com notificação '
+             'para remoção dos animais',
+             'N.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003', 'Reativo — depende de queixa'],
+            ['Mandado judicial, em caso de obstrução à remoção',
+             'N.º 6 do artigo 3.º do Decreto-Lei n.º 314/2003', 'Reativo'],
+            ['Identificação e registo obrigatórios de cães, gatos e furões no SIAC',
+             'Decreto-Lei n.º 82/2019, de 27 de junho',
+             'O único com aptidão preventiva: liga cada animal a um titular'],
+            ['Alojamento em desrespeito das condições do diploma — por via do Capítulo II',
+             'Al. f) do n.º 1 do artigo 68.º do Decreto-Lei n.º 276/2001',
+             'Aplica-se a qualquer detentor'],
+            ['Falta de comunicação prévia, havendo atividade',
+             'Al. a) do n.º 1 do artigo 68.º do Decreto-Lei n.º 276/2001',
+             'Só se houver fim lucrativo'],
+            ['Vacinação antirrábica, cães perigosos, ordenamento e ruído', 'Vários', 'Laterais']],
+           [Cm(6.4), Cm(5.4), Cm(4.8)])
+    para(doc,
+         'O SIAC é o único mecanismo com aptidão verdadeiramente preventiva, porque cada animal '
+         'identificado fica ligado a um titular e a base permite contar. Mas só vê os animais '
+         'identificados, e quem não declara atividade tende também a não identificar.')
+
+    h3(doc, 'Rústico e misto não são o mesmo caso')
+    tabela(doc,
+           ['', 'Prédio rústico sem habitação', 'Prédio misto'],
+           [['Limite numérico',
+             'N.º 4 do artigo 3.º — seis, excedíveis conforme o terreno',
+             'N.º 4 quanto ao prédio; o n.º 2 tem campo quanto ao fogo da parte urbana'],
+            ['Contraordenação pela al. c) do n.º 3 do artigo 14.º',
+             '**Não há tipo.** A norma exige «habitações e terrenos anexos», e não há habitação',
+             'Há tipo, pelo menos quanto aos animais na habitação e no terreno anexo a ela'],
+            ['Remédio disponível',
+             'Apenas a remoção administrativa do n.º 5',
+             'Remoção administrativa e coima']],
+           [Cm(3.4), Cm(6.6), Cm(6.6)])
+    nota(doc, [
+        '**Ponto por resolver.** No prédio misto, os animais que se encontrem na parte rústica, afastados '
+        'da habitação, dificilmente cabem em «habitações e terrenos anexos». A cobertura sancionatória do '
+        'prédio misto é, por isso, parcial, e a fronteira depende da distância à casa — critério que '
+        'nenhuma norma fixa.'])
+
+    h3(doc, 'A inibição prática da fiscalização')
+    destaque(doc, [
+        'O n.º 5 do artigo 3.º manda notificar o detentor para retirar os animais «para o canil ou gatil '
+        'municipal». Executar a remoção significa, para o município, **acolher os animais a suas '
+        'expensas**. Um município sem capacidade instalada tem incentivo direto a não agir. O regime '
+        'confia a fiscalização a quem suporta o custo de a exercer.'])
+    nota(doc, [
+        '**Observação.** É a lacuna mais séria identificada neste estudo, e é de política legislativa, '
+        'não de interpretação. O sistema é inteiramente reativo; a acumulação em meio rural pode crescer '
+        'sem qualquer controlo até que alguém se queixe; e no prédio rústico sem habitação nem sequer há '
+        'tipo contraordenacional. Uma revisão legislativa que queira resolver a questão central deve '
+        'resolver também esta, sob pena de fixar limites que ninguém verifica.'])
+
     # ------------------------------------------------------------------ 16
     h1(doc, '16.', 'O caso residual')
     para(doc,
