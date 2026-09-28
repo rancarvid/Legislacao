@@ -87,6 +87,17 @@ def construir(doc):
         '**Caso residual.** Quem tem o alojamento registado mas mantém os animais integrados na casa, '
         'como animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima '
         'de seis animais dentro do fogo. Capítulo 16.',
+        'O **título de acesso** à exploração de um alojamento foi municipal apenas entre 17 de outubro de '
+        '2001 e 16 de dezembro de 2003 — licença de utilização emitida pela câmara, nos termos do '
+        'Decreto-Lei n.º 370/99. Desde 17 de dezembro de 2003 é do director-geral, e desde 12 de dezembro '
+        'de 2012 basta a mera comunicação prévia à DGAV. **Não existe hoje autorização municipal para '
+        'instalar um alojamento.** Capítulo 13.4.',
+        '**Os dois regimes foram separados por acto positivo, no mesmo Diário da República.** No n.º 290, '
+        'de 17 de dezembro de 2003, o legislador retirou às câmaras o título de acesso dos alojamentos '
+        '(DL n.º 315/2003), criou os limites por fogo a cargo das câmaras (DL n.º 314/2003) e excluiu as '
+        'fracções autónomas da hospedagem sem fins lucrativos (al. p)). A actividade subiu para a '
+        'autoridade nacional no mesmo dia em que a densidade doméstica desceu para o município. O '
+        'argumento deixa de assentar num silêncio e passa a assentar num desenho. Capítulo 14.5.',
         'A **única doutrina** que trata o artigo 3.º na perspetiva de quem o fiscaliza arruma-o sob a '
         'epígrafe «Limite de cães e gatos por habitação», descreve a contraordenação da al. c) do n.º 3 '
         'do artigo 14.º como «exceder o n.º de animais por fogo urbano», e no seu levantamento das '
@@ -866,6 +877,69 @@ def construir(doc):
         'que morreram depois. O estudo não fixa um número: o que é juridicamente relevante é que morreram '
         '**dezenas de animais em espaços sem registo**, sobre os quais havia vistorias desde 2006.'])
 
+    h3(doc, 'A audição parlamentar de 30 de julho de 2020')
+    enquadramento(doc, [
+        'O caso foi tratado em contraditório público na Comissão de Agricultura e Mar, em audição do '
+        'presidente da Câmara Municipal de Santo Tirso requerida pelo Grupo Parlamentar do PAN — Audição '
+        'parlamentar n.º 32-CAM-XIV, de 30 de julho de 2020. Obtida a gravação, o que dela se apura '
+        'altera três pontos deste estudo e confirma um quarto. As citações que seguem provêm de '
+        'transcrição automática, com marca temporal conferível na gravação; o regime de citação está '
+        'descrito no Anexo C.6.'])
+    para(doc,
+         '**Primeiro — a qualificação do acto de 2012 fica estabelecida.** Não era pedido de remoção nem '
+         'ordem de encerramento em alternativa: era decisão de encerramento, proferida em processo de '
+         'contraordenação, acompanhada de pedido de diligências ao município.')
+    citacao(doc, [
+        '[…] uma indicação por parte da DGAV em 2012 dada à Câmara Municipal de Santo Tirso para '
+        'encerramento deste abrigo especificamente, e que desde 2012 a Câmara Municipal de Santo Tirso não '
+        'tomou nenhuma medida para cumprir esta indicação da DGAV que, aliás, vinha no seguimento de uma '
+        'contraordenação.',
+    ], 'Audição parlamentar n.º 32-CAM-XIV, 30.7.2020, 00:43:37 — transcrição automática')
+    para(doc,
+         '**Segundo — a divisão de competências do artigo 3.º-G foi enunciada em comissão, com o diploma '
+         'na mão.** O que este estudo reconstruiu a partir do jornal oficial estava dito no registo '
+         'parlamentar seis anos antes.')
+    citacao(doc, [
+        '[…] no caso particular do abrigo de animais de [Santo Tirso], a DGAV, no âmbito de um processo de '
+        'contraordenação, emitiu em 2012 — e portanto, estamos a dizer há oito anos — uma decisão de '
+        'encerramento daquele alojamento. Segundo o Decreto-Lei n.º 276/2001, é competência do '
+        'Diretor-Geral de Alimentação e Veterinária a decisão de encerramento destes locais. Segundo o '
+        'mesmo diploma, compete às câmaras municipais executar as medidas necessárias ao cumprimento da '
+        'decisão de encerramento.',
+    ], 'Idem, 00:49:46 a 00:50:16 — transcrição automática')
+    para(doc,
+         'A informação sobre o acto de 2012 é atribuída, na audição, à **Associação Nacional de Médicos '
+         'Veterinários Municipais**. A mesma divisão foi repetida por outro grupo parlamentar: «se é '
+         'verdade que é da competência da DGAV determinar o encerramento deste tipo de estabelecimentos, '
+         'também é verdade que o mesmo decreto-lei que determina esta competência na DGAV determina que é '
+         'a competência das autarquias tomar as medidas necessárias para cumprir as decisões que são '
+         'tomadas pela DGAV» (01:34:37).')
+    para(doc,
+         '**Terceiro — o Governo afirmou que o município tinha competências para atuar.** O comunicado do '
+         'Ministério da Agricultura foi lido em comissão:')
+    citacao(doc, [
+        '[…] o processo administrativo […] distinto na DGAV, relativo aos alojamentos em causa, constam '
+        'vistorias efetuadas por outras entidades desde 2006, bem como notificação dirigida ao Município '
+        'para a atuação no âmbito das competências que lhes são atribuídas, fim de citação.',
+    ], 'Idem, 00:35:23 — transcrição automática; o deputado cita comunicado do Ministério da Agricultura')
+    destaque(doc, [
+        'Este estudo sustentava a competência municipal de execução por leitura do n.º 6 do artigo 3.º-G, '
+        'contra a conclusão do parecer de 2018. **A posição do Governo, expressa em comunicado e lida em '
+        'comissão, é a mesma.** Deixa de ser interpretação isolada deste estudo.'])
+    para(doc,
+         '**Quarto — a razão declarada para a inércia não foi falta de competência.** Foi falta de '
+         'capacidade de acolhimento: a câmara «não encerrou, nem em 2012, nem em nenhum ano até à data, '
+         'supostamente porque não tinha condições para receber ou encaminhar todos aqueles animais» '
+         '(00:35:08). É precisamente o custo que o ponto 15.7 identifica como recaindo sobre quem executa.')
+    nota(doc, [
+        '**Dois factos acessórios, ambos úteis.** A recolha dos animais mortos foi feita pelo município e '
+        'só por ele — «os serviços da Câmara Municipal, e só os serviços da Câmara Municipal, [procederam] '
+        'à recolha dos 54 animais que se encontravam mortos» (00:14:38) —, o que fixa em 54 o número de '
+        'animais recolhidos mortos e confirma quem executa. E a dependência hierárquica do médico '
+        'veterinário municipal, tratada adiante, foi matéria de debate: após a sua suspensão pelo '
+        'presidente da câmara, foi consignado em comissão «a dependência hierárquica deste veterinário da '
+        'Câmara Municipal» (00:37:04).'])
+
     h3(doc, 'O que o caso não decide')
     numlist(doc, [
         '**Respeita a dois titulares de cargos, não à câmara municipal.** O n.º 5 do artigo 3.º confere o '
@@ -998,6 +1072,18 @@ def construir(doc):
             ['desde 8.8.2019', 'Diretor-geral de Alimentação e Veterinária', 'Câmaras municipais (n.º 6)']],
            [Cm(4.0), Cm(6.6), Cm(6.0)])
     nota(doc, [
+        '**A imprecisão do lado oposto.** Na audição, o presidente da câmara invocou corretamente os dois '
+        'diplomas — «decreto-lei n.º 20 de 2019 […] mas que depois não foi efetivado porque foi revogado '
+        '[…] por uma resolução da Assembleia da República, resolução n.º 138 de 2019, que faz cessar a sua '
+        'vigência» (01:42:45 a 01:43:05) —, mas acrescentou que «nem nunca essa legislação chegou a ter '
+        'entrado em vigor» (01:43:09). **Não é assim.** O Decreto-Lei n.º 20/2019 entrou em vigor e '
+        'vigorou pouco mais de seis meses, entre 30 de janeiro e 7 de agosto de 2019. A imprecisão é '
+        'favorável à posição sustentada, como a do requerimento o era da posição contrária.',
+        '**Observação.** Registe-se o que o confronto das duas imprecisões mostra: em julho de 2020, numa '
+        'audição parlamentar dedicada ao caso, **nenhum dos lados enunciou corretamente a vigência da '
+        'norma de competência**. Um citou a redação cessada como se vigorasse; o outro negou que tivesse '
+        'vigorado. É a melhor ilustração possível da regra do ponto 18.2.'])
+    nota(doc, [
         '**Consequência para a leitura pública do caso.** O requerimento do Grupo Parlamentar do PAN de '
         '22 de julho de 2020, que fundou a audição parlamentar do presidente da câmara, censura a '
         'autarquia por nunca ter encerrado os abrigos «conforme previsto no n.º 1 do artigo 3.º-G do '
@@ -1013,28 +1099,31 @@ def construir(doc):
 
     h3(doc, 'O que o presidente da câmara disse em 2020, e o que isso concede')
     para(doc,
-         'A peça mais reveladora do caso não é a decisão penal: são as declarações públicas do presidente '
-         'da câmara em 31 de julho de 2020, quando confrontado com o documento da DGAV de 2012. Invocou o '
-         'parecer de 2018 — «as câmaras não têm competência para **encerrar** abrigos de animais» — mas '
+         'A peça mais reveladora do caso não é a decisão penal: é o que o presidente da câmara respondeu '
+         'na audição, confrontado com o documento da DGAV de 2012. Invocou o parecer de 2018 — «as câmaras '
+         'municipais não têm competência para legalizar ou encerrar canis ilegais» (01:01:53) — mas '
          'acrescentou uma objeção de procedimento que vale mais do que a invocação.')
     citacao(doc, [
-        '[…] deveriam ter notificado primeiro a proprietária para em cinco dias poderem encerrar [o '
-        'abrigo] e, se assim não fosse, abeirar-se, então, das suas autoridades, a administrativa, neste '
-        'caso a câmara, e a policial, a GNR, para encerrar esse canil.',
-    ], 'Declarações do presidente da Câmara Municipal de Santo Tirso, 31.7.2020, conforme noticiado; '
-       'transcrição a partir da imprensa (ver Anexo C.5)')
+        '[…] deveriam notificar a proprietária primeiro, em primeira instância […] para em cinco dias '
+        'poder encerrar aquilo. [Findos] esses cinco dias, então sim, de forma coerciva e compulsiva, '
+        'deveria haver [intervenção] de duas entidades, uma administrativa, Câmara Municipal, e outra '
+        'policial, no caso in concreto, Guarda Nacional Republicana. Para quê? Para encerrar esse canil.',
+    ], 'Audição parlamentar n.º 32-CAM-XIV, 30.7.2020, 01:44:47 a 01:45:12 — transcrição automática '
+       '(ver Anexo C.6)')
     destaque(doc, [
         'Leia-se ao lado do n.º 5 e do n.º 6 do artigo 3.º. O autarca descreve exatamente a sequência '
         'legal — **notificação do detentor com prazo**, e só depois recurso à «autoridade administrativa» '
         'e à autoridade policial —, e identifica a autoridade administrativa dessa sequência nestes '
-        'termos: «**neste caso a câmara**».',
+        'termos: «uma administrativa, **Câmara Municipal**».',
         'Isto é uma concessão, e é a que interessa. O que o presidente da câmara nega é ter competência '
         'para **encerrar** — e nisso tem razão, pelo n.º 1 do artigo 3.º-G. O que ele **não** nega é ser a '
         'câmara a autoridade administrativa que intervém depois da notificação. Nega-se a competência que a '
         'lei não lhe dá, e admite-se a posição que a lei lhe atribui — que é, palavra por palavra, a do '
         'n.º 6 do mesmo artigo.'])
     destaque(doc, [
-        '**E a descrição é exata.** Os «cinco dias» não são invenção nem lapso: são o n.º 5 do artigo '
+        '**E a descrição é exata — o que obriga a retirar um reparo deste estudo.** Em versão anterior, '
+        'feita a partir de paráfrase de imprensa, apontou-se aqui um «erro na descrição» do procedimento. '
+        'Obtida a gravação, o reparo não se sustenta e retira-se. Os «cinco dias» são o n.º 5 do artigo '
         '3.º-G — «no prazo fixado pela DGAV, o qual não deve exceder **cinco dias úteis**, sob pena de ser '
         'solicitado às **autoridades administrativas e policiais competentes** o encerramento compulsivo». '
         'O autarca estava a descrever, com precisão, a norma que acabou de se transcrever. O que ele '
@@ -1507,6 +1596,63 @@ def construir(doc):
         'doutrina que trate especificamente desta derrogação; o raciocínio é próprio, embora as premissas '
         'normativas sejam as citadas.'])
 
+    h2(doc, '13.4', 'A trajetória do título de acesso: de municipal a nacional')
+    para(doc,
+         'A questão de saber se existe hoje autorização municipal para instalar um alojamento tem uma '
+         'história, e ela foi reconstituída em audição parlamentar pelo parecer jurídico que a Câmara '
+         'Municipal de Santo Tirso mandou fazer em 2018 e que o seu presidente leu em voz alta (Audição '
+         'parlamentar n.º 32-CAM-XIV, 01:01:48 a 01:05:17). Conferidos os textos no jornal oficial, a '
+         'trajetória é esta.')
+    para(doc,
+         'No regime originário, o título dependia do **fim** do alojamento, e repartia-se entre duas '
+         'autoridades:')
+    citacao(doc, [
+        '1 — Os alojamentos de animais de companhia para hospedagem sem fins lucrativos, com fins '
+        'comerciais e com fins higiénicos carecem de licença de utilização, a emitir pela câmara municipal '
+        'da área, nos termos do disposto no Decreto-Lei n.º 370/99, de 18 de Setembro.',
+        '2 — Exceptuam-se do disposto no número anterior os centros de recolha, os alojamentos de '
+        'reprodução e os de criação, os centros de treino e os alojamentos para hospedagem com fins '
+        'médico-veterinários, os quais carecem de licença de funcionamento, a emitir pela DGV, sob parecer '
+        'da DRA e do médico veterinário municipal da área.',
+    ], 'N.ºs 1 e 2 do artigo 3.º do Decreto-Lei n.º 276/2001, texto original, conferido no Diário da '
+       'República, I série-A, n.º 241, de 17 de outubro de 2001, a páginas 6573')
+    para(doc,
+         'Catorze meses depois, o Decreto-Lei n.º 315/2003 unificou o título e transferiu-o por inteiro '
+         'para a autoridade nacional:')
+    citacao(doc, [
+        '1 — Os alojamentos para hospedagem sem fins lucrativos, com fins comerciais, com excepção dos '
+        'destinados exclusivamente à venda, e os centros de recolha carecem de licença de funcionamento a '
+        'emitir pelo director-geral de Veterinária, sob parecer da DRA da área de localização e do médico '
+        'veterinário municipal, no caso dos centros de recolha.',
+    ], 'N.º 1 do artigo 3.º do Decreto-Lei n.º 276/2001, na redação do Decreto-Lei n.º 315/2003, conferido '
+       'no Diário da República, I série-A, n.º 290, de 17 de dezembro de 2003')
+    tabela(doc,
+           ['Período', 'Título de um alojamento de hospedagem sem fins lucrativos', 'Quem o emite'],
+           [['17.10.2001 a 16.12.2003', 'Licença de utilização, nos termos do DL n.º 370/99',
+             '**Câmara municipal**'],
+            ['17.12.2003 a 11.12.2012', 'Licença de funcionamento, sob parecer da DRA',
+             '**Diretor-geral de Veterinária**'],
+            ['desde 12.12.2012', 'Mera comunicação prévia (art.º 3.º-A, red. DL n.º 260/2012)',
+             '**DGAV**']],
+           [Cm(3.8), Cm(7.6), Cm(5.2)])
+    destaque(doc, [
+        '**Consequência para a questão 1.** Não existe hoje, nem existe desde 17 de dezembro de 2003, '
+        'autorização municipal para instalar um alojamento. A resposta dada nos pontos 13.1 a 13.3 '
+        'mantém-se, e ganha data certa.'])
+    nota(doc, [
+        '**Observação.** O parecer de 2018, tal como lido em comissão, atribui a norma de 2001 ao «artigo '
+        '22.º» — que tem por epígrafe «Controlo da reprodução pelo detentor» — e afirma que a câmara '
+        'comunicava o licenciamento à DGV, quando o n.º 7 daquele artigo 3.º dispõe o inverso: «A DGV '
+        'comunica à DRA e esta à câmara municipal os licenciamentos referidos no n.º 2 deste artigo». A '
+        'conclusão do parecer está correcta; a citação não. Não é possível, a partir da gravação, '
+        'distinguir erro do parecer de erro de leitura ou da transcrição, pelo que nada se afirma quanto à '
+        'sua imputação.',
+        '**Nota para o caso de Santo Tirso.** Os dois abrigos eram alojamentos de hospedagem **sem fins '
+        'lucrativos**, isto é, a categoria do n.º 1 do artigo 3.º na redação de 2001. Entre 17 de outubro '
+        'de 2001 e 16 de dezembro de 2003, o título daqueles espaços era, pois, **municipal**. Não se '
+        'retira daqui consequência quanto ao que sucedeu depois de 2003 — mas é elemento a ter presente '
+        'quando se discute desde quando o município conhecia os espaços.'])
+
     # ------------------------------------------------------------------ 14
     pagebreak(doc)
     h1(doc, '14.', 'A remissão da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001')
@@ -1616,7 +1762,42 @@ def construir(doc):
         'sistemáticas do regime, feitas por profissionais que o aplicam, e nenhuma dá pela ressalva.** É '
         'indício do seu alcance real.'])
 
+    h2(doc, '14.5', 'Três actos coordenados no mesmo Diário da República')
+    para(doc,
+         'O ponto 14.4 sustentou, por *expressio unius*, que o silêncio do legislador quanto à lotação é '
+         'qualificado. A trajetória apurada no ponto 13.4 permite ir mais longe, e mudar o plano do '
+         'argumento: não é silêncio, é arrumação simultânea.')
+    para(doc,
+         'No **Diário da República, I série-A, n.º 290, de 17 de dezembro de 2003**, o legislador praticou '
+         'três actos:')
+    numlist(doc, [
+        '**Decreto-Lei n.º 315/2003** — retirou às câmaras municipais o título de acesso dos alojamentos e '
+        'entregou-o ao director-geral de Veterinária (ponto 13.4).',
+        '**Decreto-Lei n.º 314/2003** — criou os limites de animais por fogo, cuja vistoria conjunta e '
+        'notificação para remoção entregou às câmaras municipais (n.ºs 2 e 5 do artigo 3.º).',
+        '**Decreto-Lei n.º 315/2003, al. p)** — excluiu do conceito de hospedagem sem fins lucrativos o '
+        'alojamento em fracção autónoma, que é a única ponte expressa entre os dois diplomas (pontos 14.1 '
+        'a 14.4).',
+    ])
+    destaque(doc, [
+        'No mesmo dia, e no mesmo jornal, **a actividade subiu para a autoridade nacional e a densidade '
+        'doméstica desceu para o município**. O legislador não se limitou a não cruzar os dois planos: '
+        'separou-os por acto positivo, atribuindo competências distintas a autoridades distintas, e abriu '
+        'entre eles uma única passagem — estreitíssima — para o caso em que a separação material é '
+        'impossível.',
+        'Isto desloca o argumento de um plano para o outro. Deixa de ser inferência a partir de um '
+        'silêncio e passa a ser leitura de um **desenho documentado**. Quem sustente que os números do n.º '
+        '2 fixam a lotação de um alojamento registado tem de explicar por que razão o mesmo legislador, no '
+        'mesmo dia, entregou os dois regimes a autoridades diferentes.'])
+    nota(doc, [
+        '**Observação.** A coincidência de data já era conhecida deste estudo e servia, no ponto 14.1, '
+        'para identificar o referente da remissão da al. p). O que é novo é a **terceira peça**: a '
+        'transferência do título de acesso. Com ela, o Diário da República n.º 290 deixa de ser um acaso '
+        'de calendário editorial e passa a ser o instrumento de uma repartição deliberada de competências. '
+        'A inferência é própria; as três premissas normativas estão conferidas no jornal oficial.'])
+
     # ------------------------------------------------------------------ 15
+    pagebreak(doc)
     h1(doc, '15.', 'Os prédios rústicos e mistos: a assimetria dos n.ºs 2 e 4')
     destaque(doc, [
         'O n.º 4 é, à primeira vista, o melhor argumento a favor da aplicação dos limites aos '
@@ -1797,6 +1978,38 @@ def construir(doc):
         'tipo contraordenacional. Uma revisão legislativa que queira resolver a questão central deve '
         'resolver também esta, sob pena de fixar limites que ninguém verifica.'])
 
+    h3(doc, 'A alavanca municipal efectiva foi o urbanismo')
+    para(doc,
+         'O que antecede sustenta que o sistema é inteiramente reactivo e que o município fica inibido. A '
+         'audição parlamentar de 30 de julho de 2020 mostra que, no caso de Santo Tirso, o município não '
+         'ficou inerte — mas que o instrumento que mobilizou não foi nenhum dos dois regimes aqui '
+         'analisados.')
+    citacao(doc, [
+        '[…] é levado a efeito [a instalação] de um canil num terreno de zona florestal sem qualquer '
+        'autorização ou licenciamento emitido pela Câmara. […] O processo [deu origem] a uma coima de 500 '
+        '€, a qual foi impugnada judicialmente e correu termos no Tribunal de Santo Tirso que, por sentença '
+        'de maio de 2013, decidiu […] e o processo foi instaurado pelo facto de ter levado a cabo operações '
+        'urbanísticas num terreno na Agrela [onde foi] instalado um canil […] Foi aplicada uma coima de '
+        '750 €.',
+    ], 'Audição parlamentar n.º 32-CAM-XIV, 30.7.2020, 01:07:44 a 01:08:47 — transcrição automática '
+       '(ver Anexo C.6)')
+    destaque(doc, [
+        'Contra um alojamento não titulado, o que o município mobilizou foi o **regime jurídico da '
+        'urbanização e edificação**, por operações urbanísticas não licenciadas, com coimas de 500 € e '
+        '750 €, uma delas impugnada judicialmente. **Nenhum dos processos teve por objecto o número de '
+        'animais, o bem-estar, ou a falta de título de acesso à actividade.**'])
+    nota(doc, [
+        '**Observação.** É a confirmação prática do que este estudo sustenta desde o ponto 9.2: o número '
+        'não é, em nenhum dos dois regimes, o pressuposto da actuação. Quando o município precisou de um '
+        'fundamento operativo contra um canil instalado sem título, foi buscá-lo ao controlo prévio das '
+        'operações urbanísticas — matéria de solo, não de animais. O mesmo abrigo apresentou, aliás, '
+        'pedidos de informação prévia ao abrigo do regime da urbanização e edificação (01:07:15), o que '
+        'confirma qual era, na prática, o plano de relação entre o particular e a câmara.',
+        'E a razão declarada para não ter sido executado o encerramento não foi falta de competência, mas '
+        'falta de capacidade de acolhimento — «supostamente porque não tinha condições para receber ou '
+        'encaminhar todos aqueles animais» (00:35:08). É exactamente o custo que este ponto identifica como '
+        'recaindo sobre quem executa, agora com confirmação em fonte primária.'])
+
     # ------------------------------------------------------------------ 16
     h1(doc, '16.', 'O caso residual')
     para(doc,
@@ -1888,8 +2101,15 @@ def construir(doc):
         'útil, e condiciona o que sobre ele se pode afirmar. Acresce que o PAN anunciou recurso: **a '
         'decisão não transitou**, e o que dela se escreva é provisório por duas razões — não se leu, e '
         'pode ser revogada.',
+        'Obtidas e transcritas as gravações da **audição parlamentar n.º 32-CAM-XIV**, de 30 de julho de '
+        '2020, ficou estabelecida a qualificação do acto de 2012 — decisão de encerramento em processo de '
+        'contraordenação, com pedido de diligências ao município — e a divisão de competências do artigo '
+        '3.º-G tal como enunciada em comissão. **Faltam as audições n.º 33-CAM-XIV e o excerto da '
+        'Secretária de Estado**, 234 minutos, onde deve estar a posição institucional do Governo e da '
+        'DGAV. É a diligência pendente mais útil.',
         'Não se obtiveram dois documentos administrativos do caso de Santo Tirso: o **parecer jurídico de '
-        '2018** obtido pela câmara e o **despacho da DGAV de 2012**. A falta perdeu, entretanto, parte da '
+        '2018** obtido pela câmara e o **despacho da DGAV de 2012**. Do primeiro conhece-se o que foi lido '
+        'em voz alta na audição; do segundo, a qualificação e o sentido, não o texto. A falta perdeu, entretanto, parte da '
         'sua gravidade: localizado o artigo 3.º-G, o conteúdo provável do despacho de 2012 deixa de ser '
         'conjetura e passa a ser a aplicação de uma norma conhecida (ver 9.5). Procuraram-se; nenhum dos dois é ato '
         'sujeito a publicação no Diário da República e a pesquisa não os localizou em fonte primária. '
@@ -2216,3 +2436,34 @@ def construir(doc):
         'de notícia. O estudo não retira do caso de Santo Tirso qualquer conclusão jurídica que não '
         'esteja independentemente fundada na lei — o caso serve de ilustração e de teste à tese, nunca de '
         'premissa.'])
+
+    h2(doc, 'C.6', 'Audições parlamentares — gravações e regime de citação')
+    para(doc,
+         'Foram obtidas as gravações das audições da Comissão de Agricultura e Mar de 30 de julho de 2020 '
+         'sobre o caso, e transcritas localmente. Substituem, para os pontos onde são invocadas, as fontes '
+         'de imprensa da secção C.5.')
+    tabela(doc,
+           ['Audição', 'Entidade ouvida', 'Duração', 'Estado'],
+           [['N.º 32-CAM-XIV', 'Presidente da Câmara Municipal de Santo Tirso, a requerimento do PAN',
+             '109,6 min', '**Transcrita e analisada**'],
+            ['N.º 33-CAM-XIV', 'Ministro da Administração Interna e Ministra da Agricultura, a '
+             'requerimento do BE, do PAN e da Deputada Não Inscrita Cristina Rodrigues',
+             '160,8 min', 'Por transcrever'],
+            ['Excerto da n.º 33', 'Secretária de Estado da Administração Interna',
+             '73,2 min', 'Por transcrever; pode ser recorte da anterior']],
+           [Cm(3.2), Cm(8.2), Cm(2.4), Cm(3.0)])
+    destaque(doc, [
+        '**Regime de citação — leia-se antes de usar qualquer citação com marca temporal.** As transcrições '
+        'foram produzidas por modelo automático de reconhecimento de fala, em português. **Não são, nem '
+        'substituem, transcrição oficial da Assembleia da República**, que para estas audições não existe: '
+        'o registo oficial disponibiliza o requerimento que as motivou e uma gravação, sem ata.',
+        'Em consequência: (i) cada citação é seguida da **marca temporal**, para que possa ser conferida na '
+        'gravação; (ii) as passagens decisivas foram reprocessadas com modelo de maior dimensão antes de '
+        'serem citadas; (iii) as correcções evidentes de nomes e de termos técnicos vão entre parênteses '
+        'rectos, como «[Santo Tirso]»; (iv) nenhuma conclusão jurídica deste estudo assenta apenas numa '
+        'destas citações — todas têm fundamento normativo independente, conferido no jornal oficial.'])
+    nota(doc, [
+        '**Limite assumido.** O modelo troca nomes próprios com frequência — escreveu «São Justiça» e '
+        '«Santista» por Santo Tirso, «de gaiva» e «de Grave» por DGAV. Onde a substância de uma passagem '
+        'dependesse de um nome ou de um número mal reconhecido, a passagem não foi usada. Quem repita o '
+        'trabalho deve reprocessar a janela em causa antes de citar.'])
