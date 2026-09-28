@@ -57,21 +57,32 @@ p('O n.º 3 do artigo 387.º passa a ter duas alíneas, ambas sob o elemento «s
   'de partes do corpo ou de objetos». A moldura penal mantém-se.')
 p('Na Lei n.º 92/95 adita-se a alínea h), com fórmula equivalente mas referida a «animais», sem '
   'qualificação de espécie.')
-p('O efeito útil é um só. A conduta passa a ser punível sem prova de dor, sofrimento ou lesão. É o que '
-  'a legislação vigente não permite.')
+p('O efeito útil é um só. A conduta passa a ser punível sem prova de sofrimento ou lesão.')
 
-titulo('2. A insuficiência que a iniciativa supre')
-p('Toda a tutela hoje disponível é de resultado. O n.º 3 do artigo 387.º exige dor, sofrimento ou maus '
-  'tratos físicos provados. O n.º 1 do artigo 1.º da Lei n.º 92/95 exige a morte, o sofrimento cruel e '
-  'prolongado ou graves lesões.')
-p('Há um ponto que releva diretamente para esta divisão. O artigo 6.º do Decreto-Lei n.º 276/2001, de '
-  '17 de outubro, impõe ao detentor o dever de cuidar do animal «de forma a não pôr em causa os '
-  'parâmetros de bem-estar». Mas as contraordenações que sancionam esse dever são apenas duas. A alínea '
-  'j) do n.º 1 do artigo 68.º pune a violação que crie perigo para outro animal. A alínea b) do n.º 2 '
-  'pune a que crie perigo para outrem. Violar o dever de cuidado pondo em perigo o próprio animal não é '
-  'contraordenação. A ofensa sexual situa-se nesse espaço.')
-p('Acresce que a alínea c) do n.º 5 do artigo 387.º já qualifica como especialmente censurável o crime '
-  'determinado «para excitação». A agravante existe. Falta o tipo que ela pressupõe.')
+titulo('2. O que já está coberto e o que falta')
+p('O bem-estar do próprio animal está protegido no regime vigente, por várias vias. Convém enunciá-las '
+  'antes de identificar a lacuna.')
+p('O n.º 3 do artigo 7.º do Decreto-Lei n.º 276/2001, de 17 de outubro, proíbe «todas as violências '
+  'contra animais, considerando-se como tais os atos consistentes em, sem necessidade, se infligir a '
+  'morte, o sofrimento ou lesões a um animal». A violação é contraordenação económica muito grave, pela '
+  'alínea d) do n.º 2 do artigo 68.º. O patamar é baixo. Basta o sofrimento ou a lesão, sem necessidade.')
+p('A alínea f) do n.º 1 do mesmo artigo sanciona o alojamento em desrespeito das condições fixadas no '
+  'diploma, que são as dos artigos 7.º a 9.º. A alínea e) do n.º 2 sanciona o maneio e treino com '
+  'brutalidade. No plano penal, o n.º 3 do artigo 387.º pune quem inflija dor, sofrimento ou maus tratos '
+  'físicos a animal de companhia.')
+p('O artigo 6.º, que fixa o dever especial de cuidado, só é sancionado por remissão direta quando o '
+  'perigo recaia sobre outro animal, pela alínea j) do n.º 1, ou sobre outrem, pela alínea b) do n.º 2. '
+  'Isso não deixa o animal desprotegido, pelas vias acima.')
+p('A lacuna é, por isso, estreita e precisa. O ato sexual de que resulte sofrimento ou lesão já é hoje '
+  'crime e contraordenação. O ato sexual de que não resulte sofrimento nem lesão demonstráveis não '
+  'encontra tipo, nem penal nem contraordenacional. É esse o espaço que a iniciativa ocupa, e é o que a '
+  'própria exposição de motivos identifica.')
+p('Acresce um segundo efeito, de ordem probatória. Mesmo havendo sofrimento, a resposta disponível exige '
+  'a prova desse sofrimento. A perícia médico-veterinária demonstra com mais facilidade o ato do que o '
+  'sofrimento que dele resultou. A alteração proposta faz coincidir o objeto do tipo com o objeto da '
+  'prova.')
+p('Nota-se ainda que a alínea c) do n.º 5 do artigo 387.º já qualifica como especialmente censurável o '
+  'crime determinado «para excitação». A agravante existe. Falta o tipo que ela pressupõe.')
 p('Sinalização fora da competência desta divisão. A conduta envolve contacto direto de mucosas entre '
   'espécies e tem relevância higiossanitária e zoonótica documentada. Um estudo caso-controlo '
   'multicêntrico apurou associação epidemiológica (Zequi SC, et al., J Sex Med. 2012;9(7):1860-67). '
@@ -104,16 +115,17 @@ p('Taxatividade. A lista é fechada. Ficam fora a masturbação do animal, o con
   'coito e a imposição de monta, incluindo quando a desproporção de porte possa causar lesões. A '
   'exposição de motivos refere condutas que o articulado não abrange.')
 p('Conteúdos audiovisuais. A exposição de motivos anuncia a criminalização da produção e difusão de '
-  'conteúdos. O articulado nada dispõe. A alínea e) do n.º 3 do artigo 1.º já cobre parte da produção. '
-  'Nada cobre a difusão.')
+  'conteúdos. O articulado nada dispõe. O n.º 4 do artigo 7.º do Decreto-Lei n.º 276/2001 já proíbe a '
+  'utilização de animais em filmagens de que resultem dor ou sofrimentos consideráveis, e a violação é '
+  'contraordenação muito grave. Cobre parte da produção. Nada cobre a difusão.')
 p('Dever de comunicação. Deverá prever-se dever de comunicação a cargo do médico veterinário que detete '
   'indícios compatíveis com ofensa sexual? E como se articula esse dever com o sigilo do Código '
   'Deontológico Médico-Veterinário? Sugere-se a audição da Ordem dos Médicos Veterinários.')
 
 titulo('5. Conclusão')
-p('A insuficiência invocada verifica-se. A tutela vigente é toda de resultado e a violação do dever de '
-  'cuidado que ponha em perigo o próprio animal não é contraordenável. A iniciativa tem utilidade '
-  'própria por deslocar a tutela do resultado para o ato.')
+p('A lacuna invocada existe, com o alcance delimitado no ponto 2. O ato sexual de que não resulte '
+  'sofrimento nem lesão demonstráveis não tem hoje tipo penal nem contraordenacional. A iniciativa '
+  'ocupa esse espaço e faz coincidir o objeto do tipo com o objeto da prova pericial.')
 p('A redação proposta para a Lei n.º 92/95 é sobreinclusiva quanto a atos médico-veterinários e '
   'zootécnicos. A correção do ponto 3 é premente. Nada mais se opõe, em termos técnicos, à aprovação da '
   'iniciativa.')
