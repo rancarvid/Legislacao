@@ -503,8 +503,14 @@ def construir(doc):
          'O artigo 3.º do Decreto-Lei n.º 314/2003 é executado pela câmara municipal, com o delegado de '
          'saúde e o médico veterinário municipal, e sancionado pelo diretor-geral. O Decreto-Lei '
          'n.º 276/2001 assenta na mera comunicação prévia à DGAV. Desde a revogação dos n.ºs 2 a 10 do seu '
-         'artigo 3.º pelo Decreto-Lei n.º 260/2012 não existe momento procedimental em que as duas '
-         'autoridades se encontrem.')
+         'artigo 3.º pelo Decreto-Lei n.º 260/2012 não existe momento procedimental, na fase de '
+         'fiscalização e remoção, em que as duas autoridades se encontrem.')
+    nota(doc, [
+        '**Precisão.** Na fase sancionatória encontram-se. A al. c) do n.º 3 do artigo 14.º do '
+        'Decreto-Lei n.º 314/2003 é punível pelo diretor-geral, e o artigo 70.º do Decreto-Lei n.º '
+        '276/2001 comete à DGAV a instrução e ao seu diretor-geral a aplicação das coimas. É a mesma '
+        'entidade. O que não coincide é a fiscalização, municipal num caso e da DGAV no outro. O ponto '
+        '9.5 retira daqui as consequências.'])
 
     h3(doc, '7.8  Cláusula expressa de cumulação')
     para(doc,
@@ -666,7 +672,58 @@ def construir(doc):
         'não onde entendeu que a norma se aplica. A consequência prática desta assimetria está tratada '
         'nos pontos 15.5 e 15.7.'])
 
-    h2(doc, '9.4', 'O peso das duas séries de elementos')
+    h2(doc, '9.4', 'Concurso de contraordenações')
+    para(doc,
+         'Havendo excesso de animais num alojamento registado, há concurso entre o artigo 14.º do '
+         'Decreto-Lei n.º 314/2003 e o regime sancionatório do Decreto-Lei n.º 276/2001, ou consunção? A '
+         'pergunta tem uma premissa que o ponto 9.3 já removeu.')
+    destaque(doc, [
+        'Num alojamento dotado das instalações individualizadas do artigo 25.º, **não há concurso — falta '
+        'um dos tipos**. A al. c) do n.º 3 do artigo 14.º exige «habitações e terrenos anexos», e o '
+        'alojamento não o é. A questão só vive no caso residual e, parcialmente, no prédio misto.'])
+
+    h3(doc, 'Onde vive, a resposta é concurso efetivo')
+    numlist(doc, [
+        '**Os bens jurídicos são distintos.** O n.º 1 do artigo 3.º protege a salubridade e a prevenção '
+        'de «doenças transmissíveis ao homem»; o Decreto-Lei n.º 276/2001 protege o bem-estar animal. '
+        'Não há relação de especialidade nem de consunção entre eles.',
+        '**O legislador soube escrever a cláusula de subsidiariedade — e não a pôs onde interessa.** O '
+        'n.º 1 e o n.º 2 do artigo 14.º terminam com «salvo se sanção mais grave não lhe for aplicável '
+        'por legislação especial». O n.º 3, onde está a al. c), **não tem essa cláusula**. Onde a quis, '
+        'escreveu-a duas vezes; onde não a escreveu, não a quis.',
+        '**O regime do concurso é de cúmulo, não de consunção**, nos termos do artigo 19.º do Regime '
+        'Geral das Contra-Ordenações.',
+    ])
+    citacao(doc,
+            ['1 — Quem tiver praticado várias contra-ordenações é punido com uma coima cujo limite máximo '
+             'resulta da soma das coimas concretamente aplicadas às infracções em concurso.',
+             '2 — A coima aplicável não pode exceder o dobro do limite máximo mais elevado das '
+             'contra-ordenações em concurso.',
+             '3 — A coima a aplicar não pode ser inferior à mais elevada das coimas concretamente '
+             'aplicadas às várias contra-ordenações.'],
+            'Artigo 19.º do Decreto-Lei n.º 433/82, na redação do Decreto-Lei n.º 244/95, de 14 de '
+            'setembro, conferido no Diário da República n.º 213, I série-A, a páginas 5783')
+    nota(doc, [
+        '**Advertência de fonte.** A redação originária deste artigo, publicada em 1982, dizia o '
+        'contrário: «se o mesmo facto violar várias leis pelas quais deve ser punido como '
+        'contra-ordenação […] aplicar-se-á uma única coima» e «aplicar-se-á a lei que comine a coima mais '
+        'elevada». Foi inteiramente substituída em 1995. Quem cite o Regime Geral das Contra-Ordenações '
+        'pela sua publicação originária cita norma revogada — o que confirma o corolário da regra do '
+        'ponto 18.2: a consolidação serve para saber **quais** os diários a ler, e o diário para citar.'])
+
+    h3(doc, 'Um atrito por resolver')
+    nota(doc, [
+        'As contraordenações do Decreto-Lei n.º 276/2001 são **económicas**, punidas nos termos do Regime '
+        'Jurídico das Contraordenações Económicas; as do Decreto-Lei n.º 314/2003 seguem o regime geral. '
+        'O cúmulo entre uma contraordenação económica e uma contraordenação comum não está expressamente '
+        'regulado. Fica assinalado como ponto por esclarecer.'])
+    destaque(doc, [
+        '**Efeito na conclusão: neutro quanto ao alojamento registado**, porque aí não há concurso por '
+        'falta de tipo; e confirmatório quanto ao caso residual, onde os dois regimes incidem '
+        'cumulativamente sobre o mesmo espaço. O argumento «quem admite concurso admite sobreposição» '
+        'procede — mas só dentro de casa.'])
+
+    h2(doc, '9.5', 'O peso das duas séries de elementos')
     para(doc,
          'Os elementos do ponto 6 provam que os dois diplomas se tocam: partilham o conceito de detentor, '
          'partilham o vocábulo alojamento, e o artigo 3.º é efetivamente aplicável a quem cria. Não provam, '
@@ -1233,7 +1290,7 @@ def construir(doc):
              'Havendo excesso de animais num alojamento registado, há concurso de contraordenações entre '
              'o artigo 14.º do Decreto-Lei n.º 314/2003 e o regime sancionatório do Decreto-Lei n.º '
              '276/2001, ou consunção?',
-             'Em aberto'],
+             'Respondida — capítulo 9'],
             ['8',
              'Pode a câmara municipal, ao abrigo do n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003, '
              'notificar o titular de um alojamento registado na DGAV para retirar animais para o canil '
