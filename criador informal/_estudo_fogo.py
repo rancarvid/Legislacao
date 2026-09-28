@@ -74,6 +74,9 @@ def construir(doc):
         '«for autorizado alojamento até ao máximo de seis animais adultos». Daqui resulta que o artigo '
         'alcança quem quer que aloje, incluindo o titular de alojamento registado; o que o mantém fora '
         'dos números é a unidade de contagem, não a palavra. Capítulo 9.',
+        'A **coima** do artigo 3.º só existe dentro de casa: a al. c) do n.º 3 do artigo 14.º tipifica '
+        'a permanência de animais «em habitações e terrenos anexos», e o tipo não pode ser alargado. '
+        'Fora daí resta o remédio administrativo do n.º 5. Capítulo 9.',
         'O **n.º 1** do artigo 3.º — dever geral de salubridade — **aplica-se sempre**, incluindo ao '
         'alojamento registado. Registar não isenta; a al. j) do n.º 1 do artigo 3.º-A obriga o '
         'interessado a declarar o cumprimento de toda a legislação aplicável em matéria de higiene.',
@@ -601,7 +604,69 @@ def construir(doc):
         'Toda a conclusão repousa, portanto, na **questão 4** — no conceito de fogo —, e não na palavra '
         '«alojamento». Quem quiser atacar a tese deste estudo deve atacar ali, e não aqui.'])
 
-    h2(doc, '9.3', 'O peso das duas séries de elementos')
+    h2(doc, '9.3', 'O alcance da norma sancionatória')
+    para(doc,
+         'Das sete alíneas do n.º 3 do artigo 14.º, só uma remete para o artigo 3.º, e é o único lugar do '
+         'diploma onde o objeto desse artigo é nomeado.')
+    citacao(doc,
+            ['c) A permanência de cães e gatos em habitações e terrenos anexos em desrespeito pelas '
+             'condições previstas no artigo 3.º;'],
+            'Al. c) do n.º 3 do artigo 14.º do Decreto-Lei n.º 314/2003')
+
+    h3(doc, 'A redação é a original, e sobreviveu a uma intervenção parlamentar')
+    para(doc,
+         'O artigo 14.º foi alterado pelo Decreto-Lei n.º 20/2019, de 30 de janeiro, que transferiu '
+         'competências para os órgãos municipais no domínio da proteção animal, e pela Resolução da '
+         'Assembleia da República n.º 138/2019, de 8 de agosto, que fez **cessar a vigência** daquele '
+         'decreto-lei. Impunha-se verificar qual o texto hoje aplicável.')
+    destaque(doc, [
+        'Conferida no Diário da República n.º 290, I série-A, de 17 de dezembro de 2003, a al. c) tem '
+        'hoje **exatamente a redação originária**. Nunca foi alterada, e o seu teor atravessou incólume a '
+        'única intervenção parlamentar que o artigo conheceu. Não é texto descuidado: é texto deliberado '
+        'e reconfirmado.'])
+
+    h3(doc, 'O tipo não pode ser alargado')
+    citacao(doc,
+            ['Só será punido como contra-ordenação o facto descrito e declarado passível de coima por lei '
+             'anterior ao momento da sua prática.'],
+            'Artigo 2.º do Regime Geral das Contra-Ordenações, aprovado pelo Decreto-Lei n.º 433/82, de '
+            '27 de outubro, conferido no Diário da República n.º 249, I série, a páginas 3553')
+    para(doc,
+         'Seja qual for o âmbito da norma de conduta, o âmbito do **tipo** é o que a al. c) descreve. Não '
+         'há punição por analogia nem extensão do tipo a espaços que ele não nomeia.')
+
+    h3(doc, 'Duas palavras que decidem: «anexos» e «permanência»')
+    bullets(doc, [
+        '**«Anexos» é relacional.** Anexo pressupõe um principal, e o principal que a norma nomeia é a '
+        'habitação. Um alojamento dotado das instalações individualizadas que o artigo 25.º do '
+        'Decreto-Lei n.º 276/2001 exige não é «terreno anexo» a uma habitação: é coisa distinta dela. O '
+        'texto mais incómodo para este estudo, lido com atenção, situa o objeto sancionado na casa e no '
+        'seu redor imediato.',
+        '**«Permanência» é um estado, não uma atividade.** O legislador não tipificou «a exploração», «o '
+        'funcionamento» ou «o alojamento» — tipificou o facto de os animais lá estarem.',
+    ])
+
+    h3(doc, 'As duas leituras conciliam-se')
+    tabela(doc,
+           ['Leitura', 'Consequência'],
+           [['O tipo é mais estreito do que a norma de conduta',
+             'Fora das habitações o artigo 3.º seria norma imperfeita, sem sanção'],
+            ['O tipo revela o âmbito da norma de conduta',
+             'O artigo 3.º só alcançaria habitações e terrenos anexos']],
+           [Cm(6.4), Cm(10.2)])
+    destaque(doc, [
+        'A conciliação está no **n.º 5 do artigo 3.º**, que dá um remédio administrativo — vistoria '
+        'conjunta e notificação para remoção — **sem o limitar a habitações**. O legislador usou '
+        'deliberadamente dois alcances: remédio administrativo em todo o campo da norma, coima apenas na '
+        'habitação e no seu anexo. Não é lapso; é arquitetura.'])
+    nota(doc, [
+        '**Observação, sem atenuação.** Isto confirma que o artigo 3.º foi pensado a partir da casa, mas '
+        '**não** exclui que a norma de conduta alcance mais — como o ponto 9.1 demonstrou, ela alcança '
+        'quem quer que aloje. O que a al. c) revela é onde o legislador entendeu que valia a pena punir, '
+        'não onde entendeu que a norma se aplica. A consequência prática desta assimetria está tratada '
+        'nos pontos 15.5 e 15.7.'])
+
+    h2(doc, '9.4', 'O peso das duas séries de elementos')
     para(doc,
          'Os elementos do ponto 6 provam que os dois diplomas se tocam: partilham o conceito de detentor, '
          'partilham o vocábulo alojamento, e o artigo 3.º é efetivamente aplicável a quem cria. Não provam, '
@@ -1163,7 +1228,7 @@ def construir(doc):
             ['6',
              'Que alcance tem a al. c) do n.º 3 do artigo 14.º do Decreto-Lei n.º 314/2003 ao qualificar '
              'o objeto da infração como «habitações e terrenos anexos»?',
-             'Em aberto'],
+             'Respondida — capítulo 9'],
             ['7',
              'Havendo excesso de animais num alojamento registado, há concurso de contraordenações entre '
              'o artigo 14.º do Decreto-Lei n.º 314/2003 e o regime sancionatório do Decreto-Lei n.º '
