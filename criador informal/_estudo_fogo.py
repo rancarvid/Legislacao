@@ -729,7 +729,8 @@ def construir(doc):
     h2(doc, '13.3', 'Vigência formal e revogação tácita parcial')
     para(doc,
          'A construção assenta em duas normas, e não em argumento próprio. Quanto à paridade de valor, o '
-         'n.º 2 do artigo 112.º da Constituição dispõe que «as leis e os decretos-leis têm igual valor, '
+         'n.º 2 do artigo 112.º da Constituição, na redação da Lei Constitucional n.º 1/2005, dispõe que '
+         '«as leis e os decretos-leis têm igual valor, '
          'sem prejuízo da subordinação às correspondentes leis dos decretos-leis publicados no uso de '
          'autorização legislativa e dos que desenvolvam as bases gerais dos regimes jurídicos». A Lei n.º '
          '92/95 foi aprovada ao abrigo da competência legislativa comum — o preâmbulo invoca os artigos '
@@ -739,7 +740,8 @@ def construir(doc):
             ['2 - A revogação pode resultar de declaração expressa, da incompatibilidade entre as novas '
              'disposições e as regras precedentes ou da circunstância de a nova lei regular toda a '
              'matéria da lei anterior.'],
-            'N.º 2 do artigo 7.º do Código Civil')
+            'N.º 2 do artigo 7.º do Código Civil, conferido no Diário do Governo n.º 274, I série, de '
+            '25 de novembro de 1966, a páginas 1886')
     para(doc,
          'São as duas últimas hipóteses que relevam: substituir o controlo prévio municipal por mera '
          'comunicação prévia é incompatível com a exigência de autorização, e o Decreto-Lei n.º 10/2015 '
@@ -1130,14 +1132,14 @@ def construir(doc):
         'de contraordenação decididos administrativamente. Ausência de casuística publicada não equivale '
         'a ausência de casos.',
         'Os textos do n.º 2 do artigo 112.º da Constituição e do artigo 7.º do Código Civil, usados no '
-        'capítulo 13, foram lidos em compilador privado. As páginas de legislação consolidada do Diário '
-        'da República são geradas por script no navegador e devolvem corpo vazio a quem as consulte '
-        'por meios automáticos; o PGDL, para estes dois diplomas, devolveu apenas o índice. **A '
-        'conferir** contra o texto oficial em papel ou em PDF.',
+        'capítulo 13, foram **conferidos em fonte oficial** e coincidem integralmente com os que aqui '
+        'se citam. O método usado fica descrito no ponto 18.2, por ser útil a quem repita o trabalho.',
     ])
 
     # ------------------------------------------------------------------ 18
     h1(doc, '18.', 'Nota metodológica')
+
+    h2(doc, '18.1', 'Fontes e pesquisa de jurisprudência')
     para(doc,
          'Os textos legais foram obtidos das versões consolidadas e confrontados com as cópias do '
          'repositório. A pesquisa de jurisprudência foi feita na base de dados pública dos tribunais '
@@ -1151,6 +1153,31 @@ def construir(doc):
         '«licença» devolveu zero, quando «276/2001» isolado devolveu trinta e seis. As pesquisas foram por '
         'isso feitas com termos simples e o cruzamento realizado sobre o texto integral das decisões '
         'descarregadas. Esta reserva é relevante para quem repita o trabalho.'])
+
+    h2(doc, '18.2', 'Como consultar o Diário da República de forma verificável')
+    para(doc,
+         'As páginas de legislação consolidada do Diário da República eletrónico são construídas no '
+         'navegador e não servem o texto a quem as consulte por meios automáticos. Isso não impede a '
+         'verificação: o jornal oficial está integralmente disponível em PDF, e é essa a fonte a usar. '
+         'Três regimes, consoante a data.')
+    numlist(doc, [
+        '**Atos posteriores a 1976** — o PDF do Diário da República tem camada de texto e pode ser lido e '
+        'pesquisado diretamente. Foi assim que se obtiveram, para este estudo, o Diário da República n.º '
+        '241, de 17 de outubro de 2001, o n.º 290, de 17 de dezembro de 2003, e o n.º 104, de 29 de maio '
+        'de 2026.',
+        '**Atos anteriores a 1976** — o PDF é uma digitalização sem camada de texto. A pesquisa por '
+        'palavra falha, mas a página lê-se convertendo-a em imagem. Foi assim que se conferiu o artigo '
+        '7.º do Código Civil no Diário do Governo n.º 274, I série, de 25 de novembro de 1966, a '
+        'páginas 1886.',
+        '**Textos republicados** — quando o que se procura é um texto consolidado por republicação, como '
+        'a Constituição na redação da Lei Constitucional n.º 1/2005, recorre-se à edição institucional '
+        'em PDF de entidade pública — foi usada a do Tribunal Constitucional e a da Comissão Nacional de '
+        'Eleições.',
+    ])
+    destaque(doc, [
+        'A regra prática que daqui resulta: **um compilador privado serve para localizar a norma, nunca '
+        'para a citar**. A citação faz-se sempre contra o PDF do jornal oficial, pelo caminho que a data '
+        'do ato determinar.'])
 
     # ------------------------------------------------------------------ Anexo A
     pagebreak(doc)
