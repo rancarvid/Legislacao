@@ -69,6 +69,11 @@ def construir(doc):
         'prévia. Uma norma que não fixa número não pode ser a norma de lotação de um estabelecimento. '
         'O artigo 3.º gradua densidade doméstica; a capacidade dos alojamentos mede-se pelo anexo III. '
         'Capítulo 15.',
+        'No artigo 3.º, «alojamento» é o **facto de alojar**, não o estabelecimento: sete das nove '
+        'ocorrências no diploma têm esse sentido, e a decisiva está na própria norma dos limites — '
+        '«for autorizado alojamento até ao máximo de seis animais adultos». Daqui resulta que o artigo '
+        'alcança quem quer que aloje, incluindo o titular de alojamento registado; o que o mantém fora '
+        'dos números é a unidade de contagem, não a palavra. Capítulo 9.',
         'O **n.º 1** do artigo 3.º — dever geral de salubridade — **aplica-se sempre**, incluindo ao '
         'alojamento registado. Registar não isenta; a al. j) do n.º 1 do artigo 3.º-A obriga o '
         'interessado a declarar o cumprimento de toda a legislação aplicável em matéria de higiene.',
@@ -533,7 +538,70 @@ def construir(doc):
         'independente, a leitura exposta no ponto 5.'])
 
     # ------------------------------------------------------------------ 9
-    h1(doc, '9.', 'Ponderação')
+    h1(doc, '9.', 'Ponderação: o sentido de «alojamento» e o peso dos elementos')
+
+    h2(doc, '9.1', 'O que a palavra «alojamento» significa no artigo 3.º')
+    para(doc,
+         'O ponto 6.1 registou, entre os elementos favoráveis à aplicação, que o artigo 3.º emprega a '
+         'mesma palavra que define o objeto do Decreto-Lei n.º 276/2001. O argumento merece resposta '
+         'direta, e a resposta obtém-se contando. A palavra e os seus derivados ocorrem **nove vezes** em '
+         'todo o Decreto-Lei n.º 314/2003.')
+    tabela(doc,
+           ['Onde', 'Texto', 'Sentido'],
+           [['N.º 1 do art.º 3.º', '«O alojamento de cães e gatos em prédios urbanos, rústicos ou mistos»',
+             'Contestado'],
+            ['N.º 2 do art.º 3.º', '«podem ser alojados até três cães ou quatro gatos adultos»', 'Facto'],
+            ['N.º 2 do art.º 3.º', '«for autorizado alojamento até ao máximo de seis animais adultos»',
+             '**Facto**'],
+            ['N.º 4 do art.º 3.º', '«podem ser alojados até seis animais adultos»', 'Facto'],
+            ['N.º 4 do art.º 3.º', '«as condições de alojamento»', 'Facto'],
+            ['Art.º 6.º', '«ficam obrigados a quarentena em alojamento autorizado para o efeito»',
+             '**Lugar**'],
+            ['Art.º 6.º', '«ou pelo alojamento em canil ou gatil, preferencialmente oficial»', 'Facto'],
+            ['N.º 2 do art.º 9.º', '«todas as despesas de alimentação e alojamento»', 'Facto'],
+            ['N.º 3 do art.º 9.º',
+             '«as condições exigidas pelo presente diploma para o seu alojamento»', 'Facto']],
+           [Cm(3.4), Cm(9.4), Cm(3.8)])
+    para(doc,
+         'Sete das nove ocorrências são o facto de alojar. Uma — a quarentena do artigo 6.º — é '
+         'inequivocamente o lugar. E a contestada é a do n.º 1.')
+    destaque(doc, [
+        'A ocorrência decisiva está **dentro da própria norma dos limites**: o n.º 2 prevê que «for '
+        'autorizado alojamento até ao máximo de seis animais adultos». Não se autoriza um edifício «até '
+        'ao máximo de seis animais»; autoriza-se o **alojar** de até seis. No artigo 3.º, a palavra é o '
+        'facto.'])
+    bullets(doc, [
+        '**A epígrafe confirma-o.** O artigo 3.º intitula-se «Detenção de cães e gatos» — uma conduta. '
+        'Compare-se com os capítulos do Decreto-Lei n.º 276/2001, que se intitulam «Normas para os '
+        'alojamentos de...». Quando o legislador quer regular estabelecimentos, di-lo na epígrafe.',
+        '**A norma sancionatória usa outro vocábulo ainda.** A al. c) do n.º 3 do artigo 14.º tipifica «a '
+        'permanência de cães e gatos em habitações e terrenos anexos» — um estado, situado em habitações.',
+        '**E o diploma nunca chama «alojamento» a uma instalação de acolhimento.** Quando se refere a '
+        'uma, diz «canil ou gatil municipal», «canis e gatis», «instalações» ou «estabelecimentos».',
+    ])
+    para(doc,
+         'Quanto ao argumento do vocabulário comum, ele cai por inteiro: o próprio Decreto-Lei n.º '
+         '276/2001 usa a palavra nos dois sentidos, e em alíneas consecutivas. A al. n) do n.º 1 do artigo '
+         '2.º define «alojamento» como «qualquer instalação, edifício, grupo de edifícios ou outro local»; '
+         'a al. o), imediatamente a seguir, define «hospedagem» como «o alojamento, permanente ou '
+         'temporário, de um animal de companhia». Lugar numa linha, facto na seguinte.')
+
+    h2(doc, '9.2', 'O que esta resposta entrega, e o que não entrega')
+    destaque(doc, [
+        'A questão 5 resolve-se **contra** este estudo num ponto e a favor noutro, e é preciso dizê-lo '
+        'com clareza. Se o artigo 3.º regula o facto de alojar, então regula-o **seja quem for quem '
+        'aloja** — incluindo o titular de um alojamento registado. A palavra não afasta o '
+        'estabelecimento.'])
+    para(doc,
+         'O que mantém o estabelecimento fora dos números não é o vocábulo: é a **unidade de contagem**. '
+         'O n.º 2 conta por fogo, e um alojamento não é um fogo, pelas razões do capítulo 5. O n.º 1, '
+         'esse, aplica-se a toda a gente, incluindo ao alojamento registado — e é exatamente isso que '
+         'este estudo afirma desde as conclusões.')
+    destaque(doc, [
+        'Toda a conclusão repousa, portanto, na **questão 4** — no conceito de fogo —, e não na palavra '
+        '«alojamento». Quem quiser atacar a tese deste estudo deve atacar ali, e não aqui.'])
+
+    h2(doc, '9.3', 'O peso das duas séries de elementos')
     para(doc,
          'Os elementos do ponto 6 provam que os dois diplomas se tocam: partilham o conceito de detentor, '
          'partilham o vocábulo alojamento, e o artigo 3.º é efetivamente aplicável a quem cria. Não provam, '
@@ -1091,7 +1159,7 @@ def construir(doc):
             ['5',
              'No n.º 1 do artigo 3.º do Decreto-Lei n.º 314/2003, «alojamento» designa o facto de alojar '
              'ou o estabelecimento, sentido em que a mesma palavra é usada no Decreto-Lei n.º 276/2001?',
-             'Em aberto'],
+             'Respondida — capítulo 9'],
             ['6',
              'Que alcance tem a al. c) do n.º 3 do artigo 14.º do Decreto-Lei n.º 314/2003 ao qualificar '
              'o objeto da infração como «habitações e terrenos anexos»?',
