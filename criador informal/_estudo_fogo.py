@@ -772,6 +772,60 @@ def construir(doc):
         'daria. A tese mantém-se, e ganha em precisão — o que muda não é se a câmara pode agir, é **com '
         'que fundamento**.'])
 
+    h3(doc, 'O caso de Santo Tirso')
+    para(doc,
+         'O ponto tem um caso real recente, e é preciso confrontá-lo com a resposta dada, sob pena de '
+         'esta valer apenas no papel.')
+    tabela(doc,
+           ['Data', 'Facto'],
+           [['2012', 'A **DGAV** emite despacho pedindo à câmara municipal de Santo Tirso diligências '
+                     'para **retirar os animais** do abrigo «Cantinho das Quatro Patas»'],
+            ['2018', 'A câmara obtém parecer jurídico externo que conclui que «as câmaras não têm '
+                     'competência para encerrar abrigos de animais»'],
+            ['18.7.2020', 'Incêndio na Serra da Agrela; morrem 93 animais em dois abrigos — «Cantinho '
+                          'das 4 Patas» e «Abrigo de Paredes» —, **sem qualquer registo na DGAV**, já '
+                          'antes objeto de vistorias conjuntas e de processos de contraordenação'],
+            ['9.9.2026', 'O Tribunal de Matosinhos absolve os cinco arguidos, entre eles a antiga '
+                         'coordenadora da Proteção Civil e o ex-veterinário municipal, de mais de 230 '
+                         'crimes. O coletivo consigna que nenhum dos dois tinha poderes para ordenar a '
+                         'evacuação forçada dos espaços privados na noite do incêndio']],
+           [Cm(2.6), Cm(14.0)])
+
+    h3(doc, 'O que o caso não decide')
+    numlist(doc, [
+        '**Respeita a dois titulares de cargos, não à câmara municipal.** O n.º 5 do artigo 3.º confere o '
+        'poder «às câmaras municipais», e exige vistoria conjunta prévia: é ato do órgão colegial, '
+        'precedido de procedimento. O médico veterinário municipal e a coordenadora da Proteção Civil '
+        'não são a câmara.',
+        '**Respeita a uma evacuação forçada na noite de um incêndio** — medida de emergência de proteção '
+        'civil —, e não à notificação para remoção do n.º 5, que é ato de polícia sanitária com '
+        'procedimento próprio e prazo fixado.',
+        '**Encerrar não é retirar.** O parecer de 2018 concluiu que as câmaras não podem **encerrar**, e '
+        'está certo: o encerramento de estabelecimento é sanção acessória do artigo 69.º do Decreto-Lei '
+        'n.º 276/2001, aplicada pelo diretor-geral nos termos do artigo 70.º. Este estudo nunca afirmou '
+        'o contrário.',
+    ])
+
+    h3(doc, 'O que o caso confirma')
+    bullets(doc, [
+        '**A articulação real vai no sentido aqui sustentado.** Em 2012 foi a DGAV a pedir à câmara que '
+        'retirasse os animais. A prática da própria autoridade sanitária reconhece que o poder de '
+        'remoção é municipal — isto é, o n.º 5.',
+        '**E confirma, com factos, a inibição descrita no ponto 15.7.** Abrigos não registados em zona '
+        'rural, com vistorias feitas e contraordenações instauradas, e animais que ali permaneceram até '
+        'morrerem. O sistema reativo não impediu nada.',
+    ])
+    nota(doc, [
+        '**Advertência de fonte.** Não se leu a decisão. O que antecede resulta de notícias sobre a '
+        'leitura oral do acórdão, e trata-se de absolvição em primeira instância, suscetível de recurso. '
+        '**Obter o texto da decisão é a diligência mais útil que este estudo tem pendente**, e só depois '
+        'dela se poderá afirmar com segurança o que o tribunal decidiu quanto a competências.'])
+    nota(doc, [
+        '**Observação.** O caso ilustra o custo da tese contrária tanto quanto o da tese aqui sustentada: '
+        'se a câmara entende não ter poderes e a DGAV depende da câmara para executar, o sistema não '
+        'protege ninguém. É argumento de política legislativa, não de interpretação — mas é o argumento '
+        'mais forte a favor de uma revisão que atribua expressamente a competência e os meios.'])
+
     h2(doc, '9.6', 'Especialidade ou posterioridade')
     para(doc,
          'A última questão só se põe a quem sustente que há conflito entre os dois diplomas. Este estudo '
@@ -1404,6 +1458,9 @@ def construir(doc):
         'instância**, onde se decide a maior parte das impugnações de atos municipais, nem os processos '
         'de contraordenação decididos administrativamente. Ausência de casuística publicada não equivale '
         'a ausência de casos.',
+        'Não se obteve o texto do acórdão do Tribunal de Matosinhos de 9 de setembro de 2026, sobre os '
+        'abrigos de Santo Tirso, usado no ponto 9.5 a partir de notícias. É a diligência pendente mais '
+        'útil, e condiciona o que sobre ele se pode afirmar.',
         'Os textos do n.º 2 do artigo 112.º da Constituição e do artigo 7.º do Código Civil, usados no '
         'capítulo 13, foram **conferidos em fonte oficial** e coincidem integralmente com os que aqui '
         'se citam. O método usado fica descrito no ponto 18.2, por ser útil a quem repita o trabalho.',
