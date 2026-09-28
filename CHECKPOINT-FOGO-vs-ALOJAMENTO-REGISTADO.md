@@ -5,9 +5,15 @@ refere-se a este tema — os limites de detenção por fogo do art.º 3.º do DL
 a lotação dos alojamentos registados ao abrigo do art.º 3.º-A do DL n.º 276/2001. Convenção fixada em
 25.9.2026; vale entre sessões.
 
-**Estado**: análise concluída em 22.9.2026; documento Word extenso produzido em 25.9.2026 —
-`criador informal/Estudo_Limites_por_Fogo.docx` (20 pp.), gerado por `criador informal/_estudo_fogo.py`
-e registado em `criador informal/gerar_memorando.py`.
+**Estado em 28.9.2026**: análise concluída e substancialmente aprofundada. Documento Word em
+**63 páginas** — `criador informal/Estudo_Limites_por_Fogo.docx`, gerado por
+`criador informal/_estudo_fogo.py` e registado em `criador informal/gerar_memorando.py`.
+Ramo de trabalho: `claude/update-regulations-document-lKSWW` (PR #28).
+**A resposta à questão central não mudou.** Mudaram o fundamento de dois pontos, a força de um argumento,
+e as fontes: passaram a incluir fonte primária parlamentar. Ver a PARTE 0-A.
+
+**Para retomar**: dizer «314 vs alojamentos» ou «retomar 314 vs alojamentos», ou invocar a skill
+`retomar-314-alojamentos`.
 **Âmbito**: questão isolada de direito interno vigente. **Não** mobiliza o Regulamento (UE) 2026/1818,
 o projeto RGAC nem o debate público sobre «criador informal». Esses planos ficam expressamente de fora;
 a ponte, se vier a fazer-se, faz-se depois e noutro documento.
@@ -31,6 +37,125 @@ residual em que a resposta é afirmativa.**
    registado. Registar não isenta.
 4. **Caso residual**: quem tem o alojamento registado mas mantém os animais integrados na casa, como
    animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima de seis.
+
+---
+
+## PARTE 0-A — Estado em 28.9.2026: o que mudou desde 25.9.2026
+
+### A.1 Correção material: o artigo 3.º-G do DL 276/2001
+
+O estudo tratava o encerramento de alojamentos como **sanção acessória** dos art.ºs 69.º e 70.º. **Está
+errado.** Existe norma autónoma de polícia administrativa — o **artigo 3.º-G**, aditado pelo
+**DL n.º 260/2012, de 12 de dezembro**, conferido no DR, 1.ª série, n.º 240, de 12.12.2012, pp. 6981-6982:
+
+- **n.º 1** — o **director-geral de Alimentação e Veterinária** determina, por despacho, a suspensão da
+  atividade ou o encerramento, designadamente por «Maus tratos aos animais» e por «graves problemas de
+  saúde e bem-estar dos animais».
+- **n.º 5** — o despacho é notificado ao titular, que deve cessar a atividade «no prazo fixado pela DGAV,
+  o qual não deve exceder **cinco dias úteis**, sob pena de ser solicitado às autoridades administrativas
+  e policiais competentes o encerramento compulsivo».
+- **n.º 6** — «Compete às **câmaras municipais** executar as medidas necessárias ao cumprimento da decisão
+  […], nomeadamente proceder, quando necessário, à **recolha dos animais**.»
+
+**Consequência para a questão 8**: a remoção municipal passa a ter **duas bases legais expressas e
+independentes** — o n.º 5 do art.º 3.º do DL 314/2003 (em que a própria câmara notifica, após vistoria
+conjunta, e que é **autónoma**) e o n.º 6 do art.º 3.º-G do DL 276/2001 (em que a câmara executa decisão
+alheia, e que **não** é autónoma). Decidir o encerramento nunca é da câmara.
+
+> **Erro na consolidação oficial, a não repetir.** A base consolidada indica como origem do art.º 3.º-G o
+> DL n.º 265/2007. Conferido o DR, 1.ª série, n.º 141, de 24.7.2007: esse diploma altera do DL 276/2001
+> apenas o art.º 73.º (taxas), pelo seu art.º 21.º. A origem é o DL n.º 260/2012.
+
+### A.2 A janela de vigência de 2019
+
+O art.º 3.º-G foi alterado pelo **DL n.º 20/2019, de 30 de janeiro** (DR, 1.ª série, n.º 21, p. 671), que
+transferiu o poder de encerrar para o **presidente da câmara municipal**. A **Resolução da AR n.º 138/2019,
+de 8 de agosto** fez cessar a vigência de todo aquele diploma.
+
+| Período | Quem determina o encerramento | Quem recolhe os animais |
+|---|---|---|
+| até 29.1.2019 | Director-geral de Alimentação e Veterinária | Câmaras municipais (n.º 6) |
+| 30.1.2019 a 7.8.2019 | Presidente da câmara municipal | Presidente da câmara (n.º 6) |
+| desde 8.8.2019 | Director-geral de Alimentação e Veterinária | Câmaras municipais (n.º 6) |
+
+Em julho de 2020, numa audição parlamentar dedicada ao caso de Santo Tirso, **nenhum dos lados enunciou
+corretamente esta vigência**: o requerimento do PAN citou a redação já cessada como se vigorasse, e o
+presidente da câmara afirmou que aquela legislação «nem nunca chegou a entrar em vigor».
+
+### A.3 A trajetória do título de acesso (questão 1), conferida no jornal oficial
+
+| Período | Título de um alojamento de hospedagem sem fins lucrativos | Quem o emite |
+|---|---|---|
+| 17.10.2001 a 16.12.2003 | Licença de utilização, nos termos do DL n.º 370/99 | **Câmara municipal** |
+| 17.12.2003 a 11.12.2012 | Licença de funcionamento, sob parecer da DRA | **Director-geral de Veterinária** |
+| desde 12.12.2012 | Mera comunicação prévia | **DGAV** |
+
+Textos conferidos: art.º 3.º original no DR, I série-A, n.º 241, de 17.10.2001, p. 6573; redação do
+DL n.º 315/2003 no DR, I série-A, n.º 290, de 17.12.2003. **Não existe autorização municipal para instalar
+um alojamento desde 17.12.2003.** Está no ponto 13.4 do estudo.
+
+### A.4 O argumento que mudou de plano: três actos no mesmo Diário da República
+
+No **DR, I série-A, n.º 290, de 17 de dezembro de 2003**, o legislador praticou três actos coordenados:
+
+1. **DL n.º 315/2003** — retirou às câmaras o título de acesso dos alojamentos, entregando-o ao
+   director-geral;
+2. **DL n.º 314/2003** — criou os limites por fogo, cuja vistoria conjunta e notificação para remoção
+   entregou às câmaras;
+3. **DL n.º 315/2003, al. p)** — excluiu as fracções autónomas da hospedagem sem fins lucrativos.
+
+No mesmo dia e no mesmo jornal, **a actividade subiu para a autoridade nacional e a densidade doméstica
+desceu para o município**. O argumento central do estudo deixa de assentar num silêncio (*expressio
+unius*) e passa a assentar num **desenho documentado**. Está no ponto 14.5. É o reforço mais importante
+que a análise recebeu.
+
+### A.5 Doutrina localizada
+
+**BRANCO, Bruno Filipe Salvador da Silva**, «A detenção de animais de companhia — uma análise do ponto de
+vista contraordenacional», *Revista Jurídica Luso-Brasileira*, Ano 5 (2019), n.º 2, pp. 229-260 (CIDP,
+FDUL). Lido integralmente; tratado no ponto 11.4 do estudo. Subcomissário da PSP. Arruma o art.º 3.º sob
+a epígrafe «**Limite de cães e gatos por habitação**», descreve o tipo da al. c) do n.º 3 do art.º 14.º
+como «exceder o n.º de animais por **fogo urbano**», indica a DGAV como entidade instrutória e as câmaras
+como executantes da remoção, e no seu levantamento das contraordenações do DL 276/2001 **não inclui uma
+única entrada sobre excesso de animais em alojamento**. É a única fonte doutrinal localizada que trata o
+art.º 3.º na perspetiva da fiscalização.
+
+### A.6 A raiz institucional da inércia: o DL n.º 116/98
+
+Conferido no DR, I série-A, n.º 103, de 5.5.1998, p. 1990. O médico veterinário municipal é «a autoridade
+sanitária veterinária concelhia» (n.º 2 do art.º 2.º), com poderes conferidos pela autoridade nacional «a
+título pessoal, não delegável» (n.º 3), que exerce «**sem dependência hierárquica**» — mas apenas quanto a
+«prejuízos graves à **saúde pública**» (n.º 4). Em tudo o mais, «dependem, hierárquica e disciplinarmente,
+do presidente da câmara» (n.º 1 do art.º 4.º). Nos abrigos sem registo, onde o fundamento próprio é o
+bem-estar animal, a blindagem não cobre o acto. Está no ponto 9.5.
+
+### A.7 Fonte primária nova: a audição parlamentar de 30.7.2020
+
+Obtidas e transcritas as gravações. **Audição n.º 32-CAM-XIV** (presidente da Câmara Municipal de Santo
+Tirso, a requerimento do PAN, 109,6 min) — transcrita e analisada. O que dela ficou estabelecido:
+
+| Facto | Marca temporal |
+|---|---|
+| O acto da DGAV de 2012 foi **decisão de encerramento em processo de contraordenação**, com pedido de diligências ao município | 00:43:37 · 00:49:46 · 01:30:50 |
+| Informação atribuída à **Associação Nacional de Médicos Veterinários Municipais** | 00:49:46 |
+| A divisão de competências do art.º 3.º-G enunciada em comissão, com o diploma na mão | 00:50:02 · 00:50:12 · 01:34:37 |
+| Comunicado do Ministério da Agricultura: vistorias desde 2006 e «notificação dirigida ao Município para a atuação no âmbito das competências que lhes são atribuídas» | 00:35:23 |
+| Razão declarada da inércia: falta de capacidade de acolhimento, **não** falta de competência | 00:35:08 |
+| Recolha dos **54** animais mortos «só [pelos] serviços da Câmara Municipal» | 00:14:38 |
+| Coimas municipais de **500 €** e **750 €** por operações urbanísticas não licenciadas (RJUE) | 01:08:16 |
+| Dependência hierárquica do veterinário municipal debatida após a sua suspensão | 00:37:04 |
+| O presidente descreve com exactidão a sequência do n.º 5 do art.º 3.º-G, cinco dias incluídos | 01:44:47 |
+| O presidente declara desconhecer o despacho de 2012 | 01:44:28 |
+
+**Retirado do estudo** um reparo anterior sobre um suposto «erro na descrição» do presidente da câmara:
+tinha sido feito a partir de paráfrase de imprensa e não se sustenta contra a gravação.
+
+### A.8 A alavanca municipal efectiva foi o urbanismo
+
+Contra um alojamento não titulado, o instrumento que o município mobilizou foi o **regime jurídico da
+urbanização e edificação** — coimas de 500 € e 750 € por operações urbanísticas não licenciadas, uma
+impugnada judicialmente com sentença do Tribunal de Santo Tirso em maio de 2013. Nenhum processo teve por
+objecto o número de animais, o bem-estar ou a falta de título de acesso. Está no ponto 15.7.
 
 ---
 
@@ -412,6 +537,37 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
 
 ## PARTE X — Pontos em aberto e reservas
 
+> **Atualizado em 28.9.2026.** Os pontos 3 e 4 desta lista, tal como estavam em 25.9.2026, ficaram
+> **resolvidos**: as tabelas do anexo III foram obtidas do DR n.º 241, de 17.10.2001, e o texto original do
+> DR n.º 290, de 17.12.2003, foi obtido e está usado nos capítulos 13.4, 14 e 14.5. Ficam registados
+> abaixo, riscados, para memória do percurso. As reservas vivas são as que levam a marca **[VIVA]**.
+
+### X-A. Pendente, por ordem de utilidade (28.9.2026)
+
+1. **[VIVA] Duas audições por transcrever** — n.º 33-CAM-XIV (Ministro da Administração Interna e
+   Ministra da Agricultura, **160,8 min**) e o excerto da Secretária de Estado da Administração Interna
+   (**73,2 min**, possivelmente recorte da anterior). Os ficheiros estão em
+   `criador informal/audições parlamentares/`. É aí que deve estar a **posição institucional do Governo e
+   da DGAV** sobre de quem era a competência — o contraponto ao lado municipal, já apurado. **Diligência
+   mais útil.**
+2. **[VIVA] Caso de Amarante** — o requerimento do LIVRE de 13.7.2026 (`REQ 54_7CAPes…pdf`, na pasta
+   `criador informal/`) refere o resgate de **mais de 300 cães de um alojamento de criadora registada na
+   DGAV**. É o teste empírico da questão central, e mais directo que Santo Tirso, onde os abrigos não
+   tinham registo. **Adiado por decisão do utilizador em 28.9.2026** — não retomar sem ele o pedir.
+3. **[VIVA] Acórdão do Tribunal de Matosinhos de 9.9.2026** (abrigos de Santo Tirso) — não obtido. O PAN
+   anunciou recurso, pelo que a decisão não transitou. Ver ponto 9.5 do estudo.
+4. **[VIVA] Despacho da DGAV de 2012 e parecer jurídico de 2018** — não obtidos na íntegra. Do segundo
+   conhece-se o que foi lido em voz alta na audição; do primeiro, a qualificação e o sentido, não o texto.
+   Nenhum é acto sujeito a publicação no DR. O utilizador declarou em 28.9.2026 que **não pretende
+   apresentar requerimentos de acesso** — não propor essa via de novo.
+5. **[VIVA] Prática decisória da DGAV ao abrigo do art.º 3.º-G** — por examinar. Havendo despachos de
+   suspensão ou encerramento, são publicitados no balcão único e no sítio da DGAV (art.º 3.º-I), e medem a
+   efectividade real do regime.
+6. **[VIVA] O intervalo de 30.1.2019 a 7.8.2019** — por saber se algum município usou, nesse período, o
+   poder de encerrar que então tinha.
+
+### X-B. Reservas de método que se mantêm
+
 1. **Não há decisão judicial, parecer publicado nem orientação administrativa** que resolva expressamente
    a questão. A conclusão é interpretativa.
 2. O elemento textual mais incómodo é a al. c) do n.º 3 do art.º 14.º («habitações **e terrenos anexos**»).
@@ -478,6 +634,53 @@ UNIDs apurados em 21.9.2026:
 > análise anterior.
 
 Corpus lido: 32 acórdãos que citam o DL 314/2003 + 36 que citam o DL 276/2001, nas nove bases.
+
+### XI.4 Como chegar ao PDF do Diário da República sem adivinhar o endereço
+
+**O achado metodológico mais útil do estudo.** Um endereço na forma do identificador europeu de legislação
+devolve directamente o PDF do jornal oficial:
+
+```
+https://data.dre.pt/eli/<tipo>/<número>/<ano>/<mês>/<dia>/p/dre/pt/pdf
+```
+
+Exemplos verificados: `dec-lei/20/2019/01/30`, `dec-lei/260/2012/12/12`, `dec-lei/265/2007/07/24`,
+`lei/26/2016/08/22`. Dispensa procurar o número de páginas no nome do ficheiro, que é o que faz falhar a
+via directa em `files.dre.pt`.
+
+Regras que se mantêm: as páginas de legislação consolidada do DR eletrónico **não servem o texto** a
+consulta automática; para actos anteriores a 1976 o PDF é digitalização sem camada de texto e lê-se
+convertendo a página em imagem (foi assim que se conferiu o art.º 7.º do Código Civil no DG n.º 274, de
+25.11.1966, p. 1886, e o DL n.º 116/98 no DR n.º 103, de 5.5.1998, p. 1990).
+
+**E a regra não vale só contra compiladores privados**: a consolidação oficial errou a proveniência do
+art.º 3.º-G (ver PARTE 0-A.1).
+
+### XI.5 Transcrição das audições parlamentares
+
+As audições da Comissão de Agricultura e Mar de 30.7.2020 **não têm ata** — o registo oficial dá o
+requerimento e uma gravação. O endereço da gravação no Canal Parlamento já não responde (a comissão
+encerrou actividade em 28.3.2022), pelo que as gravações foram fornecidas pelo utilizador e estão em
+`criador informal/audições parlamentares/`.
+
+Transcrição local com `faster-whisper` (`pip install faster-whisper`), língua `pt`, `compute_type=int8`,
+4 threads. Ritmos medidos neste contentor: modelo `small` ≈ **4,4× tempo real**; `medium` ≈ **1× tempo
+real** (descarrega ~1,5 GB na primeira utilização).
+
+**Método em dois passos, a repetir nas audições que faltam:**
+1. **Varrer** a audição inteira com `small` e pesquisar nela os termos do estudo. Serve para localizar, não
+   para citar — troca nomes próprios com frequência («São Justiça» por Santo Tirso, «de gaiva» por DGAV).
+2. **Reprocessar as janelas** onde estão as passagens relevantes com `medium`, usando `clip_timestamps`, e
+   só então citar.
+
+> **Erro a evitar, que custou duas tentativas**: escolher as janelas antes de ter varrido a audição inteira.
+> O núcleo jurídico da audição n.º 32 estava em 01:28–01:46 e ficou fora das quatro primeiras janelas.
+>
+> **Segundo erro a evitar**: encadear processos com `pgrep -f "x.py"` dentro de `bash -c` — o comando de
+> espera apanha-se a si próprio e nunca termina. Encadear por PID: `while [ -d /proc/<pid> ]; do sleep 10; done`.
+
+Scripts e transcrições guardados em `criador informal/audições parlamentares/transcricoes/`, com o regime
+de citação em `LEIA-ME.md` e no Anexo C.6 do estudo.
 
 ---
 
