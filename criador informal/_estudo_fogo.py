@@ -547,7 +547,7 @@ def construir(doc):
         'independente, a leitura exposta no ponto 5.'])
 
     # ------------------------------------------------------------------ 9
-    h1(doc, '9.', 'Ponderação: o sentido de «alojamento» e o peso dos elementos')
+    h1(doc, '9.', 'Ponderação e resolução das questões interpretativas')
 
     h2(doc, '9.1', 'O que a palavra «alojamento» significa no artigo 3.º')
     para(doc,
@@ -723,7 +723,89 @@ def construir(doc):
         'cumulativamente sobre o mesmo espaço. O argumento «quem admite concurso admite sobreposição» '
         'procede — mas só dentro de casa.'])
 
-    h2(doc, '9.5', 'O peso das duas séries de elementos')
+    h2(doc, '9.5', 'O poder de remoção do n.º 5 do artigo 3.º')
+    citacao(doc,
+            ['5 - Em caso de não cumprimento do disposto nos números anteriores, as câmaras municipais, '
+             'após vistoria conjunta do delegado de saúde e do médico veterinário municipal, notificam o '
+             'detentor para retirar os animais para o canil ou gatil municipal no prazo estabelecido por '
+             'aquelas entidades, caso o detentor não opte por outro destino que reúna as condições '
+             'estabelecidas pelo presente diploma.'],
+            'N.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003')
+    destaque(doc, [
+        '**Sim, a câmara municipal pode notificar o titular de um alojamento registado — mas o fundamento '
+        'tem de ser o n.º 1, e não o n.º 2.** O n.º 5 desencadeia-se pelo «não cumprimento do disposto '
+        'nos números anteriores». O n.º 1 aplica-se a toda a gente, incluindo ao alojamento registado. O '
+        'n.º 2 não tem, aí, campo operativo, por falta de fogo.'])
+    para(doc,
+         'A distinção não é académica: determina a fundamentação do ato. Uma notificação que invoque o '
+         'excesso sobre quatro animais num alojamento registado é ilegal por erro nos pressupostos; uma '
+         'que invoque a conspurcação ambiental ou o risco de doenças transmissíveis ao homem é legal, '
+         'ainda que o alojamento esteja regularmente comunicado à DGAV.')
+
+    h3(doc, 'A câmara não é estranha ao regime dos alojamentos')
+    citacao(doc,
+            ['Sem prejuízo das competências atribuídas por lei a outras entidades, compete, em especial, à '
+             'DGAV, aos médicos veterinários municipais, à Autoridade de Segurança Alimentar e Económica, '
+             'ao ICNF, I. P., às câmaras municipais, à PM, à GNR, à PSP e, em geral, a todas as '
+             'autoridades policiais assegurar a fiscalização do cumprimento das normas constantes do '
+             'presente diploma.'],
+            'Artigo 66.º do Decreto-Lei n.º 276/2001')
+    para(doc,
+         'A objeção de que o município estaria a intrometer-se em matéria alheia improcede: o próprio '
+         'diploma dos alojamentos o inclui, pelo nome, entre as entidades de fiscalização.')
+
+    h3(doc, 'Dois limites formais e uma lacuna')
+    bullets(doc, [
+        '**Vistoria conjunta prévia.** A notificação sem vistoria do delegado de saúde **e** do médico '
+        'veterinário municipal é ato preterido de formalidade essencial.',
+        '**Opção do detentor.** A remoção não é para o canil municipal por imposição: o detentor pode '
+        'optar «por outro destino que reúna as condições estabelecidas pelo presente diploma». É medida '
+        'de polícia sanitária, não apreensão.',
+        '**Lacuna de articulação.** Nada obriga a câmara a articular-se com a DGAV antes de mandar '
+        'retirar animais de um estabelecimento comunicado, nem a DGAV a informar a câmara de que o '
+        'estabelecimento existe. Duas autoridades podem agir sobre a mesma instalação sem norma de '
+        'coordenação — o que confirma, deste lado, o que o ponto 6.4 observara.',
+    ])
+    nota(doc, [
+        '**Efeito na conclusão.** A questão 8 era a que poderia esvaziar a tese na prática, e não a '
+        'esvazia: o poder existe, mas com fundamento diferente daquele que a leitura contrária lhe '
+        'daria. A tese mantém-se, e ganha em precisão — o que muda não é se a câmara pode agir, é **com '
+        'que fundamento**.'])
+
+    h2(doc, '9.6', 'Especialidade ou posterioridade')
+    para(doc,
+         'A última questão só se põe a quem sustente que há conflito entre os dois diplomas. Este estudo '
+         'sustenta que não há — os campos não se sobrepõem quanto aos números. Ainda assim, importa '
+         'mostrar que, mesmo concedendo a premissa, nenhum dos dois critérios resolve a favor da tese '
+         'contrária.')
+    citacao(doc,
+            ['1. Quando se não destine a ter vigência temporária, a lei só deixa de vigorar se for '
+             'revogada por outra lei.',
+             '3. A lei geral não revoga a lei especial, excepto se outra for a intenção inequívoca do '
+             'legislador.'],
+            'N.ºs 1 e 3 do artigo 7.º do Código Civil, conferidos no Diário do Governo n.º 274, I série, '
+            'de 25 de novembro de 1966, a páginas 1886')
+    numlist(doc, [
+        '**A posterioridade não favorece o Decreto-Lei n.º 314/2003, ao contrário do que parece.** É '
+        'certo que é de 17 de dezembro de 2003 e o Decreto-Lei n.º 276/2001 é de 17 de outubro de 2001. '
+        'Mas o artigo 3.º do primeiro **nunca foi alterado**, ao passo que o segundo foi revisto em 2003, '
+        '2007, 2012, 2017, 2019 e 2021. Confrontados os textos **em vigor**, o mais recente é o do '
+        'diploma dos alojamentos.',
+        '**A especialidade não resolve, porque os diplomas são especiais em planos diferentes.** O '
+        'Decreto-Lei n.º 276/2001 é especial quanto à atividade de exploração de alojamentos; o '
+        'Decreto-Lei n.º 314/2003 é especial quanto à polícia sanitária. O n.º 3 do artigo 7.º do Código '
+        'Civil pressupõe uma relação de género e espécie que aqui não existe.',
+        '**E nenhum deles revogou o outro.** Nos termos do n.º 1 do artigo 7.º do Código Civil, a lei só '
+        'deixa de vigorar se for revogada; nenhum dos dois o fez, nem expressa nem tacitamente, quanto a '
+        'esta matéria.',
+    ])
+    destaque(doc, [
+        'O instrumento correto não é a revogação, é a **delimitação de âmbito**. Os critérios do artigo '
+        '7.º do Código Civil servem para escolher entre normas incompatíveis; não servem para decidir se '
+        'duas normas são incompatíveis. **Efeito na conclusão: neutro** — e, se alguma coisa, o critério '
+        'cronológico, bem aplicado, milita contra a tese da sobreposição.'])
+
+    h2(doc, '9.7', 'O peso das duas séries de elementos')
     para(doc,
          'Os elementos do ponto 6 provam que os dois diplomas se tocam: partilham o conceito de detentor, '
          'partilham o vocábulo alojamento, e o artigo 3.º é efetivamente aplicável a quem cria. Não provam, '
@@ -1255,9 +1337,10 @@ def construir(doc):
     pagebreak(doc)
     h1(doc, '17.', 'Questões em aberto e limites da análise')
     para(doc,
-         'Registo das questões cuja resposta condiciona a conclusão. São tratadas uma a uma; à medida que '
-         'cada uma recebe resposta, o capítulo 2 é atualizado. As questões 1 a 3 foram enumeradas pelo '
-         'grupo; as 4 a 9 resultaram da análise.')
+         'Registo das questões cuja resposta condiciona a conclusão. As questões 1 a 3 foram enumeradas '
+         'pelo grupo; as 4 a 9 resultaram da análise. **Todas receberam resposta**, e o capítulo 2 '
+         'incorpora o que de cada uma resultou. O quadro mantém-se como registo do percurso e para '
+         'reabertura, caso surja elemento novo.')
     tabela(doc,
            ['N.º', 'Questão', 'Estado'],
            [['1',
@@ -1295,12 +1378,12 @@ def construir(doc):
              'Pode a câmara municipal, ao abrigo do n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003, '
              'notificar o titular de um alojamento registado na DGAV para retirar animais para o canil '
              'ou gatil municipal?',
-             'Em aberto'],
+             'Respondida — capítulo 9'],
             ['9',
              'Havendo conflito entre os dois diplomas, prevalece a especialidade do Decreto-Lei n.º '
              '276/2001 quanto aos alojamentos ou a posterioridade do Decreto-Lei n.º 314/2003, à luz do '
              'n.º 3 do artigo 7.º do Código Civil?',
-             'Em aberto']],
+             'Respondida — capítulo 9']],
            [Cm(1.2), Cm(12.2), Cm(3.0)])
 
     h2(doc, '17.1', 'Limites materiais da análise')
