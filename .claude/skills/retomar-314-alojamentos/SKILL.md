@@ -104,9 +104,10 @@ da IGAI, de data ainda não estabelecida.
 
 Por ordem de utilidade — o detalhe está na PARTE X-A do checkpoint:
 
-1. **Decidir o que da PARTE 0-B entra no estudo.** Proposta de triagem: entram o facto de o Governo ter
-   declarado que os alojamentos nunca tiveram título (B.2) e o de ter citado em 2020 a redação já cessada do
-   DL n.º 116/98 (B.3); o resto é corroboração ou contexto.
+1. **Levar ao Word os três pontos que o utilizador reteve em 28.9.2026**, e só esses: a repartição do
+   art.º 3.º-G, o estatuto do médico veterinário municipal e a ausência de qualquer invocação do DL
+   n.º 314/2003. O quadro da triagem está no topo da PARTE 0-B do checkpoint. O que ele dispensou não se
+   repropõe.
 2. **Caso de Amarante** — mais de 300 cães num alojamento de criadora **registada**. É o teste empírico da
    questão central. **Adiado por decisão do utilizador; não retomar sem ele o pedir.**
 3. Acórdão de 9.9.2026 (não obtido; recurso anunciado pelo PAN).

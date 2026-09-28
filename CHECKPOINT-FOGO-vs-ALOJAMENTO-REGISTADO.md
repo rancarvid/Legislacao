@@ -161,9 +161,33 @@ objecto o número de animais, o bem-estar ou a falta de título de acesso. Está
 
 ## PARTE 0-B — As duas audições restantes, processadas em 28.9.2026
 
-As três gravações estão transcritas. **Nada disto foi levado ao Word**: o utilizador decidiu, em 28.9.2026,
-que só entra no estudo o que for relevante, e a apreciação abaixo é a minha proposta de triagem, não uma
-decisão tomada. Fica tudo aqui para se decidir depois.
+As três gravações estão transcritas. **Nada disto foi levado ao Word.**
+
+### Triagem decidida pelo utilizador em 28.9.2026
+
+Pedida uma síntese do que se retira de relevante para o trabalho, **excluindo o que é específico do caso de
+Santo Tirso**, o utilizador retinha três pontos e dispensou os restantes. Vale como decisão, não como
+hipótese:
+
+| Retido | Matéria | Onde está |
+|---|---|---|
+| ✅ | A repartição do art.º 3.º-G: o diretor-geral decide o encerramento, a câmara executa e recolhe. A autoridade nacional decide e depende de terceiro para cumprir | B.4 |
+| ✅ | O estatuto do médico veterinário municipal: dependência hierárquica e disciplinar do presidente da câmara, funcional do ministério pelo n.º 2 do art.º 4.º do DL n.º 116/98. Quem executa a decisão nacional responde a quem a não tomou | 9.5 do estudo; contexto em B.3 |
+| ✅ | O DL n.º 314/2003 e os limites por fogo nunca foram invocados em 160,5 minutos de audição | B.7 |
+| ❌ | O Governo ter citado em 2020 a redação cessada do DL n.º 116/98 | B.3 |
+| ❌ | Os números nacionais — 885 alojamentos titulados, 128 estruturas ilegais, canis municipais sem comunicação prévia | B.5 |
+| ❌ | A coima de 250 euros e o relatório que reduziu o problema a questões de higiene | B.6 |
+
+**Atenção à distinção entre os dois pontos que saem de B.3.** Fica retida a *substância* — a dupla
+dependência do médico veterinário municipal, que o estudo já estabelece pela própria norma. Fica de fora o
+*episódio* de o Governo ter lido em 30.7.2020 a redação introduzida pelo DL n.º 20/2019 e cessada em
+7.8.2019. São coisas distintas e a decisão incidiu só sobre a segunda.
+
+**B.2 não foi objecto desta triagem**, porque a síntese pedida excluía o que é específico de Santo Tirso e
+B.2 é exactamente isso — a declaração de que aqueles dois alojamentos nunca tiveram título. Mantém-se como
+achado do caso, disponível para a secção 9.5 quando e se o utilizador o quiser.
+
+Tudo o que foi dispensado fica escrito abaixo. Dispensado não é apagado: se o enquadramento mudar, está aqui.
 
 ### B.0 Ficheiros e cobertura
 
@@ -735,9 +759,11 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
    A posição institucional do Governo ficou apurada, e é o que essa parte registra. Sobra daqui:
    - reprocessar em `medium` o bloco 00:32–00:35 da audição da IGAI, se dela se vier a citar (ver B.8);
    - estabelecer a data dessa audição, que não está fixada (ver B.1).
-1. **[VIVA] Decidir o que da PARTE 0-B entra no estudo.** O utilizador decidiu em 28.9.2026 que só entra o
-   relevante, e nada foi levado ao Word. A minha proposta de triagem: B.2 e B.3 entram, B.4 é corroboração
-   dispensável, B.5 a B.7 são contexto, B.8 depende de reprocessamento. A decisão é do utilizador.
+1. **[VIVA] Levar ao Word os três pontos retidos na triagem de 28.9.2026** — a repartição do art.º 3.º-G
+   (B.4), o estatuto do médico veterinário municipal (9.5, contexto em B.3) e a ausência de qualquer
+   invocação do DL n.º 314/2003 (B.7). O quadro da triagem está no topo da PARTE 0-B. **Nada foi escrito
+   ainda**, e o utilizador pediu que se pergunte antes de cada aditamento. O que ele dispensou — o episódio
+   da redação cessada, os números nacionais e a coima de 250 euros — não se repropõe sem ele o pedir.
 2. **[VIVA] Caso de Amarante** — o requerimento do LIVRE de 13.7.2026 (`REQ 54_7CAPes…pdf`, na pasta
    `criador informal/`) refere o resgate de **mais de 300 cães de um alojamento de criadora registada na
    DGAV**. É o teste empírico da questão central, e mais directo que Santo Tirso, onde os abrigos não
