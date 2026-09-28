@@ -93,6 +93,15 @@ def construir(doc):
         'contraordenações do Decreto-Lei n.º 276/2001 não inclui uma única entrada sobre excesso de '
         'animais em alojamento. Categorias construídas sem este problema em vista, e organizadas segundo '
         'a separação aqui defendida. Capítulo 11.4.',
+        'A remoção dos animais pela autoridade municipal tem **duas bases legais expressas e '
+        'independentes**, em dois diplomas: o n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003, em que é a '
+        'própria câmara que notifica após vistoria conjunta; e o n.º 6 do artigo 3.º-G do Decreto-Lei n.º '
+        '276/2001 — «Compete às câmaras municipais executar as medidas necessárias ao cumprimento da '
+        'decisão […], nomeadamente proceder, quando necessário, à recolha dos animais» —, em que a câmara '
+        'executa decisão do diretor-geral. A primeira é autónoma, a segunda não. Determinar o '
+        '**encerramento** do alojamento, isso, é do diretor-geral (n.º 1 do artigo 3.º-G), e nunca da '
+        'câmara — salvo entre 30.1.2019 e 7.8.2019, por efeito do Decreto-Lei n.º 20/2019, cuja vigência '
+        'cessou. Capítulo 9.5.',
         '**A execução é o ponto fraco do sistema, e a causa é institucional.** Quem propõe a medida — o '
         'médico veterinário municipal — é autoridade sanitária veterinária concelhia com poderes '
         'conferidos pela autoridade nacional «a título pessoal, não delegável», que exerce «sem '
@@ -811,8 +820,11 @@ def construir(doc):
                            'correspondentes (mesmo esclarecimento)'],
             ['2012', 'A DGAV emite despacho pedindo à câmara municipal de Santo Tirso diligências '
                      'para **retirar os animais** do abrigo «Cantinho das Quatro Patas»'],
-            ['2018', 'A câmara obtém parecer jurídico externo que conclui que «as câmaras não têm '
-                     'competência para encerrar abrigos de animais»'],
+            ['2018', 'Um processo-crime relativo ao abrigo corre no tribunal de Santo Tirso e é '
+                     '**arquivado** — segundo o presidente da câmara, com os autos a consignarem que os '
+                     'animais não eram vítimas de maus-tratos. No mesmo ano a câmara obtém parecer '
+                     'jurídico externo que conclui que «as câmaras não têm competência para **encerrar** '
+                     'abrigos de animais»'],
             ['19.6.2020', 'Despacho n.º 6928/2020 — criação do **Grupo de Trabalho para o Bem-Estar '
                           'Animal**, invocado no esclarecimento do Governo como a via aberta para rever '
                           'o regime'],
@@ -826,12 +838,21 @@ def construir(doc):
                           '**nunca cumpriram os procedimentos do Decreto-Lei n.º 276/2001**; invoca esse '
                           'diploma, o **artigo 4.º do Decreto-Lei n.º 116/98** e o Despacho n.º '
                           '6928/2020'],
+            ['20.7.2020', 'A câmara **suspende o médico veterinário municipal**'],
+            ['23.7.2020', 'A Assembleia da República aprova a audição do presidente da câmara, realizada '
+                          'a 30 de julho'],
+            ['31.7.2020', 'O presidente da câmara declara publicamente que só «nos últimos dias» tomou '
+                          'conhecimento do documento de 2012, e invoca o parecer de 2018 (ver adiante — '
+                          'é a peça mais reveladora do caso)'],
             ['1.10.2020', 'Entra em vigor o artigo 1.º-A da Lei n.º 92/95, aditado pela Lei n.º 39/2020 '
                           '— **posterior ao incêndio** (ver adiante)'],
-            ['11.12.2024', 'O processo é remetido para julgamento. Entre os arguidos, o **ex-médico '
+            ['fim de 2022', 'O Ministério Público **arquiva** o processo por insuficiência de prova'],
+            ['26.3.2023', 'O processo é **reaberto**, após mobilização do PAN e de associações'],
+            ['dez. 2024', 'O processo é remetido para julgamento. Entre os arguidos, o **ex-médico '
                            'veterinário municipal** (acusado de conhecer os abrigos ilegais e de não ter '
                            'agido em tempo) e a **coordenadora municipal da Proteção Civil** (acusada de '
                            'não ter respondido aos alertas), além dos responsáveis dos dois abrigos'],
+            ['24.2.2026', 'Início do julgamento'],
             ['9.9.2026', 'O Tribunal de Matosinhos absolve os cinco arguidos. O coletivo consigna que '
                          'nenhum dos dois titulares de cargos públicos tinha poderes para ordenar a '
                          '**evacuação forçada** dos espaços privados na noite do incêndio. Em '
@@ -854,17 +875,27 @@ def construir(doc):
         '**Respeita a uma evacuação forçada na noite de um incêndio** — medida de emergência de proteção '
         'civil —, e não à notificação para remoção do n.º 5, que é ato de polícia sanitária com '
         'procedimento próprio e prazo fixado.',
+        '**E é, pelo percurso do processo, uma decisão sobre factos e imputação, não sobre competências '
+        'legais.** O processo foi arquivado pelo Ministério Público no final de 2022 por insuficiência de '
+        'prova, reaberto em março de 2023 por impulso do PAN e de associações, e em julgamento o próprio '
+        'Ministério Público declarou não ver prova de crime. Antes disso, já um processo-crime de 2018 '
+        'relativo ao mesmo abrigo havia sido arquivado. Uma absolvição neste percurso não é uma declaração '
+        'de que os municípios não têm poderes: é o desfecho de um processo em que a acusação não se '
+        'sustentou.',
         '**Encerrar não é retirar.** O parecer de 2018 concluiu que as câmaras não podem **encerrar**, e '
-        'está certo: o encerramento de estabelecimento é sanção acessória do artigo 69.º do Decreto-Lei '
-        'n.º 276/2001, aplicada pelo diretor-geral nos termos do artigo 70.º. Este estudo nunca afirmou '
-        'o contrário.',
+        'está certo: determinar o encerramento de um alojamento é competência do diretor-geral de '
+        'Alimentação e Veterinária, pelo n.º 1 do artigo 3.º-G do Decreto-Lei n.º 276/2001. Este estudo '
+        'nunca afirmou o contrário — embora até agora tenha indicado para isso o fundamento errado, o que '
+        'se corrige adiante.',
     ])
 
     h3(doc, 'O que o caso confirma')
     bullets(doc, [
-        '**A articulação real vai no sentido aqui sustentado.** Em 2012 foi a DGAV a pedir à câmara que '
-        'retirasse os animais. A prática da própria autoridade sanitária reconhece que o poder de '
-        'remoção é municipal — isto é, o n.º 5.',
+        '**A articulação real vai no sentido aqui sustentado.** Em 2012 foi a DGAV a dirigir-se à câmara '
+        'a propósito do abrigo; e em 2020 foi o presidente da câmara a descrever a sequência legal '
+        'identificando a autoridade administrativa dela como sendo, «neste caso, a câmara». As duas '
+        'autoridades envolvidas, em momentos e com interesses opostos, colocaram o município no mesmo '
+        'lugar — o do n.º 5.',
         '**E confirma, com factos, a inibição descrita no ponto 15.7.** Abrigos não registados em zona '
         'rural, com vistorias feitas e contraordenações instauradas, e animais que ali permaneceram até '
         'morrerem. O sistema reativo não impediu nada.',
@@ -879,6 +910,164 @@ def construir(doc):
         'que desencadeia o regime dos alojamentos é a **atividade**, não o registo — quem não se registou '
         'não fica fora do regime, fica em infração dentro dele.',
     ])
+    h3(doc, 'A norma que faltava a este estudo: o artigo 3.º-G')
+    enquadramento(doc, [
+        'O que segue corrige o presente estudo. Até aqui, o encerramento de um alojamento foi aqui '
+        'tratado como sanção acessória dos artigos 69.º e 70.º do Decreto-Lei n.º 276/2001. Está errado, '
+        'ou pelo menos incompleto: existe no mesmo diploma uma norma autónoma de polícia administrativa, '
+        'o artigo 3.º-G, que não tinha sido considerada e que muda o quadro da questão 8. Foi localizada '
+        'a partir do requerimento do Grupo Parlamentar do PAN de 22 de julho de 2020 e conferida no '
+        'Diário da República.'])
+    citacao(doc, [
+        '1 — O diretor-geral de Alimentação e Veterinária pode, mediante despacho, determinar a suspensão '
+        'da atividade ou o encerramento do alojamento, designadamente quando se verifique uma das '
+        'seguintes situações:',
+        'a) Existência de riscos higiossanitários que ponham em causa a saúde das pessoas e ou dos '
+        'animais;',
+        'b) Maus tratos aos animais;',
+        'c) Existência de graves problemas de saúde e bem-estar dos animais;',
+        'd) Falta de condições de segurança e de tranquilidade para as pessoas ou animais, bem como de '
+        'proteção do meio ambiente.',
+        '[…]',
+        '5 — O despacho que determine o encerramento do alojamento é notificado ao titular da exploração '
+        'do alojamento, devendo o alojamento cessar a sua atividade no prazo fixado pela DGAV, o qual não '
+        'deve exceder cinco dias úteis, sob pena de ser solicitado às autoridades administrativas e '
+        'policiais competentes o encerramento compulsivo.',
+        '6 — Compete às câmaras municipais executar as medidas necessárias ao cumprimento da decisão a que '
+        'se referem os n.os 3 e 4, nomeadamente proceder, quando necessário, à recolha dos animais.',
+    ], 'N.ºs 1, 5 e 6 do artigo 3.º-G do Decreto-Lei n.º 276/2001, na redação em vigor, aditado pelo '
+       'Decreto-Lei n.º 260/2012, de 12 de dezembro, e conferido no Diário da República, 1.ª série, n.º '
+       '240, de 12 de dezembro de 2012, a páginas 6981 e 6982')
+    nota(doc, [
+        '**Nota de conferência, e um erro na consolidação oficial.** A base consolidada indica como «1.ª '
+        'versão» deste artigo o Decreto-Lei n.º 265/2007, de 24 de julho. **Está errado.** Conferido o '
+        'Diário da República, 1.ª série, n.º 141, de 24 de julho de 2007, esse diploma — que respeita à '
+        'proteção dos animais em transporte — altera do Decreto-Lei n.º 276/2001 apenas o artigo 73.º, '
+        'relativo a taxas, no seu artigo 21.º. O artigo 3.º-G foi aditado pelo Decreto-Lei n.º 260/2012, '
+        'juntamente com todo o bloco dos artigos 3.º-B a 3.º-J, o que aliás se confirma pela remissão do '
+        'artigo 3.º-I para o balcão único do Decreto-Lei n.º 92/2010 — posterior a 2007.',
+        '**Observação.** Registe-se o que isto significa para o método do ponto 18.2: a advertência de que '
+        'o compilador localiza e o jornal oficial cita não vale apenas contra compiladores privados. **A '
+        'consolidação oficial também erra**, e neste caso erra na indicação de proveniência de uma norma '
+        'central para a questão 8. O texto do artigo, esse, coincide.'])
+    destaque(doc, [
+        'Três consequências, e a segunda é a mais importante deste ponto.',
+        '**Primeira — o parecer de 2018 estava certo, mas não pela razão que este estudo lhe deu.** As '
+        'câmaras não têm competência para **determinar** o encerramento de um alojamento; tem-na o '
+        'diretor-geral, e tem-na não como sanção acessória de um processo de contraordenação, mas como '
+        'medida de polícia administrativa autónoma, decidida em processo próprio e fundada, entre o mais, '
+        'em **maus tratos aos animais** e em **graves problemas de saúde e bem-estar dos animais**. O '
+        'fundamento correto é o artigo 3.º-G, não os artigos 69.º e 70.º.',
+        '**Segunda — existe uma segunda base legal expressa para a remoção municipal dos animais, e é '
+        'esta.** O n.º 6 diz, literalmente: «Compete às câmaras municipais executar as medidas necessárias '
+        'ao cumprimento da decisão […], nomeadamente proceder, quando necessário, **à recolha dos '
+        'animais**». Até aqui a resposta à questão 8 assentava apenas no n.º 5 do artigo 3.º do '
+        'Decreto-Lei n.º 314/2003. Passa a assentar em dois preceitos independentes, em dois diplomas '
+        'diferentes, ambos a dizer o mesmo: **a decisão é da autoridade sanitária, a recolha é do '
+        'município**.',
+        '**Terceira — o despacho da DGAV de 2012 deixa de ser um episódio e passa a ser a aplicação da '
+        'lei.** Se a DGAV determinou o encerramento e pediu à câmara diligências para retirar os animais, '
+        'fez exatamente o que os n.ºs 5 e 6 mandam fazer. A divergência das notícias entre «retirar» e '
+        '«encerrar» resolve-se: são as duas faces da mesma norma — o diretor-geral encerra, a câmara '
+        'recolhe.'])
+
+    h3(doc, 'O intervalo de 2019, e uma citação parlamentar desatualizada')
+    para(doc,
+         'Há um pormenor de vigência que explica uma confusão pública do caso. O artigo 3.º-G foi alterado '
+         'pelo Decreto-Lei n.º 20/2019, de 30 de janeiro, que transferiu para os órgãos municipais '
+         'competências no domínio da proteção e saúde animal. Nessa redação, o poder de encerrar passou '
+         'para o presidente da câmara.')
+    citacao(doc, [
+        '1 — O presidente da câmara municipal pode, mediante despacho, determinar a suspensão da atividade '
+        'ou o encerramento do alojamento, designadamente quando se verifique uma das seguintes situações:',
+        '[…]',
+        '6 — Compete ao presidente da câmara municipal executar as medidas necessárias ao cumprimento da '
+        'decisão a que se referem os n.os 3 e 4, nomeadamente proceder, quando necessário, à recolha dos '
+        'animais.',
+    ], 'N.ºs 1 e 6 do artigo 3.º-G do Decreto-Lei n.º 276/2001, na redação dada pelo Decreto-Lei n.º '
+       '20/2019, conferida no Diário da República, 1.ª série, n.º 21, de 30 de janeiro de 2019, a páginas '
+       '671')
+    para(doc,
+         'Essa redação vigorou pouco: a **Resolução da Assembleia da República n.º 138/2019, de 8 de '
+         'agosto**, fez cessar a vigência de todo o Decreto-Lei n.º 20/2019, repristinando o texto '
+         'anterior. O poder de encerrar voltou ao diretor-geral, e assim está hoje.')
+    tabela(doc,
+           ['Período', 'Quem determina o encerramento', 'Quem recolhe os animais'],
+           [['até 29.1.2019', 'Diretor-geral de Alimentação e Veterinária', 'Câmaras municipais (n.º 6)'],
+            ['30.1.2019 a 7.8.2019', 'Presidente da câmara municipal', 'Presidente da câmara (n.º 6)'],
+            ['desde 8.8.2019', 'Diretor-geral de Alimentação e Veterinária', 'Câmaras municipais (n.º 6)']],
+           [Cm(4.0), Cm(6.6), Cm(6.0)])
+    nota(doc, [
+        '**Consequência para a leitura pública do caso.** O requerimento do Grupo Parlamentar do PAN de '
+        '22 de julho de 2020, que fundou a audição parlamentar do presidente da câmara, censura a '
+        'autarquia por nunca ter encerrado os abrigos «conforme previsto no n.º 1 do artigo 3.º-G do '
+        'Decreto-lei n-º 276/2001» e transcreve esse número na versão que o atribui ao presidente da '
+        'câmara municipal. Ora essa redação havia cessado a sua vigência a **8 de agosto de 2019** — '
+        'quase um ano antes do incêndio. À data dos factos, e à data do requerimento, o poder de encerrar '
+        'era do diretor-geral da DGAV.',
+        '**Observação.** Não se retira disto juízo sobre a substância da censura política, que não é '
+        'matéria deste estudo. Retira-se o que interessa ao método: **a premissa normativa da audição '
+        'parlamentar estava desatualizada**, e num sentido que deslocava a responsabilidade. É exemplo do '
+        'que o ponto 18.2 sustenta — a norma cita-se contra o jornal oficial e contra a data, sempre, '
+        'inclusive quando a invoca um grupo parlamentar.'])
+
+    h3(doc, 'O que o presidente da câmara disse em 2020, e o que isso concede')
+    para(doc,
+         'A peça mais reveladora do caso não é a decisão penal: são as declarações públicas do presidente '
+         'da câmara em 31 de julho de 2020, quando confrontado com o documento da DGAV de 2012. Invocou o '
+         'parecer de 2018 — «as câmaras não têm competência para **encerrar** abrigos de animais» — mas '
+         'acrescentou uma objeção de procedimento que vale mais do que a invocação.')
+    citacao(doc, [
+        '[…] deveriam ter notificado primeiro a proprietária para em cinco dias poderem encerrar [o '
+        'abrigo] e, se assim não fosse, abeirar-se, então, das suas autoridades, a administrativa, neste '
+        'caso a câmara, e a policial, a GNR, para encerrar esse canil.',
+    ], 'Declarações do presidente da Câmara Municipal de Santo Tirso, 31.7.2020, conforme noticiado; '
+       'transcrição a partir da imprensa (ver Anexo C.5)')
+    destaque(doc, [
+        'Leia-se ao lado do n.º 5 e do n.º 6 do artigo 3.º. O autarca descreve exatamente a sequência '
+        'legal — **notificação do detentor com prazo**, e só depois recurso à «autoridade administrativa» '
+        'e à autoridade policial —, e identifica a autoridade administrativa dessa sequência nestes '
+        'termos: «**neste caso a câmara**».',
+        'Isto é uma concessão, e é a que interessa. O que o presidente da câmara nega é ter competência '
+        'para **encerrar** — e nisso tem razão, pelo n.º 1 do artigo 3.º-G. O que ele **não** nega é ser a '
+        'câmara a autoridade administrativa que intervém depois da notificação. Nega-se a competência que a '
+        'lei não lhe dá, e admite-se a posição que a lei lhe atribui — que é, palavra por palavra, a do '
+        'n.º 6 do mesmo artigo.'])
+    destaque(doc, [
+        '**E a descrição é exata.** Os «cinco dias» não são invenção nem lapso: são o n.º 5 do artigo '
+        '3.º-G — «no prazo fixado pela DGAV, o qual não deve exceder **cinco dias úteis**, sob pena de ser '
+        'solicitado às **autoridades administrativas e policiais competentes** o encerramento compulsivo». '
+        'O autarca estava a descrever, com precisão, a norma que acabou de se transcrever. O que ele '
+        'chamou «autoridade administrativa, neste caso a câmara» é o que o n.º 6 chama, sem margem para '
+        'dúvida, «compete às câmaras municipais executar […], nomeadamente proceder […] à recolha dos '
+        'animais».'])
+    para(doc,
+         'Fica assim esclarecido o que este estudo tinha por resolver quanto à questão 8 e resolvia com '
+         'uma só norma. A defesa pública do município, em 2020, não foi a de não ter poderes: foi a de que '
+         'a DGAV não teria percorrido o procedimento que faz nascer o dever municipal de executar. É uma '
+         'objeção de procedimento, e pressupõe necessariamente a competência que se diz não ter sido '
+         'acionada.')
+    nota(doc, [
+        '**Observação.** Duas coisas distintas, e convém não as somar. Que o município seja a autoridade '
+        'de execução é agora seguro, e por duas vias — n.º 6 do artigo 3.º-G do Decreto-Lei n.º 276/2001 e '
+        'n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003. Que o município deva agir por iniciativa própria '
+        'sem decisão prévia da DGAV é outra questão, e a resposta difere entre as duas vias: no artigo '
+        '3.º-G a câmara executa uma decisão alheia; no n.º 5 do artigo 3.º é a própria câmara que notifica, '
+        'após vistoria conjunta do delegado de saúde e do médico veterinário municipal. **A segunda via é '
+        'autónoma; a primeira não.** Quem quiser sustentar a inércia municipal como legalmente imposta tem '
+        'de responder pela segunda, e ninguém, no caso, o fez.'])
+    nota(doc, [
+        '**Divergência de fonte, assinalada.** As notícias não coincidem quanto ao conteúdo do documento '
+        'da DGAV de 2012: umas dizem que «solicitava diligências à câmara» para **retirar os animais**, '
+        'outras que solicitava o **encerramento** do abrigo. A diferença não é de somenos, porque as duas '
+        'coisas têm regimes distintos e autoridades distintas. Não se obteve o documento; o estudo não '
+        'fixa a sua redação.',
+        '**Observação.** A coerência interna favorece a primeira versão. A DGAV não precisaria de pedir à '
+        'câmara que encerrasse, porque o encerramento é competência sua, pelos artigos 69.º e 70.º do '
+        'Decreto-Lei n.º 276/2001. Pedir à câmara que **retire os animais** é, ao contrário, exatamente o '
+        'que a lei manda pedir-lhe — é o n.º 5 do artigo 3.º. Mas isto é inferência a partir da '
+        'arquitetura legal, não leitura do documento.'])
+
     h3(doc, 'A raiz institucional: o estatuto do médico veterinário municipal')
     para(doc,
          'O esclarecimento do Governo de 21 de julho de 2020 invoca, ao lado do Decreto-Lei n.º 276/2001, '
@@ -928,7 +1117,13 @@ def construir(doc):
         'impopular depende disciplinarmente de quem a suportaria politicamente. A lei quis blindar essa '
         'posição com a fórmula «sem dependência hierárquica», mas blindou-a apenas no perímetro da saúde '
         'pública e deixou intacta a dependência quanto a tudo o resto. Nos abrigos sem registo, onde o '
-        'fundamento próprio é o bem-estar animal e não a saúde pública, a blindagem não cobre o ato.'])
+        'fundamento próprio é o bem-estar animal e não a saúde pública, a blindagem não cobre o ato.',
+        '**E o caso ilustrou a assimetria em dois dias.** A 20 de julho de 2020 a câmara **suspendeu o '
+        'médico veterinário municipal**. Podia fazê-lo, e sem discutir o mérito técnico de coisa alguma: é '
+        'o n.º 1 do artigo 4.º a funcionar. O que a câmara não podia era dar-lhe ordem sobre uma decisão '
+        'de autoridade sanitária, porque esse poder não lhe pertence — n.ºs 2 e 3 do artigo 2.º. Pode '
+        'sancionar o titular; não pode comandar o poder. A lei separou as duas coisas no papel e reuniu-as '
+        'na mesma relação de trabalho.'])
 
     nota(doc, [
         '**Advertência de fonte.** Não se leu a decisão. O que antecede resulta de notícias sobre a '
@@ -1693,11 +1888,28 @@ def construir(doc):
         'útil, e condiciona o que sobre ele se pode afirmar. Acresce que o PAN anunciou recurso: **a '
         'decisão não transitou**, e o que dela se escreva é provisório por duas razões — não se leu, e '
         'pode ser revogada.',
-        'Não se obtiveram dois documentos administrativos do caso de Santo Tirso que seriam decisivos: o '
-        '**parecer jurídico de 2018** obtido pela câmara e o **despacho da DGAV de 2012** que lhe pediu a '
-        'remoção dos animais. Conhecem-se por referência na imprensa. O segundo é o mais relevante, '
-        'porque é a autoridade sanitária nacional a reconhecer que o poder de remoção é municipal; '
-        'convém obter o texto para o poder citar como tal.',
+        'Não se obtiveram dois documentos administrativos do caso de Santo Tirso: o **parecer jurídico de '
+        '2018** obtido pela câmara e o **despacho da DGAV de 2012**. A falta perdeu, entretanto, parte da '
+        'sua gravidade: localizado o artigo 3.º-G, o conteúdo provável do despacho de 2012 deixa de ser '
+        'conjetura e passa a ser a aplicação de uma norma conhecida (ver 9.5). Procuraram-se; nenhum dos dois é ato '
+        'sujeito a publicação no Diário da República e a pesquisa não os localizou em fonte primária. '
+        'Conhecem-se por referência na imprensa, que **divergem quanto ao conteúdo do despacho de 2012** — '
+        'remoção dos animais numa versão, encerramento noutra. Fica assinalado em 9.5, e o estudo não fixa '
+        'a redação. Vias que restam, por ordem de utilidade: requerimento de acesso a documento '
+        'administrativo à DGAV e à Câmara Municipal de Santo Tirso, nos termos da Lei n.º 26/2016; as '
+        'atas da câmara de 2012 e de 2018; e o processo da audição parlamentar de 30 de julho de 2020, '
+        'onde o assunto foi diretamente tratado.',
+        'Consultou-se o registo oficial das **audições parlamentares n.ºs 32-CAM-XIV e 33-CAM-XIV, de 30 '
+        'de julho de 2020**, e obteve-se o requerimento do PAN que fundou a primeira. As audições, porém, '
+        '**só têm gravação vídeo e não ata**, pelo que o seu teor não foi transcrito. Ver e transcrever a '
+        'gravação da audição do presidente da câmara é **diligência recomendada**: é a fonte primária mais '
+        'acessível para as posições institucionais do caso, e é onde o documento de 2012 terá sido '
+        'discutido em contraditório.',
+        'Quanto ao artigo 3.º-G, ficam por examinar duas coisas. Primeiro, se existe **prática decisória '
+        'da DGAV** ao seu abrigo — despachos de suspensão ou de encerramento —, e se são publicitados no '
+        'balcão único e no sítio da DGAV, como manda o artigo 3.º-I; havendo-os, medem a efetividade real '
+        'do regime. Segundo, o que sucedeu, no plano das competências municipais, entre 30 de janeiro e 7 '
+        'de agosto de 2019, e se algum município usou nesse intervalo o poder que então tinha.',
         'A **doutrina em matéria de propriedade horizontal** referida em 11.3 não foi consultada em '
         'primeira mão — conhece-se pela sua refutação no acórdão do Tribunal da Relação de Guimarães. '
         'Não afeta a conclusão, porque essa posição é contrária à aqui sustentada apenas quanto ao '
@@ -1734,8 +1946,14 @@ def construir(doc):
     numlist(doc, [
         '**Atos posteriores a 1976** — o PDF do Diário da República tem camada de texto e pode ser lido e '
         'pesquisado diretamente. Foi assim que se obtiveram, para este estudo, o Diário da República n.º '
-        '241, de 17 de outubro de 2001, o n.º 290, de 17 de dezembro de 2003, e o n.º 104, de 29 de maio '
-        'de 2026.',
+        '241, de 17 de outubro de 2001, o n.º 290, de 17 de dezembro de 2003, o n.º 21, de 30 de janeiro '
+        'de 2019, e o n.º 104, de 29 de maio de 2026.',
+        '**Como chegar ao PDF sem adivinhar o endereço** — a via fiável é o identificador europeu de '
+        'legislação. Um endereço da forma `data.dre.pt/eli/<tipo>/<número>/<ano>/<mês>/<dia>/p/dre/pt/pdf` '
+        'devolve diretamente o PDF do jornal oficial. Para o Decreto-Lei n.º 20/2019, de 30 de janeiro, é '
+        '`data.dre.pt/eli/dec-lei/20/2019/01/30/p/dre/pt/pdf`. **Este foi o achado metodológico mais útil '
+        'do estudo**: dispensa procurar o número de páginas no nome do ficheiro, que é o que faz falhar a '
+        'via direta.',
         '**Atos anteriores a 1976** — o PDF é uma digitalização sem camada de texto. A pesquisa por '
         'palavra falha, mas a página lê-se convertendo-a em imagem. Foi assim que se conferiu o artigo '
         '7.º do Código Civil no Diário do Governo n.º 274, I série, de 25 de novembro de 1966, a '
@@ -1746,9 +1964,15 @@ def construir(doc):
         'Eleições.',
     ])
     destaque(doc, [
-        'A regra prática que daqui resulta: **um compilador privado serve para localizar a norma, nunca '
-        'para a citar**. A citação faz-se sempre contra o PDF do jornal oficial, pelo caminho que a data '
-        'do ato determinar.'])
+        'A regra prática que daqui resulta: **um compilador serve para localizar a norma, nunca para a '
+        'citar**. A citação faz-se sempre contra o PDF do jornal oficial, pelo caminho que a data do ato '
+        'determinar.',
+        'E a regra não vale só contra compiladores privados. Este estudo encontrou **um erro na '
+        'consolidação oficial**: a indicação de que o artigo 3.º-G do Decreto-Lei n.º 276/2001 teria sido '
+        'aditado pelo Decreto-Lei n.º 265/2007, quando foi aditado pelo Decreto-Lei n.º 260/2012 — o de '
+        '2007 altera daquele diploma apenas o artigo 73.º. O texto do artigo está correto na '
+        'consolidação; a proveniência não. Quem cite proveniências a partir da consolidação, sem abrir o '
+        'jornal oficial, arrisca reproduzir o erro. Ver 9.5.'])
 
     # ------------------------------------------------------------------ Anexo A
     pagebreak(doc)
@@ -1808,6 +2032,11 @@ def construir(doc):
             ['n.ºs 1 a 5 do art.º 25.º', 'DL n.º 276/2001', 'Instalações individualizadas'],
             ['n.º 1 do art.º 27.º', 'DL n.º 276/2001', 'Dimensões mínimas — anexo III'],
             ['n.º 2 do art.º 67.º-A', 'DL n.º 276/2001', 'Acesso — «casas de habitação e terrenos privados»'],
+            ['n.ºs 1, 5 e 6 do art.º 3.º-G', 'DL n.º 276/2001 (adit. DL n.º 260/2012)',
+             'Suspensão e encerramento de alojamentos — decisão do diretor-geral; prazo de cinco dias '
+             'úteis; **execução e recolha dos animais pelas câmaras municipais**'],
+            ['n.ºs 1 e 6 do art.º 3.º-G', 'DL n.º 276/2001 (red. DL n.º 20/2019)',
+             'Mesma matéria atribuída ao presidente da câmara — vigência cessada em 8.8.2019'],
             ['art.º 70.º', 'DL n.º 276/2001', 'Instrução e decisão dos processos de contraordenação'],
             ['n.ºs 2, 3 e 4 do art.º 2.º', 'DL n.º 116/98',
              'Médico veterinário municipal — autoridade sanitária veterinária concelhia; poderes '
@@ -1846,6 +2075,18 @@ def construir(doc):
         '**Decreto-Lei n.º 116/98, de 5 de maio** — carreira de médico veterinário municipal. Diário da '
         'República, I série-A, n.º 103, de 5.5.1998, p. 1990. Página conferida por conversão em imagem; '
         'n.ºs 2, 3 e 4 do artigo 2.º e n.º 1 do artigo 4.º citados verbatim no ponto 9.5.',
+        '**Decreto-Lei n.º 260/2012, de 12 de dezembro** — adita ao Decreto-Lei n.º 276/2001 os artigos '
+        '3.º-B a 3.º-J, entre eles o **artigo 3.º-G** (suspensão e encerramento de alojamentos). Diário da '
+        'República, 1.ª série, n.º 240, de 12.12.2012, pp. 6981-6982. **Conferido no jornal oficial**, '
+        'contra indicação errada da consolidação oficial (ver 9.5).',
+        '**Decreto-Lei n.º 265/2007, de 24 de julho** — Diário da República, 1.ª série, n.º 141, de '
+        '24.7.2007. Consultado para excluir a atribuição que lhe é feita pela consolidação: do Decreto-Lei '
+        'n.º 276/2001 altera apenas o artigo 73.º, pelo seu artigo 21.º.',
+        '**Decreto-Lei n.º 20/2019, de 30 de janeiro** — transferência de competências para os órgãos '
+        'municipais nos domínios da proteção e saúde animal e da segurança dos alimentos. Diário da '
+        'República, 1.ª série, n.º 21, de 30.1.2019; o artigo 3.º-G do Decreto-Lei n.º 276/2001 na sua '
+        'redação consta de p. 671. **Vigência cessada** pela **Resolução da Assembleia da República n.º '
+        '138/2019, de 8 de agosto**.',
         '**Decreto-Lei n.º 10/2015, de 16 de janeiro** — Regime Jurídico de Acesso e Exercício de '
         'Atividades de Comércio, Serviços e Restauração.',
         '**Regulamento Geral das Edificações Urbanas** (Decreto-Lei n.º 38 382, de 7 de agosto de 1951) — '
@@ -1916,9 +2157,12 @@ def construir(doc):
         '**Parecer jurídico externo obtido pela Câmara Municipal de Santo Tirso (2018)** — conclui que «as '
         'câmaras não têm competência para encerrar abrigos de animais». **Texto não obtido**; conhecido '
         'por referência na imprensa. Tratado em 9.5.',
-        '**Despacho da DGAV de 2012** dirigido à Câmara Municipal de Santo Tirso, pedindo diligências para '
-        'retirar os animais do abrigo «Cantinho das Quatro Patas». **Texto não obtido**; conhecido por '
-        'referência na imprensa e compatível com o esclarecimento governamental de 2020.',
+        '**Despacho da DGAV de 2012** dirigido à Câmara Municipal de Santo Tirso a propósito do abrigo '
+        '«Cantinho das Quatro Patas». **Texto não obtido**, e procurado sem êxito: não é ato sujeito a '
+        'publicação no Diário da República, e a pesquisa não o localizou em fonte primária. Conhece-se '
+        'pelas notícias de 31.7.2020 e pelas declarações do presidente da câmara nessa data, que o '
+        'confirmam mas divergem quanto ao seu conteúdo — diligências para **retirar os animais**, numa '
+        'versão; **encerramento** do abrigo, noutra. Tratado em 9.5, com a divergência assinalada.',
         '**«Esclarecimento sobre legalidade dos alojamentos de hospedagem de animais sem fins lucrativos '
         'afetados pelo incêndio de Santo Tirso»**, XXII Governo, Secretaria de Estado da Agricultura e do '
         'Desenvolvimento Rural, 21.7.2020. **Lido.** Fonte do histórico de vistorias desde 2006, da '
@@ -1926,6 +2170,17 @@ def construir(doc):
         'procedimentos do Decreto-Lei n.º 276/2001.',
         '**Despacho n.º 6928/2020, de 19 de junho** — Grupo de Trabalho para o Bem-Estar Animal, invocado '
         'naquele esclarecimento.',
+        '**Requerimento do Grupo Parlamentar do PAN de 22 de julho de 2020**, dirigido ao presidente da '
+        'Comissão de Agricultura e Mar, para audição do presidente da Câmara Municipal de Santo Tirso '
+        '(Audição parlamentar n.º 32-CAM-XIV). **Obtido e lido na íntegra.** É a fonte que permitiu '
+        'localizar o artigo 3.º-G, e é onde consta a transcrição desatualizada desse artigo tratada em '
+        '9.5.',
+        '**Audição parlamentar n.º 32-CAM-XIV**, Comissão de Agricultura e Mar, 30.7.2020 — presidente da '
+        'Câmara Municipal de Santo Tirso, a requerimento do PAN. Registo oficial consultado; **existe '
+        'gravação vídeo e não ata**, pelo que o teor não foi transcrito.',
+        '**Audição parlamentar n.º 33-CAM-XIV**, na mesma data — Ministra da Agricultura, Ministro da '
+        'Administração Interna e Secretária de Estado da Administração Interna, a requerimento do BE, do '
+        'PAN e da Deputada Não Inscrita Cristina Rodrigues. Idem.',
     ])
 
     h2(doc, 'C.5', 'Imprensa — caso de Santo Tirso')
@@ -1934,8 +2189,18 @@ def construir(doc):
          'como fonte de direito. As peças consultadas divergem no número de animais mortos (54, 73, 92, '
          '93), pelo que o estudo não fixa um número.')
     bullets(doc, [
+        '**Público**, 20.7.2020 — «Abrigos de animais de Santo Tirso eram ilegais e já tinham sido '
+        'fiscalizados»; e, na mesma data, a suspensão do médico veterinário municipal pela câmara.',
+        '**Diário de Notícias** e **Observador**, 31.7.2020 — «Autarca diz só soube há dias da notificação '
+        'de 2012 para fechar canil» / «Autarca de Santo Tirso "só nos últimos dias" soube que DGAV quis '
+        'fechar abrigo em 2012». **Fonte da transcrição das declarações do presidente da câmara citada em '
+        '9.5**, e do parecer de 2018. É também daqui que resulta a divergência sobre o conteúdo do '
+        'despacho de 2012.',
         '**Público**, 11.12.2024 — remessa do processo para julgamento; identificação dos arguidos e do '
         'número de crimes imputados a cada um.',
+        '**Cronologia processual** — arquivamento pelo Ministério Público no final de 2022 por '
+        'insuficiência de prova; reabertura em 26.3.2023 por impulso do PAN e de associações; pronúncia '
+        'em dezembro de 2024; início do julgamento em 24.2.2026.',
         '**Jornal de Notícias** — cobertura do julgamento, incluindo a posição do Ministério Público de '
         'não ver prova de crime.',
         '**Cobertura da leitura da decisão de 9.9.2026** — absolvição dos cinco arguidos e fundamento '
