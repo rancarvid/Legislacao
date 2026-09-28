@@ -74,6 +74,10 @@ def construir(doc):
         '«for autorizado alojamento até ao máximo de seis animais adultos». Daqui resulta que o artigo '
         'alcança quem quer que aloje, incluindo o titular de alojamento registado; o que o mantém fora '
         'dos números é a unidade de contagem, não a palavra. Capítulo 9.',
+        'Desde 1 de outubro de 2020, o artigo 1.º-A da Lei n.º 92/95, aditado pela Lei n.º 39/2020, '
+        'impõe aos municípios o **dever** de desencadear a recolha ou captura de animais havendo '
+        'evidência de sinais de crimes de maus-tratos — poder autónomo, que não depende de fogo, de '
+        'habitação nem de registo do alojamento. Capítulo 9.',
         'A **coima** do artigo 3.º só existe dentro de casa: a al. c) do n.º 3 do artigo 14.º tipifica '
         'a permanência de animais «em habitações e terrenos anexos», e o tipo não pode ser alargado. '
         'Fora daí resta o remédio administrativo do n.º 5. Capítulo 9.',
@@ -826,6 +830,48 @@ def construir(doc):
         'protege ninguém. É argumento de política legislativa, não de interpretação — mas é o argumento '
         'mais forte a favor de uma revisão que atribua expressamente a competência e os meios.'])
 
+    h3(doc, 'A alteração de 2020: um poder novo, que o caso não conheceu')
+    para(doc,
+         'A Lei n.º 39/2020, de 18 de agosto, que «altera o regime sancionatório aplicável aos crimes '
+         'contra animais de companhia, procedendo à quinquagésima alteração ao Código Penal, à trigésima '
+         'sétima alteração ao Código de Processo Penal e à terceira alteração à Lei n.º 92/95, de 12 de '
+         'setembro», aditou àquela lei um artigo que interessa diretamente a esta questão.')
+    citacao(doc,
+            ['1 — Em caso de evidência de sinais da prática de crimes de maus-tratos contra animais de '
+             'companhia, as forças de segurança, os órgãos de polícia criminal, a Direção-Geral de '
+             'Alimentação e Veterinária e os municípios devem desencadear os meios para proceder à '
+             'recolha ou captura dos mesmos.',
+             '2 — Para o efeito previsto no número anterior, pode ser solicitada a emissão de mandado '
+             'judicial através da autoridade judiciária competente que assegure o acesso das forças de '
+             'segurança ou órgãos de polícia criminal aos locais onde os referidos animais se encontrem.'],
+            'Artigo 1.º-A da Lei n.º 92/95, aditado pela Lei n.º 39/2020, conferido no Diário da '
+            'República, 1.ª série, n.º 160, de 18 de agosto de 2020, a páginas 11')
+    destaque(doc, [
+        'É um poder **autónomo** de recolha ou captura, atribuído expressamente aos municípios, e '
+        'formulado como **dever** — «devem desencadear os meios». Não depende de fogo, de habitação, de '
+        'registo do alojamento, nem do artigo 3.º do Decreto-Lei n.º 314/2003. O seu pressuposto é '
+        'outro: a evidência de sinais da prática de crimes de maus-tratos.'])
+    bullets(doc, [
+        '**Fecha parte da lacuna do ponto 15.7**, mas só parte: cobre o maus-tratos, não o mero excesso '
+        'numérico nem a insalubridade que não chegue a ilícito criminal.',
+        '**Confirma a linha do argumento do silêncio qualificado.** Quando o legislador quis atribuir aos '
+        'municípios um poder de retirar animais, atribuiu-o expressamente, em norma própria e com o '
+        'verbo no imperativo.',
+        '**Uma assimetria a registar.** O mandado judicial do n.º 2 assegura o acesso «das forças de '
+        'segurança ou órgãos de polícia criminal» — não dos municípios. O município que veja o acesso '
+        'recusado não tem, por esta via, mandado próprio; terá de recorrer ao n.º 2 do artigo 67.º-A do '
+        'Decreto-Lei n.º 276/2001, que o admite para as autoridades competentes, entre as quais figura, '
+        'nos termos da al. x) do n.º 1 do artigo 2.º.',
+    ])
+    nota(doc, [
+        '**Consequência para a leitura do caso de Santo Tirso.** A Lei n.º 39/2020 foi aprovada em 23 de '
+        'julho de 2020 e entrou em vigor, nos termos do seu artigo 6.º, «no primeiro dia do segundo mês '
+        'seguinte ao da sua publicação» — **1 de outubro de 2020**. O incêndio ocorreu em 18 de julho de '
+        '2020. **O poder do artigo 1.º-A não existia à data dos factos.** A absolvição não pode, por '
+        'isso, ser lida como afirmando que os municípios carecem hoje de poderes de recolha. A '
+        'proximidade de datas entre o incêndio e a aprovação é cronológica; o processo legislativo '
+        'precedeu-o, e não se verificou se o caso influenciou o debate final.'])
+
     h2(doc, '9.6', 'Especialidade ou posterioridade')
     para(doc,
          'A última questão só se põe a quem sustente que há conflito entre os dois diplomas. Este estudo '
@@ -1333,6 +1379,9 @@ def construir(doc):
             ['Falta de comunicação prévia, havendo atividade',
              'Al. a) do n.º 1 do artigo 68.º do Decreto-Lei n.º 276/2001',
              'Só se houver fim lucrativo'],
+            ['Dever de recolha ou captura, havendo evidência de sinais de crimes de maus-tratos',
+             'Artigo 1.º-A da Lei n.º 92/95, aditado pela Lei n.º 39/2020',
+             'Dever autónomo dos municípios, desde 1.10.2020 — ver ponto 9.5'],
             ['Vacinação antirrábica, cães perigosos, ordenamento e ruído', 'Vários', 'Laterais']],
            [Cm(6.4), Cm(5.4), Cm(4.8)])
     para(doc,
