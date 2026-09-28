@@ -189,6 +189,18 @@ achado do caso, disponível para a secção 9.5 quando e se o utilizador o quise
 
 Tudo o que foi dispensado fica escrito abaixo. Dispensado não é apagado: se o enquadramento mudar, está aqui.
 
+**Os três retidos foram escritos no estudo em 28.9.2026**, por ordem expressa do utilizador:
+
+| Ponto | Onde ficou no estudo |
+|---|---|
+| Repartição do art.º 3.º-G e a dependência de execução | 9.5, novo h3 «Quem decide não executa: a dependência estrutural do artigo 3.º-G», com a citação parlamentar [02:17:06–02:17:28] e observação de política legislativa |
+| Estatuto do médico veterinário municipal | 9.5, «A raiz institucional», alargada com os n.ºs 2, 3 e **4** do art.º 4.º do DL n.º 116/98 — a linha funcional corre para o ministério e, em concorrência de obrigações, **prevalece o serviço municipal** |
+| Ausência de invocação do DL n.º 314/2003 | 17.1, entre os limites da análise, como argumento de silêncio e não como fundamento |
+
+Achado acrescentado durante a redação: o **n.º 4 do art.º 4.º do DL n.º 116/98** — «Em caso de concorrência
+de obrigações, prevalece o serviço municipal» — não constava do estudo e é a regra que fecha a arquitetura.
+Conferido no DR, I série-A, n.º 103, de 5.5.1998, p. 1991.
+
 ### B.0 Ficheiros e cobertura
 
 Todos em `criador informal/audições parlamentares/transcricoes/`, todos `.txt`, todos versionados.
@@ -759,11 +771,9 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
    A posição institucional do Governo ficou apurada, e é o que essa parte registra. Sobra daqui:
    - reprocessar em `medium` o bloco 00:32–00:35 da audição da IGAI, se dela se vier a citar (ver B.8);
    - estabelecer a data dessa audição, que não está fixada (ver B.1).
-1. **[VIVA] Levar ao Word os três pontos retidos na triagem de 28.9.2026** — a repartição do art.º 3.º-G
-   (B.4), o estatuto do médico veterinário municipal (9.5, contexto em B.3) e a ausência de qualquer
-   invocação do DL n.º 314/2003 (B.7). O quadro da triagem está no topo da PARTE 0-B. **Nada foi escrito
-   ainda**, e o utilizador pediu que se pergunte antes de cada aditamento. O que ele dispensou — o episódio
-   da redação cessada, os números nacionais e a coima de 250 euros — não se repropõe sem ele o pedir.
+1. **[FECHADO] Os três pontos retidos na triagem foram levados ao Word** em 28.9.2026, por ordem do
+   utilizador. Estudo de 63 para **66 páginas**. O que ele dispensou — o episódio da redação cessada, os
+   números nacionais e a coima de 250 euros — fica na PARTE 0-B e **não se repropõe sem ele o pedir**.
 2. **[VIVA] Caso de Amarante** — o requerimento do LIVRE de 13.7.2026 (`REQ 54_7CAPes…pdf`, na pasta
    `criador informal/`) refere o resgate de **mais de 300 cães de um alojamento de criadora registada na
    DGAV**. É o teste empírico da questão central, e mais directo que Santo Tirso, onde os abrigos não

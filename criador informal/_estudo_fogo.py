@@ -1045,6 +1045,40 @@ def construir(doc):
         '«encerrar» resolve-se: são as duas faces da mesma norma — o diretor-geral encerra, a câmara '
         'recolhe.'])
 
+    h3(doc, 'Quem decide não executa: a dependência estrutural do artigo 3.º-G')
+    para(doc,
+         'A repartição que os n.ºs 1, 5 e 6 do artigo 3.º-G estabelecem foi enunciada em comissão '
+         'parlamentar, na audição n.º 33-CAM-XIV de 30 de julho de 2020, por uma deputada que citava dados '
+         'da Associação Nacional de Médicos Veterinários dos Municípios remetidos aos grupos parlamentares. '
+         'Vale como confirmação de que a leitura aqui feita é a leitura corrente entre quem aplica a norma, '
+         'e não uma construção deste estudo.')
+    citacao(doc, [
+        '[…] segundo o Decreto-Lei [276/2001], [de] 17 de outubro, é competência do Diretor-Geral da '
+        'Alimenta[ção e] Veterinária a decisão de encerramento destes locais […]. Ainda segundo o mesmo '
+        'diploma, [compete] às câmaras municipais executar as medidas necessárias ao cumprimento da decisão '
+        'de encerramento destes locais.',
+    ], 'Audição parlamentar n.º 33-CAM-XIV, Comissão de Agricultura e Mar, 30.7.2020, [02:17:06–02:17:28]. '
+       'Transcrição automática produzida no âmbito deste estudo, nos termos do anexo C.6; correções de '
+       'reconhecimento entre parênteses retos')
+    destaque(doc, [
+        'Daqui resulta a característica que interessa retirar, e que é independente do caso concreto: '
+        '**a autoridade que decide não é a autoridade que executa**.',
+        'O diretor-geral de Alimentação e Veterinária determina o encerramento, por despacho, em processo '
+        'próprio de polícia administrativa. Mas o encerramento efetivo e, sobretudo, **a recolha dos '
+        'animais** dependem de um ato de outra pessoa coletiva, a câmara municipal, a quem o n.º 6 comete a '
+        'execução. Entre a decisão e o resultado há uma vontade que a lei não subordina à primeira.',
+        'O n.º 5 confirma que o legislador viu o problema e resolveu-o apenas em parte: fixa prazo não '
+        'superior a cinco dias úteis para o alojamento cessar atividade, «sob pena de ser solicitado às '
+        'autoridades administrativas e policiais competentes o encerramento compulsivo». **Solicitado** — '
+        'não determinado. Mesmo o mecanismo de reforço é um pedido.'])
+    nota(doc, [
+        '**Observação.** Esta é a fragilidade do artigo 3.º-G, e não é de interpretação: é de desenho. Um '
+        'regime em que a autoridade sanitária nacional decide e depende de terceiro para cumprir produz, '
+        'sem que ninguém prevarique, decisões sem efeito. Vale como argumento de política legislativa a '
+        'favor de atribuir à autoridade que decide, ou os meios de execução, ou um poder de substituição '
+        'com prazo. Não altera a resposta à questão central, que continua a assentar na unidade de '
+        'contagem do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003.'])
+
     h3(doc, 'O intervalo de 2019, e uma citação parlamentar desatualizada')
     para(doc,
          'Há um pormenor de vigência que explica uma confusão pública do caso. O artigo 3.º-G foi alterado '
@@ -1185,12 +1219,40 @@ def construir(doc):
         'da câmara da respectiva área da sua intervenção.',
     ], 'N.º 1 do artigo 4.º do Decreto-Lei n.º 116/98, no mesmo lugar')
     para(doc,
-         'Cotejadas, as duas normas dizem isto: nas decisões de autoridade sanitária o médico veterinário '
+         'O mesmo artigo 4.º prossegue, e é aqui que a arquitetura se fecha.')
+    citacao(doc, [
+        '2 — As relações funcionais dos médicos veterinários com o MADRP são asseguradas através das '
+        'direcções regionais de agricultura e da articulação destas com a DGV e a DGFCQA, consoante a '
+        'natureza das respectivas atribuições.',
+        '3 — Entre os médicos veterinários municipais e os serviços mencionados no número anterior será '
+        'estabelecido um programa de contactos regulares, sem prejuízo da possibilidade de convocação '
+        'extraordinária por motivo urgente.',
+        '4 — Em caso de concorrência de obrigações, prevalece o serviço municipal.',
+    ], 'N.ºs 2, 3 e 4 do artigo 4.º do Decreto-Lei n.º 116/98, no mesmo lugar')
+    para(doc,
+         'Cotejadas, estas normas dizem isto: nas decisões de autoridade sanitária o médico veterinário '
          'municipal decide **sem dependência hierárquica**, com poderes que lhe vêm da autoridade '
          'nacional **a título pessoal e não delegável**; em tudo o mais — carreira, avaliação, disciplina '
          '— depende do presidente da câmara. É um funcionário do município investido de um poder que o '
          'município não lhe deu e não lhe pode retirar, e que responde disciplinarmente perante quem não '
          'comanda esse poder.')
+    destaque(doc, [
+        'Há aqui uma terceira linha, e é a decisiva para compreender a posição institucional.',
+        '**A linha hierárquica e disciplinar corre para o presidente da câmara; a linha funcional corre '
+        'para o ministério.** O n.º 1 sujeita o médico veterinário municipal ao presidente da câmara quanto '
+        'à carreira e à disciplina. O n.º 2 faz as suas relações funcionais passarem pelas direções '
+        'regionais de agricultura e pela articulação destas com a autoridade sanitária veterinária '
+        'nacional. Quem tem de executar a decisão nacional responde disciplinarmente a quem a não tomou.',
+        '**E, havendo conflito, a lei já escolheu.** O n.º 4 é lapidar: «Em caso de concorrência de '
+        'obrigações, prevalece o serviço municipal». Não é uma lacuna nem uma zona cinzenta — é uma regra '
+        'de prevalência escrita, e prevalece o lado que não decidiu o encerramento.'])
+    nota(doc, [
+        '**Observação.** Cotejado o n.º 4 do artigo 4.º com o n.º 6 do artigo 3.º-G do Decreto-Lei n.º '
+        '276/2001, o sistema fica assim: a decisão de encerrar é do diretor-geral; a execução e a recolha '
+        'dos animais são da câmara; o agente técnico que as tem de preparar depende disciplinarmente da '
+        'câmara; e, se as obrigações concorrerem, prevalece o serviço municipal. Não é preciso supor má '
+        'vontade de ninguém para explicar por que motivo uma decisão de encerramento pode ficar sem '
+        'execução. **É o que a lei dispõe.**'])
     destaque(doc, [
         'Duas consequências, ambas relevantes para a questão 8:',
         '**Primeira — o caso é coerente com a resposta dada, não a contraria.** O poder que o n.º 4 do '
@@ -2101,12 +2163,23 @@ def construir(doc):
         'útil, e condiciona o que sobre ele se pode afirmar. Acresce que o PAN anunciou recurso: **a '
         'decisão não transitou**, e o que dela se escreva é provisório por duas razões — não se leu, e '
         'pode ser revogada.',
-        'Obtidas e transcritas as gravações da **audição parlamentar n.º 32-CAM-XIV**, de 30 de julho de '
-        '2020, ficou estabelecida a qualificação do acto de 2012 — decisão de encerramento em processo de '
-        'contraordenação, com pedido de diligências ao município — e a divisão de competências do artigo '
-        '3.º-G tal como enunciada em comissão. **Faltam as audições n.º 33-CAM-XIV e o excerto da '
-        'Secretária de Estado**, 234 minutos, onde deve estar a posição institucional do Governo e da '
-        'DGAV. É a diligência pendente mais útil.',
+        'Obtidas e transcritas as gravações das **três audições parlamentares** disponíveis. Da n.º '
+        '32-CAM-XIV, de 30 de julho de 2020, ficou estabelecida a qualificação do acto de 2012 — decisão de '
+        'encerramento em processo de contraordenação, com pedido de diligências ao município. Da n.º '
+        '33-CAM-XIV, do mesmo dia, ficou estabelecida a divisão de competências do artigo 3.º-G tal como '
+        'enunciada em comissão (ver 9.5). A terceira, da Secretária de Estado da Administração Interna, '
+        'tem por objeto o relatório de inquérito da Inspeção-Geral da Administração Interna e é posterior a '
+        '2020; **a sua data não está estabelecida**, pelo que dela nada se cita.',
+        '**Um achado por ausência.** Ao longo dos 160,5 minutos da audição n.º 33-CAM-XIV, dedicada a um '
+        'alojamento com dezenas de animais mortos, **nem o Decreto-Lei n.º 314/2003 nem os limites de '
+        'detenção por fogo foram uma única vez invocados**, por nenhum dos intervenientes — deputados, '
+        'Ministro da Administração Interna ou Ministra da Agricultura. Verificado por varrimento dos termos '
+        '«fogo», «por fogo», «limite de animais», «número de animais», «três cães», «quatro gatos» e «314» '
+        'na transcrição integral: todas as ocorrências de «fogo» designam o incêndio. É coerente com a '
+        'resposta deste estudo — os limites por fogo pertencem ao plano da detenção doméstica e não ao dos '
+        'alojamentos, pelo que não ocorreria a ninguém invocá-los a propósito de um alojamento. Mas é '
+        '**argumento de silêncio**, da mesma família do *expressio unius* que o capítulo 14 substituiu por '
+        'prova documental, e por isso fica aqui, entre os limites da análise, e não entre os fundamentos.',
         'Não se obtiveram dois documentos administrativos do caso de Santo Tirso: o **parecer jurídico de '
         '2018** obtido pela câmara e o **despacho da DGAV de 2012**. Do primeiro conhece-se o que foi lido '
         'em voz alta na audição; do segundo, a qualificação e o sentido, não o texto. A falta perdeu, entretanto, parte da '
