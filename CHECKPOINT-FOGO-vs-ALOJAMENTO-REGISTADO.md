@@ -381,6 +381,182 @@ Apareceram em pesquisa e **nenhuma está confirmada em fonte primária**. Não u
 
 ---
 
+## PARTE 0-C — O regime anterior a 2001: o que está apurado e o que falta
+
+Aberto em 28.9.2026, a pedido do utilizador. O ponto 13.4 do estudo traça a trajetória do título de acesso a
+partir de 17.10.2001. Isto vai para trás.
+
+### C.1 O DL n.º 276/2001 não revogou nada
+
+Percorrido o diploma no DR, I série-A, n.º 241, de 17.10.2001: termina no art.º 73.º, sobre taxas, e **não
+tem norma revogatória**. O preâmbulo não menciona qualquer regime anterior de alojamentos — apresenta-se
+apenas como execução da Convenção Europeia para a Protecção dos Animais de Companhia, aprovada pelo Decreto
+n.º 13/93, de 13 de abril.
+
+### C.2 A cadeia sanitária, estabelecida pelo preâmbulo do DL n.º 91/2001
+
+O **DL n.º 91/2001, de 23 de março** — sete meses anterior ao 276/2001 — diz no preâmbulo que a legislação
+«até a esta data, estava contida no **Decreto-Lei n.º 317/85, de 2 de Agosto**, e na **Portaria n.º 961/85,
+de 28 de Dezembro**». O seu art.º 9.º revoga o DL n.º 317/85 e mantém a Portaria n.º 961/85 em vigor «até à
+publicação das portarias a que se refere o artigo 2.º», que vieram a ser, quanto a esta matéria, a
+**Portaria n.º 1427/2001, de 15 de dezembro**.
+
+| Período | Diploma sanitário | Regulamento |
+|---|---|---|
+| até 22.3.2001 | DL n.º 317/85 | Portaria n.º 961/85 |
+| 23.3.2001 a 14.12.2001 | DL n.º 91/2001 | Portaria n.º 961/85, em vigor transitório |
+| desde 15.12.2001 | DL n.º 91/2001 | Portaria n.º 1427/2001 |
+
+### C.3 O que o DL n.º 317/85 dispunha sobre canis e gatis
+
+Capítulo IV, «Dos canis e gatis», DR, I série, n.º 176, de 2.8.1985, p. 2328. Lido à vista, por o DR de 1985
+ser digitalização sem camada de texto.
+
+> **Artigo 20.º (Obrigatoriedade da existência de canis e gatis municipais)**
+>
+> 1 — É obrigatória a construção e a manutenção nos respectivos concelhos ou em associação de concelhos de
+> instalações destinadas a canis e gatis segundo as necessidades, com postos anexos para assistência e
+> vacinação anti-rábica dos animais.
+>
+> 2 — Estas instalações e postos de vacinação serão construídos segundo projectos aprovados pela
+> Direcção-Geral da Pecuária e a sua entrada em funcionamento deverá ser antecedida de vistoria pelos
+> serviços de sanidade veterinária regionais.
+>
+> 3 — Excepcionalmente, poderá a Direcção-Geral da Pecuária, por intermédio dos respectivos serviços de
+> sanidade veterinária regionais e por período não superior a 1 ano, autorizar a utilização de qualquer
+> instalação adaptada, quando esta satisfaça as condições mínimas consideradas necessárias para o fim a que
+> se destina.
+
+> **Artigo 21.º (Registo dos canis e gatis municipais ou particulares)**
+>
+> 1 — A Direcção-Geral da Pecuária deverá manter, a nível nacional, um registo de todos os canis e gatis
+> camarários, bem como dos canis particulares cujo funcionamento depende da aprovação prévia da mesma
+> Direcção-Geral.
+
+O art.º 18.º manda as receitas camarárias das taxas de registo e licenciamento de cães custear
+«designadamente a **construção de canis** e das estruturas necessárias a um efectivo controle da população
+canina e felina».
+
+**Reserva de leitura.** A redação do n.º 1 do art.º 21.º — «os canis particulares **cujo funcionamento
+depende** da aprovação prévia» — é oração relativa que pressupõe a sujeição em vez de a criar. Identifica
+quais se registam; não diz que todos carecem de aprovação. A norma que impõe essa aprovação **não está nos
+artigos lidos** e é provável que esteja na Portaria n.º 961/85. Não se afirme, portanto, que todo o canil
+particular carecia de aprovação prévia antes de 2001.
+
+### C.4 A via urbanística e sanitária municipal, que é a que o utilizador recordava
+
+Existe, e é bem mais antiga do que o regime dos animais. Confirmada por duas fontes.
+
+**Regulamento Geral das Edificações Urbanas**, aprovado pelo Decreto-Lei n.º 38 382, de 7 de agosto de 1951,
+Capítulo VII, «Alojamento de animais», arts. 115.º a 120.º:
+
+> **Artigo 115.º** — As instalações para alojamento de animais somente poderão ser consentidas nas áreas
+> habitadas ou suas imediações quando construídas e exploradas em condições de não originarem, directa ou
+> indirectamente, qualquer prejuízo para a salubridade e conforto das habitações.
+>
+> Os anexos para alojamento de animais domésticos construídos nos logradouros dos prédios, quando
+> expressamente autorizados, não poderão ocupar mais do que 1/15 da área destes logradouros.
+>
+> § único. As câmaras municipais poderão interdizer a construção ou utilização de anexos para instalação de
+> animais nos logradouros ou terrenos vizinhos dos prédios situados em zonas urbanas quando as condições
+> locais de aglomeração de habitações não permitirem a exploração desses anexos sem risco para a saúde e
+> comodidade dos habitantes.
+
+> **Artigo 116.º** — As instalações para alojamento de animais constituirão, em regra, construções distintas
+> das de habitação e afastadas delas. Quando tal, porém, não seja possível, serão, pelo menos, separadas das
+> habitações por paredes cheias ou pavimentos contínuos que dêem garantia de isolamento perfeito. Qualquer
+> comunicação directa com os compartimentos das habitações será sempre interdita.
+
+Os arts. 117.º a 120.º regulam iluminação e ventilação, revestimentos e drenagem, remoção de estrumes e
+controlo de insectos, para «cavalariças, vacarias, currais e instalações semelhantes».
+
+**Recomendação do Provedor de Justiça, processo R-760/92, de 9 de junho de 1997**, sobre a transferência de
+um curral de ovinos e o encerramento de um **canil de reprodução** em zona urbana. Invoca os arts. 56.º e
+115.º a 120.º do RGEU, o DL n.º 445/91, de 20 de novembro, na redação do DL n.º 250/94, o DL n.º 336/93, e
+— decisivo — as **Instruções aprovadas pela Portaria n.º 6065, de 30 de março de 1929**, sobre licenciamento
+sanitário de estabelecimentos, cuja tabela anexa classifica os canis de reprodução como estabelecimentos de
+**1.ª classe**, com o art.º 4.º sobre localização e o **art.º 30.º a habilitar a câmara municipal a ordenar
+o encerramento**.
+
+**É esta a resposta à pergunta do utilizador.** Antes de 2001 a intervenção municipal sobre canis
+particulares não se fazia por regime de animais: fazia-se por **licenciamento sanitário de estabelecimentos
+(1929)** e por **urbanismo (RGEU, 1951, e licenciamento de obras particulares)**. A câmara licenciava,
+condicionava a localização e podia encerrar.
+
+### C.5 Os limites antes do DL n.º 314/2003
+
+Estão na **Portaria n.º 1427/2001, de 15 de dezembro**, art.º 2.º, e não no art.º 5.º — texto conferido à
+vista no DR, I série-B, n.º 289, p. 8280, por a extração automática baralhar as duas colunas.
+
+> **Artigo 2.º (Posse e detenção de cães e gatos)**
+>
+> 1 — A permanência de cães e gatos em habitações situadas em zonas urbanas fica sempre condicionada à
+> existência de boas condições de alojamento dos mesmos e ausência de riscos hígio-sanitários relativamente
+> à conspurcação ambiental e doenças transmissíveis ao homem.
+>
+> 2 — Sempre que sejam respeitadas as condições de salubridade e tranquilidade da vizinhança, podem ser
+> alojados **por cada apartamento**, tanto nas zonas urbanas como nas rurais, até três cães ou quatro gatos
+> adultos, não podendo no total ser excedido o número de quatro animais.
+>
+> 3 — O alojamento **em cada fogo** de mais de quatro animais implica autorização sanitária por parte do
+> município, a pedido do dono ou detentor, mediante parecer do médico veterinário municipal, que determinará
+> a construção de canil ou gatil devidamente licenciado em conformidade com o previsto no artigo 22.º
+>
+> 4 — Em caso de não cumprimento do disposto no número anterior, as câmaras municipais, após vistoria
+> conjunta do delegado de saúde e do médico veterinário municipal, podem mandar retirar os animais para o
+> canil ou gatil municipal, se o dono não optar por outro destino.
+>
+> 5 — Da decisão municipal cabe recurso nos termos da lei geral.
+
+> **Artigo 3.º (Cães de caça e de guarda)**
+>
+> 2 — Não é permitido alojar em terrenos anexos às habitações dos donos mais de cinco cães de caça ou de
+> guarda.
+>
+> 3 — A posse ou detenção de mais de cinco cães de caça ou de guarda depende de autorização sanitária por
+> parte do município, mediante parecer do médico veterinário municipal, que poderá determinar, para o
+> efeito, a construção de canil ou gatil devidamente licenciado, em conformidade com o disposto no
+> artigo 22.º
+
+**Achado textual relevante para a questão 4 do estudo.** O n.º 2 do art.º 2.º conta **por apartamento**; o
+n.º 3, a seguir, conta **por fogo**. O DL n.º 314/2003 unificou em «fogo». A oscilação da própria fonte de
+2001 entre as duas palavras é elemento novo para o capítulo 5, e deve ser cotejada com ele.
+
+**Período por cobrir: antes de 15.12.2001.** Não se sabe se havia limite numérico e, a haver, qual. O
+candidato é a Portaria n.º 961/85.
+
+### C.6 Diplomas de que preciso para fechar isto — o utilizador tentará obtê-los
+
+Por ordem de utilidade. Nenhum é obtenível pela rota ELI, que só serve diplomas recentes.
+
+| # | Diploma | Porque é preciso | Onde deve estar |
+|---|---|---|---|
+| 1 | **Portaria n.º 961/85, de 28 de dezembro** | É a peça central em falta. Deve conter o procedimento e as condições dos canis e gatis antes de 2001, a norma que sujeitava os canis particulares a aprovação prévia da Direcção-Geral da Pecuária (ver reserva em C.3) e, possivelmente, os limites numéricos anteriores a 2001 (ver C.5) | DR, I série, de 28.12.1985. Número do DR por apurar — dezembro de 1985 |
+| 2 | **Portaria n.º 6065, de 30 de março de 1929** — Instruções sobre licenciamento sanitário de estabelecimentos | Tabela anexa que classifica os canis de reprodução como 1.ª classe; art.º 4.º sobre localização; art.º 30.º sobre encerramento pela câmara. É a base da via municipal descrita em C.4 e conhece-se só por citação do Provedor de Justiça | Diário do Governo de 30.3.1929. Anterior ao DR; pode não estar digitalizado no sítio do DR |
+| 3 | **Decreto-Lei n.º 317/85, de 2 de agosto — texto integral** | Lidos apenas os arts. 14.º a 21.º. Falta o resto, designadamente o capítulo inicial e o art.º 22.º e seguintes, e confirmar se há limites numéricos | DR, I série, n.º 176, de 2.8.1985, pp. 2326 e ss. **Já descarregado** em `dr1985_176.pdf`; é digitalização sem texto, lê-se à vista |
+| 4 | **Portaria n.º 1427/2001 — arts. 22.º e seguintes** | O art.º 22.º é o que os arts. 2.º e 3.º mandam observar para o licenciamento de canis e gatis. Conhece-se o n.º 1, que atribui o licenciamento às câmaras nos termos do DL n.º 370/99, e falta o resto do regime | DR, I série-B, n.º 289, de 15.12.2001, pp. 8283-8284. **Já descarregado** em `p1427.pdf` |
+| 5 | **Decreto-Lei n.º 445/91, de 20 de novembro**, na redação do DL n.º 250/94 | Regime do licenciamento municipal de obras particulares anterior ao DL n.º 555/99. É a via urbanística de C.4 | DR de 20.11.1991 |
+| 6 | **Recomendação do Provedor de Justiça R-760/92, de 9.6.1997 — texto integral** | Conhece-se por leitura assistida, com citação parcial. Vale como prática administrativa documentada sobre encerramento de canil em zona urbana antes de 2001 | provedor-jus.pt, documento 3741 |
+| 7 | **Decreto n.º 13/93, de 13 de abril** — Convenção Europeia para a Protecção dos Animais de Companhia | É a base do DL n.º 276/2001 e é invocado pelo n.º 6 do art.º 2.º da Portaria n.º 1427/2001. Não foi lido | DR, I série-A, de 13.4.1993 |
+| 8 | Legislação de **1925** sobre canis municipais | Afirmado numa audição parlamentar que «desde 1925 a legislação portuguesa obriga a que as câmaras municipais estejam dotadas de canis [e] gatis». Não verificado. Pode ser confusão com a Portaria de 1929 | Diário do Governo de 1925, a localizar |
+
+### C.7 Consequência provisória para o ponto 13.4 do estudo
+
+A tabela de 13.4 sugere centralização progressiva: câmara, depois director-geral, depois DGAV. **Não foi
+isso.** Para os canis particulares sujeitos a aprovação, o título já era **nacional** desde 1985, na
+Direcção-Geral da Pecuária. O DL n.º 276/2001 **municipalizou**, em 2001, parte do que era nacional — a
+licença de utilização municipal do n.º 1 do art.º 3.º, nos termos do DL n.º 370/99 — e o DL n.º 315/2003
+devolveu-a ao director-geral dois anos depois.
+
+A anomalia histórica é o intervalo de 2001 a 2003, não o resto. Isto **reforça** o argumento do capítulo 14:
+os três actos coordenados do DR n.º 290, de 17.12.2003, não inovaram ao entregar o título ao director-geral;
+restauraram a posição que vinha de 1985.
+
+**Nada disto foi levado ao Word**, e a reserva de C.3 tem de ficar resolvida antes de o ser: a trajetória só
+se escreve com segurança depois de lida a Portaria n.º 961/85.
+
+---
+
 ## PARTE I — Textos verbatim
 
 ### I.1 Decreto-Lei n.º 314/2003, de 17 de dezembro
@@ -789,10 +965,15 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
    efectividade real do regime.
 6. **[VIVA] O intervalo de 30.1.2019 a 7.8.2019** — por saber se algum município usou, nesse período, o
    poder de encerrar que então tinha.
-7. **[VIVA] Relatório de inquérito da IGAI** — existe, foi remetido à Assembleia da República e foi lido
+7. **[VIVA] Obter os diplomas do regime anterior a 2001** — lista em **C.6**, por ordem de utilidade. O
+   utilizador comprometeu-se em 28.9.2026 a tentar obtê-los. O mais importante é a **Portaria n.º 961/85, de
+   28 de dezembro**: sem ela não se fecha nem a reserva de C.3, sobre se todo o canil particular carecia de
+   aprovação prévia, nem o período anterior a 15.12.2001 quanto a limites numéricos. **Não escrever a
+   trajetória revista de 13.4 antes disso** (ver C.7).
+8. **[VIVA] Relatório de inquérito da IGAI** — existe, foi remetido à Assembleia da República e foi lido
    pelos deputados na audição da Secretária de Estado. É a melhor fonte disponível para o pendente n.º 5 e
    **não exige requerimento de acesso**, o que o põe dentro do que o utilizador autorizou. Ver B.8.
-8. **[VIVA] Verificar as pistas de B.10** — suspensão do médico veterinário municipal em 21.7.2020, processo
+9. **[VIVA] Verificar as pistas de B.10** — suspensão do médico veterinário municipal em 21.7.2020, processo
    disciplinar da Ordem dos Médicos Veterinários, arquivamento pelo Ministério Público no final de 2022 e
    subsequente instrução e julgamento no Tribunal de Matosinhos, revisão do número de animais mortos de 73
    para 93. Nenhuma está confirmada em fonte primária. As duas últimas ligam-se ao pendente n.º 3.

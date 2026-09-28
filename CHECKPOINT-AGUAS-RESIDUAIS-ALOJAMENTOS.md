@@ -143,6 +143,10 @@ A matéria fica inteiramente nacional. O n.º 1 do art.º 30.º admite regra nac
 
 **IV.1 O vazio é de norma técnica, não de norma habilitante.** O título existe e é claro. O que não existe é uma única norma que densifique «boa capacidade de drenagem» num alojamento: nem caudal, nem declive, nem separação de águas pluviais, nem pré-tratamento, nem VLE sectoriais. O n.º 3 do art.º 14.º do DL n.º 276/2001 não foi objeto de portaria em vinte e cinco anos.
 
+**Correção a IV.1, apurada em 28.9.2026.** Existe norma técnica, e é de 1951. O **art.º 118.º do Regulamento Geral das Edificações Urbanas**, aprovado pelo Decreto-Lei n.º 38 382, de 7 de agosto de 1951, dispõe, para «cavalariças, vacarias, currais e instalações semelhantes», que «o revestimento do solo será sempre estabelecido de forma a impedir a infiltração ou a estagnação dos líquidos e a assegurar a sua pronta drenagem para a caleira de escoamento, ligada por intermédio de um sifão à tubagem de evacuação dos esgotos do prédio», exigindo ainda revestimento impermeável e lavável das paredes até 1,50 m de altura. O § único admite, em zona rural, o escoamento para depósitos afastados das habitações, «solidamente construídos e perfeitamente estanques».
+
+Fica por decidir se um canil ou gatil é «instalação semelhante» para este efeito. O capítulo VII do RGEU intitula-se «Alojamento de animais» e o art.º 115.º abrange «instalações para alojamento de animais» em geral, mas a enumeração do art.º 118.º é de instalações pecuárias. **É questão a fechar antes de se afirmar que não há norma técnica aplicável** — a afirmação de IV.1 fica, até lá, com esta reserva.
+
 **IV.2 As duas cadeias administrativas não se cruzam.** O registo ou licenciamento do alojamento corre na câmara e na DGAV, ao abrigo do DL n.º 276/2001; o título de utilização de recursos hídricos corre na APA. Nenhum procedimento exige prova do outro. Um alojamento pode estar plenamente regular no 276 e a descarregar sem título há anos, sem que nada no processo o revele. É a falha mais séria deste enquadramento e a de correção mais simples: bastaria que a comunicação prévia ou o registo incluíssem a identificação da solução de drenagem e, quando aplicável, do título de rejeição.
 
 **IV.3 A consequência prática da exclusão do NREAP.** Um alojamento de cães ou gatos não tem plano de gestão de efluentes, não tem os limites de aplicação no solo do regime pecuário e não beneficia da dispensa de título do n.º 2 do art.º 57.º do DL n.º 226-A/2007. Fica no regime comum: **mais exigente em título, menos denso em norma técnica**. É o pior dos dois mundos.
@@ -235,7 +239,7 @@ O `WebFetch` sobre o EUR-Lex devolveu página vazia e o sub-modelo reportou-a co
 
 ## PARTE VII — Achado colateral, relevante para outra tarefa
 
-Durante esta consulta apareceu a **Portaria n.º 1427/2001, de 15 de dezembro**, que interessa ao estudo «314 vs alojamentos» e não constava dele. O seu art.º 5.º já fixava, em 2001, dois anos antes do DL n.º 314/2003:
+Durante esta consulta apareceu a **Portaria n.º 1427/2001, de 15 de dezembro**, que interessa ao estudo «314 vs alojamentos» e não constava dele. O seu **art.º 2.º** já fixava, em 2001, dois anos antes do DL n.º 314/2003 (corrigido em 28.9.2026 — uma versão anterior desta nota dizia art.º 5.º, por erro de leitura da extração automática, que baralha as duas colunas do DR; o texto foi conferido à vista na p. 8280):
 
 > **2** — Sempre que sejam respeitadas as condições de salubridade e tranquilidade da vizinhança, podem ser alojados por cada apartamento, tanto nas zonas urbanas como nas rurais, até três cães ou quatro gatos adultos, não podendo no total ser excedido o número de quatro animais.
 >

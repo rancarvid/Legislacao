@@ -64,7 +64,7 @@ git checkout -- "criador informal/Anexo_Delimitacao_DL314_2003.docx" \
 | **9.3** | Alcance da norma sancionatória — al. c) do n.º 3 do art.º 14.º |
 | **9.5** | Poder de remoção; art.º 3.º-G; caso de Santo Tirso; audição parlamentar; DL n.º 116/98 |
 | **11.4** | Doutrina — Bruno Branco, RJLB 2019 |
-| **13.4** | Trajetória do título de acesso: câmara (2001-03) → director-geral (2003-12) → MCP (desde 2012) |
+| **13.4** | Trajetória do título de acesso: câmara (2001-03) → director-geral (2003-12) → MCP (desde 2012). **Atenção**: a PARTE 0-C do checkpoint mostra que antes de 2001 o título já era nacional, na Direcção-Geral da Pecuária, pelo que 2001-2003 é a anomalia e não o ponto de partida. A revisão da tabela está suspensa até se obter a Portaria n.º 961/85 |
 | **14.5** | Três actos coordenados no DR n.º 290 de 17.12.2003 — o argumento mais forte |
 | **15.7** | Inibição da fiscalização; a alavanca efectiva foi o urbanismo |
 | **17** | Questões em aberto e limites |
