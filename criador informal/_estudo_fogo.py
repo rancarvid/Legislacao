@@ -42,6 +42,10 @@ def construir(doc):
     numlist(doc, [
         'A unidade de contagem do n.º 2 é o **fogo**, não o prédio. Onde não há fogo, a norma não tem '
         'campo operativo. Capítulo 5.',
+        '«Fogo» é a **unidade de utilização destinada a habitação**, e não o agregado doméstico nem a '
+        'fração autónoma. O Regime Jurídico da Urbanização e Edificação, em vigor, opõe «o número de '
+        'fogos **e outras unidades de utilização**»: uma unidade cuja utilização não seja a habitação '
+        'não é um fogo. Capítulo 5.',
         'Um alojamento registado não é um fogo: o artigo 25.º do Decreto-Lei n.º 276/2001 obriga-o a '
         'possuir **instalações individualizadas**, o que o diferencia necessariamente da habitação. '
         'Capítulo 7.',
@@ -257,23 +261,112 @@ def construir(doc):
 
     # ------------------------------------------------------------------ 5
     pagebreak(doc)
-    h1(doc, '5.', 'O conceito de fogo e as suas consequências operativas')
+    h1(doc, '5.', 'O conceito de «fogo»')
+    destaque(doc, [
+        '«Fogo» é a **unidade de utilização destinada a habitação**. Não é o agregado doméstico nem a '
+        'fração autónoma. E o apoio mais seguro desta noção já não é o Regulamento Geral das Edificações '
+        'Urbanas, de 1951, mas o Regime Jurídico da Urbanização e Edificação, na redação em vigor.'])
+
+    h2(doc, '5.1', 'O que o diploma não diz')
     para(doc,
-         'O Decreto-Lei n.º 314/2003 não define «fogo». Aplica-se o sentido corrente e urbanístico. No '
-         'Regulamento Geral das Edificações Urbanas, aprovado pelo Decreto-Lei n.º 38 382, de 7 de agosto '
-         'de 1951, as noções de «habitação» e de «fogo» são usadas como sinónimos, definindo-se «área '
-         'bruta da habitação» como a superfície total do fogo. Em estatística e na Ficha Técnica da '
-         'Habitação, o fogo integra-se no conceito de alojamento familiar, abrangendo a habitação o fogo e '
-         'as suas dependências — varandas, arrecadações, logradouros pavimentados, telheiros e alpendres.')
-    para(doc, 'Daqui decorrem três consequências operativas, e são decisivas.')
+         'O Decreto-Lei n.º 314/2003 não define «fogo». Mais: a palavra aparece **uma única vez em todo o '
+         'diploma**, no n.º 2 do artigo 3.º. Não há remissão para outro regime, nem norma interpretativa. '
+         'O conceito tem de ser colhido fora.')
+
+    h2(doc, '5.2', 'A âncora histórica: o Regulamento Geral das Edificações Urbanas')
+    citacao(doc,
+            ['5. O tipo de fogo é definido pelo número de quartos de dormir, e para a sua identificação '
+             'utiliza-se o símbolo Tx, em que x representa o número de quartos de dormir.'],
+            'N.º 5 do artigo 66.º do RGEU, na redação do Decreto-Lei n.º 650/75, de 18 de novembro')
+    citacao(doc,
+            ['a) Área bruta (Ab) é a superfície total do fogo, medida pelo perímetro exterior das paredes '
+             'exteriores e eixos das paredes separadoras dos fogos, e inclui varandas privativas, locais '
+             'acessórios e a quota-parte que lhe corresponda nas circulações comuns do edifício;',
+             'b) Área útil (Au) é a soma das áreas de todos os compartimentos da habitação, incluindo […]'],
+            'Als. a) e b) do n.º 2 do artigo 67.º do RGEU')
+    para(doc,
+         'A sinonímia entre «fogo» e «habitação» não é afirmada: é demonstrada pelo próprio texto. A al. '
+         'a) mede «o fogo»; a al. b), imediatamente a seguir e para o mesmo objeto, mede «a habitação». '
+         'São a mesma coisa.')
+
+    h2(doc, '5.3', 'A âncora vigente: o Regime Jurídico da Urbanização e Edificação')
+    para(doc,
+         'O Regime Jurídico da Urbanização e Edificação, aprovado pelo Decreto-Lei n.º 555/99, de 16 de '
+         'dezembro, na redação dada pelo Decreto-Lei n.º 108/2026, de 29 de maio, usa a palavra com '
+         'sentido firme e atual. Dois lugares bastam.')
+    citacao(doc,
+            ['a) Na parcela destacada só seja construído edifício que se destine exclusivamente a fins '
+             'habitacionais e que não tenha mais de dois fogos;'],
+            'Al. a) do n.º 5 do artigo 6.º do RJUE')
+    citacao(doc,
+            ['c) Programa de utilização das edificações, incluindo a área total de construção a afetar aos '
+             'diversos usos e o número de fogos e outras unidades de utilização, com identificação das '
+             'áreas acessórias, técnicas e de serviço;'],
+            'Al. c) do n.º 2 do artigo 14.º do RJUE')
+    destaque(doc, [
+        'A expressão «o número de fogos **e outras unidades de utilização**» é decisiva. O fogo é a '
+        'espécie habitacional do género «unidade de utilização». Uma unidade cuja utilização não seja a '
+        'habitação **não é um fogo** — é uma das «outras unidades de utilização».'])
+
+    h2(doc, '5.4', 'O RGEU está em vigor, mas por um fio')
+    para(doc,
+         'O artigo 25.º do Decreto-Lei n.º 10/2024, de 8 de janeiro, na sua redação originária, dispunha '
+         'que «o RGEU é revogado com efeitos reportados a 1 de junho de 2026». Na véspera dessa data o '
+         'Governo travou a revogação.')
+    citacao(doc,
+            ['1 — O RGEU é revogado com efeitos reportados à data de entrada em vigor do diploma que '
+             'definir as normas técnicas aplicáveis à edificação.',
+             '2 — A regulamentação prevista no número anterior deve contar com a colaboração das ordens '
+             'profissionais competentes na definição das regras de ordem técnica que considerem adequadas '
+             'para a preparação dos projetos relativos às edificações urbanas.'],
+            'Artigo 25.º do Decreto-Lei n.º 10/2024, na redação do Decreto-Lei n.º 108/2026, de 29 de maio')
+    nota(doc, [
+        '**Cronologia.** O Decreto-Lei n.º 108/2026 foi publicado em 29 de maio de 2026, sexta-feira, e o '
+        'seu artigo final determina que «as alterações ao Decreto-Lei n.º 10/2024, de 8 de janeiro, '
+        'entram em vigor no primeiro dia útil seguinte ao da publicação do presente decreto-lei» — isto '
+        'é, 1 de junho de 2026, o próprio dia em que a revogação produziria efeitos. **O RGEU está, '
+        'pois, em vigor**, e a sua revogação passou a depender de um diploma futuro, ainda não publicado.'])
+    destaque(doc, [
+        'Consequência metodológica: uma análise que assente exclusivamente no RGEU fica refém de um '
+        'diploma que pode sair a qualquer momento. Por isso o peso da demonstração desloca-se para o '
+        'RJUE, que está em vigor e foi revisto há meses.'])
+
+    h2(doc, '5.5', 'As três leituras, e qual se sustenta')
+    tabela(doc,
+           ['Leitura', 'Conteúdo', 'Apreciação'],
+           [['Unidade de utilização habitacional',
+             'Critério físico-edificado, colhido no RGEU e no RJUE: o fogo é a unidade de utilização '
+             'destinada a habitação.',
+             '**Procede.** É a única com apoio em direito positivo vigente'],
+            ['Fração autónoma',
+             'O n.º 3 do artigo 3.º pressupõe que cada fração tem limite próprio, ao permitir que o '
+             'regulamento do condomínio o reduza.',
+             'Improcede como definição: uma fração autónoma pode ser uma loja, uma garagem ou um '
+             'escritório. Toda a fração habitacional é um fogo; nem todo o fogo é uma fração'],
+            ['Agregado doméstico',
+             'Economia comum, independentemente do edificado.',
+             'Improcede: nenhum texto legal o sustenta, e havendo critério objetivo edificado não há '
+             'razão para preferir um critério pessoal']],
+           [Cm(3.6), Cm(6.4), Cm(6.6)])
+
+    h2(doc, '5.6', 'Quatro consequências operativas')
     numlist(doc, [
         '**A unidade de contagem do n.º 2 é doméstica, não predial.** Um prédio urbano com dez fogos '
         'comporta dez vezes a dotação. O limite não é do prédio; é de cada fogo.',
         '**Um prédio urbano sem fogo não tem unidade a que aplicar o n.º 2.** A norma não tem, aí, campo '
         'operativo — não porque se afaste, mas porque lhe falta o termo de referência.',
-        '**O Decreto-Lei n.º 276/2001 nunca usa a palavra.** A sua unidade é o alojamento, cuja capacidade '
-        'é declarada pelo interessado e aferida por superfície.',
+        '**É o título de utilização que decide.** A autorização de utilização diz a que se destina cada '
+        'unidade. Uma unidade licenciada para outro uso que não a habitação é, na linguagem do RJUE, uma '
+        '«outra unidade de utilização», e não um fogo.',
+        '**O Decreto-Lei n.º 276/2001 nunca usa a palavra.** A sua unidade é o alojamento, cuja '
+        'capacidade é declarada pelo interessado e aferida por superfície.',
     ])
+    nota(doc, [
+        '**Nota de pesquisa.** Não se localizou qualquer iniciativa legislativa parlamentar que tenha '
+        'incidido sobre o artigo 3.º do Decreto-Lei n.º 314/2003. As iniciativas que alteram esse diploma '
+        '— designadamente as do PAN sobre animais comunitários e esterilização — versam sobre os artigos '
+        '8.º e 11.º, relativos a animais errantes. Em mais de vinte anos, o artigo 3.º nunca foi objeto '
+        'de debate parlamentar, o que ajuda a explicar a ausência de doutrina e de jurisprudência.'])
 
     # ------------------------------------------------------------------ 6
     pagebreak(doc)
@@ -992,7 +1085,7 @@ def construir(doc):
             ['4',
              'O que é um «fogo» para efeitos do n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003, não o '
              'definindo nenhum dos dois diplomas?',
-             'Em aberto'],
+             'Respondida — capítulo 5'],
             ['5',
              'No n.º 1 do artigo 3.º do Decreto-Lei n.º 314/2003, «alojamento» designa o facto de alojar '
              'ou o estabelecimento, sentido em que a mesma palavra é usada no Decreto-Lei n.º 276/2001?',
@@ -1037,8 +1130,10 @@ def construir(doc):
         'de contraordenação decididos administrativamente. Ausência de casuística publicada não equivale '
         'a ausência de casos.',
         'Os textos do n.º 2 do artigo 112.º da Constituição e do artigo 7.º do Código Civil, usados no '
-        'capítulo 13, foram lidos em compilador privado, por as fontes oficiais consultadas não terem '
-        'devolvido esses artigos. **A conferir** contra o texto oficial.',
+        'capítulo 13, foram lidos em compilador privado. As páginas de legislação consolidada do Diário '
+        'da República são geradas por script no navegador e devolvem corpo vazio a quem as consulte '
+        'por meios automáticos; o PGDL, para estes dois diplomas, devolveu apenas o índice. **A '
+        'conferir** contra o texto oficial em papel ou em PDF.',
     ])
 
     # ------------------------------------------------------------------ 18
