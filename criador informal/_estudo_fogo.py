@@ -87,6 +87,20 @@ def construir(doc):
         '**Caso residual.** Quem tem o alojamento registado mas mantém os animais integrados na casa, '
         'como animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima '
         'de seis animais dentro do fogo. Capítulo 16.',
+        'A **única doutrina** que trata o artigo 3.º na perspetiva de quem o fiscaliza arruma-o sob a '
+        'epígrafe «Limite de cães e gatos por habitação», descreve a contraordenação da al. c) do n.º 3 '
+        'do artigo 14.º como «exceder o n.º de animais por fogo urbano», e no seu levantamento das '
+        'contraordenações do Decreto-Lei n.º 276/2001 não inclui uma única entrada sobre excesso de '
+        'animais em alojamento. Categorias construídas sem este problema em vista, e organizadas segundo '
+        'a separação aqui defendida. Capítulo 11.4.',
+        '**A execução é o ponto fraco do sistema, e a causa é institucional.** Quem propõe a medida — o '
+        'médico veterinário municipal — é autoridade sanitária veterinária concelhia com poderes '
+        'conferidos pela autoridade nacional «a título pessoal, não delegável», que exerce «sem '
+        'dependência hierárquica», mas apenas quando estejam em causa «prejuízos graves à saúde '
+        'pública»; em tudo o mais «depende, hierárquica e disciplinarmente, do presidente da câmara» '
+        '(n.ºs 2, 3 e 4 do artigo 2.º e n.º 1 do artigo 4.º do Decreto-Lei n.º 116/98). Nos abrigos sem '
+        'registo, onde o fundamento próprio é o bem-estar animal, a blindagem não cobre o ato. Capítulo '
+        '9.5.',
     ])
     nota(doc, [
         'Não se localizou decisão judicial, parecer publicado nem orientação administrativa que resolva '
@@ -675,6 +689,14 @@ def construir(doc):
         'quem quer que aloje. O que a al. c) revela é onde o legislador entendeu que valia a pena punir, '
         'não onde entendeu que a norma se aplica. A consequência prática desta assimetria está tratada '
         'nos pontos 15.5 e 15.7.'])
+    destaque(doc, [
+        '**Confirmação doutrinal, e de fonte operacional.** O único estudo que faz o levantamento das '
+        'contraordenações desta matéria para uso da fiscalização descreve o tipo da al. c) do n.º 3 do '
+        'artigo 14.º nestes termos: «Exceder o n.º de animais por **fogo urbano** (3 cães ou quatro '
+        'gatos, num máximo de 4 animais)», e indica como entidade instrutória a **DGAV** — ao passo que a '
+        'notificação para remoção do n.º 5, essa, atribui às câmaras municipais. É a mesma dissociação '
+        'que aqui se descreve, feita por quem a tem de aplicar: **pune a DGAV, remove o município**. Ver '
+        '11.4.'])
 
     h2(doc, '9.4', 'Concurso de contraordenações')
     para(doc,
@@ -782,18 +804,46 @@ def construir(doc):
          'esta valer apenas no papel.')
     tabela(doc,
            ['Data', 'Facto'],
-           [['2012', 'A **DGAV** emite despacho pedindo à câmara municipal de Santo Tirso diligências '
+           [['desde 2006', 'Há registo de **vistorias** aos espaços, segundo o esclarecimento público do '
+                           'Governo de 21 de julho de 2020'],
+            ['desde 2010', 'A **DGAV** passa a intervir, em **vistorias conjuntas** com o município e '
+                           'com a autoridade de saúde, e aplica as **sanções contraordenacionais** '
+                           'correspondentes (mesmo esclarecimento)'],
+            ['2012', 'A DGAV emite despacho pedindo à câmara municipal de Santo Tirso diligências '
                      'para **retirar os animais** do abrigo «Cantinho das Quatro Patas»'],
             ['2018', 'A câmara obtém parecer jurídico externo que conclui que «as câmaras não têm '
                      'competência para encerrar abrigos de animais»'],
-            ['18.7.2020', 'Incêndio na Serra da Agrela; morrem 93 animais em dois abrigos — «Cantinho '
-                          'das 4 Patas» e «Abrigo de Paredes» —, **sem qualquer registo na DGAV**, já '
-                          'antes objeto de vistorias conjuntas e de processos de contraordenação'],
-            ['9.9.2026', 'O Tribunal de Matosinhos absolve os cinco arguidos, entre eles a antiga '
-                         'coordenadora da Proteção Civil e o ex-veterinário municipal, de mais de 230 '
-                         'crimes. O coletivo consigna que nenhum dos dois tinha poderes para ordenar a '
-                         'evacuação forçada dos espaços privados na noite do incêndio']],
+            ['19.6.2020', 'Despacho n.º 6928/2020 — criação do **Grupo de Trabalho para o Bem-Estar '
+                          'Animal**, invocado no esclarecimento do Governo como a via aberta para rever '
+                          'o regime'],
+            ['18.7.2020', 'Incêndio na Serra da Agrela; morrem dezenas de animais em dois abrigos — '
+                          '«Cantinho das 4 Patas» e «Abrigo de Paredes» —, **sem qualquer registo na '
+                          'DGAV**, já antes objeto de vistorias conjuntas e de processos de '
+                          'contraordenação'],
+            ['21.7.2020', 'A Secretaria de Estado da Agricultura e do Desenvolvimento Rural divulga '
+                          '«Esclarecimento sobre legalidade dos alojamentos de hospedagem de animais '
+                          'sem fins lucrativos afetados pelo incêndio de Santo Tirso»: os dois espaços '
+                          '**nunca cumpriram os procedimentos do Decreto-Lei n.º 276/2001**; invoca esse '
+                          'diploma, o **artigo 4.º do Decreto-Lei n.º 116/98** e o Despacho n.º '
+                          '6928/2020'],
+            ['1.10.2020', 'Entra em vigor o artigo 1.º-A da Lei n.º 92/95, aditado pela Lei n.º 39/2020 '
+                          '— **posterior ao incêndio** (ver adiante)'],
+            ['11.12.2024', 'O processo é remetido para julgamento. Entre os arguidos, o **ex-médico '
+                           'veterinário municipal** (acusado de conhecer os abrigos ilegais e de não ter '
+                           'agido em tempo) e a **coordenadora municipal da Proteção Civil** (acusada de '
+                           'não ter respondido aos alertas), além dos responsáveis dos dois abrigos'],
+            ['9.9.2026', 'O Tribunal de Matosinhos absolve os cinco arguidos. O coletivo consigna que '
+                         'nenhum dos dois titulares de cargos públicos tinha poderes para ordenar a '
+                         '**evacuação forçada** dos espaços privados na noite do incêndio. Em '
+                         'julgamento, o **Ministério Público** havia já declarado não ver prova de '
+                         'crime; o **PAN**, assistente, anunciou **recurso** — a decisão **não é '
+                         'definitiva**']],
            [Cm(2.6), Cm(14.0)])
+    nota(doc, [
+        '**Número de animais mortos.** As fontes divergem — 54, 73 («69 cães e 4 gatos»), 92 e 93 —, '
+        'conforme o momento da contagem e conforme se contem os animais mortos no incêndio ou também os '
+        'que morreram depois. O estudo não fixa um número: o que é juridicamente relevante é que morreram '
+        '**dezenas de animais em espaços sem registo**, sobre os quais havia vistorias desde 2006.'])
 
     h3(doc, 'O que o caso não decide')
     numlist(doc, [
@@ -818,12 +868,78 @@ def construir(doc):
         '**E confirma, com factos, a inibição descrita no ponto 15.7.** Abrigos não registados em zona '
         'rural, com vistorias feitas e contraordenações instauradas, e animais que ali permaneceram até '
         'morrerem. O sistema reativo não impediu nada.',
+        '**A cronologia mede a inércia com precisão.** Pelo próprio esclarecimento do Governo, havia '
+        'vistorias desde 2006, intervenção da DGAV em vistorias conjuntas desde 2010, sanções '
+        'contraordenacionais aplicadas, e um pedido expresso de remoção em 2012. São **catorze anos** de '
+        'atuação formalmente correta e materialmente inútil. Nenhum dos instrumentos usados — vistoria, '
+        'contraordenação, pedido de remoção — retirou um animal.',
+        '**E confirma que a falta de registo não impede a intervenção.** O Governo afirma que os espaços '
+        '«nunca cumpriram os procedimentos» do Decreto-Lei n.º 276/2001 e, no mesmo texto, descreve '
+        'vistorias e sanções aplicadas ao seu abrigo. É exatamente a leitura sustentada no ponto 15.7: o '
+        'que desencadeia o regime dos alojamentos é a **atividade**, não o registo — quem não se registou '
+        'não fica fora do regime, fica em infração dentro dele.',
     ])
+    h3(doc, 'A raiz institucional: o estatuto do médico veterinário municipal')
+    para(doc,
+         'O esclarecimento do Governo de 21 de julho de 2020 invoca, ao lado do Decreto-Lei n.º 276/2001, '
+         'o artigo 4.º do Decreto-Lei n.º 116/98, de 5 de maio. A remissão não é decorativa: é aí que '
+         'está a explicação institucional do sucedido, e é matéria que este estudo não tinha tratado. O '
+         'diploma desenha o médico veterinário municipal com **duas cabeças**.')
+    citacao(doc, [
+        '2 — O médico veterinário municipal é a autoridade sanitária veterinária concelhia, a nível da '
+        'respectiva área geográfica de actuação, quando no exercício das atribuições que lhe estão '
+        'legalmente cometidas.',
+        '3 — Os poderes de autoridade sanitária veterinária são conferidos aos médicos veterinários '
+        'municipais, por inerência de cargo, pela Direcção-Geral de Veterinária (DGV), enquanto '
+        'autoridade sanitária veterinária nacional, e pela Direcção-Geral de Fiscalização e Controlo da '
+        'Qualidade Alimentar (DGFCQA), a título pessoal, não delegável e abrangendo a actividade por eles '
+        'exercida na respectiva área concelhia, quando esteja em causa a sanidade animal ou a saúde '
+        'pública.',
+        '4 — O exercício do poder de autoridade sanitária veterinária concelhia traduz-se na competência '
+        'de, sem dependência hierárquica, tomar qualquer decisão, por necessidade técnica ou científica, '
+        'que entenda indispensável ou relevante para a prevenção e correcção de factores ou situações '
+        'susceptíveis de causarem prejuízos graves à saúde pública, bem como nas competências relativas à '
+        'garantia de salubridade dos produtos de origem animal.',
+    ], 'N.ºs 2, 3 e 4 do artigo 2.º do Decreto-Lei n.º 116/98, de 5 de maio, conferido no Diário da '
+       'República, I série-A, n.º 103, de 5.5.1998, p. 1990')
+    citacao(doc, [
+        '1 — Os médicos veterinários municipais dependem, hierárquica e disciplinarmente, do presidente '
+        'da câmara da respectiva área da sua intervenção.',
+    ], 'N.º 1 do artigo 4.º do Decreto-Lei n.º 116/98, no mesmo lugar')
+    para(doc,
+         'Cotejadas, as duas normas dizem isto: nas decisões de autoridade sanitária o médico veterinário '
+         'municipal decide **sem dependência hierárquica**, com poderes que lhe vêm da autoridade '
+         'nacional **a título pessoal e não delegável**; em tudo o mais — carreira, avaliação, disciplina '
+         '— depende do presidente da câmara. É um funcionário do município investido de um poder que o '
+         'município não lhe deu e não lhe pode retirar, e que responde disciplinarmente perante quem não '
+         'comanda esse poder.')
+    destaque(doc, [
+        'Duas consequências, ambas relevantes para a questão 8:',
+        '**Primeira — o caso é coerente com a resposta dada, não a contraria.** O poder que o n.º 4 do '
+        'artigo 2.º confere ao médico veterinário municipal é um poder de decisão fundado em **prejuízos '
+        'graves à saúde pública**. Animais a morrer num incêndio não são, em si, um problema de saúde '
+        'pública: são um problema de bem-estar animal e de proteção civil. Se o tribunal concluiu que '
+        'aquele titular não tinha poderes para ordenar a evacuação, a conclusão encaixa na arquitetura '
+        'legal — e não põe em causa o n.º 5 do artigo 3.º do Decreto-Lei n.º 314/2003, que confere o poder '
+        'de notificar para remoção **à câmara municipal**, órgão colegial, depois de vistoria conjunta, e '
+        'por fundamento de salubridade. O veterinário municipal integra a vistoria; não é ele que '
+        'notifica.',
+        '**Segunda — está aqui a explicação da inércia, e é estrutural.** Quem tem de propor a medida '
+        'impopular depende disciplinarmente de quem a suportaria politicamente. A lei quis blindar essa '
+        'posição com a fórmula «sem dependência hierárquica», mas blindou-a apenas no perímetro da saúde '
+        'pública e deixou intacta a dependência quanto a tudo o resto. Nos abrigos sem registo, onde o '
+        'fundamento próprio é o bem-estar animal e não a saúde pública, a blindagem não cobre o ato.'])
+
     nota(doc, [
         '**Advertência de fonte.** Não se leu a decisão. O que antecede resulta de notícias sobre a '
         'leitura oral do acórdão, e trata-se de absolvição em primeira instância, suscetível de recurso. '
         '**Obter o texto da decisão é a diligência mais útil que este estudo tem pendente**, e só depois '
-        'dela se poderá afirmar com segurança o que o tribunal decidiu quanto a competências.'])
+        'dela se poderá afirmar com segurança o que o tribunal decidiu quanto a competências. Acresce que '
+        'o PAN, assistente no processo, anunciou recurso: **a decisão não transitou** e não pode ser '
+        'invocada como afirmação estabilizada sobre competências municipais. Em julgamento, o próprio '
+        'Ministério Público declarou não ver prova de crime — o que sugere uma absolvição decidida em '
+        'matéria de facto e de imputação subjetiva, e não uma declaração de incompetência legal dos '
+        'municípios; mas isto é hipótese até se ler o acórdão.'])
     nota(doc, [
         '**Observação.** O caso ilustra o custo da tese contrária tanto quanto o da tese aqui sustentada: '
         'se a câmara entende não ter poderes e a DGAV depende da câmara para executar, o sistema não '
@@ -955,10 +1071,10 @@ def construir(doc):
 
     # ------------------------------------------------------------------ 11
     pagebreak(doc)
-    h1(doc, '11.', 'Jurisprudência')
+    h1(doc, '11.', 'Jurisprudência e doutrina')
     para(doc,
-         'Nenhuma decisão resolve a questão. Três aproximam-se, e a terceira contraria a doutrina que '
-         'adiante se cita.')
+         'Nenhuma decisão resolve a questão. Três aproximam-se. Segue-se o único estudo doutrinal que trata '
+         'o artigo 3.º na perspetiva de quem o aplica, e o resultado da pesquisa exaustiva.')
 
     h3(doc, '11.1  Acórdão do Tribunal Central Administrativo Sul de 4 de fevereiro de 2010')
     citacao(doc,
@@ -1000,9 +1116,9 @@ def construir(doc):
 
     h3(doc, '11.3  Acórdão do Tribunal da Relação de Guimarães de 19 de maio de 2022')
     para(doc,
-         'A doutrina que se debruçou sobre o artigo 3.º sustentou que os seus limites valem apenas para '
-         'efeitos de prevenção de zoonoses e que seria abusivo deles extrair uma limitação geral aos '
-         'poderes do proprietário de fracção autónoma. Essa posição não foi acolhida.')
+         'Há quem sustente que os limites do artigo 3.º valem apenas para efeitos de prevenção de zoonoses '
+         'e que seria abusivo deles extrair uma limitação geral aos poderes do proprietário de fracção '
+         'autónoma. Essa posição não foi acolhida.')
     citacao(doc,
             ['[…] o DL n.º 314/2003, de 17 de Dezembro, que aprova o Programa Nacional de Luta e '
              'Vigilância Epidemiológica da Raiva e que em cuja art.º 3º n.º 2 dispõe que nos prédios '
@@ -1019,7 +1135,68 @@ def construir(doc):
          'mobilizados como padrão de conduta fora do domínio da polícia sanitária. Não respeita, ainda '
          'assim, à capacidade de estabelecimentos.')
 
-    h3(doc, '11.4  Resultado negativo')
+    h3(doc, '11.4  Doutrina — a análise contraordenacional de 2019')
+    para(doc,
+         'Localizou-se, e leu-se integralmente, o único estudo doutrinal que trata o artigo 3.º do ponto '
+         'de vista de quem o aplica no terreno: Bruno Filipe Salvador da Silva Branco, «A detenção de '
+         'animais de companhia — uma análise do ponto de vista contraordenacional», Revista Jurídica '
+         'Luso-Brasileira, Ano 5 (2019), n.º 2, pp. 229-260. O autor é subcomissário da Polícia de '
+         'Segurança Pública e pós-graduado em Direito dos Animais pelo CIDP da Faculdade de Direito de '
+         'Lisboa. O interesse do texto não está em teses de autor, está em ser um levantamento sistemático '
+         'do regime feito na perspetiva da fiscalização — e em confirmar, ponto por ponto, as leituras aqui '
+         'sustentadas.')
+    numlist(doc, [
+        '**A epígrafe com que arruma o artigo 3.º é «Limite de cães e gatos por habitação»** (p. 240). Não '
+        '«por prédio», não «por alojamento», não «por estabelecimento»: por habitação. E ao tratar o n.º 4 '
+        'escreve «Caso a **habitação** seja considerada prédio rústico ou misto, podem ser alojados até '
+        'seis animais adultos» (p. 241) — isto é, também aí o referente é a habitação, e a classificação '
+        'predial é apenas o seu atributo. É exatamente a leitura do capítulo 5 e do ponto 15.2.',
+        '**Arruma o artigo 3.º entre as medidas de profilaxia da raiva**, ao lado da vacinação '
+        'antirrábica obrigatória e das regras de circulação na via pública (pp. 239-242). A sistemática do '
+        'autor é a do ponto 7.1: o artigo 3.º é polícia sanitária, não direito do licenciamento.',
+        '**Descreve a contraordenação da al. c) do n.º 3 do artigo 14.º como «Exceder o n.º de animais por '
+        'fogo urbano (3 cães ou quatro gatos, num máximo de 4 animais)»**, no quadro-resumo das principais '
+        'ocorrências contraordenacionais (p. 254). O enunciado é o do ponto 9.3: a norma sancionatória '
+        'tipifica o excesso **por fogo**, e não a lotação de um estabelecimento.',
+        '**Indica a DGAV como entidade instrutória dessa contraordenação** (mesmo quadro), e no corpo do '
+        'texto escreve que «O incumprimento das regras do artigo 3.º do PNLVERAZ constituem '
+        'contraordenação, punível pelo diretor-geral da DGAV, pelo artigo 14.º, n.º 3, al. c)» (p. 241). '
+        'Confirma a dissociação apurada no ponto 9.3 e no ponto 9.5: **quem instrui e pune é a DGAV; quem '
+        'notifica para remover é a câmara**.',
+        '**Confirma o percurso do poder de remoção tal como aqui se descreve**: «Em situações de '
+        'incumprimento, e após notificação do proprietário para regularização da situação, podem as '
+        'Câmaras Municipais solicitar mandado judicial que lhes permita o acesso ao local onde se '
+        'encontram os animais em excesso e proceder á sua remoção» (p. 241). É doutrina — de fonte '
+        'policial — a afirmar que **a remoção é operação municipal**. Vale para a questão 8 e para a '
+        'leitura do caso de Santo Tirso.',
+        '**O seu quadro-resumo das contraordenações do Decreto-Lei n.º 276/2001 não contém uma única '
+        'entrada relativa a excesso de animais em alojamento** (pp. 254-255). Enumera venda ambulante, '
+        'violação do dever de cuidado com perigo para pessoas e para animais, abandono, seguro de '
+        'responsabilidade civil. Nenhuma lotação. É a confirmação, por quem fez o levantamento exaustivo '
+        'para uso operacional, do resultado negativo apurado no ponto 9.3: **no regime dos alojamentos não '
+        'existe norma sancionatória ancorada num número**.',
+    ])
+    destaque(doc, [
+        'O valor deste estudo para a questão em análise é duplo, e nenhuma das duas faces é a de autoridade '
+        'doutrinal em sentido forte. Primeiro, **é a única fonte que arruma os dois diplomas lado a lado '
+        'para fins de fiscalização** e, fazendo-o, nunca cruza os planos: o artigo 3.º aparece como limite '
+        'da habitação, o Decreto-Lei n.º 276/2001 como regime da atividade. Segundo, **é um levantamento '
+        'feito para ser usado**, por quem levanta autos — e a ausência de qualquer entrada sobre lotação de '
+        'alojamento não é omissão de escrita, é reflexo de não haver o que levantar.'])
+    nota(doc, [
+        '**Observação.** O autor não se pronuncia sobre a questão deste estudo — não pergunta se o artigo '
+        '3.º limita a capacidade de um alojamento registado. A confirmação que dele se retira é '
+        'indireta, e é por isso que vale: as suas categorias foram construídas sem o problema em vista, e '
+        'organizaram-se, ainda assim, exatamente segundo a separação aqui defendida. Uma classificação '
+        'que não foi feita para provar nada é melhor indício do sentido corrente das normas do que uma '
+        'tese que as discuta.',
+        'Registe-se também o que o autor propõe de iure condendo, por coincidir com o ponto 9.5: sustenta '
+        'que «urge a necessidade do poder político intervir nesta matéria através da criação legislativa '
+        'dum verdadeiro "Estatuto do Animal", que congregue num único diploma toda panóplia de diplomas '
+        'legais, de forma clara, estruturada, simples e intuitiva, dirimindo as incoerências e '
+        'inexactidões existentes actualmente» (p. 256).'])
+
+    h3(doc, '11.5  Resultado negativo')
     destaque(doc, [
         'Foram descarregados e lidos na íntegra **trinta e dois acórdãos que citam o Decreto-Lei '
         'n.º 314/2003 e trinta e seis que citam o Decreto-Lei n.º 276/2001**, nas nove bases dos tribunais '
@@ -1238,7 +1415,11 @@ def construir(doc):
         'Não se localizou doutrina, jurisprudência nem parecer que se debruce sobre esta remissão. A '
         'revisão crítica legislativa da Associação Portuguesa de Médicos Veterinários Especialistas em '
         'Animais de Companhia, de abril de 2021, percorre ambos os diplomas e trata do artigo 3.º do '
-        'Decreto-Lei n.º 314/2003 e das definições do Decreto-Lei n.º 276/2001, mas não a menciona.'])
+        'Decreto-Lei n.º 314/2003 e das definições do Decreto-Lei n.º 276/2001, mas não a menciona. O '
+        'mesmo sucede no estudo contraordenacional de 2019 tratado em 11.4, que transcreve em nota a al. '
+        'q) do n.º 1 do artigo 2.º — a definição vizinha — e passa ao lado da al. p). **Duas revisões '
+        'sistemáticas do regime, feitas por profissionais que o aplicam, e nenhuma dá pela ressalva.** É '
+        'indício do seu alcance real.'])
 
     # ------------------------------------------------------------------ 15
     h1(doc, '15.', 'Os prédios rústicos e mistos: a assimetria dos n.ºs 2 e 4')
@@ -1509,7 +1690,18 @@ def construir(doc):
         'a ausência de casos.',
         'Não se obteve o texto do acórdão do Tribunal de Matosinhos de 9 de setembro de 2026, sobre os '
         'abrigos de Santo Tirso, usado no ponto 9.5 a partir de notícias. É a diligência pendente mais '
-        'útil, e condiciona o que sobre ele se pode afirmar.',
+        'útil, e condiciona o que sobre ele se pode afirmar. Acresce que o PAN anunciou recurso: **a '
+        'decisão não transitou**, e o que dela se escreva é provisório por duas razões — não se leu, e '
+        'pode ser revogada.',
+        'Não se obtiveram dois documentos administrativos do caso de Santo Tirso que seriam decisivos: o '
+        '**parecer jurídico de 2018** obtido pela câmara e o **despacho da DGAV de 2012** que lhe pediu a '
+        'remoção dos animais. Conhecem-se por referência na imprensa. O segundo é o mais relevante, '
+        'porque é a autoridade sanitária nacional a reconhecer que o poder de remoção é municipal; '
+        'convém obter o texto para o poder citar como tal.',
+        'A **doutrina em matéria de propriedade horizontal** referida em 11.3 não foi consultada em '
+        'primeira mão — conhece-se pela sua refutação no acórdão do Tribunal da Relação de Guimarães. '
+        'Não afeta a conclusão, porque essa posição é contrária à aqui sustentada apenas quanto ao '
+        'alcance do n.º 3, e já foi rejeitada pelo tribunal.',
         'Os textos do n.º 2 do artigo 112.º da Constituição e do artigo 7.º do Código Civil, usados no '
         'capítulo 13, foram **conferidos em fonte oficial** e coincidem integralmente com os que aqui '
         'se citam. O método usado fica descrito no ponto 18.2, por ser útil a quem repita o trabalho.',
@@ -1617,8 +1809,145 @@ def construir(doc):
             ['n.º 1 do art.º 27.º', 'DL n.º 276/2001', 'Dimensões mínimas — anexo III'],
             ['n.º 2 do art.º 67.º-A', 'DL n.º 276/2001', 'Acesso — «casas de habitação e terrenos privados»'],
             ['art.º 70.º', 'DL n.º 276/2001', 'Instrução e decisão dos processos de contraordenação'],
+            ['n.ºs 2, 3 e 4 do art.º 2.º', 'DL n.º 116/98',
+             'Médico veterinário municipal — autoridade sanitária veterinária concelhia; poderes '
+             'conferidos pela autoridade nacional a título pessoal e não delegável; decisão «sem '
+             'dependência hierárquica» por prejuízos graves à saúde pública'],
+            ['n.º 1 do art.º 4.º', 'DL n.º 116/98',
+             'Dependência hierárquica e disciplinar do presidente da câmara'],
             ['arts. 2.º a 6.º', 'CIMI', 'Classificação predial — critério fiscal'],
             ['al. a) do n.º 2 do art.º 1083.º', 'Código Civil',
              'Resolução do arrendamento — higiene e vizinhança'],
            ],
            [Cm(4.6), Cm(3.4), Cm(8.2)])
+
+    # ------------------------------------------------------------------ Anexo C
+    pagebreak(doc)
+    h1(doc, 'Anexo C', 'Bibliografia e fontes')
+    para(doc,
+         'Registam-se todas as fontes efetivamente consultadas, e assinala-se o que delas se leu. '
+         'Distingue-se o que vale como fonte de direito, o que vale como prática, e o que vale apenas '
+         'como notícia.')
+
+    h2(doc, 'C.1', 'Legislação — lugar de publicação')
+    bullets(doc, [
+        '**Decreto-Lei n.º 314/2003, de 17 de dezembro** — Programa Nacional de Luta e Vigilância '
+        'Epidemiológica da Raiva Animal e Outras Zoonoses. Diário da República, I série-A, n.º 290, de '
+        '17.12.2003. Texto original conferido em PDF do jornal oficial; o artigo 3.º nunca foi alterado '
+        '(ver Anexo A).',
+        '**Decreto-Lei n.º 276/2001, de 17 de outubro** — normas legais de aplicação da Convenção '
+        'Europeia para a Proteção dos Animais de Companhia. Diário da República, I série-A, n.º 241, de '
+        '17.10.2001, que publica também os anexos I a VII.',
+        '**Decreto-Lei n.º 315/2003, de 17 de dezembro** — primeira alteração ao Decreto-Lei n.º '
+        '276/2001; publicado no mesmo Diário da República que o Decreto-Lei n.º 314/2003 (n.º 290, de '
+        '17.12.2003). É o diploma que adita a ressalva da al. p) (ver capítulo 14).',
+        '**Lei n.º 92/95, de 12 de setembro** — Proteção dos Animais. Artigo 1.º-A aditado pela **Lei n.º '
+        '39/2020, de 18 de agosto**, com entrada em vigor a 1.10.2020.',
+        '**Decreto-Lei n.º 116/98, de 5 de maio** — carreira de médico veterinário municipal. Diário da '
+        'República, I série-A, n.º 103, de 5.5.1998, p. 1990. Página conferida por conversão em imagem; '
+        'n.ºs 2, 3 e 4 do artigo 2.º e n.º 1 do artigo 4.º citados verbatim no ponto 9.5.',
+        '**Decreto-Lei n.º 10/2015, de 16 de janeiro** — Regime Jurídico de Acesso e Exercício de '
+        'Atividades de Comércio, Serviços e Restauração.',
+        '**Regulamento Geral das Edificações Urbanas** (Decreto-Lei n.º 38 382, de 7 de agosto de 1951) — '
+        'artigos 66.º e 67.º, base do conceito de «fogo». Revogação suspensa pelo artigo 25.º do '
+        'Decreto-Lei n.º 10/2024, na redação do **Decreto-Lei n.º 108/2026**, Diário da República n.º '
+        '104, de 29.5.2026.',
+        '**Decreto-Lei n.º 555/99, de 16 de dezembro** (RJUE), na redação do Decreto-Lei n.º 108/2026 — '
+        'al. a) do n.º 5 do artigo 6.º e al. c) do n.º 2 do artigo 14.º.',
+        '**Decreto-Lei n.º 433/82, de 27 de outubro** (RGCO) — artigo 2.º, Diário da República de '
+        '27.10.1982, p. 3553; artigo 19.º na redação do **Decreto-Lei n.º 244/95, de 14 de setembro**, '
+        'Diário da República n.º 213, de 14.9.1995, p. 5783.',
+        '**Código Civil** — artigo 7.º, Diário do Governo n.º 274, I série, de 25.11.1966, p. 1886 '
+        '(digitalização conferida por conversão em imagem); al. a) do n.º 2 do artigo 1083.º.',
+        '**Constituição da República Portuguesa** — n.º 2 do artigo 112.º, conferido em edição '
+        'institucional em PDF.',
+        '**Código do Imposto Municipal sobre Imóveis** — artigos 2.º a 6.º, classificação predial.',
+        '**Decreto-Lei n.º 82/2019, de 27 de junho** (SIAC); **Decreto-Lei n.º 313/2003, de 17 de '
+        'dezembro**; **Portaria n.º 264/2013, de 16 de agosto**; **Decreto-Lei n.º 91/2001** (revogado '
+        'pelo artigo 19.º do Decreto-Lei n.º 314/2003).',
+    ])
+    nota(doc, [
+        '**Método.** Toda a citação legal deste estudo foi conferida contra o PDF do jornal oficial, pelo '
+        'caminho descrito no ponto 18.2. Os compiladores privados serviram para localizar normas, nunca '
+        'para as citar.'])
+
+    h2(doc, 'C.2', 'Jurisprudência consultada')
+    bullets(doc, [
+        '**Acórdão do Tribunal Central Administrativo Sul de 4.2.2010**, processo n.º 04784/09, relator '
+        'Rui Pereira — descritores «alojamento de animais» e «prédio misto». Citado em 11.1.',
+        '**Acórdão do Tribunal da Relação de Lisboa de 28.6.2007**, processo n.º 1692/2007-8, relator '
+        'Salazar Casanova. Citado em 11.2.',
+        '**Acórdão do Tribunal da Relação de Guimarães de 19.5.2022**, processo n.º 119/20.1T8FAF.G1, '
+        'relator José Carlos Duarte. Citado em 11.3.',
+        '**Trinta e dois acórdãos que citam o Decreto-Lei n.º 314/2003 e trinta e seis que citam o '
+        'Decreto-Lei n.º 276/2001**, descarregados e lidos na íntegra nas bases dos tribunais superiores. '
+        'Resultado negativo registado em 11.5.',
+        '**Acórdão do Tribunal Judicial da Comarca do Porto, juízo central criminal de Matosinhos, de '
+        '9.9.2026** — abrigos de Santo Tirso. **Texto não obtido**; usado no ponto 9.5 apenas por notícia '
+        'da leitura oral. Decisão objeto de recurso anunciado.',
+    ])
+
+    h2(doc, 'C.3', 'Doutrina')
+    bullets(doc, [
+        '**BRANCO, Bruno Filipe Salvador da Silva**, «A detenção de animais de companhia — uma análise do '
+        'ponto de vista contraordenacional», *Revista Jurídica Luso-Brasileira*, Ano 5 (2019), n.º 2, pp. '
+        '229-260. Centro de Investigação de Direito Privado da Faculdade de Direito da Universidade de '
+        'Lisboa. **Lido integralmente**; tratado em 11.4. É a única fonte doutrinal localizada que trata '
+        'o artigo 3.º na perspetiva da fiscalização.',
+        '**Posição doutrinal sobre os limites do artigo 3.º em propriedade horizontal** — sustenta que os '
+        'limites valem apenas para prevenção de zoonoses e não limitam os poderes do proprietário de '
+        'fracção autónoma. Referida em 11.3 pelo seu conteúdo, por não ter sido acolhida pelo Tribunal da '
+        'Relação de Guimarães. **Fonte não consultada em primeira mão.**',
+    ])
+    nota(doc, [
+        '**Lacuna assumida.** Não se localizou doutrina que trate a questão deste estudo — se os limites '
+        'por fogo fixam a lotação de um alojamento registado —, nem doutrina, jurisprudência ou parecer '
+        'sobre a ressalva da al. p) do n.º 1 do artigo 2.º do Decreto-Lei n.º 276/2001 (ver 14.4). O '
+        'raciocínio dos capítulos 9, 14 e 15 é próprio.'])
+
+    h2(doc, 'C.4', 'Fontes administrativas e institucionais')
+    bullets(doc, [
+        '**DGAV — «FAQ\'s para alojamentos de criação»**, versão de julho de 2025. Tratada em 12.',
+        '**Município do Porto** — serviço «Autorização de alojamento de animais em n.º superior ao '
+        'previsto na lei».',
+        '**Município do Cartaxo** — Regulamento n.º 181/2025, de 31 de janeiro, Diário da República, 2.ª '
+        'série, n.º 22; artigo 13.º.',
+        '**Comunidade Intermunicipal do Alto Minho** — perguntas frequentes sobre animais de companhia.',
+        '**Parecer jurídico externo obtido pela Câmara Municipal de Santo Tirso (2018)** — conclui que «as '
+        'câmaras não têm competência para encerrar abrigos de animais». **Texto não obtido**; conhecido '
+        'por referência na imprensa. Tratado em 9.5.',
+        '**Despacho da DGAV de 2012** dirigido à Câmara Municipal de Santo Tirso, pedindo diligências para '
+        'retirar os animais do abrigo «Cantinho das Quatro Patas». **Texto não obtido**; conhecido por '
+        'referência na imprensa e compatível com o esclarecimento governamental de 2020.',
+        '**«Esclarecimento sobre legalidade dos alojamentos de hospedagem de animais sem fins lucrativos '
+        'afetados pelo incêndio de Santo Tirso»**, XXII Governo, Secretaria de Estado da Agricultura e do '
+        'Desenvolvimento Rural, 21.7.2020. **Lido.** Fonte do histórico de vistorias desde 2006, da '
+        'intervenção da DGAV desde 2010 e da afirmação de que os dois espaços nunca cumpriram os '
+        'procedimentos do Decreto-Lei n.º 276/2001.',
+        '**Despacho n.º 6928/2020, de 19 de junho** — Grupo de Trabalho para o Bem-Estar Animal, invocado '
+        'naquele esclarecimento.',
+    ])
+
+    h2(doc, 'C.5', 'Imprensa — caso de Santo Tirso')
+    para(doc,
+         'Usada exclusivamente para o apuramento factual do ponto 9.5, e identificada como tal. Não vale '
+         'como fonte de direito. As peças consultadas divergem no número de animais mortos (54, 73, 92, '
+         '93), pelo que o estudo não fixa um número.')
+    bullets(doc, [
+        '**Público**, 11.12.2024 — remessa do processo para julgamento; identificação dos arguidos e do '
+        'número de crimes imputados a cada um.',
+        '**Jornal de Notícias** — cobertura do julgamento, incluindo a posição do Ministério Público de '
+        'não ver prova de crime.',
+        '**Cobertura da leitura da decisão de 9.9.2026** — absolvição dos cinco arguidos e fundamento '
+        'relativo à ausência de poderes para ordenar a evacuação forçada; anúncio de recurso pelo PAN, '
+        'assistente no processo.',
+        '**Cobertura parlamentar de 2020** — pedido do PEV de levantamento nacional dos abrigos privados '
+        'e pedido do Bloco de Esquerda de esclarecimentos ministeriais.',
+        '**Observador** — trabalho sobre a relação entre a proibição do abate e o crescimento de abrigos '
+        'clandestinos.',
+    ])
+    nota(doc, [
+        '**Advertência.** Tudo o que no ponto 9.5 provém desta secção está aí assinalado como resultante '
+        'de notícia. O estudo não retira do caso de Santo Tirso qualquer conclusão jurídica que não '
+        'esteja independentemente fundada na lei — o caso serve de ilustração e de teste à tese, nunca de '
+        'premissa.'])
