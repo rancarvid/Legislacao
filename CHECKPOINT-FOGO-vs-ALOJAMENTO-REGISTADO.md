@@ -159,6 +159,192 @@ objecto o número de animais, o bem-estar ou a falta de título de acesso. Está
 
 ---
 
+## PARTE 0-B — As duas audições restantes, processadas em 28.9.2026
+
+As três gravações estão transcritas. **Nada disto foi levado ao Word**: o utilizador decidiu, em 28.9.2026,
+que só entra no estudo o que for relevante, e a apreciação abaixo é a minha proposta de triagem, não uma
+decisão tomada. Fica tudo aqui para se decidir depois.
+
+### B.0 Ficheiros e cobertura
+
+Todos em `criador informal/audições parlamentares/transcricoes/`, todos `.txt`, todos versionados.
+
+| Ficheiro | Modelo | Cobertura |
+|---|---|---|
+| `32-CAM-XIV_varrimento-completo_small.txt` | `small` | Presidente da câmara, 109,6 min, 1135 segmentos |
+| `32-CAM-XIV_janelas-A-a-D_medium.txt` | `medium` | Quatro janelas |
+| `32-CAM-XIV_janela-E-nucleo-juridico_medium.txt` | `medium` | 01:28–01:46:30 |
+| `33-CAM-XIV_varrimento-completo_small.txt` | `small` | Ministros, 160,5 min, 1884 segmentos |
+| `33-CAM-XIV_janelas-A-a-H_medium.txt` | `medium` | Oito janelas, 10,4 min — lista em `_janelas_33.py` |
+| `SE-AI_relatorio-IGAI_varrimento-completo_small.txt` | `small` | Secretária de Estado, 72,3 min, 890 segmentos |
+
+Ritmos medidos: `small` ≈ 4,2× tempo real; `medium` ≈ 0,7× tempo real. **Só se cita a partir dos `medium`.**
+
+### B.1 A terceira gravação não é o que se pensava
+
+Estava registado no LEIA-ME como hipótese que fosse recorte da audição dos ministros. **É falso.** É audição
+autónoma da Secretária de Estado da Administração Interna, requerida pelo PAN, realizada como segunda parte
+de uma reunião de comissão, e tem por objecto o **relatório de inquérito da Inspeção-Geral da Administração
+Interna** sobre o incêndio, que foi arquivado sem indícios de infração disciplinar dos operacionais da ANEPC
+ou da GNR.
+
+**A data não está estabelecida.** Uma deputada refere-se às audições de 30.7.2020 como «em finais de julho do
+ano passado» [00:32:48], pelo que é de 2021 ou posterior. Uma pesquisa devolveu «3 de março de 2021, Comissão
+de Assuntos Constitucionais, Secretária de Estado Patrícia Gaspar» — **pista não confirmada**, nenhuma fonte
+a sustentou e a página de detalhe que apareceu era de outra audição. Não usar como facto.
+
+### B.2 Relevante: o Governo declarou que os alojamentos nunca tiveram título
+
+Ministra da Agricultura, audição n.º 33-CAM-XIV, [00:21:53–00:22:16], transcrição `medium`:
+
+> Quanto aos dois alojamentos de [hospedagem] sem f[ins lucrativos], quero começar por esclarecer que nunca
+> foram assegurados os procedimentos necessários ao exercício da atividade, nos termos previstos na lei, no
+> Decreto-Lei 276 de 2001, junto da Direção-Geral da Alimentação [e Veterinária], e por isso o exercício
+> daquela atividade naquele local era considerada ilegal.
+
+**Porque é relevante.** Fecha, com fonte governamental, o ponto «O que o caso não decide» da secção 9.5: o
+caso de Santo Tirso não testa a questão central deste estudo, porque a questão central pressupõe um
+alojamento **registado**. E a categoria que a Ministra usa — hospedagem sem fins lucrativos — é a da al. a)
+do n.º 1 do art.º 3.º na redação original.
+
+Destino proposto: secção 9.5, alínea nova.
+
+### B.3 Relevante: em 30.7.2020 o Governo citou a redação do DL n.º 116/98 que já tinha cessado
+
+Ministra da Agricultura, [01:42:17–01:43:15], transcrição `medium`:
+
+> De acordo com o Decreto-Lei [116/98], no seu artigo 4, diz que os médicos veterinários municipais dependem
+> funcional, hierárquica e disciplinarmente do presidente da Câmara Municipal ou do vereador, dirigente ou
+> trabalhador com competências delegadas.
+
+E, a seguir, o art.º 8.º, incluindo: «Da atividade mencionada no número anterior, deve obter-se a prévia
+autorização do presidente da Câmara ou do vereador, dirigente ou trabalhador com competências delegadas, que
+se considera tacitamente [deferida] no prazo de 10 dias.»
+
+Na primeira intervenção [00:23:16–00:23:27] já tinha dito: «o médico veterinário municipal depende,
+hierárquica e disciplinarmente, do Sr. Presidente da Câmara Municipal nos termos do **n.º 4** do Decreto-Lei
+116, de 1998».
+
+**Nada disto consta do DL n.º 116/98.** Conferido no DR, I série-A, n.º 103, de 5.5.1998, p. 1990: o n.º 1 do
+art.º 4.º diz apenas «Os médicos veterinários municipais dependem, hierárquica e disciplinarmente, do
+presidente da câmara da respectiva área da sua intervenção»; o art.º 4.º não tem n.º 4; o art.º 8.º é
+parágrafo único, sem autorização prévia.
+
+Aquelas palavras foram introduzidas pelo **art.º 8.º do DL n.º 20/2019**, que alterou os arts. 4.º, 5.º e 8.º
+do DL n.º 116/98 — conferido no DR, 1.ª série, n.º 21, de 30.1.2019. A **Resolução da AR n.º 138/2019, de 8
+de agosto** fez cessar a vigência de todo o DL n.º 20/2019. A audição é de 30.7.2020, quase um ano depois.
+
+**Porque é relevante, e é o achado mais forte desta audição.** O acrescento de «funcional» inverte o n.º 2 do
+art.º 4.º do texto restaurado, pelo qual as relações funcionais do médico veterinário municipal correm para o
+ministério, e não para o presidente da câmara. A versão que a Ministra leu era precisamente a que sustentava
+o argumento de que o médico veterinário estava fora do alcance da DGAV — e não estava em vigor. A parte
+substantiva que afirmou, a dependência hierárquica e disciplinar, é correcta; o resto não.
+
+Consequência para a secção A.2: passa a haver **três** intervenientes a errar a vigência de 2019 na mesma
+audição — o requerimento do PAN, o presidente da câmara e o Governo.
+
+Destino proposto: secção 9.5, alínea nova, com remissão de A.2.
+
+### B.4 Corroborativo: a repartição do art.º 3.º-G, dita por fonte independente
+
+Deputada, [02:16:37–02:18:21], citando dados da **Associação Nacional de Médicos Veterinários dos
+Municípios** remetidos aos grupos parlamentares: a DGAV emitiu em 2012, em processo de contraordenação,
+decisão de encerramento do alojamento; «é competência do Diretor-Geral da Alimenta[ção e] Veterinária a
+decisão de encerramento destes locais»; «ainda segundo o mesmo diploma, [compete] às câmaras municipais
+executar as medidas necessárias ao cumprimento da decisão de encerramento destes locais»; e «o município de
+Santo [Tirso] nunca executou as medidas necessárias para dar cumprimento àquela decisão de encerramento desde
+2012».
+
+**Valor.** Corrobora o que o estudo já estabelece a partir da própria norma, n.ºs 1 e 6 do art.º 3.º-G, e
+resolve a divergência da imprensa sobre a natureza do documento de 2012. Acrescenta fonte, não acrescenta
+argumento. Entra se se quiser adensar a secção; não é necessário.
+
+### B.5 Contexto: números nacionais
+
+Todos da audição n.º 33-CAM-XIV, transcrição `medium`:
+
+| Dado | Marca temporal |
+|---|---|
+| **885 alojamentos de animais de companhia**, incluindo hotéis, criadores, centros de recolha oficiais e associações sem fins lucrativos, «mas que fizeram o seu controlo prévio [n]a DGAV para que possam estar aqui mencionados» | [01:46:38–01:46:53] |
+| 1.171 centros de atendimento médico-veterinário | [01:46:53–01:46:59] |
+| 5.881 estabelecimentos de produção de alimentos de origem animal | [01:47:06] |
+| 305 médicos veterinários na DGAV | [01:47:15] |
+| 2.749.337 animais de companhia registados — **dígito incerto**, o varrimento `small` deu 2.449.337 | [01:46:22] |
+| Estruturas ilegais identificadas pela GNR: 58 em 2018, 47 em 2019, 23 em 2020, com compromisso de remeter à comissão a lista dos 128 locais | [00:18:04] e [02:29:30] |
+| «há canis [e] gatis das próprias autarquias que não têm qualquer comunicação prévia» | [01:55:31] |
+| O Ministério da Agricultura assegura 40% da retribuição mensal devida aos médicos veterinários municipais | [00:23:28] |
+
+O primeiro é o mais útil: quantifica o universo dos alojamentos registados e confirma que o título se obtém
+por controlo prévio na DGAV. Destino natural, se entrar: secção 12.
+
+### B.6 Contexto: o que a resposta sancionatória deu de si
+
+Ministra da Agricultura, [01:41:25–01:42:04]: dos dois processos de contraordenação instaurados após
+relatório do núcleo de proteção animal da GNR, um teve decisão final de **coima de 250 euros** e o outro
+ficou instruído a aguardar decisão; e em abril de 2018 «há o relatório do médico veterinário municipal que
+entende que a situação problemática dos abrigos se prende apenas com [questões] de higiene».
+
+Ilustra a fraqueza da resposta; não responde à questão central. Destino possível: 9.3 ou 15.7.
+
+### B.7 Achado por ausência: o DL n.º 314/2003 nunca foi invocado
+
+Em 160,5 minutos de audição, com dezenas de animais mortos num alojamento, **ninguém mencionou o Decreto-Lei
+n.º 314/2003 nem os limites de detenção por fogo**. Verificado por varrimento dos termos `fogo`, `por fogo`,
+`limite de animais`, `número de animais`, `três cães`, `quatro gatos` e `314`: todas as ocorrências de «fogo»
+são o incêndio; o único `276|314` do texto é o 276.
+
+É coerente com a tese do estudo — os limites por fogo pertencem ao plano da detenção doméstica, não ao dos
+alojamentos — mas é argumento de silêncio, da mesma família do *expressio unius* que a secção 14.5 substituiu
+por prova documental. Registar como observação, não como fundamento.
+
+### B.8 O que a audição da IGAI acrescenta
+
+Bloco [00:32:28–00:35:24] do `small`, **ainda não reprocessado em `medium`, logo não citável**. Um deputado
+caracteriza o relatório da IGAI: que um dos problemas graves «advém do não cumprimento de uma ordem do
+Ministério da Agricultura, da Direção-Geral da Alimentação e Veterinária, para encerramento daquele espaço
+ilegal», e do «não acompanhamento por parte da Direção-Geral da Alimentação e Veterinária do seguimento dessa
+ordem»; que «esta ordem de encerramento nem [se] procedeu nem foi verificada»; que o relatório levanta a
+**ausência do médico veterinário municipal** no incêndio e nos reacendimentos, descrevendo-o como
+«representante quer do município, quer da Direção-Geral da Alimentação e Veterinária»; que houve uma queixa
+contra o médico veterinário municipal que foi **arquivada**; e que corre uma **queixa crime**, para a qual o
+relatório seria remetido ao Ministério Público.
+
+**Reserva.** É caracterização de deputados sobre o relatório, não o relatório. Só entra como tal, e só depois
+de reprocessamento em `medium`.
+
+### B.9 Divergência que não se resolve, e não se deve escolher
+
+Sobre o que aconteceu em 2012 há três versões incompatíveis:
+
+1. **A Ministra** [00:23:08]: a DGAV elaborou e dirigiu ao município notificação «para a atuação no âmbito das
+   competências que lhes são atribuídas».
+2. **A ANMVM, via deputada** [02:17:23]: a DGAV decidiu o encerramento e competia às câmaras executá-lo; o
+   município nunca o executou.
+3. **Um deputado, relatando a reportagem «Sexta às 9»** [01:53:50–01:54:21]: «a DGAV emitiu decisões, mas
+   emitiu decisões que não as executou e emitiu ordens de encerramento que também não as fez»; e em 2012 «foi
+   ao local para encerrar o abrigo, mas verificou que tinha levado a morada errada», voltando para trás e nada
+   mais fazendo até 2017.
+
+A terceira versão contradiz a estrutura da norma: pelos n.ºs 5 e 6 do art.º 3.º-G a DGAV decide e a câmara
+executa e recolhe os animais, pelo que uma equipa da DGAV a deslocar-se para encerrar estaria fora da sua
+competência. **Registar a divergência; não escolher versão.** As duas primeiras são compatíveis entre si e
+com a norma; a terceira não.
+
+### B.10 Pistas novas, não verificadas
+
+Apareceram em pesquisa e **nenhuma está confirmada em fonte primária**. Não usar sem conferir.
+
+| Pista | Utilidade |
+|---|---|
+| O município suspendeu o médico veterinário municipal em 21.7.2020 | Casa com uma passagem da audição da IGAI [00:53:46], onde se fala de suspensão sem se saber se se mantinha |
+| A Ordem dos Médicos Veterinários abriu processo disciplinar ao ex-veterinário de Santo Tirso | Fecharia a secção 9.5 pelo lado disciplinar |
+| O Ministério Público arquivou no final de 2022; o PAN requereu instrução; houve debate instrutório requerido pelo PAN e pela Associação Zoófila Midas | É o fio do pendente X-A n.º 3 |
+| O Tribunal de Matosinhos levou o caso a julgamento nos exactos termos da acusação | Idem — e é a via para o acórdão de 9.9.2026 |
+| O número de animais mortos foi revisto de 73 para 93, revelação dos advogados em 27.9.2024 | Corrige um número que circula no estudo e na imprensa |
+| O relatório de inquérito da IGAI existe e foi remetido à Assembleia da República | Melhor fonte disponível para o pendente X-A n.º 4, e não exige requerimento |
+
+---
+
 ## PARTE I — Textos verbatim
 
 ### I.1 Decreto-Lei n.º 314/2003, de 17 de dezembro
@@ -542,14 +728,16 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
 > DR n.º 290, de 17.12.2003, foi obtido e está usado nos capítulos 13.4, 14 e 14.5. Ficam registados
 > abaixo, riscados, para memória do percurso. As reservas vivas são as que levam a marca **[VIVA]**.
 
-### X-A. Pendente, por ordem de utilidade (28.9.2026)
+### X-A. Pendente, por ordem de utilidade (28.9.2026, revisto às 20h)
 
-1. **[VIVA] Duas audições por transcrever** — n.º 33-CAM-XIV (Ministro da Administração Interna e
-   Ministra da Agricultura, **160,8 min**) e o excerto da Secretária de Estado da Administração Interna
-   (**73,2 min**, possivelmente recorte da anterior). Os ficheiros estão em
-   `criador informal/audições parlamentares/`. É aí que deve estar a **posição institucional do Governo e
-   da DGAV** sobre de quem era a competência — o contraponto ao lado municipal, já apurado. **Diligência
-   mais útil.**
+0. **[FECHADO] Transcrição das três audições** — feita em 28.9.2026. As três gravações estão varridas com
+   `small` e as duas primeiras têm janelas em `medium`. Resultados e triagem de relevância na **PARTE 0-B**.
+   A posição institucional do Governo ficou apurada, e é o que essa parte registra. Sobra daqui:
+   - reprocessar em `medium` o bloco 00:32–00:35 da audição da IGAI, se dela se vier a citar (ver B.8);
+   - estabelecer a data dessa audição, que não está fixada (ver B.1).
+1. **[VIVA] Decidir o que da PARTE 0-B entra no estudo.** O utilizador decidiu em 28.9.2026 que só entra o
+   relevante, e nada foi levado ao Word. A minha proposta de triagem: B.2 e B.3 entram, B.4 é corroboração
+   dispensável, B.5 a B.7 são contexto, B.8 depende de reprocessamento. A decisão é do utilizador.
 2. **[VIVA] Caso de Amarante** — o requerimento do LIVRE de 13.7.2026 (`REQ 54_7CAPes…pdf`, na pasta
    `criador informal/`) refere o resgate de **mais de 300 cães de um alojamento de criadora registada na
    DGAV**. É o teste empírico da questão central, e mais directo que Santo Tirso, onde os abrigos não
@@ -565,6 +753,13 @@ descarregados e lidos na íntegra, **nenhum** sanciona criação ou alojamento s
    efectividade real do regime.
 6. **[VIVA] O intervalo de 30.1.2019 a 7.8.2019** — por saber se algum município usou, nesse período, o
    poder de encerrar que então tinha.
+7. **[VIVA] Relatório de inquérito da IGAI** — existe, foi remetido à Assembleia da República e foi lido
+   pelos deputados na audição da Secretária de Estado. É a melhor fonte disponível para o pendente n.º 5 e
+   **não exige requerimento de acesso**, o que o põe dentro do que o utilizador autorizou. Ver B.8.
+8. **[VIVA] Verificar as pistas de B.10** — suspensão do médico veterinário municipal em 21.7.2020, processo
+   disciplinar da Ordem dos Médicos Veterinários, arquivamento pelo Ministério Público no final de 2022 e
+   subsequente instrução e julgamento no Tribunal de Matosinhos, revisão do número de animais mortos de 73
+   para 93. Nenhuma está confirmada em fonte primária. As duas últimas ligam-se ao pendente n.º 3.
 
 ### X-B. Reservas de método que se mantêm
 

@@ -92,15 +92,21 @@ git checkout -- "criador informal/Anexo_Delimitacao_DL314_2003.docx" \
   documento, para ele julgar antes de se mexer no ficheiro.
 - Ao fechar um avanço: gerar, conferir em PDF, atualizar o checkpoint, commit e push no ramo de trabalho.
 
-## Estado e pendentes (28.9.2026)
+## Estado e pendentes (28.9.2026, revisto às 20h)
 
 Estudo em **63 páginas**. A resposta à questão central está estabelecida; o que continua aberto é de
 política legislativa, não de interpretação.
 
+**As três audições estão transcritas.** Os resultados e a triagem de relevância estão na **PARTE 0-B do
+checkpoint**. Nada disso foi levado ao Word: o utilizador decidiu que só entra o relevante e a decisão está
+por tomar. A terceira gravação não era recorte da segunda — é audição autónoma sobre o relatório de inquérito
+da IGAI, de data ainda não estabelecida.
+
 Por ordem de utilidade — o detalhe está na PARTE X-A do checkpoint:
 
-1. **Transcrever as duas audições que faltam** (234 min): n.º 33-CAM-XIV e o excerto da Secretária de
-   Estado. É onde deve estar a posição institucional do Governo e da DGAV.
+1. **Decidir o que da PARTE 0-B entra no estudo.** Proposta de triagem: entram o facto de o Governo ter
+   declarado que os alojamentos nunca tiveram título (B.2) e o de ter citado em 2020 a redação já cessada do
+   DL n.º 116/98 (B.3); o resto é corroboração ou contexto.
 2. **Caso de Amarante** — mais de 300 cães num alojamento de criadora **registada**. É o teste empírico da
    questão central. **Adiado por decisão do utilizador; não retomar sem ele o pedir.**
 3. Acórdão de 9.9.2026 (não obtido; recurso anunciado pelo PAN).
