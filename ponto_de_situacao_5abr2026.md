@@ -10,7 +10,7 @@ Trabalho em curso: **Integração de Glossário Flutuante com Hiperlinks Interno
 
 ### Situação Anterior (Final de Março)
 
-O **glossário interativo** (com termos do Artigo 4 — Definições do Regulamento 2023/0447) foi implementado com sucesso no **HTML** com:
+O **glossário interativo** (com termos do Artigo 4 — Definições do Regulamento (UE) 2026/1818) foi implementado com sucesso no **HTML** com:
 - ✅ Tooltips flutuantes ao passar o rato
 - ✅ Normalização de hífens especiais (U+2011, U+2010 → U+002D)
 - ✅ Matching de termos (longest-first, evitar overlaps)

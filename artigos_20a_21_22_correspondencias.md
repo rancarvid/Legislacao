@@ -2,7 +2,7 @@
 
 ## ART-20a - PROTEÇÃO DE DADOS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Data protection
 
 **Conteúdo Principal**:
@@ -86,7 +86,7 @@ em nome do respetivo titular.
 
 ## ART-21 - ENTRADA DE CÃES E GATOS NA UNIÃO
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Entry of dogs and cats into the Union
 
 **Conteúdo Principal**:
@@ -181,7 +181,7 @@ de 9 de março de 2016, nascidos ou presentes no território nacional.
 
 ## ART-22 - ALTERAÇÃO DOS ANEXOS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Amendment to the Annexes
 
 **Conteúdo Principal**:
@@ -216,7 +216,7 @@ ANEXO contém:
 
 Contém todas as disposições técnicas relativas a bem-estar, espaço disponível, temperatura,
 frequência de alimentação, etc., correspondendo estruturalmente aos Anexos I-V do Regulamento
-EU 2023/0447.
+(UE) 2026/1818.
 ```
 
 ---
@@ -255,7 +255,7 @@ O presente decreto-lei aplica-se à identificação de animais de companhia das 
 no anexo I do Regulamento (UE) n.º 576/2013, [...] e no anexo I do Regulamento (UE) n.º 2016/429.
 
 [DL 82/2019 incorpora por referência os Anexos dos Regulamentos EU precedentes, mas não implementa
-mecanismo de delegação de autoridade para alteração de anexos como previsto no Art. 22 do Reg. 2023/0447]
+mecanismo de delegação de autoridade para alteração de anexos como previsto no Art. 22 do Reg. (UE) 2026/1818]
 ```
 
 ---
@@ -265,7 +265,7 @@ mecanismo de delegação de autoridade para alteração de anexos como previsto 
 - ✅ Anexos contêm requisitos equivalentes aos do Regulamento EU
 - ❌ Falta: Mecanismo de alteração delegada (comitologia/atos de execução)
 - ❌ Falta: Delegação de autoridade à Comissão Europeia para alteração
-- **Necessidade de alteração**: SIM (Implementar procedimento de atos delegados/atos de execução conforme art. 23 e 24 do Reg. 2023/0447)
+- **Necessidade de alteração**: SIM (Implementar procedimento de atos delegados/atos de execução conforme art. 23 e 24 do Reg. (UE) 2026/1818)
 
 ---
 

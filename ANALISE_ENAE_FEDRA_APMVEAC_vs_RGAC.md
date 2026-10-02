@@ -3,7 +3,7 @@
 **Documento de trabalho** | Diploma de referência: **diploma final @rgac** (versão: `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx`)
 **Data da análise**: 10 de junho de 2026
 
-> ⚠️ O @rgac é o **diploma final em desenvolvimento** (trabalho em curso) — não é legislação vigente. Esta análise confronta-o com três documentos de política pública/pareceres e identifica (i) onde o @rgac **já acolhe** o que neles é proposto e (ii) **sugestões de adição** ao @rgac, à luz do @regulamento (2023/0447), da realidade nacional de sobrepopulação de errantes e da restante documentação do projeto.
+> ⚠️ O @rgac é o **diploma final em desenvolvimento** (trabalho em curso) — não é legislação vigente. Esta análise confronta-o com três documentos de política pública/pareceres e identifica (i) onde o @rgac **já acolhe** o que neles é proposto e (ii) **sugestões de adição** ao @rgac, à luz do @regulamento (Regulamento (UE) 2026/1818), da realidade nacional de sobrepopulação de errantes e da restante documentação do projeto.
 
 ---
 

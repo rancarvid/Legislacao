@@ -10,7 +10,7 @@ Este repositório suporta uma **análise comparativa da legislação portuguesa 
 
 - Legislação portuguesa e europeia vigente
 - Duas propostas de nova legislação que compilam e alteram a vigente (`@codigo`, `@rgbeac`)
-- Um novo Regulamento Europeu de aplicação direta (2023/0447) — `@regulamento`
+- O novo Regulamento Europeu de aplicação direta — **Regulamento (UE) 2026/1818** (ex-procedimento 2023/0447) — `@regulamento`
 - Um diploma final consolidado que integra os três anteriores — **`@rgac`**
 
 **Objetivo central**: avaliar o impacto da aplicação do Regulamento europeu na legislação nacional e acompanhar a evolução do diploma final `@rgac`, que integra `@codigo`, `@regulamento` e `@rgbeac` numa proposta consolidada única.
@@ -25,12 +25,16 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 | Código Interno | Ficheiro | Descrição |
 |---|---|---|
-| `@rgac` ⭐ | `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` | **Diploma final** — integra `@codigo` + `@regulamento` + `@rgbeac`. Ficheiro canónico identificado pelo sufixo **"MAIS ATUAL"** no nome. Ver nota de versão abaixo. |
+| `@rgac` ⭐ | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` | **Diploma final — versão de trabalho do projeto.** Revisão formal DAJA V1 revista pelo grupo, **30.6.2026, 18h00**. É **o texto que vai ser trabalhado**: recolhe contributos do `@rgbeac` e do `@codigo` e integra diretamente o `@regulamento`. Ficheiro canónico mais recente do projeto. Identifica-se pela frase «Privação do direito de titularidade e detenção» (art. 141.º). |
+| `@rgac` (arquivo) | `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` | Revisão formal DAJA V1, 30.6.2026, antes da revisão do grupo. **Arquivo.** Tem «Mantêm-se transitoriamente em vigor» (n.º 2 do art. 149.º), mas não tem a frase da linha anterior. |
+| `@rgac` (arquivo) | `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` | Versão DAJA V1 de 29.6.2026, anterior à revisão formal. **Arquivo.** Identifica-se pela nota «ACRESCENTAR os RESTANTES» na norma revogatória. |
 | `@codigo` | `Código do Animal DL214.2013_OCR.docx.docx` | Código do Animal — DL n.º 214/2013 (proposta de consolidação original; incorporada em `@rgac`) |
 | `@rgbeac` | `RGBEAC_junh_2025 Original com Índice.docx` | Regime Geral do Bem-Estar dos Animais de Companhia (proposta, jun. 2025; incorporada em `@rgac`) |
-| `@regulamento` (EN) | `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Regulamento Europeu 2023/0447 — **versão EN de referência** (após reunião, alterações aceites) |
-| `@regulamento` (PT) | `PT Revisão Jurídico-Linguística Sem Track changes até 15 de abril pe00002.pt26.PB.aftermeeting (003)1.docx` | Regulamento Europeu 2023/0447 — **versão PT de referência** (revisão jurídico-linguística, sem track changes, até 15 abril) |
-| `@regulamento` (arquivo) | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Regulamento Europeu 2023/0447 — versão anterior (arquivo; não usar como referência primária) |
+| `@regulamento` (PT) ⭐ | `Regulamento 2026_01818_PT.pdf` | **Regulamento (UE) 2026/1818 — texto final publicado no JO (PT).** Referência canónica em PT. Idêntico a `Regulamento Versao final pt-pt.pdf`. |
+| `@regulamento` (EN) ⭐ | `Regulamento Versao final en-en.pdf` | **Regulation (EU) 2026/1818 — texto final publicado no JO (EN).** Referência canónica em EN e texto autoritativo para citação verbatim. |
+| `@regulamento` (arquivo) | `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Versão EN pré-publicação (após reunião, alterações aceites). **Arquivo — não usar como referência primária.** |
+| `@regulamento` (arquivo) | `PT Revisão Jurídico-Linguística Sem Track changes até 15 de abril pe00002.pt26.PB.aftermeeting (003)1.docx` | Versão PT pré-publicação (revisão jurídico-linguística, sem track changes, até 15 abril). **Arquivo.** |
+| `@regulamento` (arquivo) | `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | Versão de trabalho anterior (OCR, dez. 2025). **Arquivo.** |
 | `@oexcel` | `oexcel.xlsx` | Ficheiro Excel comparativo por temas |
 | `@legislacao` | `Decreto-Lei n.º 276-2001, de 17 de outubro v2.docx` | DL 276/2001 — Proteção dos animais de companhia |
 | `@legislacao` | `DL n. 82_2019, de 27 de Junho_ocred.docx` | DL n.º 82/2019 — Bem-estar de animais de companhia |
@@ -45,7 +49,16 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 
 > **Regra de classificação**: Tudo o que não for `@rgac`, `@codigo`, `@rgbeac` ou `@regulamento` integra o grupo `@legislacao`.
 
-> **Nota de versão — `@rgac`**: O documento `@rgac` é atualizado periodicamente. A versão canónica é sempre o ficheiro cujo nome contém o sufixo **"MAIS ATUAL"**. Versões anteriores são arquivadas com sufixo numérico entre parênteses — e.g., `(1)`, `(2)` — e não devem ser usadas como referência primária. Sempre que o utilizador fizer upload de uma versão nova, o ficheiro "MAIS ATUAL" deve ser considerado a referência vigente de `@rgac`, independentemente da data de revisão inscrita no nome.
+> **Identidade do `@regulamento` (publicado)**: **Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade** (texto relevante para efeitos do EEE).
+> - Publicação: Jornal Oficial da União Europeia, série L, 2026/1818, de **10.8.2026**
+> - ELI: <http://data.europa.eu/eli/reg/2026/1818/oj>
+> - Feito em Estrasburgo, em 17 de junho de 2026
+> - **Entrada em vigor**: vigésimo dia seguinte ao da publicação no JO (art.º 33.º)
+> - **Aplicação**: a partir de **31 de agosto de 2028**, com as datas diferidas do art.º 33.º (ver secção 3, alínea c)
+> - Estrutura: **7 capítulos, 33 artigos e 3 anexos** (Anexo I — requisitos aplicáveis a todos os estabelecimentos; Anexo II — identificação e registo; Anexo III — dados sobre o bem-estar dos animais)
+> - O número **2023/0447** é o número do **procedimento legislativo (COD)**, não do ato publicado. Em produção analítica nova, citar sempre **Regulamento (UE) 2026/1818**; `2023/0447` só é admissível como referência histórica ao processo.
+
+> **Nota de versão — `@rgac`**: O `@rgac` é o texto de trabalho do projeto e é atualizado periodicamente. A versão canónica é **o ficheiro assinalado com ⭐ na tabela acima** — atualmente `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`. O sufixo «MAIS ATUAL» deixou de ser critério: o ficheiro `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` é arquivo (março 2026). Sempre que o utilizador carregar uma versão nova, atualiza-se a linha ⭐ desta tabela e as versões anteriores passam a «arquivo». Versões de arquivo nunca são referência primária.
 
 ### 2.2 Ficheiros de Trabalho Gerados
 
@@ -93,16 +106,19 @@ A legislação relevante que não conste do repositório deve ser consultada onl
 | **@legislacao** | ✅ VIGENTE | Consultar online consolidado; citar como "legislação vigente" |
 | **@codigo** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta de consolidação original"; usar @rgac para texto atual |
 | **@rgbeac** | ❌ PROPOSTA (incorporada em @rgac) | Citar como "proposta (jun. 2025)"; usar @rgac para texto atual |
-| **@regulamento** | ✅ VIGENTE | Legislação europeia; aplicação direta; citar verbatim EN + tradução PT |
-| **@rgac** | ⚠️ DIPLOMA FINAL (trabalho em curso) | Citar como "diploma final @rgac"; versão "MAIS ATUAL" é a referência canónica; NUNCA como legislação vigente |
+| **@regulamento** | ✅ PUBLICADO / EM VIGOR (aplicação diferida) | Regulamento (UE) 2026/1818, de 17.6.2026 (JO L de 10.8.2026). Aplicação direta, sem transposição. Citar verbatim a partir do texto publicado no JO: EN (`Regulamento Versao final en-en.pdf`) + PT (`Regulamento 2026_01818_PT.pdf`) — a versão PT é autêntica, não é tradução. Atenção: **em vigor ≠ aplicável** — regra geral de aplicação a partir de 31.8.2028, com datas diferidas no art.º 33.º |
+| **@rgac** | ⚠️ DIPLOMA FINAL (trabalho em curso) | Citar como "diploma final @rgac"; a referência canónica é o ficheiro ⭐ da tabela 2.1 (`RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`); NUNCA como legislação vigente |
 
 #### ERROS A EVITAR
 - ❌ Tratar @codigo (proposta) como legislação que "revoga" DL 276/2001
 - ❌ Tratar @rgac como legislação vigente — é o diploma final em desenvolvimento
-- ❌ Usar versões arquivadas de @rgac (com numeração em parênteses) em vez do ficheiro "MAIS ATUAL"
+- ❌ Usar versões arquivadas de @rgac (a cópia de 29.6.2026, a revisão formal anterior às 18h00, o ficheiro «rev 16mar26 MAIS ATUAL» ou versões com numeração em parênteses) em vez do ficheiro ⭐ da tabela 2.1
 - ❌ Omitir legislação vigente (ex: DL 82/2019) que não está no repositório
 - ❌ Usar ficheiros repositório como única fonte de legislação
 - ❌ Não distinguir claramente entre "vigente" e "proposta/diploma final" na análise
+- ❌ Citar o `@regulamento` pelo número de procedimento `2023/0447` em produção analítica nova — o ato publicado é o **Regulamento (UE) 2026/1818**
+- ❌ Usar as versões `.docx` pré-publicação do `@regulamento` (pe00002…, 11.12.2025…) como fonte primária — são arquivo; a fonte é o PDF do JO
+- ❌ Confundir **entrada em vigor** (20.º dia após a publicação) com **início de aplicação** (31.8.2028, salvo as datas diferidas do art.º 33.º)
 
 ---
 
@@ -117,15 +133,54 @@ Toda a legislação vigente relevante que não seja `@codigo`, `@rgbeac` ou `@re
 - **`@rgbeac`** — Regime Geral do Bem-Estar dos Animais de Companhia: segunda proposta de consolidação, versão de junho de 2025. Incorporada no diploma final `@rgac`.
 
 ### c) Novo Regulamento Europeu — `@regulamento`
-Regulamento 2023/0447, de aplicação direta nos Estados-Membros. Ponto de referência central para a análise de impacto. Incorporado no diploma final `@rgac`.
+
+**Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade** (JO L, série L, 2026/1818, de 10.8.2026; ELI: <http://data.europa.eu/eli/reg/2026/1818/oj>). Ato de **aplicação direta** nos Estados-Membros, sem necessidade de transposição. Ponto de referência central para a análise de impacto. Incorporado no diploma final `@rgac`.
+
+Corresponde ao procedimento legislativo **2023/0447 (COD)** — designação que deve ser tratada apenas como referência histórica ao processo, e não como identificação do ato.
+
+**Base jurídica**: artigo 43.º, n.º 2, e artigo 114.º do TFUE.
+
+**Estrutura** — 7 capítulos, 33 artigos, 3 anexos:
+
+| Capítulo | Artigos | Epígrafe |
+|---|---|---|
+| I | 1.º a 4.º | Objeto, âmbito de aplicação e definições |
+| II | 5.º a 19.º | Obrigações dos operadores de estabelecimentos |
+| III | 20.º e 21.º | Identificação e registo de cães e gatos e requisitos relativos à publicidade em linha e à colocação no mercado |
+| IV | 22.º a 25.º | Autoridades competentes |
+| V | 26.º | Entrada de cães e gatos na União |
+| VI | 27.º a 29.º | Disposições processuais |
+| VII | 30.º a 33.º | Regras nacionais mais restritivas e disposições finais |
+
+| Anexo | Epígrafe |
+|---|---|
+| I | Requisitos aplicáveis a todos os estabelecimentos nos termos dos artigos 14.º a 17.º |
+| II | Identificação e registo de cães e gatos |
+| III | Dados sobre o bem-estar dos animais |
+
+**Entrada em vigor e aplicação (art.º 33.º)** — verbatim PT:
+
+> O presente regulamento entra em vigor no vigésimo dia seguinte ao da sua publicação no *Jornal Oficial da União Europeia*.
+>
+> O presente regulamento é aplicável a partir de 31 de agosto de 2028. No entanto:
+>
+> a) O artigo 16.º é aplicável a partir de 31 de agosto de 2029;
+> b) O artigo 21.º, n.º 3, e o artigo 23.º, n.º 1, são aplicáveis a partir de 31 de agosto de 2030;
+> c) O artigo 8.º, n.º 1, é aplicável a partir de 1 de julho de 2036 e o artigo 8.º, n.º 2, é aplicável a partir de 1 de julho de 2030;
+> d) O artigo 15.º, o artigo 21.º, n.º 3, segundo parágrafo, o artigo 21.º, n.os 4 e 5, o artigo 22.º, n.º 1, alíneas a), b) e c), o artigo 23.º, n.os 3 e 4, e o artigo 26.º, n.os 1, 2 e 3, são aplicáveis a partir de 31 de agosto de 2031;
+> e) O artigo 12.º, n.os 2 e 3, é aplicável a partir de 31 de agosto de 2033;
+> f) O artigo 10.º é aplicável a partir de 31 de agosto de 2034; e
+> g) O artigo 26.º, n.º 4, é aplicável a partir de 31 de agosto de 2036.
+
+Esta calendarização é determinante para a análise de impacto: o `@rgac` deve ser lido contra as datas em que cada obrigação do Regulamento se torna efetivamente aplicável, e não contra a data de entrada em vigor.
 
 ### e) Diploma final consolidado — `@rgac`
 
-**`@rgac`** — `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx`
+**`@rgac`** — `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx` (revisão formal DAJA V1 revista pelo grupo, 30.6.2026, 18h00)
 
-Diploma final que integra `@codigo` + `@regulamento` + `@rgbeac` numa proposta consolidada única. É o documento de trabalho mais avançado do projeto e o ponto de chegada da análise comparativa.
+Diploma final e **texto de trabalho do projeto**: é sobre ele que se trabalha a partir de agora, recolhendo os contributos do `@rgbeac` e do `@codigo` e integrando diretamente o `@regulamento` (Regulamento (UE) 2026/1818). É o documento mais avançado do projeto e o ponto de chegada da análise comparativa. Ficam como arquivo as versões anteriores: `RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO.docx` (30.6.2026, antes da revisão do grupo), `RGAC_Rev. DAJA _V1_06_2026 - Cópia.docx` (29.6.2026) e `Código do Animal DL214.2013_OCR com índice automático - rev 16mar26 MAIS ATUAL.docx` (março 2026, apesar do sufixo).
 
-**Convenção de versão**: O ficheiro canónico é sempre o que contém o sufixo **"MAIS ATUAL"** no nome. Versões anteriores são arquivadas com sufixo numérico — e.g., `(1)`, `(2)`. O utilizador pode fazer upload de versões mais recentes; o ficheiro "MAIS ATUAL" será sempre substituído pelo mais recente. Nunca usar versões arquivadas como referência primária.
+**Convenção de versão**: O ficheiro canónico é o assinalado com ⭐ na tabela 2.1. Quando o utilizador carregar uma versão nova, essa passa a ⭐ e as anteriores a arquivo. Nunca usar versões arquivadas como referência primária.
 
 ### d) Ficheiros Excel comparativos — `@oexcel` e ferramenta de reunião
 
@@ -170,25 +225,29 @@ A análise deve:
   al. X), do n.º Y, do art.º Z.º do [Diploma]
   ```
 
-### 5.3 Citações de Legislação do Parlamento Europeu
+### 5.3 Citações do `@regulamento` (Regulamento (UE) 2026/1818)
 
-1. Citação verbatim em **inglês** — texto canónico e autoritativo do Regulamento.
-2. Tradução PT-PT a seguir, respeitando a terminologia histórica consolidada; serve de apoio de leitura, não substitui o original EN.
+Com a publicação do ato no *Jornal Oficial*, **a versão portuguesa deixou de ser uma tradução de trabalho**: é a versão linguística portuguesa autêntica, com o mesmo valor jurídico da versão inglesa. Ambas são texto oficial.
+
+1. Citação verbatim em **inglês**, extraída de `Regulamento Versao final en-en.pdf` (texto publicado no JO).
+2. Citação verbatim em **português**, extraída de `Regulamento 2026_01818_PT.pdf` (texto publicado no JO) — **já não se traduz o Regulamento**; transcreve-se a versão PT oficial.
 3. **Ordem de apresentação**: EN primeiro, PT-PT segundo.
-4. Resultado final: **duas citações** (original EN + tradução PT-PT).
+4. Resultado final: **duas citações** (EN oficial + PT oficial), ambas verbatim e sem supressões.
+5. Referenciação: `art.º Z.º, n.º Y, al. X) do Regulamento (UE) 2026/1818`.
 
-### 5.3a Ficheiros de Referência para Tradução (Parecer, Votação, Tradução)
+### 5.3a Ficheiros de Referência para Tradução (Parecer, Votação, Tradução) — regime transitório
 
-**Regra clara**: Os ficheiros com "parecer", "votação" ou "tradução" no nome são **APENAS FONTES DE APOIO** para auxílio na tradução do @regulamento.
+**Estado atual**: esta regra ficou **obsoleta para o articulado do `@regulamento`**. A versão PT autêntica está publicada, pelo que não há tradução a produzir — transcreve-se o texto do JO.
 
-**Metodologia de tradução**:
-1. Extrair o texto original em **inglês** do `@regulamento` (11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx)
-2. Consultar os ficheiros de referência (parecer, votação, tradução) para **verificar como esses conceitos já foram traduzidos** em documentos anteriores
-3. Utilizar essa terminologia consolidada como **base de referência** para manter coerência terminológica
-4. Realizar a tradução PT-PT **diretamente a partir do inglês**, sem citar os ficheiros de referência como fonte
-5. **Nunca referenciar** esses ficheiros na documentação final — utilizar apenas como ferramenta de consulta interna
+Os ficheiros `@traducao` (parecer, votação, tradução, primeira versão portuguesa) passam a ter três usos, e apenas estes:
 
-**Resultado esperado**: Traduções coerentes, consistentes e baseadas em terminologia consolidada da legislação europeia, sem dependência de ficheiros externos.
+1. **Rastreio histórico** — perceber como uma formulação evoluiu entre as versões de trabalho e o texto final publicado.
+2. **Apoio terminológico** para textos do projeto que **não** sejam o Regulamento (e.g., redação do `@rgac`), quando um conceito não tenha correspondência direta na legislação nacional.
+3. **Verificação de divergências** entre versões de trabalho anteriores e o texto publicado.
+
+**Nunca**: usar `@traducao` como fonte do texto do Regulamento, nem referenciar esses ficheiros como fonte na documentação final.
+
+**Resultado esperado**: todo o texto do Regulamento citado no projeto provém do JO (PT ou EN), com terminologia estável e verificável.
 
 ### 5.4 Observações
 
@@ -202,7 +261,7 @@ Regras de formatação que se aplicam tanto à produção analítica como aos sc
 **Integridade da citação**
 - Cada artigo é citado na íntegra. Não se omitem n.ºs ou alíneas por conveniência de espaço.
 - Quando um n.º ou alínea está citado por integridade mas não tem correspondência direta com o tema em análise, é marcado com `[dim]` — texto exibido a cinza mas perfeitamente legível.
-- O marcador `[dim]` aplica-se **exclusivamente à legislação nacional** (`@legislacao`, `@codigo`, `@rgbeac`, `@rgac`). **Nunca ao `@regulamento`**, que é sempre citado sem supressões.
+- O marcador `[dim]` aplica-se **exclusivamente à legislação nacional** (`@legislacao`, `@codigo`, `@rgbeac`, `@rgac`). **Nunca ao `@regulamento`**, que é sempre citado sem supressões, a partir do texto publicado no JO.
 
 **Cabeçalho de artigo**
 - Quando uma coluna cita múltiplos artigos do mesmo diploma, cada artigo é precedido de um cabeçalho `Artigo X.º — Título` que funciona como separador visual.
@@ -317,7 +376,8 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
    - Verificar quais ficheiros estão presentes
    - Usar como VALIDAÇÃO (não como fonte primária)
    - Identificar o código interno correto (`@rgac`, `@codigo`, `@rgbeac`, `@regulamento`, `@legislacao`, `@oexcel`)
-   - Para `@rgac`: usar **sempre** o ficheiro com sufixo "MAIS ATUAL"; ignorar versões arquivadas com número em parênteses
+   - Para `@rgac`: usar **sempre** o ficheiro ⭐ da tabela 2.1 (`RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx`); ignorar as versões de arquivo
+   - Para `@regulamento`: usar **sempre** o texto publicado no JO — `Regulamento 2026_01818_PT.pdf` (PT) e `Regulamento Versao final en-en.pdf` (EN); ignorar as versões `.docx` pré-publicação (arquivo)
 
 3. **TERCEIRO**: Para propostas e diploma final (@codigo, @rgbeac, @rgac)
    - Comparar com legislação vigente
@@ -332,7 +392,9 @@ git push -u origin claude/claude-md-mm6om6hd0ro2q4cd-HlaxD
 - **Sempre referenciar** no formato `al. X), do n.º Y, do art.º Z.º`.
 - **Sempre produzir em PT-PT**, exceto citações europeias (com tradução imediata).
 - Ao citar `@rgac`, indicar sempre: "diploma final @rgac (versão: [data/rev indicada no nome do ficheiro])".
-- `@rgac` é documento vivo — ao trabalhar com ele, confirmar que o ficheiro usado é o "MAIS ATUAL" disponível no repositório.
+- `@rgac` é documento vivo — ao trabalhar com ele, confirmar que o ficheiro usado é o ⭐ da tabela 2.1 e verificar se o utilizador carregou entretanto uma versão mais recente.
+- Ao citar `@regulamento`, identificar o ato pela designação publicada: **Regulamento (UE) 2026/1818**. Nunca `2023/0447`, salvo quando o que se refere é o próprio procedimento legislativo.
+- Ao afirmar que uma obrigação do `@regulamento` "já se aplica", confirmar a data no **art.º 33.º** — a regra geral é 31.8.2028 e há obrigações diferidas até 2036.
 
 ### 10.3 Ao trabalhar com o Excel (`@oexcel`)
 
@@ -384,13 +446,14 @@ Cada artigo do `@regulamento` é definido em `gerar_comparativo_reuniao.py` como
 id                        — identificador (ex.: "ART-13")
 tema                      — tema de harmonização
 regulamento
-  ref                     — referência normalizada do artigo
+  ref                     — referência normalizada do artigo (Regulamento (UE) 2026/1818)
   titulo                  — título oficial do artigo em inglês
-  texto                   — verbatim EN
-  traducao                — tradução PT-PT
+  texto                   — verbatim EN (texto publicado no JO — Regulamento Versao final en-en.pdf)
+  traducao                — verbatim PT (texto publicado no JO — Regulamento 2026_01818_PT.pdf);
+                            o nome do campo é histórico, já não contém tradução de trabalho
 rgac
   ref                     — referência no diploma final @rgac
-  texto                   — verbatim PT (versão "MAIS ATUAL")
+  texto                   — verbatim PT (ficheiro ⭐ da tabela 2.1)
 rgbeac
   ref                     — referência no diploma
   texto                   — verbatim PT
