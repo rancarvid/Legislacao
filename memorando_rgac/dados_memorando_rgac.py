@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.8"
-DATA_MEMORANDO = "27.9.2026"
+VERSAO_MEMORANDO = "1.9"
+DATA_MEMORANDO = "2.10.2026"
 DATA_LIGACOES = "27.9.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
@@ -403,6 +403,37 @@ TEMA_T = {
                           "Cátia Simões, RJLB 2019 (o animal não recolhido de hotel ou CAMV escapa à definição de abandono)"],
             "estado": "Aberto",
             "rel": ["T-05", "T-06"],
+        },
+        {
+            "cod": "T-19",
+            "titulo": "Nada diz quem é titular quando o animal não tem proprietário",
+            "onde": ["art. 3.º, definição de «Titular»", "art. 69.º, n.º 1", "art. 86.º, n.º 6"],
+            "origem": "PARCIAL",
+            "problema": [
+                "A al. f) do art. 3.º do DL 82/2019 define o titular como o proprietário ou o possuidor «cuja "
+                "posse faça presumir a propriedade». As duas hipóteses pressupõem um dono, ou um possuidor que "
+                "atua como tal. O animal que ninguém tem como seu não cabe em nenhuma delas.",
+                "O problema não é a falta de detenção. A titularidade nunca exigiu que o titular detenha o "
+                "animal: o DL 82/2019 prevê o titular que não detém, no art. 13.º, n.º 2, al. d), que o obriga a "
+                "comunicar o desaparecimento, no art. 14.º, n.º 1, que fala do «titular ou o simples detentor», e "
+                "no art. 22.º, al. a), que alinha «titular, possuidor ou detentor». O que falta é a regra para o "
+                "animal sem dono.",
+                "O RGAC fecha a lacuna só no CED, ao mandar registar os gatos de colónia em nome do município "
+                "(art. 86.º, n.º 6). Fica de fora o animal perdido antes de ser reclamado, o cão errante recolhido e o animal "
+                "apreendido, e a definição geral continua assente no proprietário.",
+                "O critério civil tem ainda um defeito próprio. A posse faz presumir a propriedade, mas o n.º 1 do "
+                "art. 1268.º do Código Civil faz essa presunção ceder quando exista registo anterior a favor de "
+                "outrem. O registo serve para provar a propriedade e a propriedade determina quem se registra.",
+            ],
+            "proposta": "Assentar a definição de titular no registo, com a presunção ilidível proposta na ficha "
+                        "T-03, e acrescentar uma norma supletiva: não havendo proprietário conhecido, é titular a "
+                        "entidade a quem a lei comete a responsabilidade pelo animal, designadamente a câmara "
+                        "municipal, através do CRO, nos casos de recolha e nos programas CED. Esta proposta "
+                        "qualifica a da ficha T-01: repor o critério do DL 82/2019 não fecha a lacuna, porque esse "
+                        "critério também pressupõe proprietário ou possuidor.",
+            "levantado": ["Análise interna (titularidade dos animais em programas CED, 2.10.2026)"],
+            "estado": "Aberto",
+            "rel": ["T-01", "T-02", "T-03", "C-08"],
         },
     ],
 }
@@ -1173,4 +1204,5 @@ REGISTO_ALTERACOES = [
     ("1.6", "27.9.2026", "Bibliografia no fim do documento, por tipo de fonte, com ligações clicáveis, verificadas uma a uma. O Anexo C (Fontes) passa para a bibliografia. Corrigidas as ligações do parlamento, de artigos científicos e da Universidade de Évora. A entrada sobre regulamentos municipais de Oeiras e outros foi substituída pelo Edital 145/2023 do Fundão, por não ser possível verificar a fonte."),
     ("1.7", "27.9.2026", "Estrutura para a revisão do RGAC inteiro: um tema por capítulo, com letra própria; Anexo C com lapsos formais (L-01 a L-09, dos quais cinco novos: artigos 81.º e 142.º repetidos, segundo art. 142.º fora do lugar, subsecção com epígrafe que não corresponde, numeração de secções nos caps. IV e X); Anexo D com a cobertura da revisão artigo a artigo."),
     ("1.8", "27.9.2026", "O memorando passa a ser mantido em três versões com o mesmo conteúdo: a principal (esta) e os ensaios 2.0 e 3.0 de organização. Lapso L-08: a remissão do art. 86.º, n.º 1 passa a citar «artigos 65.º e 66.º» entre aspas, como está no RGAC."),
+    ("1.9", "2.10.2026", "Ficha T-19: nada diz quem é titular quando o animal não tem proprietário. A definição da al. f) do art. 3.º do DL 82/2019 pressupõe dono ou possuidor com animus, e o RGAC só fecha a lacuna no CED. A ficha qualifica a proposta da T-01: repor o critério do DL 82/2019 não resolve o animal sem dono."),
 ]
