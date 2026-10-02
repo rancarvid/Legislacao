@@ -49,7 +49,7 @@ p(d, "Cara Maria,")
 p(d, "Segue o meu parecer.")
 
 p(d, "Em resumo: o animal inserido num programa CED é um animal errante e deve ser registado no "
-     "Sistema de Informação de Animais de Companhia em nome da câmara municipal. O voluntário que "
+     "Sistema de Informação de Animais de Companhia em nome do município. O voluntário que "
      "cuida da colónia é detentor, não titular.")
 
 p(d, "A Lei n.º 27/2016, de 23 de agosto, fez do CED uma política pública. O seu art.º 4.º estabelece "
@@ -72,6 +72,10 @@ p(d, "A Portaria confirma a natureza administrativa do programa. O n.º 1 do seu
 p(d, "A colónia existe, por isso, por autorização da câmara municipal. O n.º 2 do mesmo artigo "
      "permite que a câmara atribua a gestão do programa a uma organização de proteção animal, "
      "mediante proposta desta. Atribuir a gestão não é transferir a titularidade dos animais.")
+
+p(d, "Uma precisão de linguagem, que importa para o registo. A titularidade é do município, que é a "
+     "pessoa coletiva. A câmara municipal é o órgão que exerce as competências. É por isso que o "
+     "registo no SIAC se faz em nome do município, e não do órgão.")
 
 p(d, "Os animais capturados passam pelo centro de recolha oficial antes de integrarem a colónia. "
      "A al. d) do n.º 4 do art.º 9.º da Portaria exige «Que os animais capturados, antes de "
@@ -98,8 +102,8 @@ for i, item in enumerate((
         "n.º 1 do art.º 7.º da Portaria n.º 146/2017;",
         "É entregue no centro de recolha oficial antes de integrar a colónia, nos termos da al. d) "
         "do n.º 4 do art.º 9.º da mesma Portaria;",
-        "Não havendo proprietário conhecido, é registado em nome do titular desse centro, que é a "
-        "câmara municipal."), 1):
+        "Não havendo proprietário conhecido, é registado em nome do titular desse centro, que é o "
+        "município."), 1):
     q = p(d, item, estilo="List Number")
     q.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
 
@@ -128,12 +132,13 @@ titulo(d, "Respostas às questões colocadas")
 
 p(d, "1. Quando os gatos de rua forem esterilizados no âmbito do Programa CED, em nome de quem "
      "deverão ser registados os respetivos microchips no SIAC?", negrito=True)
-p(d, "Em nome da câmara municipal.")
+p(d, "Em nome do município.")
 
 p(d, "2. Poderão estes animais ser registados em nome da Câmara Municipal de Silves ou da Junta de "
      "Freguesia territorialmente competente, mantendo os voluntários a responsabilidade pelo "
      "acompanhamento das colónias?", negrito=True)
-p(d, "Sim quanto à Câmara Municipal de Silves. Não quanto à junta de freguesia. A competência para "
+p(d, "Sim. O registo faz-se em nome do Município de Silves. Não em nome da junta de freguesia. A "
+     "competência para "
      "autorizar as colónias é da câmara municipal, sob parecer do médico veterinário municipal, e o "
      "animal passa pelo centro de recolha oficial, que é municipal. A junta de freguesia pode "
      "colaborar, inclusive por delegação de competências do município nos termos da Lei n.º 75/2013, "
@@ -153,7 +158,7 @@ p(d, "4. Qual é o procedimento legalmente adequado para permitir que as esteril
 p(d, "Requerer à Câmara Municipal de Silves a autorização das colónias ao abrigo do n.º 1 do art.º 9.º "
      "da Portaria n.º 146/2017, com identificação dos locais e dos voluntários responsáveis pela "
      "execução no plano de gestão de cada colónia. Autorizado o programa, os animais são "
-     "identificados, esterilizados e registados em nome da câmara municipal.")
+     "identificados, esterilizados e registados em nome do município.")
 p(d, "Não é exigida a constituição de associação para que os voluntários colaborem no programa. A "
      "constituição de associação e o protocolo previsto no n.º 2 do art.º 9.º só são necessários se "
      "pretenderem assumir a gestão do programa.")
