@@ -21,6 +21,17 @@ Diretora-Geral. O gerador sombreia-as de forma diferente, como no modelo.
 
 Cada campo é uma lista de parágrafos. Uma entrada que comece por «- » sai
 como marca.
+
+A ficha tem ainda quatro campos de controlo, que o gerador verifica:
+
+    tema                    Designação do tema, como sai no cabeçalho
+    unidade                 Unidade orgânica que acompanha o tema
+    atualizado              AAAA-MM-DD da última alteração à ficha
+    registo                 Pares (data, o que mudou). É daqui que sai o bloco
+                            «Evoluções relevantes» da atualização mensal, pelo
+                            que uma alteração sem linha de registo desaparece
+    legislacao_verificada   (data, âmbito varrido, resultado) do último
+                            varrimento de legislação nova
 """
 
 # Designações fixas. O gerador recusa gerar se encontrar as formas erradas.
@@ -32,6 +43,18 @@ DESIGNACOES_PROIBIDAS = [
     ("Regulamento 2026_1818", "Regulamento (UE) 2026/1818"),
     ("Bem Estar", "bem-estar"),
     ("Bem-Estar", "bem-estar"),
+    ("Regulamento (EU)", "Regulamento (UE)"),
+    ("Direcção-Geral de Alimentação", "Direção-Geral de Alimentação"),
+]
+
+# Expressões que não são erro mas que não passam sem se confirmar o que se quis
+# dizer. O gerador avisa e gera.
+DESIGNACOES_A_CONFIRMAR = [
+    ("2023/0447", "é o número do procedimento legislativo, não do ato. Numa nota ao Gabinete "
+                  "citar o Regulamento (UE) 2026/1818."),
+    ("legislação vigente", "confirmar que não se está a tratar o RGAC, o Código do Animal de "
+                           "Companhia ou o Regime Geral do Bem-Estar dos Animais de Companhia "
+                           "como direito em vigor: são propostas."),
 ]
 
 # Expressões onde a forma «proibida» está correta por ser nome próprio de um
@@ -204,10 +227,27 @@ FICHAS["rgac"] = {
         "a tendência europeia de instituição de uma lista positiva de animais de companhia.",
     ],
 
+    "legislacao_verificada": (
+        "2026-10-02",
+        "Diário da República, 1.ª série, n.os 125 a 192, de 1 de julho a 2 de outubro de 2026, "
+        "varrimento integral; Jornal Oficial da União Europeia no mesmo período.",
+        "Nenhuma alteração ao Decreto-Lei n.º 276/2001, ao Decreto-Lei n.º 314/2003, ao "
+        "Decreto-Lei n.º 315/2009, à Lei n.º 27/2016 ou ao Decreto-Lei n.º 82/2019, e nenhum "
+        "diploma nacional de execução do Regulamento (UE) 2026/1818. Saiu o Decreto-Lei n.º "
+        "173/2026, de 1 de setembro, que fixa condições de transporte de animais de companhia e "
+        "de cães de assistência nos transportes públicos, e o Decreto n.º 18/2026, de 7 de "
+        "setembro, que exclui do regime florestal terrenos em Montalegre para a construção de um "
+        "centro de recolha oficial. Na União Europeia, nada de novo sobre bem-estar ou "
+        "rastreabilidade de cães e gatos depois do Regulamento (UE) 2026/1818.",
+    ),
+
     "registo": [
         ("2026-08-28", "Primeira nota remetida ao Gabinete."),
         ("2026-10-02", "Ficha permanente criada. Preenchidos os pontos sensíveis e a linha defensiva, que "
                        "estavam em branco. Corrigida a designação do diploma e a citação do Regulamento "
                        "(UE) 2026/1818. Acrescentado o faseamento do artigo 33.º."),
+        ("2026-10-02", "Varrimento da legislação publicada entre 1 de julho e 2 de outubro de "
+                       "2026, nacional e europeia. Sem alterações ao regime dos animais de "
+                       "companhia. Registado no campo «legislacao_verificada»."),
     ],
 }
