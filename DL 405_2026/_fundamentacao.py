@@ -119,7 +119,7 @@ tabela(
          'Art.º 16.º, n.º 4, e Anexo II', 'Fechado'],
         ['02', 'Animais de companhia na definição de atividade pecuária: a exclusão eliminada',
          'Art.º 48.º, als. b) e c)', 'Fechado'],
-        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º', 'Previsto'],
+        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'Fechado'],
         ['04', 'Cláusula de articulação com o regime dos animais de companhia e com o Regulamento',
          'Art.ºs 2.º e 36.º, n.º 3', 'Previsto'],
         ['05', 'Recolha de animais errantes: delimitação às espécies pecuárias',
@@ -569,6 +569,92 @@ p('Nota de oportunidade: este argumento foi deliberadamente deixado fora da obse
   'melhor como resposta de segunda volta, caso a resposta à dúvida de aplicação venha a ser a de que se aplica '
   'a portaria da pecuária. Jogado antes, permite que a articulação seja resolvida contra nós no próprio texto.')
 
+# ───────────────────────────── Ponto 03 ─────────────────────────────
+h1('Ponto 03 — Deferimento tácito em atividades com animais vivos')
+
+h2('3.1. A regra no projeto')
+p('O preâmbulo declara a intenção: o regime é consonante com a ação governativa no sentido de «consagrar como '
+  'regra o deferimento tácito, sustentado pela confiança e responsabilidade dos operadores económicos». A '
+  'concretização está no artigo 25.º do anexo.')
+cit('«3 - Caso não seja emitida pronúncia no prazo definido no n.º 1, considera-se que a mesma é favorável à '
+    'pretensão do requerente.»',
+    'n.º 3 do art.º 25.º («Pronúncia das entidades públicas consultadas e deferimento tácito») do anexo, na '
+    'versão de 25.9.2026. O n.º 4 prevê a emissão de certidão com menção expressa ao deferimento, sem taxa.')
+p('Os prazos são os do Anexo III. Para as consultas sem prazo próprio aplica-se a linha residual «Outras '
+  'consultas — 20 dias»; para os regimes em matéria de segurança da cadeia alimentar, 30 dias.')
+p('Importa delimitar o alcance. O deferimento tácito do art.º 25.º opera no procedimento de comunicação com '
+  'prazo e no de comunicação com prazo e vistoria, que são os que têm fase de pronúncia. No procedimento de '
+  'comunicação prévia não há deferimento tácito porque não há decisão a diferir: o n.º 3 do art.º 29.º '
+  'determina que o título é emitido automaticamente com a apresentação. São duas insuficiências distintas, e '
+  'esta observação respeita à primeira.')
+
+h2('3.2. A legislação vigente afasta-o expressamente neste domínio')
+p('Quando a decisão respeita à detenção de animais, o legislador nacional excluiu o deferimento tácito em '
+  'termos inequívocos:')
+cit('«2 - Caso não seja proferida a decisão referida no número anterior no prazo de 60 dias contados da data '
+    'de receção do pedido de permissão administrativa devidamente instruído, independentemente da realização de '
+    'visita de controlo, não há lugar a deferimento tácito, podendo o interessado obter a tutela adequada junto '
+    'dos tribunais administrativos.»',
+    'n.º 2 do art.º 3.º-D do Decreto-Lei n.º 276/2001, de 17 de outubro, na redação dada pelo Decreto-Lei '
+    'n.º 20/2019, de 30 de janeiro. Norma vigente.')
+p('A norma respeita à permissão administrativa dos alojamentos destinados à reprodução e criação de animais '
+  'potencialmente perigosos, o caso em que o regime dos animais de companhia exige decisão expressa. O projeto '
+  'de RGAC reproduz a solução no n.º 2 do seu art.º 47.º. Não se trata, portanto, de uma pretensão nova desta '
+  'Direção de Serviços: é a solução que o ordenamento já consagra para decisões desta natureza.')
+
+h2('3.3. E o direito da União vai no mesmo sentido')
+cit('«1. Operators of breeding establishments that either produce or intend to produce more than five litters '
+    'per calendar year or that keep more than a combined total of five bitches or queens at any given time '
+    'shall place dogs or cats on the market only after their breeding establishment has been approved by the '
+    'competent authority. 2. The competent authority shall perform on-site inspections to verify that the '
+    'breeding establishment meets the requirements of this Regulation. [...] The competent authority shall '
+    'grant certificates of approval only to breeding establishments that meet the requirements of this '
+    'Regulation.»',
+    'art.º 10.º, n.ºs 1 e 2, do Regulamento (UE) 2026/1818 — versão inglesa, JO L, 2026/1818, de 10.8.2026.')
+cit('«1. Os operadores de estabelecimentos de criação que produzam ou tencionem produzir mais de cinco '
+    'ninhadas por ano civil, ou que, a qualquer momento, detenham um total combinado de mais de cinco cadelas '
+    'reprodutoras ou gatas reprodutoras, só podem colocar cães ou gatos no mercado após aprovação do seu '
+    'estabelecimento de criação pela autoridade competente. 2. A autoridade competente efetua inspeções no '
+    'local para verificar se o estabelecimento de criação cumpre os requisitos do presente regulamento. [...] A '
+    'autoridade competente só deve conceder certificados de aprovação a estabelecimentos de criação que cumpram '
+    'os requisitos do presente regulamento.»',
+    'art.º 10.º, n.ºs 1 e 2, do Regulamento (UE) 2026/1818 — versão portuguesa.')
+p('O art.º 10.º é aplicável a partir de 31 de agosto de 2034, nos termos da al. f) do art.º 33.º. Note-se a '
+  'natureza da exigência: a colocação no mercado depende de aprovação, e a aprovação depende de inspeção no '
+  'local, não podendo o certificado ser concedido a estabelecimento que não cumpra. Uma aprovação obtida por '
+  'silêncio administrativo é incompatível com esta construção.')
+
+h2('3.4. O que o artigo 31.º revela')
+p('O art.º 31.º enumera as causas de indeferimento e de não emissão do título. Entre as dezenas de '
+  'circunstâncias previstas, a única referência à DGAV é a da al. f), relativa à «Decisão desfavorável quanto à '
+  'atribuição do NCV ou NII», isto é, matéria de segurança da cadeia alimentar e de subprodutos. Não há '
+  'qualquer causa de indeferimento fundada em pronúncia desfavorável em matéria de saúde ou de bem-estar '
+  'animal, o que é coerente com a ausência da DGAV no procedimento das atividades que detêm animais de '
+  'companhia, assinalada no ponto 01.')
+
+h2('3.5. Um efeito colateral fora do nosso âmbito, a sinalizar internamente')
+p('O n.º 1 do art.º 14.º do anexo determina que os estabelecimentos abrangidos pelo n.º 2 do art.º 4.º do '
+  'Regulamento (CE) n.º 853/2004, pelo art.º 10.º do Regulamento (CE) n.º 183/2005 e pelo art.º 44.º do '
+  'Regulamento (CE) n.º 1069/2009 «só podem iniciar a atividade após realização de vistoria e aprovação pela '
+  'DGAV». Conjugado com o n.º 3 do art.º 25.º e com a linha de 30 dias do Anexo III, coloca-se a questão de '
+  'saber se o silêncio da DGAV pode valer como aprovação sanitária para efeitos daqueles regulamentos. A '
+  'matéria é da competência dos serviços de segurança alimentar e de subprodutos, não desta Direção de '
+  'Serviços, mas deve ser-lhes sinalizada.')
+
+h2('3.6. Fontes do ponto 03')
+bullet('Projeto: preâmbulo; art.ºs 14.º, 21.º, 25.º, 29.º e 31.º do anexo; Anexo III.')
+bullet('Decreto-Lei n.º 276/2001, de 17 de outubro — art.ºs 3.º, 3.º-B, 3.º-C e 3.º-D, n.º 2, na redação do '
+       'Decreto-Lei n.º 20/2019, de 30 de janeiro.')
+bullet('Regulamento (UE) 2026/1818 — art.º 10.º, n.ºs 1 e 2, e al. f) do art.º 33.º, nas versões inglesa e '
+       'portuguesa.')
+bullet('Projeto de RGAC — n.º 2 do art.º 47.º. Trabalho em curso, citado como tal.')
+
+h2('3.7. Verificações pendentes')
+bullet('Confirmar se o regime geral do Código do Procedimento Administrativo e a legislação de segurança '
+       'alimentar admitem, ou não, aprovação sanitária por deferimento tácito, para fundamentar o ponto 3.5.')
+bullet('Confirmar se existe prática ou orientação da DGAV sobre prazos de pronúncia no SIR e no SI REAP que '
+       'permita estimar o risco real de o prazo de 20 dias ser excedido.')
+
 # ──────────────────── Secção transversal: Lei da Saúde Animal ────────────────────
 h1('Secção transversal — A Lei da Saúde Animal como pano de fundo')
 
@@ -651,7 +737,10 @@ bullet('Verificação pendente: se os estabelecimentos de animais de companhia e
 h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
-    [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+    [['6.10.2026', 'Fundamentação do ponto 03, sobre o deferimento tácito, com o achado de que a exclusão '
+                   'do deferimento tácito em decisões sobre detenção de animais já consta da lei vigente, no '
+                   'n.º 2 do artigo 3.º-D do Decreto-Lei n.º 276/2001, e não apenas do projeto de RGAC.'],
+     ['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
      ['6.10.2026', 'Ponto 2.5-C: ligação à lista positiva de animais de companhia do n.º 3 do artigo 4.º do '
                    'projeto de RGAC, com a colisão das duas habilitações regulamentares sobre a detenção da '
                    'mesma espécie, e a incoerência interna do RGAC entre o n.º 2 do artigo 2.º e o n.º 2 do '
