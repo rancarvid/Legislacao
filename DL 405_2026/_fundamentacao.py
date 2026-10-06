@@ -700,6 +700,95 @@ bullet('Pela capacidade e pelos meios. A Lei n.º 27/2016 afetou aos centros de 
        'o encargo a recair no município sempre que o detentor não seja identificado, que é a regra no gado '
        'deambulante, compromete a missão existente.')
 
+h2('4.4-A. A remissão do artigo 59.º para o bem-estar animal, e a ausência de parâmetro')
+p('É o fio mais sólido deste ponto, porque não exige crítica alguma ao diploma: é o próprio artigo que invoca '
+  'um parâmetro de bem-estar animal, duas vezes.')
+cit('«4 – O animal só pode ser restituído ao respetivo detentor e reintroduzido na exploração pecuária de '
+    'origem após a regularização da sua identificação e registo, o cumprimento das medidas sanitárias e de '
+    'bem-estar animal determinadas pela autoridade competente e a verificação de que a exploração dispõe de '
+    'condições adequadas de alojamento e contenção que previnam nova fuga ou deambulação.»',
+    'n.º 4 do art.º 59.º do anexo.')
+cit('«5 – Não sendo conhecido o proprietário ou detentor, não sendo o animal reclamado por qualquer deles no '
+    'prazo referido no número anterior ou declarando qualquer deles que não pretende recebê-lo, o destino do '
+    'animal é determinado pelo município territorialmente competente, em articulação com a DGAV, observadas as '
+    'normas relativas à identificação, registo, circulação, sanidade e bem-estar animal.»',
+    'n.º 5 do art.º 59.º do anexo.')
+p('Para o cão e o gato essas normas existem, no Decreto-Lei n.º 276/2001 e na Portaria n.º 146/2017. Para as '
+  'espécies pecuárias alojadas numa instalação municipal não existem, e por dupla exclusão. O n.º 2 do art.º '
+  '1.º do Decreto-Lei n.º 276/2001 exclui do âmbito daquele diploma «os touros de lide e as espécies de '
+  'pecuária». E o art.º 2.º da Portaria n.º 146/2017 circunscreve o regime dos centros de recolha às espécies '
+  'da Parte A do Anexo I do Regulamento (UE) 2016/429.')
+p('A conclusão é que o artigo remete para um parâmetro que, quanto a estas espécies, está vazio. A observação '
+  'não imputa defeito ao projeto: responde a uma pergunta que o próprio projeto formula, e é por isso o ângulo '
+  'de pronúncia mais seguro.')
+
+h2('4.4-B. Os critérios a fixar')
+p('Conteúdo mínimo de uma norma técnica de alojamento destas espécies numa instalação de recolha.')
+bullet('Áreas e dimensões por espécie e por fase de desenvolvimento.')
+bullet('Separação entre espécies incompatíveis, com isolamento visual, sonoro e olfativo entre presas e '
+       'predadores. O ambiente acústico de um canil é, em si, um fator de stress crónico para espécies presa.')
+bullet('Quarentena e biossegurança à entrada. O animal chega sem identificação e sem exploração de origem '
+       'conhecida, pelo que o seu estado sanitário é indeterminado.')
+bullet('Alimentação e abeberamento próprios da espécie, incluindo regime de forragem para os herbívoros.')
+bullet('Meios de contenção e de maneio seguro, matéria em que o risco para o pessoal difere do dos animais de '
+       'companhia.')
+bullet('Lotação máxima determinada pelos recursos efetivos da instalação, e não apenas pela área construída.')
+p('Nota de dimensionamento, com consequência prática imediata: o compartimento financiado tem área mínima '
+  'coberta de três metros quadrados por animal. É medida pensada para espécies de pequeno porte. Para um '
+  'equídeo ou um bovino é insuficiente, pelo que o valor dos Avisos não pode ser transposto sem revisão. Para '
+  'ordem de grandeza: o código de boas práticas galês referido no ponto 4.9 recomenda, para um cavalo, box de '
+  '3,65 m por 3,65 m, ou seja cerca de treze metros quadrados, e 4,5 m² de área coberta por burro.')
+
+h2('4.4-C. A instalação de destino determina o regime do animal')
+p('O artigo 59.º não identifica instalação alguma, e dessa omissão resulta uma consequência material, porque '
+  'os dois regimes possíveis conduzem a destinos opostos.')
+p('Se o animal for entregue a um centro de recolha oficial, aplica-se a Lei n.º 27/2016, que é espécie-neutra '
+  'pelas razões do ponto 4.5: a presunção de abandono do n.º 1 do seu art.º 3.º, a esterilização obrigatória, '
+  'o encaminhamento para adoção e a proibição do abate como forma de controlo da população.')
+p('Se o animal seguir a lógica da apreensão em exploração, o n.º 4 do art.º 57.º do anexo aponta em sentido '
+  'inverso:')
+cit('«4 - Caso não existam condições técnicas ou sanitárias para a manutenção, ou na impossibilidade de ser '
+    'encontrado um fiel depositário adequado, os animais apreendidos numa exploração pecuária devem ser: '
+    'a) Conduzidos ao matadouro e abatidos, caso sejam aprovados para consumo; ou b) Destruídos nos termos da '
+    'legislação em vigor, se não for possível assegurar a segurança sanitária dos animais, na perspetiva da '
+    'sua aprovação para consumo.»',
+    'n.º 4 do art.º 57.º do anexo.')
+p('Acresce que a aprovação para consumo é, no caso do animal errante, improvável: sem identificação não é '
+  'possível demonstrar o cumprimento de intervalos de segurança, pelo que o destino realista é a destruição '
+  'como subproduto. A escolha da instalação não é, por isso, uma questão de arrumação administrativa: decide '
+  'se o animal saudável é esterilizado e encaminhado para adoção ou se é occisionado.')
+
+h2('4.4-D. A qualificação da própria instalação')
+p('A al. b) do art.º 48.º do anexo inclui o equídeo e o leporídeo na definição de animal de espécie pecuária, '
+  'e os limiares do diploma assentam em cabeças normais, nos termos da al. f) do mesmo artigo. O Anexo V, que '
+  'fixaria as equivalências, contém a epígrafe, a remissão e uma nota, mas não a tabela. Não é por isso '
+  'possível, nesta versão, determinar a partir de que efetivo uma instalação que acolha animais recolhidos '
+  'passaria a exercer atividade pecuária sujeita a título.')
+p('A questão não é teórica, e está documentada em fonte parlamentar:')
+cit('«na actual realidade, para se proceder à criação de um santuário de animais de quinta, é obrigatória a '
+    'inscrição como exploração de animais de pecuária»',
+    'Projeto de Resolução n.º 82/XIV/1.ª, exposição de motivos.')
+p('O mesmo documento liga esta ausência de infraestrutura ao destino dos animais:')
+cit('«Nestes casos, a autoridade administrativa deveria determinar a apreensão dos animais com subsequente '
+    'designação de fiel depositário – tal não acontece por inexistência de infraestruturas para o efeito, o '
+    'que deriva no abate desnecessário e desadequado de animais saudáveis»',
+    'Projeto de Resolução n.º 82/XIV/1.ª, exposição de motivos.')
+p('O projeto refere o caso dos 104 cavalos apreendidos nos concelhos de Aljustrel e de Ferreira do Alentejo, '
+  'que nove dias depois da apreensão permaneciam nas mesmas explorações. Trata-se de um projeto de resolução '
+  'de 2019, citado como documentação do problema e não como direito vigente; não foi confirmado se foi '
+  'aprovado.', size=9.5, cor=CINZA)
+
+h2('4.4-E. As despesas e os prazos')
+p('Dois elementos de execução com efeito direto sobre a instalação.')
+p('As despesas. O n.º 3 e o n.º 6 do art.º 59.º imputam-nas ao proprietário ou detentor identificado. O n.º 5 '
+  'regula precisamente a hipótese em que este não é conhecido, e nessa hipótese o custo da permanência recai '
+  'sobre quem detém materialmente o animal, isto é, sobre a instalação. É o elemento que determina o encargo '
+  'real para a rede.')
+p('Os prazos. Aos quatro prazos do ponto 4.2 acresce que, recebendo a mesma instalação animais ao abrigo de '
+  'regimes diferentes, correm em paralelo prazos de reclamação distintos sobre animais alojados no mesmo '
+  'espaço: oito dias pelo n.º 1 do art.º 9.º do Decreto-Lei n.º 314/2003, quinze dias pelo n.º 1 do art.º 3.º '
+  'da Lei n.º 27/2016 e cinco dias úteis pelo n.º 3 do art.º 59.º do anexo.')
+
 h2('4.5. A base legal não é restritiva: a restrição está na portaria')
 p('A lei habilitante é espécie-neutra. A Lei n.º 27/2016, de 23 de agosto, intitula-se «Aprova medidas para a '
   'criação de uma rede de centros de recolha oficial de animais» e o seu art.º 1.º dispõe que «A presente lei '
