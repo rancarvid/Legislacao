@@ -353,6 +353,32 @@ p('Consequência prática desta leitura: não se pode pedir a reposição da exc
   'arrastar os animais detidos exclusivamente para fins de companhia. Foi essa a formulação escolhida para o '
   'texto enviado.')
 
+h2('2.5-A. O que a alteração resolve, e que a lei atual não resolve')
+p('A eliminação da exclusão não é só perda. Fecha um vazio que é, ele próprio, um problema nosso, e isso tem '
+  'de ser dito para que a observação seja equilibrada.')
+p('Hoje o coelho, a galinha ou o pónei detidos em casa por gosto não estão com segurança em nenhum dos dois '
+  'regimes: o n.º 2 do art.º 1.º do Decreto-Lei n.º 276/2001 exclui «as espécies de pecuária» e a al. a) do '
+  'n.º 3 do art.º 1.º do Decreto-Lei n.º 81/2013 excluía os animais de companhia. Que o art.º 26.º do '
+  'primeiro fixe medidas de caixa para coelhos e pequenos roedores resolve a contradição por interpretação e '
+  'não por texto, o que é frágil: basta invocar a natureza pecuária da espécie para discutir a aplicação do '
+  'diploma.')
+p('Resolve ainda dois problemas concretos. O primeiro é o criador informal de coelhos, roedores ou aves para '
+  'o mercado dos animais de companhia: a al. aa) do n.º 1 do art.º 2.º do Decreto-Lei n.º 276/2001 define '
+  'criação comercial como possuir «uma ou mais fêmeas reprodutoras cujas crias sejam destinadas ao comércio», '
+  'o que o apanharia, mas a exclusão das espécies de pecuária dá-lhe argumento para sair. Sem a exclusão do '
+  'lado pecuário, a cláusula da al. b) do art.º 48.º apanha-o. O segundo é a visibilidade do pequeno detentor, '
+  'hoje inexistente, de que dependem a fiscalização, o controlo de zoonoses e a identificação do detentor do '
+  'animal encontrado errante.')
+p('O problema não é, por isso, o fecho do vazio: é o parâmetro com que se fecha. Pela via pecuária, a '
+  'referência de bem-estar daquele coelho passa a ser a cabeça normal e a capacidade instalada, grandezas '
+  'concebidas para medir densidade produtiva e efluentes. O vazio fecha-se, a proteção não melhora.')
+p('Daqui resulta o erro de técnica que sustenta a observação, e que é mais sólido do que a discussão da '
+  'exclusão: a redação usa uma única qualificação, ser ou não atividade pecuária, para decidir duas questões '
+  'independentes, quem fica registado e qual o padrão de bem-estar aplicável. A Lei da Saúde Animal separa-as, '
+  'ao registar animais de companhia para efeitos de circulação sem os tratar como efetivo. Por isso a '
+  'formulação pedida não é a reposição da exclusão, que devolveria estes animais à terra de ninguém, mas a '
+  'adoção do critério finalista com ressalva expressa das obrigações de identificação e registo.')
+
 h2('2.6. O efeito cruzado com o regime dos animais de companhia')
 p('O n.º 2 do artigo 1.º do Decreto-Lei n.º 276/2001 exclui do seu âmbito «as espécies da fauna selvagem '
   'autóctone e exótica e os seus descendentes criados em cativeiro, objeto de regulamentação específica, e os '
@@ -540,6 +566,10 @@ h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
     [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+     ['6.10.2026', 'Observações 02 ajustadas: a alternativa de repor a exclusão eliminada foi substituída '
+                   'pela adoção do critério finalista com ressalva das obrigações de identificação e registo, '
+                   'por se reconhecer que a reposição reabriria um vazio. Acrescentado o ponto 2.5-A, sobre o '
+                   'que a alteração resolve e que a lei atual não resolve.'],
      ['6.10.2026', 'Secção transversal sobre a Lei da Saúde Animal, Regulamento (UE) 2016/429, que enquadra '
                    'os pontos 01, 02 e 09. Observações 02 em terceira versão, com o alerta reduzido ao '
                    'essencial e o enquadramento no Decreto-Lei n.º 276/2001 e na Lei da Saúde Animal.'],

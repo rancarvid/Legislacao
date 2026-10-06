@@ -5,24 +5,25 @@ from docx.shared import Pt, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 TITULO = 'Animais de companhia e atividade pecuária'
-SUB = 'Observações ao projeto de DL das atividades económicas (versão de 25.9.2026), à consideração. V.3.'
+SUB = 'Projeto de DL das atividades económicas, versão de 25.9.2026. À consideração.'
 
 TEXTO = [
  'A definição de atividade pecuária, na alínea c) do artigo 48.º do anexo, exclui a apicultura. Até 21 de '
- 'setembro excluía também os animais de companhia, e essa parte foi retirada, ficando a frase «com exceção da '
- 'apicultura eem:».',
+ 'setembro excluía também os animais de companhia, e foi retirada, ficando «com exceção da apicultura '
+ 'eem:».',
 
- 'Assinalamos porque o regime em vigor mantém as duas exclusões: a alínea a) do n.º 3 do artigo 1.º do '
- 'Decreto-Lei n.º 81/2013 afasta do seu âmbito a apicultura e os animais de companhia.',
+ 'Assinalamos porque o regime em vigor mantém ambas: a alínea a) do n.º 3 do artigo 1.º do Decreto-Lei '
+ 'n.º 81/2013 afasta do seu âmbito a apicultura e os animais de companhia.',
 
- 'É no Decreto-Lei n.º 276/2001 que estão as regras de alojamento destas espécies, com as medidas das caixas '
- 'para pequenos roedores e coelhos no artigo 26.º, mas esse diploma exclui do seu âmbito «as espécies de '
- 'pecuária». E a Lei da Saúde Animal define animal de companhia, no ponto 11 do artigo 4.º do Regulamento (UE) '
- '2016/429, como o animal das espécies do anexo I «detido para fins privados não comerciais», ou seja, '
- 'pela finalidade e não pela espécie.',
+ 'É no artigo 26.º do Decreto-Lei n.º 276/2001 que estão as medidas das caixas para pequenos roedores e '
+ 'coelhos, mas esse diploma exclui «as espécies de pecuária». E a Lei da Saúde Animal, no ponto 11 do '
+ 'artigo 4.º do Regulamento (UE) 2016/429, define animal de companhia pela finalidade: o animal das '
+ 'espécies do anexo I «detido para fins privados não comerciais».',
 
- 'Dá-se à consideração que se esclareça o alcance pretendido, repondo a exclusão ou adotando o critério da Lei '
- 'da Saúde Animal. E que se corrija o «eem».',
+ 'Compreende-se o objetivo de rastreabilidade dos pequenos detentores. Dá-se à consideração que se esclareça '
+ 'o alcance pretendido e que se adote aquele critério, ressalvando que o animal detido para fins privados não '
+ 'comerciais é animal de companhia para efeitos de bem-estar, sem prejuízo da identificação e do registo. E '
+ 'que se corrija o «eem».',
 ]
 
 doc = Document()
