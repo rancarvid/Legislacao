@@ -462,6 +462,9 @@ h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
     [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+     ['6.10.2026', 'Observações 02 em segunda versão, em linguagem corrente e em registo de dúvida, a '
+                   'pedido. A primeira versão fica no processo. Ambas assentam na fundamentação deste ponto 02, '
+                   'que não foi alterada.'],
      ['6.10.2026', 'Correção ao contributo interno de 5.10.2026: o seu ponto 5.4 afirmava que a venda de '
                    'animais em feiras e no comércio não sedentário ficava sem requisitos de bem-estar. O n.º 6 '
                    'do art.º 35.º do Decreto-Lei n.º 276/2001 proíbe a venda ambulante de animais de companhia '
