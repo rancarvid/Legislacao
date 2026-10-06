@@ -521,6 +521,54 @@ bullet('Confirmar se o Anexo V do projeto virá a reproduzir a tabela do Anexo I
 bullet('Quantificar o universo afetado: número de estabelecimentos do CAE 47762 e, destes, quantos detêm '
        'animais vivos. Sem este dado não é possível avaliar a exequibilidade de procedimentos mais exigentes.')
 
+h2('2.5-C. A ligação à lista positiva de animais de companhia')
+p('A questão do ponto 02 é, no fundo, de classificação: a lei decide o regime de bem-estar nomeando espécies, '
+  'e a mesma espécie acaba em dois regimes. A Lei da Saúde Animal dá o critério da finalidade mas não diz quais '
+  'as espécies que podem ser detidas como animais de companhia. O instrumento que fecha essa questão é a lista '
+  'positiva, e o projeto de RGAC já a prevê.')
+cit('«3 - Sem prejuízo do disposto nos n.ºs anteriores, serão considerados animais de companhia aqueles que '
+    'vierem a integrar a lista positiva de animais de companhia (ou lista nacional de animais de companhia), a '
+    'publicar em Portaria dos membros do Governo responsáveis pelas áreas da agricultura e do ambiente.»',
+    'n.º 3 do art.º 4.º do projeto de RGAC, versão de trabalho de 30.6.2026. O n.º 4 do mesmo artigo exclui a '
+    'fauna selvagem indígena e não indígena, as espécies da Lista Nacional de Espécies Invasoras, as inscritas '
+    'na CITES e as perigosas e exóticas sujeitas a legislação especial; o n.º 5 permite à DGAV a exclusão '
+    'cautelar imediata de uma espécie.')
+p('A figura vem do RGBEAC de junho de 2025, onde é apresentada como uma das principais inovações, com '
+  'referência comparada à Bélgica, aos Países Baixos, à Finlândia, à França e a Chipre.')
+
+p('Daqui resulta um argumento de legística, concreto e verificável: há duas habilitações regulamentares '
+  'concorrentes sobre o mesmo ato, a detenção, relativamente à mesma espécie.', bold=True)
+tabela(
+    ['Instrumento', 'Objeto', 'Portaria de quem'],
+    [['Art.º 4.º, n.º 3, do projeto de RGAC',
+      'Lista positiva de animais de companhia, que determina quais as espécies qualificadas como animais de '
+      'companhia',
+      'Membros do Governo responsáveis pela agricultura e pelo ambiente'],
+     ['Art.º 50.º, n.º 1, al. e), do anexo do projeto de DL das atividades económicas',
+      'Normas regulamentares aplicáveis à «detenção e produção pecuária» de «Leporídeos e outras espécies»',
+      'Membro do Governo responsável pela agricultura e pelo desenvolvimento rural']],
+    larguras=[5.0, 6.5, 4.0],
+)
+p('Mesma espécie, mesmo ato, duas portarias, conjuntos de signatários diferentes e nenhuma regra de '
+  'articulação entre elas. A que for publicada primeiro fixa, por omissão, o regime do coelho ou do roedor '
+  'detido por companhia.')
+p('E há um argumento substantivo que decorre deste. A lista positiva só tem efeito útil se a qualificação '
+  'tiver consequências. Se uma espécie puder constar da lista positiva de animais de companhia e ser, '
+  'simultaneamente e sem distinção, espécie pecuária na mesma situação de detenção, a lista passa a ser um '
+  'rótulo sem regime associado. A alteração assinalada no ponto 02 não afeta, por isso, apenas o Decreto-Lei '
+  'n.º 276/2001: afeta o instrumento central do regime que estamos a preparar.')
+p('Ressalva: o Regulamento (UE) 2026/1818 não prevê listas positivas. A pesquisa das expressões «lista '
+  'positiva» e «positive list» nas versões portuguesa e inglesa do texto publicado não devolve ocorrências. A '
+  'âncora desta figura é nacional e comparada, não europeia.')
+p('Incoerência interna do RGAC que esta análise expõe, e que deve seguir para o memorando de acompanhamento: '
+  'o n.º 2 do art.º 2.º qualifica as espécies da Parte B do Anexo I do Regulamento (UE) 2016/429 como animais '
+  'de companhia «quando detidos para fins de companhia», enquanto o n.º 2 do art.º 4.º diz que essas espécies '
+  '«são também considerados animais de companhia», sem o critério finalista. Sem esse critério, todo o coelho '
+  'seria animal de companhia, incluindo o da cunicultura. É o lapso simétrico do que se assinala ao Gabinete.')
+p('Nota de oportunidade: este argumento foi deliberadamente deixado fora da observação 02 enviada. Serve '
+  'melhor como resposta de segunda volta, caso a resposta à dúvida de aplicação venha a ser a de que se aplica '
+  'a portaria da pecuária. Jogado antes, permite que a articulação seja resolvida contra nós no próprio texto.')
+
 # ──────────────────── Secção transversal: Lei da Saúde Animal ────────────────────
 h1('Secção transversal — A Lei da Saúde Animal como pano de fundo')
 
@@ -604,6 +652,10 @@ h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
     [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+     ['6.10.2026', 'Ponto 2.5-C: ligação à lista positiva de animais de companhia do n.º 3 do artigo 4.º do '
+                   'projeto de RGAC, com a colisão das duas habilitações regulamentares sobre a detenção da '
+                   'mesma espécie, e a incoerência interna do RGAC entre o n.º 2 do artigo 2.º e o n.º 2 do '
+                   'artigo 4.º, a remeter para o memorando de acompanhamento.'],
      ['6.10.2026', 'Observações 02 em quarta versão, 197 palavras: deixa de propor redação e passa a colocar '
                    'uma dúvida de aplicação sobre a norma de bem-estar aplicável à detenção caseira, ligando-se '
                    'a um fio já aberto no ficheiro. Acrescentado o ponto 2.5-B, com os três encaminhamentos '
