@@ -418,10 +418,17 @@ h2('5.4. Venda de animais em comércio não sedentário, feiras e leilões')
 
 p('O n.º 2 do art.º 133.º do Anexo proíbe a venda a retalho não sedentária de produtos fitofarmacêuticos, '
   'medicamentos, aditivos para alimentos para animais, armas e munições, combustíveis, moedas e notas e '
-  'veículos; não proíbe a venda de animais vivos. Acresce que o n.º 2 do art.º 2.º do Decreto-Lei n.º 276/2001 '
-  'exclui do conceito de «alojamento» os locais de venda em feiras ou mercados, pelo que a venda de animais '
-  'nesses locais não está sujeita aos requisitos de alojamento. O resultado conjugado é um regime mais '
-  'permissivo para a modalidade de venda que oferece menores garantias de bem-estar e de rastreabilidade.')
+  'veículos; não proíbe a venda de animais vivos. A proibição existe, porém, na legislação vigente, e mantém-se: '
+  'o n.º 6 do art.º 35.º do Decreto-Lei n.º 276/2001 dispõe que «não é permitida a venda ambulante de animais '
+  'de companhia», e o seu art.º 35.º fixa as condições da venda em feiras e mercados, fazendo-a depender, na '
+  'al. b) do n.º 3, de mera comunicação prévia à câmara para vistoria aos locais de venda pelo médico '
+  'veterinário municipal. Como o Decreto-Lei n.º 276/2001 não é revogado, não há lacuna.')
+
+p('O que há é falta de articulação. O regime das feiras e do comércio não sedentário do Anexo (art.ºs 131.º a '
+  '139.º) não remete para aquelas normas, e o elenco de proibições do art.º 133.º, lido isoladamente, sugere o '
+  'contrário do que a lei determina. Note-se ainda que o n.º 2 do art.º 2.º do Decreto-Lei n.º 276/2001 exclui '
+  'do conceito de «alojamento» os locais de venda em feiras ou mercados, pelo que o que a estes se aplica são '
+  'as condições próprias dos seus art.ºs 34.º e 35.º, e não o regime dos alojamentos.')
 
 p('De igual modo, o n.º 1 do art.º 153.º inclui na atividade leiloeira a venda «de animais», sem qualquer '
   'exigência de identificação, registo ou informação ao adquirente, quando o art.º 21.º, n.º 3, do '
@@ -431,8 +438,9 @@ p('De igual modo, o n.º 1 do art.º 153.º inclui na atividade leiloeira a vend
 
 p('Propostas:', bold=True)
 bullet('Aditar ao n.º 2 do art.º 133.º a proibição da venda a retalho não sedentária de animais de companhia, '
-       'possibilidade que o art.º 30.º do Regulamento expressamente comporta, ou sujeitá-la a autorização '
-       'prévia da DGAV.')
+       'por remissão para o n.º 6 do art.º 35.º do Decreto-Lei n.º 276/2001, de modo a que o elenco de '
+       'proibições não induza em erro, e remeter o regime das feiras para as condições do art.º 35.º do mesmo '
+       'diploma.')
 bullet('Excluir os animais vivos do objeto da atividade leiloeira ou, mantendo-se, subordinar expressamente a '
        'sua venda ao cumprimento do regime dos animais de companhia e, quanto a cães e gatos, das obrigações '
        'do art.º 21.º do Regulamento (UE) 2026/1818.')
@@ -559,9 +567,10 @@ tabela(
          'das medidas de abate.',
          'Elevada'],
         ['5', 'Art.º 133.º, n.º 2, e art.º 153.º, n.º 1',
-         'Venda de animais vivos em comércio não sedentário e em leilão sem requisitos de bem-estar ou '
-         'rastreabilidade.',
-         'Proibir a venda não sedentária de animais de companhia ou sujeitá-la a autorização da DGAV; excluir os '
+         'O elenco de proibições do art.º 133.º omite os animais vivos, quando o n.º 6 do art.º 35.º do '
+         'DL 276/2001 proíbe a venda ambulante de animais de companhia; e a atividade leiloeira abrange a venda '
+         'de animais sem requisitos de identificação ou registo.',
+         'Remeter para o n.º 6 do art.º 35.º e para as condições do art.º 35.º do DL 276/2001; excluir os '
          'animais vivos da atividade leiloeira ou subordiná-la ao art.º 21.º do Regulamento.',
          'Elevada'],
         ['6', 'Art.º 48.º, al. i), e art.º 49.º («Detenção caseira»)',
