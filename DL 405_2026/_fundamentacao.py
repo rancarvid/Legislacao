@@ -700,6 +700,67 @@ bullet('Pela capacidade e pelos meios. A Lei n.º 27/2016 afetou aos centros de 
        'o encargo a recair no município sempre que o detentor não seja identificado, que é a regra no gado '
        'deambulante, compromete a missão existente.')
 
+h2('4.3-A. A Lei n.º 38/2026: os animais na proteção civil')
+p('Elemento novo e determinante para a dimensão deste ponto. A Lei n.º 38/2026, de 3 de agosto, em vigor '
+  'desde 8 de agosto de 2026, integrou os animais no sistema de proteção civil, alterando a Lei de Bases da '
+  'Proteção Civil, a Lei n.º 65/2007 e o regime do Sistema Integrado de Operações de Proteção e Socorro. '
+  'Todas as citações que seguem são do texto consolidado, que identifica a Lei n.º 38/2026 como diploma '
+  'alterador dos artigos em causa.')
+p('Primeiro, a finalidade da proteção civil passou a incluir os animais:')
+cit('«1 - A proteção civil é a atividade desenvolvida pelo Estado, Regiões Autónomas e autarquias locais, '
+    'pelos cidadãos e por todas as entidades públicas e privadas com a finalidade de prevenir riscos coletivos '
+    'inerentes a situações de acidente grave ou catástrofe, de atenuar os seus efeitos e proteger e socorrer '
+    'as pessoas, os animais e bens em perigo quando aquelas situações ocorram.»',
+    'n.º 1 do art.º 1.º da Lei n.º 27/2006, de 3 de julho, na redação da Lei n.º 38/2026.')
+p('Segundo, foi criado um domínio de atuação próprio, em alínea autónoma e paralela à das populações:')
+cit('«e) Planeamento de soluções de emergência, visando a busca, o salvamento, a prestação de socorro e de '
+    'assistência, bem como a evacuação, alojamento e abastecimento dos animais»',
+    'al. e) do n.º 2 do art.º 4.º da Lei n.º 27/2006, na redação da Lei n.º 38/2026.')
+p('Terceiro, e é o que mais releva para este ponto, o mesmo domínio foi fixado ao nível municipal, com '
+  'simulacros:')
+cit('«e) Planeamento de soluções de emergência, visando a busca, o salvamento a prestação de socorro e de '
+    'assistência, bem como a evacuação, alojamento e abastecimento dos animais presentes no município, '
+    'incluindo a realização de simulacros»',
+    'al. e) do n.º 2 do art.º 2.º da Lei n.º 65/2007, de 12 de novembro, na redação da Lei n.º 38/2026.')
+p('Quarto, a composição da comissão municipal de proteção civil passou a incluir a autoridade sanitária '
+  'veterinária concelhia e as entidades com atividade no alojamento de animais:')
+cit('«j) Um representante da autoridade sanitária veterinária concelhia; k) Representantes de entidades '
+    'legalmente constituídas no âmbito da busca, salvamento, prestação de socorro, assistência, evacuação, '
+    'alojamento ou abastecimento de animais, reconhecidos pelo município»',
+    'als. j) e k) do art.º 41.º da Lei n.º 27/2006, na redação da Lei n.º 38/2026.')
+p('Quinto, no teatro de operações foi criada uma zona dedicada:')
+cit('«d) Uma zona de concentração de acolhimento de animais, onde se localizam temporariamente os meios e '
+    'recursos disponíveis e se mantém um sistema de apoio logístico à acomodação, salvamento e triagem de '
+    'animais.»',
+    'al. d) do art.º 13.º do Decreto-Lei n.º 90-A/2022, de 30 de dezembro, na redação da Lei n.º 38/2026.')
+p('Nota de designação: a expressão legal é «zona de concentração de acolhimento de animais». A imprensa tem '
+  'escrito «zona de concentração para alojamento de animais»; não é a redação do diploma.', size=9.5,
+  cor=CINZA)
+
+h2('4.3-B. A convergência dos dois deveres')
+p('Três consequências, por ordem de importância para a pronúncia.')
+bullet('As normas são espécie-neutras. Falam em «os animais» e «os animais presentes no município», sem '
+       'distinguir animais de companhia de espécies pecuárias. O equídeo, o bovino e o leporídeo estão '
+       'abrangidos.')
+bullet('O alojamento é expressamente um dos atos planeados, e não um efeito colateral do salvamento. A '
+       'alínea refere a «evacuação, alojamento e abastecimento», e o regime das operações prevê uma zona '
+       'dedicada à acomodação e triagem.')
+bullet('O dever é municipal e já é exigível desde 8 de agosto de 2026, com obrigação de simulacros.')
+p('Daqui resulta o argumento central deste ponto, e não precisa de ser apresentado como crítica ao projeto. '
+  'O município já está obrigado a planear o alojamento de animais de qualquer espécie em emergência. Se lhe '
+  'acrescer a recolha corrente de animais errantes de espécie pecuária, por via do art.º 59.º do anexo, os '
+  'dois deveres convergem na mesma necessidade física, que é um lugar onde alojar estas espécies sob '
+  'responsabilidade municipal. Para nenhum dos dois existe hoje norma de bem-estar aplicável, pelas razões do '
+  'ponto 4.4-A-1.')
+p('É também o que dá sentido útil à série de Avisos do ponto 4.6: o compartimento para outras espécies, '
+  'requisito mínimo e item financiado entre 2018 e 2025 e ausente do Aviso n.º 1/2026, é precisamente a '
+  'infraestrutura que serviria os dois deveres. A sua reposição deixa de ser uma preferência desta área para '
+  'passar a ser instrumento de cumprimento de um dever legal que já existe.')
+p('Inferência, assinalada como tal: não há indício de que o projeto em análise tenha sido redigido em '
+  'articulação com a Lei n.º 38/2026. O art.º 59.º não a refere, nem refere a proteção civil, e o diploma '
+  'não consta do elenco de alterações. A convergência é, pelos elementos disponíveis, efeito e não desenho.',
+  italic=True)
+
 h2('4.4-A. A guarda do animal: o artigo pressupõe-na, mas não a regula')
 p('O artigo 59.º descreve uma operação de guarda sem identificar a instalação em que ela decorre nem as '
   'condições a que obedece. A prova de que a guarda existe está no próprio artigo, no número que a factura:')
