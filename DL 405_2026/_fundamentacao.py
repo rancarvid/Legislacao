@@ -119,12 +119,11 @@ tabela(
          'Art.º 16.º, n.º 4, e Anexo II; art.ºs 2.º e 36.º, n.º 3', 'A refazer, em fusão'],
         ['02', 'Animais de companhia na definição de atividade pecuária: qual a norma de bem-estar aplicável',
          'Art.º 48.º, als. b) e c)', 'Fechado'],
-        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'Fechado'],
-        ['04', 'Recolha de animais errantes: delimitação às espécies pecuárias',
+        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'A confirmar'],
+        ['04', 'Recolha de animais errantes: delimitação às espécies pecuárias. É a questão que originou o '
+                'pedido de pronúncia',
          'Art.ºs 57.º e 59.º', 'Previsto'],
-        ['05', 'Venda em comércio não sedentário, feiras e leilões: falta de articulação',
-         'Art.ºs 133.º, n.º 2, e 153.º, n.º 1', 'Previsto'],
-        ['06', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
+        ['05', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
     ],
     larguras=[1.0, 6.2, 4.3, 2.0],
 )
@@ -132,13 +131,19 @@ tabela(
 p('Notas sobre a numeração. A ordem da primeira análise global, registada no contributo interno de 5 de '
   'outubro de 2026, era diferente: o tema que ali figurava como ponto 6, sobre a fronteira entre detenção '
   'caseira e animal de companhia, passou a ser o ponto 02 e absorveu-o.', size=9.5, cor=CINZA)
-p('Por decisão de 6 de outubro de 2026, a série foi reduzida. O antigo ponto 04, sobre a cláusula de '
+p('Por decisão de 6 de outubro de 2026, a série foi reduzida a cinco pontos. O antigo ponto 04, sobre a cláusula de '
   'articulação, foi fundido no ponto 01, por tratarem do mesmo problema em normas diferentes e por as '
   'correções pedidas serem complementares. Foram eliminados três temas: a venda e publicidade em linha, por o '
   'art.º 21.º do Regulamento (UE) 2026/1818 assegurar o essencial e o projeto não o contrariar; o SIAC, a base '
   'de dados setorial e o cadastro, por ser matéria de execução e de médio prazo; e os lapsos formais, por não '
   'serem matéria desta Direção de Serviços. A análise de cada um permanece neste documento, para o caso de '
   'virem a ser retomados.', size=9.5, cor=CINZA)
+p('Na mesma data caiu também o ponto da venda em comércio não sedentário, em feiras e em leilões. A '
+  'investigação da omissão dos animais vivos no n.º 2 do art.º 133.º concluiu que não há regressão: a norma '
+  'reproduz literalmente o n.º 2 do art.º 75.º do Decreto-Lei n.º 10/2015 e a proibição tem sede própria, '
+  'desde 2003, no n.º 6 do art.º 35.º do Decreto-Lei n.º 276/2001. Do tema restam dois resíduos, registados '
+  'no ponto 5-R: o vazio quanto aos leilões de animais e uma correção que é nossa, no projeto de RGAC.',
+  size=9.5, cor=CINZA)
 
 # ───────────────────────────── Ponto 01 ─────────────────────────────
 h1('Ponto 01 — Estabelecimentos de comércio a retalho de animais de companhia')
@@ -656,6 +661,55 @@ bullet('Confirmar se o regime geral do Código do Procedimento Administrativo e 
 bullet('Confirmar se existe prática ou orientação da DGAV sobre prazos de pronúncia no SIR e no SI REAP que '
        'permita estimar o risco real de o prazo de 20 dias ser excedido.')
 
+# ──────────────── Resíduos do ponto eliminado sobre comércio não sedentário ────────────────
+h1('Ponto 5-R — Resíduos do tema eliminado da venda não sedentária, feiras e leilões')
+
+h2('5R.1. Por que razão o tema caiu')
+p('A questão de partida era a omissão dos animais vivos no elenco de proibições do n.º 2 do art.º 133.º do '
+  'anexo. A investigação concluiu que não houve decisão neste projeto nem regressão face ao regime vigente.')
+bullet('No ficheiro não há qualquer eliminação de texto relativa a animais no art.º 133.º, nem comentário '
+       'ancorado ao artigo. A única alteração registada em todo o artigo é a eliminação da expressão «, na sua '
+       'redação atual» na al. a) do n.º 2, em nome de Maria João Torres, com data de 1.9.2026.')
+bullet('O n.º 2 do art.º 133.º reproduz literalmente o n.º 2 do art.º 75.º do Decreto-Lei n.º 10/2015, de 16 '
+       'de janeiro: as mesmas sete alíneas, na mesma ordem e com a mesma redação. A omissão é herdada de 2015.')
+bullet('Em 2015 a matéria já tinha sede própria. O n.º 6 do art.º 35.º do Decreto-Lei n.º 276/2001, na redação '
+       'do Decreto-Lei n.º 315/2003, de 17 de dezembro, dispõe que «não é permitida a venda ambulante de '
+       'animais de companhia», no mesmo artigo que fixa as condições da venda em feiras e mercados.')
+bullet('O critério do elenco é coerente: fitofarmacêuticos, medicamentos, aditivos para alimentação animal, '
+       'armas e explosivos, combustíveis, moedas e notas e veículos são produtos cuja venda fora de '
+       'estabelecimento envolve risco de segurança ou de saúde pública. O animal não é um produto e o '
+       'fundamento da proibição é o bem-estar, matéria de outro diploma.')
+
+h2('5R.2. Primeiro resíduo: os leilões')
+p('O n.º 1 do art.º 153.º do anexo define a atividade leiloeira como a venda «de bens móveis e imóveis, '
+  'corpóreos e incorpóreos ou de animais», sujeita a comunicação prévia, com a DGDCCS como entidade '
+  'coordenadora e sem requisito algum de identificação, registo ou informação ao adquirente. A pesquisa das '
+  'expressões «leilão» e «leiloeira» no Decreto-Lei n.º 276/2001 não devolve ocorrências: o leilão de animais '
+  'de companhia não está regulado do lado do bem-estar. A partir de 31 de agosto de 2030 o n.º 3 do art.º 21.º '
+  'do Regulamento (UE) 2026/1818 obriga quem coloca um cão ou gato no mercado a facultar ao adquirente prova '
+  'da identificação e do registo, bem como a espécie, o sexo, a data e o país de nascimento e, se for o caso, '
+  'a raça.')
+p('Verificação pendente: se os Decretos-Leis n.ºs 155/2015 e 160/2015, que este projeto revoga e que regulavam '
+  'a atividade leiloeira e a prestamista, continham disposição sobre animais. Se continham, há regressão; se '
+  'não, o vazio é antigo e apenas se consolida.')
+
+h2('5R.3. Segundo resíduo: uma correção no nosso próprio texto')
+p('O n.º 2 do art.º 11.º do projeto de RGAC vai além da lei vigente, ao proibir a transmissão de animais de '
+  'companhia «fora dos locais autorizados para o efeito, nomeadamente na via pública ou no âmbito da atividade '
+  'de comércio a retalho não sedentária, designadamente em feiras, mercados ou de modo ambulante, tal como '
+  'definida no Decreto-Lei n.º 10/2015, de 16 de janeiro». A proibição é ancorada por remissão a um diploma '
+  'que este projeto revoga. Se o RGAC for publicado nestes termos, nasce com remissão para norma revogada. '
+  'É matéria a corrigir no nosso texto, e segue para o memorando de acompanhamento, não para a pronúncia.')
+
+h2('5R.4. Hipótese não confirmada')
+p('Antes do Decreto-Lei n.º 10/2015, a venda ambulante regia-se pelo Decreto-Lei n.º 122/79, de 8 de maio, '
+  'cujo art.º 7.º não enumerava os produtos no corpo da lei, remetendo para lista anexa alterável por '
+  'despacho. Há indicação de que essa lista, e os regulamentos municipais que nela se apoiavam, abrangiam aves '
+  'e outros animais de criação. Sendo assim, o elenco de 2015 poderá ter deixado cair a proibição quanto às '
+  'espécies pecuárias, que o Decreto-Lei n.º 276/2001 não alcança por excluir do seu âmbito «as espécies de '
+  'pecuária». Não foi possível confirmar: o acesso à fonte foi recusado com erro 403. A confirmar-se, o tema '
+  'ligar-se-ia ao ponto 02 e justificaria a sua reabertura.')
+
 # ──────────────────── Secção transversal: Lei da Saúde Animal ────────────────────
 h1('Secção transversal — A Lei da Saúde Animal como pano de fundo')
 
@@ -738,7 +792,11 @@ bullet('Verificação pendente: se os estabelecimentos de animais de companhia e
 h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
-    [['6.10.2026', 'Série reduzida a seis pontos. Fusão do antigo ponto 04 no ponto 01 e eliminação dos '
+    [['6.10.2026', 'Eliminado o ponto da venda não sedentária, feiras e leilões, apurado que a omissão dos '
+                   'animais vivos no n.º 2 do artigo 133.º é herdada do artigo 75.º do Decreto-Lei n.º 10/2015 '
+                   'e não constitui regressão. Resíduos registados no ponto 5-R. O acesso de animais de '
+                   'companhia a estabelecimentos passa a ponto 05. O ponto 03 passa a «a confirmar».'],
+     ['6.10.2026', 'Série reduzida a seis pontos. Fusão do antigo ponto 04 no ponto 01 e eliminação dos '
                    'temas da venda em linha, do SIAC e cadastro e dos lapsos formais. Renumerados os '
                    'restantes: os errantes passam a 04, o comércio não sedentário e os leilões a 05 e o acesso '
                    'de animais de companhia a estabelecimentos a 06.'],
