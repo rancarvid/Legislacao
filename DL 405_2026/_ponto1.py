@@ -3,19 +3,20 @@ from docx import Document
 from docx.shared import Pt, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
-TITULO = 'Venda de animais de companhia: a ausência da DGAV no novo Código do Licenciamento'
+TITULO = 'Venda de animais de companhia: a ausência da DGAV no novo DL das atividades económicas'
 
 SUB = 'DL 405/XXV/2026, versão de 25.9.2026. DSBEA, 6 de outubro de 2026.'
 
 TEXTO = [
- 'O projeto aprova o Código do Licenciamento das Atividades Económicas e revoga, na alínea j) do n.º 1 do '
- 'artigo 8.º, o Decreto-Lei n.º 10/2015, de 16 de janeiro. É a esse diploma que remete o n.º 1 do artigo 3.º '
+ 'O projeto de DL das atividades económicas revoga, na alínea j) do n.º 1 do artigo 8.º, o '
+ 'Decreto-Lei n.º 10/2015, de 16 de janeiro. É a esse diploma que remete o n.º 1 do artigo 3.º '
  'do Decreto-Lei n.º 276/2001, de 17 de outubro, quando ressalva «Sem prejuízo do disposto no Decreto-Lei '
  'n.º 10/2015, de 16 de janeiro, quanto aos estabelecimentos de comércio a retalho de animais de companhia». '
  'Revogado o diploma remetido, o acesso à atividade das lojas que vendem animais vivos passa a estar no '
- 'novo Código.',
+ 'novo diploma.',
 
- 'O Código recolhe essa atividade no n.º 4 do artigo 16.º do seu anexo e sujeita-a a comunicação prévia. '
+ 'O novo diploma recolhe essa atividade no n.º 4 do artigo 16.º do seu anexo e sujeita-a a comunicação '
+ 'prévia. '
  'No Anexo II, que identifica as entidades intervenientes, correspondem-lhe a câmara municipal como '
  'entidade coordenadora, a Direção-Geral da Defesa do Consumidor, Comércio e Serviços como entidade '
  'notificada e nenhuma entidade pública consultada. A DGAV não figura em nenhuma das três colunas.',
