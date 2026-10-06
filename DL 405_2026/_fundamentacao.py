@@ -379,6 +379,44 @@ p('Daqui resulta o erro de técnica que sustenta a observação, e que é mais s
   'formulação pedida não é a reposição da exclusão, que devolveria estes animais à terra de ninguém, mas a '
   'adoção do critério finalista com ressalva expressa das obrigações de identificação e registo.')
 
+h2('2.5-B. A norma de bem-estar aplicável: os fios já abertos no ficheiro')
+p('A observação enviada na quarta versão abandona a proposta de redação e passa a colocar uma dúvida de '
+  'aplicação: a detenção caseira de coelhos ou de pequenos roedores por lazer fica sujeita a que normas de '
+  'bem-estar? A escolha tem três fundamentos.')
+p('O primeiro é que a questão já está aberta no documento, e foi aberta do lado do Gabinete. No parágrafo que '
+  'hoje é o n.º 1 do art.º 54.º, que manda o operador agir «no respeito pelas normas de bem-estar animal», '
+  'está um comentário de Paulo Meireles de Oliveira a observar que essas normas «parecem decorrer dos regimes '
+  'complementares e não revogados» e a enumerá-las: o Decreto-Lei n.º 64/2000, o n.º 48/2001 relativo a '
+  'vitelos, o n.º 72-F/2003 relativo a galinhas poedeiras e o n.º 135/2003 relativo a suínos. O Gabinete '
+  'encaminhou com «@Pecuária» e a resposta registada foi «Ponderar junto da DGAV e DGADR». Há dois '
+  'encaminhamentos equivalentes: na linha dos leporídeos do art.º 50.º, «Ver com DGAV e DGADR», e na epígrafe '
+  'do art.º 51.º, «Verificar com DGAV e DGADR». A observação responde a um fio aberto, não abre um novo.')
+p('Note-se o que falta na enumeração do revisor: leporídeos e roedores. Não por omissão, mas porque para essas '
+  'espécies as normas estão em portaria.')
+p('O segundo fundamento é que o diploma dá pistas de resposta e nenhuma é conclusiva. O art.º 2.º enumera os '
+  'regimes a articular e não inclui o Decreto-Lei n.º 276/2001. O art.º 36.º, n.º 1, manda cumprir requisitos '
+  'de higiene e de saúde pública, e o seu n.º 3 refere a legislação aplicável aos «produtos». O art.º 50.º, '
+  'n.º 1, al. e), habilita portaria sobre a «detenção e produção pecuária» de leporídeos e outras espécies. O '
+  'art.º 51.º remete para o Decreto-Lei n.º 142/2006. E o art.º 54.º manda respeitar «as normas de bem-estar '
+  'animal» e «as normas de funcionamento previstas para as espécies», sem as identificar.')
+p('O terceiro é a delimitação correta do vazio, que obriga a corrigir uma afirmação feita antes nesta análise. '
+  'Não é exato que as únicas normas específicas para coelhos e pequenos roedores estejam no art.º 26.º e no '
+  'Anexo II do Decreto-Lei n.º 276/2001. A Portaria n.º 635/2009, de 9 de junho, estabelece as normas '
+  'regulamentares da detenção e produção pecuária de leporídeos em explorações e núcleos de produção cunícula, '
+  'armazéns e centros de agrupamento, identifica três sistemas de produção, entre eles o de animais de '
+  'companhia, e fixa requisitos de instalações e medidas sanitárias. A cláusula da al. b) do art.º 48.º tem, '
+  'por isso, contrapartida regulamentar desde 2009.')
+p('O vazio é, então, outro e mais estreito. Aquela portaria assenta nas classes do regime pecuário e a '
+  'detenção caseira criada pelo projeto situa-se abaixo da classe 3, que subsiste no n.º 4 do art.º 16.º para '
+  'capacidades até 15 CN, e é expressamente isenta de licenciamento. A pergunta é se uma detenção isenta de '
+  'licenciamento é alcançada por regulamentação construída sobre as classes de licenciamento. Se for, '
+  'aplicam-se a um animal de estimação requisitos de isolamento térmico, de lavabilidade de paredes e '
+  'pavimentos e de vazio sanitário entre lotes, que são parâmetros de produção. Se não for, não se aplica '
+  'norma alguma.')
+p('Risco a antecipar: a resposta pode ser «aplica-se a Portaria n.º 635/2009». O contra-argumento é o do '
+  'parágrafo anterior, e foi deliberadamente deixado fora da observação enviada, para que esta se mantenha '
+  'como dúvida e não se transforme em alegação.')
+
 h2('2.6. O efeito cruzado com o regime dos animais de companhia')
 p('O n.º 2 do artigo 1.º do Decreto-Lei n.º 276/2001 exclui do seu âmbito «as espécies da fauna selvagem '
   'autóctone e exótica e os seus descendentes criados em cativeiro, objeto de regulamentação específica, e os '
@@ -566,6 +604,11 @@ h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
     [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+     ['6.10.2026', 'Observações 02 em quarta versão, 197 palavras: deixa de propor redação e passa a colocar '
+                   'uma dúvida de aplicação sobre a norma de bem-estar aplicável à detenção caseira, ligando-se '
+                   'a um fio já aberto no ficheiro. Acrescentado o ponto 2.5-B, com os três encaminhamentos '
+                   'para a DGAV registados no documento e com a correção relativa à Portaria n.º 635/2009, que '
+                   'estreita a delimitação do vazio.'],
      ['6.10.2026', 'Observações 02 ajustadas: a alternativa de repor a exclusão eliminada foi substituída '
                    'pela adoção do critério finalista com ressalva das obrigações de identificação e registo, '
                    'por se reconhecer que a reposição reabriria um vazio. Acrescentado o ponto 2.5-A, sobre o '
