@@ -114,30 +114,31 @@ p('A numeração é a da série de observações, e não a do diploma. Foi fixad
 tabela(
     ['N.º', 'Tema', 'Norma principal', 'Estado'],
     [
-        ['01', 'Estabelecimentos de comércio a retalho de animais de companhia: ausência da DGAV no '
-                'procedimento',
-         'Art.º 16.º, n.º 4, e Anexo II', 'Fechado'],
-        ['02', 'Animais de companhia na definição de atividade pecuária: a exclusão eliminada',
+        ['01', 'A DGAV no procedimento das lojas de venda de animais de companhia e a articulação com o regime '
+                'dos animais de companhia e com a Lei da Saúde Animal',
+         'Art.º 16.º, n.º 4, e Anexo II; art.ºs 2.º e 36.º, n.º 3', 'A refazer, em fusão'],
+        ['02', 'Animais de companhia na definição de atividade pecuária: qual a norma de bem-estar aplicável',
          'Art.º 48.º, als. b) e c)', 'Fechado'],
         ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'Fechado'],
-        ['04', 'Cláusula de articulação com o regime dos animais de companhia e com o Regulamento',
-         'Art.ºs 2.º e 36.º, n.º 3', 'Previsto'],
-        ['05', 'Recolha de animais errantes: delimitação às espécies pecuárias',
+        ['04', 'Recolha de animais errantes: delimitação às espécies pecuárias',
          'Art.ºs 57.º e 59.º', 'Previsto'],
-        ['06', 'Venda em comércio não sedentário, feiras e leilões: falta de articulação',
+        ['05', 'Venda em comércio não sedentário, feiras e leilões: falta de articulação',
          'Art.ºs 133.º, n.º 2, e 153.º, n.º 1', 'Previsto'],
-        ['07', 'Venda e publicidade em linha', 'Art.º 1.º, n.º 4', 'Previsto'],
-        ['08', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
-        ['09', 'SIAC, base de dados setorial e cadastro', 'Art.ºs 198.º a 200.º', 'Previsto'],
-        ['10', 'Lapsos formais com efeito material', 'Anexo V; numeração da Secção III', 'Previsto'],
+        ['06', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
     ],
     larguras=[1.0, 6.2, 4.3, 2.0],
 )
 
-p('Nota sobre a renumeração: a ordem seguida na primeira análise global, registada no contributo interno de '
-  '5 de outubro de 2026, era diferente. O tema que ali figurava como ponto 6, sobre a fronteira entre detenção '
-  'caseira e animal de companhia, passou a ser o ponto 02 desta série e absorveu aquele. Os restantes desceram '
-  'uma posição.', size=9.5, cor=CINZA)
+p('Notas sobre a numeração. A ordem da primeira análise global, registada no contributo interno de 5 de '
+  'outubro de 2026, era diferente: o tema que ali figurava como ponto 6, sobre a fronteira entre detenção '
+  'caseira e animal de companhia, passou a ser o ponto 02 e absorveu-o.', size=9.5, cor=CINZA)
+p('Por decisão de 6 de outubro de 2026, a série foi reduzida. O antigo ponto 04, sobre a cláusula de '
+  'articulação, foi fundido no ponto 01, por tratarem do mesmo problema em normas diferentes e por as '
+  'correções pedidas serem complementares. Foram eliminados três temas: a venda e publicidade em linha, por o '
+  'art.º 21.º do Regulamento (UE) 2026/1818 assegurar o essencial e o projeto não o contrariar; o SIAC, a base '
+  'de dados setorial e o cadastro, por ser matéria de execução e de médio prazo; e os lapsos formais, por não '
+  'serem matéria desta Direção de Serviços. A análise de cada um permanece neste documento, para o caso de '
+  'virem a ser retomados.', size=9.5, cor=CINZA)
 
 # ───────────────────────────── Ponto 01 ─────────────────────────────
 h1('Ponto 01 — Estabelecimentos de comércio a retalho de animais de companhia')
@@ -737,7 +738,11 @@ bullet('Verificação pendente: se os estabelecimentos de animais de companhia e
 h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
-    [['6.10.2026', 'Fundamentação do ponto 03, sobre o deferimento tácito, com o achado de que a exclusão '
+    [['6.10.2026', 'Série reduzida a seis pontos. Fusão do antigo ponto 04 no ponto 01 e eliminação dos '
+                   'temas da venda em linha, do SIAC e cadastro e dos lapsos formais. Renumerados os '
+                   'restantes: os errantes passam a 04, o comércio não sedentário e os leilões a 05 e o acesso '
+                   'de animais de companhia a estabelecimentos a 06.'],
+     ['6.10.2026', 'Fundamentação do ponto 03, sobre o deferimento tácito, com o achado de que a exclusão '
                    'do deferimento tácito em decisões sobre detenção de animais já consta da lei vigente, no '
                    'n.º 2 do artigo 3.º-D do Decreto-Lei n.º 276/2001, e não apenas do projeto de RGAC.'],
      ['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
