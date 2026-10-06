@@ -120,9 +120,9 @@ tabela(
         ['02', 'Animais de companhia na definição de atividade pecuária: qual a norma de bem-estar aplicável',
          'Art.º 48.º, als. b) e c)', 'Fechado'],
         ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'A confirmar'],
-        ['04', 'Recolha de animais errantes: delimitação às espécies pecuárias. É a questão que originou o '
-                'pedido de pronúncia',
-         'Art.ºs 57.º e 59.º', 'Previsto'],
+        ['04', 'Animais errantes e articulação com os centros de recolha oficial. É a questão que '
+                'originou o pedido de pronúncia',
+         'Art.ºs 57.º e 59.º', 'Em preparação'],
         ['05', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
     ],
     larguras=[1.0, 6.2, 4.3, 2.0],
@@ -661,6 +661,119 @@ bullet('Confirmar se o regime geral do Código do Procedimento Administrativo e 
 bullet('Confirmar se existe prática ou orientação da DGAV sobre prazos de pronúncia no SIR e no SI REAP que '
        'permita estimar o risco real de o prazo de 20 dias ser excedido.')
 
+# ───────────────────────────── Ponto 04 ─────────────────────────────
+h1('Ponto 04 — Animais errantes e articulação com os centros de recolha oficial')
+
+h2('4.0. Postura definida para este ponto')
+p('Por decisão de 6 de outubro de 2026, a pronúncia neste ponto obedece a três limites.', italic=True)
+bullet('Não se discute a arquitetura do diploma nem a sede da matéria. A construção do projeto não é desta '
+       'Direção de Serviços e as razões da inclusão do artigo são de quem o redigiu. A análise da sede, '
+       'registada no ponto 4.3, serve apenas para compreender o raciocínio e sustentar posição, não para ser '
+       'invocada.')
+bullet('Não se faz crítica de técnica legislativa. Os lapsos de remissão e a numeração ficam registados no '
+       'ponto 4.6 e são matéria dos juristas.')
+bullet('O contributo é o que esta divisão tem a oferecer: o conhecimento dos centros de recolha oficial, a '
+       'solução do recinto multiespécie e a experiência dos apoios públicos. A perspetiva é pró-animal; o '
+       'registo é de imparcialidade técnica.')
+
+h2('4.1. O regime vigente dos centros de recolha oficial')
+p('O centro de recolha oficial é, juridicamente, um alojamento de animais de companhia. A al. t) do n.º 1 do '
+  'art.º 2.º do Decreto-Lei n.º 276/2001 define «centro de recolha» como «qualquer alojamento oficial onde um '
+  'animal é hospedado por um período determinado pela autoridade competente, nomeadamente os canis e os gatis '
+  'municipais», e a al. a) do n.º 1 do art.º 3.º do mesmo diploma inclui expressamente os centros de recolha '
+  'entre as atividades dependentes de mera comunicação prévia à DGAV. É, por isso, um estabelecimento '
+  'registado na DGAV, com médico-veterinário responsável e sujeito às normas do seu Capítulo III.')
+p('A obrigação de o manter está no art.º 11.º do Decreto-Lei n.º 314/2003: as câmaras municipais, isoladamente '
+  'ou em associação, «são obrigadas a possuir e manter instalações destinadas a canis e gatis, de acordo com as '
+  'necessidades da zona», com pelo menos duas celas semicirculares para isolamento e quarentena de suspeitos '
+  'de raiva, podendo celebrar protocolos com municípios vizinhos, e com a direção a cargo do '
+  'médico-veterinário municipal. A rede resulta do n.º 4 do art.º 2.º da Lei n.º 27/2016.')
+
+h2('4.2. Funções e prazos')
+tabela(
+    ['Função', 'Norma', 'Elemento relevante'],
+    [['Captura e recolha', 'Art.º 19.º do DL 276/2001 e art.º 8.º do DL 314/2003',
+      'Competência das câmaras municipais; os animais são recolhidos ao canil ou gatil municipal'],
+     ['Exame clínico e destino', 'Art.º 9.º, n.º 1, do DL 314/2003',
+      'Exame pelo médico-veterinário municipal, que decide o destino; permanência mínima de oito dias'],
+     ['Presunção de abandono', 'Art.º 3.º, n.º 1, da Lei n.º 27/2016',
+      'Decorridos quinze dias sobre a recolha sem reclamação, presumem-se abandonados e são obrigatoriamente '
+      'esterilizados e encaminhados para adoção'],
+     ['Esterilização e CED', 'Art.º 4.º da Lei n.º 27/2016 e Portaria n.º 146/2017',
+      'Captura, vacinação e esterilização de errantes e execução dos programas de captura, esterilização e '
+      'devolução'],
+     ['Despesas', 'Art.º 9.º, n.º 2, do DL 314/2003', 'Alimentação e alojamento a cargo do detentor'],
+     ['Cadáveres', 'Art.º 12.º do DL 314/2003', 'Destruição assegurada pelas câmaras municipais'],
+     ['Relato', 'Art.º 3.º, n.ºs 9 e 10, da Lei n.º 27/2016',
+      'Relatório de gestão anual publicitado no primeiro mês do ano; relatório nacional da DGAV até ao fim do '
+      'primeiro trimestre'],
+     ['Prazo do projeto', 'Art.º 59.º, n.º 3, do anexo', 'Cinco dias úteis para a recolha pelo detentor'],
+    ],
+    larguras=[3.4, 5.0, 7.1],
+)
+p('Os prazos são, portanto, quatro e não coincidem: oito dias de permanência mínima, quinze dias para a '
+  'presunção de abandono, dez dias no mínimo proposto pelo projeto de RGAC e cinco dias úteis no artigo do '
+  'projeto em análise.')
+
+h2('4.3. A sede da matéria (registo interno, não invocar)')
+p('Elemento de compreensão, não de pronúncia. O artigo está no Título II, «Requisitos de exercício», Capítulo '
+  'II, «Requisitos especiais de exercício», Secção III, «Atividade pecuária», Subsecção IV, «Medidas '
+  'Administrativas», entre o artigo das medidas administrativas e o das sanções acessórias. Foi aí colocado '
+  'como medida de polícia do licenciamento pecuário: o animal errante é sintoma de incumprimento do dever de '
+  'contenção, que é condição de exercício pela al. j) do n.º 1 do art.º 54.º, e o n.º 4 do art.º 59.º '
+  'condiciona a devolução à verificação de que a exploração dispõe de condições que previnam nova fuga.')
+p('O artigo foi inserido por inteiro em 23 de setembro de 2026, em nome de «Utilizador Convidado», no conjunto '
+  'de cerca de noventa inserções dessa data, na véspera da reunião de 24 de setembro. O seu próprio autor '
+  'deixou-lhe um comentário ancorado ao n.º 1: «Qual é a entidade competente?».')
+
+h2('4.4. Onde o projeto toca os centros de recolha oficial')
+bullet('Pela omissão. O art.º 59.º não identifica instalação alguma, mas refere despesas de «alojamento» no '
+       'n.º 3 e atribui ao município a determinação do destino no n.º 5. O município dispõe de uma única '
+       'instalação de alojamento de animais, que é o centro de recolha oficial.')
+bullet('Pela terminologia. A subal. i) da al. c) do art.º 48.º define «Centro de Agrupamento» como «os locais, '
+       'como centros de recolha, feiras e mercados […] onde são agrupados animais provenientes de diferentes '
+       'explorações». A expressão «centros de recolha» é a mesma que o Decreto-Lei n.º 276/2001 usa para o '
+       'canil e o gatil municipais. A definição é herdada do art.º 2.º do Decreto-Lei n.º 81/2013, pelo que a '
+       'coincidência não é nova; novo é o contacto, porque nada mandava, até agora, animais pecuários para a '
+       'mão do município. Na pronúncia, basta a nota de que não são a mesma realidade.')
+bullet('Pela capacidade e pelos meios. A Lei n.º 27/2016 afetou aos centros de recolha oficial uma missão '
+       'determinada, e é sobre ela que se construíram os apoios públicos. Uma função adicional sem meios, com '
+       'o encargo a recair no município sempre que o detentor não seja identificado, que é a regra no gado '
+       'deambulante, compromete a missão existente.')
+
+h2('4.5. A solução já existe e está financiada')
+p('Este é o contributo central. O projeto de RGAC prevê que os centros de recolha possam dispor de, pelo '
+  'menos, um recinto multiespécie adequado a espécies pecuárias, cumprindo a legislação específica. E os '
+  'Avisos de financiamento para construção e modernização de centros de recolha oficial fixaram a sala '
+  'multiespécie como requisito mínimo de construção. Não é, por isso, necessário conceber solução nova: basta '
+  'remeter para a que a administração já desenhou e financiou.')
+p('Verificação pendente, e é a mais importante deste ponto: obter o texto dos Avisos, com número, ano e '
+  'redação exata do requisito, para que a afirmação anterior seja citável. A referência foi transmitida '
+  'oralmente e não consta dos ficheiros do repositório.', size=9.5, cor=CINZA)
+
+h2('4.6. Lapsos formais (registo interno, matéria dos juristas)')
+bullet('O n.º 5 do art.º 59.º refere o prazo «referido no número anterior», mas o prazo está no n.º 3 e o '
+       'n.º 4 não fixa prazo algum.')
+bullet('O n.º 6 refere as despesas «previstas no número anterior», mas as despesas estão no n.º 3 e não no '
+       'n.º 5.')
+bullet('O n.º 6 escreve «quando identificada» onde deveria ler-se «quando identificado».')
+
+h2('4.7. Fontes do ponto 04')
+bullet('Projeto: art.ºs 48.º, al. c), 54.º, 55.º, 57.º, 58.º e 59.º do anexo; estrutura do Título II; ficha de '
+       'avaliação legislativa, quadro das audições obrigatórias.')
+bullet('Decreto-Lei n.º 276/2001 — art.ºs 2.º, n.º 1, als. c) e t), 3.º, n.º 1, al. a), e 19.º.')
+bullet('Decreto-Lei n.º 314/2003 — art.ºs 2.º, al. n), 8.º, 9.º, 10.º, 11.º e 12.º.')
+bullet('Lei n.º 27/2016 — art.ºs 1.º a 5.º, em especial o n.º 1 do art.º 3.º e os n.ºs 9 e 10 do mesmo artigo.')
+bullet('Portaria n.º 146/2017 — normas técnicas dos programas de captura, esterilização e devolução.')
+bullet('Código Civil, art.º 1323.º, na redação da Lei n.º 8/2017 — regime do animal achado, aplicável a '
+       'qualquer espécie.')
+bullet('Código da Estrada, art.º 92.º — condução de animais na via pública. A norma que sanciona o '
+       'proprietário que deixe o animal vaguear não foi confirmada quanto ao número do artigo.')
+bullet('Portaria n.º 1112/2009 — Rede Nacional de Centros de Recuperação de Fauna, coordenada pelo ICNF em '
+       'articulação com a DGAV, para animais selvagens.')
+bullet('Projeto de RGAC — artigo relativo aos centros de recolha, quanto ao recinto multiespécie. Trabalho em '
+       'curso, citado como tal.')
+
 # ──────────────── Resíduos do ponto eliminado sobre comércio não sedentário ────────────────
 h1('Ponto 5-R — Resíduos do tema eliminado da venda não sedentária, feiras e leilões')
 
@@ -792,7 +905,11 @@ bullet('Verificação pendente: se os estabelecimentos de animais de companhia e
 h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
-    [['6.10.2026', 'Eliminado o ponto da venda não sedentária, feiras e leilões, apurado que a omissão dos '
+    [['6.10.2026', 'Fundamentação do ponto 04, com o regime vigente dos centros de recolha oficial, o quadro '
+                   'das funções e dos quatro prazos, a articulação com o projeto e a solução do recinto '
+                   'multiespécie. Fixada a postura do ponto: sem discussão da sede da matéria e sem crítica de '
+                   'técnica legislativa, que ficam como registo interno.'],
+     ['6.10.2026', 'Eliminado o ponto da venda não sedentária, feiras e leilões, apurado que a omissão dos '
                    'animais vivos no n.º 2 do artigo 133.º é herdada do artigo 75.º do Decreto-Lei n.º 10/2015 '
                    'e não constitui regressão. Resíduos registados no ponto 5-R. O acesso de animais de '
                    'companhia a estabelecimentos passa a ponto 05. O ponto 03 passa a «a confirmar».'],
