@@ -700,27 +700,50 @@ bullet('Pela capacidade e pelos meios. A Lei n.º 27/2016 afetou aos centros de 
        'o encargo a recair no município sempre que o detentor não seja identificado, que é a regra no gado '
        'deambulante, compromete a missão existente.')
 
-h2('4.4-A. A remissão do artigo 59.º para o bem-estar animal, e a ausência de parâmetro')
-p('É o fio mais sólido deste ponto, porque não exige crítica alguma ao diploma: é o próprio artigo que invoca '
-  'um parâmetro de bem-estar animal, duas vezes.')
+h2('4.4-A. A guarda do animal: o artigo pressupõe-na, mas não a regula')
+p('O artigo 59.º descreve uma operação de guarda sem identificar a instalação em que ela decorre nem as '
+  'condições a que obedece. A prova de que a guarda existe está no próprio artigo, no número que a factura:')
+cit('«3 – Quando seja possível identificar o proprietário ou o detentor do animal, a pessoa identificada é '
+    'notificada para proceder à recolha do animal no prazo de cinco dias úteis, bem como ao pagamento das '
+    'despesas realizadas com a retirada, captura, transporte, alojamento, alimentação, identificação e '
+    'cuidados médico-veterinários, sem prejuízo da responsabilidade contraordenacional, civil ou criminal a '
+    'que haja lugar.»',
+    'n.º 3 do art.º 59.º do anexo.')
+p('Há, portanto, alojamento, alimentação, identificação e cuidados médico-veterinários, imputados ao '
+  'detentor. O prazo é de cinco dias úteis quando o detentor é identificado e, na hipótese do n.º 5, '
+  'indeterminado, porque corre até o município decidir o destino. Em nenhum momento se diz onde o animal fica '
+  'nem em que condições.')
+p('Advertência de leitura, para que o argumento não seja mal construído. O n.º 4 não serve este ponto. As '
+  'condições que ali figuram são condições da restituição e dizem respeito à exploração que vai receber o '
+  'animal de volta, não à entidade que o guarda:')
 cit('«4 – O animal só pode ser restituído ao respetivo detentor e reintroduzido na exploração pecuária de '
     'origem após a regularização da sua identificação e registo, o cumprimento das medidas sanitárias e de '
     'bem-estar animal determinadas pela autoridade competente e a verificação de que a exploração dispõe de '
     'condições adequadas de alojamento e contenção que previnam nova fuga ou deambulação.»',
     'n.º 4 do art.º 59.º do anexo.')
+p('O contraste é, ainda assim, útil, e pode ser invocado sem imputar defeito ao projeto: o artigo exige '
+  'verificação da adequação do alojamento do lado que recebe o animal de volta, e não fixa requisito algum '
+  'para o lado que o detém no intervalo. A assimetria mostra que a adequação do alojamento é preocupação '
+  'presente no artigo; apenas não foi estendida ao período de guarda.')
+p('O n.º 5, esse sim, remete expressamente para normas de bem-estar animal, mas quanto ao destino:')
 cit('«5 – Não sendo conhecido o proprietário ou detentor, não sendo o animal reclamado por qualquer deles no '
     'prazo referido no número anterior ou declarando qualquer deles que não pretende recebê-lo, o destino do '
-    'animal é determinado pelo município territorialmente competente, em articulação com a DGAV, observadas as '
-    'normas relativas à identificação, registo, circulação, sanidade e bem-estar animal.»',
+    'animal é determinado pelo município territorialmente competente, em articulação com a DGAV, observadas '
+    'as normas relativas à identificação, registo, circulação, sanidade e bem-estar animal.»',
     'n.º 5 do art.º 59.º do anexo.')
-p('Para o cão e o gato essas normas existem, no Decreto-Lei n.º 276/2001 e na Portaria n.º 146/2017. Para as '
-  'espécies pecuárias alojadas numa instalação municipal não existem, e por dupla exclusão. O n.º 2 do art.º '
-  '1.º do Decreto-Lei n.º 276/2001 exclui do âmbito daquele diploma «os touros de lide e as espécies de '
-  'pecuária». E o art.º 2.º da Portaria n.º 146/2017 circunscreve o regime dos centros de recolha às espécies '
-  'da Parte A do Anexo I do Regulamento (UE) 2016/429.')
-p('A conclusão é que o artigo remete para um parâmetro que, quanto a estas espécies, está vazio. A observação '
-  'não imputa defeito ao projeto: responde a uma pergunta que o próprio projeto formula, e é por isso o ângulo '
-  'de pronúncia mais seguro.')
+p('É esta a remissão a explorar: a decisão de destino cabe ao município em articulação com a DGAV e deve '
+  'observar normas de bem-estar animal. Quanto a estas espécies, e neste contexto, essas normas não existem.')
+
+h2('4.4-A-1. Por que razão não existem: a dupla exclusão')
+p('Para o cão e o gato as normas de alojamento existem, no Decreto-Lei n.º 276/2001 e na Portaria n.º '
+  '146/2017. Para as espécies pecuárias não existem, e por duas exclusões sucessivas.')
+bullet('O n.º 2 do art.º 1.º do Decreto-Lei n.º 276/2001 exclui do âmbito daquele diploma «as espécies da '
+       'fauna selvagem autóctone e exótica e os seus descendentes criados em cativeiro, objeto de '
+       'regulamentação específica, e os touros de lide e as espécies de pecuária».')
+bullet('O art.º 2.º da Portaria n.º 146/2017 circunscreve o regime dos centros de recolha às espécies da '
+       'Parte A do Anexo I do Regulamento (UE) 2016/429, ou seja, ao cão, ao gato e ao furão.')
+p('O resultado é que o animal de espécie pecuária guardado numa instalação de recolha está fora do diploma '
+  'que regula o alojamento de animais e fora da portaria que regula o funcionamento dos centros de recolha.')
 
 h2('4.4-B. Os critérios a fixar')
 p('Conteúdo mínimo de uma norma técnica de alojamento destas espécies numa instalação de recolha.')
