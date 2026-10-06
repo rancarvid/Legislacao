@@ -457,11 +457,92 @@ bullet('Confirmar se o Anexo V do projeto virá a reproduzir a tabela do Anexo I
 bullet('Quantificar o universo afetado: número de estabelecimentos do CAE 47762 e, destes, quantos detêm '
        'animais vivos. Sem este dado não é possível avaliar a exequibilidade de procedimentos mais exigentes.')
 
+# ──────────────────── Secção transversal: Lei da Saúde Animal ────────────────────
+h1('Secção transversal — A Lei da Saúde Animal como pano de fundo')
+
+p('Esta secção serve os pontos 01, 02 e 09 e explica por que razão o Regulamento (UE) 2016/429, Lei da Saúde '
+  'Animal, é o enquadramento que decide as duas questões já fechadas.')
+
+h2('T.1. O registo de 2028 é o registo da Lei da Saúde Animal')
+p('A obrigação de notificação dos estabelecimentos do artigo 9.º do Regulamento (UE) 2026/1818 não cria '
+  'sistema novo: encaixa no da Lei da Saúde Animal, e di-lo expressamente.')
+cit('«3. Member States shall use the information provided for in accordance with Article 84 of Regulation (EU) '
+    '2016/429. Operators shall not be required to notify the information already submitted in accordance with '
+    'that Article again. 4. The competent authority shall keep a register of establishments. The competent '
+    'authority may, for that purpose, use the register established pursuant to Article 101(1), point (a), of '
+    'Regulation (EU) 2016/429.»',
+    'art.º 9.º, n.ºs 3 e 4, do Regulamento (UE) 2026/1818 — versão inglesa, JO L, 2026/1818, de 10.8.2026.')
+cit('«3. Os Estados-Membros devem utilizar as informações facultadas em conformidade com o artigo 84.º do '
+    'Regulamento (UE) 2016/429. Os operadores não são obrigados a notificar novamente as informações já '
+    'comunicadas em conformidade com o referido artigo. 4. A autoridade competente deve manter um registo de '
+    'estabelecimentos. A autoridade competente pode utilizar, para esse efeito, o registo criado nos termos do '
+    'artigo 101.º, n.º 1, alínea a), do Regulamento (UE) 2016/429.»',
+    'art.º 9.º, n.ºs 3 e 4, do Regulamento (UE) 2026/1818 — versão portuguesa.')
+p('Daqui decorre que a obrigação de registo destes estabelecimentos não nasce em 31 de agosto de 2028. O '
+  'artigo 84.º da Lei da Saúde Animal, aplicável desde 21 de abril de 2021, impõe aos operadores de '
+  'estabelecimentos que detêm animais terrestres o dever de informar a autoridade competente antes de iniciar '
+  'a atividade, para que o estabelecimento seja registado; e o artigo 101.º impõe à autoridade competente a '
+  'constituição e manutenção dos registos correspondentes. Nenhum dos dois está limitado às espécies '
+  'pecuárias, pelo que o criador e a loja de cães e gatos são, nessa aceção, estabelecimentos. O que o '
+  'Regulamento de 2026 acrescenta é conteúdo e publicidade, não a obrigação de base.')
+
+h2('T.2. A fronteira que se pede ao diploma nacional já é europeia')
+p('A Lei da Saúde Animal distingue animal de companhia de animal detido em estabelecimento, e distingue-o '
+  'pela finalidade da detenção:')
+cit('«11) «Animal de companhia», um animal detido das espécies listadas no anexo I, que é detido para fins '
+    'privados não comerciais;»',
+    'art.º 4.º, ponto 11, do Regulamento (UE) 2016/429.')
+p('É o mesmo critério que o projeto de RGAC adota no n.º 2 do seu artigo 2.º, com a distinção entre as '
+  'espécies da Parte A do Anexo I, que são sempre animais de companhia, e as da Parte B, que o são quando '
+  'detidas para fins de companhia. O critério que as observações 02 pedem não é, por isso, uma invenção '
+  'nacional: é o critério do direito da União, de aplicação direta, que o próprio projeto já invoca ao '
+  'referir, na al. d) do art.º 2.º do anexo, o regime de identificação, registo e circulação dos animais.')
+
+h2('T.3. A «detenção caseira» funde duas categorias que a Lei da Saúde Animal separa')
+p('A al. i) do art.º 48.º do anexo define a detenção caseira pela posse de animais cujo objetivo é «de lazer '
+  'ou abastecimento do seu detentor». São duas realidades distintas à luz da Lei da Saúde Animal. A detenção '
+  'por lazer, sem comércio, corresponde à detenção de animais de companhia na aceção do art.º 4.º, ponto 11, '
+  'e não constitui estabelecimento. A detenção para abastecimento do próprio detentor é produção primária e '
+  'cai no âmbito do art.º 84.º, com as derrogações que este e o Regulamento Delegado (UE) 2019/2035 admitem '
+  'para estabelecimentos de pequena dimensão.')
+p('Sujeitar ambas, indistintamente, ao registo no SNIRA trata como exploração pecuária aquilo que o direito '
+  'europeu classifica como detenção de animais de companhia. É esta a observação de fundo do ponto 02, e é '
+  'por esta via, e não pela reposição da exclusão eliminada, que ela melhor se sustenta: preserva o objetivo '
+  'de rastreabilidade de quem produz e deixa de fora quem detém apenas por companhia.')
+
+h2('T.4. O veículo nacional do registo')
+p('Em Portugal, o registo que materializa o art.º 101.º da Lei da Saúde Animal quanto a estabelecimentos de '
+  'animais de companhia é, hoje, a lista da DGAV das meras comunicações prévias do art.º 3.º-A do Decreto-Lei '
+  'n.º 276/2001, divulgada nos termos do n.º 12 do seu art.º 3.º. O projeto de RGAC consolida essa função no '
+  'SIAC, que passa a ser a base de dados oficial de identificação e registo dos animais de companhia, do RNAZ '
+  'e dos estabelecimentos, e monta no artigo da divulgação dos estabelecimentos a lista pública com número '
+  'único de aprovação, exigida também pelo n.º 3 do art.º 10.º do Regulamento (UE) 2026/1818.')
+p('É esta a ligação ao ponto 01: encaminhada a loja de animais para um procedimento puramente municipal, sem '
+  'pronúncia nem notificação da DGAV, nada do que o procedimento recolhe alimenta o registo que a autoridade '
+  'competente tem de manter. E é esta a ligação ao ponto 09: o cadastro setorial e a base de dados setorial do '
+  'anexo não incluem o SIAC entre os sistemas a articular.')
+
+h2('T.5. Fontes e verificações pendentes desta secção')
+bullet('Regulamento (UE) 2026/1818 — art.º 9.º, n.ºs 3 e 4, e art.º 10.º, n.º 3, nas versões inglesa e '
+       'portuguesa do texto publicado no Jornal Oficial. Confirmado.')
+bullet('Regulamento (UE) 2016/429 — art.º 4.º, ponto 11. Confirmado.')
+bullet('Regulamento (UE) 2016/429 — art.ºs 84.º, 93.º e 101.º. O teor foi apurado por fonte secundária: o '
+       'acesso ao EUR-Lex foi recusado a partir deste ambiente, pelo que o texto não foi lido no Jornal '
+       'Oficial. A descrição acima não deve ser usada como citação verbatim sem essa confirmação.')
+bullet('Regulamento Delegado (UE) 2019/2035 da Comissão — referido pelo projeto de RGAC, inclusive quanto ao '
+       'art.º 71.º-A, em matéria de rastreabilidade de cães, gatos e furões. Não verificado nesta sessão.')
+bullet('Verificação pendente: se os estabelecimentos de animais de companhia estão hoje efetivamente '
+       'registados ao abrigo do art.º 84.º da Lei da Saúde Animal e em que sistema. É a pergunta que determina '
+       'se existe já um incumprimento a corrigir ou apenas um risco a prevenir.')
+
 # ───────────────────────────── Registo ─────────────────────────────
 h1('Registo de alterações')
 tabela(
     ['Data', 'Alteração'],
     [['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
+     ['6.10.2026', 'Secção transversal sobre a Lei da Saúde Animal, Regulamento (UE) 2016/429, que enquadra '
+                   'os pontos 01, 02 e 09. Observações 02 em terceira versão, com o alerta reduzido ao '
+                   'essencial e o enquadramento no Decreto-Lei n.º 276/2001 e na Lei da Saúde Animal.'],
      ['6.10.2026', 'Observações 02 em segunda versão, em linguagem corrente e em registo de dúvida, a '
                    'pedido. A primeira versão fica no processo. Ambas assentam na fundamentação deste ponto 02, '
                    'que não foi alterada.'],
