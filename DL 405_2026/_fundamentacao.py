@@ -94,56 +94,27 @@ par = doc.add_paragraph(); par.paragraph_format.space_after = Pt(2)
 r = par.add_run('FUNDAMENTAÇÃO DAS OBSERVAÇÕES'); r.bold = True; r.font.size = Pt(16); r.font.color.rgb = AZUL
 
 p('Projeto de DL das atividades económicas — DL 405/XXV/2026', bold=True, size=12, space=2)
-p('Documento de apoio interno. Acompanha a série de observações enviadas ponto a ponto.',
+p('Análise técnica de suporte à pronúncia da Direção de Serviços de Bem-Estar Animal.',
   size=10.5, cor=CINZA, space=14)
 
-h1('Nota de utilização')
-p('Cada ponto da série de observações é enviado em texto curto, com um máximo de palavras fixado, para '
-  'seguir na resposta à Direção de Serviços. Esse texto é deliberadamente contido: situa a norma, articula com '
-  'a legislação vigente e com o Regulamento (UE) 2026/1818 e deixa a decisão à consideração de quem decide.')
-p('Este documento guarda o que fica de fora: a demonstração completa, as citações verbatim, a análise das '
-  'alterações registadas no ficheiro, as inferências assumidas como tais e as fontes com referência exata. '
-  'Serve para sustentar a posição se ela for questionada, e para que outra pessoa possa retomar o trabalho sem '
-  'repetir a verificação.')
-p('É atualizado à medida que cada ponto é trabalhado. O registo de alterações está no fim.')
-
-h1('Índice da série e numeração')
-p('A numeração é a da série de observações, e não a do diploma. Foi fixada à medida que os pontos foram '
-  'sendo trabalhados; os pontos 01 e 02 estão fechados, os seguintes estão previstos e a ordem pode mudar.')
+h1('Temas em análise')
+p('A numeração é a dos temas analisados e não a do diploma.')
 
 tabela(
-    ['N.º', 'Tema', 'Norma principal', 'Estado'],
+    ['N.º', 'Tema', 'Norma principal'],
     [
         ['01', 'A DGAV no procedimento das lojas de venda de animais de companhia e a articulação com o regime '
                 'dos animais de companhia e com a Lei da Saúde Animal',
-         'Art.º 16.º, n.º 4, e Anexo II; art.ºs 2.º e 36.º, n.º 3', 'A refazer, em fusão'],
+         'Art.º 16.º, n.º 4, e Anexo II; art.ºs 2.º e 36.º, n.º 3'],
         ['02', 'Animais de companhia na definição de atividade pecuária: qual a norma de bem-estar aplicável',
-         'Art.º 48.º, als. b) e c)', 'Fechado'],
-        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3', 'A confirmar'],
-        ['04', 'Animais errantes e articulação com os centros de recolha oficial. É a questão que '
-                'originou o pedido de pronúncia',
-         'Art.ºs 57.º e 59.º', 'Em preparação'],
-        ['05', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º', 'Previsto'],
+         'Art.º 48.º, als. b) e c)'],
+        ['03', 'Deferimento tácito em atividades com animais vivos', 'Art.º 25.º, n.º 3'],
+        ['04', 'Animais errantes e articulação com os centros de recolha oficial',
+         'Art.ºs 57.º e 59.º'],
+        ['05', 'Acesso de animais de companhia a estabelecimentos', 'Art.º 38.º'],
     ],
-    larguras=[1.0, 6.2, 4.3, 2.0],
+    larguras=[1.0, 7.3, 5.2],
 )
-
-p('Notas sobre a numeração. A ordem da primeira análise global, registada no contributo interno de 5 de '
-  'outubro de 2026, era diferente: o tema que ali figurava como ponto 6, sobre a fronteira entre detenção '
-  'caseira e animal de companhia, passou a ser o ponto 02 e absorveu-o.', size=9.5, cor=CINZA)
-p('Por decisão de 6 de outubro de 2026, a série foi reduzida a cinco pontos. O antigo ponto 04, sobre a cláusula de '
-  'articulação, foi fundido no ponto 01, por tratarem do mesmo problema em normas diferentes e por as '
-  'correções pedidas serem complementares. Foram eliminados três temas: a venda e publicidade em linha, por o '
-  'art.º 21.º do Regulamento (UE) 2026/1818 assegurar o essencial e o projeto não o contrariar; o SIAC, a base '
-  'de dados setorial e o cadastro, por ser matéria de execução e de médio prazo; e os lapsos formais, por não '
-  'serem matéria desta Direção de Serviços. A análise de cada um permanece neste documento, para o caso de '
-  'virem a ser retomados.', size=9.5, cor=CINZA)
-p('Na mesma data caiu também o ponto da venda em comércio não sedentário, em feiras e em leilões. A '
-  'investigação da omissão dos animais vivos no n.º 2 do art.º 133.º concluiu que não há regressão: a norma '
-  'reproduz literalmente o n.º 2 do art.º 75.º do Decreto-Lei n.º 10/2015 e a proibição tem sede própria, '
-  'desde 2003, no n.º 6 do art.º 35.º do Decreto-Lei n.º 276/2001. Do tema restam dois resíduos, registados '
-  'no ponto 5-R: o vazio quanto aos leilões de animais e uma correção que é nossa, no projeto de RGAC.',
-  size=9.5, cor=CINZA)
 
 # ───────────────────────────── Ponto 01 ─────────────────────────────
 h1('Ponto 01 — Estabelecimentos de comércio a retalho de animais de companhia')
@@ -638,7 +609,7 @@ p('O art.º 31.º enumera as causas de indeferimento e de não emissão do títu
   'animal, o que é coerente com a ausência da DGAV no procedimento das atividades que detêm animais de '
   'companhia, assinalada no ponto 01.')
 
-h2('3.5. Um efeito colateral fora do nosso âmbito, a sinalizar internamente')
+h2('3.5. Efeito sobre a aprovação sanitária de estabelecimentos')
 p('O n.º 1 do art.º 14.º do anexo determina que os estabelecimentos abrangidos pelo n.º 2 do art.º 4.º do '
   'Regulamento (CE) n.º 853/2004, pelo art.º 10.º do Regulamento (CE) n.º 183/2005 e pelo art.º 44.º do '
   'Regulamento (CE) n.º 1069/2009 «só podem iniciar a atividade após realização de vistoria e aprovação pela '
@@ -663,18 +634,6 @@ bullet('Confirmar se existe prática ou orientação da DGAV sobre prazos de pro
 
 # ───────────────────────────── Ponto 04 ─────────────────────────────
 h1('Ponto 04 — Animais errantes e articulação com os centros de recolha oficial')
-
-h2('4.0. Postura definida para este ponto')
-p('Por decisão de 6 de outubro de 2026, a pronúncia neste ponto obedece a três limites.', italic=True)
-bullet('Não se discute a arquitetura do diploma nem a sede da matéria. A construção do projeto não é desta '
-       'Direção de Serviços e as razões da inclusão do artigo são de quem o redigiu. A análise da sede, '
-       'registada no ponto 4.3, serve apenas para compreender o raciocínio e sustentar posição, não para ser '
-       'invocada.')
-bullet('Não se faz crítica de técnica legislativa. Os lapsos de remissão e a numeração ficam registados no '
-       'ponto 4.6 e são matéria dos juristas.')
-bullet('O contributo é o que esta divisão tem a oferecer: o conhecimento dos centros de recolha oficial, a '
-       'solução do recinto multiespécie e a experiência dos apoios públicos. A perspetiva é pró-animal; o '
-       'registo é de imparcialidade técnica.')
 
 h2('4.1. O regime vigente dos centros de recolha oficial')
 p('O centro de recolha oficial é, juridicamente, um alojamento de animais de companhia. A al. t) do n.º 1 do '
@@ -715,8 +674,8 @@ p('Os prazos são, portanto, quatro e não coincidem: oito dias de permanência 
   'presunção de abandono, dez dias no mínimo proposto pelo projeto de RGAC e cinco dias úteis no artigo do '
   'projeto em análise.')
 
-h2('4.3. A sede da matéria (registo interno, não invocar)')
-p('Elemento de compreensão, não de pronúncia. O artigo está no Título II, «Requisitos de exercício», Capítulo '
+h2('4.3. A sede da matéria no diploma')
+p('O artigo está no Título II, «Requisitos de exercício», Capítulo '
   'II, «Requisitos especiais de exercício», Secção III, «Atividade pecuária», Subsecção IV, «Medidas '
   'Administrativas», entre o artigo das medidas administrativas e o das sanções acessórias. Foi aí colocado '
   'como medida de polícia do licenciamento pecuário: o animal errante é sintoma de incumprimento do dever de '
@@ -741,24 +700,152 @@ bullet('Pela capacidade e pelos meios. A Lei n.º 27/2016 afetou aos centros de 
        'o encargo a recair no município sempre que o detentor não seja identificado, que é a regra no gado '
        'deambulante, compromete a missão existente.')
 
-h2('4.5. A solução já existe e está financiada')
-p('Este é o contributo central. O projeto de RGAC prevê que os centros de recolha possam dispor de, pelo '
-  'menos, um recinto multiespécie adequado a espécies pecuárias, cumprindo a legislação específica. E os '
-  'Avisos de financiamento para construção e modernização de centros de recolha oficial fixaram a sala '
-  'multiespécie como requisito mínimo de construção. Não é, por isso, necessário conceber solução nova: basta '
-  'remeter para a que a administração já desenhou e financiou.')
-p('Verificação pendente, e é a mais importante deste ponto: obter o texto dos Avisos, com número, ano e '
-  'redação exata do requisito, para que a afirmação anterior seja citável. A referência foi transmitida '
-  'oralmente e não consta dos ficheiros do repositório.', size=9.5, cor=CINZA)
+h2('4.5. A base legal não é restritiva: a restrição está na portaria')
+p('A lei habilitante é espécie-neutra. A Lei n.º 27/2016, de 23 de agosto, intitula-se «Aprova medidas para a '
+  'criação de uma rede de centros de recolha oficial de animais» e o seu art.º 1.º dispõe que «A presente lei '
+  'aprova medidas para a criação de uma rede de centros de recolha oficial de animais e para a modernização '
+  'dos serviços municipais de veterinária, e estabelece a proibição do abate de animais errantes como forma de '
+  'controlo da população, privilegiando a esterilização». Em nenhum dos dois lugares a lei escreve «animais de '
+  'companhia»: escreve «animais».')
+p('A restrição é introduzida pelo diploma de execução. O art.º 1.º da Portaria n.º 146/2017, de 26 de abril, '
+  'define o objeto como a regulamentação da «criação de uma rede efetiva de centros de recolha oficial de '
+  'animais de companhia», e o art.º 2.º fixa o âmbito:')
+cit('«A presente portaria aplica-se aos centros de recolha oficial (CRO) de animais de companhia e controlo '
+    'das populações errantes desses animais, considerando-se como tais as espécies previstas na Parte A do '
+    'Anexo I do Regulamento (UE) 2016/429, do Parlamento Europeu e do Conselho, de 9 de março.»',
+    'art.º 2.º da Portaria n.º 146/2017, de 26 de abril.')
+p('A delimitação opera, portanto, por remissão para a Parte A do Anexo I da Lei da Saúde Animal, que abrange '
+  'o cão, o gato e o furão. Ficam fora as espécies da Parte B, entre elas os coelhos, os roedores e as aves, e '
+  'ficam fora os equídeos e as demais espécies pecuárias.')
+p('Consequência relevante para a pronúncia: o estreitamento do âmbito dos centros de recolha oficial às três '
+  'espécies da Parte A é obra de portaria, e não da lei. A sede da eventual ampliação é, por isso, '
+  'regulamentar, e a competência de proposta cabe à área do bem-estar animal. Não depende deste diploma.')
 
-h2('4.6. Lapsos formais (registo interno, matéria dos juristas)')
-bullet('O n.º 5 do art.º 59.º refere o prazo «referido no número anterior», mas o prazo está no n.º 3 e o '
-       'n.º 4 não fixa prazo algum.')
-bullet('O n.º 6 refere as despesas «previstas no número anterior», mas as despesas estão no n.º 3 e não no '
-       'n.º 5.')
-bullet('O n.º 6 escreve «quando identificada» onde deveria ler-se «quando identificado».')
+h2('4.6. Os Avisos de financiamento, de 2018 a 2026')
+p('O alojamento de espécies diferentes do cão e do gato nos centros de recolha oficial não é uma hipótese '
+  'teórica: foi requisito mínimo de construção e item financiado, de forma contínua, durante oito anos e sob '
+  'duas entidades gestoras sucessivas.')
+p('O programa foi aprovado pelo Despacho n.º 3321/2018, publicado no Diário da República, ao abrigo do n.º 4 '
+  'do art.º 2.º da Lei n.º 27/2016 e do art.º 227.º da Lei n.º 114/2017, de 29 de dezembro. O ponto 1 do seu '
+  'anexo estabelecia:')
+cit('«a) Um CRO municipal deve possuir a capacidade mínima de alojamento para 15 cães/gatos e uma cela de '
+    'isolamento, uma boxe para outros animais, bem como uma sala que permita realizar a esterilização e/ou '
+    'tratamentos.»',
+    'al. a) do n.º 1 do anexo «Valores de referência e limites» ao Despacho n.º 3321/2018, publicado no '
+    'Diário da República, 2.ª série, n.º 66, de 4 de abril de 2018.')
+p('A mesma formulação, e o correspondente item da tabela de apoios, mantiveram-se nos Avisos seguintes, com '
+  'atualização apenas dos valores:')
 
-h2('4.7. Fontes do ponto 04')
+tabela(
+    ['Aviso', 'Entidade', 'Requisito mínimo', 'Valor do apoio'],
+    [['Despacho n.º 3321/2018', 'DGAL, DGAV e CCDR',
+      '«uma boxe para outros animais»', '1.300 € (3 m²)'],
+     ['Aviso 1/2021', 'ICNF-DBEAC', '«uma boxe para outros animais»', '1.300 € (3 m²)'],
+     ['Aviso 1/2022', 'ICNF-DBEAC', '«uma boxe para outros animais»', '1.430 € (3 m²/animal)'],
+     ['Aviso 1/2023', 'ICNF-DBEAC', '«uma boxe para outros animais»', '1.430 € (3 m²/animal)'],
+     ['Aviso 1/2025', 'DGAV-DBEA', '«um compartimento para outras espécies»', '1 537,02 € (3 m²/animal)'],
+     ['Aviso 1/2026', 'DGAV-DBEA', 'ausente', 'ausente']],
+    larguras=[3.0, 2.6, 5.4, 2.5],
+)
+
+p('A redação de 2025, na al. b) do n.º 1 do Capítulo XV, é a seguinte:')
+cit('«Um CRO municipal deve possuir, no mínimo, duas celas de isolamento, um compartimento para outras '
+    'espécies, bem como uma sala que permita realizar a esterilização, tratamento e/ou occisão»',
+    'al. b) do n.º 1 do Capítulo XV do Aviso n.º 1/2025 DGAV-DBEA.')
+p('E a al. c), iii), do mesmo número fixava o apoio em «Compartimento para outras espécies (área mínima '
+  'coberta de 3 m²/animal) – 1 537,02 €».')
+p('O Aviso n.º 1/2026, que é o Aviso em vigor, não contém uma única ocorrência da palavra «espécie». O item '
+  'desapareceu dos requisitos técnicos e desapareceu da tabela de apoios. A verificação foi feita por pesquisa '
+  'sistemática do termo no texto integral dos dois Avisos.')
+p('Leitura (inferência): o requisito não foi substituído por outro, nem acompanhado de norma transitória. '
+  'Trata-se, pela aparência, de uma simplificação do Aviso e não de uma decisão de política, mas o efeito é o '
+  'de retirar do quadro de financiamento a única infraestrutura que permitia aos centros de recolha oficial '
+  'acolher espécies diferentes do cão e do gato.', italic=True)
+p('Nota de precisão a observar na pronúncia: a expressão literal «sala multiespécie» não consta dos Avisos. '
+  'Consta do documento da Direção-Geral de Veterinária n.º 01/DSSPA/M//2010, de dezembro de 2010, sobre '
+  'requisitos dos centros de recolha, que classifica as «Instalações por espécie» como obrigatórias e a «sala '
+  'multiespécie» como recomendável, admitindo em alternativa «protocolos com outros centros de recolha ou '
+  'outras entidades». Nos Avisos, a designação é «boxe para outros animais» e, a partir de 2025, '
+  '«compartimento para outras espécies». É esta a expressão a citar.', size=9.5, cor=CINZA)
+
+h2('4.7. A atividade existe e a própria DGAV a registou')
+p('O Relatório de Atividades dos Centros de Recolha Oficial relativo a 2025 contém a seguinte advertência '
+  'metodológica:')
+cit('«Para efeitos do presente relatório, são considerados os dados referentes somente a cães e gatos. Alguns '
+    'CRO têm ações realizadas com outras espécies, contudo esses dados, apesar de se encontrarem explanados na '
+    'tabela, não foram considerados para os totais.»',
+    'DGAV, Relatório de Atividades dos Centros de Recolha Oficial de Animais de Companhia, 2025.')
+p('O enunciado é duplamente útil. Documenta, por fonte própria da DGAV, que há centros de recolha oficial a '
+  'intervir sobre outras espécies; e documenta que essa atividade não é medida, porque os dados declarados '
+  'pelos municípios são excluídos dos totais. A prática antecede, pois, o enquadramento.')
+
+h2('4.8. O recinto multiespécie no projeto de RGAC')
+p('O projeto de RGAC prevê que os centros de recolha possam dispor de, pelo menos, um recinto multiespécie '
+  'adequado a espécies pecuárias, cumprindo a legislação específica. A previsão é coerente com a base legal '
+  'identificada no ponto 4.5 e com a série de Avisos do ponto 4.6, e é o lugar próprio para a matéria.')
+
+h2('4.9. Os modelos europeus')
+p('Três modelos, quanto à relação entre a instalação destinada a animais de companhia e o alojamento de '
+  'animais de espécie pecuária encontrados sem detentor.')
+bullet('Modelo dualista, em França, Espanha e Itália ao nível nacional. Duas figuras jurídicas distintas, uma '
+       'para os animais de companhia e outra para o gado. Em França, a «fourrière» dos art.ºs L211-24 e '
+       'seguintes do Code rural et de la pêche maritime cobre cães e gatos, e o gado tem a figura autónoma do '
+       '«lieu de dépôt». Em Espanha, a al. b) do n.º 3 do art.º 1.º da Ley 7/2023 exclui expressamente do seu '
+       'âmbito os animais de produção, que ficam sob o regime das «reses mostrencas».')
+bullet('Modelo unitário espécie-neutro, nos Países Baixos e na Bélgica. Há uma só obrigação de recolha e '
+       'guarda, redigida para «um animal», qualquer que seja a espécie, com encaminhamento diferenciado na '
+       'execução. O lid 3 do art.º 5:8 do Burgerlijk Wetboek neerlandês dispõe que «Indien een dier wordt '
+       'gevonden» — se for encontrado um animal — o burgomestre é competente, decorridas duas semanas, para o '
+       'transmitir a terceiro. A doutrina administrativa municipal confirma que o dever de acolhimento não se '
+       'limita a cães e gatos e abrange todos os animais detidos.')
+bullet('Modelo intermédio, no nível regional italiano. A Lei Regional da Calábria n.º 45, de 3 de outubro de '
+       '2023, é o único diploma identificado que positiva a instalação de companhia aberta a outras espécies '
+       'com padrão de separação. A al. b) do n.º 2 do seu art.º 28.º admite no canil sanitário «altri animali '
+       'rinvenuti senza proprietario […] compatibilmente con la recettività e le caratteristiche della '
+       'struttura»; a al. c) do n.º 1 do art.º 29.º exige que, «in caso di ricovero di specie diverse tra loro '
+       'incompatibili», sejam usados meios que impeçam que os animais «possano vedersi, annusarsi o udirsi '
+       'reciprocamente»; e o art.º 32.º admite a coexistência de estruturas diversas «purché siano separate, '
+       'fisicamente e funzionalmente», com «uso in comune delle strutture di servizio e sanitarie».')
+p('Duas notas de delimitação, para que o argumento comparado não seja sobre-estendido. Primeira: nenhum dos '
+  'ordenamentos analisados impõe uma instalação multiespécie, pelo que a solução portuguesa, se avançar, é '
+  'inovadora e não transposta. Segunda: o diploma calabrês define «animale d\'affezione» como o animal detido '
+  '«senza fini produttivi o alimentari», pelo que o gado permanece formalmente fora do seu âmbito; a abertura '
+  'do art.º 28.º tem finalidade de profilaxia antirrábica.', size=9.5, cor=CINZA)
+
+p('Nas Ilhas Britânicas há duas peças de interesse direto, uma de modelo e outra de advertência.')
+p('A peça de modelo é galesa. O Code of Best Practice for Animal Welfare Establishments, do Governo do País '
+  'de Gales, de 2020, é o único documento oficial identificado que inclui no seu âmbito as instalações '
+  'municipais de recolha de animais errantes e as trata como instalações multiespécie. O âmbito declarado '
+  'abrange «rehabilitation centres, rescue centres, and stray animal facilities (local authority or '
+  'contractor)» e a definição é a seguinte:')
+cit('«A person, organisation or establishment who holds themselves out to receive vulnerable animals on a '
+    'regular basis, whether companion, farmed, wild, protected or other animals, with a view to rehabilitating '
+    'and either rehoming or releasing (back to the wild), or providing long-term care.»',
+    'Code of Best Practice for Animal Welfare Establishments, Welsh Government, 2020, definição de Animal '
+    'Welfare Establishment.')
+p('O código fixa, para os recintos interiores e exteriores, o requisito de «Separation from other species if '
+  'appropriate» e «Separation from other species as appropriate», prevê expressamente a coexistência de '
+  'estábulos e canis na mesma instalação, e faz depender a lotação máxima dos recursos efetivos do '
+  'estabelecimento, incluindo a necessidade de manter animais de espécies diferentes separados e fora da vista '
+  'e do olfato dos restantes. É o molde técnico mais completo encontrado.')
+p('A peça de advertência é irlandesa, e deve ser retida com igual atenção. O n.º 1 do art.º 2.º do Pounds '
+  '(Provision and Maintenance) Act, 1935, impõe às autoridades locais o dever de prover instalação, com '
+  'certificação prévia de adequação por entidade externa ao município. A instalação é multiespécie por '
+  'definição legal. Sucede que o poder de fixar padrões técnicos, previsto na al. h) do n.º 3 do art.º 5.º do '
+  'Animals Act, 1985, nunca foi exercido, e a revisão governamental de 2017 concluiu que as instalações, '
+  'sobretudo as privadas com fim lucrativo, estão «inadequately regulated».')
+p('A conclusão a extrair da comparação não é, por isso, que a instalação multiespécie seja boa ou má em si. É '
+  'que a figura sem norma técnica produz maus-tratos, e que a norma técnica é precisamente o contributo que '
+  'esta área tem para dar. O caso irlandês mostra também o inverso quando o investimento é feito a montante: '
+  'segundo os dados abertos do Department of Agriculture, Food and the Marine, as occisões de equídeos '
+  'apreendidos passaram de 4 231, em 2014, para 14, em 2022, e a proporção de animais realojados subiu de '
+  'cerca de 10 % para 76 %.')
+p('Reserva quanto a estes números: provêm do conjunto de dados aberto A0020 do Department of Agriculture, '
+  'Food and the Marine, com uma divergência não explicada, no ano de 2019, entre a ficha do próprio '
+  'departamento, que indica 885 apreensões, e o conjunto de dados, que indica 1 050. Os valores posteriores a '
+  '2022 não foram confirmados.', size=9.5, cor=CINZA)
+
+h2('4.10. Fontes do ponto 04')
 bullet('Projeto: art.ºs 48.º, al. c), 54.º, 55.º, 57.º, 58.º e 59.º do anexo; estrutura do Título II; ficha de '
        'avaliação legislativa, quadro das audições obrigatórias.')
 bullet('Decreto-Lei n.º 276/2001 — art.ºs 2.º, n.º 1, als. c) e t), 3.º, n.º 1, al. a), e 19.º.')
@@ -773,13 +860,35 @@ bullet('Portaria n.º 1112/2009 — Rede Nacional de Centros de Recuperação de
        'articulação com a DGAV, para animais selvagens.')
 bullet('Projeto de RGAC — artigo relativo aos centros de recolha, quanto ao recinto multiespécie. Trabalho em '
        'curso, citado como tal.')
+bullet('Despacho n.º 3321/2018, publicado no Diário da República, 2.ª série, n.º 66, de 4 de abril de 2018 — '
+       'programa de apoio à construção e modernização de centros de recolha oficial; anexo «Valores de '
+       'referência e limites».')
+bullet('Avisos n.ºs 1/2021, 1/2022 e 1/2023 do ICNF-DBEAC e n.ºs 1/2025 e 1/2026 da DGAV-DBEA — requisitos '
+       'mínimos de construção e tabelas de apoio. Os Avisos de 2020 e 2024 não foram consultados.')
+bullet('Documento da Direção-Geral de Veterinária n.º 01/DSSPA/M//2010, de dezembro de 2010 — requisitos dos '
+       'centros de recolha; origem da expressão «sala multiespécie».')
+bullet('DGAV, Relatório de Atividades dos Centros de Recolha Oficial de Animais de Companhia, 2025.')
+bullet('Code rural et de la pêche maritime (França), art.ºs L211-19-1 e L211-23 e seguintes; Ley 7/2023, de 28 '
+       'de marzo (Espanha), n.º 3 do art.º 1.º; Burgerlijk Wetboek (Países Baixos), art.º 5:8; Code wallon du '
+       'Bien-être animal e Vlaamse Codex Dierenwelzijn (Bélgica); Legge 14 agosto 1991, n. 281, e Lei Regional '
+       'da Calábria n.º 45, de 3 de outubro de 2023 (Itália), art.ºs 2.º, 28.º, 29.º e 32.º.')
+bullet('Animals Act 1971 (Inglaterra e País de Gales), art.º 7.º; Control of Horses (Wales) Act 2014; Code of '
+       'Best Practice for Animal Welfare Establishments, Governo do País de Gales, 2020; Code of Practice for '
+       'the Welfare of Horses, País de Gales, 2018.')
+bullet('Pounds (Provision and Maintenance) Act, 1935 (Irlanda), art.º 2.º; Animals Act, 1985, al. h) do n.º 3 '
+       'do art.º 5.º; Control of Horses Act, 1996; conjunto de dados aberto A0020 do Department of '
+       'Agriculture, Food and the Marine.')
+bullet('Projeto de Resolução n.º 82/XIV/1.ª — documenta a ausência de infraestrutura para fiel depositário de '
+       'equídeos apreendidos e a exigência de registo como exploração pecuária para constituir santuário.')
+bullet('Resolução do Conselho de Ministros n.º 78/2021, de 25 de junho, e Estratégia Nacional para os Animais '
+       'Errantes, do ICNF — ambas circunscritas aos animais de companhia.')
 
 # ──────────────── Resíduos do ponto eliminado sobre comércio não sedentário ────────────────
-h1('Ponto 5-R — Resíduos do tema eliminado da venda não sedentária, feiras e leilões')
+h1('Secção complementar — Venda em comércio não sedentário, feiras e leilões')
 
-h2('5R.1. Por que razão o tema caiu')
+h2('C.1. A omissão dos animais vivos no elenco de proibições')
 p('A questão de partida era a omissão dos animais vivos no elenco de proibições do n.º 2 do art.º 133.º do '
-  'anexo. A investigação concluiu que não houve decisão neste projeto nem regressão face ao regime vigente.')
+  'anexo. A análise conclui que não houve decisão neste projeto nem regressão face ao regime vigente.')
 bullet('No ficheiro não há qualquer eliminação de texto relativa a animais no art.º 133.º, nem comentário '
        'ancorado ao artigo. A única alteração registada em todo o artigo é a eliminação da expressão «, na sua '
        'redação atual» na al. a) do n.º 2, em nome de Maria João Torres, com data de 1.9.2026.')
@@ -793,7 +902,7 @@ bullet('O critério do elenco é coerente: fitofarmacêuticos, medicamentos, adi
        'estabelecimento envolve risco de segurança ou de saúde pública. O animal não é um produto e o '
        'fundamento da proibição é o bem-estar, matéria de outro diploma.')
 
-h2('5R.2. Primeiro resíduo: os leilões')
+h2('C.2. Os leilões de animais')
 p('O n.º 1 do art.º 153.º do anexo define a atividade leiloeira como a venda «de bens móveis e imóveis, '
   'corpóreos e incorpóreos ou de animais», sujeita a comunicação prévia, com a DGDCCS como entidade '
   'coordenadora e sem requisito algum de identificação, registo ou informação ao adquirente. A pesquisa das '
@@ -806,7 +915,7 @@ p('Verificação pendente: se os Decretos-Leis n.ºs 155/2015 e 160/2015, que es
   'a atividade leiloeira e a prestamista, continham disposição sobre animais. Se continham, há regressão; se '
   'não, o vazio é antigo e apenas se consolida.')
 
-h2('5R.3. Segundo resíduo: uma correção no nosso próprio texto')
+h2('C.3. A remissão do projeto de RGAC para o Decreto-Lei n.º 10/2015')
 p('O n.º 2 do art.º 11.º do projeto de RGAC vai além da lei vigente, ao proibir a transmissão de animais de '
   'companhia «fora dos locais autorizados para o efeito, nomeadamente na via pública ou no âmbito da atividade '
   'de comércio a retalho não sedentária, designadamente em feiras, mercados ou de modo ambulante, tal como '
@@ -814,7 +923,7 @@ p('O n.º 2 do art.º 11.º do projeto de RGAC vai além da lei vigente, ao proi
   'que este projeto revoga. Se o RGAC for publicado nestes termos, nasce com remissão para norma revogada. '
   'É matéria a corrigir no nosso texto, e segue para o memorando de acompanhamento, não para a pronúncia.')
 
-h2('5R.4. Hipótese não confirmada')
+h2('C.4. Hipótese não confirmada')
 p('Antes do Decreto-Lei n.º 10/2015, a venda ambulante regia-se pelo Decreto-Lei n.º 122/79, de 8 de maio, '
   'cujo art.º 7.º não enumerava os produtos no corpo da lei, remetendo para lista anexa alterável por '
   'despacho. Há indicação de que essa lista, e os regulamentos municipais que nela se apoiavam, abrangiam aves '
@@ -902,52 +1011,5 @@ bullet('Verificação pendente: se os estabelecimentos de animais de companhia e
        'se existe já um incumprimento a corrigir ou apenas um risco a prevenir.')
 
 # ───────────────────────────── Registo ─────────────────────────────
-h1('Registo de alterações')
-tabela(
-    ['Data', 'Alteração'],
-    [['6.10.2026', 'Fundamentação do ponto 04, com o regime vigente dos centros de recolha oficial, o quadro '
-                   'das funções e dos quatro prazos, a articulação com o projeto e a solução do recinto '
-                   'multiespécie. Fixada a postura do ponto: sem discussão da sede da matéria e sem crítica de '
-                   'técnica legislativa, que ficam como registo interno.'],
-     ['6.10.2026', 'Eliminado o ponto da venda não sedentária, feiras e leilões, apurado que a omissão dos '
-                   'animais vivos no n.º 2 do artigo 133.º é herdada do artigo 75.º do Decreto-Lei n.º 10/2015 '
-                   'e não constitui regressão. Resíduos registados no ponto 5-R. O acesso de animais de '
-                   'companhia a estabelecimentos passa a ponto 05. O ponto 03 passa a «a confirmar».'],
-     ['6.10.2026', 'Série reduzida a seis pontos. Fusão do antigo ponto 04 no ponto 01 e eliminação dos '
-                   'temas da venda em linha, do SIAC e cadastro e dos lapsos formais. Renumerados os '
-                   'restantes: os errantes passam a 04, o comércio não sedentário e os leilões a 05 e o acesso '
-                   'de animais de companhia a estabelecimentos a 06.'],
-     ['6.10.2026', 'Fundamentação do ponto 03, sobre o deferimento tácito, com o achado de que a exclusão '
-                   'do deferimento tácito em decisões sobre detenção de animais já consta da lei vigente, no '
-                   'n.º 2 do artigo 3.º-D do Decreto-Lei n.º 276/2001, e não apenas do projeto de RGAC.'],
-     ['6.10.2026', 'Criação do documento. Índice da série e numeração. Fundamentação dos pontos 01 e 02.'],
-     ['6.10.2026', 'Ponto 2.5-C: ligação à lista positiva de animais de companhia do n.º 3 do artigo 4.º do '
-                   'projeto de RGAC, com a colisão das duas habilitações regulamentares sobre a detenção da '
-                   'mesma espécie, e a incoerência interna do RGAC entre o n.º 2 do artigo 2.º e o n.º 2 do '
-                   'artigo 4.º, a remeter para o memorando de acompanhamento.'],
-     ['6.10.2026', 'Observações 02 em quarta versão, 197 palavras: deixa de propor redação e passa a colocar '
-                   'uma dúvida de aplicação sobre a norma de bem-estar aplicável à detenção caseira, ligando-se '
-                   'a um fio já aberto no ficheiro. Acrescentado o ponto 2.5-B, com os três encaminhamentos '
-                   'para a DGAV registados no documento e com a correção relativa à Portaria n.º 635/2009, que '
-                   'estreita a delimitação do vazio.'],
-     ['6.10.2026', 'Observações 02 ajustadas: a alternativa de repor a exclusão eliminada foi substituída '
-                   'pela adoção do critério finalista com ressalva das obrigações de identificação e registo, '
-                   'por se reconhecer que a reposição reabriria um vazio. Acrescentado o ponto 2.5-A, sobre o '
-                   'que a alteração resolve e que a lei atual não resolve.'],
-     ['6.10.2026', 'Secção transversal sobre a Lei da Saúde Animal, Regulamento (UE) 2016/429, que enquadra '
-                   'os pontos 01, 02 e 09. Observações 02 em terceira versão, com o alerta reduzido ao '
-                   'essencial e o enquadramento no Decreto-Lei n.º 276/2001 e na Lei da Saúde Animal.'],
-     ['6.10.2026', 'Observações 02 em segunda versão, em linguagem corrente e em registo de dúvida, a '
-                   'pedido. A primeira versão fica no processo. Ambas assentam na fundamentação deste ponto 02, '
-                   'que não foi alterada.'],
-     ['6.10.2026', 'Correção ao contributo interno de 5.10.2026: o seu ponto 5.4 afirmava que a venda de '
-                   'animais em feiras e no comércio não sedentário ficava sem requisitos de bem-estar. O n.º 6 '
-                   'do art.º 35.º do Decreto-Lei n.º 276/2001 proíbe a venda ambulante de animais de companhia '
-                   'e o mesmo artigo fixa as condições da venda em feiras e mercados, com mera comunicação '
-                   'prévia à câmara para vistoria pelo médico veterinário municipal. Não há lacuna, há falta de '
-                   'articulação. O tema passou ao ponto 06 desta série.']],
-    larguras=[2.4, 13.1],
-)
-
 doc.save('/home/user/Legislacao/DL 405_2026/Fundamentacao_das_Observacoes.docx')
 print('OK')
