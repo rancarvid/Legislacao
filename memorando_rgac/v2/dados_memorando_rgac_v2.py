@@ -408,6 +408,7 @@ FICHAS = [
         "problema": [
             "O RGAC só enquadra o lar de acolhimento associado a um operador e «para efeitos de colocação no mercado». O animal fica registado em nome do operador. Isto resolve o acolhimento feito para uma associação com estabelecimento autorizado.",
             "Quem acolhe por iniciativa própria, sem operador, continua sem figura. O RGBEAC (jun. 2025) tinha a família de acolhimento temporário definida e regulada (arts. 4.º e 101.º). Uma revisora pediu «ELIMINAR ESTE CAPÍTULO» e a figura foi substituída pelo lar de acolhimento do Regulamento europeu.",
+            "O estatuto de detentor já abrange quem acolhe por iniciativa própria. O RGAC define detentor como o possuidor precário nos termos do art. 1253.º do Código Civil, responsável «enquanto se mantiver como tal» (art. [[Definições]]). A al. a) do art. 1253.º abrange «Os que exercem o poder de facto sem intenção de agir como beneficiários do direito». O Tribunal da Relação do Porto aplicou o mesmo conceito, a partir do DL 82/2019, a quem tinha um cão na sua esfera de disponibilidade. O que falta não é o estatuto. Falta o regime: registo, limite de animais e forma de pôr termo ao acolhimento (ver P-37).",
         ],
         "proposta": "Decidir se a família de acolhimento informal fica proibida ou se passa a ter um registo simples no SIAC, como detentor, com limite de animais e dever de comunicação.",
         "levantado": [
@@ -416,9 +417,12 @@ FICHAS = [
             "PAN (estatuto da família de acolhimento, 2024)",
             "SNMV (contra registos provisórios no SIAC)",
             "Raúl Farias, e-book do CEJ (2022): as associações, como pessoas coletivas, não respondem pelo crime de abandono",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): conceito de detentor do DL 82/2019 e do art. 1253.º do Código Civil",
         ],
         "estado": "Parcialmente resolvido",
-        "rel": ["P-13", "P-20"],
+        "rel": ["P-13", "P-20",
+            "P-37",
+        ],
     },
     {
         "cod": "P-15",
@@ -434,13 +438,24 @@ FICHAS = [
         "problema": [
             "O art. [[Obrigações das câmaras municipais]], n.º 9 manda comunicar a presença de um animal errante aos serviços veterinários municipais ou às autoridades policiais. O art. [[Contraordenações]], n.º 2 pune «A recolha de animais sem apresentação dos mesmos ao serviço veterinário municipal».",
             "Isto choca com o regime do achado do Código Civil (art. 1323.º), que permite ao achador anunciar o achado, ficar com o animal ao fim de um ano e retê-lo se houver receio de maus-tratos. Quem recolhe crias ou um animal ferido fica exposto a coima.",
+            "Hoje a recolha por particular está prevista. O n.º 2 do art. 7.º da Portaria 146/2017 manda comunicar o animal errante aos serviços municipais ou às entidades policiais, «ou o animal é entregue a uma dessas entidades, se quem o observou também o capturou». O art. [[Obrigações das câmaras municipais]], n.º 9 reproduz a primeira parte e omite esta.",
+            "O art. [[Obrigações das câmaras municipais]], n.º 3 diz que a captura e a recolha «competem, exclusivamente, às câmaras municipais». Na lei vigente a competência é atribuída às câmaras sem exclusivo: DL 276/2001, art. 19.º, n.º 1; DL 314/2003, art. 8.º, n.º 1; Lei 75/2013, anexo I, art. 33.º, n.º 1, al. ii). O Provedor de Justiça entendeu que as competências camarárias nesta matéria não são exclusivas, por referência a outras entidades públicas.",
+            "O art. [[Contraordenações]], n.º 2 tem duas alíneas que se contradizem. Uma pune a recolha «sem apresentação dos mesmos ao serviço veterinário municipal», o que supõe que a recolha seguida de apresentação é lícita. A outra pune a recolha «por entidade diversa das câmaras municipais», o que a proíbe sempre.",
+            "O art. 1323.º do Código Civil trata do animal perdido. Uma cria nascida na rua nunca teve dono e pode ser adquirida por ocupação (art. 1318.º do Código Civil). A coima do art. [[Contraordenações]], n.º 2 atinge também este caso.",
+            "Os regulamentos municipais lidos admitem a entrega por quem encontra o animal: Setúbal (RSBEAMS 2020, art. 44.º, n.º 1, al. b)), Braga (Aviso 5616/2023, art. 57.º, n.º 1, al. b)), Évora (regulamento do CRO, art. 19.º, n.º 7) e Coimbra (Aviso 6348/2023, art. 12.º). O art. 11.º, n.º 3 do regulamento de Coimbra omite, como o RGAC, a parte final do n.º 2 do art. 7.º da Portaria.",
         ],
-        "proposta": "Articular o art. [[Obrigações das câmaras municipais]], n.º 9 com o art. 1323.º do Código Civil: permitir a guarda provisória pelo achador, com dever de comunicação e leitura do transponder num prazo curto.",
+        "proposta": "Repor no art. [[Obrigações das câmaras municipais]], n.º 9 a parte final do n.º 2 do art. 7.º da Portaria 146/2017. Ressalvar no n.º 3 a recolha pontual por particular seguida de entrega ou comunicação num prazo curto, e as capturas em programa CED autorizado (ver P-22). No art. [[Contraordenações]], n.º 2 manter só a recolha sem apresentação, com prazo fixado, e retirar a recolha por entidade diversa das câmaras. Articular com os arts. 1318.º e 1323.º do Código Civil.",
         "levantado": [
             "Análise interna",
+            "Provedor de Justiça, processo R-4579/08 (Lajes do Pico): as competências camarárias não são exclusivas",
+            "Regulamentos municipais de Setúbal, Braga, Évora e Coimbra (leitura de 8.10.2026)",
+            "Análise interna (pedido de esclarecimento sobre gatos de colónia acolhidos, Setúbal, 8.10.2026)",
         ],
         "estado": "Aberto",
-        "rel": ["P-20", "P-34"],
+        "rel": ["P-20", "P-34",
+            "P-22",
+            "P-37",
+        ],
     },
     {
         "cod": "P-16",
@@ -941,6 +956,91 @@ FICHAS = [
         "estado": "Aberto",
         "rel": ["P-27"],
     },
+    {
+        "cod": "P-37",
+        "cod_antigo": "T-20",
+        "artigo": "Centros de recolha",
+        "titulo": "Quem acolhe um animal errante pode ficar sem saída lícita",
+        "etiquetas": [
+            "TIT",
+            "CED"
+        ],
+        "onde": [
+            "art. [[Definições]], definição de «Abandono»",
+            "art. [[Centros de recolha]], n.ºs 7 e 8",
+            "art. [[Obrigações das câmaras municipais]], n.º 9"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "Quem acolhe um animal errante passa a ser detentor (art. [[Definições]]). Se depois o devolver à rua, a conduta cabe na definição de abandono: remoção «pelo detentor ou titular» sem comprovativo da transmissão da guarda para outra pessoa, para o município ou para associação zoófila (art. [[Definições]]). Pode ainda caber no art. 388.º do Código Penal, que pune quem, «tendo o dever de guardar, vigiar ou assistir animal de companhia», o abandona.",
+            "A saída lícita é entregar o animal. O art. [[Centros de recolha]], n.º 7 só deixa pedir a recolha ao CRO aos titulares, e só por circunstâncias supervenientes. O n.º 8 manda os restantes titulares recorrer a associação zoófila. O detentor que não é titular não aparece em nenhum dos dois números. O art. [[Obrigações das câmaras municipais]], n.º 9 deixou de prever a entrega por quem capturou o animal (ver P-15).",
+            "No regime vigente o problema já existe na prática. Os regulamentos municipais permitem recusar a receção por sobrelotação (Setúbal, RSBEAMS 2020, art. 57.º, n.º 6) ou depois de ponderar fatores de risco (Coimbra, Aviso 6348/2023, art. 12.º, n.º 2). Quem acolheu fica entre a recusa do CRO e a proibição de abandono."
+        ],
+        "proposta": "Prever no art. [[Centros de recolha]] que o detentor de animal errante que o tenha recolhido possa entregá-lo ao CRO. A recusa do CRO deve ser fundamentada e indicar alternativa: associação zoófila, lar de acolhimento ou integração no programa CED. A entrega recusada afasta a presunção de abandono.",
+        "levantado": [
+            "Análise interna (pedido de esclarecimento sobre gatos de colónia acolhidos, Setúbal, 8.10.2026)",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): o detentor que não cuida do animal deve diligenciar a sua entrega a canil ou organização que o possa receber",
+            "Regulamentos municipais de Setúbal (2020) e Coimbra (2023)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-14",
+            "P-15"
+        ]
+    },
+    {
+        "cod": "P-38",
+        "cod_antigo": "C-18",
+        "artigo": "Definições",
+        "titulo": "A definição de animal errante passa a abranger qualquer animal não identificado",
+        "etiquetas": [
+            "CED"
+        ],
+        "onde": [
+            "art. [[Definições]], definição de «Animal errante»",
+            "art. [[Obrigações das câmaras municipais]], n.º 1, al. a)"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "Hoje há duas definições. O DL 276/2001 (art. 2.º, n.º 1, al. c)) considera errante o animal encontrado em lugar público fora do controlo e guarda do detentor, «ou relativamente ao qual existam fortes indícios de que foi abandonado ou não tem detentor e não esteja identificado». O DL 314/2003 (art. 2.º, al. n)) só considera errante o cão ou gato encontrado em local público, fora do controlo ou vigilância do detentor, «e não identificado». Uma cria sem dono nascida num quintal é errante para o primeiro e não para o segundo.",
+            "O RGAC unifica, mas troca o «e» por «ou»: é errante também o animal «que não tem detentor ou não se encontra identificado» (art. [[Definições]]). Lida à letra, qualquer animal não identificado é errante, mesmo em casa e com detentor, incluindo as crias antes do prazo de identificação. O art. [[Obrigações das câmaras municipais]], n.º 1, al. a) limita a captura aos errantes encontrados em lugares públicos, o que atenua o efeito, mas as outras normas que usam o conceito ficam com um âmbito que não se pretende."
+        ],
+        "proposta": "Repor a conjunção cumulativa: «que não tem detentor e não se encontra identificado». Ponderar excluir da definição os gatos integrados em programa CED (ver P-30).",
+        "levantado": [
+            "Análise interna (8.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-30",
+            "P-15"
+        ]
+    },
+    {
+        "cod": "P-39",
+        "cod_antigo": "C-19",
+        "artigo": "Obrigações das câmaras municipais",
+        "titulo": "A Lei 75/2013 ainda atribui às câmaras o abate de canídeos e gatídeos",
+        "etiquetas": [
+            "CED"
+        ],
+        "onde": [
+            "artigo mais próximo: art. [[Obrigações das câmaras municipais]] (sem norma própria no RGAC)",
+            "sem norma própria"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "O anexo I da Lei 75/2013, art. 33.º, n.º 1, al. ii), dá à câmara municipal a competência para «Proceder à captura, alojamento e abate de canídeos e gatídeos». A redação é anterior à Lei 27/2016, que proibiu o abate como forma de controlo da população, e não foi alterada.",
+            "O RGAC revoga a Lei 27/2016 (art. [[Norma revogatória]], n.º 1) e não altera a Lei 75/2013. A norma geral de competência das câmaras continua a falar em abate."
+        ],
+        "proposta": "Alterar a al. ii) para «Proceder à captura, recolha, alojamento e esterilização de animais de companhia errantes». Verificar se, por ser matéria de competências das autarquias, a alteração exige lei da Assembleia da República ou autorização legislativa.",
+        "levantado": [
+            "Análise interna (8.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-35"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1044,6 +1144,9 @@ CORRESPONDENCIA = {
     "C-15": "P-33",
     "C-16": "P-34",
     "C-17": "P-35",
+    "T-20": "P-37",
+    "C-18": "P-38",
+    "C-19": "P-39",
 }
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
