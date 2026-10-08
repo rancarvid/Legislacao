@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.10"
+VERSAO_MEMORANDO = "1.11"
 DATA_MEMORANDO = "8.10.2026"
 DATA_LIGACOES = "27.9.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -125,7 +125,9 @@ TEMA_T = {
             "proposta": "Prever uma presunção de titularidade pelo registo, que possa ser afastada por prova em "
                         "contrário, «sem prejuízo do direito de propriedade nos termos do Código Civil», e um "
                         "procedimento de retificação do registo.",
-            "levantado": ["Acórdão do TRL de 30.4.2025", "Análise interna", "PCP, proposta ao OE2026 (registo informativo sem responsabilidade, 5.11.2025)"],
+            "levantado": ["Acórdão do TRL de 30.4.2025", "Análise interna", "PCP, proposta ao OE2026 (registo informativo sem responsabilidade, 5.11.2025)",
+                "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): a falta de registo no SIAC serviu de prova contra a alegada propriedade de terceiro",
+            ],
             "estado": "Aberto",
             "rel": ["T-01"],
         },
@@ -141,10 +143,13 @@ TEMA_T = {
                 "(art. 73.º, n.º 3).",
                 "Quem tem o animal consigo, como uma família de acolhimento, um lar de acolhimento ou um cuidador, "
                 "deixa de ter dever próprio quando o animal morre.",
+                "A jurisprudência faz recair os deveres de cuidado sobre quem tem o controlo de facto do animal, e não sobre o proprietário que se afastou. No acórdão do Tribunal da Relação do Porto de 8.5.2024, o dono original deixara o cão em 2018 e foi condenada a pessoa que o tinha a seu cuidado.",
             ],
             "proposta": "Art. 76.º, n.º 2: «O titular e o detentor, ou os seus representantes, devem comunicar a "
                         "morte ou o desaparecimento do animal de companhia ao SIAC […]».",
-            "levantado": ["Análise interna"],
+            "levantado": ["Análise interna",
+                "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): deveres do detentor nos termos do art. 1253.º do Código Civil",
+            ],
             "estado": "Aberto",
             "rel": ["T-05"],
         },
@@ -304,7 +309,9 @@ TEMA_T = {
             "levantado": ["Contributos dos médicos veterinários municipais (6.3.2026)", "Tribunal da Relação de Coimbra, proc. 281/10.1TBCV.C1 (11.7.2012)",
                           "STJ, proc. 478/05.6TBMGL.C1.S1 (14.11.2013): os arts. 493.º e 502.º do Código Civil podem coexistir",
                           "Tribunal da Relação de Lisboa, proc. 3121/03.4TBCSC.L1-6 (24.11.2009)",
-                          "Tribunal da Relação de Coimbra, proc. 6/22.9GCPBL.C1 (7.2.2024): dever de vigilância do detentor", "CDU (resposta de 2024)"],
+                          "Tribunal da Relação de Coimbra, proc. 6/22.9GCPBL.C1 (7.2.2024): dever de vigilância do detentor", "CDU (resposta de 2024)",
+                "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): dever de atuar do detentor, nos termos do DL 82/2019, art. 3.º, al. a), e do art. 1253.º do Código Civil",
+            ],
             "estado": "Aberto",
             "rel": ["T-14", "C-08"],
         },
@@ -877,8 +884,57 @@ TEMA_C = {
 # memorando os capítulos com fichas. Se a estrutura do RGAC mudar numa versão nova, rever
 # "capitulos" (lista de capítulos do RGAC abrangidos, como aparecem em estrutura_rgac.json).
 CAPITULOS = [
-    {"letra": "A", "capitulos": ["Capítulo I"], "titulo": "Disposições gerais e definições (cap. I)", "intro": [], "fichas": []},
-    {"letra": "P", "capitulos": ["Capítulo II"], "titulo": "Princípios gerais (cap. II)", "intro": [], "fichas": []},
+    {"letra": "A", "capitulos": ["Capítulo I"], "titulo": "Disposições gerais e definições (cap. I)", "intro": [], "fichas": [
+        {
+            "cod": "A-01",
+            "titulo": "Duas normas diferentes sobre que espécies são animais de companhia",
+            "onde": [
+                "art. 2.º, n.º 2",
+                "art. 4.º, n.ºs 1 a 3",
+                "art. 3.º, definição de «Animal de companhia»"
+            ],
+            "origem": "RGAC",
+            "problema": [
+                "O art. 2.º, n.º 2 diz que são animais de companhia as espécies da Parte A do Anexo I do Regulamento (UE) 2016/429 e, «quando detidos para fins de companhia», as da Parte B. O art. 4.º, n.º 2 diz que as espécies da Parte B são «também considerados animais de companhia», sem essa condição. O n.º 3 acrescenta as espécies de uma lista positiva a aprovar por portaria. A definição do art. 3.º remete só para o art. 2.º, n.º 2.",
+                "O conceito tem efeitos fora do RGAC. O Tribunal da Relação do Porto usou a remissão do DL 82/2019, art. 4.º, n.º 1, para o Regulamento (UE) 2016/429 para delimitar o animal de companhia do art. 389.º do Código Penal. Revogado o DL 82/2019, essa leitura passa a apoiar-se no RGAC, que tem duas regras diferentes."
+            ],
+            "proposta": "Manter uma só norma: a do art. 2.º, n.º 2, com a condição para a Parte B. No art. 4.º ficam só a lista positiva e as exceções.",
+            "levantado": [
+                "Análise interna (8.10.2026)",
+                "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): conceito penal de animal de companhia"
+            ],
+            "estado": "Aberto",
+            "rel": []
+        },
+    ]},
+    {"letra": "P", "capitulos": ["Capítulo II"], "titulo": "Princípios gerais (cap. II)", "intro": [], "fichas": [
+        {
+            "cod": "P-01",
+            "titulo": "A amarração no domicílio fica sem duração máxima nem requisitos verificáveis",
+            "onde": [
+                "art. 19.º, n.ºs 4 e 5",
+                "art. 9.º, n.º 1, al. i)",
+                "art. 140.º, n.º 2"
+            ],
+            "origem": "RGAC",
+            "problema": [
+                "O art. 19.º, n.º 4 proíbe amarrar cães e gatos por mais de uma hora. Estende a todos os titulares e detentores a regra que o Regulamento (UE) 2026/1818 fixa só para os operadores (art. 17.º, n.º 3).",
+                "O n.º 5 exceciona a amarração «temporariamente no domicílio de titular ou detentor», com quatro condições cumulativas. Nenhuma fixa duração máxima, características do meio de amarração ou casos em que a amarração é sempre proibida. A condição «necessidade pontual e temporária» não é verificável no local. A condição de o endereço registado no SIAC coincidir com o do detentor não tem relação com o bem-estar do animal.",
+                "Condenação por amarração diária. O Tribunal da Relação do Porto confirmou, em 8.5.2024, a condenação por maus-tratos a animal de companhia, por omissão (art. 387.º, n.ºs 1 e 2, do Código Penal), de quem mantinha um cão de cerca de 10 anos «diariamente acorrentado» e, no dia da intervenção, «fechado numa casota de madeira tipo gaiola, não conseguindo este sequer manter-se em pé». Pena de 200 dias de multa e pena acessória de proibição de detenção de animais de companhia por dois anos e seis meses (art. 388.º-A do Código Penal). O cão foi eutanasiado. A exceção do n.º 5, tal como está redigida, não permite distinguir com segurança uma situação destas de uma amarração lícita até ela chegar ao crime.",
+                "O art. 140.º, n.º 2 remete sempre para «artigo XX.º». Não é possível confirmar que a violação dos n.ºs 4 e 5 do art. 19.º tem coima.",
+                "O Projeto de Lei n.º 612/XVII/1.ª (BE, 5.5.2026) propõe critérios objetivos: até três horas por dia, meio com pelo menos três metros ou o triplo do comprimento do animal, destorcedor, ligação por peitoral ou coleira larga, um animal por ponto de fixação, e proibição absoluta para animais com menos de seis meses, fêmeas gestantes ou lactantes, animais doentes e em aviso meteorológico laranja ou vermelho (arts. 6.º e 7.º)."
+            ],
+            "proposta": "Fixar no n.º 5 uma duração máxima diária, requisitos técnicos do meio de amarração (comprimento mínimo, destorcedor, peitoral ou coleira larga, um animal por ponto) e casos de proibição absoluta (crias, fêmeas gestantes ou lactantes, animais doentes, aviso meteorológico laranja ou vermelho). Retirar a condição do endereço no SIAC. Prever coima expressa para a violação dos n.ºs 4 e 5 no art. 140.º.",
+            "levantado": [
+                "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): condenação por maus-tratos de cão mantido diariamente acorrentado",
+                "Projeto de Lei n.º 612/XVII/1.ª (BE, 5.5.2026), arts. 6.º e 7.º",
+                "Regulamento (UE) 2026/1818, art. 17.º, n.º 3",
+                "Análise interna (8.10.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": []
+        },
+    ]},
     {"letra": "H", "capitulos": ["Capítulo III"], "titulo": "Detenção (cap. III)", "intro": [], "fichas": []},
     {"letra": "E", "capitulos": ["Capítulo IV"], "titulo": "Detenção em estabelecimentos (cap. IV)", "intro": [], "fichas": []},
     {"letra": "M", "capitulos": ["Capítulo V", "Capítulo VI", "Capítulo VII"],
@@ -929,6 +985,16 @@ LAPSOS = [
     {"cod": "L-09", "onde": ["140"], "estado": "Aberto", "ficha": "T-11",
      "lapso": "O art. 140.º, n.º 2 pune o incumprimento «dos deveres previstos no artigo XX.º».",
      "correcao": "Ver a ficha T-11."},
+    {
+        "cod": "L-10",
+        "onde": [
+            "19"
+        ],
+        "estado": "Aberto",
+        "ficha": "P-01",
+        "lapso": "O art. 19.º, n.º 3 remete para «artigo YYº n.º 2 (Condições de manutenção de cães e gatos) segundo parágrafo». No n.º 5, as quatro condições não têm letra de alínea e a terceira tem a gralha «aas».",
+        "correcao": "Fixar a remissão do n.º 3, numerar as condições do n.º 5 como alíneas a) a d) e corrigir «aas» para «as». Ver a ficha P-01."
+    },
 ]
 
 
@@ -1275,6 +1341,7 @@ BIBLIOGRAFIA = [
     ("Legislação e regulamentos", "Município de Setúbal, Regulamento de Saúde e Bem-Estar Animal (RSBEAMS), aprovado pela Assembleia Municipal em 26.6.2020.", "https://www.mun-setubal.pt/wp-content/uploads/2020/07/RSBEAMS-2020.pdf", "CROAC"),
     ("Legislação e regulamentos", "Município de Coimbra, Aviso n.º 6348/2023, Diário da República, 2.ª série, n.º 61, de 27.3.2023.", "https://files.diariodarepublica.pt/gratuitos/2s/2023/03/2S061A0000S00.pdf", "Termo de Entrega"),
     ("Jurisprudência", "Tribunal da Relação do Porto, acórdão de 8.5.2024, proc. 11/21.2GEVFR.P1.", "https://www.dgsi.pt/jtrp.nsf/56a6e7121657f91e80257cda00381fdf/703e8b815ea39ece80258b34004b8157", "11/21.2GEVFR.P1"),
+    ("Legislação e regulamentos", "Projeto de Lei n.º 612/XVII/1.ª (Bloco de Esquerda), de 5.5.2026: acorrentamento, alojamento, dispositivos coercivos e Plano Nacional pelo Bem-Estar dos Animais de Companhia.", "repositório: Projetos de lei/PJL 612-XVII BE - acorrentamento e dispositivos coercivos.pdf", ""),
     # --- Documentos internos
     ("Documentos de trabalho do grupo", "Contributos dos médicos veterinários municipais, reunião de Santarém, 6.3.2026.",
      "repositório: Contributos MVM.docx", ""),
@@ -1294,4 +1361,5 @@ REGISTO_ALTERACOES = [
     ("1.8", "27.9.2026", "O memorando passa a ser mantido em três versões com o mesmo conteúdo: a principal (esta) e os ensaios 2.0 e 3.0 de organização. Lapso L-08: a remissão do art. 86.º, n.º 1 passa a citar «artigos 65.º e 66.º» entre aspas, como está no RGAC."),
     ("1.9", "2.10.2026", "Ficha T-19: nada diz quem é titular quando o animal não tem proprietário. A definição da al. f) do art. 3.º do DL 82/2019 pressupõe dono ou possuidor com animus, e o RGAC só fecha a lacuna no CED. A ficha qualifica a proposta da T-01: repor o critério do DL 82/2019 não resolve o animal sem dono."),
     ("1.10", "8.10.2026", "Recolha de errantes por particulares e estatuto de quem acolhe. Fichas novas: T-20 (quem acolhe um animal errante pode ficar sem saída lícita), C-18 (a definição de animal errante passa a abranger qualquer animal não identificado) e C-19 (a Lei 75/2013 ainda atribui às câmaras o abate de canídeos e gatídeos). Fichas T-14 e T-15 completadas: o RGAC omite a entrega pelo particular prevista no n.º 2 do art. 7.º da Portaria 146/2017, torna a captura exclusiva das câmaras e tem duas alíneas contraditórias no art. 140.º, n.º 2. Fontes novas: Lei 75/2013, regulamentos de Setúbal e Coimbra, acórdão do TRP de 8.5.2024."),
+    ("1.11", "8.10.2026", "Fichas novas P-01 (a amarração no domicílio fica sem duração máxima nem requisitos verificáveis, com a condenação confirmada pelo TRP em 8.5.2024 por amarração diária de um cão) e A-01 (duas normas diferentes sobre que espécies são animais de companhia, arts. 2.º e 4.º). Lapso L-10 no art. 19.º. Acórdão do TRP de 8.5.2024 acrescentado às fichas T-03, T-04 e T-13. Bibliografia: Projeto de Lei n.º 612/XVII/1.ª."),
 ]

@@ -164,6 +164,7 @@ FICHAS = [
             "Acórdão do TRL de 30.4.2025",
             "Análise interna",
             "PCP, proposta ao OE2026 (registo informativo sem responsabilidade, 5.11.2025)",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): a falta de registo no SIAC serviu de prova contra a alegada propriedade de terceiro",
         ],
         "estado": "Aberto",
         "rel": ["P-01"],
@@ -182,10 +183,12 @@ FICHAS = [
         "problema": [
             "No regime atual, o detentor deve comunicar ao SIAC a morte ou o desaparecimento, sob pena de presunção de abandono (DL 82/2019, art. 16.º, n.º 2). No RGAC esse dever passa só para o titular (art. [[Deveres do titular]], n.º 2). O detentor fica só com o dever de comunicar o desaparecimento e a recuperação (art. [[Alterações ao registo]], n.º 3).",
             "Quem tem o animal consigo, como uma família de acolhimento, um lar de acolhimento ou um cuidador, deixa de ter dever próprio quando o animal morre.",
+            "A jurisprudência faz recair os deveres de cuidado sobre quem tem o controlo de facto do animal, e não sobre o proprietário que se afastou. No acórdão do Tribunal da Relação do Porto de 8.5.2024, o dono original deixara o cão em 2018 e foi condenada a pessoa que o tinha a seu cuidado.",
         ],
         "proposta": "Art. 76.º, n.º 2: «O titular e o detentor, ou os seus representantes, devem comunicar a morte ou o desaparecimento do animal de companhia ao SIAC […]».",
         "levantado": [
             "Análise interna",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): deveres do detentor nos termos do art. 1253.º do Código Civil",
         ],
         "estado": "Aberto",
         "rel": ["P-05"],
@@ -390,6 +393,7 @@ FICHAS = [
             "Tribunal da Relação de Lisboa, proc. 3121/03.4TBCSC.L1-6 (24.11.2009)",
             "Tribunal da Relação de Coimbra, proc. 6/22.9GCPBL.C1 (7.2.2024): dever de vigilância do detentor",
             "CDU (resposta de 2024)",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): dever de atuar do detentor, nos termos do DL 82/2019, art. 3.º, al. a), e do art. 1253.º do Código Civil",
         ],
         "estado": "Aberto",
         "rel": ["P-14", "P-26"],
@@ -1041,6 +1045,63 @@ FICHAS = [
             "P-35"
         ]
     },
+    {
+        "cod": "P-40",
+        "cod_antigo": "P-01",
+        "artigo": "Necessidades comportamentais",
+        "titulo": "A amarração no domicílio fica sem duração máxima nem requisitos verificáveis",
+        "etiquetas": [
+            "BEM"
+        ],
+        "onde": [
+            "art. [[Necessidades comportamentais]], n.ºs 4 e 5",
+            "art. [[Práticas de maneio e contenção proibidas]], n.º 1, al. i)",
+            "art. [[Contraordenações]], n.º 2"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "O art. [[Necessidades comportamentais]], n.º 4 proíbe amarrar cães e gatos por mais de uma hora. Estende a todos os titulares e detentores a regra que o Regulamento (UE) 2026/1818 fixa só para os operadores (art. 17.º, n.º 3).",
+            "O n.º 5 exceciona a amarração «temporariamente no domicílio de titular ou detentor», com quatro condições cumulativas. Nenhuma fixa duração máxima, características do meio de amarração ou casos em que a amarração é sempre proibida. A condição «necessidade pontual e temporária» não é verificável no local. A condição de o endereço registado no SIAC coincidir com o do detentor não tem relação com o bem-estar do animal.",
+            "Condenação por amarração diária. O Tribunal da Relação do Porto confirmou, em 8.5.2024, a condenação por maus-tratos a animal de companhia, por omissão (art. 387.º, n.ºs 1 e 2, do Código Penal), de quem mantinha um cão de cerca de 10 anos «diariamente acorrentado» e, no dia da intervenção, «fechado numa casota de madeira tipo gaiola, não conseguindo este sequer manter-se em pé». Pena de 200 dias de multa e pena acessória de proibição de detenção de animais de companhia por dois anos e seis meses (art. 388.º-A do Código Penal). O cão foi eutanasiado. A exceção do n.º 5, tal como está redigida, não permite distinguir com segurança uma situação destas de uma amarração lícita até ela chegar ao crime.",
+            "O art. [[Contraordenações]], n.º 2 remete sempre para «artigo XX.º». Não é possível confirmar que a violação dos n.ºs 4 e 5 do art. [[Necessidades comportamentais]] tem coima.",
+            "O Projeto de Lei n.º 612/XVII/1.ª (BE, 5.5.2026) propõe critérios objetivos: até três horas por dia, meio com pelo menos três metros ou o triplo do comprimento do animal, destorcedor, ligação por peitoral ou coleira larga, um animal por ponto de fixação, e proibição absoluta para animais com menos de seis meses, fêmeas gestantes ou lactantes, animais doentes e em aviso meteorológico laranja ou vermelho (arts. 6.º e 7.º)."
+        ],
+        "proposta": "Fixar no n.º 5 uma duração máxima diária, requisitos técnicos do meio de amarração (comprimento mínimo, destorcedor, peitoral ou coleira larga, um animal por ponto) e casos de proibição absoluta (crias, fêmeas gestantes ou lactantes, animais doentes, aviso meteorológico laranja ou vermelho). Retirar a condição do endereço no SIAC. Prever coima expressa para a violação dos n.ºs 4 e 5 no art. [[Contraordenações]].",
+        "levantado": [
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): condenação por maus-tratos de cão mantido diariamente acorrentado",
+            "Projeto de Lei n.º 612/XVII/1.ª (BE, 5.5.2026), arts. 6.º e 7.º",
+            "Regulamento (UE) 2026/1818, art. 17.º, n.º 3",
+            "Análise interna (8.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": []
+    },
+    {
+        "cod": "P-41",
+        "cod_antigo": "A-01",
+        "artigo": "Âmbito Objetivo",
+        "titulo": "Duas normas diferentes sobre que espécies são animais de companhia",
+        "etiquetas": [
+            "REG"
+        ],
+        "onde": [
+            "art. [[Âmbito Objetivo]], n.º 2",
+            "art. [[Animais de companhia]], n.ºs 1 a 3",
+            "art. [[Definições]], definição de «Animal de companhia»"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "O art. [[Âmbito Objetivo]], n.º 2 diz que são animais de companhia as espécies da Parte A do Anexo I do Regulamento (UE) 2016/429 e, «quando detidos para fins de companhia», as da Parte B. O art. [[Animais de companhia]], n.º 2 diz que as espécies da Parte B são «também considerados animais de companhia», sem essa condição. O n.º 3 acrescenta as espécies de uma lista positiva a aprovar por portaria. A definição do art. [[Definições]] remete só para o art. [[Âmbito Objetivo]], n.º 2.",
+            "O conceito tem efeitos fora do RGAC. O Tribunal da Relação do Porto usou a remissão do DL 82/2019, art. 4.º, n.º 1, para o Regulamento (UE) 2016/429 para delimitar o animal de companhia do art. 389.º do Código Penal. Revogado o DL 82/2019, essa leitura passa a apoiar-se no RGAC, que tem duas regras diferentes."
+        ],
+        "proposta": "Manter uma só norma: a do art. [[Âmbito Objetivo]], n.º 2, com a condição para a Parte B. No art. [[Animais de companhia]] ficam só a lista positiva e as exceções.",
+        "levantado": [
+            "Análise interna (8.10.2026)",
+            "Tribunal da Relação do Porto, proc. 11/21.2GEVFR.P1 (8.5.2024): conceito penal de animal de companhia"
+        ],
+        "estado": "Aberto",
+        "rel": []
+    },
 ]
 
 RESOLVIDOS = [
@@ -1092,6 +1153,16 @@ LAPSOS = [
     {"cod": "L-09", "onde": ["Contraordenações"], "estado": "Aberto", "ficha": "P-11",
      "lapso": "O art. [[Contraordenações]], n.º 2 pune o incumprimento «dos deveres previstos no artigo XX.º».",
      "correcao": "Ver a ficha P-11."},
+    {
+        "cod": "L-10",
+        "onde": [
+            "Necessidades comportamentais"
+        ],
+        "estado": "Aberto",
+        "ficha": "P-40",
+        "lapso": "O art. [[Necessidades comportamentais]], n.º 3 remete para «artigo YYº n.º 2 (Condições de manutenção de cães e gatos) segundo parágrafo». No n.º 5, as quatro condições não têm letra de alínea e a terceira tem a gralha «aas».",
+        "correcao": "Fixar a remissão do n.º 3, numerar as condições do n.º 5 como alíneas a) a d) e corrigir «aas» para «as». Ver a ficha P-40."
+    },
 ]
 
 # ------------------------------------------------------------------ epígrafes renomeadas
@@ -1147,6 +1218,8 @@ CORRESPONDENCIA = {
     "T-20": "P-37",
     "C-18": "P-38",
     "C-19": "P-39",
+    "P-01": "P-40",
+    "A-01": "P-41",
 }
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
