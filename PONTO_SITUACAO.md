@@ -1,4 +1,4 @@
-# Ponto de Situação — Projeto Análise Comparativa Regulamento 2023/0447
+# Ponto de Situação — Projeto Análise Comparativa Regulamento (UE) 2026/1818
 
 **Data**: 10 de abril de 2026  
 **Ramo Git**: `claude/review-recent-tasks-YROKh`  
@@ -6,12 +6,38 @@
 
 ---
 
+## ⚖️ Texto final do `@regulamento` publicado no Jornal Oficial
+
+**Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade**
+
+| | |
+|---|---|
+| Publicação | JO da União Europeia, série L, 2026/1818, de **10.8.2026** |
+| ELI | <http://data.europa.eu/eli/reg/2026/1818/oj> |
+| Assinatura | Estrasburgo, 17 de junho de 2026 |
+| Base jurídica | art.º 43.º, n.º 2, e art.º 114.º do TFUE |
+| Estrutura | 7 capítulos, 33 artigos, 3 anexos |
+| Entrada em vigor | 20.º dia seguinte ao da publicação no JO (art.º 33.º) |
+| Início de aplicação | **31 de agosto de 2028**, com datas diferidas no art.º 33.º (art.º 16.º: 2029; art.º 21.º, n.º 3 e art.º 23.º, n.º 1: 2030; art.º 8.º, n.º 2: 1.7.2030; art.º 15.º e outros: 2031; art.º 12.º, n.os 2 e 3: 2033; art.º 10.º: 2034; art.º 8.º, n.º 1: 1.7.2036; art.º 26.º, n.º 4: 2036) |
+
+**Ficheiros canónicos no repositório**
+
+| Ficheiro | Versão linguística |
+|---|---|
+| `Regulamento 2026_01818_PT.pdf` | PT — texto publicado no JO |
+| `Regulamento Versao final en-en.pdf` | EN — texto publicado no JO |
+
+O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o ato publicado. Os ficheiros `.docx` anteriores (`pe00002.*`, `11.12.2025 Regulamento…`) são **arquivo** e não devem ser usados como fonte primária.
+
+
+---
+
 ## 1. CONTEXTO GERAL DO PROJETO
 
-**Objetivo Principal**: Análise comparativa da Legislação sobre Animais de Companhia (cães e gatos) em Portugal e UE, com foco na implementação do Regulamento Europeu 2023/0447 (Dogs and Cats Welfare Regulation).
+**Objetivo Principal**: Análise comparativa da Legislação sobre Animais de Companhia (cães e gatos) em Portugal e UE, com foco na implementação do Regulamento (UE) 2026/1818 (Dogs and Cats Welfare Regulation).
 
 **Documentos Principais**:
-- `@regulamento`: Regulamento 2023/0447 (ficheiros: `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` + `pe00002.pt26.PB.aftermeeting 2.docx`)
+- `@regulamento`: Regulamento (UE) 2026/1818 — texto publicado no JO (ficheiros: `Regulamento 2026_01818_PT.pdf` (PT) + `Regulamento Versao final en-en.pdf` (EN)). Os ficheiros `pe00002.*.docx` passaram a arquivo (versões pré-publicação).
 - `@legislacao`: Legislação portuguesa vigente (DL 276-2001, DL 82/2019, etc.)
 - `@codigo`: Código do Animal (DL 214/2013) — proposta de consolidação
 - `@rgbeac`: Regime Geral Bem-Estar Animais de Companhia (proposta jun. 2025)
@@ -89,8 +115,10 @@ Os 3 outputs (HTML, DOCX, XLSX) contêm **dados desatualizados do Anexo I** (Req
 
 | Documento | Conteúdo | Localização |
 |-----------|----------|-------------|
-| `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` | Annexo I EN (correto) | Parágrafos 520-567 |
-| `pe00002.pt26.PB.aftermeeting 2.docx` | Anexo I PT (correto) | Parágrafos 514-560 |
+| `pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx` *(arquivo)* | Annexo I EN (correto) | Parágrafos 520-567 |
+| `Regulamento Versao final en-en.pdf` **(fonte atual)** | Anexo I EN — texto publicado no JO | Pág. 45-47 |
+| `pe00002.pt26.PB.aftermeeting 2.docx` *(arquivo)* | Anexo I PT (correto) | Parágrafos 514-560 |
+| `Regulamento 2026_01818_PT.pdf` **(fonte atual)** | Anexo I PT — texto publicado no JO | Pág. 45-47 |
 | `/tmp/texts_pt_clean.json` | Artigos 1-33 (SEM anexos) | Gerado anteriormente |
 | `/tmp/texts_en_clean.json` | Articles 1-33 (SEM annexes) | Gerado anteriormente |
 
@@ -140,7 +168,7 @@ Os 3 outputs (HTML, DOCX, XLSX) contêm **dados desatualizados do Anexo I** (Req
 3. **Commit + Push**
    ```bash
    git add gerar_comparativo_reuniao.py comparativo_reuniao_exemplo.*
-   git commit -m "Atualizar Anexo I com dados corretos do regulamento 2023/0447"
+   git commit -m "Atualizar Anexo I com dados corretos do Regulamento (UE) 2026/1818"
    git push -u origin claude/review-recent-tasks-YROKh
    ```
 
@@ -176,8 +204,10 @@ Conforme definido em CLAUDE.md e feedback anterior:
 ├── comparativo_reuniao_exemplo.docx      ← OUTPUT Word (desatualizado)
 ├── comparativo_reuniao_exemplo.xlsx      ← OUTPUT Excel (desatualizado)
 ├── comparativo_reuniao_exemplo_old_09042026.html  ← Backup anterior
-├── pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx  ← Fonte EN
-├── pe00002.pt26.PB.aftermeeting 2.docx          ← Fonte PT
+├── Regulamento Versao final en-en.pdf           ← Fonte EN (JO, atual)
+├── Regulamento 2026_01818_PT.pdf                ← Fonte PT (JO, atual)
+├── pe00002.en26.GB.RC.AFTERMEETING - alterações aceites.docx  ← arquivo (pré-publicação EN)
+├── pe00002.pt26.PB.aftermeeting 2.docx          ← arquivo (pré-publicação PT)
 ├── Tabelas temáticas/                   ← 13 ficheiros Excel por tema
 │   ├── tabela_art6_art7_comparativo.docx
 │   ├── tabela_art21_comparativo.docx

@@ -1,0 +1,1069 @@
+{
+ "ficheiro": "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx",
+ "artigos": [
+  {
+   "chave": "1",
+   "numero": 1,
+   "epigrafe": "Objeto",
+   "capitulo": "Capítulo I",
+   "epigrafe_capitulo": "Disposições Gerais"
+  },
+  {
+   "chave": "2",
+   "numero": 2,
+   "epigrafe": "Âmbito Objetivo",
+   "capitulo": "Capítulo I",
+   "epigrafe_capitulo": "Disposições Gerais"
+  },
+  {
+   "chave": "3",
+   "numero": 3,
+   "epigrafe": "Definições",
+   "capitulo": "Capítulo I",
+   "epigrafe_capitulo": "Disposições Gerais"
+  },
+  {
+   "chave": "4",
+   "numero": 4,
+   "epigrafe": "Animais de companhia",
+   "capitulo": "Capítulo I",
+   "epigrafe_capitulo": "Disposições Gerais"
+  },
+  {
+   "chave": "5",
+   "numero": 5,
+   "epigrafe": "Sistema de Informação de Animais de Companhia",
+   "capitulo": "Capítulo I",
+   "epigrafe_capitulo": "Disposições Gerais"
+  },
+  {
+   "chave": "6",
+   "numero": 6,
+   "epigrafe": "Detenção responsável",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "7",
+   "numero": 7,
+   "epigrafe": "Princípios básicos para o bem-estar dos animais",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "8",
+   "numero": 8,
+   "epigrafe": "Proibição de violência e maus-tratos",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "9",
+   "numero": 9,
+   "epigrafe": "Práticas de maneio e contenção proibidas",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "10",
+   "numero": 10,
+   "epigrafe": "Proibição de abandono",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "11",
+   "numero": 11,
+   "epigrafe": "Restrições à utilização e ao comércio",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "12",
+   "numero": 12,
+   "epigrafe": "Alimentação e abeberamento",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "13",
+   "numero": 13,
+   "epigrafe": "Condições de detenção de animais de companhia",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "14",
+   "numero": 14,
+   "epigrafe": "Fatores ambientais",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "15",
+   "numero": 15,
+   "epigrafe": "Condições particulares de detenção de cães e gatos",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "16",
+   "numero": 16,
+   "epigrafe": "Cuidados médico-veterinários",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "17",
+   "numero": 17,
+   "epigrafe": "Treino",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "18",
+   "numero": 18,
+   "epigrafe": "Reprodução e criação",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "19",
+   "numero": 19,
+   "epigrafe": "Necessidades comportamentais",
+   "capitulo": "Capítulo II",
+   "epigrafe_capitulo": "Princípios Gerais"
+  },
+  {
+   "chave": "20",
+   "numero": 20,
+   "epigrafe": "Manutenção dos animais de companhia",
+   "capitulo": "Capítulo III",
+   "epigrafe_capitulo": "Detenção"
+  },
+  {
+   "chave": "21",
+   "numero": 21,
+   "epigrafe": "Limite do número de animais detidos",
+   "capitulo": "Capítulo III",
+   "epigrafe_capitulo": "Detenção"
+  },
+  {
+   "chave": "22",
+   "numero": 22,
+   "epigrafe": "Obrigações gerais em matéria de bem-estar",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "23",
+   "numero": 23,
+   "epigrafe": "Maneio de Animais de Companhia",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "24",
+   "numero": 24,
+   "epigrafe": "Condições Gerais dos estabelecimentos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "25",
+   "numero": 25,
+   "epigrafe": "Sistemas de proteção",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "26",
+   "numero": 26,
+   "epigrafe": "Segurança de pessoas, animais e bens",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "27",
+   "numero": 27,
+   "epigrafe": "Tratadores",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "28",
+   "numero": 28,
+   "epigrafe": "Formação",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "29",
+   "numero": 29,
+   "epigrafe": "1 - O operador assegura que cada estabelecimento sob a sua responsabilidade é objeto de visita de um médico-veterinário destinada a identificar e avaliar os fatores de risco para o bem-estar animal e a aconselhar o operador sobre as medidas adequadas para lhes dar resposta.",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "30",
+   "numero": 30,
+   "epigrafe": "Manutenção de registos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "31",
+   "numero": 31,
+   "epigrafe": "Condições particulares para a manutenção de cães e gatos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "32",
+   "numero": 32,
+   "epigrafe": "Das estratégias de reprodução",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "33",
+   "numero": 33,
+   "epigrafe": "Instalações",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "34",
+   "numero": 34,
+   "epigrafe": "Venda nos estabelecimentos de criação",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "35",
+   "numero": 35,
+   "epigrafe": "Condições particulares para a manutenção de pequenos roedores e coelhos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "36",
+   "numero": 36,
+   "epigrafe": "Condições particulares para a manutenção de aves",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "37",
+   "numero": 37,
+   "epigrafe": "Condições particulares para a manutenção de répteis",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "38",
+   "numero": 38,
+   "epigrafe": "Condições particulares para a manutenção de anfíbios",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "39",
+   "numero": 39,
+   "epigrafe": "Condições particulares para a manutenção de peixes",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "40",
+   "numero": 40,
+   "epigrafe": "Outras disposições",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "41",
+   "numero": 41,
+   "epigrafe": "Lares de acolhimento",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "42",
+   "numero": 42,
+   "epigrafe": "Procedimento para o exercício da atividade de exploração de estabelecimentos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "43",
+   "numero": 43,
+   "epigrafe": "Médico-veterinário responsável pelo alojamento",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "44",
+   "numero": 44,
+   "epigrafe": "Mera comunicação prévia",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "45",
+   "numero": 45,
+   "epigrafe": "Permissão administrativa",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "46",
+   "numero": 46,
+   "epigrafe": "Instrução do processo de permissão administrativa",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "47",
+   "numero": 47,
+   "epigrafe": "Decisão",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "48",
+   "numero": 48,
+   "epigrafe": "Divulgação dos estabelecimentos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "49",
+   "numero": 49,
+   "epigrafe": "Alteração de funcionamento dos estabelecimentos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "50",
+   "numero": 50,
+   "epigrafe": "Suspensão de atividade e encerramento dos estabelecimentos",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "51",
+   "numero": 51,
+   "epigrafe": "Permissão de reabertura após suspensão da atividade",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "52",
+   "numero": 52,
+   "epigrafe": "Divulgação da suspensão de atividade, do encerramento e da reabertura de estabelecimento",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "53",
+   "numero": 53,
+   "epigrafe": "Reconhecimento mútuo",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "54",
+   "numero": 54,
+   "epigrafe": "Acesso ao estabelecimento",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "55",
+   "numero": 55,
+   "epigrafe": "Taxas",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "56",
+   "numero": 56,
+   "epigrafe": "Transporte de animais em transportes públicos",
+   "capitulo": "Capítulo V",
+   "epigrafe_capitulo": "Alimentação, maneio e transporte"
+  },
+  {
+   "chave": "57",
+   "numero": 57,
+   "epigrafe": "Maneio",
+   "capitulo": "Capítulo V",
+   "epigrafe_capitulo": "Alimentação, maneio e transporte"
+  },
+  {
+   "chave": "58",
+   "numero": 58,
+   "epigrafe": "Higiene",
+   "capitulo": "Capítulo V",
+   "epigrafe_capitulo": "Alimentação, maneio e transporte"
+  },
+  {
+   "chave": "59",
+   "numero": 59,
+   "epigrafe": "Cuidados de saúde animal (Operadores)",
+   "capitulo": "Capítulo V",
+   "epigrafe_capitulo": "Alimentação, maneio e transporte"
+  },
+  {
+   "chave": "60",
+   "numero": 60,
+   "epigrafe": "Obrigatoriedade do uso de coleira ou peitoral e trela ou açaimo",
+   "capitulo": "Capítulo VI",
+   "epigrafe_capitulo": "Meios de contenção"
+  },
+  {
+   "chave": "61",
+   "numero": 61,
+   "epigrafe": "Intervenções cirúrgicas",
+   "capitulo": "Capítulo VII",
+   "epigrafe_capitulo": "Intervenções cirúrgicas e mutilações"
+  },
+  {
+   "chave": "62",
+   "numero": 62,
+   "epigrafe": "Mutilações",
+   "capitulo": "Capítulo VII",
+   "epigrafe_capitulo": "Intervenções cirúrgicas e mutilações"
+  },
+  {
+   "chave": "63",
+   "numero": 63,
+   "epigrafe": "Sistema de Informação de Animais de Companhia",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "64",
+   "numero": 64,
+   "epigrafe": "Manual de Procedimentos",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "65",
+   "numero": 65,
+   "epigrafe": "Obrigação da Identificação",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "66",
+   "numero": 66,
+   "epigrafe": "Cumprimento da Identificação",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "67",
+   "numero": 67,
+   "epigrafe": "Métodos de Marcação",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "68",
+   "numero": 68,
+   "epigrafe": "Colocação no Mercado de Dispositivos de identificação",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "69",
+   "numero": 69,
+   "epigrafe": "Registo no Sistema de Informação de Animais de Companhia (SIAC)",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "70",
+   "numero": 70,
+   "epigrafe": "Situações especiais de registo",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "71",
+   "numero": 71,
+   "epigrafe": "Documento de Identificação do Animal de Companhia",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "72",
+   "numero": 72,
+   "epigrafe": "Registo de profilaxias médicas e outras intervenções",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "73",
+   "numero": 73,
+   "epigrafe": "Alterações ao registo",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "74",
+   "numero": 74,
+   "epigrafe": "Deslocação dos animais",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "75",
+   "numero": 75,
+   "epigrafe": "Deveres do médico-veterinário",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "76",
+   "numero": 76,
+   "epigrafe": "Deveres do titular",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "77",
+   "numero": 77,
+   "epigrafe": "Conservação de dados",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "78",
+   "numero": 78,
+   "epigrafe": "Taxa de registo SIAC",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "79",
+   "numero": 79,
+   "epigrafe": "Licença de cães e articulação com o Sistema de Informação de Animais de Companhia",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "80",
+   "numero": 80,
+   "epigrafe": "Regime de Gestão e Registo de Animais de Companhia (CRO e )",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "81",
+   "numero": 81,
+   "epigrafe": "Plataforma Nacional de Adoção de Animais de Companhia",
+   "capitulo": "Capítulo VIII",
+   "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
+  },
+  {
+   "chave": "81-b",
+   "numero": 81,
+   "epigrafe": "Programa de vigilância e controlo em animais de companhia",
+   "capitulo": "Capítulo IX",
+   "epigrafe_capitulo": "Zoonoses"
+  },
+  {
+   "chave": "82",
+   "numero": 82,
+   "epigrafe": "Prevenção da raiva animal",
+   "capitulo": "Capítulo IX",
+   "epigrafe_capitulo": "Zoonoses"
+  },
+  {
+   "chave": "83",
+   "numero": 83,
+   "epigrafe": "Vigilância epidemiológica e controlo de outras zoonoses",
+   "capitulo": "Capítulo IX",
+   "epigrafe_capitulo": "Zoonoses"
+  },
+  {
+   "chave": "84",
+   "numero": 84,
+   "epigrafe": "Controlo ambiental",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "85",
+   "numero": 85,
+   "epigrafe": "Controlo das populações errantes e assilvestradas",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "86",
+   "numero": 86,
+   "epigrafe": "Programas de captura, esterilização e devolução ao local de origem",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "87",
+   "numero": 87,
+   "epigrafe": "Programa CED em prédios privados",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "88",
+   "numero": 88,
+   "epigrafe": "Controlo da reprodução pelo titular",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "89",
+   "numero": 89,
+   "epigrafe": "Controlo da reprodução pelas câmaras municipais",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "90",
+   "numero": 90,
+   "epigrafe": "Requisito das instalações adequadas à realização de esterilizações nos CRO",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "91",
+   "numero": 91,
+   "epigrafe": "Obrigações das câmaras municipais",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "92",
+   "numero": 92,
+   "epigrafe": "Registo no SIAC dos CRO e plataformas de adoção",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "93",
+   "numero": 93,
+   "epigrafe": "Registo Nacional das Associações Zoófilas",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "94",
+   "numero": 94,
+   "epigrafe": "Centros de recolha",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "95",
+   "numero": 95,
+   "epigrafe": "Exame clínico dos animais e período mínimo de permanência",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "96",
+   "numero": 96,
+   "epigrafe": "Despesas",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "97",
+   "numero": 97,
+   "epigrafe": "Captura compulsiva de animais",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "98",
+   "numero": 98,
+   "epigrafe": "Destino dos animais",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "99",
+   "numero": 99,
+   "epigrafe": "Condições da cedência",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "100",
+   "numero": 100,
+   "epigrafe": "Cedência por associações zoófilas",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "101",
+   "numero": 101,
+   "epigrafe": "Eutanásia",
+   "capitulo": "Capítulo X",
+   "epigrafe_capitulo": "Gestão das populações animais"
+  },
+  {
+   "chave": "102",
+   "numero": 102,
+   "epigrafe": "Eliminação de cadáveres",
+   "capitulo": "Capítulo XI",
+   "epigrafe_capitulo": "Cadáveres de animais de companhia"
+  },
+  {
+   "chave": "103",
+   "numero": 103,
+   "epigrafe": "Concursos e exposições",
+   "capitulo": "Capítulo XII",
+   "epigrafe_capitulo": "Exposições e comércio"
+  },
+  {
+   "chave": "104",
+   "numero": 104,
+   "epigrafe": "Transmissão de animais de companhia",
+   "capitulo": "Capítulo XII",
+   "epigrafe_capitulo": "Exposições e comércio"
+  },
+  {
+   "chave": "105",
+   "numero": 105,
+   "epigrafe": "Comércio de animais de companhia",
+   "capitulo": "Capítulo XII",
+   "epigrafe_capitulo": "Exposições e comércio"
+  },
+  {
+   "chave": "106",
+   "numero": 106,
+   "epigrafe": "Requisitos dos anúncio de transmissão em linha de animal de companhia",
+   "capitulo": "Capítulo XII",
+   "epigrafe_capitulo": "Exposições e comércio"
+  },
+  {
+   "chave": "107",
+   "numero": 107,
+   "epigrafe": "Alojamento por espécies",
+   "capitulo": "Capítulo XII",
+   "epigrafe_capitulo": "Exposições e comércio"
+  },
+  {
+   "chave": "108",
+   "numero": 108,
+   "epigrafe": "Reconhecimento das organizações ou associações de criadores",
+   "capitulo": "Capítulo XIII",
+   "epigrafe_capitulo": "Animais de companhia registados em livro genealógico"
+  },
+  {
+   "chave": "109",
+   "numero": 109,
+   "epigrafe": "Requisitos dos reprodutores",
+   "capitulo": "Capítulo XIII",
+   "epigrafe_capitulo": "Animais de companhia registados em livro genealógico"
+  },
+  {
+   "chave": "110",
+   "numero": 110,
+   "epigrafe": "Detenção de cães perigosos ou potencialmente perigosos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "111",
+   "numero": 111,
+   "epigrafe": "Validade da licença",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "112",
+   "numero": 112,
+   "epigrafe": "Comprovativo de aprovação em formação",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "113",
+   "numero": 113,
+   "epigrafe": "Certificação de entidades formadoras",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "114",
+   "numero": 114,
+   "epigrafe": "Da obrigatoriedade de formação",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "115",
+   "numero": 115,
+   "epigrafe": "Atualização de registo SIAC",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "116",
+   "numero": 116,
+   "epigrafe": "Seguro de responsabilidade civil",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "117",
+   "numero": 117,
+   "epigrafe": "Dever especial de vigilância",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "118",
+   "numero": 118,
+   "epigrafe": "Medidas de segurança reforçadas nos alojamentos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "119",
+   "numero": 119,
+   "epigrafe": "Medidas de segurança reforçadas na circulação",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "120",
+   "numero": 120,
+   "epigrafe": "Classificação como animal perigoso",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "121",
+   "numero": 121,
+   "epigrafe": "Procedimento em caso de agressão",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "122",
+   "numero": 122,
+   "epigrafe": "Destino de animais agressores",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "123",
+   "numero": 123,
+   "epigrafe": "Entrada no território nacional",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "124",
+   "numero": 124,
+   "epigrafe": "Locais destinados à criação e reprodução",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "125",
+   "numero": 125,
+   "epigrafe": "Condições para a criação e reprodução",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "126",
+   "numero": 126,
+   "epigrafe": "Proibição de reprodução",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "127",
+   "numero": 127,
+   "epigrafe": "Colocação no mercado de animais potencialmente perigosos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "128",
+   "numero": 128,
+   "epigrafe": "Obrigatoriedade de treino",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "129",
+   "numero": 129,
+   "epigrafe": "Regime de exceção",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "130",
+   "numero": 130,
+   "epigrafe": "Locais destinados ao treino",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "131",
+   "numero": 131,
+   "epigrafe": "Reserva de atividade de treinadores de cães perigosos e potencialmente perigosos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "132",
+   "numero": 132,
+   "epigrafe": "Título profissional de treinador de cães perigosos e potencialmente perigosos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "133",
+   "numero": 133,
+   "epigrafe": "Certificado de qualificações",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "134",
+   "numero": 134,
+   "epigrafe": "Lista de treinadores de cães perigosos e potencialmente perigosos",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "135",
+   "numero": 135,
+   "epigrafe": "Obrigações dos treinadores",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "136",
+   "numero": 136,
+   "epigrafe": "Suspensão ou cassação do título profissional",
+   "capitulo": "Capítulo XIV",
+   "epigrafe_capitulo": "Detenção de animais perigosos ou potencialmente perigosos"
+  },
+  {
+   "chave": "137",
+   "numero": 137,
+   "epigrafe": "Medidas administrativas",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "138",
+   "numero": 138,
+   "epigrafe": "Fiscalização",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "139",
+   "numero": 139,
+   "epigrafe": "Medidas preventivas",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "140",
+   "numero": 140,
+   "epigrafe": "Contraordenações",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "141",
+   "numero": 141,
+   "epigrafe": "Sanções acessórias",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "142",
+   "numero": 142,
+   "epigrafe": "Instrução e decisão",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "143",
+   "numero": 143,
+   "epigrafe": "Distribuição do produto das coimas",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "144",
+   "numero": 144,
+   "epigrafe": "Direito subsidiário",
+   "capitulo": "Capítulo XV",
+   "epigrafe_capitulo": "Medidas administrativas, fiscalização e contraordenações"
+  },
+  {
+   "chave": "145",
+   "numero": 145,
+   "epigrafe": "Formulários e publicitação",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "146",
+   "numero": 146,
+   "epigrafe": "Desmaterialização de atos e procedimentos",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "147",
+   "numero": 147,
+   "epigrafe": "Cooperação administrativa",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "148",
+   "numero": 148,
+   "epigrafe": "Regiões Autónomas",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "149",
+   "numero": 149,
+   "epigrafe": "Norma revogatória",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "150",
+   "numero": 150,
+   "epigrafe": "Entrada em vigor",
+   "capitulo": "Capítulo XVI",
+   "epigrafe_capitulo": "Disposições complementares, finais e transitórias"
+  },
+  {
+   "chave": "142-b",
+   "numero": 142,
+   "epigrafe": "Exames médico-veterinários, laboratoriais ou outros",
+   "capitulo": "Anexo II",
+   "epigrafe_capitulo": "Dimensões mínimas para o alojamento de cães e gatos"
+  }
+ ]
+}

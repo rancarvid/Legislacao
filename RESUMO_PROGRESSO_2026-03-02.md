@@ -1,7 +1,7 @@
 # RESUMO DE PROGRESSO — 2 de Março de 2026
 
 ## 🎯 OBJETIVO INICIAL
-Completar artigos 17a a 20 do Regulamento 2023/0447 com correspondências completas em legislação portuguesa (@rgbeac, @codigo, @legislacao).
+Completar artigos 17a a 20 do Regulamento (UE) 2026/1818 com correspondências completas em legislação portuguesa (@rgbeac, @codigo, @legislacao).
 
 ---
 

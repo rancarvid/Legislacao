@@ -32,7 +32,7 @@
 ### 4. **RESUMO_EXECUTIVO_LEGISLACAO.md** (12 KB)
    - **Formato**: Markdown com tabelas e infografias textuais
    - **Conteúdo**: Síntese de legislação com estatísticas e análise de gaps
-   - **Secções**: Estatísticas | Mapeamento temático | Análise de cobertura | Matriz de períodos | Impacto Regulamento 2023/0447 | Lacunas | Recomendações
+   - **Secções**: Estatísticas | Mapeamento temático | Análise de cobertura | Matriz de períodos | Impacto Regulamento (UE) 2026/1818 | Lacunas | Recomendações
    - **Uso**: Apresentação executiva, ponto de partida para discussão
    - **Pessoas-alvo**: Gestores, executivos, decisores políticos
 
@@ -53,7 +53,7 @@
 ### PASSO 2: Análise Aprofundada (30-45 min)
 1. Abra **legislacao_vigente_animais_completa.xlsx**
 2. Filtre por tema (coluna "Tema Principal")
-3. Use coluna "Impacto Regulamento 2023/0447" para avaliar harmonização
+3. Use coluna "Impacto Regulamento (UE) 2026/1818" para avaliar harmonização
 
 ### PASSO 3: Pesquisa Detalhada (1-2 horas)
 1. Consulte **LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md**
@@ -62,7 +62,7 @@
 
 ### PASSO 4: Integração em Análise (Conforme necessário)
 1. Exporte dados de CSV/Excel para seu sistema
-2. Cruzar com @regulamento (Regulamento 2023/0447)
+2. Cruzar com @regulamento (Regulamento (UE) 2026/1818)
 3. Identificar necessidades de alteração legislativa
 
 ---
@@ -82,7 +82,7 @@
 | **Descrição Breve** | Síntese 1-2 frases | "Estabelece regras de identificação; cria SIAC..." |
 | **Artigos Principais** | Referência a artigos-chave | Art. 1-50+ (SIAC) |
 | **Diplomas Relacionados** | Remissões para outros diplomas | Lei 95/2017, Portaria 67/2018 |
-| **Impacto Regulamento 2023/0447** | Harmonização com Regulamento EU | "Totalmente harmónico com Regulamento 2023/0447..." |
+| **Impacto Regulamento (UE) 2026/1818** | Harmonização com Regulamento EU | "Totalmente harmónico com Regulamento (UE) 2026/1818..." |
 
 ---
 
@@ -105,7 +105,7 @@
 
 ---
 
-## 🌍 Impacto do Regulamento Europeu 2023/0447
+## 🌍 Impacto do Regulamento (UE) 2026/1818
 
 ### Áreas de Alinhamento Automático (✅)
 - **Identificação/SIAC**: DL 82/2019 é totalmente compatível
@@ -140,13 +140,13 @@
 ### Para JURISTA / CONSULTANT
 1. Comece por **LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md** (leitura aprofundada)
 2. Consulte **legislacao_vigente_animais_completa.xlsx** para referência rápida
-3. Identifique pontos de conflito com Regulamento 2023/0447
+3. Identifique pontos de conflito com Regulamento (UE) 2026/1818
 4. Elabore memorando de recomendações legislativas
 
 ### Para GESTOR / EXECUTIVO
 1. Leia **RESUMO_EXECUTIVO_LEGISLACAO.md** (5-10 min)
 2. Identifique áreas críticas em "Lacunas Identificadas"
-3. Use tabelas de "Impacto do Regulamento 2023/0447" para briefing
+3. Use tabelas de "Impacto do Regulamento (UE) 2026/1818" para briefing
 4. Defina prioridades de harmonização
 
 ### Para DESENVOLVEDOR / CIENTISTA DE DADOS
@@ -158,7 +158,7 @@
 ### Para INVESTIGADOR / ACADÉMICO
 1. Consulte **LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md** para contexto histórico
 2. Use referências cruzadas para mapear evolução temporal
-3. Combine com análise de Regulamento 2023/0447 para artigos comparados
+3. Combine com análise de Regulamento (UE) 2026/1818 para artigos comparados
 4. Publique análise de harmonização EU-PT
 
 ---
@@ -176,7 +176,7 @@
 - [ ] Estabelecer protocolo de enforcement interagencial
 
 ### Longo Prazo (6-12 meses)
-- [ ] Harmonização completa com Regulamento 2023/0447
+- [ ] Harmonização completa com Regulamento (UE) 2026/1818
 - [ ] Revisão de Lei 69/2014 (face a questões constitucionais)
 - [ ] Avaliação de implementação de Lei 27/2016
 
@@ -199,7 +199,7 @@
 - [x] 19 diplomas vigentes identificados e catalogados
 - [x] Nenhuma legislação revogada incluída
 - [x] Remissões cruzadas verificadas
-- [x] Impacto Regulamento 2023/0447 documentado
+- [x] Impacto Regulamento (UE) 2026/1818 documentado
 - [x] Lacunas identificadas e documentadas
 - [x] Ficheiros estruturados para análise posterior
 - [x] Validação de status vigência de cada diploma
