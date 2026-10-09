@@ -569,6 +569,8 @@ FICHAS = [
         "problema": [
             "O art. [[Programas de captura, esterilização e devolução ao local de origem]], n.º 1 diz que as câmaras «podem […] autorizar» colónias. Hoje, acima da Portaria, está a Lei 27/2016, cujo art. 4.º diz que o Estado «assegura» a concretização de programas CED para gatos. O RGAC revoga essa lei. O dever legal desaparece e o CED fica dependente da vontade de cada câmara.",
             "O RGBEAC dizia «devem as câmaras municipais […] executar programas». Uma revisora comentou «A Lei 27 diz podem», o que não corresponde ao texto da lei.",
+            "A proposta de resposta da DGAV à MIAR (24.10.2025) conclui que não há contradição insanável entre a Lei 27/2016 e a Portaria 146/2017, porque a matéria dos animais errantes é competência dos municípios. Não analisa o «assegura» do art. 4.º da Lei, que é o argumento central da MIAR. Apoia-se no Código Administrativo de 1940 e na Lei 75/2013, anexo I, art. 33.º, n.º 1, als. ii) e jj), que falam em abate e em animais nocivos (ver P-39).",
+            "A resposta da Direção de Serviços à MIAR (20.10.2025) funda o carácter facultativo do CED no n.º 2 do art. 9.º da Portaria 146/2017. A faculdade está no n.º 1 («podem […] autorizar»). O n.º 2 trata de quem toma a iniciativa.",
         ],
         "proposta": "Manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou por protocolo, programas CED para gatos, sempre que se justifique».",
         "levantado": [
@@ -577,9 +579,13 @@ FICHAS = [
             "ARPA (o CED é dever legal dos municípios, dez. 2022)",
             "Gunther e outros, PNAS 2022, e Boone e outros, 2019 (o CED só resulta com esterilização intensa e contínua)",
             "Comissão Europeia, SWD(2024) 88 (errantes fora do âmbito do Regulamento (UE) 2026/1818)",
+            "MIAR (dez. 2024 a out. 2025): o CED é dever do Estado e as associações não precisam de validação autárquica",
+            "DGAV, proposta de resposta à MIAR (24.10.2025): o CED depende de autorização municipal",
         ],
         "estado": "Aberto",
-        "rel": ["P-20"],
+        "rel": ["P-20",
+            "P-39",
+        ],
     },
     {
         "cod": "P-20",
@@ -749,13 +755,16 @@ FICHAS = [
         "problema": [
             "O artigo usa entidade promotora (a câmara) e entidade responsável (quem gere por protocolo) sem as definir e sem dizer quem responde por quê. Os gatos são registados em nome do município, que fica titular. As despesas são da entidade promotora ou do protocolo (n.º 10).",
             "Não se diz quem responde pelos danos causados por gatos de colónia. A CDU referiu as «questões práticas e de responsabilidade civil» para ter prudência no alargamento do CED.",
+            "Há duas leituras na DGAV sobre o titular dos gatos CED. A proposta de resposta à MIAR (24.10.2025) admite que o CRO ou a associação zoófila sejam titulares, «podendo essa questão ficar definida nos referidos programas CED», com base no DL 82/2019, art. 3.º, al. f), e art. 17.º. A nota jurídica sobre a titularidade (out. 2026) conclui que o titular é o município, pelo DL 82/2019, art. 11.º, n.º 5, e pela entrega obrigatória no CRO (Portaria 146/2017, art. 9.º, n.º 4, al. d)). O art. 17.º é uma isenção de taxa e não um critério de titularidade, e a titularidade não pode ser fixada por um programa. O RGAC segue a segunda leitura (art. [[Situações especiais de registo]], n.º 12).",
         ],
-        "proposta": "Definir as duas entidades no art. [[Definições]] ou no próprio art. [[Programas de captura, esterilização e devolução ao local de origem]], e dizer que o município, como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável.",
+        "proposta": "Definir as duas entidades no art. [[Definições]] ou no próprio art. [[Programas de captura, esterilização e devolução ao local de origem]], e dizer que o município, como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável. Alinhar a posição interna da DGAV antes de responder a outros pedidos sobre a titularidade dos gatos CED.",
         "levantado": [
             "CDU (resposta de 2024)",
             "Análise interna",
             "PCP (proposta ao OE2026)",
             "ARPA (dez. 2022)",
+            "DGAV, proposta de resposta à MIAR (24.10.2025): CRO ou associação podem ser titulares",
+            "MIAR (2024 e 2025): recusa ser titular de animais de rua",
         ],
         "estado": "Aberto",
         "rel": ["P-13", "P-22"],

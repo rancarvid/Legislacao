@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.11"
-DATA_MEMORANDO = "8.10.2026"
+VERSAO_MEMORANDO = "1.12"
+DATA_MEMORANDO = "9.10.2026"
 DATA_LIGACOES = "27.9.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
@@ -514,15 +514,22 @@ TEMA_C = {
                 "cada câmara.",
                 "O RGBEAC dizia «devem as câmaras municipais […] executar programas». Uma revisora comentou «A Lei "
                 "27 diz podem», o que não corresponde ao texto da lei.",
+                "A proposta de resposta da DGAV à MIAR (24.10.2025) conclui que não há contradição insanável entre a Lei 27/2016 e a Portaria 146/2017, porque a matéria dos animais errantes é competência dos municípios. Não analisa o «assegura» do art. 4.º da Lei, que é o argumento central da MIAR. Apoia-se no Código Administrativo de 1940 e na Lei 75/2013, anexo I, art. 33.º, n.º 1, als. ii) e jj), que falam em abate e em animais nocivos (ver C-19).",
+                "A resposta da Direção de Serviços à MIAR (20.10.2025) funda o carácter facultativo do CED no n.º 2 do art. 9.º da Portaria 146/2017. A faculdade está no n.º 1 («podem […] autorizar»). O n.º 2 trata de quem toma a iniciativa.",
             ],
             "proposta": "Manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou "
                         "por protocolo, programas CED para gatos, sempre que se justifique».",
             "levantado": ["ENAE, p. 35 («Os programas CED não estão instituídos em todo o território»)",
                           "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)",
                           "Gunther e outros, PNAS 2022, e Boone e outros, 2019 (o CED só resulta com esterilização intensa e contínua)",
-                          "Comissão Europeia, SWD(2024) 88 (errantes fora do âmbito do Regulamento (UE) 2026/1818)"],
+                          "Comissão Europeia, SWD(2024) 88 (errantes fora do âmbito do Regulamento (UE) 2026/1818)",
+                "MIAR (dez. 2024 a out. 2025): o CED é dever do Estado e as associações não precisam de validação autárquica",
+                "DGAV, proposta de resposta à MIAR (24.10.2025): o CED depende de autorização municipal",
+            ],
             "estado": "Aberto",
-            "rel": ["C-02"],
+            "rel": ["C-02",
+                "C-19",
+            ],
         },
         {
             "cod": "C-02",
@@ -659,10 +666,14 @@ TEMA_C = {
                 "titular. As despesas são da entidade promotora ou do protocolo (n.º 10).",
                 "Não se diz quem responde pelos danos causados por gatos de colónia. A CDU referiu as «questões "
                 "práticas e de responsabilidade civil» para ter prudência no alargamento do CED.",
+                "Há duas leituras na DGAV sobre o titular dos gatos CED. A proposta de resposta à MIAR (24.10.2025) admite que o CRO ou a associação zoófila sejam titulares, «podendo essa questão ficar definida nos referidos programas CED», com base no DL 82/2019, art. 3.º, al. f), e art. 17.º. A nota jurídica sobre a titularidade (out. 2026) conclui que o titular é o município, pelo DL 82/2019, art. 11.º, n.º 5, e pela entrega obrigatória no CRO (Portaria 146/2017, art. 9.º, n.º 4, al. d)). O art. 17.º é uma isenção de taxa e não um critério de titularidade, e a titularidade não pode ser fixada por um programa. O RGAC segue a segunda leitura (art. 70.º, n.º 12).",
             ],
             "proposta": "Definir as duas entidades no art. 3.º ou no próprio art. 86.º, e dizer que o município, "
-                        "como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável.",
-            "levantado": ["CDU (resposta de 2024)", "Análise interna", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)"],
+                        "como titular, responde nos termos gerais, com direito de regresso sobre a entidade responsável. Alinhar a posição interna da DGAV antes de responder a outros pedidos sobre a titularidade dos gatos CED.",
+            "levantado": ["CDU (resposta de 2024)", "Análise interna", "PCP (proposta ao OE2026)", "ARPA (dez. 2022)",
+                "DGAV, proposta de resposta à MIAR (24.10.2025): CRO ou associação podem ser titulares",
+                "MIAR (2024 e 2025): recusa ser titular de animais de rua",
+            ],
             "estado": "Aberto",
             "rel": ["T-13", "C-04"],
         },
@@ -1194,6 +1205,8 @@ STAKEHOLDERS = [
     ('Conservação da natureza', 'Loss, Will e Marra, Nature Communications 4:1396', '2013', 'C',
      'Nos EUA, os gatos sem dono causam a maior parte da mortalidade de fauna atribuída a gatos. Citação: «Un-owned cats, as opposed to owned pets, cause the majority of this mortality.» (São os gatos sem dono, e não os que têm dono, que causam a maior parte desta mortalidade.)',
      'https://www.nature.com/articles/ncomms2380'),
+    ("Administração pública", "DGAV, proposta de resposta à MIAR", "24.10.2025", "C", "O CED depende de autorização da câmara municipal (Portaria 146/2017, art. 9.º, n.ºs 1 e 2) e não há contradição insanável com a Lei 27/2016, por a matéria dos errantes ser competência dos municípios (Código Administrativo, art. 49.º; Lei 75/2013, anexo I, art. 33.º, n.º 1, als. ii) e jj)). O CRO e as associações zoófilas podem ser titulares no SIAC, «podendo essa questão ficar definida nos referidos programas CED». Não analisa o art. 4.º da Lei 27/2016.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf"),
+    ("ONG e associações de proteção animal", "MIAR, Movimento de Intervenção em Animais de Rua", "2024 e 2025", "C", "O CED é dever do Estado (Lei 27/2016, arts. 2.º, n.º 3, e 4.º) e a Portaria não o pode tornar facultativo. As associações não precisam de validação autárquica. Recusa ser titular de animais de rua e pede registo com indicação do município e da associação que esterilizou. Sem transponder, não pode candidatar as despesas aos avisos.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf"),
 ]
 
 # Dominios de imprensa: o gerador recusa gerar se alguma fonte do Anexo B for destes dominios.
@@ -1341,7 +1354,8 @@ BIBLIOGRAFIA = [
     ("Legislação e regulamentos", "Município de Setúbal, Regulamento de Saúde e Bem-Estar Animal (RSBEAMS), aprovado pela Assembleia Municipal em 26.6.2020.", "https://www.mun-setubal.pt/wp-content/uploads/2020/07/RSBEAMS-2020.pdf", "CROAC"),
     ("Legislação e regulamentos", "Município de Coimbra, Aviso n.º 6348/2023, Diário da República, 2.ª série, n.º 61, de 27.3.2023.", "https://files.diariodarepublica.pt/gratuitos/2s/2023/03/2S061A0000S00.pdf", "Termo de Entrega"),
     ("Jurisprudência", "Tribunal da Relação do Porto, acórdão de 8.5.2024, proc. 11/21.2GEVFR.P1.", "https://www.dgsi.pt/jtrp.nsf/56a6e7121657f91e80257cda00381fdf/703e8b815ea39ece80258b34004b8157", "11/21.2GEVFR.P1"),
-    ("Legislação e regulamentos", "Projeto de Lei n.º 612/XVII/1.ª (Bloco de Esquerda), de 5.5.2026: acorrentamento, alojamento, dispositivos coercivos e Plano Nacional pelo Bem-Estar dos Animais de Companhia.", "repositório: Projetos de lei/PJL 612-XVII BE - acorrentamento e dispositivos coercivos.pdf", ""),
+    ("Projetos e iniciativas legislativas", "Projeto de Lei n.º 612/XVII/1.ª (Bloco de Esquerda), de 5.5.2026: acorrentamento, alojamento, dispositivos coercivos e Plano Nacional pelo Bem-Estar dos Animais de Companhia.", "repositório: Projetos de lei/PJL 612-XVII BE - acorrentamento e dispositivos coercivos.pdf", ""),
+    ("Documentos oficiais, estratégias e relatórios", "DGAV, proposta de resposta à MIAR sobre esterilizações CED em concelhos sem programa, 24.10.2025, com a correspondência da MIAR de 3.12.2024 a 21.10.2025 e a resposta da Direção de Serviços de 20.10.2025.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf", ""),
     # --- Documentos internos
     ("Documentos de trabalho do grupo", "Contributos dos médicos veterinários municipais, reunião de Santarém, 6.3.2026.",
      "repositório: Contributos MVM.docx", ""),
@@ -1362,4 +1376,5 @@ REGISTO_ALTERACOES = [
     ("1.9", "2.10.2026", "Ficha T-19: nada diz quem é titular quando o animal não tem proprietário. A definição da al. f) do art. 3.º do DL 82/2019 pressupõe dono ou possuidor com animus, e o RGAC só fecha a lacuna no CED. A ficha qualifica a proposta da T-01: repor o critério do DL 82/2019 não resolve o animal sem dono."),
     ("1.10", "8.10.2026", "Recolha de errantes por particulares e estatuto de quem acolhe. Fichas novas: T-20 (quem acolhe um animal errante pode ficar sem saída lícita), C-18 (a definição de animal errante passa a abranger qualquer animal não identificado) e C-19 (a Lei 75/2013 ainda atribui às câmaras o abate de canídeos e gatídeos). Fichas T-14 e T-15 completadas: o RGAC omite a entrega pelo particular prevista no n.º 2 do art. 7.º da Portaria 146/2017, torna a captura exclusiva das câmaras e tem duas alíneas contraditórias no art. 140.º, n.º 2. Fontes novas: Lei 75/2013, regulamentos de Setúbal e Coimbra, acórdão do TRP de 8.5.2024."),
     ("1.11", "8.10.2026", "Fichas novas P-01 (a amarração no domicílio fica sem duração máxima nem requisitos verificáveis, com a condenação confirmada pelo TRP em 8.5.2024 por amarração diária de um cão) e A-01 (duas normas diferentes sobre que espécies são animais de companhia, arts. 2.º e 4.º). Lapso L-10 no art. 19.º. Acórdão do TRP de 8.5.2024 acrescentado às fichas T-03, T-04 e T-13. Bibliografia: Projeto de Lei n.º 612/XVII/1.ª."),
+    ("1.12", "9.10.2026", "Fichas C-01 e C-08 completadas com a proposta de resposta da DGAV à MIAR (24.10.2025): não analisa o art. 4.º da Lei 27/2016 e admite que o CRO ou a associação sejam titulares dos gatos CED, ao contrário da nota jurídica sobre a titularidade e do RGAC. Anexo B: posições da DGAV (24.10.2025) e da MIAR. O Projeto de Lei n.º 612/XVII/1.ª passa para o grupo de projetos e iniciativas legislativas da bibliografia."),
 ]
