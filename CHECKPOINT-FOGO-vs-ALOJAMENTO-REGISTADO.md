@@ -5,7 +5,7 @@ refere-se a este tema — os limites de detenção por fogo do art.º 3.º do DL
 a lotação dos alojamentos registados ao abrigo do art.º 3.º-A do DL n.º 276/2001. Convenção fixada em
 25.9.2026; vale entre sessões.
 
-**Estado em 28.9.2026**: análise concluída e substancialmente aprofundada. Documento Word em
+**Estado em 9.10.2026**: ver PARTE 0-D (três documentos novos e pesquisa no STA). Estado anterior, em 28.9.2026: análise concluída e substancialmente aprofundada. Documento Word em
 **63 páginas** — `criador informal/Estudo_Limites_por_Fogo.docx`, gerado por
 `criador informal/_estudo_fogo.py` e registado em `criador informal/gerar_memorando.py`.
 Ramo de trabalho: `claude/update-regulations-document-lKSWW` (PR #28).
@@ -37,6 +37,84 @@ residual em que a resposta é afirmativa.**
    registado. Registar não isenta.
 4. **Caso residual**: quem tem o alojamento registado mas mantém os animais integrados na casa, como
    animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima de seis.
+
+---
+
+## PARTE 0-D — Estado em 9.10.2026: três documentos novos e pesquisa no STA
+
+O utilizador carregou em `criador informal/` três ficheiros (commit `c4bb39c`). **A resposta à questão
+central não muda.** Mudam o que o estudo pode dizer sobre a prática administrativa e a parte histórica.
+Tudo o que segue foi levado ao Word em 9.10.2026, por ordem do utilizador (pontos 2, 6.8, 11.6, 12, 15.7,
+17.1, C.2 e C.4).
+
+### D.1 `DL314.pdf` — informação jurídica do ICNF de 2022 (no nosso sentido)
+
+ICNF, I. P., Gabinete de Apoio Jurídico e Contencioso, **Informação interna n.º I-013109/2022, de
+16.5.2022**, processo P-020019/2022, «Aplicação do artigo 3º do DL 314/2003 aos alojamentos de animais de
+companhia». Logótipo do ICNF na primeira página. Pedido do DBEAC (Alexandra Pereira), surgido nos planos
+de controlo de alojamentos. Conclusão: «não há lugar para a aplicação do Decreto-Lei nº314/2003 em
+conjugação do Decreto-Lei nº 276/2001, relativamente à limitação do número de animais imposta pelo artigo
+3º do Decreto-lei nº 314/2003».
+
+- **Primeiro pronunciamento jurídico localizado da autoridade então competente** que resolve a questão.
+  Não publicado; despacho de concordância desconhecido. A frase «não há parecer nem orientação
+  administrativa» do estudo (cap. 2, 12 e 17.1) foi corrigida.
+- Fundamentos: capacidade declarada na comunicação prévia; anexo III admite «até dez animais» por recinto
+  exterior. **Não usa o conceito de fogo.**
+- Fragilidades: entrega ao médico veterinário responsável, com o interessado, a fixação do número, sem base
+  legal; descreve mal o n.º 4 («prédios, sejam urbanos ou mistos»); refere a comunicação prévia ao
+  «artigo 3º».
+- Elemento novo: o ruído dos alojamentos é ruído de vizinhança (Regulamento Geral do Ruído), fiscalizado
+  pelas autoridades policiais.
+
+### D.2 `DúvidasAlojamentoAnimais.docx` — entendimento contrário dos serviços do ICNF
+
+Metadados: autor Francisco José Lamelas Ahrens Novaes, 21.12.2025. O conteúdo pressupõe a competência do
+ICNF, cessada em 1.7.2025: é anterior. Ponto 2 **sem resposta jurídica** — é posição dos serviços:
+diplomas «complementares e não autónomas»; o DL 276/2001 não fixa número porque as questões sanitárias
+estão «salvaguardadas» pelo DL 314/2003; o médico veterinário do alojamento não pode autorizar acima do que
+a autoridade sanitária concelhia autoriza; propõem rever o DL 314/2003 «para diferenciar os tipos de prédios
+urbanos e a sua lotação máxima». Levado ao **6.8**, com observação: a premissa sanitária responde-se com o
+n.º 1 do art.º 3.º, que se aplica sempre.
+
+Ponto 1 com resposta jurídica: o ICNF não deve titular alojamentos com edificações ilegais; propõe exigir o
+alvará de utilização; reposição da legalidade é da câmara (art.º 102.º do RJUE); demolição ou cessação de
+utilização determinariam «a caducidade do licenciamento». Levado ao **15.7**.
+
+### D.3 `DL 314-2003 - acórdão tribunal.pdf` — STA, 7.3.2006, proc. 0794/05 (Palmela)
+
+O título do ficheiro engana: o acórdão não trata do DL 314/2003. Canil para 100 cães (hospedagem e criação
+própria) licenciado em zona de PDM «dominantemente ao uso residencial» — **nulo** (art.º 103.º do DL
+380/99), com o art.º 115.º do RGEU. Ato de 30.12.1999, anterior ao DL 314/2003: **o silêncio sobre o
+diploma não tem significado**. A capacidade pesou: «com a capacidade de cem animais é uma unidade de
+prestação de serviços de dimensão relevante». Levado ao **11.6** e ao **15.7** (a lotação de canis em zona
+habitacional controla-se pelo uso do solo, pelo RGEU e pelo ruído).
+
+Para a PARTE 0-C: os recorrentes invocaram a falta de audição da Direcção-Geral da Pecuária (n.º 1 do
+art.º 21.º do DL 317/85 e DL 91/2001) — facto L: não foi ouvida, «admitido por acordo». O STA **não
+decidiu** o ponto (a nulidade tornou-o inútil). A reserva de C.3 continua aberta.
+
+### D.4 Pesquisa no STA (dgsi, base jsta, termos «canil», «032630», «6065», «estabelecimento insalubre»)
+
+| Acórdão | O que diz | Utilidade |
+|---|---|---|
+| STA 23.9.1993, proc. 032630, Nascimento Costa | Recusa suspender «acto de autoridade de saúde que determinou o encerramento de um canil» (água de poços, ruído, saneamento). Recorrida: Autoridade de Saúde Concelhia de Braga. Base: CRP 64.º e 66.º, CC 70.º. **Só sumário.** Reclamação indeferida em 18.11.1993 | Via de **polícia sanitária pela autoridade de saúde**, antes de 2001. É o acórdão citado pelo de 2006 |
+| STA 13.6.1952, proc. 003887, e Pleno 16.7.1953, proc. 000702, Pita e Castro | Liga Nacional de Defesa dos Animais sujeita às «limitações e proibições consignadas na Portaria n. 6065». Normas: Portaria 6065 de **30.3.1929** (arts. 4.º, 7.º, 30.º, 41.º), Lei 1453 de 26.7.1923 (art.º 9.º), Decreto 8364 de 25.8.1922 (tabela II), CA 1940 (arts. 49.º n.º 14, 51.º n.º 23, 441.º) | Antes de 1985, o canil, mesmo associativo, era **estabelecimento insalubre, incómodo ou perigoso** |
+| STA 19.2.1987, proc. 022645 | Câmara licencia aviários ao abrigo da Portaria 6065 (Apêndice DR de 7.5.1993, p. 920) | Competência municipal de licenciamento sanitário |
+| STA 28.9.1993, proc. 031745 | Portaria 6065 tacitamente derrogada para a suinicultura; art.º 30.º não serve para encerrar pocilgas | A Portaria cedia perante regimes especiais — hipótese a testar para canis com o DL 317/85 |
+| STA 15.12.2004, proc. 0992/04, e Pleno 16.12.2015, proc. 0517/14 (Viseu) | Canil indeferido pela câmara em 8.6.2000; consultados o delegado de saúde e «a Direção Regional de Agricultura da Beira Litoral» | Prática do licenciamento de canis antes de 2001 |
+
+**Data da Portaria n.º 6065**: **30.3.1929** em quatro registos do STA. O «11 de Abril de 1929» do acórdão de
+2006 (alegações dos recorrentes) será data de publicação ou erro. Corrige a dúvida de C.6.
+
+### D.5 Pendentes novos
+
+1. Texto integral do STA de 23.9.1993 (proc. 032630): «Ano da Publicação: 93»; procurar no Apêndice ao DR.
+2. Base legal da autoridade de saúde para encerrar em 1993 (anterior ao DL n.º 336/93?) e hoje (DL n.º
+   82/2009). **Não verificado.** Pode ser via atual para o n.º 1 do art.º 3.º do DL 314/2003.
+3. Decreto n.º 8364, de 25.8.1922, tabela II, e Lei n.º 1453, de 26.7.1923 — acrescentar à lista de C.6.
+4. **O LibreOffice não funcionou nesta sessão** («source file could not be loaded», mesmo com um documento
+   mínimo). O Word foi conferido por extração de texto; **o número de páginas não foi confirmado**.
 
 ---
 
@@ -532,7 +610,7 @@ Por ordem de utilidade. Nenhum é obtenível pela rota ELI, que só serve diplom
 | # | Diploma | Porque é preciso | Onde deve estar |
 |---|---|---|---|
 | 1 | **Portaria n.º 961/85, de 28 de dezembro** | É a peça central em falta. Deve conter o procedimento e as condições dos canis e gatis antes de 2001, a norma que sujeitava os canis particulares a aprovação prévia da Direcção-Geral da Pecuária (ver reserva em C.3) e, possivelmente, os limites numéricos anteriores a 2001 (ver C.5) | DR, I série, de 28.12.1985. Número do DR por apurar — dezembro de 1985 |
-| 2 | **Portaria n.º 6065, de 30 de março de 1929** — Instruções sobre licenciamento sanitário de estabelecimentos | Tabela anexa que classifica os canis de reprodução como 1.ª classe; art.º 4.º sobre localização; art.º 30.º sobre encerramento pela câmara. É a base da via municipal descrita em C.4 e conhece-se só por citação do Provedor de Justiça | Diário do Governo de 30.3.1929. Anterior ao DR; pode não estar digitalizado no sítio do DR |
+| 2 | **Portaria n.º 6065, de 30 de março de 1929** (data confirmada em quatro registos do STA; ver D.4) — Instruções sobre licenciamento sanitário de estabelecimentos | Tabela anexa que classifica os canis de reprodução como 1.ª classe; art.º 4.º sobre localização; art.º 30.º sobre encerramento pela câmara. É a base da via municipal descrita em C.4 e conhece-se só por citação do Provedor de Justiça | Diário do Governo de 30.3.1929. Anterior ao DR; pode não estar digitalizado no sítio do DR |
 | 3 | **Decreto-Lei n.º 317/85, de 2 de agosto — texto integral** | Lidos apenas os arts. 14.º a 21.º. Falta o resto, designadamente o capítulo inicial e o art.º 22.º e seguintes, e confirmar se há limites numéricos | DR, I série, n.º 176, de 2.8.1985, pp. 2326 e ss. **Já descarregado** em `dr1985_176.pdf`; é digitalização sem texto, lê-se à vista |
 | 4 | **Portaria n.º 1427/2001 — arts. 22.º e seguintes** | O art.º 22.º é o que os arts. 2.º e 3.º mandam observar para o licenciamento de canis e gatis. Conhece-se o n.º 1, que atribui o licenciamento às câmaras nos termos do DL n.º 370/99, e falta o resto do regime | DR, I série-B, n.º 289, de 15.12.2001, pp. 8283-8284. **Já descarregado** em `p1427.pdf` |
 | 5 | **Decreto-Lei n.º 445/91, de 20 de novembro**, na redação do DL n.º 250/94 | Regime do licenciamento municipal de obras particulares anterior ao DL n.º 555/99. É a via urbanística de C.4 | DR de 20.11.1991 |

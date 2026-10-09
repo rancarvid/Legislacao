@@ -123,9 +123,12 @@ def construir(doc):
         '9.5.',
     ])
     nota(doc, [
-        'Não se localizou decisão judicial, parecer publicado nem orientação administrativa que resolva '
-        'expressamente a questão. A conclusão é interpretativa e o capítulo 17 declara os seus limites e '
-        'enumera as questões ainda por responder.'])
+        'Não se localizou decisão judicial nem parecer publicado que resolva expressamente a questão. '
+        'Localizou-se, porém, uma **informação interna do gabinete jurídico do ICNF, I. P., de 16 de maio '
+        'de 2022**, que conclui no mesmo sentido deste estudo, por fundamentos diferentes, e um '
+        '**entendimento dos serviços do mesmo instituto em sentido contrário** (capítulos 12 e 6.8). A '
+        'conclusão continua a ser interpretativa e o capítulo 17 declara os seus limites e enumera as '
+        'questões ainda por responder.'])
 
     # ------------------------------------------------------------------ 3
     pagebreak(doc)
@@ -482,6 +485,36 @@ def construir(doc):
          'normas de bem-estar, e que **não faz qualquer referência ao Decreto-Lei n.º 314/2003 nem ao '
          'programa da raiva**. A ressalva da al. p) apresenta-se, assim, com maior verosimilhança como uma '
          'das «correções de inexatidões» do que como ato de delimitação pensado.')
+
+    h3(doc, '6.8  Um entendimento administrativo documentado')
+    para(doc,
+         'Num documento interno de perguntas dos serviços do ICNF, I. P., sobre alojamentos, os serviços '
+         'expõem o seu entendimento sobre a aplicação do artigo 3.º aos alojamentos, com e sem fins '
+         'lucrativos. O ficheiro tem a data de 21 de dezembro de 2025, mas o conteúdo pressupõe ainda a '
+         'competência daquele instituto, que cessou em 1 de julho de 2025, pelo que deve ser anterior. '
+         'Este ponto não tem resposta jurídica: é a posição dos próprios serviços.')
+    citacao(doc, [
+        'Não existe referência ao número máximo de animais a alojar em nenhuma das atualizações do D.L. '
+        'n.º 267/2001 [sic], porque este contempla as dimensões mínimas para garantir o bem-estar animal, '
+        'estando salvaguardadas as questões sanitárias pelo D.L. n.º 314/2003, de 17 de Dezembro;',
+        'O médico veterinário responsável pelo alojamento não deverá poder autorizar o alojamento de '
+        'animais em número superior ao permitido pela autoridade sanitária veterinária concelhia em '
+        'conjunto com a autoridade de saúde, além de poder existir conflito de interesses financeiros '
+        'para este;',
+        'Consideramos que as regras de bem-estar animal definidas pelo D. L. n.º 276/2001 e as regras '
+        'sanitárias definidas pelo D. L. 314/2003, são complementares e não autónomas.',
+    ], 'Serviços do ICNF, I. P., documento interno «Dúvidas alojamento animais», ponto 2.3 e considerandos')
+    para(doc,
+         'Os mesmos serviços propõem que o Decreto-Lei n.º 314/2003 seja revisto «para diferenciar os '
+         'tipos de prédios urbanos e a sua lotação máxima», e sugerem que a autoridade sanitária '
+         'veterinária nacional se pronuncie sobre a harmonização dos dois diplomas.')
+    nota(doc, [
+        '**Observação.** É o elemento administrativo mais forte a favor da aplicação. Não discute a '
+        'unidade de contagem do n.º 2 e lê o limite como limite do prédio urbano. A sua premissa '
+        'sanitária tem resposta no próprio artigo 3.º: o n.º 1 aplica-se sempre ao alojamento registado '
+        '(ver 9.2), pelo que as questões hígio-sanitárias ficam salvaguardadas sem o teto do n.º 2. A '
+        'crítica ao médico veterinário responsável pelo alojamento é procedente, mas atinge a informação '
+        'jurídica de 2022 tratada no capítulo 12, e não a tese deste estudo.'])
 
     # ------------------------------------------------------------------ 7
     pagebreak(doc)
@@ -1549,6 +1582,53 @@ def construir(doc):
         'superiores. Em nenhum deles alguém foi sancionado por criar ou alojar animais sem o título de '
         'acesso, e em nenhum a lotação de um estabelecimento foi fixada a partir do artigo 3.º.'])
 
+    h3(doc, '11.6  Jurisprudência do Supremo Tribunal Administrativo sobre canis')
+    para(doc,
+         'A pesquisa por «canil» na base do Supremo Tribunal Administrativo devolve um conjunto pequeno de '
+         'decisões, todas fora do âmbito dos dois diplomas em confronto, mas que mostram por que vias o '
+         'Estado controlou os canis antes e depois de 2001.')
+    citacao(doc, [
+        'Na área que o art.º 12.º n.º1 al. a) do PDM de Palmela, ratificado pela Resolução do Conselho '
+        'de Ministros n.º 115/97, de 10 de Abril e publicado no DR I- Série B, de 9.7.97, classifica como '
+        '“ Espaço urbanizável de baixa densidade – B2 ”, definida como área destinada “dominantemente ao '
+        'uso residencial, incluindo os respectivos equipamentos colectivos, comércio e serviços de '
+        'apoio”, a autorização de fazer uma edificação destinada a um canil com capacidade para cem cães '
+        'viola o Plano, sendo nula nos termos do art.º 103.º do DL 380/99, de 22 de Set.',
+    ], 'Acórdão do Supremo Tribunal Administrativo de 7.3.2006, processo n.º 0794/05, relator Rosendo '
+       'José, sumário')
+    citacao(doc, [
+        'III - Não pode suspender-se a eficácia de acto de autoridade de saúde que determinou o '
+        'encerramento de um canil, por se considerar que o mesmo está a degradar o meio ambiente, '
+        'inquinando a água de poços para consumo humano, deteriorando as condições de vida das '
+        'populações próximas, por falta de isolamento sonoro e de saneamento eficiente.',
+    ], 'Acórdão do Supremo Tribunal Administrativo de 23.9.1993, processo n.º 032630, relator '
+       'Nascimento Costa, sumário; entidade recorrida: Autoridade de Saúde Concelhia de Braga')
+    citacao(doc, [
+        'As pessoas colectivas de utilidade publica administrativa que tenham por objecto principal a '
+        'protecção dos animais estão sujeitas as limitações e proibições consignadas na Portaria n. 6065.',
+    ], 'Acórdão do Pleno do Supremo Tribunal Administrativo de 16.7.1953, processo n.º 000702, relator '
+       'Pita e Castro, sumário; recorrente: Liga Nacional de Defesa dos Animais')
+    bullets(doc, [
+        'O acórdão de 2006 refere-se a um ato de licenciamento de 30 de dezembro de 1999, anterior ao '
+        'Decreto-Lei n.º 314/2003. O silêncio sobre este diploma não tem, por isso, significado.',
+        'O de 1993 só está disponível em sumário. A base legal indicada é a Constituição (artigos 64.º e '
+        '66.º) e o artigo 70.º do Código Civil. É o próprio acórdão de 2006 que o cita.',
+        'O de 1953 confirma, em Pleno, o acórdão da 1.ª Secção de 13.6.1952, processo n.º 003887. As '
+        'normas indicadas são a Portaria n.º 6065, de 30 de março de 1929 (artigos 4.º, 7.º, 30.º e 41.º), '
+        'a Lei n.º 1453, de 1923, o Decreto n.º 8364, de 25 de agosto de 1922, e o Código Administrativo '
+        'de 1940. O canil de uma associação de proteção animal era licenciado como estabelecimento '
+        'insalubre, incómodo ou perigoso.',
+        'Os acórdãos de 15.12.2004, processo n.º 0992/04, e do Pleno de 16.12.2015, processo n.º 0517/14, '
+        'tratam de responsabilidade civil por um canil cujo projeto foi indeferido pela Câmara Municipal '
+        'de Viseu em 8 de junho de 2000. Dos factos provados consta que foi consultado o delegado de saúde '
+        'e «foi ouvida a Direção Regional de Agricultura da Beira Litoral».',
+    ])
+    nota(doc, [
+        '**Observação.** Nenhuma destas decisões aplica o Decreto-Lei n.º 314/2003 ou o Decreto-Lei n.º '
+        '276/2001. Em todas, o controlo do canil fez-se por outras vias: o licenciamento sanitário de '
+        'estabelecimentos (1929), a polícia sanitária da autoridade de saúde e o ordenamento do '
+        'território. Servem a parte histórica do capítulo 13 e o ponto 15.7, não a questão central.'])
+
     # ------------------------------------------------------------------ 12
     pagebreak(doc)
     h1(doc, '12.', 'Prática administrativa')
@@ -1573,10 +1653,43 @@ def construir(doc):
         'como «Qual o número máximo de animais que é possível alojar **numa habitação**?». Nunca associa o '
         'limite à criação.',
     ])
+    para(doc,
+         '**ICNF, I. P., Gabinete de Apoio Jurídico e Contencioso, Informação interna n.º I-013109/2022, '
+         'de 16 de maio de 2022**, processo P-020019/2022, com o assunto «Aplicação do artigo 3º do DL '
+         '314/2003 aos alojamentos de animais de companhia». Responde a um pedido do Departamento de '
+         'Bem-Estar dos Animais de Companhia, surgido na execução dos planos de controlo de alojamentos, '
+         'e conclui:')
+    citacao(doc, [
+        'De todos exposto e salvo melhor entendimento, não há lugar para a aplicação do Decreto-Lei '
+        'nº314/2003 em conjugação do Decreto-Lei nº 276/2001, relativamente à limitação do número de '
+        'animais imposta pelo artigo 3º do Decreto-lei nº 314/2003.',
+        'Compete ao interessado conjuntamente com o médico veterinário a indicação do número de animais '
+        'que pretende alojar e compete ainda ao segundo, assegurar a observância e o cumprimento das '
+        'normas tendentes à manutenção do bem-estar dos animais alojados.',
+    ], 'ICNF, Informação interna n.º I-013109/2022, conclusão, p. 7')
+    para(doc,
+         'Os fundamentos são dois. A comunicação prévia indica a capacidade máxima e o número de animais '
+         'detidos. E o anexo III admite, em recintos exteriores, «até dez animais», pelo que, «se fosse '
+         'entendimento do legislador a limitação do número de animais por conjugação do artigo 3º do '
+         'Decreto-Lei nº 314/2003, esta estipulação de alojamento não constaria do Decreto-lei nº '
+         '276/2001». A informação remete ainda o ruído dos alojamentos para o Regulamento Geral do Ruído, '
+         'como ruído de vizinhança, cuja fiscalização cabe às autoridades policiais.')
     nota(doc, [
-        '**Observação.** A prática administrativa é convergente e não cruza os dois planos. Não vale como '
-        'fonte de direito, mas vale como prática reiterada da autoridade competente e dos municípios, e é '
-        'elemento a ponderar na interpretação.'])
+        '**Observação.** A prática administrativa publicada é convergente e não cruza os dois planos. Não '
+        'vale como fonte de direito, mas vale como prática reiterada da autoridade competente e dos '
+        'municípios, e é elemento a ponderar na interpretação.',
+        'A informação de 2022 é o primeiro pronunciamento jurídico localizado da autoridade então '
+        'competente que resolve expressamente a questão central, e resolve-a no sentido deste estudo. Não '
+        'está publicada e não se sabe se obteve despacho de concordância. Os fundamentos coincidem com os '
+        'dos pontos 7.3 e 8, mas não usam o conceito de fogo, que é aqui o decisivo.',
+        'Tem três fragilidades. Atribui ao médico veterinário responsável, com o interessado, a fixação do '
+        'número de animais, sem indicar base legal: a capacidade é declarada pelo interessado (al. h) do '
+        'n.º 1 do artigo 3.º-A do Decreto-Lei n.º 276/2001) e limitada materialmente pelo anexo III. '
+        'Descreve o artigo 3.º do Decreto-Lei n.º 314/2003 como limitando os animais «em prédios, sejam '
+        'urbanos ou mistos», com o médico veterinário municipal a admitir número superior, quando o n.º 4 '
+        'não fixa teto nem prevê essa intervenção. E refere os elementos da comunicação prévia ao «artigo '
+        '3º». Dentro do mesmo instituto, a informação é contrariada pelo entendimento dos serviços '
+        'exposto em 6.8.'])
 
     # ------------------------------------------------------------------ 13
     pagebreak(doc)
@@ -2071,6 +2184,30 @@ def construir(doc):
         'falta de capacidade de acolhimento — «supostamente porque não tinha condições para receber ou '
         'encaminhar todos aqueles animais» (00:35:08). É exactamente o custo que este ponto identifica como '
         'recaindo sobre quem executa, agora com confirmação em fonte primária.'])
+    para(doc,
+         'A mesma via aparece na jurisprudência. Em 2006, o Supremo Tribunal Administrativo declarou nulo '
+         'o licenciamento de um canil com capacidade para cem cães, com hospedagem e criação própria, numa '
+         'zona do plano diretor municipal destinada dominantemente ao uso residencial (ver 11.6). A '
+         'capacidade pesou na decisão:')
+    citacao(doc, [
+        'Qualquer pessoa sensata entende que uma instalação para prestar cuidados a cães de terceiros e '
+        'criar e cuidar de cães próprios, com a capacidade de cem animais é uma unidade de prestação de '
+        'serviços de dimensão relevante e que tem efeitos necessários no ambiente circundante, desde logo '
+        'porque não é possível insonorizar os ruídos resultantes de todas as situações que vão ocorrer na '
+        'prestação deste tipo de serviço.',
+    ], 'Acórdão do Supremo Tribunal Administrativo de 7.3.2006, processo n.º 0794/05')
+    para(doc,
+         'Do lado da Administração, a resposta jurídica dada aos serviços do ICNF, I. P., sobre '
+         'alojamentos com edificações ilegais vai no mesmo sentido: a reposição da legalidade urbanística '
+         'cabe à câmara municipal, nos termos dos artigos 102.º e seguintes do regime jurídico da '
+         'urbanização e edificação, e a demolição ou a cessação da utilização determinaria, «do ponto de '
+         'vista jurídico, salvo melhor opinião», a caducidade do título do alojamento.')
+    nota(doc, [
+        '**Observação.** A lotação de um canil de grande dimensão em zona habitacional controla-se pelo '
+        'uso do solo, pelo artigo 115.º do Regulamento Geral das Edificações Urbanas e pelo ruído, e não '
+        'pelo n.º 2 do artigo 3.º do Decreto-Lei n.º 314/2003. A resposta deste estudo não deixa, por '
+        'isso, o alojamento registado sem controlo de dimensão: desloca esse controlo para os planos onde '
+        'ele já se fazia.'])
 
     # ------------------------------------------------------------------ 16
     h1(doc, '16.', 'O caso residual')
@@ -2142,8 +2279,10 @@ def construir(doc):
 
     h2(doc, '17.1', 'Limites materiais da análise')
     numlist(doc, [
-        'Não há decisão judicial, parecer publicado nem orientação administrativa que resolva '
-        'expressamente a questão central. A conclusão é interpretativa.',
+        'Não há decisão judicial nem parecer publicado que resolva expressamente a questão central. Há '
+        'uma informação interna do gabinete jurídico do ICNF, I. P., de 2022, no sentido deste estudo, e '
+        'um entendimento contrário dos serviços do mesmo instituto (capítulos 12 e 6.8); nenhum dos dois '
+        'está publicado. A conclusão é interpretativa.',
         'O elemento textual mais incómodo é a al. c) do n.º 3 do artigo 14.º — «habitações **e terrenos '
         'anexos**». A resposta proposta é que essa alínea delimita o âmbito do artigo 3.º no seu '
         'conjunto, e que o n.º 1 alcança efetivamente o quintal; o que não faz é converter o «fogo» do '
@@ -2419,6 +2558,15 @@ def construir(doc):
         '**Acórdão do Tribunal Judicial da Comarca do Porto, juízo central criminal de Matosinhos, de '
         '9.9.2026** — abrigos de Santo Tirso. **Texto não obtido**; usado no ponto 9.5 apenas por notícia '
         'da leitura oral. Decisão objeto de recurso anunciado.',
+        '**Acórdão do Supremo Tribunal Administrativo de 7.3.2006**, processo n.º 0794/05, relator Rosendo '
+        'José. Texto integral no Apêndice ao Diário da República (cópia no repositório: «DL 314-2003 - '
+        'acórdão tribunal.pdf»). Citado em 11.6 e 15.7.',
+        '**Acórdão do Supremo Tribunal Administrativo de 23.9.1993**, processo n.º 032630, relator '
+        'Nascimento Costa. Só sumário na base de dados. Citado em 11.6.',
+        '**Acórdãos do Supremo Tribunal Administrativo de 13.6.1952**, processo n.º 003887, e **do Pleno '
+        'de 16.7.1953**, processo n.º 000702, relator Pita e Castro. Só sumário. Citados em 11.6.',
+        '**Acórdãos do Supremo Tribunal Administrativo de 15.12.2004**, processo n.º 0992/04, e **do Pleno '
+        'de 16.12.2015**, processo n.º 0517/14. Citados em 11.6.',
     ])
 
     h2(doc, 'C.3', 'Doutrina')
@@ -2447,6 +2595,13 @@ def construir(doc):
         '**Município do Cartaxo** — Regulamento n.º 181/2025, de 31 de janeiro, Diário da República, 2.ª '
         'série, n.º 22; artigo 13.º.',
         '**Comunidade Intermunicipal do Alto Minho** — perguntas frequentes sobre animais de companhia.',
+        '**ICNF, I. P., Gabinete de Apoio Jurídico e Contencioso, Informação interna n.º I-013109/2022, '
+        'de 16.5.2022**, processo P-020019/2022. **Lida integralmente** (cópia no repositório: '
+        '«DL314.pdf»). Não publicada. Tratada em 12.',
+        '**Serviços do ICNF, I. P., documento interno «Dúvidas alojamento animais»**, com respostas '
+        'jurídicas aos pontos 1 e 3. Ficheiro datado de 21.12.2025, de conteúdo anterior a 1.7.2025. '
+        '**Lido integralmente** (cópia no repositório: «DúvidasAlojamentoAnimais.docx»). Tratado em 6.8 '
+        'e 15.7.',
         '**Parecer jurídico externo obtido pela Câmara Municipal de Santo Tirso (2018)** — conclui que «as '
         'câmaras não têm competência para encerrar abrigos de animais». **Texto não obtido**; conhecido '
         'por referência na imprensa. Tratado em 9.5.',
