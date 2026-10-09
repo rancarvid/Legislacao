@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.12"
+VERSAO_MEMORANDO = "1.13"
 DATA_MEMORANDO = "9.10.2026"
 DATA_LIGACOES = "27.9.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -517,7 +517,7 @@ TEMA_C = {
                 "A proposta de resposta da DGAV à MIAR (24.10.2025) conclui que não há contradição insanável entre a Lei 27/2016 e a Portaria 146/2017, porque a matéria dos animais errantes é competência dos municípios. Não analisa o «assegura» do art. 4.º da Lei, que é o argumento central da MIAR. Apoia-se no Código Administrativo de 1940 e na Lei 75/2013, anexo I, art. 33.º, n.º 1, als. ii) e jj), que falam em abate e em animais nocivos (ver C-19).",
                 "A resposta da Direção de Serviços à MIAR (20.10.2025) funda o carácter facultativo do CED no n.º 2 do art. 9.º da Portaria 146/2017. A faculdade está no n.º 1 («podem […] autorizar»). O n.º 2 trata de quem toma a iniciativa.",
             ],
-            "proposta": "Manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou "
+            "proposta": "Posição desta análise: a leitura que trata o CED como mera faculdade municipal, adotada na resposta da Direção de Serviços à MIAR (20.10.2025) e na proposta de resposta da DGAV (24.10.2025), é um erro de interpretação. O art. 4.º da Lei 27/2016 impõe ao Estado um dever («assegura») e indica o meio de o cumprir: os centros de recolha oficial, que são municipais. A competência municipal identifica quem executa o dever. Não o elimina. O «podem […] autorizar» do art. 9.º, n.º 1 da Portaria 146/2017 refere-se à autorização de cada colónia em local designado e tem de ser lido em conformidade com a Lei, porque são inválidos os regulamentos «desconformes com a Constituição, a lei e os princípios gerais de direito administrativo» (CPA, art. 143.º, n.º 1). O n.º 2 do art. 9.º só trata de quem toma a iniciativa e não pode fundar o carácter facultativo. Para o RGAC: manter pelo menos o nível da Lei 27/2016: «as câmaras municipais asseguram, diretamente ou "
                         "por protocolo, programas CED para gatos, sempre que se justifique».",
             "levantado": ["ENAE, p. 35 («Os programas CED não estão instituídos em todo o território»)",
                           "Livre e PAN (respostas de 2024)", "ARPA (o CED é dever legal dos municípios, dez. 2022)",
@@ -1377,4 +1377,5 @@ REGISTO_ALTERACOES = [
     ("1.10", "8.10.2026", "Recolha de errantes por particulares e estatuto de quem acolhe. Fichas novas: T-20 (quem acolhe um animal errante pode ficar sem saída lícita), C-18 (a definição de animal errante passa a abranger qualquer animal não identificado) e C-19 (a Lei 75/2013 ainda atribui às câmaras o abate de canídeos e gatídeos). Fichas T-14 e T-15 completadas: o RGAC omite a entrega pelo particular prevista no n.º 2 do art. 7.º da Portaria 146/2017, torna a captura exclusiva das câmaras e tem duas alíneas contraditórias no art. 140.º, n.º 2. Fontes novas: Lei 75/2013, regulamentos de Setúbal e Coimbra, acórdão do TRP de 8.5.2024."),
     ("1.11", "8.10.2026", "Fichas novas P-01 (a amarração no domicílio fica sem duração máxima nem requisitos verificáveis, com a condenação confirmada pelo TRP em 8.5.2024 por amarração diária de um cão) e A-01 (duas normas diferentes sobre que espécies são animais de companhia, arts. 2.º e 4.º). Lapso L-10 no art. 19.º. Acórdão do TRP de 8.5.2024 acrescentado às fichas T-03, T-04 e T-13. Bibliografia: Projeto de Lei n.º 612/XVII/1.ª."),
     ("1.12", "9.10.2026", "Fichas C-01 e C-08 completadas com a proposta de resposta da DGAV à MIAR (24.10.2025): não analisa o art. 4.º da Lei 27/2016 e admite que o CRO ou a associação sejam titulares dos gatos CED, ao contrário da nota jurídica sobre a titularidade e do RGAC. Anexo B: posições da DGAV (24.10.2025) e da MIAR. O Projeto de Lei n.º 612/XVII/1.ª passa para o grupo de projetos e iniciativas legislativas da bibliografia."),
+    ("1.13", "9.10.2026", "Ficha C-01: a proposta passa a registar a posição desta análise. A leitura que trata o CED como mera faculdade municipal, adotada pela DGAV nas respostas à MIAR de 20.10.2025 e 24.10.2025, é um erro de interpretação face ao art. 4.º da Lei 27/2016 e ao art. 143.º, n.º 1 do CPA."),
 ]
