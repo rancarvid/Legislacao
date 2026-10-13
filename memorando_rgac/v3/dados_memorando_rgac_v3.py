@@ -1186,6 +1186,7 @@ FICHAS = [
         "problema": [
             "Hoje os deveres dos CRO estão na Lei 27/2016 (art. 3.º) e na Portaria 146/2017 (arts. 7.º a 11.º): captura e recolha, esterilização antes da adoção, encaminhamento para adoção, proibição do abate por sobrelotação e relatório anual de gestão. Nenhum destes dois diplomas tem contraordenações.",
             "A coima só chega por via indireta. O DL 276/2001, art. 68.º, n.º 1, pune a falta de mera comunicação prévia do centro de recolha (al. a)) e o alojamento fora das condições (al. f)). A al. i) pune «O abate em desrespeito das disposições do artigo 19.º», mas o art. 19.º não tem a proibição da Lei 27/2016 e o seu n.º 10 dispõe: «A recolha, captura e abate compulsivo de cães e gatos é regulada por legislação própria». O DL 82/2019, art. 21.º, n.º 1, pune o CRO que deixa sair um animal sem identificação (al. a), com o art. 5.º, n.º 3) e o CRO titular que não regista no SIAC a transmissão ou a morte do animal (al. c), com os arts. 11.º, n.º 5, e 13.º).",
+            "A Lei 92/95 tem uma norma geral. O art. 1.º, n.º 1, proíbe «todas as violências injustificadas contra animais», incluindo os atos que, «sem necessidade», lhes infligem a morte. O art. 12.º, n.º 1, acrescentado pela Lei 6/2022, diz que «As infrações ao disposto na presente lei constituem contraordenação», com coima de 500 a 44 800 euros para pessoa coletiva. Esta norma pode abranger o abate sem necessidade num CRO. A instrução e a decisão cabem à câmara municipal (art. 14.º), que é também quem gere o CRO. O RGAC revoga a Lei 92/95 (art. [[Norma revogatória]], n.º 1, al. a)) e o art. [[Contraordenações]] não tem norma geral.",
             "Hoje os CRO não têm dever de enviar dados à DGAV. A Lei 27/2016, art. 3.º, n.º 9, obriga-os a publicitar o relatório de gestão no primeiro mês de cada ano, e a DGAV faz o relatório nacional «com base» nesses relatórios (n.º 10). O Decreto Regulamentar 4/2025 e o Despacho 2836/2026 repetem esta lógica. Nenhuma destas normas tem sanção. O DL 276/2001, art. 68.º, n.º 1, al. d), só abrange dados pedidos para funções desse decreto-lei. O único reporte com consequência é o financeiro, dos beneficiários de incentivos (Lei 73-A/2025, art. 125.º, n.º 3; Despacho 9102/2026, arts. 14.º e 15.º): revogação do apoio e restituição das verbas.",
             "O município pode ser arguido. O regime das contraordenações económicas equipara os municípios a pequenas empresas (DL 9/2021, anexo, art. 19.º, n.º 4, al. b)). O RGAC remete para o regime geral das contraordenações (art. [[Direito subsidiário]]), que não tem esta regra.",
             "O RGAC resolve uma parte. O art. [[Contraordenações]], n.º 2, al. u), pune a falta de CRO (art. [[Centros de recolha oficial]], n.º 1). Como o CRO passa a ser estabelecimento (art. [[Definições]]), as als. e) a g) abrangem os seus requisitos técnicos e a mera comunicação prévia. Todas as remissões estão em «artigo XX.º».",
@@ -1195,7 +1196,7 @@ FICHAS = [
             "O art. [[Plataforma Nacional de Adoção de Animais de Companhia]] (Plataforma Nacional de Adoção) previa no n.º 6 «contraordenação grave» para quem não registasse os animais na plataforma, incluindo os CRO. O artigo está rasurado nesta versão. O art. [[Contraordenações]] não tem graus de gravidade.",
             "O Regulamento (UE) 2026/1818 manda fixar sanções para as violações do regulamento, «inclusive as aplicáveis ao abandono de cães e gatos pelos operadores», e diz que devem ser «efetivas, proporcionadas e dissuasivas» (art. 32.º, aplicável a partir de 31.8.2028). O abrigo é «qualquer instalação ou estrutura, incluindo as casas particulares, onde são detidos cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes, para efeitos de colocação no mercado» (art. 4.º, al. r)). A colocação no mercado inclui a transferência a título gratuito (art. 4.º, al. g))."
         ],
-        "proposta": "No art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]]: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. [[Contraordenações]]: punir a falta ou o atraso do relatório anual e do plano do art. [[Controlo das populações errantes e assilvestradas]] (ver CED-17); ligar a al. v) ao art. [[Eutanásia]], n.º 1 e primeiro n.º 2, e ao art. [[Destino dos animais]], n.º 8; alargar a al. s) ao art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3, e ao art. [[Destino dos animais]], n.º 13; acrescentar os deveres de destino e cedência dos arts. [[Destino dos animais]] e [[Condições da cedência]]. Ligar o acesso a apoios públicos à entrega do relatório, como o art. [[Registo Nacional das Associações Zoófilas]], n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028, incluindo o abandono pelos operadores (ver TIT-06).",
+        "proposta": "No art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]]: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. [[Contraordenações]]: punir a falta ou o atraso do relatório anual e do plano do art. [[Controlo das populações errantes e assilvestradas]] (ver CED-17); ligar a al. v) ao art. [[Eutanásia]], n.º 1 e primeiro n.º 2, e ao art. [[Destino dos animais]], n.º 8; alargar a al. s) ao art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3, e ao art. [[Destino dos animais]], n.º 13; acrescentar os deveres de destino e cedência dos arts. [[Destino dos animais]] e [[Condições da cedência]]. Ligar o acesso a apoios públicos à entrega do relatório, como o art. [[Registo Nacional das Associações Zoófilas]], n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028, incluindo o abandono pelos operadores (ver TIT-06). Ponderar uma norma geral como a da Lei 92/95, art. 12.º, n.º 1, ou pelo menos coima expressa para o art. [[Proibição de violência e maus-tratos]], n.º 1 (morte sem motivo legítimo). Ver FIN-01.",
         "levantado": [
             "Análise interna (13.10.2026)",
             "Comentário da DAJA ao art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]] («Remeter para Portaria»)"
@@ -1205,7 +1206,68 @@ FICHAS = [
             "CED-17",
             "TIT-06",
             "TIT-11",
-            "CED-19"
+            "CED-19",
+            "FIN-01"
+        ]
+    },
+    {
+        "cod": "FIN-01",
+        "cod_ensaio_2": "P-43",
+        "cod_antigo": "F-01",
+        "artigo": "Norma revogatória",
+        "titulo": "A revogação total da Lei 92/95 apaga normas que não tratam de animais de companhia",
+        "etiquetas": [
+            "FIN",
+            "SAN",
+            "BEM"
+        ],
+        "onde": [
+            "art. [[Norma revogatória]], n.º 1, al. a)",
+            "art. [[Âmbito Objetivo]], n.ºs 1, 2 e 9",
+            "art. [[Contraordenações]]"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "O RGAC aplica-se só aos animais de companhia (arts. [[Objeto]] e [[Âmbito Objetivo]]) e exclui a fauna selvagem e os touros de lide (art. [[Âmbito Objetivo]], n.º 9). Mas revoga por inteiro a Lei 92/95 (art. [[Norma revogatória]], n.º 1, al. a)), que protege todos os animais.",
+            "Para os animais que não são de companhia perdem-se as proibições gerais do art. 1.º da Lei 92/95, incluindo o tiro ao voo de pombos (n.º 3, al. g)), a autorização municipal para o comércio, a guarda remunerada e a exibição de animais (art. 2.º), a autorização de espetáculos com animais e o regime das touradas, com a proibição dos touros de morte e a sua exceção (art. 3.º), e a regra sobre animais feridos (art. 4.º).",
+            "Para todos os animais perdem-se a legitimidade das associações zoófilas para pedir medidas preventivas e urgentes e para se constituírem assistentes, com dispensa de custas (arts. 9.º e 10.º), e o regime contraordenacional acrescentado pela Lei 6/2022 (arts. 11.º a 16.º), incluindo a norma geral do art. 12.º, n.º 1. O RGAC não tem normas equivalentes. As medidas cautelares em caso de crime de maus-tratos a animais de companhia (art. 1.º-A) só têm equivalente parcial no art. [[Obrigações das câmaras municipais]], n.ºs 5 a 7.",
+            "O RGAC substitui os arts. 5.º a 8.º da Lei 92/95. O transporte público de animais de companhia (art. 7.º) passa para o art. [[Transporte de animais em transportes públicos]]."
+        ],
+        "proposta": "Na al. a) do n.º 1 do art. [[Norma revogatória]], revogar só os arts. 5.º a 8.º da Lei 92/95 e manter os restantes. Passar para o RGAC, para os animais de companhia, a legitimidade das associações zoófilas e uma norma geral de contraordenação (ver SAN-01). Verificar se a revogação das normas processuais e das que tocam crimes (arts. 1.º-A, 9.º e 10.º da Lei 92/95) cabe na competência do Governo ou exige lei da Assembleia da República.",
+        "levantado": [
+            "Análise interna (13.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "SAN-01",
+            "TIT-06"
+        ]
+    },
+    {
+        "cod": "FIN-02",
+        "cod_ensaio_2": "P-44",
+        "cod_antigo": "F-02",
+        "artigo": "Norma revogatória",
+        "titulo": "O DL 74/2007 é ressalvado e revogado ao mesmo tempo",
+        "etiquetas": [
+            "FIN"
+        ],
+        "onde": [
+            "art. [[Âmbito Objetivo]], n.º 8",
+            "art. [[Norma revogatória]], n.º 1, al. f)"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "O art. [[Âmbito Objetivo]], n.º 8, diz que o decreto-lei «não prejudica a aplicação do Decreto-Lei n.º 74/2007, de 27 de março», relativo ao acesso das pessoas com deficiência acompanhadas de cães de assistência. O art. [[Norma revogatória]], n.º 1, al. f), revoga esse decreto-lei.",
+            "O RGAC trata da licença do cão de assistência, mas não do direito de acesso a locais, transportes e estabelecimentos. Revogado o DL 74/2007, esse direito fica sem norma."
+        ],
+        "proposta": "Retirar a al. f) do n.º 1 do art. [[Norma revogatória]] e manter o DL 74/2007, como diz o art. [[Âmbito Objetivo]], n.º 8. Se se quiser integrá-lo no RGAC, transpor o regime de acesso e só então revogar.",
+        "levantado": [
+            "Análise interna (13.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "FIN-01"
         ]
     },
 ]
@@ -1400,6 +1462,8 @@ CORRESPONDENCIA = [
     ("P-01", "P-40", "BEM-01"),
     ("A-01", "P-41", "REG-01"),
     ("S-01", "P-42", "SAN-01"),
+    ("F-01", "P-43", "FIN-01"),
+    ("F-02", "P-44", "FIN-02"),
 ]
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
