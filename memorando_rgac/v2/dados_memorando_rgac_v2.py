@@ -1242,12 +1242,12 @@ LAPSOS = [
     {
         "cod": "L-13",
         "onde": [
-            "Condições particulares para a manutenção de peixes",
+            "Instalações dos abrigos e centros de recolha oficial",
             "Outras disposições"
         ],
         "estado": "Aberto",
         "ficha": "",
-        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. [[Condições particulares para a manutenção de peixes]] e o art. [[Outras disposições]]. No texto sem as alterações registadas é um segundo art. 39.º. Por isso não aparece na estrutura usada no Anexo D. O art. [[Outras disposições]], n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
+        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. [[Condições particulares para a manutenção de peixes]] e o art. [[Outras disposições]]. No texto sem as alterações registadas é um segundo art. 39.º. No Anexo D aparece como 39-b. O art. [[Outras disposições]], n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
         "correcao": "Numerar o artigo e renumerar os seguintes. No n.º 1 do artigo «Outras disposições», remeter para os estabelecimentos da subsecção III."
     },
     {
@@ -1297,6 +1297,10 @@ LAPSOS = [
 # («epígrafe antiga»: «epígrafe nova») para todas as fichas, lapsos e revisões passarem a apontar
 # para o artigo certo. O gerador diz quais as epígrafes a reconciliar e sugere as candidatas.
 RENOMEACOES = {
+    # Memorando 1.15: o RGAC de 30.6.2026 passou a ser lido com as alterações registadas aceites.
+    "Centros de recolha": "Centros de recolha oficial",
+    "Regime de Gestão e Registo de Animais de Companhia (CRO e )":
+        "Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)",
 }
 
 # ------------------------------------------------------------------ cobertura da revisão

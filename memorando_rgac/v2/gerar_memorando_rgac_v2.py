@@ -87,7 +87,8 @@ def artigo(ancora, onde="?"):
 
 
 def num(a):
-    return f"{a['numero']}.º"
+    # Um artigo sem número no RGAC mostra-se pela chave da estrutura (por exemplo, 39-b).
+    return a["chave"] if a.get("sem_numero") else f"{a['numero']}.º"
 
 
 def cap_curto(a):
@@ -329,19 +330,22 @@ def anexo_lapsos(doc):
 
 def anexo_cobertura(doc):
     titulo(doc, "Anexo D. Cobertura da revisão, artigo a artigo", 1)
+    sem = ", ".join(a["chave"] for a in ARTS if a.get("sem_numero"))
     par(doc, "Por rever: o artigo ainda não foi lido com esse fim. Parcial: tem fichas ou lapsos, mas ainda não "
-             "foi revisto por inteiro. Em revisão e Revisto: estado indicado pelo grupo.")
+             "foi revisto por inteiro. Em revisão e Revisto: estado indicado pelo grupo."
+             + (f" Artigos sem número no RGAC, com o número do artigo anterior e uma letra: {sem}." if sem else ""))
     fichas_por, lapsos_por = {}, {}
     for f in D.FICHAS:
         for anc in ancoras_em(f["onde"]):
-            fichas_por.setdefault(anc, []).append(f["cod"])
+            fichas_por.setdefault(D.RENOMEACOES.get(anc, anc), []).append(f["cod"])
     for l in D.LAPSOS:
         for k in l["onde"]:
-            lapsos_por.setdefault(k, []).append(l["cod"])
+            lapsos_por.setdefault(D.RENOMEACOES.get(k, k), []).append(l["cod"])
+    revisao = {D.RENOMEACOES.get(k, k): v for k, v in D.REVISAO.items()}
 
     def estado(a):
-        if a["ancora"] in D.REVISAO:
-            return D.REVISAO[a["ancora"]]["estado"]
+        if a["ancora"] in revisao:
+            return revisao[a["ancora"]]["estado"]
         return "Parcial" if fichas_por.get(a["ancora"]) or lapsos_por.get(a["ancora"]) else "Por rever"
 
     caps = []
@@ -380,7 +384,7 @@ def anexo_cobertura(doc):
             cap = a["capitulo"]
             row = t.add_row()
             celula(row.cells[0].merge(row.cells[5]), f"{cap}. {a['epigrafe_capitulo']}", negrito=True)
-        rv = D.REVISAO.get(a["ancora"], {})
+        rv = revisao.get(a["ancora"], {})
         row = t.add_row()
         celula(row.cells[0], num(a))
         celula(row.cells[1], a["epigrafe"])

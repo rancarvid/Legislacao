@@ -481,10 +481,12 @@ def anexo_lapsos(doc):
 
 def anexo_cobertura(doc):
     titulo(doc, "Anexo D. Cobertura da revisão, artigo a artigo", 1)
+    arts = estrutura()
+    sem = ", ".join(a["chave"] for a in arts if a.get("sem_numero"))
     par(doc, "Por rever: o artigo ainda não foi lido com esse fim. Parcial: tem fichas ou lapsos, mas ainda não "
              "foi revisto por inteiro. Em revisão e Revisto: estado indicado pelo grupo. A última coluna diz a "
-             "relação com o Regulamento (UE) 2026/1818.")
-    arts = estrutura()
+             "relação com o Regulamento (UE) 2026/1818."
+             + (f" Artigos sem número no RGAC, com o número do artigo anterior e uma letra: {sem}." if sem else ""))
     fichas_por, lapsos_por = {}, {}
     for f in todas_fichas():
         for n in artigos_citados(f["onde"]):

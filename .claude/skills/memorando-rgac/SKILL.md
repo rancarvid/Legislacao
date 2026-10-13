@@ -12,7 +12,7 @@ O memorando é um documento vivo. O conteúdo está todo num ficheiro de dados e
 | `memorando_rgac/dados_memorando_rgac.py` | Conteúdo: fichas, pontos resolvidos, entidades externas, fontes, registo de alterações |
 | `memorando_rgac/gerar_memorando_rgac.py` | Gera o Word. Recusa gerar se houver travessões longos, códigos repetidos ou campos inválidos |
 | `memorando_rgac/Memorando_Acompanhamento_RGAC.docx` | Resultado. Nunca editar à mão: é reescrito a cada geração |
-| `memorando_rgac/extrair_estrutura_rgac.py` | Lê o RGAC canónico e escreve `estrutura_rgac.json` (capítulos, artigos, epígrafes). Correr sempre que chegar versão nova |
+| `memorando_rgac/extrair_estrutura_rgac.py` | Lê o RGAC canónico e escreve `estrutura_rgac.json` (capítulos, artigos, epígrafes). Lê o texto com as alterações registadas aceites (conferir com `pandoc --track-changes=accept -t plain`). Um artigo sem número («Artigo º») fica com o número do anterior e uma letra (`39-b`). Correr sempre que chegar versão nova |
 | `memorando_rgac/estrutura_rgac.json` | Estrutura do RGAC usada no Anexo D e na validação das chaves de artigo. Não editar à mão |
 | `memorando_rgac/verificar_ligacoes.py` | Verifica todas as ligações da bibliografia (curl, browser real e Europe PMC) e escreve `verificacao_ligacoes.md` |
 | `memorando_rgac/pistas_imprensa_uso_interno.md` | Notícias de imprensa, só para uso interno. Não entram no memorando |

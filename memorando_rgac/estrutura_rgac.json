@@ -200,7 +200,7 @@
   {
    "chave": "29",
    "numero": 29,
-   "epigrafe": "1 - O operador assegura que cada estabelecimento sob a sua responsabilidade é objeto de visita de um médico-veterinário destinada a identificar e avaliar os fatores de risco para o bem-estar animal e a aconselhar o operador sobre as medidas adequadas para lhes dar resposta.",
+   "epigrafe": "Visitas de aconselhamento sobre bem-estar animal",
    "capitulo": "Capítulo IV",
    "epigrafe_capitulo": "Detenção em estabelecimentos"
   },
@@ -273,6 +273,14 @@
    "epigrafe": "Condições particulares para a manutenção de peixes",
    "capitulo": "Capítulo IV",
    "epigrafe_capitulo": "Detenção em estabelecimentos"
+  },
+  {
+   "chave": "39-b",
+   "numero": 39,
+   "epigrafe": "Instalações dos abrigos e centros de recolha oficial",
+   "capitulo": "Capítulo IV",
+   "epigrafe_capitulo": "Detenção em estabelecimentos",
+   "sem_numero": true
   },
   {
    "chave": "40",
@@ -557,7 +565,7 @@
   {
    "chave": "80",
    "numero": 80,
-   "epigrafe": "Regime de Gestão e Registo de Animais de Companhia (CRO e )",
+   "epigrafe": "Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)",
    "capitulo": "Capítulo VIII",
    "epigrafe_capitulo": "Registo e identificação e Sistemas de Informação"
   },
@@ -662,7 +670,7 @@
   {
    "chave": "94",
    "numero": 94,
-   "epigrafe": "Centros de recolha",
+   "epigrafe": "Centros de recolha oficial",
    "capitulo": "Capítulo X",
    "epigrafe_capitulo": "Gestão das populações animais"
   },
@@ -746,7 +754,7 @@
   {
    "chave": "106",
    "numero": 106,
-   "epigrafe": "Requisitos dos anúncio de transmissão em linha de animal de companhia",
+   "epigrafe": "Requisitos dos anúncios de transmissão em linha de animal de companhia",
    "capitulo": "Capítulo XII",
    "epigrafe_capitulo": "Exposições e comércio"
   },
