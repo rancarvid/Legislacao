@@ -5,7 +5,7 @@ refere-se a este tema — os limites de detenção por fogo do art.º 3.º do DL
 a lotação dos alojamentos registados ao abrigo do art.º 3.º-A do DL n.º 276/2001. Convenção fixada em
 25.9.2026; vale entre sessões.
 
-**Estado em 9.10.2026**: ver PARTE 0-D (três documentos novos e pesquisa no STA). Estado anterior, em 28.9.2026: análise concluída e substancialmente aprofundada. Documento Word em
+**Estado em 13.10.2026**: ver **PARTE 0-E** (ponto de situação para retomar). Antes: PARTE 0-D (9.10.2026). Estado anterior, em 28.9.2026: análise concluída e substancialmente aprofundada. Documento Word em
 **63 páginas** — `criador informal/Estudo_Limites_por_Fogo.docx`, gerado por
 `criador informal/_estudo_fogo.py` e registado em `criador informal/gerar_memorando.py`.
 Ramo de trabalho: `claude/update-regulations-document-lKSWW` (PR #28).
@@ -37,6 +37,152 @@ residual em que a resposta é afirmativa.**
    registado. Registar não isenta.
 4. **Caso residual**: quem tem o alojamento registado mas mantém os animais integrados na casa, como
    animais do agregado, continua sujeito ao n.º 2. O registo não cria, por si, caminho acima de seis.
+
+---
+
+## PARTE 0-E — Ponto de situação em 13.10.2026 (ler primeiro para retomar)
+
+Esta parte resume tudo o que foi feito entre 9 e 13.10.2026 e diz exatamente o que falta. As partes 0-A a
+0-D e I a XIII mantêm-se como registo de fundo.
+
+### E.1 A resposta, na formulação mais curta
+
+**Não muda.** Os limites do n.º 2 do art.º 3.º do DL 314/2003 contam por fogo; um alojamento registado não é
+um fogo; o n.º 1 aplica-se sempre; e os animais mantidos dentro do fogo continuam sujeitos ao n.º 2, haja ou
+não registo.
+
+Em 9.10.2026 o utilizador propôs uma formulação curta com três imprecisões («exceto se o alojamento for uma
+habitação/fogo»; «habitação» como sinónimo de «fogo»; «alojamento destinado a hospedagem»). Foi proposta
+esta correção, **ainda sem decisão do utilizador**:
+
+> Não, salvo quanto aos animais mantidos dentro de um fogo. Os limites do n.º 2 contam por fogo, enquanto
+> unidade destinada à habitação, e não por prédio. Um alojamento registado, de hospedagem ou de criação, não
+> é um fogo, e a sua lotação rege-se pelo Decreto-Lei n.º 276/2001, de 17 de outubro. O dever geral de
+> salubridade do n.º 1 do mesmo artigo aplica-se sempre, incluindo ao alojamento registado. Se o detentor
+> mantiver animais dentro do fogo, como animais do agregado, aplica-se a esses animais o n.º 2, ainda que
+> tenha alojamento registado.
+
+Razão das correções: «habitação» integra as dependências do fogo, incluindo o logradouro (ficha I-31 do DR
+5/2019, ver E.4), pelo que usá-la como sinónimo faria a exceção apanhar o quintal.
+
+### E.2 Documentos produzidos (todos em `criador informal/`)
+
+| Documento | Gerado por | Estado |
+|---|---|---|
+| `Estudo_Limites_por_Fogo.docx` (estudo extenso) | `_estudo_fogo.py` + `gerar_memorando.py` | Atualizado em 9.10 (2, 6.8, 11.6, 12, 15.7, 17.1, C.2, C.4). **Não inclui** o que está em E.4. Número de páginas não confirmado |
+| `Sintese_Limites_por_Fogo_2026-10-09.docx` (síntese em dez pontos, ~905 palavras) | `_sintese.py` (criado em 13.10 a partir do Word, texto idêntico) | Final. Cabe em duas páginas? **Não confirmado** |
+| `Sintese_Limites_por_Fogo_2026-10-09_Anexo.docx` (anexo de suporte, ~3500 palavras) | `_anexo_suporte_sintese.py` | Final. Textos conferidos no DR com página. Sem argumentos contrários, por decisão do utilizador |
+| `Casos_Tipo_Limites_por_Fogo_2026-10-09.docx` (quadro autónomo, paisagem) | `_quadro_casos_tipo.py` | Feito noutra sessão (commit `cc4bbf0`, 9.10). Incorpora as decisões de E.3 |
+| `Casos_Tipo_Limites_por_Fogo_2026-10-09_Anexo.docx` (análise do quadro, ~4000 palavras) | `_anexo_casos_tipo.py` | **Desalinhado** com o quadro autónomo (ver E.5, ponto 1) |
+
+Fontes guardadas na mesma pasta em 9.10: `DL314.pdf` (Informação interna do ICNF n.º I-013109/2022),
+`DúvidasAlojamentoAnimais.docx` (serviços do ICNF) e `DL 314-2003 - acórdão tribunal.pdf` (STA 7.3.2006,
+proc. 0794/05).
+
+Os quatro documentos de outra tarefa que `gerar_memorando.py` reescreve continuam a ter de ser descartados
+antes de cada commit (ver a skill).
+
+### E.3 Decisões do utilizador (não repropor)
+
+1. Documentos curtos (síntese e anexos): **Aptos 11, preto, sem negrito, sem itálico, sem travessões, sem
+   sinais de IA**. Nas transcrições do DR omite-se o «1 —» que antecede cada n.º e indica-se o n.º na
+   referência. Nomes com a data e, nos anexos, `_Anexo` no fim.
+2. O anexo de suporte à síntese **não** tem argumentos contrários; não substitui o estudo.
+3. Casos-tipo organizados **pelo lugar onde estão os animais**; acrescentadas quatro categorias (fração em
+   propriedade horizontal vs andar sem PH; tipo de alojamento; alojamento de facto; prédio urbano sem fogo);
+   para cada caso, cinco campos: limite, quem autoriza, sanção e instrução, remoção e encerramento,
+   urbanismo e vizinhança.
+4. Na sessão de 9.10 à tarde (commit `cc4bbf0`): a instrução dos processos do n.º 3 do art.º 14.º do DL
+   314/2003 cabe às **DSAVR da DGAV**; a autorização até seis animais é **municipal**, ficando o órgão
+   (câmara ou presidente) dependente do regulamento de cada município; o caso 5 **distingue fração
+   habitacional e fração de comércio ou serviços**; cai a ressalva do Regulamento Geral do Ruído, porque o
+   DL 278/2007 alterou só o art.º 4.º do DL 9/2007 e o art.º 15.º do Regulamento.
+5. Mantêm-se as de 28.9.2026: **não** apresentar requerimentos de acesso a documentos; **não** tratar de
+   Amarante sem ordem.
+
+### E.4 Achados que ainda não estão no estudo extenso
+
+1. **Definição de fogo.** Ficha n.º I-31 do anexo I do **Decreto Regulamentar n.º 5/2019, de 27 de setembro**,
+   DR, 1.ª série, n.º 186, de 27.9.2019, **p. 44**: «Um fogo é uma parte ou a totalidade de um edifício,
+   dotada de acesso independente, constituída por um ou mais compartimentos destinados à habitação e por
+   espaços privativos complementares.» As notas da ficha separam o **fogo** (espaços privados nucleares) da
+   **habitação** (fogo mais varandas, terraços, anexos, logradouros pavimentados, telheiros, alpendres).
+   Âmbito: conceitos dos instrumentos de gestão territorial (art.º 1.º; vinculação no n.º 2 do art.º 4.º);
+   vale como elemento de interpretação. **O utilizador contestou que a definição exista**; foi confirmada
+   com imagem da p. 44 e o utilizador pediu depois a referência. Cópia obtida do sítio do Governo Regional
+   da Madeira (PDF da INCM, gerado em 26.9.2019); **falta conferir no DRE e confirmar se o diploma foi
+   alterado**. Já usada no anexo de casos-tipo (1.3); **não** está no capítulo 5 do estudo, nem no ponto 1
+   da síntese, nem no ponto 1 do anexo de suporte. Resolve o flanco «habitações e terrenos anexos» (al. c)
+   do n.º 3 do art.º 14.º): a sanção cobre a habitação e os terrenos anexos, o n.º 2 conta o fogo.
+2. **Ruído.** O RGR distingue «ruído de vizinhança», associado ao uso habitacional e expressamente a «animal
+   colocado sob a sua responsabilidade» (al. r) do art.º 3.º, p. 391; art.º 24.º, p. 396; polícias, al. f) do
+   art.º 26.º), de «actividade ruidosa permanente» (al. a) do art.º 3.º, p. 390; art.º 13.º, pp. 393-394;
+   entidade licenciadora e câmaras, als. b) e d) do art.º 26.º). A fronteira coincide com fogo / alojamento.
+3. **RGEU, art.º 115.º:** anexos para animais nos logradouros, quando autorizados, até 1/15 da área do
+   logradouro; § único permite às câmaras interditá-los. Controlo de dimensão do alojamento em moradia,
+   independente do DL 314/2003.
+4. **Fração autónoma:** a hospedagem sem fins lucrativos exclui as frações autónomas (al. p) do n.º 1 do
+   art.º 2.º do DL 276/2001, redação do DL 315/2003, p. 8450); instalar alojamento numa fração habitacional é
+   alteração de uso (al. c) do n.º 2 e n.º 4 do art.º 1422.º CC).
+5. **Competências sancionatórias:** DL 276/2001, art.º 68.º, n.º 1, als. a) (falta de mera comunicação
+   prévia) e f) (alojamento em desrespeito das condições), contraordenações económicas graves (RJCE);
+   instrução DGAV e órgãos de polícia criminal, decisão do diretor-geral (art.º 70.º). DL 314/2003, art.º 14.º,
+   n.º 3, al. c), coima 50-3740 € / 44 890 €, punível pelo diretor-geral; instrução «DRA da área» (n.º 2 do
+   art.º 16.º), hoje DSAVR (decisão E.3, 4).
+6. **Recolha sem registo:** n.º 8 do art.º 19.º do DL 276/2001 (DGAV com as câmaras e polícias, mandado para
+   casas de habitação e terrenos privados).
+
+### E.5 Inconsistências a corrigir
+
+1. **Anexo de casos-tipo vs quadro autónomo** (`_anexo_casos_tipo.py`):
+   - 3.3 ainda diz que a sucessão das DRA «deve ser confirmada» → passar a DSAVR;
+   - 3.5 ainda manda confirmar alterações ao RGR → retirar (DL 278/2007 não toca as normas citadas);
+   - 3.1 e 3.2, caso 5, não distinguem fração habitacional e fração de comércio ou serviços → acrescentar;
+   - capítulo 4 («Pontos que ficam por confirmar») → reduzir ao art.º 3.º-G sem registo e ao órgão municipal;
+   - a linha 5 do quadro embutido deve ficar igual à do quadro autónomo.
+2. **Formato do quadro autónomo** (`_quadro_casos_tipo.py`): cabeçalho com cor (`1F3B5C`) e travessões nas
+   notas e no rodapé, contra E.3, 1. Confirmar com o utilizador se a regra se aplica ao quadro.
+3. **Capítulo 10 do estudo** (casos-tipo, quatro linhas) ficou aquém do quadro de treze casos. Decidir se se
+   substitui, se remete para o quadro, ou se fica.
+4. **Fórmula curta da resposta** (E.1) ainda não aceite nem rejeitada.
+
+### E.6 Pendentes, por ordem de utilidade
+
+1. Corrigir o anexo de casos-tipo (E.5, 1) e regenerar.
+2. Decidir com o utilizador o formato do quadro autónomo (E.5, 2).
+3. Decidir se a definição do DR 5/2019 entra no capítulo 5 do estudo, no ponto 1 da síntese e no ponto 1 do
+   anexo de suporte; antes disso, conferir no DRE (E.4, 1).
+4. Confirmar paginação num ambiente com LibreOffice: a síntese tem de caber em duas páginas; o anexo de
+   suporte deve ter 7-8; o estudo tinha 66.
+5. Levar ao estudo extenso os achados de E.4 (capítulos 5, 10, 12, 15.7 e 17) e decidir E.5, 3.
+6. Pendentes herdados de D.5: texto integral do STA 23.9.1993 (proc. 032630); base legal da autoridade de
+   saúde para encerrar estabelecimentos (DL n.º 82/2009?); acrescentar a C.6 o Decreto n.º 8364/1922 e a
+   Lei n.º 1453/1923.
+7. Pendentes herdados de X-A: acórdão de Matosinhos de 9.9.2026; prática decisória do art.º 3.º-G;
+   relatório da IGAI; Portaria n.º 961/85; pistas de B.10. Amarante continua adiado.
+
+### E.7 Método e ambiente, para quem retomar
+
+- **LibreOffice** falhou em 9.10 («source file could not be loaded», mesmo com documento mínimo). Conferir os
+  Word por extração de texto (python-docx) e validar com `/mnt/skills/public/docx/scripts/office/validate.py`
+  (exige `pip install defusedxml lxml`). Os Word do python-docx precisam da correção do atributo
+  `w:percent` do `w:zoom` em `settings.xml` (já feita nos geradores `_sintese.py`, `_anexo_*.py`).
+- **PDF**: `pypdf` falha por causa do `cryptography` do sistema; funciona com `sys.modules['cryptography']=None`
+  em PDF não cifrados. Para os PDF do DR (cifrados AES) usar `pymupdf` (`pip install pymupdf`), que também
+  converte páginas em imagem.
+- **DR por ELI** (`https://data.dre.pt/eli/dec-lei/<n>/<ano>/<mm>/<dd>/p/dre/pt/pdf`) funciona para decretos-
+  leis; **falhou para decretos regulamentares** (`decreg`, `dec-reg`, `dec-regulamentar`).
+- **PGDL** (`https://www.pgdlisboa.pt/leis/lei_print_articulado.php?nid=<n>&tabela=leis`): 347 DL 276/2001;
+  339 DL 314/2003; 775 Código Civil; 109 Código Penal; 2248 CPA; 1990 Lei 75/2013; 2591 Lei 26/2016; 3093 DL
+  82/2019; 4 Constituição.
+- **dgsi**: acrescentar `&ExpandSection=1` a `?OpenDocument` para obter o texto integral; os acórdãos antigos
+  do STA só têm sumário.
+- **Páginas do DR conferidas**: DL 314/2003 no DR 290 de 17.12.2003, pp. 8444-8449 (art.º 3.º p. 8445; art.º
+  5.º p. 8446; art.º 14.º p. 8448); DL 315/2003, pp. 8449-8473 (art.º 2.º, al. p), e art.º 3.º do DL 276/2001,
+  p. 8450); DL 276/2001 no DR 241 de 17.10.2001, pp. 6572-6589 (art.º 3.º p. 6573; arts. 24.º a 27.º p. 6577;
+  anexo III pp. 6585-6586); DL 260/2012 no DR 240 de 12.12.2012, pp. 6970-6994 (art.º 3.º-A p. 6972; art.º
+  3.º-G pp. 6975-6976; republicação a partir da p. 6979); RGR (DL 9/2007) no DR 12 de 17.1.2007, pp.
+  389-398; DR 5/2019 no DR 186 de 27.9.2019, ficha I-31 na p. 44.
 
 ---
 

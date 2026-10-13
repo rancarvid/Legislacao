@@ -92,26 +92,31 @@ git checkout -- "criador informal/Anexo_Delimitacao_DL314_2003.docx" \
   documento, para ele julgar antes de se mexer no ficheiro.
 - Ao fechar um avanço: gerar, conferir em PDF, atualizar o checkpoint, commit e push no ramo de trabalho.
 
-## Estado e pendentes (28.9.2026, revisto às 20h)
+## Estado e pendentes (13.10.2026)
 
-Estudo em **63 páginas**. A resposta à questão central está estabelecida; o que continua aberto é de
-política legislativa, não de interpretação.
+**Ler primeiro a PARTE 0-E do checkpoint.** Tem a resposta na formulação curta, a lista dos cinco documentos
+e dos respetivos geradores, as decisões do utilizador, os achados que ainda não estão no estudo, as
+inconsistências a corrigir e as notas de ambiente.
 
-**As três audições estão transcritas.** Os resultados e a triagem de relevância estão na **PARTE 0-B do
-checkpoint**. Nada disso foi levado ao Word: o utilizador decidiu que só entra o relevante e a decisão está
-por tomar. A terceira gravação não era recorte da segunda — é audição autónoma sobre o relatório de inquérito
-da IGAI, de data ainda não estabelecida.
+Documentos em `criador informal/`: estudo extenso; síntese em dez pontos (`_sintese.py`); anexo de suporte
+à síntese (`_anexo_suporte_sintese.py`); quadro de treze casos-tipo (`_quadro_casos_tipo.py`); anexo de
+análise do quadro (`_anexo_casos_tipo.py`).
 
-Por ordem de utilidade — o detalhe está na PARTE X-A do checkpoint:
+Por ordem de utilidade (detalhe em E.6):
 
-1. **Levar ao Word os três pontos que o utilizador reteve em 28.9.2026**, e só esses: a repartição do
-   art.º 3.º-G, o estatuto do médico veterinário municipal e a ausência de qualquer invocação do DL
-   n.º 314/2003. O quadro da triagem está no topo da PARTE 0-B do checkpoint. O que ele dispensou não se
-   repropõe.
-2. **Caso de Amarante** — mais de 300 cães num alojamento de criadora **registada**. É o teste empírico da
-   questão central. **Adiado por decisão do utilizador; não retomar sem ele o pedir.**
-3. Acórdão de 9.9.2026 (não obtido; recurso anunciado pelo PAN).
-4. Prática decisória da DGAV ao abrigo do art.º 3.º-G.
+1. Alinhar o anexo de análise dos casos-tipo com as decisões já refletidas no quadro autónomo: instrução
+   pelas DSAVR, ressalva do RGR retirada, caso 5 dividido entre fração habitacional e de comércio ou
+   serviços, capítulo 4 reduzido.
+2. Perguntar ao utilizador se o quadro autónomo deve perder a cor do cabeçalho e os travessões.
+3. Definição de fogo do Decreto Regulamentar n.º 5/2019 (ficha I-31, p. 44): conferir no DRE e decidir se
+   entra no estudo, na síntese e no anexo de suporte. O utilizador chegou a contestar que a definição
+   existisse; a referência foi-lhe dada.
+4. Confirmar a paginação num ambiente com LibreOffice (síntese em duas páginas).
+5. Levar ao estudo extenso os achados de E.4 e decidir a sorte do capítulo 10.
+6. Pendentes antigos (D.5 e X-A): STA 1993, autoridade de saúde, Matosinhos, art.º 3.º-G, IGAI.
+
+Documentos curtos: Aptos 11, preto, sem negrito, sem itálico, sem travessões. Nada se escreve no estudo sem
+ordem do utilizador.
 
 Duas coisas que o utilizador já decidiu, e que não se devem repropor: **não apresentar requerimentos de
 acesso a documentos administrativos**, e **não tratar de Amarante** até indicação em contrário.
