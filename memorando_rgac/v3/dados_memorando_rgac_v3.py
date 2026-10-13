@@ -1170,12 +1170,12 @@ FICHAS = [
         ],
         "onde": [
             "art. [[Contraordenações]], n.º 2, als. e) a g), s), t), u) e v)",
-            "art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]], n.ºs 4 e 5",
+            "art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]], n.ºs 4 e 5",
             "art. [[Sistema de Informação de Animais de Companhia#1]], n.º 1",
             "art. [[Plataforma Nacional de Adoção de Animais de Companhia]], n.º 6",
             "art. [[Controlo da reprodução pelas câmaras municipais]], n.ºs 3, 4 e 8",
             "art. [[Obrigações das câmaras municipais]], n.ºs 1 e 2",
-            "art. [[Centros de recolha]], n.º 1",
+            "art. [[Centros de recolha oficial]], n.º 1",
             "art. [[Destino dos animais]], n.ºs 8, 13 e 14",
             "art. [[Eutanásia]], n.ºs 1 e 6",
             "art. [[Direito subsidiário]]"
@@ -1186,17 +1186,17 @@ FICHAS = [
             "A coima só chega por via indireta. O DL 276/2001, art. 68.º, n.º 1, pune a falta de mera comunicação prévia do centro de recolha (al. a)) e o alojamento fora das condições (al. f)). A al. i) pune «O abate em desrespeito das disposições do artigo 19.º», mas o art. 19.º não tem a proibição da Lei 27/2016 e o seu n.º 10 remete a recolha, captura e abate de cães e gatos para legislação própria. O DL 82/2019, art. 21.º, n.º 1, pune o CRO que deixa sair um animal sem identificação (al. a), com o art. 5.º, n.º 3) e o CRO titular que não regista no SIAC a transmissão ou a morte do animal (al. c), com os arts. 11.º, n.º 5, e 13.º).",
             "Hoje os CRO não têm dever de enviar dados à DGAV. A Lei 27/2016, art. 3.º, n.º 9, obriga-os a publicitar o relatório de gestão no primeiro mês de cada ano, e a DGAV faz o relatório nacional «com base» nesses relatórios (n.º 10). O Decreto Regulamentar 4/2025 e o Despacho 2836/2026 repetem esta lógica. Nenhuma destas normas tem sanção. O DL 276/2001, art. 68.º, n.º 1, al. d), só abrange dados pedidos para funções desse decreto-lei. O único reporte com consequência é o financeiro, dos beneficiários de incentivos (Lei 73-A/2025, art. 125.º, n.º 3; Despacho 9102/2026, arts. 14.º e 15.º): revogação do apoio e restituição das verbas.",
             "O município pode ser arguido. O regime das contraordenações económicas equipara os municípios a pequenas empresas (DL 9/2021, anexo, art. 19.º, n.º 4, al. b)). O RGAC remete para o regime geral das contraordenações (art. [[Direito subsidiário]]), que não tem esta regra.",
-            "O RGAC resolve uma parte. O art. [[Contraordenações]], n.º 2, al. u), pune a falta de CRO (art. [[Centros de recolha]], n.º 1). Como o CRO passa a ser estabelecimento (art. [[Definições]]), as als. e) a g) abrangem os seus requisitos técnicos e a mera comunicação prévia. Todas as remissões estão em «artigo XX.º».",
-            "Ficam sem coima a omissão de captura e recolha (art. [[Obrigações das câmaras municipais]], n.ºs 1 e 2), a esterilização pelo próprio CRO antes da adoção (art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3; art. [[Destino dos animais]], n.º 13), o encaminhamento para adoção e a sua divulgação (art. [[Destino dos animais]], n.ºs 13 e 14) e o relatório anual (art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]], n.ºs 4 e 5). A al. s) remete para o n.º 8 do art. [[Controlo da reprodução pelas câmaras municipais]], que só pune o adotante (n.º 4). A al. t) pune quem capture sem ser a câmara, e não a câmara que deixa de capturar.",
-            "O art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]] descreve o conteúdo do relatório anual, mas não diz quem o recebe nem até quando. O art. [[Sistema de Informação de Animais de Companhia#1]], n.º 1, diz que o SIAC guarda «os registos submetidos pelos CRO no âmbito do relatório anual», sem norma que mande submetê-los. Há um comentário da DAJA a esse artigo: «Remeter para Portaria».",
+            "O RGAC resolve uma parte. O art. [[Contraordenações]], n.º 2, al. u), pune a falta de CRO (art. [[Centros de recolha oficial]], n.º 1). Como o CRO passa a ser estabelecimento (art. [[Definições]]), as als. e) a g) abrangem os seus requisitos técnicos e a mera comunicação prévia. Todas as remissões estão em «artigo XX.º».",
+            "Ficam sem coima a omissão de captura e recolha (art. [[Obrigações das câmaras municipais]], n.ºs 1 e 2), a esterilização pelo próprio CRO antes da adoção (art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3; art. [[Destino dos animais]], n.º 13), o encaminhamento para adoção e a sua divulgação (art. [[Destino dos animais]], n.ºs 13 e 14) e o relatório anual (art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]], n.ºs 4 e 5). A al. s) remete para o n.º 8 do art. [[Controlo da reprodução pelas câmaras municipais]], que só pune o adotante (n.º 4). A al. t) pune quem capture sem ser a câmara, e não a câmara que deixa de capturar.",
+            "O art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]] descreve o conteúdo do relatório anual, mas não diz quem o recebe nem até quando. O art. [[Sistema de Informação de Animais de Companhia#1]], n.º 1, diz que o SIAC guarda «os registos submetidos pelos CRO no âmbito do relatório anual», sem norma que mande submetê-los. Há um comentário da DAJA a esse artigo: «Remeter para Portaria».",
             "A al. v) pune «A eutanásia de animais em violação do disposto no n.º 6 do artigo XX.º». Vem do Código do Animal (art. 89.º, n.º 2, al. u)), onde remetia para o art. 75.º, n.º 6, segundo o qual a eutanásia compete aos médicos veterinários. No RGAC essa regra está no art. [[Destino dos animais]], n.º 8, e o art. [[Eutanásia]], n.º 6, trata do registo do motivo no SIAC. Em nenhuma das leituras fica abrangida a proibição do art. [[Eutanásia]], n.º 1 (eutanásia por sobrepopulação, sobrelotação ou incapacidade económica), que é a regra central da Lei 27/2016 (art. 3.º, n.º 4).",
             "O art. [[Plataforma Nacional de Adoção de Animais de Companhia]] (Plataforma Nacional de Adoção) previa no n.º 6 «contraordenação grave» para quem não registasse os animais na plataforma, incluindo os CRO. O artigo está rasurado nesta versão. O art. [[Contraordenações]] não tem graus de gravidade.",
             "O Regulamento (UE) 2026/1818 manda fixar sanções «efetivas, proporcionadas e dissuasivas» para as violações do regulamento (art. 32.º), aplicável a partir de 31.8.2028. O abrigo é a instalação onde são detidos cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes «para efeitos de colocação no mercado» (art. 4.º, al. r)). A colocação no mercado inclui a transferência a título gratuito (art. 4.º, al. g))."
         ],
-        "proposta": "No art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]]: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. [[Contraordenações]]: punir a falta ou o atraso do relatório anual e do plano do art. [[Controlo das populações errantes e assilvestradas]] (ver CED-17); ligar a al. v) ao art. [[Eutanásia]], n.º 1 e primeiro n.º 2, e ao art. [[Destino dos animais]], n.º 8; alargar a al. s) ao art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3, e ao art. [[Destino dos animais]], n.º 13; acrescentar os deveres de destino e cedência dos arts. [[Destino dos animais]] e [[Condições da cedência]]. Ligar o acesso a apoios públicos à entrega do relatório, como o art. [[Registo Nacional das Associações Zoófilas]], n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028.",
+        "proposta": "No art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]]: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. [[Contraordenações]]: punir a falta ou o atraso do relatório anual e do plano do art. [[Controlo das populações errantes e assilvestradas]] (ver CED-17); ligar a al. v) ao art. [[Eutanásia]], n.º 1 e primeiro n.º 2, e ao art. [[Destino dos animais]], n.º 8; alargar a al. s) ao art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3, e ao art. [[Destino dos animais]], n.º 13; acrescentar os deveres de destino e cedência dos arts. [[Destino dos animais]] e [[Condições da cedência]]. Ligar o acesso a apoios públicos à entrega do relatório, como o art. [[Registo Nacional das Associações Zoófilas]], n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028.",
         "levantado": [
             "Análise interna (13.10.2026)",
-            "Comentário da DAJA ao art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]] («Remeter para Portaria»)"
+            "Comentário da DAJA ao art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)]] («Remeter para Portaria»)"
         ],
         "estado": "Aberto",
         "rel": [
@@ -1290,6 +1290,7 @@ LAPSOS = [
     {
         "cod": "L-13",
         "onde": [
+            "Condições particulares para a manutenção de peixes",
             "Instalações dos abrigos e centros de recolha oficial",
             "Outras disposições"
         ],
@@ -1345,10 +1346,7 @@ LAPSOS = [
 # («epígrafe antiga»: «epígrafe nova») para todas as fichas, lapsos e revisões passarem a apontar
 # para o artigo certo. O gerador diz quais as epígrafes a reconciliar e sugere as candidatas.
 RENOMEACOES = {
-    # Memorando 1.15: o RGAC de 30.6.2026 passou a ser lido com as alterações registadas aceites.
     "Centros de recolha": "Centros de recolha oficial",
-    "Regime de Gestão e Registo de Animais de Companhia (CRO e )":
-        "Regime de Gestão e Registo de Animais de Companhia (CRO e Abrigo)",
 }
 
 # ------------------------------------------------------------------ cobertura da revisão
