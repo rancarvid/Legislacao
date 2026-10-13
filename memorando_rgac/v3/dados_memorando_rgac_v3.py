@@ -1158,6 +1158,54 @@ FICHAS = [
         "estado": "Aberto",
         "rel": []
     },
+    {
+        "cod": "SAN-01",
+        "cod_ensaio_2": "P-42",
+        "cod_antigo": "S-01",
+        "artigo": "Contraordenações",
+        "titulo": "Os deveres dos CRO e o relatório anual ficam sem coima",
+        "etiquetas": [
+            "SAN",
+            "EST"
+        ],
+        "onde": [
+            "art. [[Contraordenações]], n.º 2, als. e) a g), s), t), u) e v)",
+            "art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]], n.ºs 4 e 5",
+            "art. [[Sistema de Informação de Animais de Companhia#1]], n.º 1",
+            "art. [[Plataforma Nacional de Adoção de Animais de Companhia]], n.º 6",
+            "art. [[Controlo da reprodução pelas câmaras municipais]], n.ºs 3, 4 e 8",
+            "art. [[Obrigações das câmaras municipais]], n.ºs 1 e 2",
+            "art. [[Centros de recolha]], n.º 1",
+            "art. [[Destino dos animais]], n.ºs 8, 13 e 14",
+            "art. [[Eutanásia]], n.ºs 1 e 6",
+            "art. [[Direito subsidiário]]"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "Hoje os deveres dos CRO estão na Lei 27/2016 (art. 3.º) e na Portaria 146/2017 (arts. 7.º a 11.º): captura e recolha, esterilização antes da adoção, encaminhamento para adoção, proibição do abate por sobrelotação e relatório anual de gestão. Nenhum destes dois diplomas tem contraordenações.",
+            "A coima só chega por via indireta. O DL 276/2001, art. 68.º, n.º 1, pune a falta de mera comunicação prévia do centro de recolha (al. a)) e o alojamento fora das condições (al. f)). A al. i) pune «O abate em desrespeito das disposições do artigo 19.º», mas o art. 19.º não tem a proibição da Lei 27/2016 e o seu n.º 10 remete a recolha, captura e abate de cães e gatos para legislação própria. O DL 82/2019, art. 21.º, n.º 1, pune o CRO que deixa sair um animal sem identificação (al. a), com o art. 5.º, n.º 3) e o CRO titular que não regista no SIAC a transmissão ou a morte do animal (al. c), com os arts. 11.º, n.º 5, e 13.º).",
+            "Hoje os CRO não têm dever de enviar dados à DGAV. A Lei 27/2016, art. 3.º, n.º 9, obriga-os a publicitar o relatório de gestão no primeiro mês de cada ano, e a DGAV faz o relatório nacional «com base» nesses relatórios (n.º 10). O Decreto Regulamentar 4/2025 e o Despacho 2836/2026 repetem esta lógica. Nenhuma destas normas tem sanção. O DL 276/2001, art. 68.º, n.º 1, al. d), só abrange dados pedidos para funções desse decreto-lei. O único reporte com consequência é o financeiro, dos beneficiários de incentivos (Lei 73-A/2025, art. 125.º, n.º 3; Despacho 9102/2026, arts. 14.º e 15.º): revogação do apoio e restituição das verbas.",
+            "O município pode ser arguido. O regime das contraordenações económicas equipara os municípios a pequenas empresas (DL 9/2021, anexo, art. 19.º, n.º 4, al. b)). O RGAC remete para o regime geral das contraordenações (art. [[Direito subsidiário]]), que não tem esta regra.",
+            "O RGAC resolve uma parte. O art. [[Contraordenações]], n.º 2, al. u), pune a falta de CRO (art. [[Centros de recolha]], n.º 1). Como o CRO passa a ser estabelecimento (art. [[Definições]]), as als. e) a g) abrangem os seus requisitos técnicos e a mera comunicação prévia. Todas as remissões estão em «artigo XX.º».",
+            "Ficam sem coima a omissão de captura e recolha (art. [[Obrigações das câmaras municipais]], n.ºs 1 e 2), a esterilização pelo próprio CRO antes da adoção (art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3; art. [[Destino dos animais]], n.º 13), o encaminhamento para adoção e a sua divulgação (art. [[Destino dos animais]], n.ºs 13 e 14) e o relatório anual (art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]], n.ºs 4 e 5). A al. s) remete para o n.º 8 do art. [[Controlo da reprodução pelas câmaras municipais]], que só pune o adotante (n.º 4). A al. t) pune quem capture sem ser a câmara, e não a câmara que deixa de capturar.",
+            "O art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]] descreve o conteúdo do relatório anual, mas não diz quem o recebe nem até quando. O art. [[Sistema de Informação de Animais de Companhia#1]], n.º 1, diz que o SIAC guarda «os registos submetidos pelos CRO no âmbito do relatório anual», sem norma que mande submetê-los. Há um comentário da DAJA a esse artigo: «Remeter para Portaria».",
+            "A al. v) pune «A eutanásia de animais em violação do disposto no n.º 6 do artigo XX.º». Vem do Código do Animal (art. 89.º, n.º 2, al. u)), onde remetia para o art. 75.º, n.º 6, segundo o qual a eutanásia compete aos médicos veterinários. No RGAC essa regra está no art. [[Destino dos animais]], n.º 8, e o art. [[Eutanásia]], n.º 6, trata do registo do motivo no SIAC. Em nenhuma das leituras fica abrangida a proibição do art. [[Eutanásia]], n.º 1 (eutanásia por sobrepopulação, sobrelotação ou incapacidade económica), que é a regra central da Lei 27/2016 (art. 3.º, n.º 4).",
+            "O art. [[Plataforma Nacional de Adoção de Animais de Companhia]] (Plataforma Nacional de Adoção) previa no n.º 6 «contraordenação grave» para quem não registasse os animais na plataforma, incluindo os CRO. O artigo está rasurado nesta versão. O art. [[Contraordenações]] não tem graus de gravidade.",
+            "O Regulamento (UE) 2026/1818 manda fixar sanções «efetivas, proporcionadas e dissuasivas» para as violações do regulamento (art. 32.º), aplicável a partir de 31.8.2028. O abrigo é a instalação onde são detidos cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes «para efeitos de colocação no mercado» (art. 4.º, al. r)). A colocação no mercado inclui a transferência a título gratuito (art. 4.º, al. g))."
+        ],
+        "proposta": "No art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]]: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. [[Contraordenações]]: punir a falta ou o atraso do relatório anual e do plano do art. [[Controlo das populações errantes e assilvestradas]] (ver CED-17); ligar a al. v) ao art. [[Eutanásia]], n.º 1 e primeiro n.º 2, e ao art. [[Destino dos animais]], n.º 8; alargar a al. s) ao art. [[Controlo da reprodução pelas câmaras municipais]], n.º 3, e ao art. [[Destino dos animais]], n.º 13; acrescentar os deveres de destino e cedência dos arts. [[Destino dos animais]] e [[Condições da cedência]]. Ligar o acesso a apoios públicos à entrega do relatório, como o art. [[Registo Nacional das Associações Zoófilas]], n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028.",
+        "levantado": [
+            "Análise interna (13.10.2026)",
+            "Comentário da DAJA ao art. [[Regime de Gestão e Registo de Animais de Companhia (CRO e )]] («Remeter para Portaria»)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "CED-17",
+            "TIT-06",
+            "TIT-11",
+            "CED-19"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1219,6 +1267,77 @@ LAPSOS = [
         "lapso": "O art. [[Necessidades comportamentais]], n.º 3 remete para «artigo YYº n.º 2 (Condições de manutenção de cães e gatos) segundo parágrafo». No n.º 5, as quatro condições não têm letra de alínea e a terceira tem a gralha «aas».",
         "correcao": "Fixar a remissão do n.º 3, numerar as condições do n.º 5 como alíneas a) a d) e corrigir «aas» para «as». Ver a ficha BEM-01."
     },
+    {
+        "cod": "L-11",
+        "onde": [
+            "Contraordenações"
+        ],
+        "estado": "Aberto",
+        "ficha": "SAN-01",
+        "lapso": "No art. [[Contraordenações]], n.º 2, depois da al. z) as alíneas recomeçam em a) e vão até j), repetindo letras. A segunda al. j) é uma nota de trabalho que começa por «[a aditar:». Quase todas as alíneas remetem para «artigo XX.º».",
+        "correcao": "Continuar a numeração em aa), bb) e seguintes, ou dividir o n.º 2 em vários números. Fixar as remissões quando a numeração do RGAC estabilizar. Ver a ficha SAN-01."
+    },
+    {
+        "cod": "L-12",
+        "onde": [
+            "Eutanásia"
+        ],
+        "estado": "Aberto",
+        "ficha": "SAN-01",
+        "lapso": "O art. [[Eutanásia]] tem dois n.º 2. Na al. b) do primeiro n.º 2 lê-se «encaminhamento para cessão», em vez de cedência.",
+        "correcao": "Renumerar os números seguintes e corrigir as remissões para eles, incluindo a al. v) do art. [[Contraordenações]], n.º 2. Escrever «cedência». Ver a ficha SAN-01."
+    },
+    {
+        "cod": "L-13",
+        "onde": [
+            "Condições particulares para a manutenção de peixes",
+            "Outras disposições"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. [[Condições particulares para a manutenção de peixes]] e o art. [[Outras disposições]]. No texto sem as alterações registadas é um segundo art. 39.º. Por isso não aparece na estrutura usada no Anexo D. O art. [[Outras disposições]], n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
+        "correcao": "Numerar o artigo e renumerar os seguintes. No n.º 1 do artigo «Outras disposições», remeter para os estabelecimentos da subsecção III."
+    },
+    {
+        "cod": "L-14",
+        "onde": [
+            "Controlo da reprodução pelas câmaras municipais"
+        ],
+        "estado": "Aberto",
+        "ficha": "SAN-01",
+        "lapso": "O art. [[Controlo da reprodução pelas câmaras municipais]], n.º 4, al. b), remete para «o registo previsto no n.º 2, artigo 59º + 4 (profilaxias médicas e outras intervenções)», que é uma marca de trabalho. O registo da esterilização está no art. [[Registo de profilaxias médicas e outras intervenções]], n.º 2. O n.º 8 escreve «n.º quatro».",
+        "correcao": "Remeter para o art. [[Registo de profilaxias médicas e outras intervenções]], n.º 2, e escrever «n.º 4». Ver a ficha SAN-01."
+    },
+    {
+        "cod": "L-15",
+        "onde": [
+            "Requisito das instalações adequadas à realização de esterilizações nos CRO"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. [[Requisito das instalações adequadas à realização de esterilizações nos CRO]], n.º 1, al. e), há a gralha «33proteção». A última alínea do n.º 1 não tem letra. A seguir ao n.º 1 vem o n.º 7.",
+        "correcao": "Escrever «proteção», dar a letra f) à última alínea e numerar o n.º 7 como n.º 2."
+    },
+    {
+        "cod": "L-16",
+        "onde": [
+            "Destino dos animais"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. [[Destino dos animais]], o n.º 2 remete para o «n.º 1 do artigo 70.º» e o n.º 3, al. c), para o «n.º 2 do artigo 72.º». São remissões do Código do Animal. No RGAC, o art. [[Situações especiais de registo]] trata de situações especiais de registo e o art. [[Registo de profilaxias médicas e outras intervenções]] do registo de profilaxias; a captura e a recolha estão no art. [[Obrigações das câmaras municipais]], n.º 1. Os n.ºs 4 e 15 remetem para «artigo XX» e o n.º 15 termina com a nota «Artigo Situações especiais de registo».",
+        "correcao": "Remeter o n.º 2 para o art. [[Obrigações das câmaras municipais]], n.º 1. Fixar no n.º 3, al. c), e nos n.ºs 4 e 15 os prazos e artigos certos. Retirar a nota do fim do n.º 15."
+    },
+    {
+        "cod": "L-17",
+        "onde": [
+            "Exame clínico dos animais e período mínimo de permanência"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. [[Exame clínico dos animais e período mínimo de permanência]], o n.º 4 remete para as despesas «previstas no n.º 2», que não trata de despesas. As despesas estão no art. [[Despesas]]. O n.º 5 remete para o «n.º X do artigo XXX». Depois do n.º 6 ficou a nota «Reescrever este nº, muito denso».",
+        "correcao": "Remeter o n.º 4 para o art. [[Despesas]], n.º 1, fixar a remissão do n.º 5 e retirar a nota."
+    },
 ]
 
 # ------------------------------------------------------------------ epígrafes renomeadas
@@ -1276,6 +1395,7 @@ CORRESPONDENCIA = [
     ("C-19", "P-39", "CED-19"),
     ("P-01", "P-40", "BEM-01"),
     ("A-01", "P-41", "REG-01"),
+    ("S-01", "P-42", "SAN-01"),
 ]
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [

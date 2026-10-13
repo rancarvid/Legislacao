@@ -11,9 +11,9 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.13"
-DATA_MEMORANDO = "9.10.2026"
-DATA_LIGACOES = "27.9.2026"
+VERSAO_MEMORANDO = "1.14"
+DATA_MEMORANDO = "13.10.2026"
+DATA_LIGACOES = "13.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
@@ -956,7 +956,49 @@ CAPITULOS = [
     {"letra": "K", "capitulos": ["Capítulo XI", "Capítulo XII", "Capítulo XIII"],
      "titulo": "Cadáveres, exposições, comércio e livros genealógicos (caps. XI a XIII)", "intro": [], "fichas": []},
     {"letra": "D", "capitulos": ["Capítulo XIV"], "titulo": "Animais perigosos e potencialmente perigosos (cap. XIV)", "intro": [], "fichas": []},
-    {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": []},
+    {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
+        {
+            "cod": "S-01",
+            "titulo": "Os deveres dos CRO e o relatório anual ficam sem coima",
+            "onde": [
+                "art. 140.º, n.º 2, als. e) a g), s), t), u) e v)",
+                "art. 80.º, n.ºs 4 e 5",
+                "art. 5.º, n.º 1",
+                "art. 81.º, n.º 6",
+                "art. 89.º, n.ºs 3, 4 e 8",
+                "art. 91.º, n.ºs 1 e 2",
+                "art. 94.º, n.º 1",
+                "art. 98.º, n.ºs 8, 13 e 14",
+                "art. 101.º, n.ºs 1 e 6",
+                "art. 144.º"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "Hoje os deveres dos CRO estão na Lei 27/2016 (art. 3.º) e na Portaria 146/2017 (arts. 7.º a 11.º): captura e recolha, esterilização antes da adoção, encaminhamento para adoção, proibição do abate por sobrelotação e relatório anual de gestão. Nenhum destes dois diplomas tem contraordenações.",
+                "A coima só chega por via indireta. O DL 276/2001, art. 68.º, n.º 1, pune a falta de mera comunicação prévia do centro de recolha (al. a)) e o alojamento fora das condições (al. f)). A al. i) pune «O abate em desrespeito das disposições do artigo 19.º», mas o art. 19.º não tem a proibição da Lei 27/2016 e o seu n.º 10 remete a recolha, captura e abate de cães e gatos para legislação própria. O DL 82/2019, art. 21.º, n.º 1, pune o CRO que deixa sair um animal sem identificação (al. a), com o art. 5.º, n.º 3) e o CRO titular que não regista no SIAC a transmissão ou a morte do animal (al. c), com os arts. 11.º, n.º 5, e 13.º).",
+                "Hoje os CRO não têm dever de enviar dados à DGAV. A Lei 27/2016, art. 3.º, n.º 9, obriga-os a publicitar o relatório de gestão no primeiro mês de cada ano, e a DGAV faz o relatório nacional «com base» nesses relatórios (n.º 10). O Decreto Regulamentar 4/2025 e o Despacho 2836/2026 repetem esta lógica. Nenhuma destas normas tem sanção. O DL 276/2001, art. 68.º, n.º 1, al. d), só abrange dados pedidos para funções desse decreto-lei. O único reporte com consequência é o financeiro, dos beneficiários de incentivos (Lei 73-A/2025, art. 125.º, n.º 3; Despacho 9102/2026, arts. 14.º e 15.º): revogação do apoio e restituição das verbas.",
+                "O município pode ser arguido. O regime das contraordenações económicas equipara os municípios a pequenas empresas (DL 9/2021, anexo, art. 19.º, n.º 4, al. b)). O RGAC remete para o regime geral das contraordenações (art. 144.º), que não tem esta regra.",
+                "O RGAC resolve uma parte. O art. 140.º, n.º 2, al. u), pune a falta de CRO (art. 94.º, n.º 1). Como o CRO passa a ser estabelecimento (art. 3.º), as als. e) a g) abrangem os seus requisitos técnicos e a mera comunicação prévia. Todas as remissões estão em «artigo XX.º».",
+                "Ficam sem coima a omissão de captura e recolha (art. 91.º, n.ºs 1 e 2), a esterilização pelo próprio CRO antes da adoção (art. 89.º, n.º 3; art. 98.º, n.º 13), o encaminhamento para adoção e a sua divulgação (art. 98.º, n.ºs 13 e 14) e o relatório anual (art. 80.º, n.ºs 4 e 5). A al. s) remete para o n.º 8 do art. 89.º, que só pune o adotante (n.º 4). A al. t) pune quem capture sem ser a câmara, e não a câmara que deixa de capturar.",
+                "O art. 80.º descreve o conteúdo do relatório anual, mas não diz quem o recebe nem até quando. O art. 5.º, n.º 1, diz que o SIAC guarda «os registos submetidos pelos CRO no âmbito do relatório anual», sem norma que mande submetê-los. Há um comentário da DAJA a esse artigo: «Remeter para Portaria».",
+                "A al. v) pune «A eutanásia de animais em violação do disposto no n.º 6 do artigo XX.º». Vem do Código do Animal (art. 89.º, n.º 2, al. u)), onde remetia para o art. 75.º, n.º 6, segundo o qual a eutanásia compete aos médicos veterinários. No RGAC essa regra está no art. 98.º, n.º 8, e o art. 101.º, n.º 6, trata do registo do motivo no SIAC. Em nenhuma das leituras fica abrangida a proibição do art. 101.º, n.º 1 (eutanásia por sobrepopulação, sobrelotação ou incapacidade económica), que é a regra central da Lei 27/2016 (art. 3.º, n.º 4).",
+                "O art. 81.º (Plataforma Nacional de Adoção) previa no n.º 6 «contraordenação grave» para quem não registasse os animais na plataforma, incluindo os CRO. O artigo está rasurado nesta versão. O art. 140.º não tem graus de gravidade.",
+                "O Regulamento (UE) 2026/1818 manda fixar sanções «efetivas, proporcionadas e dissuasivas» para as violações do regulamento (art. 32.º), aplicável a partir de 31.8.2028. O abrigo é a instalação onde são detidos cães ou gatos não desejados, abandonados, perdidos, confiscados ou anteriormente errantes «para efeitos de colocação no mercado» (art. 4.º, al. r)). A colocação no mercado inclui a transferência a título gratuito (art. 4.º, al. g))."
+            ],
+            "proposta": "No art. 80.º: fixar no decreto-lei o dever de o CRO submeter o relatório anual no SIAC até 31 de janeiro, com os dados dos n.ºs 4 e 5, e o dever de a DGAV publicar o relatório nacional até 31 de março. O pormenor pode ir para portaria, como propõe a DAJA, mas o dever e o prazo ficam no decreto-lei. No art. 140.º: punir a falta ou o atraso do relatório anual e do plano do art. 85.º (ver C-17); ligar a al. v) ao art. 101.º, n.º 1 e primeiro n.º 2, e ao art. 98.º, n.º 8; alargar a al. s) ao art. 89.º, n.º 3, e ao art. 98.º, n.º 13; acrescentar os deveres de destino e cedência dos arts. 98.º e 99.º. Ligar o acesso a apoios públicos à entrega do relatório, como o art. 93.º, n.º 4, já faz para o registo das associações zoófilas. Confirmar que o CRO é tratado como abrigo para efeitos do Regulamento (UE) 2026/1818 e que a lista de contraordenações cobre os deveres europeus dos abrigos até 31.8.2028.",
+            "levantado": [
+                "Análise interna (13.10.2026)",
+                "Comentário da DAJA ao art. 80.º («Remeter para Portaria»)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "C-17",
+                "T-06",
+                "T-11",
+                "C-19"
+            ]
+        },
+    ]},
     {"letra": "F", "capitulos": ["Capítulo XVI", "Anexo I", "Anexo II"],
      "titulo": "Disposições finais e transitórias e anexos (cap. XVI e anexos)", "intro": [], "fichas": []},
 ]
@@ -1005,6 +1047,77 @@ LAPSOS = [
         "ficha": "P-01",
         "lapso": "O art. 19.º, n.º 3 remete para «artigo YYº n.º 2 (Condições de manutenção de cães e gatos) segundo parágrafo». No n.º 5, as quatro condições não têm letra de alínea e a terceira tem a gralha «aas».",
         "correcao": "Fixar a remissão do n.º 3, numerar as condições do n.º 5 como alíneas a) a d) e corrigir «aas» para «as». Ver a ficha P-01."
+    },
+    {
+        "cod": "L-11",
+        "onde": [
+            "140"
+        ],
+        "estado": "Aberto",
+        "ficha": "S-01",
+        "lapso": "No art. 140.º, n.º 2, depois da al. z) as alíneas recomeçam em a) e vão até j), repetindo letras. A segunda al. j) é uma nota de trabalho que começa por «[a aditar:». Quase todas as alíneas remetem para «artigo XX.º».",
+        "correcao": "Continuar a numeração em aa), bb) e seguintes, ou dividir o n.º 2 em vários números. Fixar as remissões quando a numeração do RGAC estabilizar. Ver a ficha S-01."
+    },
+    {
+        "cod": "L-12",
+        "onde": [
+            "101"
+        ],
+        "estado": "Aberto",
+        "ficha": "S-01",
+        "lapso": "O art. 101.º tem dois n.º 2. Na al. b) do primeiro n.º 2 lê-se «encaminhamento para cessão», em vez de cedência.",
+        "correcao": "Renumerar os números seguintes e corrigir as remissões para eles, incluindo a al. v) do art. 140.º, n.º 2. Escrever «cedência». Ver a ficha S-01."
+    },
+    {
+        "cod": "L-13",
+        "onde": [
+            "39",
+            "40"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. 39.º e o art. 40.º. No texto sem as alterações registadas é um segundo art. 39.º. Por isso não aparece na estrutura usada no Anexo D. O art. 40.º, n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
+        "correcao": "Numerar o artigo e renumerar os seguintes. No n.º 1 do artigo «Outras disposições», remeter para os estabelecimentos da subsecção III."
+    },
+    {
+        "cod": "L-14",
+        "onde": [
+            "89"
+        ],
+        "estado": "Aberto",
+        "ficha": "S-01",
+        "lapso": "O art. 89.º, n.º 4, al. b), remete para «o registo previsto no n.º 2, artigo 59º + 4 (profilaxias médicas e outras intervenções)», que é uma marca de trabalho. O registo da esterilização está no art. 72.º, n.º 2. O n.º 8 escreve «n.º quatro».",
+        "correcao": "Remeter para o art. 72.º, n.º 2, e escrever «n.º 4». Ver a ficha S-01."
+    },
+    {
+        "cod": "L-15",
+        "onde": [
+            "90"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. 90.º, n.º 1, al. e), há a gralha «33proteção». A última alínea do n.º 1 não tem letra. A seguir ao n.º 1 vem o n.º 7.",
+        "correcao": "Escrever «proteção», dar a letra f) à última alínea e numerar o n.º 7 como n.º 2."
+    },
+    {
+        "cod": "L-16",
+        "onde": [
+            "98"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. 98.º, o n.º 2 remete para o «n.º 1 do artigo 70.º» e o n.º 3, al. c), para o «n.º 2 do artigo 72.º». São remissões do Código do Animal. No RGAC, o art. 70.º trata de situações especiais de registo e o art. 72.º do registo de profilaxias; a captura e a recolha estão no art. 91.º, n.º 1. Os n.ºs 4 e 15 remetem para «artigo XX» e o n.º 15 termina com a nota «Artigo Situações especiais de registo».",
+        "correcao": "Remeter o n.º 2 para o art. 91.º, n.º 1. Fixar no n.º 3, al. c), e nos n.ºs 4 e 15 os prazos e artigos certos. Retirar a nota do fim do n.º 15."
+    },
+    {
+        "cod": "L-17",
+        "onde": [
+            "95"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. 95.º, o n.º 4 remete para as despesas «previstas no n.º 2», que não trata de despesas. As despesas estão no art. 96.º. O n.º 5 remete para o «n.º X do artigo XXX». Depois do n.º 6 ficou a nota «Reescrever este nº, muito denso».",
+        "correcao": "Remeter o n.º 4 para o art. 96.º, n.º 1, fixar a remissão do n.º 5 e retirar a nota."
     },
 ]
 
@@ -1356,6 +1469,18 @@ BIBLIOGRAFIA = [
     ("Jurisprudência", "Tribunal da Relação do Porto, acórdão de 8.5.2024, proc. 11/21.2GEVFR.P1.", "https://www.dgsi.pt/jtrp.nsf/56a6e7121657f91e80257cda00381fdf/703e8b815ea39ece80258b34004b8157", "11/21.2GEVFR.P1"),
     ("Projetos e iniciativas legislativas", "Projeto de Lei n.º 612/XVII/1.ª (Bloco de Esquerda), de 5.5.2026: acorrentamento, alojamento, dispositivos coercivos e Plano Nacional pelo Bem-Estar dos Animais de Companhia.", "repositório: Projetos de lei/PJL 612-XVII BE - acorrentamento e dispositivos coercivos.pdf", ""),
     ("Documentos oficiais, estratégias e relatórios", "DGAV, proposta de resposta à MIAR sobre esterilizações CED em concelhos sem programa, 24.10.2025, com a correspondência da MIAR de 3.12.2024 a 21.10.2025 e a resposta da Direção de Serviços de 20.10.2025.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf", ""),
+    ("Legislação e regulamentos", "Decreto-Lei n.º 9/2021, de 29 de janeiro, que aprova o Regime Jurídico das Contraordenações Económicas (RJCE).",
+     "repositório: Legislação vigente/Decreto-lei n.º 9-2021 - REGIME JURÍDICO DAS CONTRAORDENAÇÕES ECONÓMICAS.pdf", ""),
+    ("Legislação e regulamentos", "Decreto Regulamentar n.º 4/2025, de 7 de abril (altera a orgânica da DGAV), Diário da República, 1.ª série.",
+     "https://files.diariodarepublica.pt/1s/2025/04/06800/0007500080.pdf", "centros de recolha oficial"),
+    ("Legislação e regulamentos", "Lei n.º 73-A/2025, de 30 de dezembro (Orçamento do Estado para 2026).",
+     "https://diariodarepublica.pt/dr/detalhe/lei/73-a-2025-993270096", ""),
+    ("Legislação e regulamentos", "Despacho n.º 2836/2026 (estrutura flexível da DGAV), Diário da República, 2.ª série, 5.3.2026.",
+     "https://files.diariodarepublica.pt/2s/2026/03/045000000/0023300269.pdf", "centros de recolha oficial"),
+    ("Legislação e regulamentos", "Despacho n.º 9102/2026 (programa de incentivos para CRO e IAZ), Diário da República, 2.ª série, 20.7.2026.",
+     "https://diariodarepublica.pt/dr/detalhe/despacho/9102-2026-1148891344", ""),
+    ("Projetos e iniciativas legislativas", "Código do Animal, proposta de consolidação (DL 214/2013, versão de trabalho).",
+     "repositório: Código do Animal DL214.2013_OCR.docx.docx", ""),
     # --- Documentos internos
     ("Documentos de trabalho do grupo", "Contributos dos médicos veterinários municipais, reunião de Santarém, 6.3.2026.",
      "repositório: Contributos MVM.docx", ""),
@@ -1378,4 +1503,5 @@ REGISTO_ALTERACOES = [
     ("1.11", "8.10.2026", "Fichas novas P-01 (a amarração no domicílio fica sem duração máxima nem requisitos verificáveis, com a condenação confirmada pelo TRP em 8.5.2024 por amarração diária de um cão) e A-01 (duas normas diferentes sobre que espécies são animais de companhia, arts. 2.º e 4.º). Lapso L-10 no art. 19.º. Acórdão do TRP de 8.5.2024 acrescentado às fichas T-03, T-04 e T-13. Bibliografia: Projeto de Lei n.º 612/XVII/1.ª."),
     ("1.12", "9.10.2026", "Fichas C-01 e C-08 completadas com a proposta de resposta da DGAV à MIAR (24.10.2025): não analisa o art. 4.º da Lei 27/2016 e admite que o CRO ou a associação sejam titulares dos gatos CED, ao contrário da nota jurídica sobre a titularidade e do RGAC. Anexo B: posições da DGAV (24.10.2025) e da MIAR. O Projeto de Lei n.º 612/XVII/1.ª passa para o grupo de projetos e iniciativas legislativas da bibliografia."),
     ("1.13", "9.10.2026", "Ficha C-01: a proposta passa a registar a posição desta análise. A leitura que trata o CED como mera faculdade municipal, adotada pela DGAV nas respostas à MIAR de 20.10.2025 e 24.10.2025, é um erro de interpretação face ao art. 4.º da Lei 27/2016 e ao art. 143.º, n.º 1 do CPA."),
+    ("1.14", "13.10.2026", "Primeira ficha do cap. XV: S-01 (os deveres dos CRO e o relatório anual ficam sem coima). Hoje a Lei 27/2016 e a Portaria 146/2017 não têm contraordenações e os CRO só publicitam o relatório, sem dever de envio à DGAV; o art. 140.º resolve a falta de CRO e os requisitos dos estabelecimentos, mas não a eutanásia proibida, a esterilização e adoção pelo CRO, nem o relatório. Lapsos novos L-11 a L-17 (arts. 140.º, 101.º, 39.º e 40.º, 89.º, 90.º, 98.º e 95.º). Fontes novas: DL 9/2021 (RJCE), Decreto Regulamentar 4/2025, Lei 73-A/2025, Despachos 2836/2026 e 9102/2026, Código do Animal."),
 ]

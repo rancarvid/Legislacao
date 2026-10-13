@@ -1,6 +1,6 @@
 ---
 name: memorando-rgac
-description: Atualizar o Memorando de acompanhamento do RGAC (Word), mantido em três versões paralelas (principal 1.x e ensaios 2.0 e 3.0), que regista os problemas encontrados no projeto de Regime Geral do Animal de Companhia (fichas por tema ou capítulo, lapsos formais, cobertura da revisão artigo a artigo, posições de entidades externas e bibliografia verificada). Usar sempre que o utilizador identifique um problema, lapso ou melhoria no RGAC, peça para rever um artigo ou capítulo, acrescentar ou fechar uma ficha, carregue uma versão nova do RGAC, ou peça o memorando de acompanhamento.
+description: Atualizar o Memorando de acompanhamento do RGAC (Word), mantido em três versões paralelas (principal 1.x e ensaios 2.0 e 3.0), que regista os problemas encontrados no projeto de Regime Geral do Animal de Companhia (fichas por tema ou capítulo, lapsos formais, cobertura da revisão artigo a artigo, posições de entidades externas e bibliografia verificada). Usar sempre que o utilizador identifique um problema, lapso ou melhoria no RGAC, peça para rever um artigo ou capítulo, acrescentar ou fechar uma ficha, carregue uma versão nova do RGAC, ou peça o memorando de acompanhamento. Aplicar também por iniciativa própria, sem perguntar, sempre que uma análise sobre legislação que o RGAC atualizará, criará ou revogará revele um problema, lapso ou lacuna no RGAC.
 ---
 
 # Memorando de acompanhamento do RGAC
@@ -32,7 +32,7 @@ O memorando é mantido em três versões com o mesmo conteúdo, até o utilizado
 
 Quando atualizar:
 - Sempre que esta skill for acionada, a alteração faz-se nas três versões.
-- Quando for o assistente a achar que é preciso atualizar o memorando (por exemplo, encontrou um problema durante outra análise), pergunta primeiro ao utilizador se é para atualizar os memorandos. Não atualiza sem resposta.
+- Aplicação contínua (instrução do utilizador, 13.10.2026): sempre que o trabalho toque em legislação que o RGAC atualizará, criará ou revogará, e daí resulte um problema, lapso, lacuna ou melhoria do RGAC, o assistente atualiza os memorandos no mesmo trabalho, sem perguntar. Isto vale também quando a pergunta do utilizador era outra (por exemplo, uma consulta sobre legislação vigente). No fim, diz em uma ou duas linhas que fichas ou lapsos acrescentou ou mudou.
 
 Como atualizar:
 1. Fazer a alteração em `dados_memorando_rgac.py` (principal).
