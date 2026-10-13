@@ -109,9 +109,17 @@ antes de cada commit (ver a skill).
    **habitação** (fogo mais varandas, terraços, anexos, logradouros pavimentados, telheiros, alpendres).
    Âmbito: conceitos dos instrumentos de gestão territorial (art.º 1.º; vinculação no n.º 2 do art.º 4.º);
    vale como elemento de interpretação. **O utilizador contestou que a definição exista**; foi confirmada
-   com imagem da p. 44 e o utilizador pediu depois a referência. Cópia obtida do sítio do Governo Regional
-   da Madeira (PDF da INCM, gerado em 26.9.2019); **falta conferir no DRE e confirmar se o diploma foi
-   alterado**. Já usada no anexo de casos-tipo (1.3); **não** está no capítulo 5 do estudo, nem no ponto 1
+   com imagem da p. 44 e o utilizador pediu depois a referência. **Conferido no DRE em 13.10.2026**
+   (PDF de `data.dre.pt`, 115 páginas; ficha I-31 na p. 44 do DR): o texto acima coincide verbatim, e a
+   vinculação é a do n.º 2 do art.º 4.º. **Não se encontrou alteração ao diploma**: nada consta na vlex
+   nem nas pesquisas, e o «Projeto de diploma relativo aos conceitos técnicos» da reunião do Conselho
+   Nacional do Território é o projeto preparatório deste decreto regulamentar, não uma alteração
+   posterior — fala de atualizar o Decreto Regulamentar n.º 9/2009 e não tem número. Note-se que esse
+   projeto previa atualizar as definições por homologação do membro do Governo, mecanismo que o texto
+   publicado **não** tem (o art.º 5.º publicado é «Regiões Autónomas»), pelo que as fichas só podem
+   mudar por alteração formal. Ressalva: a lista oficial de «alterado por» do DRE não é legível daqui
+   (sítio em JavaScript); a conclusão assenta na ausência de registo nas fontes consultadas.
+   Já usada no anexo de casos-tipo (1.3); **não** está no capítulo 5 do estudo, nem no ponto 1
    da síntese, nem no ponto 1 do anexo de suporte. Resolve o flanco «habitações e terrenos anexos» (al. c)
    do n.º 3 do art.º 14.º): a sanção cobre a habitação e os terrenos anexos, o n.º 2 conta o fogo.
 2. **Ruído.** O RGR distingue «ruído de vizinhança», associado ao uso habitacional e expressamente a «animal
@@ -151,7 +159,7 @@ antes de cada commit (ver a skill).
 1. Corrigir o anexo de casos-tipo (E.5, 1) e regenerar.
 2. Decidir com o utilizador o formato do quadro autónomo (E.5, 2).
 3. Decidir se a definição do DR 5/2019 entra no capítulo 5 do estudo, no ponto 1 da síntese e no ponto 1 do
-   anexo de suporte; antes disso, conferir no DRE (E.4, 1).
+   anexo de suporte. A conferência no DRE está feita (E.4, 1), pelo que falta apenas a decisão.
 4. Confirmar paginação num ambiente com LibreOffice: a síntese tem de caber em duas páginas; o anexo de
    suporte deve ter 7-8; o estudo tinha 66.
 5. Levar ao estudo extenso os achados de E.4 (capítulos 5, 10, 12, 15.7 e 17) e decidir E.5, 3.
@@ -171,7 +179,12 @@ antes de cada commit (ver a skill).
   em PDF não cifrados. Para os PDF do DR (cifrados AES) usar `pymupdf` (`pip install pymupdf`), que também
   converte páginas em imagem.
 - **DR por ELI** (`https://data.dre.pt/eli/dec-lei/<n>/<ano>/<mm>/<dd>/p/dre/pt/pdf`) funciona para decretos-
-  leis; **falhou para decretos regulamentares** (`decreg`, `dec-reg`, `dec-regulamentar`).
+  leis. Para **decretos regulamentares** o tipo é `decregul` e é preciso seguir o redirecionamento
+  (`curl -sL`), porque a primeira resposta é um 301: `https://data.dre.pt/eli/decregul/5/2019/09/27/p/dre/pt/pdf`
+  devolve o Decreto Regulamentar n.º 5/2019 completo, 115 páginas (verificado em 13.10.2026). Falham
+  `decreg`, `dec-regul` e `dec-regulamentar`, que devolvem a página em JavaScript do portal (2346 bytes);
+  o mesmo sucede com todas as rotas `.../pt/html` e com as versões consolidadas `.../cons/...`, pelo que
+  daqui só se obtém o texto original em PDF.
 - **PGDL** (`https://www.pgdlisboa.pt/leis/lei_print_articulado.php?nid=<n>&tabela=leis`): 347 DL 276/2001;
   339 DL 314/2003; 775 Código Civil; 109 Código Penal; 2248 CPA; 1990 Lei 75/2013; 2591 Lei 26/2016; 3093 DL
   82/2019; 4 Constituição.
