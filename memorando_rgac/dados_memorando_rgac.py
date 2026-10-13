@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.14"
+VERSAO_MEMORANDO = "1.15"
 DATA_MEMORANDO = "13.10.2026"
 DATA_LIGACOES = "13.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1072,11 +1072,12 @@ LAPSOS = [
         "cod": "L-13",
         "onde": [
             "39",
+            "39-b",
             "40"
         ],
         "estado": "Aberto",
         "ficha": "",
-        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. 39.º e o art. 40.º. No texto sem as alterações registadas é um segundo art. 39.º. Por isso não aparece na estrutura usada no Anexo D. O art. 40.º, n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
+        "lapso": "Na subsecção III do cap. IV, o artigo «Instalações dos abrigos e centros de recolha oficial» não tem número («Artigo º») e está entre o art. 39.º e o art. 40.º. No texto sem as alterações registadas é um segundo art. 39.º. No Anexo D aparece como 39-b. O art. 40.º, n.º 1, aplica-se aos «estabelecimentos previstos no presente artigo», mas esse artigo não prevê estabelecimentos.",
         "correcao": "Numerar o artigo e renumerar os seguintes. No n.º 1 do artigo «Outras disposições», remeter para os estabelecimentos da subsecção III."
     },
     {
@@ -1504,4 +1505,5 @@ REGISTO_ALTERACOES = [
     ("1.12", "9.10.2026", "Fichas C-01 e C-08 completadas com a proposta de resposta da DGAV à MIAR (24.10.2025): não analisa o art. 4.º da Lei 27/2016 e admite que o CRO ou a associação sejam titulares dos gatos CED, ao contrário da nota jurídica sobre a titularidade e do RGAC. Anexo B: posições da DGAV (24.10.2025) e da MIAR. O Projeto de Lei n.º 612/XVII/1.ª passa para o grupo de projetos e iniciativas legislativas da bibliografia."),
     ("1.13", "9.10.2026", "Ficha C-01: a proposta passa a registar a posição desta análise. A leitura que trata o CED como mera faculdade municipal, adotada pela DGAV nas respostas à MIAR de 20.10.2025 e 24.10.2025, é um erro de interpretação face ao art. 4.º da Lei 27/2016 e ao art. 143.º, n.º 1 do CPA."),
     ("1.14", "13.10.2026", "Primeira ficha do cap. XV: S-01 (os deveres dos CRO e o relatório anual ficam sem coima). Hoje a Lei 27/2016 e a Portaria 146/2017 não têm contraordenações e os CRO só publicitam o relatório, sem dever de envio à DGAV; o art. 140.º resolve a falta de CRO e os requisitos dos estabelecimentos, mas não a eutanásia proibida, a esterilização e adoção pelo CRO, nem o relatório. Lapsos novos L-11 a L-17 (arts. 140.º, 101.º, 39.º e 40.º, 89.º, 90.º, 98.º e 95.º). Fontes novas: DL 9/2021 (RJCE), Decreto Regulamentar 4/2025, Lei 73-A/2025, Despachos 2836/2026 e 9102/2026, Código do Animal."),
+    ("1.15", "13.10.2026", "A estrutura do RGAC passa a ser lida com as alterações registadas aceites, como as citações. Mudam as epígrafes dos arts. 80.º («(CRO e Abrigo)»), 94.º («Centros de recolha oficial») e 106.º. O artigo sem número «Instalações dos abrigos e centros de recolha oficial» entra no Anexo D como 39-b (lapso L-13). Sem alterações ao conteúdo das fichas."),
 ]
