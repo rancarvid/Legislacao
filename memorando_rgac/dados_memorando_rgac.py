@@ -11,9 +11,9 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.21"
-DATA_MEMORANDO = "13.10.2026"
-DATA_LIGACOES = "13.10.2026"
+VERSAO_MEMORANDO = "1.22"
+DATA_MEMORANDO = "14.10.2026"
+DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
@@ -950,12 +950,92 @@ CAPITULOS = [
         },
     ]},
     {"letra": "H", "capitulos": ["Capítulo III"], "titulo": "Detenção (cap. III)", "intro": [], "fichas": []},
-    {"letra": "E", "capitulos": ["Capítulo IV"], "titulo": "Detenção em estabelecimentos (cap. IV)", "intro": [], "fichas": []},
+    {"letra": "E", "capitulos": ["Capítulo IV"], "titulo": "Detenção em estabelecimentos (cap. IV)", "intro": [], "fichas": [
+        {
+            "cod": "E-01",
+            "titulo": "Nada sobre animais de companhia em acidente grave ou catástrofe",
+            "onde": [
+                "art. 25.º",
+                "art. 98.º, n.º 13",
+                "Lei 38/2026, de 3 de agosto"
+            ],
+            "origem": "VIGENTE",
+            "problema": [
+                "A Lei 38/2026, em vigor desde 8.8.2026, integrou o socorro animal na proteção civil. Os municípios têm de planear a busca, o salvamento, a evacuação, o alojamento e o abastecimento dos animais, com simulacros (Lei 65/2007, art. 2.º, n.º 2, al. e)). A DGAV passa a ter representante na Comissão Nacional e nas comissões distritais de proteção civil (Lei 27/2006, art. 37.º, n.º 1, al. f), e art. 39.º, n.º 1, al. i)) e nos centros de coordenação operacional nacional e regionais. O teatro de operações passa a ter uma «zona de concentração de acolhimento de animais» (DL 90-A/2022, anexo, art. 13.º, al. d)).",
+                "O RGAC não refere a Lei 38/2026 nem a proteção civil, salvo a remissão do art. 25.º para as medidas da ANEPC contra incêndios nas instalações. Não há dever de plano de evacuação para CRO, abrigos ou estabelecimentos, muitos em zona rural ou florestal. A lei vigente também não o tem: o DL 276/2001, art. 11.º, só exige proteção contra incêndios em edifícios fechados.",
+                "Não está regulada a guarda temporária de animais socorridos nem a reunificação com o titular através do SIAC. A eutanásia fora de CRO e de CAMV não tem enquadramento: a Lei 27/2016, art. 3.º, n.º 6, só a admite nesses locais.",
+                "A presunção de abandono de quinze dias aplica-se aos animais socorridos que entrem em CRO (ver G-02).",
+                "Não há base legal clara para a DGAV partilhar com os serviços municipais de proteção civil a lista de estabelecimentos registados e os dados do SIAC necessários ao planeamento.",
+                "A proposta de procedimento-tipo da OMV e da ANVETEM (26.8.2026) trata o socorro, mas como orientação administrativa. A análise interna das propostas ENAE, FEDRA e APMVEAC já tinha registado esta omissão (ponto 2.5)."
+            ],
+            "proposta": "Aditar um artigo sobre animais de companhia em acidente grave ou catástrofe, articulado com a Lei 38/2026: (i) plano de evacuação para CRO, abrigos e estabelecimentos acima de certa dimensão, integrado no plano municipal de emergência; (ii) partilha com os serviços de proteção civil da lista de estabelecimentos registados e dos dados do SIAC necessários; (iii) guarda temporária e reunificação, com leitura do transponder e consulta ao SIAC; (iv) suspensão da presunção de abandono enquanto vigorar a situação de alerta, contingência ou calamidade; (v) eutanásia no local por médico veterinário quando o transporte não seja possível.",
+            "levantado": [
+                "Análise interna (14.10.2026), a propósito da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM à DGAV (v3.0, 26.8.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "G-02"
+            ]
+        },
+    ]},
     {"letra": "M", "capitulos": ["Capítulo V", "Capítulo VI", "Capítulo VII"],
      "titulo": "Alimentação, maneio, transporte, contenção e intervenções cirúrgicas (caps. V a VII)", "intro": [], "fichas": []},
     {"letra": "R", "capitulos": ["Capítulo VIII"], "titulo": "Registo, identificação e sistemas de informação (cap. VIII)", "intro": [], "fichas": []},
     {"letra": "Z", "capitulos": ["Capítulo IX"], "titulo": "Zoonoses (cap. IX)", "intro": [], "fichas": []},
-    {"letra": "G", "capitulos": ["Capítulo X"], "titulo": "Gestão das populações animais (cap. X)", "intro": [], "fichas": []},
+    {"letra": "G", "capitulos": ["Capítulo X"], "titulo": "Gestão das populações animais (cap. X)", "intro": [], "fichas": [
+        {
+            "cod": "G-01",
+            "titulo": "A recolha por razões de bem-estar passa da DGAV para as câmaras e o destino para o médico veterinário municipal",
+            "onde": [
+                "art. 91.º, n.ºs 5 a 8",
+                "art. 98.º, n.º 1"
+            ],
+            "origem": "RGAC",
+            "problema": [
+                "Hoje, quando está em causa a saúde e o bem-estar dos animais, a recolha cabe à DGAV, «com a intervenção das câmaras municipais, se necessário», e às autoridades policiais (DL 276/2001, art. 19.º, n.º 8). Os animais vão para CRO e é a DGAV que «decide o destino dos mesmos» (n.º 9).",
+                "O art. 91.º, n.º 5 passa a recolha para as câmaras municipais, «quando possível com a colaboração das autoridades policiais». O n.º 8 entrega o destino ao «MVM ou médico-veterinário do município». A DGAV deixa de aparecer nas duas normas.",
+                "A Lei 92/95, art. 1.º-A, n.º 1, aditado pela Lei 39/2020, obriga as forças de segurança, os órgãos de polícia criminal, a DGAV e os municípios a desencadear a recolha quando há evidência de crime de maus-tratos a animais de companhia. O RGAC revoga a Lei 92/95 (ver F-01) e o art. 91.º só cobre parte deste dever.",
+                "O n.º 8 não distingue os animais apreendidos. Quando há processo penal, os animais são confiados a depositários idóneos e o destino é decidido pela autoridade judiciária (CPP, arts. 178.º, n.º 2, e 186.º, n.º 1, na redação da Lei 39/2020). Quando há processo de contraordenação, decide a autoridade administrativa (DL 9/2021, anexo, arts. 49.º e 50.º). Em nenhum dos casos decide o MVM.",
+                "O n.º 7 só prevê mandado judicial para lutas e só a pedido das entidades policiais.",
+                "A proposta de procedimento-tipo da OMV e da ANVETEM (v3.0, 26.8.2026) assenta no modelo vigente, com a DGAV a coordenar e a decidir o destino. Se o art. 91.º ficar como está, esse procedimento terá de ser refeito."
+            ],
+            "proposta": "Decidir quem lidera a recolha por razões de bem-estar. Se passar para as câmaras, manter a possibilidade de a DGAV a determinar e acompanhar. Ressalvar no n.º 8 os animais apreendidos, cujo destino é o fixado pela autoridade que ordenou a apreensão. Integrar no RGAC, para todas as autoridades, o dever do art. 1.º-A da Lei 92/95. Prever o pedido de mandado também pela DGAV.",
+            "levantado": [
+                "Análise interna (14.10.2026), a propósito da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM à DGAV (v3.0, 26.8.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "F-01",
+                "S-02",
+                "G-02"
+            ]
+        },
+        {
+            "cod": "G-02",
+            "titulo": "A presunção de abandono aos 15 dias não ressalva animais apreendidos nem animais socorridos em emergência",
+            "onde": [
+                "art. 98.º, n.º 13",
+                "art. 70.º, n.ºs 8 e 9"
+            ],
+            "origem": "VIGENTE",
+            "problema": [
+                "O art. 98.º, n.º 13 presume abandonados os animais acolhidos pelos CRO e não reclamados em quinze dias, e manda esterilizá-los e encaminhá-los para adoção. O art. 70.º, n.ºs 8 e 9 manda registá-los no SIAC em nome do operador do CRO após 15 dias. Reproduz a Lei 27/2016, art. 3.º, n.º 1, e o DL 82/2019, art. 11.º, n.º 5.",
+                "Os animais retirados por decisão de autoridade também entram em CRO (art. 91.º, n.º 8; hoje, DL 276/2001, art. 19.º, n.º 9). Não estão por reclamar: estão à ordem de uma decisão. Lida à letra, a norma deixa dar para adoção um animal apreendido num processo penal antes de o juiz decidir.",
+                "O mesmo vale para os animais socorridos em acidente grave ou catástrofe. Uma família desalojada pode não reclamar o animal em quinze dias. Desde a Lei 38/2026, os municípios têm de planear o alojamento de animais em emergência (Lei 65/2007, art. 2.º, n.º 2, al. e)).",
+                "O n.º 13 remete ainda para o «prazo previsto no artigo XX»."
+            ],
+            "proposta": "Ressalvar no art. 98.º, n.º 13 e no art. 70.º, n.ºs 8 e 9: (i) os animais apreendidos ou recolhidos por decisão de autoridade, cujo destino é o fixado nessa decisão; (ii) os animais recolhidos em acidente grave ou catástrofe, com prazo mais longo, contado da notificação do titular identificado no SIAC. Prever no SIAC um estado próprio para cada caso.",
+            "levantado": [
+                "Análise interna (14.10.2026), a propósito da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM à DGAV (v3.0, 26.8.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "G-01",
+                "E-01",
+                "T-05"
+            ]
+        },
+    ]},
     {"letra": "K", "capitulos": ["Capítulo XI", "Capítulo XII", "Capítulo XIII"],
      "titulo": "Cadáveres, exposições, comércio e livros genealógicos (caps. XI a XIII)", "intro": [], "fichas": []},
     {"letra": "D", "capitulos": ["Capítulo XIV"], "titulo": "Animais perigosos e potencialmente perigosos (cap. XIV)", "intro": [], "fichas": []},
@@ -1002,6 +1082,33 @@ CAPITULOS = [
                 "T-11",
                 "C-19",
                 "F-01"
+            ]
+        },
+        {
+            "cod": "S-02",
+            "titulo": "A apreensão provisória serve só as contraordenações e admite devolver os animais ao local de origem",
+            "onde": [
+                "art. 139.º, n.ºs 1, 3 e 8",
+                "art. 144.º",
+                "art. 138.º, n.º 3"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "O art. 139.º regula a apreensão provisória dos animais usados numa contraordenação, com fiel depositário, termo de depósito e relatório da DSAVR. Segue o modelo do DL 315/2009 e do DL 265/2007.",
+                "O n.º 8 permite, quando o detentor recusa ser fiel depositário ou é desconhecido, encaminhar os animais para locais onde esteja garantido o seu bem-estar, «nomeadamente o retorno ao local de origem». Em maus-tratos ou em alojamento sem condições, o local de origem é a causa do problema.",
+                "Hoje as contraordenações do DL 276/2001 seguem o regime das contraordenações económicas (DL 276/2001, art. 68.º). Esse regime permite medidas cautelares sem audição prévia, a apreensão de «seres vivos», o detentor como fiel depositário salvo manifesto inconveniente, e o destino antecipado em caso de «perigo para a saúde ou para o bem-estar de animais» (DL 9/2021, anexo, arts. 48.º a 50.º). O recurso não tem efeito suspensivo (art. 52.º, n.º 3). O RGAC remete para o regime geral das contraordenações (art. 144.º) e o art. 139.º não reproduz estas regras.",
+                "O artigo não ressalva o processo penal. Aí os animais apreendidos são confiados a depositários idóneos e, quando deixam de ser necessários à prova, entregues a quem foi nomeado seu fiel depositário (CPP, arts. 178.º, n.º 2, e 186.º, n.ºs 1 e 7, na redação da Lei 39/2020).",
+                "Não há ligação ao SIAC. Um animal apreendido não fica marcado como tal e a titularidade pode ser transmitida durante o processo. Também não está prevista a cedência voluntária dos animais pelo detentor no ato da apreensão."
+            ],
+            "proposta": "Reescrever o art. 139.º: (i) excluir o retorno ao local de origem quando a apreensão se funde em maus-tratos ou falta de condições; (ii) prever o destino antecipado por razões de bem-estar, como no RJCE, ou manter as contraordenações do RGAC no regime das contraordenações económicas; (iii) ressalvar o regime do CPP quando haja processo penal; (iv) prever no SIAC o estado «sob apreensão», com bloqueio de transmissões; (v) prever a cedência voluntária pelo detentor, registada no SIAC, sem prejuízo da responsabilidade contraordenacional ou criminal.",
+            "levantado": [
+                "Análise interna (14.10.2026), a propósito da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM à DGAV (v3.0, 26.8.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "G-01",
+                "G-02",
+                "S-01"
             ]
         },
     ]},
@@ -1172,6 +1279,18 @@ LAPSOS = [
         "ficha": "",
         "lapso": "No art. 95.º, o n.º 4 remete para as despesas «previstas no n.º 2», que não trata de despesas. As despesas estão no art. 96.º. O n.º 5 remete para o «n.º X do artigo XXX». Depois do n.º 6 ficou a nota «Reescrever este nº, muito denso».",
         "correcao": "Remeter o n.º 4 para o art. 96.º, n.º 1, fixar a remissão do n.º 5 e retirar a nota."
+    },
+    {
+        "cod": "L-18",
+        "onde": [
+            "50",
+            "51",
+            "52"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "No art. 50.º, o primeiro dos motivos de suspensão aparece como «2 -» e os outros três como alíneas a) a c). Os números seguintes ficam deslocados. O n.º 5 diz «encerramento definitivo do alojamento», em vez de estabelecimento. O n.º 7 remete para a decisão «a que se referem os n.ºs 3 e 4», que agora são a instrução e a regra da suspensão, e para o «artigo XX.º». O art. 51.º, n.ºs 1 e 2, remete para o prazo «fixado nos termos do n.º 4 do artigo anterior», que agora está no n.º 5. O art. 52.º remete para os «artigos 39.º e 40.º», que tratam de peixes e de outras disposições; devia remeter para o art. 50.º e o art. 51.º.",
+        "correcao": "Passar os quatro motivos a alíneas a) a d) do n.º 1 e renumerar o artigo. No n.º 5, trocar «alojamento» por «estabelecimento». No n.º 7, remeter para as decisões de suspensão e de encerramento e para o artigo da recolha e encaminhamento de animais. Corrigir as remissões do art. 51.º e do art. 52.º."
     },
 ]
 
@@ -1547,6 +1666,14 @@ BIBLIOGRAFIA = [
      "repositório: @legislacao Portaria n.º 264_2013 - Aprova as normas técnicas de execução regulamentar do Programa Nacional de Luta e Vigilância Epidemiológica da Raiva Animal e Outras Zoonoses_ocred.docx", ""),
     ("Projetos e iniciativas legislativas", "Código do Animal, proposta de consolidação (DL 214/2013, versão de trabalho).",
      "repositório: Código do Animal DL214.2013_OCR.docx.docx", ""),
+    ("Legislação e regulamentos", "Lei n.º 38/2026, de 3 de agosto (integra no âmbito da proteção civil a busca, salvamento e socorro animal), Diário da República, 1.ª série, n.º 148.",
+     "repositório: Legislação vigente/Lei n.º 38_2026, de 3 de agosto - Socorro animal na proteção civil.pdf", ""),
+    ("Legislação e regulamentos", "Lei n.º 39/2020, de 18 de agosto (regime sancionatório e processual dos crimes contra animais de companhia; altera o Código Penal, o Código de Processo Penal e a Lei n.º 92/95), Diário da República, 1.ª série, n.º 160.",
+     "repositório: Legislação vigente/Lei n.º 39_2020, de 18 de agosto - Crimes contra animais de companhia (CP, CPP e Lei 92-95).pdf", ""),
+    ("Legislação e regulamentos", "Decreto-Lei n.º 90-A/2022, de 30 de dezembro (Sistema Integrado de Operações de Proteção e Socorro), Diário da República, 1.ª série, n.º 251.",
+     "repositório: Legislação vigente/Decreto-Lei n.º 90-A_2022, de 30 de dezembro - SIOPS.pdf", ""),
+    ("Pareceres de ordens, associações e ONG", "OMV e ANVETEM (2026). Procedimento-tipo de intervenção: operações de retirada e apreensão de animais e de socorro animal, proposta apresentada à DGAV, v3.0, 26.8.2026.",
+     "repositório: Protocolo de retirada de alojamentos/Proposta de Procedimento Integrado_DGAV_OMV_ANVETEM_v26_08_2026_signed_signed.pdf", ""),
     # --- Documentos internos
     ("Documentos de trabalho do grupo", "Contributos dos médicos veterinários municipais, reunião de Santarém, 6.3.2026.",
      "repositório: Contributos MVM.docx", ""),
@@ -1577,4 +1704,5 @@ REGISTO_ALTERACOES = [
     ("1.19", "13.10.2026", "Ficha S-01 corrigida: o DL 276/2001 pune como contraordenação muito grave a morte infligida a um animal sem necessidade (art. 7.º, n.º 3, e art. 68.º, n.º 2, al. d)), com instrução pela DGAV, o que pode abranger o abate por sobrelotação num CRO. A al. f) do n.º 1 do art. 68.º passa a ser citada e delimitada: para os centros de recolha, abrange as condições dos arts. 41.º e 8.º a 16.º (art. 42.º, n.º 1), mas não a adoção, a esterilização nem o envio de dados."),
     ("1.20", "13.10.2026", "Ficha S-01: retirada a leitura de que o DL 276/2001, art. 7.º, n.º 3 (e a Lei 92/95, art. 1.º, n.º 1) pode abranger a occisão por sobrelotação num CRO. Estes tipos visam a violência contra o animal; a occisão por médico veterinário, sem dor, por decisão do CRO, ainda que por motivo proibido, fica fora deles. A proibição do abate por sobrelotação continua sem coima própria."),
     ("1.21", "13.10.2026", "Ficha S-01: dados do relatório nacional de 2025 da DGAV sobre os CRO (resposta de 60,5 % dos municípios com CRO, 37 sem registo no CVAR/IE, limites do CVAR/IE, dados por município e não por CRO, caso do CRO intermunicipal de Proença-a-Nova) e dever de registo mensal no CVAR/IE da Portaria 264/2013, sem sanção. Proposta: relatório do art. 80.º por CRO, discriminado por município de origem. Fontes novas: relatório da DGAV de 2025, Regulamento n.º 164/2022, Portaria 264/2013."),
+    ("1.22", "14.10.2026", "Fichas novas G-01 (a recolha por razões de bem-estar passa da DGAV para as câmaras e o destino para o MVM), G-02 (presunção de abandono aos 15 dias sem ressalva para animais apreendidos ou socorridos em emergência), S-02 (apreensão provisória só para contraordenações, com retorno ao local de origem e sem as regras do RJCE e do CPP) e E-01 (nada sobre animais de companhia em acidente grave ou catástrofe, face à Lei 38/2026). Lapso L-18 (arts. 50.º a 52.º). Origem: análise da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM. Fontes novas: Lei 38/2026, Lei 39/2020, DL 90-A/2022 e a proposta OMV/ANVETEM."),
 ]

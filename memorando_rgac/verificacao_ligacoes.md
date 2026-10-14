@@ -1,6 +1,6 @@
 # Verificação das ligações da bibliografia do memorando
 
-Executado em 13.10.2026. 77 de 80 ligações verificadas; 3 falhas.
+Executado em 14.10.2026. 81 de 84 ligações verificadas; 3 falhas.
 
 | Estado | Grupo | Referência | Ligação | Como foi verificada |
 |---|---|---|---|---|
@@ -82,5 +82,9 @@ Executado em 13.10.2026. 77 de 80 ligações verificadas; 3 falhas.
 | OK | Legislação e regulamentos | Regulamento n.º 164/2022, da Associação de Municípios para a Gestão do Centro Intermunicipal de Recolha de Animais Errantes (CIRAE), Diário da República, 2.ª série, n.º 31, 14.2.2022. | https://files.diariodarepublica.pt/2s/2022/02/031000000/0030000303.pdf | curl 200 |
 | OK | Legislação e regulamentos | Portaria n.º 264/2013, de 16 de agosto (normas técnicas do Programa Nacional de Luta e Vigilância Epidemiológica da Raiva Animal e Outras Zoonoses). | repositório: @legislacao Portaria n.º 264_2013 - Aprova as normas técnicas de execução regulamentar do Programa Nacional de Luta e Vigilância Epidemiológica da Raiva Animal e Outras Zoonoses_ocred.docx | ficheiro no repositório |
 | OK | Projetos e iniciativas legislativas | Código do Animal, proposta de consolidação (DL 214/2013, versão de trabalho). | repositório: Código do Animal DL214.2013_OCR.docx.docx | ficheiro no repositório |
+| OK | Legislação e regulamentos | Lei n.º 38/2026, de 3 de agosto (integra no âmbito da proteção civil a busca, salvamento e socorro animal), Diário da República, 1.ª série, n.º 148. | repositório: Legislação vigente/Lei n.º 38_2026, de 3 de agosto - Socorro animal na proteção civil.pdf | ficheiro no repositório |
+| OK | Legislação e regulamentos | Lei n.º 39/2020, de 18 de agosto (regime sancionatório e processual dos crimes contra animais de companhia; altera o Código Penal, o Código de Processo Penal e a Lei n.º 92/95), Diário da República, 1.ª série, n.º 160. | repositório: Legislação vigente/Lei n.º 39_2020, de 18 de agosto - Crimes contra animais de companhia (CP, CPP e Lei 92-95).pdf | ficheiro no repositório |
+| OK | Legislação e regulamentos | Decreto-Lei n.º 90-A/2022, de 30 de dezembro (Sistema Integrado de Operações de Proteção e Socorro), Diário da República, 1.ª série, n.º 251. | repositório: Legislação vigente/Decreto-Lei n.º 90-A_2022, de 30 de dezembro - SIOPS.pdf | ficheiro no repositório |
+| OK | Pareceres de ordens, associações e ONG | OMV e ANVETEM (2026). Procedimento-tipo de intervenção: operações de retirada e apreensão de animais e de socorro animal, proposta apresentada à DGAV, v3.0, 26.8.2026. | repositório: Protocolo de retirada de alojamentos/Proposta de Procedimento Integrado_DGAV_OMV_ANVETEM_v26_08_2026_signed_signed.pdf | ficheiro no repositório |
 | OK | Documentos de trabalho do grupo | Contributos dos médicos veterinários municipais, reunião de Santarém, 6.3.2026. | repositório: Contributos MVM.docx | ficheiro no repositório |
 | OK | Documentos de trabalho do grupo | Resumo dos comentários ao RGBEAC (OMV, SNMV, DAJA e outros revisores). | repositório: Resumo_Comentarios_RGBEAC.docx | ficheiro no repositório |
