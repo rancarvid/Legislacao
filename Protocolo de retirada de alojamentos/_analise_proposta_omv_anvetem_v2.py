@@ -186,7 +186,8 @@ p('Procedimento-tipo de intervenção em operações de retirada e apreensão de
 p('Apreciação na perspetiva da DGAV e das necessidades face à legislação vigente, separada em dois '
   'âmbitos: A. retirada de animais de alojamentos fora de emergência; B. socorro em emergência. '
   'Foco nos animais de companhia.', size=10.5, cor=CINZA, space=4)
-p('Documento de trabalho, versão 2, 14.10.2026. Integra as notas manuscritas ao ficheiro anotado «Proposta de '
+p('Documento de trabalho, versão 2.1, 14.10.2026 (2.1: acrescentado o ponto 4.4, u), sobre o ponto 1.5 da '
+  'proposta). Integra as notas manuscritas ao ficheiro anotado «Proposta de '
   'Procedimento Integrado_DGAV_OMV_ANVETE_261013_001303.pdf» e os esclarecimentos recebidos em 14.10.2026. '
   'Analisa a proposta «Proposta de Procedimento Integrado_DGAV_OMV_ANVETEM_v26_08_2026_signed_signed.pdf».',
   size=9, cor=CINZA, space=14)
@@ -393,7 +394,8 @@ tabela(
          'Definir a entidade coordenadora por tipologia, com a base legal de cada uma.'],
         ['1.5', 'Recolha de errantes «regulada por legislação própria».',
          'É o DL 314/2003 (art.º 8.º, captura pelas câmaras; art.º 9.º, destino decidido pelo MVM), com a Lei '
-         'n.º 27/2016 e a Portaria n.º 146/2017 (nota 12).', 'Nomear os diplomas.'],
+         'n.º 27/2016 e a Portaria n.º 146/2017 (nota 12).', 'Nomear os diplomas; substituir «de rotina» por um '
+         'critério; clarificar «umas e outras» (ver 4.4, u)).'],
         ['9.1', '«busca, resgate, socorro, assistência, evacuação, alojamento ou abastecimento de animais».',
          'A al. k) do art.º 41.º da LBPC diz «busca, salvamento, prestação de socorro, assistência, evacuação, '
          'alojamento ou abastecimento de animais» (nota 10).', 'Transcrever a lei (ver 3.5).'],
@@ -876,7 +878,8 @@ rot('Apreciação.',
     'O ponto 1.1 e a tipologia A deixam de fora os riscos higiossanitários e ambientais (ver 4.1) e só indicam '
     'o DL 276/2001 como regime de referência. Para alojamentos registados, a base é o art.º 3.º-G (suspensão e '
     'encerramento pelo diretor-geral; recolha pelas câmaras), que a proposta só cita numa nota. Faltam também o '
-    'DL 314/2003 e o DL 315/2009, ambos com regimes próprios de remoção, mandado e destino (ver 4.2, V5 e V7).')
+    'DL 314/2003 e o DL 315/2009, ambos com regimes próprios de remoção, mandado e destino (ver 4.2, V5 e V7). '
+    'O que fazer com cada um está em u).')
 
 h3('p) Responsável clínico: quem o designa, com que meios, quem o substitui (notas 6, 14 e 31)')
 p('Descrição: o responsável clínico é um «médico veterinário inscrito na OMV, designado para a operação, '
@@ -952,6 +955,41 @@ rot('Apreciação.',
     'anual do ponto 10.4 só junta a DGAV, a OMV e a ANVETEM. Devem participar também a ANMP, as forças de '
     'segurança, a ANEPC e representantes das associações.')
 
+h3('u) O ponto 1.5: o que exclui e o que deixa dentro')
+p('Descrição. O ponto 1.5 é a única norma da proposta que delimita o âmbito pela negativa:')
+cit('«1.5 Não é abrangida a recolha ou captura de rotina de animais errantes, regulada por legislação própria, '
+    'nem a execução de medidas de polícia sanitária determinadas no âmbito dos planos de contingência de doenças '
+    'de declaração obrigatória, que seguem regime próprio. Concorrendo umas e outras, aplica-se o disposto no '
+    'ponto 11.3.»', 'ponto 1.5 da proposta OMV/ANVETEM (v3.0, 26.8.2026)')
+p('Ficam fora duas coisas: a captura de rotina de errantes, cuja «legislação própria» é o DL 314/2003 (arts. 8.º '
+  'e 9.º), com a Lei n.º 27/2016 e a Portaria n.º 146/2017; e as medidas de polícia sanitária, isto é, as medidas '
+  'de autoridade para prevenir e erradicar doenças animais, como o sequestro de 15 dias do animal agressor no '
+  'CRO previsto para a raiva. Tudo o resto em que participem serviços da DGAV fica dentro, porque o ponto 1.2 '
+  'abrange «todas as operações» e enumera os diplomas com «designadamente». Ficam assim dentro, sem serem '
+  'nomeados, a remoção por excesso de animais ou insalubridade (DL 314/2003, art.º 3.º) e todo o DL 315/2009. '
+  'Nenhum destes dois diplomas é referido na proposta.')
+rot('Apreciação.',
+    '«De rotina» é vago demais para uma norma técnica. Não diz se uma captura grande, uma matilha ou uma colónia '
+    'em que se detetam animais em sofrimento ficam dentro ou fora. É preciso um critério verificável, por '
+    'exemplo: «a captura de animais errantes ao abrigo do art.º 8.º do DL 314/2003, salvo quando haja indícios '
+    'de maus-tratos, de acumulação de animais ou de criação ilegal».')
+rot('Apreciação.',
+    'O DL 315/2009 deve ser tratado em duas partes. A recolha do animal que agrediu uma pessoa (art.º 14.º) é um '
+    'procedimento municipal corrente, dirigido pelo médico veterinário municipal, que decide o destino (art.º '
+    '15.º); tem a mesma natureza da captura de errantes e deve ser excluída expressamente no ponto 1.5. A '
+    'apreensão de animais perigosos ou potencialmente perigosos (art.º 39.º), quando haja maus-tratos, lutas ou '
+    'criação ilegal, deve ficar dentro e ser nomeada no ponto 1.2 e na tipologia A.')
+rot('Questão em aberto para os proponentes.',
+    'Qual o enquadramento proposto para a remoção de animais por excesso ou por insalubridade (DL 314/2003, '
+    'art.º 3.º, n.ºs 5 e 6), decidida pela câmara após vistoria conjunta do delegado de saúde e do médico '
+    'veterinário municipal, e para os casos de acumulação de animais? A proposta não os nomeia nem os exclui, e '
+    'são precisamente os casos em que a liderança não é da DGAV e em que a dimensão social e de saúde pesa mais '
+    '(ver j)).')
+rot('Nota de redação.',
+    'A frase final do ponto 1.5 é ambígua. «Concorrendo umas e outras» pode referir as duas exclusões ou só a '
+    'polícia sanitária. O ponto 11.3, para que remete, só regula a concorrência com medidas de polícia sanitária. '
+    'Pede-se aos proponentes que clarifiquem a que se refere «umas e outras».')
+
 h2('4.5 Necessidades face à legislação vigente (âmbito A)')
 p('O que um procedimento não consegue resolver e exige lei, em princípio no RGAC:')
 tabela(
@@ -1012,7 +1050,10 @@ RECS_A = [
     ('Termos da lei', 'substituir «resgate» e «retirada» pelos termos de cada via; no socorro, «busca, salvamento '
      'e socorro» (notas 1, 10 e 13).'),
     ('Âmbito completo', 'incluir os riscos higiossanitários e ambientais e indicar, na tipologia A, o art.º 3.º-G do '
-     'DL 276/2001, o DL 314/2003 e o DL 315/2009 (notas 2, 4, 8 e 9).'),
+     'DL 276/2001 e o art.º 39.º do DL 315/2009 (notas 2, 4, 8 e 9; ver 4.4, o) e u)).'),
+    ('Ponto 1.5', 'substituir «de rotina» por um critério verificável; excluir expressamente a recolha após '
+     'agressão (DL 315/2009, art.º 14.º); pedir aos proponentes o enquadramento da remoção por excesso ou '
+     'insalubridade (DL 314/2003, art.º 3.º) e dos acumuladores; pedir clarificação de «umas e outras» (4.4, u)).'),
     ('Responsável clínico com CAMV', 'designado por quem tem o título da operação, com CAMV próprio ou protocolo '
      'com CAMV ou CRO equipado, e com substituto (notas 6, 14 e 31).'),
     ('Médico veterinário do município', 'definir «convocação»; convocar o MVM ou, na falta, o médico veterinário '
@@ -1370,6 +1411,9 @@ bullet('Medidas imediatas que dependem só da DGAV: estado «sob apreensão ou c
        'sobre a presunção de 15 dias (%s); partilha da lista de alojamentos com a proteção civil (%s).'
        % (rn('SIAC'), rn('Orientação interpretativa'), rn('Partilha da lista')))
 bullet('Proposta à ANEPC sobre as organizações de voluntariado de proteção civil (%s).' % rn('Propor à ANEPC'))
+bullet('Questões a colocar aos proponentes: o enquadramento da remoção por excesso ou insalubridade (DL 314/2003, '
+       'art.º 3.º) e dos casos de acumulação de animais; o sentido de «umas e outras» no ponto 1.5 (%s).'
+       % rn('Ponto 1.5'))
 bullet('Levar as necessidades A1 a A10 e B1 a B6 à revisão do RGAC.')
 
 # ───────────────────────────── Anexo I ─────────────────────────────
@@ -1389,8 +1433,10 @@ tabela(
          'que a DGAV é titular; nas restantes, como referência técnica.'],
         ['1.4', 'Processo penal: aplicação subsidiária.', 'Correto, mas a via penal é a regra em maus-tratos.',
          'Submódulo penal próprio.'],
-        ['1.5', 'Errantes: legislação própria.', 'Não nomeia os diplomas.', 'DL 314/2003, Lei 27/2016, Portaria '
-         '146/2017 (3.3).'],
+        ['1.5', 'Exclui a captura de rotina de errantes e a polícia sanitária.', 'Não nomeia os diplomas; «de '
+         'rotina» vago; deixa dentro, sem os nomear, o DL 314/2003, art.º 3.º, e o DL 315/2009; «umas e outras» '
+         'ambíguo.', 'Critério; excluir DL 315/2009, art.º 14.º; questão em aberto sobre DL 314/2003, art.º 3.º, '
+         'e acumuladores (4.4, u)).'],
         ['2', 'Definições.', 'Entidade coordenadora remete para diploma que não se aplica a pecuária; responsável '
          'clínico sem meios; entidade participante ignora as OVPC.', 'Ver 3.3, 4.4, p), e 5.4, h).'],
         ['3.1 a 3.2', 'Planeamento obrigatório.', 'Bom, mas não diz por quem.', 'Quem tem o título da operação; via '
@@ -1511,6 +1557,8 @@ INTEGRACAO = [
     ('38', 'Transporte de animais de companhia', '4.4, s); 4.5, A9'),
     ('41, 43', 'Relatório; avaliação alargada', '4.4, t)'),
     ('44, 45', 'Número de voluntários; comissão técnica da OMV', '5.3; 5.4, l)'),
+    ('Decisões de 14.10.2026', 'Ponto 1.5: «de rotina», DL 315/2009, DL 314/2003 e acumuladores, «umas e '
+     'outras»', '4.4, u); 4.6; 7.2'),
 ]
 tabela(['Notas', 'Assunto', 'Onde'], [list(x) for x in INTEGRACAO], larguras=[2.2, 8.3, 5.5])
 
