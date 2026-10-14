@@ -185,7 +185,8 @@ p('Procedimento-tipo de intervenção em operações de retirada e apreensão de
 p('Apreciação na perspetiva da DGAV e das necessidades face à legislação vigente, separada em dois '
   'âmbitos: A. retirada de animais de alojamentos fora de emergência; B. socorro em emergência. '
   'Foco nos animais de companhia.', size=10.5, cor=CINZA, space=4)
-p('Documento de trabalho, 14.10.2026. Analisa apenas o ficheiro «Proposta de Procedimento '
+p('Documento de trabalho, 14.10.2026 (v1.1: acrescentada a via do DL 315/2009 e corrigido o destino na via do DL '
+  '314/2003, na sequência das notas ao ficheiro anotado). Analisa o ficheiro «Proposta de Procedimento '
   'Integrado_DGAV_OMV_ANVETEM_v26_08_2026_signed_signed.pdf».', size=9, cor=CINZA, space=14)
 
 h2('Como ler este documento')
@@ -396,8 +397,9 @@ bullet('Habitação com número excessivo de animais, insalubridade ou acumulaç
        'muitas vezes com detentor em situação de vulnerabilidade.', rotulo='c)')
 bullet('Maus-tratos a um ou poucos animais num domicílio.', rotulo='d)')
 bullet('Suspeita de uso de animais em lutas.', rotulo='e)')
+bullet('Cão que agrediu uma pessoa, ou cão perigoso ou potencialmente perigoso detido sem as condições legais.', rotulo='f)')
 
-h2('4.2 Legislação vigente: seis vias, seis decisores')
+h2('4.2 Legislação vigente: sete vias, vários decisores')
 p('O quadro seguinte é descritivo. Indica, para cada via, a base legal, quem decide, quem executa, onde ficam '
   'os animais e quem decide o destino.')
 tabela(
@@ -418,10 +420,15 @@ tabela(
          'Recolha pela câmara; local não definido', 'Não regulado'],
         ['V5. Salubridade e limites por fogo', 'DL 314/2003, art.º 3.º, n.ºs 1 a 6',
          'Câmara municipal, após vistoria conjunta do delegado de saúde e do MVM', 'Câmara municipal',
-         'Canil ou gatil municipal, ou outro destino escolhido pelo detentor', 'Regime do CRO'],
+         'Canil ou gatil municipal, ou outro destino escolhido pelo detentor',
+         'MVM, após exame clínico e permanência mínima de oito dias (DL 314/2003, art.º 9.º, n.º 1)'],
         ['V6. Regime do CRO (aplica-se por arrastamento)', 'Lei 27/2016, art.º 3.º; DL 276/2001, art.º 4.º, '
          'n.º 3; DL 82/2019, art.º 11.º, n.º 5', 'Câmara / MVM', 'CRO', 'CRO',
          'Presunção de abandono aos 15 dias e encaminhamento para adoção'],
+        ['V7. Animais perigosos e agressores', 'DL 315/2009, arts. 14.º, 15.º, 30.º, n.º 3, 30.º-A e 39.º',
+         'Autoridade competente; MVM (destino e eutanásia do agressor)', 'Autoridades do art.º 30.º; mandado do '
+         'tribunal cível da comarca', 'CRO (art.º 14.º); fiel depositário, nos termos do RJCE (art.º 39.º)',
+         'MVM (art.º 15.º); perda e privação de detenção (art.º 30.º-A)'],
     ],
     larguras=[2.2, 3.6, 2.6, 2.4, 2.6, 2.6], size=8)
 
@@ -730,7 +737,7 @@ tabela(
     [
         ['A1', 'Regime único de retirada e custódia de animais de companhia: quem decide, onde ficam, por quanto '
                'tempo, quem paga, quando muda a titularidade.',
-         'Há seis vias com decisores diferentes (quadro 4.2). Só a lei pode ordená-las.'],
+         'Há sete vias com decisores diferentes (quadro 4.2). Só a lei pode ordená-las.'],
         ['A2', 'Exceção expressa à presunção de abandono de 15 dias e ao registo em nome do CRO para animais '
                'apreendidos ou retirados por decisão de autoridade.',
          'A presunção está na Lei n.º 27/2016 e no DL 82/2019. Uma orientação reduz o risco, não o elimina.'],
@@ -756,7 +763,8 @@ for i, (rotulo, txt) in enumerate([
      'regra do fundamento prevalecente (4.6) e a direção técnico-veterinária da DGAV em todas as vias.'),
     ('Completar a base legal', 'com o art.º 1.º-A, o art.º 9.º e o n.º 1 do art.º 10.º da Lei n.º 92/95; os '
      'arts. 159.º-A, 178.º, 186.º e 249.º do CPP; os arts. 48.º a 52.º do RJCE; o art.º 3.º do DL 314/2003; o '
-     'art.º 3.º da Lei n.º 27/2016; os arts. 8.º e 11.º do DL 82/2019.'),
+     'art.º 3.º da Lei n.º 27/2016; os arts. 8.º e 11.º do DL 82/2019; os arts. 14.º, 15.º, 30.º e 39.º do DL '
+     '315/2009.'),
     ('Novos modelos', 'auto de apreensão com permanência no local (fiel depositário) e termo de cedência '
      'voluntária.'),
     ('Cláusula de salvaguarda', 'o procedimento é de organização interna; a sua inobservância não afeta a '
@@ -989,7 +997,8 @@ rot('Apreciação.',
     'veterinário municipal. A proposta OMV/ANVETEM assenta no modelo vigente, com a DGAV a decidir. Se o RGAC for '
     'aprovado assim, o procedimento terá de ser refeito. O art.º 139.º regula a apreensão só para '
     'contraordenações, sem articulação com o CPP nem com o RJCE, e admite o «retorno ao local de origem», que '
-    'em maus-tratos é o pior destino possível. O art.º 98.º, n.º 13 mantém a presunção de 15 dias sem ressalva '
+    'em maus-tratos é o pior destino possível. Essa fórmula vem do DL 315/2009 (art.º 39.º, n.º 8), cujo n.º 1 já '
+    'remete a apreensão para o RJCE; o RGAC deixa cair essa remissão. O art.º 98.º, n.º 13 mantém a presunção de 15 dias sem ressalva '
     'para animais apreendidos ou socorridos. O projeto não tem norma sobre emergências nem refere a Lei n.º '
     '38/2026. A DGAV tem vantagem em fazer convergir agora as duas peças: o procedimento e o RGAC. Estes pontos '
     'foram registados no memorando de acompanhamento do RGAC.')
@@ -1103,8 +1112,10 @@ tabela(
         ['SIOPS (DL 90-A/2022)', 'DR, 1.ª série, n.º 251, de 30.12.2022 (rota ELI)', 'Texto publicado, conferido'],
         ['Lei n.º 80/2015 (LBPC republicada)', 'DR, 1.ª série, n.º 149, de 3.8.2015 (rota ELI)', 'Conferida'],
         ['Lei n.º 27/2016; DL 82/2019; RCM 78/2021', 'repositório: Legislação vigente/', 'Conferidos'],
-        ['DL 314/2003, art.º 3.º', 'repositório: CHECKPOINT-FOGO-vs-ALOJAMENTO-REGISTADO.md (conferido no DR)',
-         'Conferido em estudo anterior'],
+        ['DL 314/2003, arts. 3.º e 9.º', 'repositório: Legislação vigente/ (versão consolidada) e '
+         'CHECKPOINT-FOGO-vs-ALOJAMENTO-REGISTADO.md (conferido no DR)', 'Conferido'],
+        ['DL 315/2009, arts. 14.º, 15.º, 30.º, 30.º-A e 39.º', 'repositório: Legislação vigente/ (versão consolidada)',
+         'Conferido'],
         ['Regulamento (UE) 2026/1818', 'repositório: Regulamento Versao final en-en.pdf e Regulamento '
          '2026_01818_PT.pdf (JO)', 'Conferido'],
         ['Projeto de RGAC', 'repositório: ficheiro ⭐ da tabela 2.1 do CLAUDE.md', 'Proposta, não vigente'],

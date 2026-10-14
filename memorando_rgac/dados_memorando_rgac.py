@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.22"
+VERSAO_MEMORANDO = "1.23"
 DATA_MEMORANDO = "14.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1094,8 +1094,8 @@ CAPITULOS = [
             ],
             "origem": "PARCIAL",
             "problema": [
-                "O art. 139.º regula a apreensão provisória dos animais usados numa contraordenação, com fiel depositário, termo de depósito e relatório da DSAVR. Segue o modelo do DL 315/2009 e do DL 265/2007.",
-                "O n.º 8 permite, quando o detentor recusa ser fiel depositário ou é desconhecido, encaminhar os animais para locais onde esteja garantido o seu bem-estar, «nomeadamente o retorno ao local de origem». Em maus-tratos ou em alojamento sem condições, o local de origem é a causa do problema.",
+                "O art. 139.º regula a apreensão provisória dos animais usados numa contraordenação, com fiel depositário, termo de depósito e relatório da DSAVR. Segue o modelo do DL 315/2009 (art. 39.º) e do DL 265/2007. Mas no DL 315/2009 os n.ºs 2 a 6 desse artigo (auto, depositário, termo de depósito) estão revogados, e o n.º 1, na redação do DL 9/2021, manda fazer a apreensão «nos termos do RJCE». O art. 139.º volta a regular essas matérias e deixa cair a remissão para o RJCE.",
+                "O n.º 8 permite, quando o detentor recusa ser fiel depositário ou é desconhecido, encaminhar os animais para locais onde esteja garantido o seu bem-estar, «nomeadamente o retorno ao local de origem». Em maus-tratos ou em alojamento sem condições, o local de origem é a causa do problema. A fórmula vem do DL 315/2009, art. 39.º, n.º 8, escrito para animais perigosos, cujas infrações são sobretudo de licenciamento e segurança, e não de condições do local.",
                 "Hoje as contraordenações do DL 276/2001 seguem o regime das contraordenações económicas (DL 276/2001, art. 68.º). Esse regime permite medidas cautelares sem audição prévia, a apreensão de «seres vivos», o detentor como fiel depositário salvo manifesto inconveniente, e o destino antecipado em caso de «perigo para a saúde ou para o bem-estar de animais» (DL 9/2021, anexo, arts. 48.º a 50.º). O recurso não tem efeito suspensivo (art. 52.º, n.º 3). O RGAC remete para o regime geral das contraordenações (art. 144.º) e o art. 139.º não reproduz estas regras.",
                 "O artigo não ressalva o processo penal. Aí os animais apreendidos são confiados a depositários idóneos e, quando deixam de ser necessários à prova, entregues a quem foi nomeado seu fiel depositário (CPP, arts. 178.º, n.º 2, e 186.º, n.ºs 1 e 7, na redação da Lei 39/2020).",
                 "Não há ligação ao SIAC. Um animal apreendido não fica marcado como tal e a titularidade pode ser transmitida durante o processo. Também não está prevista a cedência voluntária dos animais pelo detentor no ato da apreensão."
@@ -1705,4 +1705,5 @@ REGISTO_ALTERACOES = [
     ("1.20", "13.10.2026", "Ficha S-01: retirada a leitura de que o DL 276/2001, art. 7.º, n.º 3 (e a Lei 92/95, art. 1.º, n.º 1) pode abranger a occisão por sobrelotação num CRO. Estes tipos visam a violência contra o animal; a occisão por médico veterinário, sem dor, por decisão do CRO, ainda que por motivo proibido, fica fora deles. A proibição do abate por sobrelotação continua sem coima própria."),
     ("1.21", "13.10.2026", "Ficha S-01: dados do relatório nacional de 2025 da DGAV sobre os CRO (resposta de 60,5 % dos municípios com CRO, 37 sem registo no CVAR/IE, limites do CVAR/IE, dados por município e não por CRO, caso do CRO intermunicipal de Proença-a-Nova) e dever de registo mensal no CVAR/IE da Portaria 264/2013, sem sanção. Proposta: relatório do art. 80.º por CRO, discriminado por município de origem. Fontes novas: relatório da DGAV de 2025, Regulamento n.º 164/2022, Portaria 264/2013."),
     ("1.22", "14.10.2026", "Fichas novas G-01 (a recolha por razões de bem-estar passa da DGAV para as câmaras e o destino para o MVM), G-02 (presunção de abandono aos 15 dias sem ressalva para animais apreendidos ou socorridos em emergência), S-02 (apreensão provisória só para contraordenações, com retorno ao local de origem e sem as regras do RJCE e do CPP) e E-01 (nada sobre animais de companhia em acidente grave ou catástrofe, face à Lei 38/2026). Lapso L-18 (arts. 50.º a 52.º). Origem: análise da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM. Fontes novas: Lei 38/2026, Lei 39/2020, DL 90-A/2022 e a proposta OMV/ANVETEM."),
+    ("1.23", "14.10.2026", "Ficha S-02 completada: o «retorno ao local de origem» do art. 139.º, n.º 8 vem do DL 315/2009, art. 39.º, n.º 8, cujo n.º 1 remete a apreensão para o RJCE e cujos n.ºs 2 a 6 estão revogados; o RGAC volta a regular essas matérias e deixa cair a remissão. Origem: notas à proposta OMV/ANVETEM."),
 ]
