@@ -386,7 +386,7 @@ rot('Apreciação.',
 h1('4. Âmbito A: retirada de animais de alojamentos fora de emergência')
 
 h2('4.1 Situações-tipo')
-p('Para animais de companhia, a retirada fora de emergência aparece em cinco situações, com regimes legais '
+p('Para animais de companhia, a retirada fora de emergência aparece em seis situações, com regimes legais '
   'diferentes:')
 bullet('Alojamento registado por mera comunicação prévia (criação comercial ou hospedagem) com maus-tratos ou '
        'graves problemas de saúde e bem-estar. O requerimento parlamentar de 13.7.2026 sobre o caso de Amarante '

@@ -187,7 +187,7 @@ NOTAS = [
      'No socorro, exigir mandado antes de entrar é incompatível com a urgência. A entrada para salvar o animal '
      'justifica-se pelo perigo atual (direito de necessidade, CP, art. 34.º) e faz-se numa operação sob o COS. O '
      'mandado continua necessário no cenário 1 para entrar em casa de habitação (CRP, art. 34.º).'),
-    ('21', 'p. 4, ponto 4.6 e fundamento', '«276/2009 não se aplica a pecuária» (lido como 276/2001)', 'Sim', 'Não',
+    ('21', 'p. 4, ponto 4.6 e fundamento', '«276/2009 não se aplica a pecuária» (lido como 276/2001; confirmado em 14.10.2026)', 'Sim', 'Não',
      'Confirmado: o DL 276/2001 exclui do seu âmbito «os touros de lide e as espécies de pecuária» (art. 1.º, n.º 2). A '
      'definição de entidade coordenadora remete para a al. x) do art. 2.º desse diploma, que por isso não serve as '
      'tipologias B e C. Reforça a separação por módulos (análise, 3.4).'),
@@ -228,14 +228,16 @@ NOTAS = [
      'No socorro a prioridade é tirar o animal do perigo. A triagem faz-se na zona de concentração de acolhimento de '
      'animais, que a lei define para «acomodação, salvamento e triagem» (SIOPS, art. 13.º, al. d)). A análise disse '
      'que o modelo A não serve o B (5.4, d)), sem apontar este ponto.'),
-    ('31', 'p. 5, ponto 6.1', '«quando não está disponível?» e «só vets com CAMV?»', 'Sim (1.ª parte)', 'Não',
+    ('31', 'p. 5, ponto 6.1', '«quando não está disponível?» e «só vets com CAMV?»', 'Sim', 'Não',
      '1.ª parte: «indelegável» sem regra de substituição; numa operação longa o responsável clínico tem de ser '
-     'substituível. 2.ª parte (leitura a confirmar): a definição só exige inscrição na OMV; a assistência urgente '
-     '(6.2) depende de CAMV e a rede P.A.R.A. está em constituição.'),
+     'substituível. 2.ª parte (esclarecida em 14.10.2026): pôr a responsabilidade clínica num médico veterinário '
+     'sem CAMV é inviável. A assistência urgente (6.2) exige instalações, a eutanásia de animais de companhia só '
+     'pode ser feita em CRO ou CAMV (Lei 27/2016, art. 3.º, n.º 6) e a rede P.A.R.A. está em constituição.'),
     ('32', 'p. 6, ponto 6.6', '«Eutanásia?»', 'Sim', 'Não (fora do foco)',
      'A «decisão fundamentada» do DL 142/2006 corresponde, na tabela da própria proposta, a «retirada e destruição» '
-     'de animais de produção sem rastreabilidade, isto é, occisão. Não se aplica a animais de companhia. Texto do DL '
-     '142/2006 não conferido.'),
+     'de animais de produção sem rastreabilidade. O n.º 7, no texto original de 2006, permite «determinar a '
+     'destruição da carcaça ou do animal sem qualquer compensação para o seu detentor»: é occisão, não eutanásia '
+     'por indicação clínica. Não se aplica a animais de companhia. Redação atual do n.º 7 por conferir.'),
     ('33', 'p. 6, ponto 6.7', '«destino de animais de companhia?»', 'Sim', 'Parcial',
      'O ponto só remete para o Regulamento (CE) n.º 1069/2009. Para animais de companhia falta dizer o destino do '
      'cadáver (o regulamento trata-os como subprodutos e admite exceções para animais de companhia; redação a '
@@ -253,8 +255,9 @@ NOTAS = [
      'mesmo efeito, e nada se diz quando a coordenadora não é a DGAV. A análise tratou a falta de base legal (4.4, g)).'),
     ('38', 'p. 7, ponto 9.1, transporte', '«verificar que critérios se aplicam aos animais de companhia»', 'Sim', 'Não',
      'A autorização de transportador vem do DL 265/2007, que executa o Regulamento (CE) n.º 1/2005. Esse regulamento '
-     'não se aplica ao transporte que não seja feito no âmbito de uma atividade económica (art. 1.º, n.º 5; redação a '
-     'conferir), como o de animais retirados por autoridades ou associações. Para animais de companhia, o critério '
+     'não se aplica ao transporte que não seja feito no âmbito de uma atividade económica nem ao transporte direto '
+     'para clínicas ou consultórios veterinários por indicação de um médico veterinário (art. 1.º, n.º 5, conferido '
+     'na versão inglesa adotada), como o de animais retirados por autoridades ou associações. Para animais de companhia, o critério '
      'vigente é o do DL 276/2001, art. 10.º, n.º 1 (veículos e contentores apropriados à espécie e ao número).'),
     ('39', 'p. 7, ponto 9.2, seguro', '«as entidades ficam com encargo adicional?»', 'Sim', 'Parcial',
      'Sim. O seguro dos voluntários já é obrigatório para as OVPC (Portaria 91/2017, art. 5.º, n.º 4, al. l)); o seguro '
@@ -322,8 +325,8 @@ bullet('Na via V5 (DL 314/2003), o destino dos animais recolhidos é decidido pe
 bullet('O «retorno ao local de origem» que a análise criticou no projeto de RGAC (art. 139.º, n.º 8) já existe na lei '
        'vigente, no DL 315/2009, art. 39.º, n.º 8. E esse artigo já remete a apreensão para o RJCE (n.º 1), o que o '
        'RGAC deixa cair. A ficha S-02 do memorando do RGAC foi completada com isto.')
-p('As restantes notas novas (OVPC, terminologia, âmbito do DL 276/2001, socorro, veterinário contratado, transporte e '
-  'as de menor peso) não foram integradas no texto da análise. Podem sê-lo numa versão 2, se for útil.')
+p('Todas as notas foram integradas na versão 2 da análise («Analise_Proposta_OMV_ANVETEM_Retirada_e_Socorro_v2.docx»), '
+  'cujo Anexo III indica onde ficou cada uma.')
 
 h1('3. Quadro das notas')
 p('Colunas: «Válida?» (Sim, Em parte, Não); «Já na análise?» (Sim, Parcial, Não), com a secção da análise de '
@@ -341,8 +344,9 @@ bullet('DL 315/2009, versão consolidada, arts. 14.º, 15.º, 30.º, 30.º-A e 3
 bullet('DL 314/2003, versão consolidada, arts. 3.º, 8.º e 9.º (pasta «Legislação vigente»).')
 bullet('DL 276/2001, versão consolidada, arts. 1.º, 3.º-G e 10.º; DL 116/98, arts. 2.º a 4.º; Lei 38/2026; SIOPS '
        '(fontes já usadas na análise).')
-bullet('Não conferidos nesta sessão: Regulamento (CE) n.º 1/2005, art. 1.º, n.º 5, e Regulamento (CE) n.º 1069/2009 '
-       '(EUR-Lex inacessível a partir do contentor); DL 142/2006, art. 23.º, n.º 7.')
+bullet('Regulamento (CE) n.º 1/2005, art. 1.º, n.º 5, e Regulamento (CE) n.º 1069/2009, arts. 8.º e 19.º: versão '
+       'inglesa adotada, conferida; versão portuguesa por conferir no EUR-Lex (inacessível a partir do contentor). '
+       'DL 142/2006, art. 23.º: texto original de 2006 conferido; n.º 1 na redação atual facultado em 14.10.2026.')
 
 doc.save(SAIDA)
 print('Gerado:', SAIDA)
