@@ -7,7 +7,33 @@
 
 ## 1. O que é este projeto
 
-Análise comparativa da legislação portuguesa e europeia sobre animais de companhia. O objetivo central é avaliar o **impacto do Regulamento Europeu 2023/0447** no quadro jurídico nacional, tendo em conta que já existem duas propostas de consolidação legislativa nacionais.
+Análise comparativa da legislação portuguesa e europeia sobre animais de companhia. O objetivo central é avaliar o **impacto do Regulamento (UE) 2026/1818** no quadro jurídico nacional, tendo em conta que já existem duas propostas de consolidação legislativa nacionais.
+
+---
+
+## ⚖️ Texto final do `@regulamento` publicado no Jornal Oficial
+
+**Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade**
+
+| | |
+|---|---|
+| Publicação | JO da União Europeia, série L, 2026/1818, de **10.8.2026** |
+| ELI | <http://data.europa.eu/eli/reg/2026/1818/oj> |
+| Assinatura | Estrasburgo, 17 de junho de 2026 |
+| Base jurídica | art.º 43.º, n.º 2, e art.º 114.º do TFUE |
+| Estrutura | 7 capítulos, 33 artigos, 3 anexos |
+| Entrada em vigor | 20.º dia seguinte ao da publicação no JO (art.º 33.º) |
+| Início de aplicação | **31 de agosto de 2028**, com datas diferidas no art.º 33.º (art.º 16.º: 2029; art.º 21.º, n.º 3 e art.º 23.º, n.º 1: 2030; art.º 8.º, n.º 2: 1.7.2030; art.º 15.º e outros: 2031; art.º 12.º, n.os 2 e 3: 2033; art.º 10.º: 2034; art.º 8.º, n.º 1: 1.7.2036; art.º 26.º, n.º 4: 2036) |
+
+**Ficheiros canónicos no repositório**
+
+| Ficheiro | Versão linguística |
+|---|---|
+| `Regulamento 2026_01818_PT.pdf` | PT — texto publicado no JO |
+| `Regulamento Versao final en-en.pdf` | EN — texto publicado no JO |
+
+O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o ato publicado. Os ficheiros `.docx` anteriores (`pe00002.*`, `11.12.2025 Regulamento…`) são **arquivo** e não devem ser usados como fonte primária.
+
 
 Os quatro diplomas principais em análise:
 
@@ -16,7 +42,7 @@ Os quatro diplomas principais em análise:
 | `@legislacao` | Toda a legislação vigente (DL 276/2001, DL 82/2019, Lei 27/2016, Portarias) |
 | `@codigo` | Código do Animal — DL n.º 214/2013 (proposta de consolidação 1) |
 | `@rgbeac` | Regime Geral do Bem-Estar dos Animais de Companhia — jun. 2025 (proposta 2) |
-| `@regulamento` | Regulamento Europeu 2023/0447 — cães e gatos (aplicação direta) |
+| `@regulamento` | Regulamento (UE) 2026/1818 — cães e gatos (aplicação direta; publicado no JO de 10.8.2026; aplicável a partir de 31.8.2028) |
 
 O `@regulamento` é o **polo de referência** — toda a análise parte dele e avalia a conformidade/divergência dos restantes diplomas.
 
@@ -32,8 +58,10 @@ Branch atual: `claude/review-recent-tasks-YROKh`
 |---|---|
 | `Código do Animal DL214.2013_OCR.docx.docx` | `@codigo` |
 | `RGBEAC_junh_2025 Original com Índice.docx` | `@rgbeac` |
-| `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | `@regulamento` (EN original) |
-| `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` | Tradução PT do `@regulamento` |
+| `Regulamento Versao final en-en.pdf` | `@regulamento` — texto EN publicado no JO **(fonte atual)** |
+| `Regulamento 2026_01818_PT.pdf` | `@regulamento` — texto PT publicado no JO **(fonte atual)** |
+| `11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx` | `@regulamento` (EN, versão de trabalho) — *arquivo* |
+| `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` | Tradução PT de trabalho do `@regulamento` — *arquivo* |
 | `Regulamento - Primeira Versão portuguesa.docx` | Primeira versão PT do `@regulamento` (auxiliar) |
 | `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` | Parecer EESC em PT |
 | `Decreto-Lei n.º 276-2001, de 17 de outubro v2.docx` | `@legislacao` |
@@ -80,7 +108,7 @@ Pasta `@opiniao/`: 52 opiniões externas de organizações (PDF) organizadas em 
 
 ## 3. Estado atual dos artigos — array ARTIGOS
 
-O script `gerar_comparativo_reuniao.py` contém um array `ARTIGOS` com **21 entradas**, cobrindo os artigos 5.º a 22.º do Regulamento 2023/0447:
+O script `gerar_comparativo_reuniao.py` contém um array `ARTIGOS` com **21 entradas**, cobrindo os artigos 5.º a 22.º do Regulamento (UE) 2026/1818:
 
 | ID | Tema |
 |---|---|
@@ -117,7 +145,7 @@ Artigos ainda **não cobertos**: 1–4, 16, 23–28 (preâmbulo, disposições g
     "id": "ART-13",
     "tema": "Saúde e Monitorização Sanitária",
     "regulamento": {
-        "ref": "Art.º 13.º do Regulamento 2023/0447 (PE/Conselho)",
+        "ref": "Art.º 13.º do Regulamento (UE) 2026/1818 (PE/Conselho)",
         "titulo": "Health",           # Título inglês — aparece no cabeçalho da card EN
         "texto": "...",               # Verbatim EN — NUNCA tem [dim], NUNCA é truncado
         "traducao": "...",            # PT-PT — baseada nos ficheiros de tradução do repositório
@@ -137,8 +165,8 @@ Artigos ainda **não cobertos**: 1–4, 16, 23–28 (preâmbulo, disposições g
 ```
 
 **Regras absolutas:**
-- `regulamento.texto` — sempre verbatim EN, sem cortes, sem `[dim]`
-- `regulamento.traducao` — sempre verbatim PT-PT, sem cortes, sem `[dim]`
+- `regulamento.texto` — sempre verbatim EN, sem cortes, sem `[dim]`; fonte: `Regulamento Versao final en-en.pdf` (texto publicado no JO)
+- `regulamento.traducao` — sempre verbatim PT-PT, sem cortes, sem `[dim]`; fonte: `Regulamento 2026_01818_PT.pdf` (texto publicado no JO). O nome do campo é histórico: **já não contém tradução de trabalho, mas a versão linguística portuguesa autêntica**
 - `[dim]` aplica-se **apenas** a `legislacao.texto`, `codigo.texto`, `rgbeac.texto`
 
 ---
@@ -279,18 +307,20 @@ git push -u origin claude/review-recent-tasks-YROKh
 
 Para cada novo artigo:
 1. Extrair texto EN verbatim do ficheiro `sem rasuras`
-2. Extrair tradução PT do ficheiro `votação com tradução-ocr`
+2. Extrair o texto PT de `Regulamento 2026_01818_PT.pdf` (versão portuguesa autêntica publicada no JO)
 3. Localizar correspondências em `@legislacao`, `@codigo`, `@rgbeac`
 4. Preencher campos `divergencia` (4 sub-campos)
 5. Determinar `necessidade_alteracao`
 
-### 11.2 Revisão de traduções
+### 11.2 Conformação do texto PT ao Jornal Oficial
 
-Os campos `regulamento.traducao` dos 21 artigos existentes **não foram revistos sistematicamente** com base nos três ficheiros de tradução disponíveis:
+Com a publicação do **Regulamento (UE) 2026/1818** (JO L de 10.8.2026), a tarefa deixou de ser *rever traduções* e passou a ser **substituir o texto PT pelo texto autêntico publicado**.
 
-- `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx` ← fonte principal
-- `Regulamento - Primeira Versão portuguesa.docx` ← fonte auxiliar
-- `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` ← contexto
+Os campos `regulamento.traducao` dos 21 artigos existentes foram redigidos a partir de versões de trabalho e **têm de ser conferidos, um a um, contra o texto do JO**:
+
+- `Regulamento 2026_01818_PT.pdf` ← **fonte única** do texto PT (versão linguística autêntica)
+- `Regulamento Versao final en-en.pdf` ← **fonte única** do texto EN
+- `11.12.2025 Regulamento cães e gatos - votação com tradução-ocr.docx`, `Regulamento - Primeira Versão portuguesa.docx`, `Parecer - European Economic and Social Committee - Opinion - PT-PT.docx` ← **arquivo**; servem apenas para rastrear a evolução das formulações, nunca como fonte
 
 ### 11.3 Recomendações legislativas por tema
 

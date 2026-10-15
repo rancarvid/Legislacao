@@ -328,7 +328,7 @@ ADMINISTRAÇÃO (2021)
 
 ---
 
-## 8. TABELA DE COMPATIBILIDADE COM REGULAMENTO 2023/0447
+## 8. TABELA DE COMPATIBILIDADE COM REGULAMENTO (UE) 2026/1818
 
 | Conceito do Regulamento | Diploma PT | Status | Notas |
 |---|---|---|---|
@@ -352,7 +352,7 @@ ADMINISTRAÇÃO (2021)
 1. Leia DL 276/2001 (base)
 2. Cruzar com Lei 8/2017 (direitos)
 3. Verificar Lei 69/2014 (sanções)
-4. Análise de Regulamento 2023/0447
+4. Análise de Regulamento (UE) 2026/1818
 
 **Gestor de Centro de Recolha**:
 1. Lei 27/2016 (quadro legal)

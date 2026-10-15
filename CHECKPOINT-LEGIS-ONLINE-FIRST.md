@@ -42,11 +42,12 @@ Confusão metodológica entre:
 | `@legislacao` | ✅ VIGENTE | Consultar online consolidado; citar como "legislação vigente" |
 | `@codigo` | ❌ PROPOSTA | Citar como "proposta de consolidação"; **NUNCA** como vigente |
 | `@rgbeac` | ❌ PROPOSTA | Citar como "proposta (jun. 2025)"; **NUNCA** como vigente |
-| `@regulamento` | ✅ VIGENTE | Legislação europeia; aplicação direta; verbatim EN + tradução PT |
+| `@regulamento` | ✅ PUBLICADO / EM VIGOR (aplicação diferida) | Regulamento (UE) 2026/1818, de 17.6.2026 (JO L de 10.8.2026). Aplicação direta, sem transposição. Citar verbatim a partir do texto publicado: EN (`Regulamento Versao final en-en.pdf`) + PT (`Regulamento 2026_01818_PT.pdf`). **Em vigor ≠ aplicável**: regra geral a partir de 31.8.2028, com datas diferidas no art.º 33.º |
 
 ### 3. Erros a Evitar
 
 - ❌ Tratar `@codigo` (proposta) como legislação que "revoga" DL 276/2001
+- ❌ Citar o `@regulamento` como `2023/0447` (n.º de procedimento) em vez de **Regulamento (UE) 2026/1818** (ato publicado)
 - ❌ Omitir legislação vigente (ex: DL 82/2019) não presente no repositório
 - ❌ Usar ficheiros repositório como **única fonte** de legislação
 - ❌ Não distinguir claramente entre "vigente" e "proposta" na análise

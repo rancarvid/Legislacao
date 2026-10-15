@@ -1,0 +1,241 @@
+
+COMPARAÇÃO ENTRE VERSÕES FINAIS PUBLICADAS E VERSÃO DE TRABALHO
+
+Data: 2026-08-23
+Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026
+
+=================================================================================
+VERSÕES ANALISADAS:
+=================================================================================
+
+1. VERSÃO FINAL EN-EN (Regulamento Versao final en-en.pdf)
+   - Publicado no Jornal Oficial da União Europeia (OJ L 10.8.2026)
+   - Referência: 2026/1818
+   - Data: 10 de agosto de 2026
+   - Total de páginas: 49
+
+2. VERSÃO FINAL PT-PT (Regulamento Versao final pt-pt.pdf)
+   - Publicado no Jornal Oficial da União Europeia (Série L)
+   - Referência: 2026/1818
+   - Data: 10 de agosto de 2026
+   - Total de páginas: 49
+   - Tradução oficial em português
+
+3. VERSÃO DE TRABALHO (11.12.2025 Regulamento cães e gatos-ocr - sem rasuras.docx)
+   - Documento de trabalho OCR
+   - Data: 11 de dezembro de 2025
+   - Estado: Versão anterior à publicação oficial
+
+=================================================================================
+SECÇÕES CRÍTICAS ANALISADAS:
+=================================================================================
+
+SECÇÃO 1: ARTIGO 2.º - ÂMBITO DE APLICAÇÃO MATERIAL
+
+VERSÃO FINAL EN-EN:
+"1. This Regulation applies to the breeding, keeping, tracing, placing on the 
+market and entry into the Union of dogs and cats.
+
+2. This Regulation does not apply to the breeding, keeping, placing on the 
+market or entry into the Union of dogs or cats intended or used for scientific 
+purposes or for clinical trials required for the marketing authorisation of 
+veterinary medicinal products."
+
+VERSÃO FINAL PT-PT:
+"1. O presente regulamento é aplicável à criação, à detenção, à rastreabilidade, 
+à colocação no mercado e à entrada na União de cães e gatos.
+
+2. O presente regulamento não é aplicável à criação, à detenção, à colocação no 
+mercado ou à entrada na União de cães ou gatos destinados ou usados para fins 
+científicos ou para ensaios clínicos exigidos para efeitos da autorização de 
+introdução no mercado de medicamentos veterinários."
+
+CONCLUSÃO ARTIGO 2.º:
+✓ IDÊNTICO entre EN e PT
+✓ CONFIRMA: Regulamento aplica-se APENAS a cães e gatos domésticos (Canis lupus 
+  familiaris e Felis silvestris catus)
+✓ CONFIRMA: Serval NOT mentioned - falls outside material scope
+✓ Comparação com versão trabalho (11.12.2025): SEM ALTERAÇÕES MATERIAIS
+
+─────────────────────────────────────────────────────────────────────────────
+
+SECÇÃO 2: ARTIGO 4.º - DEFINIÇÕES (HÍBRIDO)
+
+VERSÃO FINAL EN-EN:
+"(d) 'hybrid' means any offspring in the first to the fourth generations after 
+crossbreeding between a wild species and a domestic dog or cat, or between such 
+hybrids and wild species, domestic dogs or cats, or other hybrids;"
+
+VERSÃO FINAL PT-PT:
+"d) «Híbrido», qualquer descendência da primeira à quarta geração após o 
+cruzamento entre uma espécie selvagem e um cão ou gato doméstico, ou entre um 
+híbrido e uma espécie selvagem, um cão ou gato doméstico ou outros híbridos;"
+
+CONCLUSÃO ARTIGO 4.º (definição de híbrido):
+✓ IDÊNTICO entre EN e PT
+✓ CONFIRMA: Hybrid = F1-F4 apenas (primeiras quatro gerações)
+✓ CONFIRMA: Serval (espécie selvagem) não é híbrido sob esta definição
+✓ Divergência com ICNF ofício 19995/2018: ICNF considera F4+ sem genes selvagens 
+  como domésticos (4+ gerações), mas @regulamento define hybrid como máximo F1-F4 
+  (4 gerações = primeira a quarta)
+✓ Comparação com versão trabalho (11.12.2025): SEM ALTERAÇÕES MATERIAIS
+
+─────────────────────────────────────────────────────────────────────────────
+
+SECÇÃO 3: ARTIGO 8.º - OBRIGAÇÕES DE ESTRATÉGIA DE CRIAÇÃO
+
+VERSÃO FINAL EN-EN (Article 8.4):
+"The following shall be prohibited when managing the reproduction of dogs and cats:
+
+(a) breeding between parents and offspring, between siblings, between 
+half-siblings or between grandparents and grandchildren, unless approved by the 
+competent authority based on a specific need to preserve local breeds with a 
+limited genetic pool;
+
+(b) breeding for the purpose of producing hybrids."
+
+VERSÃO FINAL PT-PT (Artigo 8.º, n.º 4):
+"Serão proibidos na gestão da reprodução de cães e gatos:
+
+a) A criação entre progenitores e descendência, entre irmãos, entre irmãos 
+uterinos ou entre avós e netos, a menos que aprovada pela autoridade competente 
+com base numa necessidade específica de preservar raças locais com um património 
+genético limitado;
+
+b) A criação com o objetivo de produzir híbridos."
+
+CONCLUSÃO ARTIGO 8.º.4(b):
+✓ IDÊNTICO entre EN e PT
+✓ CONFIRMA: Proibição de "breeding FOR THE PURPOSE OF PRODUCING hybrids"
+✓ CRÍTICO: Texto diz "para" (fim/objetivo), não "de" (matéria-prima)
+✓ INTERPRETAÇÃO: Proíbe criar deliberadamente F1-F4 híbridos, mas não criminaliza:
+  - Possessão de híbridos já existentes (F1-F4 já vivos)
+  - Reprodução de híbridos sem objetivo de produzir mais híbridos
+✓ TEMPORAL: Disposição é prospectiva (a partir da entrada em vigor +2 anos), 
+  não retroativa
+✓ Comparação com versão trabalho (11.12.2025): SEM ALTERAÇÕES MATERIAIS
+
+─────────────────────────────────────────────────────────────────────────────
+
+SECÇÃO 4: ARTIGO 1.º - OBJETO
+
+VERSÃO FINAL EN-EN:
+"This Regulation lays down minimum requirements for:
+
+(a) the welfare of dogs and cats bred or kept in establishments or placed on 
+the Union market;
+
+(b) the traceability of dogs and cats."
+
+VERSÃO FINAL PT-PT:
+"O presente regulamento define os requisitos mínimos para:
+
+a) O bem-estar dos cães e gatos criados ou detidos em estabelecimentos ou 
+colocados no mercado da União;
+
+b) A rastreabilidade dos cães e gatos."
+
+CONCLUSÃO ARTIGO 1.º:
+✓ IDÊNTICO entre EN e PT
+✓ CONFIRMA: Objeto focado EXCLUSIVAMENTE em bem-estar e rastreabilidade de 
+  cães e gatos
+✓ CONFIRMA: Serval NÃO é animal de companhia = fora do escopo
+✓ Comparação com versão trabalho (11.12.2025): SEM ALTERAÇÕES MATERIAIS
+
+─────────────────────────────────────────────────────────────────────────────
+
+SECÇÃO 5: ARTIGO 3.º - ÂMBITO DE APLICAÇÃO PESSOAL
+
+VERSÃO FINAL EN-EN:
+"1. Chapter II applies to all operators.
+
+2. Chapter III applies to all natural and legal persons owning dogs or cats in 
+the Union.
+
+3. Chapter V applies to all natural and legal persons who bring dogs or cats 
+into the Union.
+
+4. This Regulation does not apply to farmers offering refuge on their holding 
+to free-roaming stray cats that are useful for pest control, where those farmers 
+are not operators and do not place those cats on the market."
+
+VERSÃO FINAL PT-PT:
+"1. O capítulo II é aplicável a todos os operadores.
+
+2. O capítulo III é aplicável a todas as pessoas singulares e coletivas 
+proprietárias de cães ou gatos na União.
+
+3. O capítulo V é aplicável a todas as pessoas singulares e coletivas que 
+introduzam cães ou gatos na União.
+
+4. O presente regulamento não é aplicável a agricultores que, na sua exploração, 
+ofereçam refúgio a gatos errantes que sejam úteis para o controlo de pragas, 
+desde que tais agricultores não sejam operadores e não coloquem esses gatos no 
+mercado."
+
+CONCLUSÃO ARTIGO 3.º:
+✓ IDÊNTICO entre EN e PT
+✓ CONFIRMA: Aplicável a pessoas que tratem de cães/gatos (Capítulo III = 
+  proprietários)
+✓ CONFIRMA: Serval NÃO é "gato doméstico" para fins deste regulamento
+✓ Comparação com versão trabalho (11.12.2025): SEM ALTERAÇÕES MATERIAIS
+
+=================================================================================
+RESUMO DE ALTERAÇÕES
+=================================================================================
+
+ALTERAÇÕES MATERIAIS IDENTIFICADAS: NENHUMA
+
+Comparação entre:
+- Versão final EN (2026/1818, publicada 10.8.2026)
+- Versão final PT (2026/1818, publicada 10.8.2026)
+- Versão de trabalho (11.12.2025 OCR)
+
+RESULTADO: Todas as disposições críticas (Artigos 1, 2, 3, 4, 8) são IDÊNTICAS 
+entre versão de trabalho e versão final publicada.
+
+=================================================================================
+IMPLICAÇÕES PARA ANÁLISE DE SERVAL E HÍBRIDOS
+=================================================================================
+
+COM BASE NA VERSÃO FINAL PUBLICADA (AUTORITATIVE):
+
+1. SERVAL EM PORTUGAL
+   ✓ Portaria PT 86/2018 proíbe Felidae selvagens (inclui serval)
+   ✓ @regulamento 2026/1818 NÃO se aplica (fora escopo - Art. 2)
+   ✓ Conclusão anterior MANTÉM-SE: Serval é PROIBIDO em Portugal
+
+2. CARACAL EM PORTUGAL  
+   ✓ Mesmo status que serval (Felidae selvagem)
+   ✓ @regulamento NÃO se aplica (fora escopo)
+   ✓ Conclusão anterior MANTÉM-SE: Caracal é PROIBIDO em Portugal
+
+3. HIBRIDOS F1-F4 EM PORTUGAL
+   ✓ @regulamento define hybrid como F1-F4 (Art. 4.d)
+   ✓ Proibição de CRIAÇÃO (breeding FOR PURPOSE of producing hybrids, Art. 8.4b)
+   ✓ NÃO proíbe possessão de híbridos já existentes
+   ✓ Divergência com ICNF: ICNF 4+ gerações; @regulamento 4 gerações (F1-F4)
+   ✓ Conclusão anterior MANTÉM-SE COM CONFIRMAÇÃO
+
+4. TRANSPORTE SERVAL PARA ESPANHA
+   ✓ Bloqueio triplo MANTÉM-SE:
+     a) PT: Portaria 86/2018 (saída ilegal)
+     b) ES: Ley 7/2023 (entrada proibida, >5kg)
+     c) CITES II: Necessário mas insuficiente vs legislação nacional
+   ✓ Conclusão anterior MANTÉM-SE: IMPOSSÍVEL
+
+=================================================================================
+ESTABELECIMENTO DE REFERÊNCIA AUTORITATIVE
+=================================================================================
+
+A PARTIR DE 2026-08-23, OS SEGUINTES DOCUMENTOS CONSTITUEM A REFERÊNCIA FINAL 
+E AUTORITATIVE:
+
+✓ Regulamento Versao final en-en.pdf (Regulamento (UE) 2026/1818 EN)
+✓ Regulamento Versao final pt-pt.pdf (Regulamento (UE) 2026/1818 PT)
+
+TODAS AS CITAÇÕES FUTURAS DE @REGULAMENTO DEVEM FAZER REFERÊNCIA A ESTES FICHEIROS.
+
+Versão de trabalho (11.12.2025) é DESCONTINUADA como referência primária.
+
+=================================================================================

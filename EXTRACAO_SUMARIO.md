@@ -1,4 +1,4 @@
-# Extração da Estrutura Hierárquica - Regulamento 2023/0447
+# Extração da Estrutura Hierárquica - Regulamento (UE) 2026/1818
 
 ## Resultado da Extração
 
@@ -15,7 +15,8 @@ Tarefa concluída com sucesso em **6 de Abril de 2026**.
 
 ### Cobertura
 
-- **Fonte**: `pe00002.pt26.PB.aftermeeting 2.docx` (versão portuguesa mais recente do Regulamento)
+- **Fonte (à data da extração)**: `pe00002.pt26.PB.aftermeeting 2.docx` (versão PT pré-publicação)
+- **Fonte atual**: `Regulamento 2026_01818_PT.pdf` — texto PT publicado no JO (Regulamento (UE) 2026/1818). Extrações novas devem partir deste ficheiro.
 - **Intervalo**: Capítulo II até Anexo III (inclusive)
 - **Artigos capturados**: Art. 5 até Art. 33
 - **Capítulos**: II, III, IV, V, VI, VII

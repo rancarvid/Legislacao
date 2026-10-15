@@ -38,7 +38,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Âmbito** | Aplica-se a todos os animais |
 | **Dispositivos Centrais** | Proíbe violência injustificada; obriga assistência a animais doentes/feridos |
 | **Remissões** | Base legal para legislação subsequente |
-| **Impacto Regulamento Europeu 2023/0447** | Complementa disposições gerais de bem-estar |
+| **Impacto Regulamento (UE) 2026/1818** | Complementa disposições gerais de bem-estar |
 
 **Relevância**: Lei fundacional que proíbe "todos os atos de violência injustificada contra animais, bem como os atos que sem necessidade causem a um animal a morte, o sofrimento cruel e prolongado ou lesões graves."
 
@@ -54,7 +54,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Alterações Legislativas** | Código Civil, Código Processo Civil, Código Penal |
 | **Dispositivos Centrais** | Reconhece animais como "seres vivos dotados de sensibilidade"; altera regime de propriedade em animais; criminaliza maus tratos |
 | **Impacto Divórcio/Propriedade** | Animais de companhia devem ser atribuídos considerando bem-estar animal em caso de divórcio |
-| **Impacto Regulamento Europeu 2023/0447** | Harmoniza com princípios europeus de bem-estar animal |
+| **Impacto Regulamento (UE) 2026/1818** | Harmoniza com princípios europeus de bem-estar animal |
 
 **Relevância**: Revolução legal que reconhece animais como sujeitos de proteção jurídica, não como "coisas" no sentido tradicional.
 
@@ -70,7 +70,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Medidas Principais** | Aprova medidas para criação de rede de centros de recolha oficial; proíbe abate como forma de controlo populacional |
 | **Programas** | Promove programas de captura, esterilização e devolução (CED) |
 | **Implementação** | Regulamentada por Portaria 146/2017 |
-| **Impacto Regulamento Europeu 2023/0447** | Alinha com recomendações de bem-estar de animais errantes |
+| **Impacto Regulamento (UE) 2026/1818** | Alinha com recomendações de bem-estar de animais errantes |
 
 **Relevância**: Inversão do paradigma anterior; mudança de destruição para proteção e esterilização.
 
@@ -102,7 +102,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Implementa** | Convenção Europeia para a Proteção dos Animais de Companhia (1987) |
 | **Dispositivos** | Regime especial para animais potencialmente perigosos; restrições a detenção; identificação |
 | **Alterações Sucessivas** | Alterado por Lei 95/2017 e múltiplos decretos |
-| **Impacto Regulamento Europeu 2023/0447** | Base legal a considerar na transposição/harmonização do novo regulamento |
+| **Impacto Regulamento (UE) 2026/1818** | Base legal a considerar na transposição/harmonização do novo regulamento |
 
 **Relevância**: Fundação do regime português de proteção de animais de companhia; base para interpretação de bem-estar.
 
@@ -135,7 +135,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Obrigatoriedade** | Marcação eletrónica (microchip) obrigatória para todos os cães, gatos e furões |
 | **Integração** | Consolida SIRA (Sistema Informação Recuperação Animal) e SICAFE (Sistema Identificação Cães Felinos) |
 | **Rastreabilidade** | Permite identificação única e rastreamento de animais |
-| **Impacto Regulamento Europeu 2023/0447** | Harmoniza perfeitamente com exigências de rastreabilidade do regulamento |
+| **Impacto Regulamento (UE) 2026/1818** | Harmoniza perfeitamente com exigências de rastreabilidade do regulamento |
 
 **Relevância**: Implementação tecnológica crucial para responsabilidade animal; reduz abandono e melhora bem-estar.
 
@@ -331,7 +331,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | Tema | Diplomas Principais | Diplomas Secundários | Gaps Identificados |
 |---|---|---|---|
 | **Proteção Geral** | Lei 92/95, Lei 8/2017 | Lei 69/2014 | — |
-| **Identificação e Registo** | DL 82/2019 | DL 276/2001, Lei 95/2017, Portaria 67/2018 | Necessidade de integração com Regulamento 2023/0447 |
+| **Identificação e Registo** | DL 82/2019 | DL 276/2001, Lei 95/2017, Portaria 67/2018 | Necessidade de integração com Regulamento (UE) 2026/1818 |
 | **Animais Errantes** | Lei 27/2016 | Portaria 146/2017 | Financiamento e recursos para centros |
 | **Raiva e Zoonoses** | DL 314/2003 | Portaria 264/2013 | Coordenação com vigilância veterinária |
 | **Bem-Estar Geral** | DL 276/2001 | DL 314/2003, Lei 8/2017 | Normas técnicas detalhadas de espaço/cuidado |
@@ -344,9 +344,9 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 
 ---
 
-## 8. IMPACTO DO REGULAMENTO EUROPEU 2023/0447
+## 8. IMPACTO DO REGULAMENTO (UE) 2026/1818
 
-O Regulamento Europeu 2023/0447 incide sobre:
+O Regulamento (UE) 2026/1818 incide sobre:
 
 - **Identificação de cães e gatos**: Harmónico com DL 82/2019; necessário verificar conformidade técnica
 - **Responsabilidade do detentor**: Alinha com Lei 8/2017; complementa DL 276/2001
@@ -366,7 +366,7 @@ O Regulamento Europeu 2023/0447 incide sobre:
 - **Lei 8/2017**: Verificar aplicação em jurisprudência
 - **Portaria 264/2013**: Confirmar campanhas vacinação atuais
 
-### 9.2 Análise de Compatibilidade com Regulamento 2023/0447
+### 9.2 Análise de Compatibilidade com Regulamento (UE) 2026/1818
 
 | Área | Status de Compatibilidade | Ação Recomendada |
 |---|---|---|

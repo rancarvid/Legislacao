@@ -223,7 +223,7 @@
 
 ---
 
-## V. IMPACTO DO REGULAMENTO EUROPEU 2023/0447
+## V. IMPACTO DO REGULAMENTO (UE) 2026/1818
 
 ### Alinhamento Automático (✅)
 
@@ -278,7 +278,7 @@
 
 ### Imediato (Prioridade Alta)
 
-1. **Verificar harmonização técnica com Regulamento 2023/0447**
+1. **Verificar harmonização técnica com Regulamento (UE) 2026/1818**
    - Protocolo de integração SIAC com sistemas europeus
    - Normas técnicas de microchip (compatibilidade)
    - Padrões de bem-estar (espaciais, nutricionais, comportamentais)
@@ -334,7 +334,7 @@ Portugal possui um regime legislativo **robusto e abrangente** de proteção e b
 - Lacunas em normas técnicas detalhadas
 - Supervisão de criadores não-comerciais
 
-**Recomendação Final**: O regime português está **altamente preparado** para a aplicação do Regulamento Europeu 2023/0447. Será necessária harmonização técnica em identificação e protocolos operacionais, mas a base legal é sólida.
+**Recomendação Final**: O regime português está **altamente preparado** para a aplicação do Regulamento (UE) 2026/1818. Será necessária harmonização técnica em identificação e protocolos operacionais, mas a base legal é sólida.
 
 ---
 

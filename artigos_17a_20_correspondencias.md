@@ -2,7 +2,7 @@
 
 ## ART-17a - REQUISITOS DE PUBLICIDADE EM LINHA E COLOCAÇÃO NO MERCADO
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Requirements on online advertising and placing on the market
 
 **Conteúdo**:
@@ -80,7 +80,7 @@ Restrições a:
 
 ## ART-18 - TREINO DE CUIDADORES DE ANIMAIS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Training
 
 **Conteúdo**:
@@ -128,7 +128,7 @@ socialização e obediência"
 
 ## ART-19 - BASES DE DADOS DE CÃES E GATOS
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Databases of dogs and cats
 
 **Conteúdo**:
@@ -178,7 +178,7 @@ relativa a animais identificados..."
 
 ## ART-20 - RECOLHA DE DADOS SOBRE BEM-ESTAR ANIMAL E RELATÓRIO
 
-### Regulamento 2023/0447
+### Regulamento (UE) 2026/1818
 **Título**: Collection of data on animal welfare and reporting
 
 **Conteúdo**:
