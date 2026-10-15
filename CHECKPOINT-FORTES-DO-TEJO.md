@@ -1,6 +1,9 @@
 # CHECKPOINT — Fortes do Tejo: entrada em território nacional de cão potencialmente perigoso para reprodução
 
 **Data**: 15.10.2026 · **Estado**: análise em curso; verificações 1 a 4 feitas; falta TRACES e resposta ao CPC.
+**Segundo processo** (Quack&Dogs, CPC 260140 CSA, 1.10.2026) no §8; verificações por fazer.
+**Correção** (§8.4): a licença da JF dos cães PP importados para reprodução é devida **nos 10 dias após a
+entrada** (al. e) do n.º 1 do art.º 16.º do DL n.º 82/2019), não na janela dos 3 aos 6 meses.
 **Fonte**: e-mail de Susana Gonçalves Santos (Chefe de Divisão, DSBEA) para Rui Vidal, 18.9.2026, 10:11,
 «FW: Pedido de autorização de entrada em território nacional - IE 276094180220661 - Nome: QIRO VOM
 WILDWECHSEL - FORTES DO TEJO», com anexo `260133 CSA DGAV import potencialmente perigosa FORTES DO TEJO.pdf`
@@ -210,3 +213,85 @@ admite expressamente transporte sem tratador em contentor (art.º 6.º, n.º 6, 
   `https://food.ec.europa.eu/animals/live-animal-movements/dogs-cats-and-ferrets/eu-legislation/young-animals_en`.
 - Não há acesso ao SIAC, ao registo de alojamentos nem ao TRACES a partir desta sessão; os resultados
   do §2 foram introduzidos pelo utilizador.
+
+---
+
+## 8. Segundo processo — Quack&Dogs (CPC 260140 CSA, 1.10.2026)
+
+**Fonte**: `260140 CSA DGAV import potencialmente perigosa.pdf` (2 pp.: ofício do CPC + *Export Pedigree*
+do CMKU), carregado em 15.10.2026. Não copiado para o repositório.
+
+### 8.1 Factos
+
+| Elemento | Valor |
+|---|---|
+| Requerente | CPC, ofício ref. 260140 CSA, 1.10.2026, a pedido de Rui Gonçalo Carvalho da Silva Santos (Quack&Dogs) |
+| Animal | CALAMITY ANN RUFFIAN EMBER ROCK, American Staffordshire Terrier, fêmea |
+| Registo estrangeiro | CMKU/AST/13394/22 — *Export Pedigree / Certified Pedigree*, Českomoravská kynologická unie (membro FCI); criador Tomáš Zaplatal, Brno |
+| Microchip | 941000024795901 |
+| Nascimento | 10.2.2022 (adulta), Chéquia |
+| Destino | alojamento do proprietário, «licença B 216 FL» |
+
+Raça no anexo da Portaria n.º 422/2004 (ponto V). Inscrita em livro de origens reconhecido: não se
+aplica o n.º 3 do art.º 19.º. Pedigree de exportação: coerente com entrada por compra/cedência para
+reprodução (n.º 3 do art.º 16.º).
+
+### 8.2 Calendário
+
+| Data | Facto |
+|---|---|
+| 1.10.2026 | pedido do CPC |
+| 8.10.2026 | termo dos sete dias — deferimento tácito (n.º 3 do art.º 16.º) |
+| entrada + 10 dias | registo no SIAC **e** licença da JF (art.º 5.º do DL 315/2009; al. e) do n.º 1 do art.º 16.º do DL 82/2019) |
+
+### 8.3 Diferenças face ao processo Fortes do Tejo
+
+- Animal adulto: sem restrição de idade/vacinação; basta vacinação antirrábica válida (primária há
+  pelo menos 21 dias ou reforço dentro da validade), passaporte e certificado INTRA no TRACES
+  (art.º 53.º e n.º 1 do art.º 71.º do Reg. Delegado 2020/688, redação do 2026/133).
+- «B 216 FL»: o sufixo aponta para centro de hospedagem com fins lucrativos (n.º 1 do art.º 17.º);
+  confirmar no registo que a permissão cobre criação/reprodução e que o responsável é o requerente.
+- Treino (art.º 21.º): obrigação mantém-se; a janela dos 6 aos 12 meses não é literalmente aplicável a
+  um cão adulto importado.
+
+### 8.4 Correção aplicável aos dois processos — prazo da licença da JF
+
+Al. e) do n.º 1 do art.º 16.º do DL n.º 82/2019 (verbatim): «Dar cumprimento ao disposto no artigo 5.º
+do Decreto-Lei n.º 315/2009, de 29 de outubro, na sua redação atual, relativamente a cão de raça
+potencialmente perigoso, que tenha sido introduzido no território nacional com a finalidade de
+reprodução, no prazo de 10 dias a contar da data da entrada;». A remissão é para **todo** o art.º 5.º
+(licença da JF, n.º 1, e registo no SIAC, n.º 5). Logo, para cães PP importados para reprodução, licença
+**e** registo nos 10 dias após a entrada. É o que a colega Cristina indicava («têm 10 dias para obter
+licença»). Substitui, no §3.3, a linha «15.9.2026 – 15.12.2026 — janela da licença da JF» e, no §5,
+a al. c) da minuta (licença nos 10 dias após a entrada, não «até aos 6 meses»).
+
+### 8.5 Verificações por fazer (passos 1 a 5)
+
+| # | Verificar | Resultado |
+|---|---|---|
+| 1 | SIAC: chip 941000024795901 já registado? Em nome de quem? | por fazer |
+| 2 | Alojamento Quack&Dogs, B 216 FL: permissão administrativa válida para reprodução; responsável | por fazer |
+| 3 | Capacidade e cães PP afetos ao requerente | por fazer |
+| 4 | Licenças da JF dos cães PP já detidos | por fazer |
+| 5 | TRACES / passaporte (via DSECI ou pedido ao CPC) | por fazer |
+
+### 8.6 Minuta de resposta ao CPC
+
+> Em resposta ao ofício ref. 260140 CSA, de 1.10.2026, informa-se que a entrada em território
+> nacional, para fins de reprodução, do canídeo CALAMITY ANN RUFFIAN EMBER ROCK (American Staffordshire
+> Terrier, fêmea, microchip 941000024795901, CMKU/AST/13394/22, nascida a 10.2.2022) se considera
+> autorizada nos termos do n.º 3 do art.º 16.º do Decreto-Lei n.º 315/2009, de 29 de outubro, na sua
+> redação atual, com destino ao alojamento registado sob o n.º B 216 FL, da responsabilidade de Rui
+> Gonçalo Carvalho da Silva Santos, nas seguintes condições:
+>
+> a) circulação ao abrigo do artigo 53.º do Regulamento Delegado (UE) 2020/688, com vacinação
+> antirrábica válida, passaporte e certificado sanitário emitido pela autoridade competente checa no
+> TRACES;
+> b) no prazo de 10 dias após a entrada, registo no SIAC em nome do titular que figure no passaporte ou
+> no certificado sanitário e licença de detenção da junta de freguesia, com seguro de responsabilidade
+> civil e comprovativo de aprovação em formação (art.º 5.º do Decreto-Lei n.º 315/2009 e al. e) do
+> n.º 1 do art.º 16.º do Decreto-Lei n.º 82/2019);
+> c) utilização como reprodutora apenas após aprovação em testes de aptidão do clube de raça (n.º 1 do
+> art.º 18.º) e exclusivamente no alojamento autorizado (n.º 1 do art.º 17.º).
+>
+> Solicita-se o envio de cópia do passaporte e do número do certificado sanitário TRACES.
