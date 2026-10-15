@@ -267,13 +267,21 @@ a al. c) da minuta (licença nos 10 dias após a entrada, não «até aos 6 mese
 
 ### 8.5 Verificações por fazer (passos 1 a 5)
 
+Resultados introduzidos pelo utilizador em 15.10.2026:
+
 | # | Verificar | Resultado |
 |---|---|---|
-| 1 | SIAC: chip 941000024795901 já registado? Em nome de quem? | por fazer |
-| 2 | Alojamento Quack&Dogs, B 216 FL: permissão administrativa válida para reprodução; responsável | por fazer |
-| 3 | Capacidade e cães PP afetos ao requerente | por fazer |
-| 4 | Licenças da JF dos cães PP já detidos | por fazer |
-| 5 | TRACES / passaporte (via DSECI ou pedido ao CPC) | por fazer |
+| 1 | SIAC: chip 941000024795901 já registado? | **Não está registado.** Se a entrada ocorreu depois de 8.10.2026, os 10 dias do registo podem ainda estar a correr; voltar a consultar. |
+| 2 | Alojamento Quack&Dogs, B 216 FL | **Registado, válido.** |
+| 3 | Capacidade | **OK.** |
+| 4 | Licenças da JF dos cães PP já detidos | **6 adultos, só 4 com licença válida.** Dois cães sem licença válida (a licença vale no máximo um ano — n.º 1 do art.º 6.º-A). Falta de licença: contraordenação económica grave (al. a) do n.º 1 do art.º 38.º). A autoridade pode exigir a licença a qualquer momento (n.º 3 do art.º 5.º). |
+| 5 | TRACES / passaporte | **Sem informação.** Pedir à DSECI a confirmação do certificado INTRA (CZ → PT, chip 941000024795901) e ao CPC a data de entrada e cópia do passaporte. |
+
+**Consequência do ponto 4**: a autorização do n.º 3 do art.º 16.º não depende, na lei, das licenças dos
+outros cães, e já se formou tacitamente em 8.10.2026. O que a DGAV pode fazer é exigir, na resposta,
+a regularização das duas licenças num prazo, com a advertência da al. a) do n.º 1 do art.º 38.º, e
+só dar seguimento a novos pedidos do mesmo detentor depois de regularizadas (prática da colega
+Cristina). A minuta do §8.6 inclui esse parágrafo.
 
 ### 8.6 Minuta de resposta ao CPC
 
@@ -294,4 +302,20 @@ a al. c) da minuta (licença nos 10 dias após a entrada, não «até aos 6 mese
 > c) utilização como reprodutora apenas após aprovação em testes de aptidão do clube de raça (n.º 1 do
 > art.º 18.º) e exclusivamente no alojamento autorizado (n.º 1 do art.º 17.º).
 >
-> Solicita-se o envio de cópia do passaporte e do número do certificado sanitário TRACES.
+> Solicita-se o envio de cópia do passaporte, do número do certificado sanitário TRACES e da data de
+> entrada do animal em território nacional.
+>
+> Mais se informa que, dos seis cães potencialmente perigosos adultos afetos ao detentor, apenas
+> quatro têm licença de detenção válida. Nos termos do n.º 1 do art.º 6.º-A, a licença é válida por
+> um período máximo de um ano, e a sua falta constitui contraordenação económica grave (al. a) do
+> n.º 1 do art.º 38.º). Solicita-se o envio, no prazo de 10 dias úteis, do comprovativo da
+> renovação das licenças em falta, sem o que não poderão ser apreciados novos pedidos de entrada
+> em nome do mesmo detentor.
+
+### 8.7 Estado em 15.10.2026 e pendentes
+
+- Verificações 1 a 4 feitas; 5 (TRACES) por fazer, via DSECI.
+- Pendente: resposta ao CPC (§8.6) com proposta à Chefe de Divisão; cc à DSECI com os requisitos de
+  circulação comercial intra-UE (§3.2) e pedido de confirmação do certificado INTRA.
+- Seguimento: nova consulta ao SIAC 10 dias depois da data de entrada que o CPC indicar; conferir
+  a licença da JF da fêmea nesse mesmo prazo; conferir a regularização das duas licenças em falta.
