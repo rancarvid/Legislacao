@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.23"
-DATA_MEMORANDO = "14.10.2026"
+VERSAO_MEMORANDO = "1.24"
+DATA_MEMORANDO = "20.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
@@ -1038,7 +1038,38 @@ CAPITULOS = [
     ]},
     {"letra": "K", "capitulos": ["Capítulo XI", "Capítulo XII", "Capítulo XIII"],
      "titulo": "Cadáveres, exposições, comércio e livros genealógicos (caps. XI a XIII)", "intro": [], "fichas": []},
-    {"letra": "D", "capitulos": ["Capítulo XIV"], "titulo": "Animais perigosos e potencialmente perigosos (cap. XIV)", "intro": [], "fichas": []},
+    {"letra": "D", "capitulos": ["Capítulo XIV"], "titulo": "Animais perigosos e potencialmente perigosos (cap. XIV)", "intro": [], "fichas": [
+        {
+            "cod": "D-01",
+            "titulo": "Duas vias para retirar a classificação de perigoso, sem ligação entre elas",
+            "onde": [
+                "art. 120.º, n.ºs 1, 3 e 5",
+                "art. 115.º, n.ºs 1 a 3",
+                "art. 121.º, n.ºs 2, 4 e 5",
+                "art. 79.º, n.º 7",
+                "art. 110.º, n.º 2",
+                "art. 126.º, n.º 2",
+                "DL 315/2009, art. 3.º, al. b), art. 9.º, art. 14.º e art. 19.º, n.º 2",
+                "DL 82/2019, art. 13.º, n.º 1"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "No DL 315/2009, o animal é perigoso quando se verifica um dos factos do art. 3.º, al. b): ter mordido, atacado ou ofendido uma pessoa; ter ferido gravemente ou morto outro animal fora da propriedade do detentor; ter sido declarado agressivo pelo detentor; ou ter sido considerado um risco pela autoridade competente. As juntas de freguesia registam no SIAC os episódios que determinam a classificação (art. 9.º, n.º 1, e art. 14.º, n.º 3). A única via expressa para a retirar é o registo das «decisões definitivas proferidas em processo criminal ou contraordenacional» que fundamentem a eliminação da classificação (art. 9.º, n.º 2).",
+                "A lei vigente não dá ao MVM poder para retirar a classificação. Quando se apura que o auto policial que relatou a agressão não tem fundamento, não há via própria fora do processo criminal ou contraordenacional. Entretanto o cão fica sujeito a licença, seguro, açaimo e esterilização (DL 315/2009, art. 5.º, art. 10.º, art. 13.º e art. 19.º, n.º 2).",
+                "O RGAC muda o modelo. O registo dos episódios passa para o MVM ou para o médico veterinário ao serviço do município (art. 115.º, n.º 1; art. 120.º, n.º 3; art. 121.º, n.º 4). A junta de freguesia deixa de poder alterar a classificação (art. 79.º, n.º 7). O art. 120.º, n.º 5 permite ao MVM reverter a classificação, «oficiosamente ou a requerimento do interessado», «sempre que seja feita prova em contrário».",
+                "O art. 115.º, n.º 2 mantém a via do DL 315/2009: a DGAV regista no SIAC as decisões definitivas que fundamentem a eliminação da classificação, e o n.º 3 manda o tribunal e as autoridades administrativas comunicar-lhe a decisão. Ficam duas vias para o mesmo efeito, com dois decisores, sem regra que as ligue.",
+                "O art. 120.º, n.º 5 não diz quem regista a reversão no SIAC, nem que ela é notificada ao titular e à junta de freguesia que emitiu a licença (art. 110.º, n.º 2). Não diz que prova basta para a «prova em contrário». Não trata o caso de haver processo criminal ou contraordenacional pendente sobre os mesmos factos: o MVM pode reverter e o tribunal dar depois os factos como provados, ou o contrário.",
+                "O cão classificado como perigoso deve ser esterilizado (art. 126.º, n.º 2). Se a classificação cair depois, a esterilização não se desfaz. O RGAC não suspende este efeito enquanto a classificação é contestada.",
+                "No SIAC, só altera o registo quem tiver perfil para isso, atribuído pela DGAV (DL 82/2019, art. 13.º, n.º 1). A competência que o RGAC dá ao MVM só funciona se o perfil a acompanhar."
+            ],
+            "proposta": "Ligar as duas vias no art. 120.º. (i) O MVM reverte por decisão fundamentada, regista a reversão no SIAC e notifica o titular e a junta de freguesia. (ii) Dar exemplos de prova em contrário: decisão definitiva de arquivamento ou de absolvição, retificação do auto pela entidade autuante, erro na identificação do animal. (iii) No art. 115.º, n.º 2, a DGAV regista a decisão definitiva e o MVM retira dela as consequências, para não haver duas decisões sobre o mesmo facto. (iv) Com processo pendente, o MVM pode suspender a esterilização do art. 126.º, n.º 2 até à decisão, mantendo as medidas de circulação do art. 119.º. (v) Ajustar os perfis de acesso ao SIAC à nova competência.",
+            "levantado": [
+                "Análise interna (20.10.2026), a propósito de uma consulta: pode o MVM retirar no SIAC a classificação de perigoso quando o auto da GNR que relatou a agressão não tem fundamento"
+            ],
+            "estado": "Aberto",
+            "rel": []
+        },
+    ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
             "cod": "S-01",
@@ -1291,6 +1322,31 @@ LAPSOS = [
         "ficha": "",
         "lapso": "No art. 50.º, o primeiro dos motivos de suspensão aparece como «2 -» e os outros três como alíneas a) a c). Os números seguintes ficam deslocados. O n.º 5 diz «encerramento definitivo do alojamento», em vez de estabelecimento. O n.º 7 remete para a decisão «a que se referem os n.ºs 3 e 4», que agora são a instrução e a regra da suspensão, e para o «artigo XX.º». O art. 51.º, n.ºs 1 e 2, remete para o prazo «fixado nos termos do n.º 4 do artigo anterior», que agora está no n.º 5. O art. 52.º remete para os «artigos 39.º e 40.º», que tratam de peixes e de outras disposições; devia remeter para o art. 50.º e o art. 51.º.",
         "correcao": "Passar os quatro motivos a alíneas a) a d) do n.º 1 e renumerar o artigo. No n.º 5, trocar «alojamento» por «estabelecimento». No n.º 7, remeter para as decisões de suspensão e de encerramento e para o artigo da recolha e encaminhamento de animais. Corrigir as remissões do art. 51.º e do art. 52.º."
+    },
+    {
+        "cod": "L-19",
+        "onde": [
+            "79",
+            "120",
+            "121"
+        ],
+        "estado": "Aberto",
+        "ficha": "D-01",
+        "lapso": "Remissões por fixar nas normas dos cães perigosos. O art. 79.º, n.º 3 remete para o «artigo XXº (artigo perigosos)». O art. 120.º, n.º 2, al. a), remete para o «n.º X do artigo XX.º». O art. 121.º, n.º 5 remete para a documentação «referida no n.º XX.º».",
+        "correcao": "No art. 79.º, n.º 3 e no art. 121.º, n.º 5, remeter para o art. 110.º, n.º 3. No art. 120.º, n.º 2, al. a), remeter para o art. 119.º, n.º 2 (meios de contenção)."
+    },
+    {
+        "cod": "L-20",
+        "onde": [
+            "110",
+            "112",
+            "113",
+            "114"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Remissões erradas ou incompletas nas normas da formação para cães perigosos. A última alínea do art. 110.º, n.º 3 acaba em «como previsto no artigo.», sem número. O art. 112.º remete para a «alínea f) do n.º 2 do artigo anterior», mas o art. 111.º não tem alíneas e o comprovativo está no art. 110.º, n.º 3. O art. 113.º, n.º 1 fala da formação «prevista no número anterior», e é o primeiro número. O art. 114.º, n.º 1 diz «nos termos da para os titulares», com palavras em falta.",
+        "correcao": "No art. 110.º, n.º 3, remeter para o art. 112.º. No art. 112.º, remeter para a última alínea do art. 110.º, n.º 3. No art. 113.º, n.º 1, escrever «no artigo anterior». No art. 114.º, n.º 1, completar a frase."
     },
 ]
 
@@ -1706,4 +1762,5 @@ REGISTO_ALTERACOES = [
     ("1.21", "13.10.2026", "Ficha S-01: dados do relatório nacional de 2025 da DGAV sobre os CRO (resposta de 60,5 % dos municípios com CRO, 37 sem registo no CVAR/IE, limites do CVAR/IE, dados por município e não por CRO, caso do CRO intermunicipal de Proença-a-Nova) e dever de registo mensal no CVAR/IE da Portaria 264/2013, sem sanção. Proposta: relatório do art. 80.º por CRO, discriminado por município de origem. Fontes novas: relatório da DGAV de 2025, Regulamento n.º 164/2022, Portaria 264/2013."),
     ("1.22", "14.10.2026", "Fichas novas G-01 (a recolha por razões de bem-estar passa da DGAV para as câmaras e o destino para o MVM), G-02 (presunção de abandono aos 15 dias sem ressalva para animais apreendidos ou socorridos em emergência), S-02 (apreensão provisória só para contraordenações, com retorno ao local de origem e sem as regras do RJCE e do CPP) e E-01 (nada sobre animais de companhia em acidente grave ou catástrofe, face à Lei 38/2026). Lapso L-18 (arts. 50.º a 52.º). Origem: análise da proposta de procedimento-tipo de intervenção da OMV e da ANVETEM. Fontes novas: Lei 38/2026, Lei 39/2020, DL 90-A/2022 e a proposta OMV/ANVETEM."),
     ("1.23", "14.10.2026", "Ficha S-02 completada: o «retorno ao local de origem» do art. 139.º, n.º 8 vem do DL 315/2009, art. 39.º, n.º 8, cujo n.º 1 remete a apreensão para o RJCE e cujos n.ºs 2 a 6 estão revogados; o RGAC volta a regular essas matérias e deixa cair a remissão. Origem: notas à proposta OMV/ANVETEM."),
+    ("1.24", "20.10.2026", "Primeira ficha do cap. XIV: D-01 (duas vias para retirar a classificação de perigoso, sem ligação entre elas). Hoje o DL 315/2009 só prevê a eliminação da classificação por decisão definitiva criminal ou contraordenacional (art. 9.º, n.º 2) e não dá ao MVM poder para a retirar; o RGAC dá esse poder ao MVM (art. 120.º, n.º 5), mas mantém a via da DGAV (art. 115.º, n.º 2) sem as ligar. Lapsos novos L-19 (remissões por fixar nos arts. 79.º, 120.º e 121.º) e L-20 (remissões nos arts. 110.º e 112.º a 114.º). Origem: consulta sobre a retirada da classificação de perigoso no SIAC quando o auto da GNR não tem fundamento."),
 ]

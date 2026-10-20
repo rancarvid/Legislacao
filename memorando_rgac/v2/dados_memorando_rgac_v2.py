@@ -1351,6 +1351,42 @@ FICHAS = [
             "P-46"
         ]
     },
+    {
+        "cod": "P-49",
+        "cod_antigo": "D-01",
+        "artigo": "Classificação como animal perigoso",
+        "titulo": "Duas vias para retirar a classificação de perigoso, sem ligação entre elas",
+        "etiquetas": [
+            "PER",
+            "REG"
+        ],
+        "onde": [
+            "art. [[Classificação como animal perigoso]], n.ºs 1, 3 e 5",
+            "art. [[Atualização de registo SIAC]], n.ºs 1 a 3",
+            "art. [[Procedimento em caso de agressão]], n.ºs 2, 4 e 5",
+            "art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 7",
+            "art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 2",
+            "art. [[Proibição de reprodução]], n.º 2",
+            "DL 315/2009, art. 3.º, al. b), art. 9.º, art. 14.º e art. 19.º, n.º 2",
+            "DL 82/2019, art. 13.º, n.º 1"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "No DL 315/2009, o animal é perigoso quando se verifica um dos factos do art. 3.º, al. b): ter mordido, atacado ou ofendido uma pessoa; ter ferido gravemente ou morto outro animal fora da propriedade do detentor; ter sido declarado agressivo pelo detentor; ou ter sido considerado um risco pela autoridade competente. As juntas de freguesia registam no SIAC os episódios que determinam a classificação (art. 9.º, n.º 1, e art. 14.º, n.º 3). A única via expressa para a retirar é o registo das «decisões definitivas proferidas em processo criminal ou contraordenacional» que fundamentem a eliminação da classificação (art. 9.º, n.º 2).",
+            "A lei vigente não dá ao MVM poder para retirar a classificação. Quando se apura que o auto policial que relatou a agressão não tem fundamento, não há via própria fora do processo criminal ou contraordenacional. Entretanto o cão fica sujeito a licença, seguro, açaimo e esterilização (DL 315/2009, art. 5.º, art. 10.º, art. 13.º e art. 19.º, n.º 2).",
+            "O RGAC muda o modelo. O registo dos episódios passa para o MVM ou para o médico veterinário ao serviço do município (art. [[Atualização de registo SIAC]], n.º 1; art. [[Classificação como animal perigoso]], n.º 3; art. [[Procedimento em caso de agressão]], n.º 4). A junta de freguesia deixa de poder alterar a classificação (art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 7). O art. [[Classificação como animal perigoso]], n.º 5 permite ao MVM reverter a classificação, «oficiosamente ou a requerimento do interessado», «sempre que seja feita prova em contrário».",
+            "O art. [[Atualização de registo SIAC]], n.º 2 mantém a via do DL 315/2009: a DGAV regista no SIAC as decisões definitivas que fundamentem a eliminação da classificação, e o n.º 3 manda o tribunal e as autoridades administrativas comunicar-lhe a decisão. Ficam duas vias para o mesmo efeito, com dois decisores, sem regra que as ligue.",
+            "O art. [[Classificação como animal perigoso]], n.º 5 não diz quem regista a reversão no SIAC, nem que ela é notificada ao titular e à junta de freguesia que emitiu a licença (art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 2). Não diz que prova basta para a «prova em contrário». Não trata o caso de haver processo criminal ou contraordenacional pendente sobre os mesmos factos: o MVM pode reverter e o tribunal dar depois os factos como provados, ou o contrário.",
+            "O cão classificado como perigoso deve ser esterilizado (art. [[Proibição de reprodução]], n.º 2). Se a classificação cair depois, a esterilização não se desfaz. O RGAC não suspende este efeito enquanto a classificação é contestada.",
+            "No SIAC, só altera o registo quem tiver perfil para isso, atribuído pela DGAV (DL 82/2019, art. 13.º, n.º 1). A competência que o RGAC dá ao MVM só funciona se o perfil a acompanhar."
+        ],
+        "proposta": "Ligar as duas vias no art. [[Classificação como animal perigoso]]. (i) O MVM reverte por decisão fundamentada, regista a reversão no SIAC e notifica o titular e a junta de freguesia. (ii) Dar exemplos de prova em contrário: decisão definitiva de arquivamento ou de absolvição, retificação do auto pela entidade autuante, erro na identificação do animal. (iii) No art. [[Atualização de registo SIAC]], n.º 2, a DGAV regista a decisão definitiva e o MVM retira dela as consequências, para não haver duas decisões sobre o mesmo facto. (iv) Com processo pendente, o MVM pode suspender a esterilização do art. [[Proibição de reprodução]], n.º 2 até à decisão, mantendo as medidas de circulação do art. [[Medidas de segurança reforçadas na circulação]]. (v) Ajustar os perfis de acesso ao SIAC à nova competência.",
+        "levantado": [
+            "Análise interna (20.10.2026), a propósito de uma consulta: pode o MVM retirar no SIAC a classificação de perigoso quando o auto da GNR que relatou a agressão não tem fundamento"
+        ],
+        "estado": "Aberto",
+        "rel": []
+    },
 ]
 
 RESOLVIDOS = [
@@ -1496,6 +1532,31 @@ LAPSOS = [
         "lapso": "No art. [[Suspensão de atividade e encerramento dos estabelecimentos]], o primeiro dos motivos de suspensão aparece como «2 -» e os outros três como alíneas a) a c). Os números seguintes ficam deslocados. O n.º 5 diz «encerramento definitivo do alojamento», em vez de estabelecimento. O n.º 7 remete para a decisão «a que se referem os n.ºs 3 e 4», que agora são a instrução e a regra da suspensão, e para o «artigo XX.º». O art. [[Permissão de reabertura após suspensão da atividade]], n.ºs 1 e 2, remete para o prazo «fixado nos termos do n.º 4 do artigo anterior», que agora está no n.º 5. O art. [[Divulgação da suspensão de atividade, do encerramento e da reabertura de estabelecimento]] remete para os «artigos 39.º e 40.º», que tratam de peixes e de outras disposições; devia remeter para o art. [[Suspensão de atividade e encerramento dos estabelecimentos]] e o art. [[Permissão de reabertura após suspensão da atividade]].",
         "correcao": "Passar os quatro motivos a alíneas a) a d) do n.º 1 e renumerar o artigo. No n.º 5, trocar «alojamento» por «estabelecimento». No n.º 7, remeter para as decisões de suspensão e de encerramento e para o artigo da recolha e encaminhamento de animais. Corrigir as remissões do art. [[Permissão de reabertura após suspensão da atividade]] e do art. [[Divulgação da suspensão de atividade, do encerramento e da reabertura de estabelecimento]]."
     },
+    {
+        "cod": "L-19",
+        "onde": [
+            "Licença de cães e articulação com o Sistema de Informação de Animais de Companhia",
+            "Classificação como animal perigoso",
+            "Procedimento em caso de agressão"
+        ],
+        "estado": "Aberto",
+        "ficha": "P-49",
+        "lapso": "Remissões por fixar nas normas dos cães perigosos. O art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 3 remete para o «artigo XXº (artigo perigosos)». O art. [[Classificação como animal perigoso]], n.º 2, al. a), remete para o «n.º X do artigo XX.º». O art. [[Procedimento em caso de agressão]], n.º 5 remete para a documentação «referida no n.º XX.º».",
+        "correcao": "No art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 3 e no art. [[Procedimento em caso de agressão]], n.º 5, remeter para o art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3. No art. [[Classificação como animal perigoso]], n.º 2, al. a), remeter para o art. [[Medidas de segurança reforçadas na circulação]], n.º 2 (meios de contenção)."
+    },
+    {
+        "cod": "L-20",
+        "onde": [
+            "Detenção de cães perigosos ou potencialmente perigosos",
+            "Comprovativo de aprovação em formação",
+            "Certificação de entidades formadoras",
+            "Da obrigatoriedade de formação"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Remissões erradas ou incompletas nas normas da formação para cães perigosos. A última alínea do art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3 acaba em «como previsto no artigo.», sem número. O art. [[Comprovativo de aprovação em formação]] remete para a «alínea f) do n.º 2 do artigo anterior», mas o art. [[Validade da licença]] não tem alíneas e o comprovativo está no art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3. O art. [[Certificação de entidades formadoras]], n.º 1 fala da formação «prevista no número anterior», e é o primeiro número. O art. [[Da obrigatoriedade de formação]], n.º 1 diz «nos termos da para os titulares», com palavras em falta.",
+        "correcao": "No art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3, remeter para o art. [[Comprovativo de aprovação em formação]]. No art. [[Comprovativo de aprovação em formação]], remeter para a última alínea do art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3. No art. [[Certificação de entidades formadoras]], n.º 1, escrever «no artigo anterior». No art. [[Da obrigatoriedade de formação]], n.º 1, completar a frase."
+    },
 ]
 
 # ------------------------------------------------------------------ epígrafes renomeadas
@@ -1561,6 +1622,7 @@ CORRESPONDENCIA = {
     "G-02": "P-46",
     "S-02": "P-47",
     "E-01": "P-48",
+    "D-01": "P-49",
 }
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
