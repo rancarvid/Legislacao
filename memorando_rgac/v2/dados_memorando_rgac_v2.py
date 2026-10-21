@@ -1387,6 +1387,73 @@ FICHAS = [
         "estado": "Aberto",
         "rel": []
     },
+    {
+        "cod": "P-50",
+        "cod_antigo": "E-02",
+        "artigo": "Suspensão de atividade e encerramento dos estabelecimentos",
+        "titulo": "O encerramento de estabelecimentos fica sem medida cautelar, sem regra para os animais e sem efeito no registo",
+        "etiquetas": [
+            "EST",
+            "BEM",
+            "SAN"
+        ],
+        "onde": [
+            "art. [[Suspensão de atividade e encerramento dos estabelecimentos]], n.ºs 1, 4 e 7",
+            "art. [[Alteração de funcionamento dos estabelecimentos]], n.º 2",
+            "art. [[Permissão de reabertura após suspensão da atividade]]",
+            "art. [[Medidas preventivas]], n.º 1",
+            "art. [[Sanções acessórias]], n.º 1"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "O art. [[Suspensão de atividade e encerramento dos estabelecimentos]] repete o art. 3.º-G do DL 276/2001. O diretor-geral suspende ou encerra depois de processo instruído pela DSAVR, com relatório e proposta. Não há medida cautelar própria para o período entre a fiscalização e a decisão final. Hoje a DGAV tem de recorrer à medida provisória do art. 89.º do CPA ou às medidas cautelares do art. 48.º do RJCE, que só servem dentro de um processo de contraordenação e que o art. 27.º do RJCE afasta quando o mesmo facto é crime.",
+            "O caso do alojamento PT1225FL, em Amarante, mostra a falha. A fiscalização foi em 22.6.2026. Os animais saíram no próprio dia pela via penal. A proposta de encerramento chegou ao diretor-geral em setembro, sem medida provisória, com o prazo de caducidade de 120 dias do art. 128.º, n.º 6 do CPA a correr e sem que a lei diga se se conta em dias úteis.",
+            "O n.º 7 manda as câmaras executar a decisão e recolher os animais «nos termos do artigo XX.º (recolha e encaminhamento de animais)». Esse artigo não existe. Não se diz para onde vão os animais, quem decide o destino, quem suporta a guarda, nem como se articula com a apreensão penal (CPP, arts. 178.º e 186.º) e com a apreensão do art. [[Medidas preventivas]]. O n.º 7 remete ainda para «os n.ºs 3 e 4», que são a instrução e a regra da suspensão (ver L-18).",
+            "O encerramento não tem efeito no registo. O número de identificação é pessoal e intransmissível (DL 276/2001, art. 3.º, n.º 11), mas nada impede o titular de apresentar nova mera comunicação prévia no dia seguinte, para o mesmo local ou para outro. O art. [[Alteração de funcionamento dos estabelecimentos]], n.º 2 trata só da cessação voluntária. O art. [[Permissão de reabertura após suspensão da atividade]] só prevê a reabertura após suspensão. O único travão seria a sanção acessória de interdição, que o RGAC deixa cair (ver P-51).",
+            "O artigo deixa ao CPA a audiência prévia, a dispensa por urgência e o prazo de decisão. Num procedimento de polícia sanitária com animais vivos, estas regras gerais chegam tarde: a urgência que justificaria a dispensa de audiência esgota-se com a retirada dos animais, e a decisão final chega a um local já vazio."
+        ],
+        "proposta": "Rever o art. [[Suspensão de atividade e encerramento dos estabelecimentos]]: (i) poder de suspensão cautelar imediata da atividade, pelo diretor-geral ou pela DSAVR, sem audiência prévia, com prazo e com audiência posterior, nos termos do art. 89.º do CPA; (ii) norma sobre os animais em caso de suspensão ou encerramento: quem os recolhe, onde ficam, quem decide o destino, encargos a cargo do titular, e ressalva dos animais apreendidos em processo penal ou contraordenacional; (iii) efeito do encerramento no registo: cancelamento do número de identificação e prazo durante o qual o titular não pode apresentar nova comunicação prévia, articulado com a sanção acessória de interdição; (iv) prazo próprio para a decisão, com ressalva expressa do art. 128.º, n.º 6 do CPA; (v) corrigir as remissões do n.º 7 (L-18).",
+        "levantado": [
+            "Análise interna (21.10.2026), a propósito da proposta de encerramento do alojamento PT1225FL, Amarante (Informação n.º 125893/26 da DSAVRN, processo P.9441/26)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-51",
+            "P-47",
+            "P-45",
+            "P-48"
+        ]
+    },
+    {
+        "cod": "P-51",
+        "cod_antigo": "S-03",
+        "artigo": "Sanções acessórias",
+        "titulo": "As sanções acessórias perdem a interdição do exercício da atividade",
+        "etiquetas": [
+            "SAN",
+            "EST"
+        ],
+        "onde": [
+            "art. [[Sanções acessórias]], n.ºs 1 e 2",
+            "art. [[Suspensão de atividade e encerramento dos estabelecimentos]]"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "Hoje o DL 276/2001, art. 69.º, al. b) prevê a «Interdição do exercício de uma profissão ou atividade reguladas no presente diploma, cujo exercício dependa de título público ou de autorização ou homologação de autoridade pública». O DL 82/2019, art. 22.º, al. b) prevê o mesmo. O RJCE, art. 28.º, n.º 1, al. c) prevê a interdição do exercício de atividades cujo exercício dependa de permissão administrativa.",
+            "O art. [[Sanções acessórias]], n.º 1 do RGAC prevê a perda de objetos e animais, a privação de participar em feiras, mercados, exposições ou concursos, o encerramento de estabelecimento sujeito a autorização ou licença, a suspensão de autorizações, licenças e alvarás, e a privação de titularidade e detenção só de animais perigosos ou potencialmente perigosos. Não prevê a interdição do exercício da atividade.",
+            "Sem interdição, o titular de um estabelecimento encerrado ao abrigo do art. [[Suspensão de atividade e encerramento dos estabelecimentos]] por maus-tratos ou riscos sanitários pode apresentar nova mera comunicação prévia logo a seguir. O encerramento como sanção acessória (al. c)) pressupõe estabelecimento «sujeito a autorização ou licença», e a maioria dos estabelecimentos fica sujeita a mera comunicação prévia.",
+            "A privação de titularidade e detenção (al. e)) é limitada aos animais perigosos ou potencialmente perigosos. O Código Penal, art. 388.º-A, n.º 1, al. a) permite privar da detenção de animais de companhia até seis anos, mas só com condenação penal, que pode demorar anos. No caso do alojamento PT1225FL, em Amarante, a interdição administrativa é o único instrumento que impede a titular, arguida por maus-tratos, de voltar a registar um alojamento enquanto o processo-crime corre."
+        ],
+        "proposta": "Aditar ao art. [[Sanções acessórias]], n.º 1 a interdição do exercício da atividade de exploração de estabelecimentos e de criação de animais de companhia, com registo no SIAC e impedimento de nova comunicação prévia ou permissão administrativa durante o período da interdição. Ponderar alargar a privação de titularidade e detenção (al. e)) aos animais de companhia em geral, nas contraordenações muito graves por maus-tratos ou por falta de condições de alojamento, com duração máxima e registo no SIAC.",
+        "levantado": [
+            "Análise interna (21.10.2026), a propósito da proposta de encerramento do alojamento PT1225FL, Amarante (Informação n.º 125893/26 da DSAVRN, processo P.9441/26)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-50",
+            "P-47"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1623,6 +1690,8 @@ CORRESPONDENCIA = {
     "S-02": "P-47",
     "E-01": "P-48",
     "D-01": "P-49",
+    "E-02": "P-50",
+    "S-03": "P-51",
 }
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
