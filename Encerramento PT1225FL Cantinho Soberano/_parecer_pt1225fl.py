@@ -26,6 +26,7 @@ from _conteudo_pt1225fl import T  # noqa: E402
 
 # ------------------------------------------------------------------ verificações
 prosa = " ".join(t for k, t in T if k in ("t", "m", "h", "s", "p", "b", "n") and isinstance(t, str))
+prosa = re.sub(r"«[^»]*»", "«»", prosa)  # as citações verbatim entre «» ficam fora da verificação
 for ch, nome in (("—", "travessão longo"), ("–", "travessão curto")):
     if ch in prosa:
         i = prosa.index(ch)
