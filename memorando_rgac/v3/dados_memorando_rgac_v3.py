@@ -1732,6 +1732,19 @@ LAPSOS = [
         "lapso": "O art. [[Medidas administrativas]], n.º 1 diz «uma situação que ponha esteja em risco a saúde pública ou o bem-estar dos animais», com dois verbos seguidos. O n.º 2 começa por «Na sequência do pedido de colaboração referido no número anterior», mas o n.º 1 não fala de pedido de colaboração: fala de um relatório descritivo comunicado à DGAV.",
         "correcao": "No n.º 1, «ponha em risco». No n.º 2, «Na sequência do relatório referido no número anterior»."
     },
+    {
+        "cod": "L-22",
+        "onde": [
+            "Locais destinados ao treino",
+            "Reserva de atividade de treinadores de cães perigosos e potencialmente perigosos",
+            "Título profissional de treinador de cães perigosos e potencialmente perigosos",
+            "Lista de treinadores de cães perigosos e potencialmente perigosos"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Remissões erradas nas normas dos treinadores. O art. [[Locais destinados ao treino]], n.º 1 e o art. [[Reserva de atividade de treinadores de cães perigosos e potencialmente perigosos]] remetem para o treino «previsto no artigo XX.º». O art. [[Título profissional de treinador de cães perigosos e potencialmente perigosos]], n.º 2, al. c), remete para a «alínea b) do n.º 3 do artigo 108.º», mas o art. [[Reconhecimento das organizações ou associações de criadores]] trata do reconhecimento das organizações de criadores; a lista de crimes está no art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3, al. b). O art. [[Lista de treinadores de cães perigosos e potencialmente perigosos]], n.º 1 remete para o «artigo 135.º», que trata das obrigações dos treinadores; o título profissional está no art. [[Título profissional de treinador de cães perigosos e potencialmente perigosos]]. O n.º 2 do mesmo artigo diz «o disposto Lei n.º 58/2019», sem «na», e «Regulamento 679/2016, de 27 de abril», em vez de Regulamento (UE) 2016/679.",
+        "correcao": "No art. [[Locais destinados ao treino]], n.º 1 e no art. [[Reserva de atividade de treinadores de cães perigosos e potencialmente perigosos]], remeter para o art. [[Obrigatoriedade de treino]]. No art. [[Título profissional de treinador de cães perigosos e potencialmente perigosos]], n.º 2, al. c), remeter para o art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3, al. b). No art. [[Lista de treinadores de cães perigosos e potencialmente perigosos]], n.º 1, remeter para o art. [[Título profissional de treinador de cães perigosos e potencialmente perigosos]]; no n.º 2, escrever «o disposto na Lei n.º 58/2019, de 8 de agosto, e no Regulamento (UE) 2016/679»."
+    },
 ]
 
 # ------------------------------------------------------------------ epígrafes renomeadas

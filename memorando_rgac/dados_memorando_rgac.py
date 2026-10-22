@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.31"
+VERSAO_MEMORANDO = "1.32"
 DATA_MEMORANDO = "22.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1446,6 +1446,19 @@ LAPSOS = [
         "lapso": "O art. 137.º, n.º 1 diz «uma situação que ponha esteja em risco a saúde pública ou o bem-estar dos animais», com dois verbos seguidos. O n.º 2 começa por «Na sequência do pedido de colaboração referido no número anterior», mas o n.º 1 não fala de pedido de colaboração: fala de um relatório descritivo comunicado à DGAV.",
         "correcao": "No n.º 1, «ponha em risco». No n.º 2, «Na sequência do relatório referido no número anterior»."
     },
+    {
+        "cod": "L-22",
+        "onde": [
+            "130",
+            "131",
+            "132",
+            "134"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "Remissões erradas nas normas dos treinadores. O art. 130.º, n.º 1 e o art. 131.º remetem para o treino «previsto no artigo XX.º». O art. 132.º, n.º 2, al. c), remete para a «alínea b) do n.º 3 do artigo 108.º», mas o art. 108.º trata do reconhecimento das organizações de criadores; a lista de crimes está no art. 110.º, n.º 3, al. b). O art. 134.º, n.º 1 remete para o «artigo 135.º», que trata das obrigações dos treinadores; o título profissional está no art. 132.º. O n.º 2 do mesmo artigo diz «o disposto Lei n.º 58/2019», sem «na», e «Regulamento 679/2016, de 27 de abril», em vez de Regulamento (UE) 2016/679.",
+        "correcao": "No art. 130.º, n.º 1 e no art. 131.º, remeter para o art. 128.º. No art. 132.º, n.º 2, al. c), remeter para o art. 110.º, n.º 3, al. b). No art. 134.º, n.º 1, remeter para o art. 132.º; no n.º 2, escrever «o disposto na Lei n.º 58/2019, de 8 de agosto, e no Regulamento (UE) 2016/679»."
+    },
 ]
 
 
@@ -1884,4 +1897,5 @@ REGISTO_ALTERACOES = [
     ("1.29", "22.10.2026", "Ficha S-04 corrigida e completada: o art. 109.º, n.º 2, já obriga a entidade gestora do LOP a dar à DGAV as informações solicitadas para controlo oficial, e o n.º 3 impõe relatório anual, sem coima; a lacuna fica para os restantes terceiros e para a sanção. Acrescentado o enquadramento atual do LOP: gerido pelo Clube Português de Canicultura com base no despacho ministerial de 29.3.1939 citado no seu regulamento, pressuposto pelo DL 276/2001 e pelo DL 315/2009, tratado pela DGAV como atividade delegada (Despacho n.º 15262/2012, Gabinete de Recursos Genéticos Animais) e fora do regime zootécnico do DL 59/2022. Fontes novas: DL 59/2022, Despacho n.º 15262/2012, regulamento do LOP e página das raças autóctones da DGAV."),
     ("1.30", "22.10.2026", "Ficha S-04: a orgânica da DGAV (Decreto Regulamentar n.º 31/2012, art. 2.º, n.º 2, al. p), na redação do Decreto Regulamentar n.º 4/2025) manda superintender a gestão dos livros genealógicos das associações de criadores reconhecidas para todas as espécies, e as als. jj) e mm) dão à DGAV a política e o cumprimento das regras de criação e comércio de animais de companhia. Fonte nova: Decreto Regulamentar n.º 4/2025."),
     ("1.31", "22.10.2026", "Ficha D-01 completada: a «prova em contrário» do art. 120.º, n.º 5 não pode ser só uma avaliação de comportamento, porque nas als. a) e b) do n.º 1 a classificação resulta de um facto. Proposta (ii) ajustada. Origem: pedido de um MVM para retirar a classificação de um cão sem prova de que tenha sido o agressor."),
+    ("1.32", "22.10.2026", "Lapso L-22: remissões erradas nas normas dos treinadores de cães perigosos (arts. 130.º, 131.º, 132.º e 134.º). Origem: pedido de esclarecimento de um treinador certificado pela PSP sobre os documentos para o título profissional (DL 315/2009, art. 25.º)."),
 ]
