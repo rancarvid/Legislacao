@@ -1514,6 +1514,40 @@ FICHAS = [
             "SAN-03"
         ]
     },
+    {
+        "cod": "SAN-05",
+        "cod_ensaio_2": "P-52",
+        "cod_antigo": "S-04",
+        "artigo": "Fiscalização",
+        "titulo": "O dever geral de colaboração de terceiros e a coima por recusa de informações não passam para o RGAC",
+        "etiquetas": [
+            "SAN",
+            "EST"
+        ],
+        "onde": [
+            "art. [[Fiscalização]], n.ºs 1 e 3",
+            "art. [[Contraordenações]], n.º 2, al. i)",
+            "art. [[Acesso ao estabelecimento]], n.º 1",
+            "art. [[Medidas administrativas]], n.º 4",
+            "art. [[Reconhecimento das organizações ou associações de criadores]], n.º 2, al. c)"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "Hoje o DL 276/2001, art. 67.º, n.º 3, dispõe: «As autoridades administrativas, policiais e as pessoas singulares e coletivas devem prestar toda a colaboração necessária às inspeções e ações de controlo a efetuar no âmbito do presente diploma». O art. 68.º, n.º 1, al. d), pune como contraordenação económica grave «A negação ou inviabilização de dados ou de informações requeridos pelas autoridades competentes ou seus agentes, em ordem ao cumprimento de funções estabelecidas neste diploma, assim como a prestação de informações inexatas ou falsas», com instrução pela DGAV ou pelos órgãos de polícia criminal (art. 70.º, n.º 1). As duas normas valem para qualquer pessoa, e não só para o titular do alojamento. É com elas que a DGAV pede dados a terceiros: à entidade que gere o livro de origens, sobre as ninhadas e o afixo de um criador sem comunicação prévia; às plataformas em linha, sobre quem publica um anúncio; aos centros de atendimento médico-veterinário, sobre os animais que assistem.",
+            "O RGAC não tem norma equivalente. O art. [[Fiscalização]], n.º 1, diz quem fiscaliza. O n.º 3 trata só da «criação de obstáculos ou impedimentos à fiscalização de alojamentos ou de animais», e a resposta é o mandado judicial de acesso e remoção. O art. [[Acesso ao estabelecimento]], n.º 1, obriga a facultar o acesso ao estabelecimento, mas só «o titular da exploração». O art. [[Medidas administrativas]], n.º 4, manda prestar colaboração às «autoridades competentes, os serviços da administração local ou outras entidades que vierem a ser designadas para o efeito», e só na execução das medidas desse artigo. O art. [[Reconhecimento das organizações ou associações de criadores]], n.º 2, al. c), exige às organizações de criadores que gerem os livros genealógicos «Satisfazer os controlos da autoridade competente» quanto ao seu funcionamento e às genealogias, e nada diz sobre pedidos de dados para a fiscalização dos criadores.",
+            "No art. [[Contraordenações]], n.º 2, a única alínea próxima é a segunda al. i) (ver L-11): «A oposição ou a criação de obstáculos à execução de medida prevista no presente diploma, que tenha sido regularmente comunicada e emanada de autoridade ou funcionário competente». Um pedido de informações não é uma medida. A recusa de dados, o silêncio e a informação falsa ficam sem coima. A SAN-01 já nota que a al. d) do DL 276/2001 só abrange dados pedidos para funções desse decreto-lei. Com a revogação do DL 276/2001, a al. d) desaparece sem substituto.",
+            "As regras gerais não suprem a falta. O CPA, art. 60.º, n.º 1, manda cooperar «os órgãos da Administração Pública e os interessados» no procedimento, e o terceiro a quem se pedem dados não é interessado. O auxílio administrativo (CPA, art. 66.º, n.º 1) só se pede a «quaisquer outros órgãos da Administração Pública». A Lei 36/2021, anexo (Lei-Quadro do Estatuto de Utilidade Pública), art. 12.º, n.º 1, al. h), obriga as pessoas coletivas com estatuto de utilidade pública a «Prestar todas as informações e disponibilizar todos os documentos solicitados por quaisquer entidades públicas com competências para o efeito», mas só vale para essas entidades e enquanto o estatuto durar. O RGPD, art. 6.º, n.º 1, al. c), legitima o tratamento «necessário para o cumprimento de uma obrigação jurídica a que o responsável pelo tratamento esteja sujeito»: é a norma do DL 276/2001 que hoje dá ao terceiro a obrigação jurídica para transmitir dados pessoais dos seus associados ou clientes. Sem norma no RGAC, o terceiro tem de encontrar outro fundamento ou recusar.",
+            "O Regulamento (UE) 2026/1818 remete os controlos oficiais para o Regulamento (UE) 2017/625 (considerandos 31 e 32) e manda os Estados-Membros fixar sanções efetivas, proporcionadas e dissuasivas (art. 32.º, ver SAN-01). Não tem norma geral que obrigue terceiros a responder aos pedidos de dados das autoridades nacionais. A norma nacional continua a ser necessária."
+        ],
+        "proposta": "Repor no art. [[Fiscalização]] o dever do DL 276/2001, art. 67.º, n.º 3, alargado aos pedidos de dados: as autoridades administrativas e policiais e as pessoas singulares e coletivas prestam toda a colaboração necessária às inspeções, às ações de controlo e aos pedidos de informação e de documentos das autoridades referidas no n.º 1, no prazo que estas fixarem. Nomear as entidades que mais vezes detêm os dados: organizações que gerem livros genealógicos, plataformas em linha, centros de atendimento médico-veterinário e transportadores. Aditar ao art. [[Contraordenações]], n.º 2, a contraordenação do DL 276/2001, art. 68.º, n.º 1, al. d): negação ou inviabilização de dados ou de informações requeridos pelas autoridades competentes e prestação de informações inexatas ou falsas. No art. [[Reconhecimento das organizações ou associações de criadores]], dizer que a autorização para gerir o livro genealógico inclui o dever de fornecer à DGAV, a pedido, os registos de ninhadas, reprodutores e afixos de um criador identificado. Com estas normas, a transmissão de dados pessoais fica coberta pelo RGPD, art. 6.º, n.º 1, al. c), do lado do terceiro, e al. e), do lado da DGAV.",
+        "levantado": [
+            "Análise interna (22.10.2026), a propósito de uma denúncia de criação comercial sem comunicação prévia e do pedido de esclarecimento à entidade que gere o livro de origens"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "SAN-01"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1684,6 +1718,16 @@ LAPSOS = [
         "lapso": "Remissões erradas ou incompletas nas normas da formação para cães perigosos. A última alínea do art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3 acaba em «como previsto no artigo.», sem número. O art. [[Comprovativo de aprovação em formação]] remete para a «alínea f) do n.º 2 do artigo anterior», mas o art. [[Validade da licença]] não tem alíneas e o comprovativo está no art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3. O art. [[Certificação de entidades formadoras]], n.º 1 fala da formação «prevista no número anterior», e é o primeiro número. O art. [[Da obrigatoriedade de formação]], n.º 1 diz «nos termos da para os titulares», com palavras em falta.",
         "correcao": "No art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3, remeter para o art. [[Comprovativo de aprovação em formação]]. No art. [[Comprovativo de aprovação em formação]], remeter para a última alínea do art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 3. No art. [[Certificação de entidades formadoras]], n.º 1, escrever «no artigo anterior». No art. [[Da obrigatoriedade de formação]], n.º 1, completar a frase."
     },
+    {
+        "cod": "L-21",
+        "onde": [
+            "Medidas administrativas"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "O art. [[Medidas administrativas]], n.º 1 diz «uma situação que ponha esteja em risco a saúde pública ou o bem-estar dos animais», com dois verbos seguidos. O n.º 2 começa por «Na sequência do pedido de colaboração referido no número anterior», mas o n.º 1 não fala de pedido de colaboração: fala de um relatório descritivo comunicado à DGAV.",
+        "correcao": "No n.º 1, «ponha em risco». No n.º 2, «Na sequência do relatório referido no número anterior»."
+    },
 ]
 
 # ------------------------------------------------------------------ epígrafes renomeadas
@@ -1752,6 +1796,7 @@ CORRESPONDENCIA = [
     ("D-01", "P-49", "PER-01"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
+    ("S-04", "P-52", "SAN-05"),
 ]
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [

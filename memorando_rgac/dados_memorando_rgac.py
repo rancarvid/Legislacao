@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.27"
-DATA_MEMORANDO = "21.10.2026"
+VERSAO_MEMORANDO = "1.28"
+DATA_MEMORANDO = "22.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
@@ -1199,6 +1199,33 @@ CAPITULOS = [
                 "S-02"
             ]
         },
+        {
+            "cod": "S-04",
+            "titulo": "O dever geral de colaboração de terceiros e a coima por recusa de informações não passam para o RGAC",
+            "onde": [
+                "art. 138.º, n.ºs 1 e 3",
+                "art. 140.º, n.º 2, al. i)",
+                "art. 54.º, n.º 1",
+                "art. 137.º, n.º 4",
+                "art. 108.º, n.º 2, al. c)"
+            ],
+            "origem": "RGAC",
+            "problema": [
+                "Hoje o DL 276/2001, art. 67.º, n.º 3, dispõe: «As autoridades administrativas, policiais e as pessoas singulares e coletivas devem prestar toda a colaboração necessária às inspeções e ações de controlo a efetuar no âmbito do presente diploma». O art. 68.º, n.º 1, al. d), pune como contraordenação económica grave «A negação ou inviabilização de dados ou de informações requeridos pelas autoridades competentes ou seus agentes, em ordem ao cumprimento de funções estabelecidas neste diploma, assim como a prestação de informações inexatas ou falsas», com instrução pela DGAV ou pelos órgãos de polícia criminal (art. 70.º, n.º 1). As duas normas valem para qualquer pessoa, e não só para o titular do alojamento. É com elas que a DGAV pede dados a terceiros: à entidade que gere o livro de origens, sobre as ninhadas e o afixo de um criador sem comunicação prévia; às plataformas em linha, sobre quem publica um anúncio; aos centros de atendimento médico-veterinário, sobre os animais que assistem.",
+                "O RGAC não tem norma equivalente. O art. 138.º, n.º 1, diz quem fiscaliza. O n.º 3 trata só da «criação de obstáculos ou impedimentos à fiscalização de alojamentos ou de animais», e a resposta é o mandado judicial de acesso e remoção. O art. 54.º, n.º 1, obriga a facultar o acesso ao estabelecimento, mas só «o titular da exploração». O art. 137.º, n.º 4, manda prestar colaboração às «autoridades competentes, os serviços da administração local ou outras entidades que vierem a ser designadas para o efeito», e só na execução das medidas desse artigo. O art. 108.º, n.º 2, al. c), exige às organizações de criadores que gerem os livros genealógicos «Satisfazer os controlos da autoridade competente» quanto ao seu funcionamento e às genealogias, e nada diz sobre pedidos de dados para a fiscalização dos criadores.",
+                "No art. 140.º, n.º 2, a única alínea próxima é a segunda al. i) (ver L-11): «A oposição ou a criação de obstáculos à execução de medida prevista no presente diploma, que tenha sido regularmente comunicada e emanada de autoridade ou funcionário competente». Um pedido de informações não é uma medida. A recusa de dados, o silêncio e a informação falsa ficam sem coima. A S-01 já nota que a al. d) do DL 276/2001 só abrange dados pedidos para funções desse decreto-lei. Com a revogação do DL 276/2001, a al. d) desaparece sem substituto.",
+                "As regras gerais não suprem a falta. O CPA, art. 60.º, n.º 1, manda cooperar «os órgãos da Administração Pública e os interessados» no procedimento, e o terceiro a quem se pedem dados não é interessado. O auxílio administrativo (CPA, art. 66.º, n.º 1) só se pede a «quaisquer outros órgãos da Administração Pública». A Lei 36/2021, anexo (Lei-Quadro do Estatuto de Utilidade Pública), art. 12.º, n.º 1, al. h), obriga as pessoas coletivas com estatuto de utilidade pública a «Prestar todas as informações e disponibilizar todos os documentos solicitados por quaisquer entidades públicas com competências para o efeito», mas só vale para essas entidades e enquanto o estatuto durar. O RGPD, art. 6.º, n.º 1, al. c), legitima o tratamento «necessário para o cumprimento de uma obrigação jurídica a que o responsável pelo tratamento esteja sujeito»: é a norma do DL 276/2001 que hoje dá ao terceiro a obrigação jurídica para transmitir dados pessoais dos seus associados ou clientes. Sem norma no RGAC, o terceiro tem de encontrar outro fundamento ou recusar.",
+                "O Regulamento (UE) 2026/1818 remete os controlos oficiais para o Regulamento (UE) 2017/625 (considerandos 31 e 32) e manda os Estados-Membros fixar sanções efetivas, proporcionadas e dissuasivas (art. 32.º, ver S-01). Não tem norma geral que obrigue terceiros a responder aos pedidos de dados das autoridades nacionais. A norma nacional continua a ser necessária."
+            ],
+            "proposta": "Repor no art. 138.º o dever do DL 276/2001, art. 67.º, n.º 3, alargado aos pedidos de dados: as autoridades administrativas e policiais e as pessoas singulares e coletivas prestam toda a colaboração necessária às inspeções, às ações de controlo e aos pedidos de informação e de documentos das autoridades referidas no n.º 1, no prazo que estas fixarem. Nomear as entidades que mais vezes detêm os dados: organizações que gerem livros genealógicos, plataformas em linha, centros de atendimento médico-veterinário e transportadores. Aditar ao art. 140.º, n.º 2, a contraordenação do DL 276/2001, art. 68.º, n.º 1, al. d): negação ou inviabilização de dados ou de informações requeridos pelas autoridades competentes e prestação de informações inexatas ou falsas. No art. 108.º, dizer que a autorização para gerir o livro genealógico inclui o dever de fornecer à DGAV, a pedido, os registos de ninhadas, reprodutores e afixos de um criador identificado. Com estas normas, a transmissão de dados pessoais fica coberta pelo RGPD, art. 6.º, n.º 1, al. c), do lado do terceiro, e al. e), do lado da DGAV.",
+            "levantado": [
+                "Análise interna (22.10.2026), a propósito de uma denúncia de criação comercial sem comunicação prévia e do pedido de esclarecimento à entidade que gere o livro de origens"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "S-01"
+            ]
+        },
     ]},
     {"letra": "F", "capitulos": ["Capítulo XVI", "Anexo I", "Anexo II"],
      "titulo": "Disposições finais e transitórias e anexos (cap. XVI e anexos)", "intro": [], "fichas": [
@@ -1404,6 +1431,16 @@ LAPSOS = [
         "ficha": "",
         "lapso": "Remissões erradas ou incompletas nas normas da formação para cães perigosos. A última alínea do art. 110.º, n.º 3 acaba em «como previsto no artigo.», sem número. O art. 112.º remete para a «alínea f) do n.º 2 do artigo anterior», mas o art. 111.º não tem alíneas e o comprovativo está no art. 110.º, n.º 3. O art. 113.º, n.º 1 fala da formação «prevista no número anterior», e é o primeiro número. O art. 114.º, n.º 1 diz «nos termos da para os titulares», com palavras em falta.",
         "correcao": "No art. 110.º, n.º 3, remeter para o art. 112.º. No art. 112.º, remeter para a última alínea do art. 110.º, n.º 3. No art. 113.º, n.º 1, escrever «no artigo anterior». No art. 114.º, n.º 1, completar a frase."
+    },
+    {
+        "cod": "L-21",
+        "onde": [
+            "137"
+        ],
+        "estado": "Aberto",
+        "ficha": "",
+        "lapso": "O art. 137.º, n.º 1 diz «uma situação que ponha esteja em risco a saúde pública ou o bem-estar dos animais», com dois verbos seguidos. O n.º 2 começa por «Na sequência do pedido de colaboração referido no número anterior», mas o n.º 1 não fala de pedido de colaboração: fala de um relatório descritivo comunicado à DGAV.",
+        "correcao": "No n.º 1, «ponha em risco». No n.º 2, «Na sequência do relatório referido no número anterior»."
     },
 ]
 
@@ -1640,6 +1677,12 @@ BIBLIOGRAFIA = [
      "https://files.diariodarepublica.pt/1s/2017/04/08100/0205602059.pdf", "CED"),
     ("Legislação e regulamentos", "Decreto-Lei n.º 82/2019, de 27 de junho (Sistema de Informação de Animais de Companhia), versão consolidada.",
      "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=3093&tabela=leis", "82/2019"),
+    ("Legislação e regulamentos", "Código do Procedimento Administrativo, aprovado pelo Decreto-Lei n.º 4/2015, de 7 de janeiro, versão em vigor.",
+     "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2248&tabela=leis", "4/2015"),
+    ("Legislação e regulamentos", "Lei n.º 36/2021, de 14 de junho, que aprova a Lei-Quadro do Estatuto de Utilidade Pública.",
+     "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/diplomas_legislativos/Documents/Lei_36_2021.pdf", "36/2021"),
+    ("Legislação e regulamentos", "Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho, de 27 de abril de 2016 (Regulamento Geral sobre a Proteção de Dados).",
+     "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=2961&tabela=leis", "2016/679"),
     ("Legislação e regulamentos", "Regulamento (UE) 2026/1818 do Parlamento Europeu e do Conselho, de 17 de junho de 2026, relativo ao bem-estar dos cães e dos gatos e à respetiva rastreabilidade, JO L, 10.8.2026.",
      "https://eur-lex.europa.eu/eli/reg/2026/1818/oj/por", "2026/1818"),
     ("Legislação e regulamentos", "Município do Fundão, Edital n.º 145/2023, Regulamento do Programa de Gestão das Colónias de Gatos, Diário da República, 2.ª série, n.º 16, 23.1.2023.",
@@ -1823,4 +1866,5 @@ REGISTO_ALTERACOES = [
     ("1.25", "21.10.2026", "Fichas novas E-02 (o encerramento de estabelecimentos do art. 50.º fica sem medida cautelar, sem regra para os animais e sem efeito no registo) e S-03 (o art. 141.º deixa cair a interdição do exercício da atividade, que hoje está no DL 276/2001, art. 69.º, al. b)). Origem: análise da proposta de encerramento do alojamento PT1225FL, Amarante (Informação n.º 125893/26 da DSAVRN), onde a titular, arguida por maus-tratos, poderia voltar a registar um alojamento logo após o encerramento."),
     ("1.26", "21.10.2026", "Ficha S-03 desenvolvida: a fórmula «título público ou autorização ou homologação» do art. 69.º do DL 276/2001 vem do regime de 1982 e não cobre a mera comunicação prévia; as als. c) e d) do art. 141.º do RGAC herdam o problema; proposta de interdição definida sem referência a título, com cancelamento do número e registo no SIAC. Origem: dúvida do utilizador sobre a articulação da interdição com o regime de mera comunicação prévia, no caso do alojamento PT1225FL."),
     ("1.27", "21.10.2026", "Ficha E-02 corrigida: o destino dos animais recolhidos na execução de um encerramento segue, por arrastamento, o regime do CRO (DL 276/2001, art. 19.º; DL 314/2003, art. 9.º; Lei 27/2016, art. 3.º; DL 82/2019, art. 11.º); o que falta é a remissão expressa, a capacidade do CRO, os encargos e a ressalva dos animais apreendidos. Origem: observação do utilizador."),
+    ("1.28", "22.10.2026", "Ficha nova S-04 (o dever geral de colaboração de terceiros e a coima por recusa de informações não passam para o RGAC). Hoje o DL 276/2001, art. 67.º, n.º 3, obriga as pessoas singulares e coletivas a colaborar nas inspeções e ações de controlo, e o art. 68.º, n.º 1, al. d), pune a recusa de dados e a informação falsa; o RGAC só obriga o titular da exploração (art. 54.º) e só pune a oposição a medidas (art. 140.º, n.º 2, segunda al. i)). Lapso novo L-21 (art. 137.º: «ponha esteja em risco» e remissão para um pedido de colaboração que o n.º 1 não contém). Origem: denúncia de criação comercial sem comunicação prévia e pedido de esclarecimento à entidade que gere o livro de origens. Fontes novas: Código do Procedimento Administrativo, Lei 36/2021 e Regulamento (UE) 2016/679."),
 ]
