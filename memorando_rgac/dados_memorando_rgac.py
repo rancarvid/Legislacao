@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.36"
+VERSAO_MEMORANDO = "1.37"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1208,6 +1208,34 @@ CAPITULOS = [
                 "D-04"
             ]
         },
+        {
+            "cod": "D-06",
+            "titulo": "Nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta",
+            "onde": [
+                "art. 3.º, definição de «Animal potencialmente perigoso»",
+                "art. 79.º, n.º 7",
+                "art. 126.º, n.º 3",
+                "art. 120.º, n.º 5",
+                "DL 315/2009, art. 3.º, al. c), e art. 19.º, n.º 3",
+                "Portaria 422/2004, anexo",
+                "DL 276/2001, art. 53.º, n.º 3"
+            ],
+            "origem": "VIGENTE",
+            "problema": [
+                "O DL 315/2009 considera potencialmente perigosos os cães das raças da Portaria 422/2004 e os cruzamentos de primeira geração destas, os cruzamentos destas entre si ou com outras raças, «obtendo assim uma tipologia semelhante» a alguma delas (art. 3.º, al. c)). A Portaria só lista sete raças. Nenhuma norma fixa critérios de tipologia nem diz quem os aplica.",
+                "Fora do livro de origens, a raça também é uma avaliação. Os cães sem inscrição no livro de origens português são de raça indeterminada (DL 276/2001, art. 53.º, n.º 3), mas o DL 315/2009 manda esterilizar os cães «das raças» da Portaria que não estejam inscritos (art. 19.º, n.º 3). Para estes cães e para os cruzamentos, a classificação depende do que o médico veterinário regista no SIAC quando identifica o animal.",
+                "Não há procedimento de revisão. O titular que discorde não sabe a quem se dirigir, e a classificação traz deveres pesados: licença, seguro, açaimo e esterilização entre os 4 e os 6 meses.",
+                "O RGAC mantém a definição (art. 3.º) e diz só que a classificação «é determinada pelo registo SIAC e não pode ser alterada pela junta de freguesia» (art. 79.º, n.º 7). Não diz quem a faz, com que critério, nem como se revê. Para o cão perigoso já existe reversão por decisão do MVM (art. 120.º, n.º 5); para o potencialmente perigoso, não."
+            ],
+            "proposta": "(i) Dizer que a classificação por tipologia é feita pelo médico veterinário no registo no SIAC, com base em critérios morfológicos aprovados por despacho do diretor-geral e publicados no portal da DGAV. (ii) Em caso de dúvida ou de discordância do titular, decide o MVM, depois de observar o animal, por decisão fundamentada registada no SIAC. (iii) Prever a revisão a pedido do titular, com prova (registo genealógico, filiação conhecida, nova avaliação), como o art. 120.º, n.º 5 faz para o cão perigoso.",
+            "levantado": [
+                "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "D-01"
+            ]
+        },
     ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
@@ -2009,4 +2037,5 @@ REGISTO_ALTERACOES = [
     ("1.34", "23.10.2026", "Ficha nova D-03 (o treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto). O DL 315/2009, art. 21.º, n.º 2, e o RGAC, art. 128.º, n.º 2, não preveem prazo para o cão classificado depois dos 12 meses nem dispensa por idade ou saúde, ao contrário da esterilização (art. 126.º, n.º 6). Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.35", "23.10.2026", "Ficha nova D-04 (na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso). As omissões do cedente continuam a ser dele (DL 9/2021, art. 36.º), mas nem o DL 315/2009 nem o RGAC regulam a cedência de cão perigoso; o art. 110.º, n.º 2 não fixa prazo de licença para o novo titular e o art. 127.º, n.º 3 deixa cair a licença na entrega de cão potencialmente perigoso. Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.36", "23.10.2026", "Ficha nova D-05 (o registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório). O art. 135.º, n.º 2 cria o depósito do treino no SIAC, mas nada dá aos treinadores perfil de acesso, o art. 140.º não pune a falta de registo nem a falta de treino (hoje DL 315/2009, art. 38.º, n.º 1, als. m) e p)) e não há regime para os treinos já feitos. Origem: proposta de depósito central dos comprovativos de treino."),
+    ("1.37", "23.10.2026", "Ficha nova D-06 (nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta). O DL 315/2009, art. 3.º, al. c), fala de «tipologia semelhante» sem critério nem decisor; o RGAC diz só que a classificação é determinada pelo registo SIAC (art. 79.º, n.º 7) e não prevê revisão, ao contrário do cão perigoso (art. 120.º, n.º 5). Fonte nova: DL 276/2001, art. 53.º, n.º 3."),
 ]

@@ -1690,6 +1690,41 @@ FICHAS = [
             "PER-04"
         ]
     },
+    {
+        "cod": "PER-06",
+        "cod_ensaio_2": "P-57",
+        "cod_antigo": "D-06",
+        "artigo": "Classificação como animal perigoso",
+        "etiquetas": [
+            "PER",
+            "REG"
+        ],
+        "titulo": "Nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta",
+        "onde": [
+            "art. [[Definições]], definição de «Animal potencialmente perigoso»",
+            "art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 7",
+            "art. [[Proibição de reprodução]], n.º 3",
+            "art. [[Classificação como animal perigoso]], n.º 5",
+            "DL 315/2009, art. 3.º, al. c), e art. 19.º, n.º 3",
+            "Portaria 422/2004, anexo",
+            "DL 276/2001, art. 53.º, n.º 3"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "O DL 315/2009 considera potencialmente perigosos os cães das raças da Portaria 422/2004 e os cruzamentos de primeira geração destas, os cruzamentos destas entre si ou com outras raças, «obtendo assim uma tipologia semelhante» a alguma delas (art. 3.º, al. c)). A Portaria só lista sete raças. Nenhuma norma fixa critérios de tipologia nem diz quem os aplica.",
+            "Fora do livro de origens, a raça também é uma avaliação. Os cães sem inscrição no livro de origens português são de raça indeterminada (DL 276/2001, art. 53.º, n.º 3), mas o DL 315/2009 manda esterilizar os cães «das raças» da Portaria que não estejam inscritos (art. 19.º, n.º 3). Para estes cães e para os cruzamentos, a classificação depende do que o médico veterinário regista no SIAC quando identifica o animal.",
+            "Não há procedimento de revisão. O titular que discorde não sabe a quem se dirigir, e a classificação traz deveres pesados: licença, seguro, açaimo e esterilização entre os 4 e os 6 meses.",
+            "O RGAC mantém a definição (art. [[Definições]]) e diz só que a classificação «é determinada pelo registo SIAC e não pode ser alterada pela junta de freguesia» (art. [[Licença de cães e articulação com o Sistema de Informação de Animais de Companhia]], n.º 7). Não diz quem a faz, com que critério, nem como se revê. Para o cão perigoso já existe reversão por decisão do MVM (art. [[Classificação como animal perigoso]], n.º 5); para o potencialmente perigoso, não."
+        ],
+        "proposta": "(i) Dizer que a classificação por tipologia é feita pelo médico veterinário no registo no SIAC, com base em critérios morfológicos aprovados por despacho do diretor-geral e publicados no portal da DGAV. (ii) Em caso de dúvida ou de discordância do titular, decide o MVM, depois de observar o animal, por decisão fundamentada registada no SIAC. (iii) Prever a revisão a pedido do titular, com prova (registo genealógico, filiação conhecida, nova avaliação), como o art. [[Classificação como animal perigoso]], n.º 5 faz para o cão perigoso.",
+        "levantado": [
+            "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "PER-01"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1953,6 +1988,7 @@ CORRESPONDENCIA = [
     ("D-03", "P-54", "PER-03"),
     ("D-04", "P-55", "PER-04"),
     ("D-05", "P-56", "PER-05"),
+    ("D-06", "P-57", "PER-06"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
     ("S-04", "P-52", "SAN-05"),
