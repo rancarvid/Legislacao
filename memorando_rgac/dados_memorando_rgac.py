@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.34"
+VERSAO_MEMORANDO = "1.35"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1154,6 +1154,33 @@ CAPITULOS = [
                 "D-02"
             ]
         },
+        {
+            "cod": "D-04",
+            "titulo": "Na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso",
+            "onde": [
+                "art. 127.º, n.ºs 2 e 3",
+                "art. 73.º, n.ºs 2 e 5",
+                "art. 110.º, n.º 2",
+                "DL 315/2009, art. 20.º, n.º 2, al. c)",
+                "DL 82/2019, art. 13.º, n.ºs 2 a 4",
+                "DL 9/2021, art. 5.º e art. 36.º"
+            ],
+            "origem": "VIGENTE",
+            "problema": [
+                "Hoje, o DL 315/2009 só regula a entrega de cão potencialmente perigoso pelo criador: o comprador tem de apresentar a licença (art. 20.º, n.º 2, al. c)). Para o cão perigoso cedido entre particulares não há regra. O cedente não tem de informar o novo detentor da classificação, nem de lhe entregar a licença, o seguro ou os comprovativos de treino e de esterilização. O novo detentor pode só saber da classificação quando a transferência aparece no SIAC (DL 82/2019, art. 13.º, n.º 4).",
+                "A responsabilidade pelo passado não passa para o novo detentor. As omissões do cedente (licença, seguro, treino, esterilização) continuam a ser dele, com prescrição do procedimento em cinco anos (DL 9/2021, art. 36.º, al. a)). Mas o SIAC não regista, à data da cedência, o que estava cumprido. Na prática, o novo detentor fica com o atraso e com o encargo de o recuperar.",
+                "O RGAC não resolve. O art. 73.º, n.ºs 2 e 5 regula a transferência no SIAC sem condição própria para animais perigosos. O art. 110.º, n.º 2 fixa o prazo da licença do cão perigoso em 15 dias «após essa classificação» e não diz qual é o prazo do novo titular quando o cão já era perigoso. O art. 127.º, n.º 3 deixa cair a apresentação da licença na entrega de cão potencialmente perigoso pelo criador, que o DL 315/2009 exige."
+            ],
+            "proposta": "(i) Na cedência de cão perigoso ou potencialmente perigoso, o cedente informa por escrito o novo titular da classificação e entrega os comprovativos de licença, seguro, esterilização e treino. (ii) O SIAC mostra a classificação e o estado dessas obrigações antes de o novo titular validar a transferência, e guarda esse estado à data da cedência. (iii) O novo titular obtém a licença antes da entrega ou, sendo CRO ou associação zoófila, no prazo do art. 110.º, n.º 2, contado do registo da nova titularidade. (iv) Repor no art. 127.º, n.º 3 a apresentação da licença. (v) Prever coima para o cedente que não informe.",
+            "levantado": [
+                "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila que recebeu de um particular um cão perigoso sem ser informada da classificação"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "D-02",
+                "D-03"
+            ]
+        },
     ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
@@ -1953,4 +1980,5 @@ REGISTO_ALTERACOES = [
     ("1.32", "22.10.2026", "Lapso L-22: remissões erradas nas normas dos treinadores de cães perigosos (arts. 130.º, 131.º, 132.º e 134.º). Origem: pedido de esclarecimento de um treinador certificado pela PSP sobre os documentos para o título profissional (DL 315/2009, art. 25.º)."),
     ("1.33", "23.10.2026", "Ficha nova D-02 (associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias). O art. 69.º, n.º 7 admite a associação zoófila como titular, mas o art. 110.º, n.ºs 1 e 3 só prevê a licença para pessoa singular; o art. 81.º obriga a listar para adoção os animais aptos e o art. 127.º, n.º 4 proíbe a publicidade de animais perigosos. Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.34", "23.10.2026", "Ficha nova D-03 (o treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto). O DL 315/2009, art. 21.º, n.º 2, e o RGAC, art. 128.º, n.º 2, não preveem prazo para o cão classificado depois dos 12 meses nem dispensa por idade ou saúde, ao contrário da esterilização (art. 126.º, n.º 6). Origem: pedido de esclarecimento de uma associação zoófila."),
+    ("1.35", "23.10.2026", "Ficha nova D-04 (na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso). As omissões do cedente continuam a ser dele (DL 9/2021, art. 36.º), mas nem o DL 315/2009 nem o RGAC regulam a cedência de cão perigoso; o art. 110.º, n.º 2 não fixa prazo de licença para o novo titular e o art. 127.º, n.º 3 deixa cair a licença na entrega de cão potencialmente perigoso. Origem: pedido de esclarecimento de uma associação zoófila."),
 ]

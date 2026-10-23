@@ -1620,6 +1620,41 @@ FICHAS = [
             "PER-02"
         ]
     },
+    {
+        "cod": "PER-04",
+        "cod_ensaio_2": "P-55",
+        "cod_antigo": "D-04",
+        "artigo": "Colocação no mercado de animais potencialmente perigosos",
+        "etiquetas": [
+            "PER",
+            "TIT",
+            "REG"
+        ],
+        "titulo": "Na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso",
+        "onde": [
+            "art. [[Colocação no mercado de animais potencialmente perigosos]], n.ºs 2 e 3",
+            "art. [[Alterações ao registo]], n.ºs 2 e 5",
+            "art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 2",
+            "DL 315/2009, art. 20.º, n.º 2, al. c)",
+            "DL 82/2019, art. 13.º, n.ºs 2 a 4",
+            "DL 9/2021, art. 5.º e art. 36.º"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "Hoje, o DL 315/2009 só regula a entrega de cão potencialmente perigoso pelo criador: o comprador tem de apresentar a licença (art. 20.º, n.º 2, al. c)). Para o cão perigoso cedido entre particulares não há regra. O cedente não tem de informar o novo detentor da classificação, nem de lhe entregar a licença, o seguro ou os comprovativos de treino e de esterilização. O novo detentor pode só saber da classificação quando a transferência aparece no SIAC (DL 82/2019, art. 13.º, n.º 4).",
+            "A responsabilidade pelo passado não passa para o novo detentor. As omissões do cedente (licença, seguro, treino, esterilização) continuam a ser dele, com prescrição do procedimento em cinco anos (DL 9/2021, art. 36.º, al. a)). Mas o SIAC não regista, à data da cedência, o que estava cumprido. Na prática, o novo detentor fica com o atraso e com o encargo de o recuperar.",
+            "O RGAC não resolve. O art. [[Alterações ao registo]], n.ºs 2 e 5 regula a transferência no SIAC sem condição própria para animais perigosos. O art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 2 fixa o prazo da licença do cão perigoso em 15 dias «após essa classificação» e não diz qual é o prazo do novo titular quando o cão já era perigoso. O art. [[Colocação no mercado de animais potencialmente perigosos]], n.º 3 deixa cair a apresentação da licença na entrega de cão potencialmente perigoso pelo criador, que o DL 315/2009 exige."
+        ],
+        "proposta": "(i) Na cedência de cão perigoso ou potencialmente perigoso, o cedente informa por escrito o novo titular da classificação e entrega os comprovativos de licença, seguro, esterilização e treino. (ii) O SIAC mostra a classificação e o estado dessas obrigações antes de o novo titular validar a transferência, e guarda esse estado à data da cedência. (iii) O novo titular obtém a licença antes da entrega ou, sendo CRO ou associação zoófila, no prazo do art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 2, contado do registo da nova titularidade. (iv) Repor no art. [[Colocação no mercado de animais potencialmente perigosos]], n.º 3 a apresentação da licença. (v) Prever coima para o cedente que não informe.",
+        "levantado": [
+            "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila que recebeu de um particular um cão perigoso sem ser informada da classificação"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "PER-02",
+            "PER-03"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1881,6 +1916,7 @@ CORRESPONDENCIA = [
     ("D-01", "P-49", "PER-01"),
     ("D-02", "P-53", "PER-02"),
     ("D-03", "P-54", "PER-03"),
+    ("D-04", "P-55", "PER-04"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
     ("S-04", "P-52", "SAN-05"),
