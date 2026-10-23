@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.39"
+VERSAO_MEMORANDO = "1.40"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "23.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1232,11 +1232,39 @@ CAPITULOS = [
             "levantado": [
                 "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa",
                 "Maria Joana de Antas de Barros, «O estranho caso dos cães de raça potencialmente perigosa», RJLB, 2023",
-                "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1 (25.5.2021)"
+                "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1 (25.5.2021)",
+                "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso), dirigida ao Presidente da Assembleia da República, sem data (pede a reavaliação dos critérios de definição das raças por uma comissão independente)"
             ],
             "estado": "Aberto",
             "rel": [
                 "D-01"
+            ]
+        },
+        {
+            "cod": "D-07",
+            "titulo": "A certificação dos treinadores inclui defesa e mordedura, e nada diz o que o treino do cão deve atingir nem como se avalia",
+            "onde": [
+                "art. 133.º, n.ºs 2 e 3",
+                "art. 128.º, n.º 1",
+                "art. 9.º, n.º 1, al. g)",
+                "Portaria 317/2015, Anexo II, art. 3.º, n.º 3",
+                "DL 315/2009, art. 21.º, n.º 1, e art. 28.º, n.º 2"
+            ],
+            "origem": "VIGENTE",
+            "problema": [
+                "Hoje, a prova de certificação dos treinadores de cães perigosos e potencialmente perigosos inclui «Noções básicas de figurância» e duas matérias de controlo e mordedura de cães em defesa (Portaria 317/2015, Anexo II, art. 3.º, n.º 3, als. e), h) e i)). São matérias de cães de trabalho e de defesa. O treino que a lei exige ao detentor é de «socialização e obediência» (DL 315/2009, art. 21.º, n.º 1).",
+                "A lei não diz o que o treino do cão deve atingir nem como se avalia. O treinador emite um documento quando o treino é «concluído com aproveitamento» (DL 315/2009, art. 28.º, n.º 2), sem critério legal de aproveitamento. A petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» diz que, na prática, o cão faz uma prova de obediência desportiva (BH), com exercícios sem trela, e que a lei «não contempla em que momento é avaliado o cão de cada detentor».",
+                "O RGAC mantém o regime. O art. 133.º, n.º 3 diz que o modelo de provas e a avaliação dos candidatos «são os definidos na Portaria n.º 317/2015 de 30 de setembro», o que fixa a Portaria no decreto-lei. O art. 128.º, n.º 1 mantém o treino de socialização e obediência sem objetivos nem avaliação. O art. 9.º, n.º 1 já proíbe no treino os equipamentos que causem dor ou sofrimento, incluindo as coleiras de choque (al. g)), um dos pedidos da petição."
+            ],
+            "proposta": "(i) No art. 133.º, n.º 3, remeter para portaria a aprovar, em vez de fixar a Portaria 317/2015, e rever as matérias da prova: retirar o trabalho de defesa e mordedura e reforçar comportamento, socialização e métodos sem coação. (ii) No art. 128.º, fixar por portaria os objetivos do treino do cão (socialização, controlo em situações do dia a dia, resposta do detentor) e o modo de avaliação, adaptado à idade e ao estado de saúde do animal. (iii) Ouvir entidades com formação em comportamento animal, como pede a petição.",
+            "levantado": [
+                "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso), dirigida ao Presidente da Assembleia da República, sem data",
+                "Análise interna (23.10.2026)"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "D-03",
+                "D-05"
             ]
         },
     ]},
@@ -1811,6 +1839,9 @@ STAKEHOLDERS = [
     ("Administrações estrangeiras", "Reino Unido, Defra, padrão de conformação do tipo XL Bully", "31.10.2023", "D",
      "Fixa por escrito as características físicas do tipo XL Bully, para apoiar a identificação pelos tribunais e pelos agentes de fiscalização. Citação: «intended to be used by the courts and Dog Legislation Officers to support identification of the XL Bully breed type» (destina-se a ser usado pelos tribunais e pelos agentes de fiscalização para apoiar a identificação do tipo XL Bully).",
      "https://www.gov.uk/government/publications/official-definition-of-an-xl-bully-dog"),
+    ("Petições e cidadãos", "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso)", "sem data", "D",
+     "Contesta a lista de raças e os critérios de tamanho e potência de mandíbula, e pede que os critérios sejam reavaliados por uma comissão independente. Critica a formação de 4 horas dos detentores, a certificação dos treinadores pela GNR e pela PSP e a prova de obediência desportiva exigida aos cães. Não trata da tipologia dos cruzamentos. Citação: «Reavaliação dos critérios e implicações subjacentes à definição de raças de cães perigosos e potencialmente perigosos através da criação de uma comissão independente e técnico-cientificamente validada».",
+     "repositório: Projetos de lei/Petição - Pela revisão da Legislação das Raças Potencialmente Perigosas.pdf"),
 ]
 
 # Dominios de imprensa: o gerador recusa gerar se alguma fonte do Anexo B for destes dominios.
@@ -2021,6 +2052,8 @@ BIBLIOGRAFIA = [
      "https://boe.es/boe/dias/2002/03/27/pdfs/A12290-12292.pdf", "Pelo corto"),
     ("Documentos oficiais, estratégias e relatórios", "Reino Unido, Defra, «Official definition of an XL Bully dog» (padrão de conformação), 31.10.2023, atualizado em 1.2.2024.",
      "https://www.gov.uk/government/publications/official-definition-of-an-xl-bully-dog", "conformation"),
+    ("Projetos e iniciativas legislativas", "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso), dirigida ao Presidente da Assembleia da República, sem data.",
+     "repositório: Projetos de lei/Petição - Pela revisão da Legislação das Raças Potencialmente Perigosas.pdf", ""),
 ]
 
 REGISTO_ALTERACOES = [
@@ -2064,4 +2097,5 @@ REGISTO_ALTERACOES = [
     ("1.37", "23.10.2026", "Ficha nova D-06 (nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta). O DL 315/2009, art. 3.º, al. c), fala de «tipologia semelhante» sem critério nem decisor; o RGAC diz só que a classificação é determinada pelo registo SIAC (art. 79.º, n.º 7) e não prevê revisão, ao contrário do cão perigoso (art. 120.º, n.º 5). Origem: consulta sobre a classificação de cruzamentos."),
     ("1.38", "23.10.2026", "Ficha D-06 completada com posições externas: acórdão do Tribunal da Relação de Évora de 25.5.2021 (cão de raça indeterminada afastado do regime sem apreciar a tipologia) e artigo de Maria Joana de Antas de Barros na RJLB (2023). A proposta passa a referir os modelos de Espanha (Real Decreto 287/2002, anexo II) e do Reino Unido (padrão de conformação do XL Bully, Defra, 2023). Fontes novas na bibliografia."),
     ("1.39", "23.10.2026", "O Anexo B deixa de estar limitado aos temas T e C: a coluna Tema aceita as letras dos capítulos e a legenda passa a listar só as letras usadas; o gerador recusa letras que não existam. Quatro posições novas no tema D, sobre a tipologia dos cruzamentos (ficha D-06): RJLB 2023, Tribunal da Relação de Évora (25.5.2021), Real Decreto 287/2002 (Espanha) e padrão de conformação do XL Bully (Defra, Reino Unido). Novo grupo: Administrações estrangeiras."),
+    ("1.40", "23.10.2026", "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» lida e guardada no repositório. Entra no Anexo B (tema D, grupo Petições e cidadãos), na ficha D-06 e na ficha nova D-07 (a certificação dos treinadores inclui defesa e mordedura, e nada diz o que o treino do cão deve atingir nem como se avalia). O RGAC fixa a Portaria 317/2015 no art. 133.º, n.º 3 e mantém o treino sem objetivos nem avaliação (art. 128.º)."),
 ]

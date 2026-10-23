@@ -1721,11 +1721,46 @@ FICHAS = [
         "levantado": [
             "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa",
             "Maria Joana de Antas de Barros, «O estranho caso dos cães de raça potencialmente perigosa», RJLB, 2023",
-            "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1 (25.5.2021)"
+            "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1 (25.5.2021)",
+            "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso), dirigida ao Presidente da Assembleia da República, sem data (pede a reavaliação dos critérios de definição das raças por uma comissão independente)"
         ],
         "estado": "Aberto",
         "rel": [
             "PER-01"
+        ]
+    },
+    {
+        "cod": "PER-07",
+        "cod_ensaio_2": "P-58",
+        "cod_antigo": "D-07",
+        "artigo": "Certificado de qualificações",
+        "etiquetas": [
+            "PER",
+            "BEM"
+        ],
+        "titulo": "A certificação dos treinadores inclui defesa e mordedura, e nada diz o que o treino do cão deve atingir nem como se avalia",
+        "onde": [
+            "art. [[Certificado de qualificações]], n.ºs 2 e 3",
+            "art. [[Obrigatoriedade de treino]], n.º 1",
+            "art. [[Práticas de maneio e contenção proibidas]], n.º 1, al. g)",
+            "Portaria 317/2015, Anexo II, art. 3.º, n.º 3",
+            "DL 315/2009, art. 21.º, n.º 1, e art. 28.º, n.º 2"
+        ],
+        "origem": "VIGENTE",
+        "problema": [
+            "Hoje, a prova de certificação dos treinadores de cães perigosos e potencialmente perigosos inclui «Noções básicas de figurância» e duas matérias de controlo e mordedura de cães em defesa (Portaria 317/2015, Anexo II, art. 3.º, n.º 3, als. e), h) e i)). São matérias de cães de trabalho e de defesa. O treino que a lei exige ao detentor é de «socialização e obediência» (DL 315/2009, art. 21.º, n.º 1).",
+            "A lei não diz o que o treino do cão deve atingir nem como se avalia. O treinador emite um documento quando o treino é «concluído com aproveitamento» (DL 315/2009, art. 28.º, n.º 2), sem critério legal de aproveitamento. A petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» diz que, na prática, o cão faz uma prova de obediência desportiva (BH), com exercícios sem trela, e que a lei «não contempla em que momento é avaliado o cão de cada detentor».",
+            "O RGAC mantém o regime. O art. [[Certificado de qualificações]], n.º 3 diz que o modelo de provas e a avaliação dos candidatos «são os definidos na Portaria n.º 317/2015 de 30 de setembro», o que fixa a Portaria no decreto-lei. O art. [[Obrigatoriedade de treino]], n.º 1 mantém o treino de socialização e obediência sem objetivos nem avaliação. O art. [[Práticas de maneio e contenção proibidas]], n.º 1 já proíbe no treino os equipamentos que causem dor ou sofrimento, incluindo as coleiras de choque (al. g)), um dos pedidos da petição."
+        ],
+        "proposta": "(i) No art. [[Certificado de qualificações]], n.º 3, remeter para portaria a aprovar, em vez de fixar a Portaria 317/2015, e rever as matérias da prova: retirar o trabalho de defesa e mordedura e reforçar comportamento, socialização e métodos sem coação. (ii) No art. [[Obrigatoriedade de treino]], fixar por portaria os objetivos do treino do cão (socialização, controlo em situações do dia a dia, resposta do detentor) e o modo de avaliação, adaptado à idade e ao estado de saúde do animal. (iii) Ouvir entidades com formação em comportamento animal, como pede a petição.",
+        "levantado": [
+            "Petição pública «Pela revisão da Legislação das Raças Potencialmente Perigosas» (subscritora: Eneida Cardoso), dirigida ao Presidente da Assembleia da República, sem data",
+            "Análise interna (23.10.2026)"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "PER-03",
+            "PER-05"
         ]
     },
 ]
@@ -1992,6 +2027,7 @@ CORRESPONDENCIA = [
     ("D-04", "P-55", "PER-04"),
     ("D-05", "P-56", "PER-05"),
     ("D-06", "P-57", "PER-06"),
+    ("D-07", "P-58", "PER-07"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
     ("S-04", "P-52", "SAN-05"),
