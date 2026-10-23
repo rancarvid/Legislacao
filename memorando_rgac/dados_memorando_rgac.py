@@ -11,9 +11,9 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.37"
+VERSAO_MEMORANDO = "1.38"
 DATA_MEMORANDO = "23.10.2026"
-DATA_LIGACOES = "14.10.2026"
+DATA_LIGACOES = "23.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
                "(revisão formal DAJA V1, revista pelo grupo em 30.6.2026, 18h00)")
@@ -1225,11 +1225,14 @@ CAPITULOS = [
                 "O DL 315/2009 considera potencialmente perigosos os cães das raças da Portaria 422/2004 e os cruzamentos de primeira geração destas, os cruzamentos destas entre si ou com outras raças, «obtendo assim uma tipologia semelhante» a alguma delas (art. 3.º, al. c)). A Portaria só lista sete raças. Nenhuma norma fixa critérios de tipologia nem diz quem os aplica.",
                 "Fora do livro de origens, a raça também é uma avaliação. Os cães sem inscrição no livro de origens português são de raça indeterminada (DL 276/2001, art. 53.º, n.º 3), mas o DL 315/2009 manda esterilizar os cães «das raças» da Portaria que não estejam inscritos (art. 19.º, n.º 3). Para estes cães e para os cruzamentos, a classificação depende do que o médico veterinário regista no SIAC quando identifica o animal.",
                 "Não há procedimento de revisão. O titular que discorde não sabe a quem se dirigir, e a classificação traz deveres pesados: licença, seguro, açaimo e esterilização entre os 4 e os 6 meses.",
+                "Os tribunais e a doutrina confirmam a dificuldade. O Tribunal da Relação de Évora afastou a classificação de um cão «de raça indeterminada e de grande porte», dizendo que, «por possuir raça indeterminada, não está incluído em nenhuma das raças previamente definidas como potencialmente perigosas em Portaria do Governo», sem apreciar a tipologia (acórdão de 25.5.2021, proc. 245/19.0GCSTR.E1). A doutrina aponta a dificuldade de determinar a raça sem dados de ascendência, «mesmo, por vezes, para os próprios veterinários», sobretudo em animais errantes encaminhados para adoção (Maria Joana de Antas de Barros, RJLB, 2023).",
                 "O RGAC mantém a definição (art. 3.º) e diz só que a classificação «é determinada pelo registo SIAC e não pode ser alterada pela junta de freguesia» (art. 79.º, n.º 7). Não diz quem a faz, com que critério, nem como se revê. Para o cão perigoso já existe reversão por decisão do MVM (art. 120.º, n.º 5); para o potencialmente perigoso, não."
             ],
-            "proposta": "(i) Dizer que a classificação por tipologia é feita pelo médico veterinário no registo no SIAC, com base em critérios morfológicos aprovados por despacho do diretor-geral e publicados no portal da DGAV. (ii) Em caso de dúvida ou de discordância do titular, decide o MVM, depois de observar o animal, por decisão fundamentada registada no SIAC. (iii) Prever a revisão a pedido do titular, com prova (registo genealógico, filiação conhecida, nova avaliação), como o art. 120.º, n.º 5 faz para o cão perigoso.",
+            "proposta": "(i) Dizer que a classificação por tipologia é feita pelo médico veterinário no registo no SIAC, com base em critérios morfológicos aprovados por despacho do diretor-geral e publicados no portal da DGAV. (ii) Em caso de dúvida ou de discordância do titular, decide o MVM, depois de observar o animal, por decisão fundamentada registada no SIAC. (iii) Prever a revisão a pedido do titular, com prova (registo genealógico, filiação conhecida, nova avaliação), como o art. 120.º, n.º 5 faz para o cão perigoso. Há modelos: em Espanha, o anexo II do Real Decreto 287/2002 enumera as características morfológicas; no Reino Unido, o Defra publicou em 2023 um padrão de conformação oficial para o tipo XL Bully, destinado aos agentes de fiscalização e aos tribunais.",
             "levantado": [
-                "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa"
+                "Análise interna (23.10.2026), a propósito de uma consulta sobre como se decide se um cão é cruzamento de raça potencialmente perigosa",
+                "Maria Joana de Antas de Barros, «O estranho caso dos cães de raça potencialmente perigosa», RJLB, 2023",
+                "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1 (25.5.2021)"
             ],
             "estado": "Aberto",
             "rel": [
@@ -1997,6 +2000,14 @@ BIBLIOGRAFIA = [
      "repositório: Contributos MVM.docx", ""),
     ("Documentos de trabalho do grupo", "Resumo dos comentários ao RGBEAC (OMV, SNMV, DAJA e outros revisores).",
      "repositório: Resumo_Comentarios_RGBEAC.docx", ""),
+    ("Doutrina", "Maria Joana de Antas de Barros, «O estranho caso dos cães de raça \"potencialmente perigosa\"», Revista Jurídica Luso-Brasileira, ano 9 (2023), n.º 3, pp. 1215-1242.",
+     "https://www.cidp.pt/revistas/rjlb/2023/3/2023_03_1215_1242.pdf", "Canicultura"),
+    ("Jurisprudência", "Tribunal da Relação de Évora, acórdão de 25.5.2021, proc. 245/19.0GCSTR.E1 (cão de raça indeterminada e regime dos animais potencialmente perigosos).",
+     "https://jurisprudencia.pt/acordao/200915/", "raça indeterminada"),
+    ("Legislação e regulamentos", "Espanha, Real Decreto 287/2002, de 22 de março (perros potencialmente peligrosos), Boletín Oficial del Estado n.º 74, 27.3.2002, anexo II.",
+     "https://boe.es/boe/dias/2002/03/27/pdfs/A12290-12292.pdf", "Pelo corto"),
+    ("Documentos oficiais, estratégias e relatórios", "Reino Unido, Defra, «Official definition of an XL Bully dog» (padrão de conformação), 31.10.2023, atualizado em 1.2.2024.",
+     "https://www.gov.uk/government/publications/official-definition-of-an-xl-bully-dog", "conformation"),
 ]
 
 REGISTO_ALTERACOES = [
@@ -2038,4 +2049,5 @@ REGISTO_ALTERACOES = [
     ("1.35", "23.10.2026", "Ficha nova D-04 (na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso). As omissões do cedente continuam a ser dele (DL 9/2021, art. 36.º), mas nem o DL 315/2009 nem o RGAC regulam a cedência de cão perigoso; o art. 110.º, n.º 2 não fixa prazo de licença para o novo titular e o art. 127.º, n.º 3 deixa cair a licença na entrega de cão potencialmente perigoso. Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.36", "23.10.2026", "Ficha nova D-05 (o registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório). O art. 135.º, n.º 2 cria o depósito do treino no SIAC, mas nada dá aos treinadores perfil de acesso, o art. 140.º não pune a falta de registo nem a falta de treino (hoje DL 315/2009, art. 38.º, n.º 1, als. m) e p)) e não há regime para os treinos já feitos. Origem: proposta de depósito central dos comprovativos de treino."),
     ("1.37", "23.10.2026", "Ficha nova D-06 (nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta). O DL 315/2009, art. 3.º, al. c), fala de «tipologia semelhante» sem critério nem decisor; o RGAC diz só que a classificação é determinada pelo registo SIAC (art. 79.º, n.º 7) e não prevê revisão, ao contrário do cão perigoso (art. 120.º, n.º 5). Origem: consulta sobre a classificação de cruzamentos."),
+    ("1.38", "23.10.2026", "Ficha D-06 completada com posições externas: acórdão do Tribunal da Relação de Évora de 25.5.2021 (cão de raça indeterminada afastado do regime sem apreciar a tipologia) e artigo de Maria Joana de Antas de Barros na RJLB (2023). A proposta passa a referir os modelos de Espanha (Real Decreto 287/2002, anexo II) e do Reino Unido (padrão de conformação do XL Bully, Defra, 2023). Fontes novas na bibliografia."),
 ]
