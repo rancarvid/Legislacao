@@ -1,4 +1,4 @@
-# Análise Profunda de Disposições do Regulamento 2023/0447
+# Análise Profunda de Disposições do Regulamento (UE) 2026/1818
 
 ## Ficheiros Gerados
 
@@ -139,7 +139,7 @@
 ## Contacto e Manutenção
 
 Análise realizada em 2026-04-06 com base em:
-- Regulamento (EU) 2023/0447
+- Regulamento (UE) 2026/1818
 - Legislação portuguesa vigente (DL 276/2001, DL 82/2019, Lei 27/2016)
 - Propostas portuguesas (@codigo, @rgbeac junho 2025)
 

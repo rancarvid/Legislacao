@@ -1,7 +1,7 @@
 # Resumo Executivo - Legislação Portuguesa Vigente sobre Bem-Estar Animal
 
 **Data**: 22 de março de 2026
-**Total de Diplomas Identificados**: 19
+**Total de Diplomas Identificados**: 20
 **Período de Vigência**: 1995-2021
 **Âmbito Geográfico**: Portugal
 
@@ -11,13 +11,13 @@
 
 | Métrica | Valor |
 |---|---|
-| **Total de Diplomas Vigentes** | 19 |
+| **Total de Diplomas Vigentes** | 20 |
 | **Leis Ordinárias** | 5 |
-| **Decretos-Lei** | 7 |
+| **Decretos-Lei** | 8 |
 | **Portarias** | 5 |
 | **Decretos Regulamentares** | 1 |
-| **Décadas de Vigência** |  1995-2021 |
-| **Ano Mais Recente** | 2021 |
+| **Décadas de Vigência** |  1995-2026 |
+| **Ano Mais Recente** | 2026 |
 
 ---
 
@@ -146,13 +146,14 @@
 
 ---
 
-### Tema 12: ADMINISTRAÇÃO E SUPERVISÃO (1 diploma)
+### Tema 12: ADMINISTRAÇÃO, SUPERVISÃO E CONTROLOS OFICIAIS (2 diplomas)
 
 | Diploma | Ano | Tipo | Cobertura |
 |---|---|---|---|
 | Dec. Regulamentar 3/2021 | 2021 | DR | Institui Provedor do Animal |
+| DL 103/2026 | 2026 | DL | Controlos oficiais — execução do Regulamento (UE) 2017/625; DGAV autoridade competente; taxas (Portaria 304-A/2026/1); contraordenações RJCE |
 
-**Cobertura de Temas**: ✅ Órgão independente; ✅ Supervisão; ✅ Monitoramento
+**Cobertura de Temas**: ✅ Órgão independente; ✅ Supervisão; ✅ Monitoramento; ✅ Controlos oficiais (Reg. (UE) 2017/625)
 
 ---
 
@@ -217,13 +218,13 @@
 | **1995-2001** | 2 | Proteção geral; implementação Convenção Europeia |
 | **2003-2009** | 4 | Raiva, caça, circos, transportes |
 | **2013-2019** | 9 | Identificação, comércio, animais errantes, assistência |
-| **2021+** | 2 | Supervisão, consolidação |
+| **2021+** | 3 | Supervisão, consolidação, controlos oficiais |
 
 **Tendência**: Legislação concentra-se em 2016-2019 (paradigma animal errante + identificação eletrónica).
 
 ---
 
-## V. IMPACTO DO REGULAMENTO EUROPEU 2023/0447
+## V. IMPACTO DO REGULAMENTO (UE) 2026/1818
 
 ### Alinhamento Automático (✅)
 
@@ -267,7 +268,7 @@
 
 | Ficheiro | Formato | Descrição |
 |---|---|---|
-| `legislacao_vigente_animais_2026.csv` | CSV | Tabela estruturada com 19 diplomas |
+| `legislacao_vigente_animais_2026.csv` | CSV | Tabela estruturada com 20 diplomas |
 | `legislacao_vigente_animais_completa.xlsx` | Excel | Tabela interativa com 10 colunas |
 | `LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md` | Markdown | Análise detalhada artigo por artigo |
 | `RESUMO_EXECUTIVO_LEGISLACAO.md` | Markdown | Este ficheiro — síntese executiva |
@@ -278,7 +279,7 @@
 
 ### Imediato (Prioridade Alta)
 
-1. **Verificar harmonização técnica com Regulamento 2023/0447**
+1. **Verificar harmonização técnica com Regulamento (UE) 2026/1818**
    - Protocolo de integração SIAC com sistemas europeus
    - Normas técnicas de microchip (compatibilidade)
    - Padrões de bem-estar (espaciais, nutricionais, comportamentais)
@@ -334,7 +335,7 @@ Portugal possui um regime legislativo **robusto e abrangente** de proteção e b
 - Lacunas em normas técnicas detalhadas
 - Supervisão de criadores não-comerciais
 
-**Recomendação Final**: O regime português está **altamente preparado** para a aplicação do Regulamento Europeu 2023/0447. Será necessária harmonização técnica em identificação e protocolos operacionais, mas a base legal é sólida.
+**Recomendação Final**: O regime português está **altamente preparado** para a aplicação do Regulamento (UE) 2026/1818. Será necessária harmonização técnica em identificação e protocolos operacionais, mas a base legal é sólida.
 
 ---
 

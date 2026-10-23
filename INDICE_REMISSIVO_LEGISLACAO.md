@@ -12,6 +12,7 @@
 | Diploma | Referência | Tipo | Ano | Tema | Links Relacionados |
 |---|---|---|---|---|---|
 | Decreto Regulamentar n.º 3/2021 | DR 3/2021 | DR | 2021 | Administração | - |
+| Decreto-Lei n.º 103/2026 | DL 103/2026 | DL | 2026 | Controlos Oficiais | → Reg. (UE) 2017/625, DL 9/2021 (RJCE), Portaria 304-A/2026/1 |
 | Decreto-Lei n.º 202/2004 | DL 202/2004 | DL | 2004 | Caça | → Portaria 148/2016 |
 | Decreto-Lei n.º 255/2009 | DL 255/2009 | DL | 2009 | Circos | → Lei 20/2019 |
 | Decreto-Lei n.º 265/2007 | DL 265/2007 | DL | 2007 | Transportes | → Portaria 968/2009 |
@@ -49,6 +50,8 @@
 ### Administração e Supervisão
 - **Dec. Regulamentar 3/2021** → Institui Provedor do Animal
   - Supervisão: Lei 8/2017, DL 276/2001
+- **DL 103/2026** → Controlos oficiais e outras atividades oficiais; execução do Reg. (UE) 2017/625; DGAV autoridade competente
+  - Remete: Reg. (UE) 2017/625, DL 9/2021 (RJCE), Portaria 304-A/2026/1 (taxas); revoga DL 178/2008 e Portaria 1073/2008
 
 ### Bem-Estar de Animais de Companhia
 - **DL 276/2001** → Regime geral; Convenção Europeia
@@ -137,6 +140,7 @@
 | 2019 | Lei 20/2019 | Lei 20/2019 | Lei | Circos (Reforço) |
 | 2019 | Decreto-Lei 82/2019 | DL 82/2019 | DL | Identificação/SIAC |
 | 2021 | Dec. Regulamentar 3/2021 | DR 3/2021 | DR | Administração |
+| 2026 | Decreto-Lei 103/2026 | DL 103/2026 | DL | Controlos Oficiais |
 
 ---
 
@@ -187,6 +191,15 @@
 → Lei 92/95 (Referência)
 → Lei 69/2014 (Referência)
 → DL 276/2001 (Referência)
+
+---
+
+#### DL 103/2026 (Controlos Oficiais)
+→ Reg. (UE) 2017/625 (execução nacional: definições, controlos baseados no risco, delegação, taxas)
+→ DL 9/2021 (RJCE — contraordenações económicas)
+→ Portaria 304-A/2026/1 (taxas dos controlos oficiais)
+→ Revoga: DL 178/2008, Portaria 1073/2008
+→ Reg. (UE) 2026/1818 remete para o Reg. (UE) 2017/625 (considerandos 31 e 32; art. 4.º, al. u))
 
 ---
 
@@ -245,6 +258,7 @@ DL 74/2007 (Cães Assistência)
 ### CLUSTER 7: Governo
 ```
 Dec. Regulamentar 3/2021 (Provedor Animal)
+DL 103/2026 (Controlos oficiais — execução do Reg. (UE) 2017/625; DGAV autoridade competente)
 ```
 
 ---
@@ -266,8 +280,9 @@ ESPECIALIDADES
     ├── Cães Assist.: DL 74/2007
     └── Transportes: DL 265/2007 ──→ Portaria 968/2009
 
-ADMINISTRAÇÃO (2021)
-    └── Dec. Regulamentar 3/2021
+ADMINISTRAÇÃO E CONTROLOS OFICIAIS (2021-2026)
+    ├── Dec. Regulamentar 3/2021
+    └── DL 103/2026 ──→ Portaria 304-A/2026/1 (executa o Reg. (UE) 2017/625)
 ```
 
 ---
@@ -328,7 +343,7 @@ ADMINISTRAÇÃO (2021)
 
 ---
 
-## 8. TABELA DE COMPATIBILIDADE COM REGULAMENTO 2023/0447
+## 8. TABELA DE COMPATIBILIDADE COM REGULAMENTO (UE) 2026/1818
 
 | Conceito do Regulamento | Diploma PT | Status | Notas |
 |---|---|---|---|
@@ -352,7 +367,7 @@ ADMINISTRAÇÃO (2021)
 1. Leia DL 276/2001 (base)
 2. Cruzar com Lei 8/2017 (direitos)
 3. Verificar Lei 69/2014 (sanções)
-4. Análise de Regulamento 2023/0447
+4. Análise de Regulamento (UE) 2026/1818
 
 **Gestor de Centro de Recolha**:
 1. Lei 27/2016 (quadro legal)
@@ -396,6 +411,7 @@ Caça? → DL 202/2004 + Portaria 148/2016
 Transportes? → DL 265/2007 + Portaria 968/2009
 Cães Assistência? → DL 74/2007
 Administração? → Dec. Regulamentar 3/2021
+Controlos oficiais (fiscalização DGAV)? → DL 103/2026 + Portaria 304-A/2026/1 (Reg. (UE) 2017/625)
 ```
 
 ---
