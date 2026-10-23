@@ -303,9 +303,13 @@ def anexo_stakeholders(doc):
     par(doc, "Posições recolhidas em documentos oficiais, pareceres, estratégias, doutrina, artigos científicos "
              "e decisões judiciais. Não se usam notícias de imprensa. As citações estão entre aspas e foram "
              "transcritas das fontes indicadas.")
-    nomes = {"T": "Titularidade", "C": "CED e errantes", "T e C": "Titularidade; CED e errantes",
-             "C e T": "Titularidade; CED e errantes"}
-    entradas = [(s[0], s[1], s[2], nomes.get(s[3], s[3]), s[4], s[5]) for s in D.STAKEHOLDERS]
+    nomes = {"T": "Titularidade", "C": "CED e errantes", "D": "Animais perigosos"}
+
+    def nome_tema(tema):
+        partes = sorted(G1.letras_stakeholder(tema), key=lambda l: list(nomes).index(l) if l in nomes else 99)
+        return "; ".join(nomes.get(l, l) for l in partes)
+
+    entradas = [(s[0], s[1], s[2], nome_tema(s[3]), s[4], s[5]) for s in D.STAKEHOLDERS]
     G1.tabela_stakeholders(doc, entradas, [5.0, 2.4, 11.3, 7.0])
 
 

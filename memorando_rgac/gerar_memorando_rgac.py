@@ -77,6 +77,11 @@ def verificar_texto():
     for s in D.STAKEHOLDERS:
         if s[5] not in biblio:
             erros.append(f"Fonte do Anexo B fora da bibliografia: {s[1]} ({s[5][:60]})")
+    letras_validas = {t["letra"] for t in D.TEMAS}
+    for s in D.STAKEHOLDERS:
+        for l in letras_stakeholder(s[3]):
+            if l not in letras_validas:
+                erros.append(f"Anexo B com tema inexistente {l}: {s[1]}")
     for b in D.BIBLIOGRAFIA:
         ver(b[1], "BIBLIOGRAFIA")
         if b[2].startswith("repositório: "):
@@ -439,12 +444,23 @@ def tabela_stakeholders(doc, entradas, larg):
     larguras(t, larg)
 
 
+def letras_stakeholder(tema):
+    """Letras de tema de uma entrada do Anexo B («T», «T e C», «D»)."""
+    return [x.strip() for x in tema.split(" e ") if x.strip()]
+
+
+def legenda_stakeholders():
+    usadas = {l for s in D.STAKEHOLDERS for l in letras_stakeholder(s[3])}
+    partes = [f"Tema {t['letra']}: {t['titulo']}" for t in D.TEMAS if t["letra"] in usadas]
+    return ". ".join(partes) + "." if partes else ""
+
+
 def anexo_stakeholders(doc):
     titulo(doc, "Anexo B. Posições de entidades externas", 1)
     par(doc, "Posições recolhidas em documentos oficiais, pareceres, estratégias, doutrina, artigos "
-             "científicos e decisões judiciais sobre os dois temas deste memorando. Não se usam notícias de imprensa. As citações estão entre "
-             "aspas e foram transcritas das fontes indicadas. Tema T: titular, detentor, proprietário e "
-             "operador. Tema C: CED, colónias e animais errantes.")
+             "científicos e decisões judiciais sobre os temas deste memorando. Não se usam notícias de imprensa. As citações estão entre "
+             "aspas e foram transcritas das fontes indicadas. A coluna Tema usa as letras da secção 1. "
+             + legenda_stakeholders())
     if not D.STAKEHOLDERS:
         par(doc, "Por preencher.")
         return

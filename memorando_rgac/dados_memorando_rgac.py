@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.38"
+VERSAO_MEMORANDO = "1.39"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "23.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1798,6 +1798,19 @@ STAKEHOLDERS = [
      'https://www.nature.com/articles/ncomms2380'),
     ("Administração pública", "DGAV, proposta de resposta à MIAR", "24.10.2025", "C", "O CED depende de autorização da câmara municipal (Portaria 146/2017, art. 9.º, n.ºs 1 e 2) e não há contradição insanável com a Lei 27/2016, por a matéria dos errantes ser competência dos municípios (Código Administrativo, art. 49.º; Lei 75/2013, anexo I, art. 33.º, n.º 1, als. ii) e jj)). O CRO e as associações zoófilas podem ser titulares no SIAC, «podendo essa questão ficar definida nos referidos programas CED». Não analisa o art. 4.º da Lei 27/2016.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf"),
     ("ONG e associações de proteção animal", "MIAR, Movimento de Intervenção em Animais de Rua", "2024 e 2025", "C", "O CED é dever do Estado (Lei 27/2016, arts. 2.º, n.º 3, e 4.º) e a Portaria não o pode tornar facultativo. As associações não precisam de validação autárquica. Recusa ser titular de animais de rua e pede registo com indicação do município e da associação que esterilizou. Sem transponder, não pode candidatar as despesas aos avisos.", "repositório: CED/Proposta_resposta_DGAV_MIAR_2025-10-24.pdf"),
+    # --- Tema D: tipologia dos cruzamentos de raças potencialmente perigosas (ficha D-06)
+    ("Juristas, academia e tribunais", "Maria Joana de Antas de Barros, «O estranho caso dos cães de raça potencialmente perigosa», RJLB", "2023", "D",
+     "Critica a inclusão dos cruzamentos no regime: sem dados de ascendência a raça é difícil de determinar, sobretudo em animais errantes encaminhados para adoção, e os cruzamentos são cães sem raça definida. Citação: «se afigura de extrema dificuldade (mesmo, por vezes, para os próprios veterinários) a tarefa de determinar, com certeza e exatidão, qual a raça de determinado cão, sem a posse de qualquer dado relativo à sua ascendência».",
+     "https://www.cidp.pt/revistas/rjlb/2023/3/2023_03_1215_1242.pdf"),
+    ("Juristas, academia e tribunais", "Tribunal da Relação de Évora, proc. 245/19.0GCSTR.E1", "25.5.2021", "D",
+     "Um cão de raça indeterminada e de grande porte fica fora do regime dos animais potencialmente perigosos. O acórdão não aprecia a tipologia. Citação: «por possuir raça indeterminada, não está incluído em nenhuma das raças previamente definidas como potencialmente perigosas em Portaria do Governo».",
+     "https://jurisprudencia.pt/acordao/200915/"),
+    ("Administrações estrangeiras", "Espanha, Real Decreto 287/2002, art. 2.º e anexo II (redação original)", "22.3.2002", "D",
+     "Além da lista de raças, considera potencialmente perigosos os cães com todas ou a maior parte das características morfológicas do anexo II, como o pelo curto, o perímetro torácico, a altura e o peso. Citação: «Aquellos cuyas características se correspondan con todas o la mayoría de las que figuran en el anexo II» (aqueles cujas características correspondam a todas ou à maior parte das que constam do anexo II).",
+     "https://boe.es/boe/dias/2002/03/27/pdfs/A12290-12292.pdf"),
+    ("Administrações estrangeiras", "Reino Unido, Defra, padrão de conformação do tipo XL Bully", "31.10.2023", "D",
+     "Fixa por escrito as características físicas do tipo XL Bully, para apoiar a identificação pelos tribunais e pelos agentes de fiscalização. Citação: «intended to be used by the courts and Dog Legislation Officers to support identification of the XL Bully breed type» (destina-se a ser usado pelos tribunais e pelos agentes de fiscalização para apoiar a identificação do tipo XL Bully).",
+     "https://www.gov.uk/government/publications/official-definition-of-an-xl-bully-dog"),
 ]
 
 # Dominios de imprensa: o gerador recusa gerar se alguma fonte do Anexo B for destes dominios.
@@ -2050,4 +2063,5 @@ REGISTO_ALTERACOES = [
     ("1.36", "23.10.2026", "Ficha nova D-05 (o registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório). O art. 135.º, n.º 2 cria o depósito do treino no SIAC, mas nada dá aos treinadores perfil de acesso, o art. 140.º não pune a falta de registo nem a falta de treino (hoje DL 315/2009, art. 38.º, n.º 1, als. m) e p)) e não há regime para os treinos já feitos. Origem: proposta de depósito central dos comprovativos de treino."),
     ("1.37", "23.10.2026", "Ficha nova D-06 (nada diz quem decide se um cão é cruzamento de raça potencialmente perigosa, com que critério, nem como se contesta). O DL 315/2009, art. 3.º, al. c), fala de «tipologia semelhante» sem critério nem decisor; o RGAC diz só que a classificação é determinada pelo registo SIAC (art. 79.º, n.º 7) e não prevê revisão, ao contrário do cão perigoso (art. 120.º, n.º 5). Origem: consulta sobre a classificação de cruzamentos."),
     ("1.38", "23.10.2026", "Ficha D-06 completada com posições externas: acórdão do Tribunal da Relação de Évora de 25.5.2021 (cão de raça indeterminada afastado do regime sem apreciar a tipologia) e artigo de Maria Joana de Antas de Barros na RJLB (2023). A proposta passa a referir os modelos de Espanha (Real Decreto 287/2002, anexo II) e do Reino Unido (padrão de conformação do XL Bully, Defra, 2023). Fontes novas na bibliografia."),
+    ("1.39", "23.10.2026", "O Anexo B deixa de estar limitado aos temas T e C: a coluna Tema aceita as letras dos capítulos e a legenda passa a listar só as letras usadas; o gerador recusa letras que não existam. Quatro posições novas no tema D, sobre a tipologia dos cruzamentos (ficha D-06): RJLB 2023, Tribunal da Relação de Évora (25.5.2021), Real Decreto 287/2002 (Espanha) e padrão de conformação do XL Bully (Defra, Reino Unido). Novo grupo: Administrações estrangeiras."),
 ]

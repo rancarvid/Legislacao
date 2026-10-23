@@ -58,7 +58,7 @@ Versão nova do RGAC: correr `extrair_estrutura_rgac.py`. Nos ensaios, se o gera
 2. Temas com fichas, pela ordem de `TEMAS`: primeiro os transversais T e C, depois os capítulos do RGAC. Só aparecem os temas com fichas; a numeração é automática.
 3. Pontos já resolvidos no RGAC
 4. Anexo A: quadro-resumo das fichas (automático)
-5. Anexo B: posições de entidades externas
+5. Anexo B: posições de entidades externas. Cada entrada é `(grupo, entidade, data, tema, posição, fonte)`; o tema usa as letras de `TEMAS` (`"T"`, `"C"`, `"D"`, ou várias ligadas por « e », como `"T e C"`). A legenda do anexo lista só as letras usadas e o gerador recusa letras inexistentes. Nos ensaios 2.0 e 3.0, o nome mostrado vem do dicionário `nomes` de `anexo_stakeholders()`; uma letra nova sem nome aparece como letra
 6. Anexo C: lapsos formais (tabela `LAPSOS`)
 7. Anexo D: cobertura da revisão, artigo a artigo (automático, a partir de `estrutura_rgac.json`, das fichas, dos lapsos e de `REVISAO`)
 8. Registo de alterações
