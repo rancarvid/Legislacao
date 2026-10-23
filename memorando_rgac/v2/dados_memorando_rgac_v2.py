@@ -1528,6 +1528,38 @@ FICHAS = [
             "P-49"
         ]
     },
+    {
+        "cod": "P-54",
+        "cod_antigo": "D-03",
+        "artigo": "Obrigatoriedade de treino",
+        "etiquetas": [
+            "PER",
+            "BEM"
+        ],
+        "titulo": "O treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto",
+        "onde": [
+            "art. [[Obrigatoriedade de treino]], n.ºs 1 e 2",
+            "art. [[Destino de animais agressores]], n.ºs 3 a 5",
+            "art. [[Proibição de reprodução]], n.º 6",
+            "art. [[Obrigações dos treinadores]], n.º 2",
+            "DL 315/2009, art. 15.º, n.ºs 3 e 4, art. 21.º, art. 28.º, n.º 2, e art. 38.º, n.º 1, al. m)"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "Hoje, o DL 315/2009 obriga os detentores a promover o treino (art. 21.º, n.º 1) e manda iniciá-lo entre os 6 e os 12 meses de idade (n.º 2). O prazo serve o cão potencialmente perigoso, que o é desde que nasce. Não serve o cão classificado como perigoso depois de uma agressão em adulto, nem o cão adulto que muda de detentor. Para o agressor, a única regra de prazo é a do MVM, «quando aplicável» (art. 15.º, n.ºs 3 e 4).",
+            "Não há dispensa por idade ou estado de saúde. A esterilização tem essa dispensa, com atestado de médico veterinário (DL 315/2009, art. 19.º, n.º 5, al. b)).",
+            "Não há registo do treino feito. Quando o cão muda de detentor, o novo detentor só pode provar o treino com o documento que o treinador entregou (DL 315/2009, art. 28.º, n.º 2).",
+            "O RGAC copia o art. 21.º (art. [[Obrigatoriedade de treino]]). Resolve a prova: o treinador regista o treino no SIAC (art. [[Obrigações dos treinadores]], n.º 2). Mantém o prazo dos 6 aos 12 meses e não prevê dispensa, ao contrário da esterilização (art. [[Proibição de reprodução]], n.º 6). Para o agressor, mantém o prazo fixado pelo MVM (art. [[Destino de animais agressores]], n.ºs 3 a 5)."
+        ],
+        "proposta": "No art. [[Obrigatoriedade de treino]], n.º 2: (i) para o cão classificado como perigoso depois dos 12 meses, ou que mude de detentor sem treino registado, o treino inicia-se no prazo fixado pelo MVM, contado da classificação ou do registo da nova titularidade; (ii) o treino feito e registado no SIAC vale para os detentores seguintes; (iii) prever dispensa ou adaptação por idade ou estado de saúde, com atestado de médico veterinário registado no SIAC, como no art. [[Proibição de reprodução]], n.º 6.",
+        "levantado": [
+            "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila sobre um cão perigoso de idade avançada"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-53"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1788,6 +1820,7 @@ CORRESPONDENCIA = {
     "E-01": "P-48",
     "D-01": "P-49",
     "D-02": "P-53",
+    "D-03": "P-54",
     "E-02": "P-50",
     "S-03": "P-51",
     "S-04": "P-52",

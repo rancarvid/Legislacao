@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.33"
+VERSAO_MEMORANDO = "1.34"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1128,6 +1128,32 @@ CAPITULOS = [
                 "D-01"
             ]
         },
+        {
+            "cod": "D-03",
+            "titulo": "O treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto",
+            "onde": [
+                "art. 128.º, n.ºs 1 e 2",
+                "art. 122.º, n.ºs 3 a 5",
+                "art. 126.º, n.º 6",
+                "art. 135.º, n.º 2",
+                "DL 315/2009, art. 15.º, n.ºs 3 e 4, art. 21.º, art. 28.º, n.º 2, e art. 38.º, n.º 1, al. m)"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "Hoje, o DL 315/2009 obriga os detentores a promover o treino (art. 21.º, n.º 1) e manda iniciá-lo entre os 6 e os 12 meses de idade (n.º 2). O prazo serve o cão potencialmente perigoso, que o é desde que nasce. Não serve o cão classificado como perigoso depois de uma agressão em adulto, nem o cão adulto que muda de detentor. Para o agressor, a única regra de prazo é a do MVM, «quando aplicável» (art. 15.º, n.ºs 3 e 4).",
+                "Não há dispensa por idade ou estado de saúde. A esterilização tem essa dispensa, com atestado de médico veterinário (DL 315/2009, art. 19.º, n.º 5, al. b)).",
+                "Não há registo do treino feito. Quando o cão muda de detentor, o novo detentor só pode provar o treino com o documento que o treinador entregou (DL 315/2009, art. 28.º, n.º 2).",
+                "O RGAC copia o art. 21.º (art. 128.º). Resolve a prova: o treinador regista o treino no SIAC (art. 135.º, n.º 2). Mantém o prazo dos 6 aos 12 meses e não prevê dispensa, ao contrário da esterilização (art. 126.º, n.º 6). Para o agressor, mantém o prazo fixado pelo MVM (art. 122.º, n.ºs 3 a 5)."
+            ],
+            "proposta": "No art. 128.º, n.º 2: (i) para o cão classificado como perigoso depois dos 12 meses, ou que mude de detentor sem treino registado, o treino inicia-se no prazo fixado pelo MVM, contado da classificação ou do registo da nova titularidade; (ii) o treino feito e registado no SIAC vale para os detentores seguintes; (iii) prever dispensa ou adaptação por idade ou estado de saúde, com atestado de médico veterinário registado no SIAC, como no art. 126.º, n.º 6.",
+            "levantado": [
+                "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila sobre um cão perigoso de idade avançada"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "D-02"
+            ]
+        },
     ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
@@ -1926,4 +1952,5 @@ REGISTO_ALTERACOES = [
     ("1.31", "22.10.2026", "Ficha D-01 completada: a «prova em contrário» do art. 120.º, n.º 5 não pode ser só uma avaliação de comportamento, porque nas als. a) e b) do n.º 1 a classificação resulta de um facto. Proposta (ii) ajustada. Origem: pedido de um MVM para retirar a classificação de um cão sem prova de que tenha sido o agressor."),
     ("1.32", "22.10.2026", "Lapso L-22: remissões erradas nas normas dos treinadores de cães perigosos (arts. 130.º, 131.º, 132.º e 134.º). Origem: pedido de esclarecimento de um treinador certificado pela PSP sobre os documentos para o título profissional (DL 315/2009, art. 25.º)."),
     ("1.33", "23.10.2026", "Ficha nova D-02 (associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias). O art. 69.º, n.º 7 admite a associação zoófila como titular, mas o art. 110.º, n.ºs 1 e 3 só prevê a licença para pessoa singular; o art. 81.º obriga a listar para adoção os animais aptos e o art. 127.º, n.º 4 proíbe a publicidade de animais perigosos. Origem: pedido de esclarecimento de uma associação zoófila."),
+    ("1.34", "23.10.2026", "Ficha nova D-03 (o treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto). O DL 315/2009, art. 21.º, n.º 2, e o RGAC, art. 128.º, n.º 2, não preveem prazo para o cão classificado depois dos 12 meses nem dispensa por idade ou saúde, ao contrário da esterilização (art. 126.º, n.º 6). Origem: pedido de esclarecimento de uma associação zoófila."),
 ]
