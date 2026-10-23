@@ -11,7 +11,7 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.35"
+VERSAO_MEMORANDO = "1.36"
 DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
@@ -1181,6 +1181,33 @@ CAPITULOS = [
                 "D-03"
             ]
         },
+        {
+            "cod": "D-05",
+            "titulo": "O registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório",
+            "onde": [
+                "art. 135.º, n.ºs 1 e 2",
+                "art. 122.º, n.º 4",
+                "art. 140.º",
+                "art. 73.º, n.º 1",
+                "DL 315/2009, art. 28.º, n.ºs 1 e 2, e art. 38.º, n.º 1, als. m) e p)"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "Hoje não há registo central do treino. O treinador guarda durante 10 anos um registo dos animais treinados e mostra-o às entidades fiscalizadoras quando lho pedem (DL 315/2009, art. 28.º, n.º 1). O detentor recebe um documento (n.º 2). Se o detentor o perder, ou se o cão mudar de mãos, a autoridade só confirma o treino se souber quem foi o treinador.",
+                "O RGAC cria o depósito: «O treino do animal, com aproveitamento, é registado pelo treinador no SIAC, no prazo de 10 dias» (art. 135.º, n.º 2). O registo fica ligado ao transponder e acompanha o cão.",
+                "Faltam peças para funcionar. Nada dá aos treinadores perfil de acesso ao SIAC, que só aceita alterações de entidades com perfil atribuído pela DGAV (art. 73.º, n.º 1). O art. 140.º não tem coima expressa para a falta de registo, para a falta de treino ou para os outros deveres dos treinadores, que hoje são contraordenação (DL 315/2009, art. 38.º, n.º 1, als. m) e p)); as alíneas genéricas remetem para «artigo XX.º».",
+                "Não há regime para os treinos já feitos com o DL 315/2009, que só existem em papel e no registo do treinador. O treino imposto pelo MVM ao animal agressor continua a ser provado por comprovativo entregue ao MVM (art. 122.º, n.º 4), fora do SIAC."
+            ],
+            "proposta": "(i) Prever no Manual de Procedimentos SIAC um perfil de treinador, ligado ao título profissional. (ii) Coima para o treinador que não registe o treino, e repor as coimas da falta de treino e dos deveres dos treinadores. (iii) Norma transitória: o treinador regista no SIAC os treinos que constem do seu registo dos últimos 10 anos (art. 135.º, n.º 1), ou o médico veterinário regista-os com base no documento entregue ao detentor. (iv) No art. 122.º, n.º 4, o comprovativo de aprovação passa a ser o registo no SIAC.",
+            "levantado": [
+                "Análise interna (23.10.2026): proposta de um depósito central dos comprovativos de treino, verificável pela autoridade mesmo que o detentor os perca"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "D-03",
+                "D-04"
+            ]
+        },
     ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
@@ -1981,4 +2008,5 @@ REGISTO_ALTERACOES = [
     ("1.33", "23.10.2026", "Ficha nova D-02 (associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias). O art. 69.º, n.º 7 admite a associação zoófila como titular, mas o art. 110.º, n.ºs 1 e 3 só prevê a licença para pessoa singular; o art. 81.º obriga a listar para adoção os animais aptos e o art. 127.º, n.º 4 proíbe a publicidade de animais perigosos. Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.34", "23.10.2026", "Ficha nova D-03 (o treino começa entre os 6 e os 12 meses, o que não serve o cão classificado como perigoso já adulto). O DL 315/2009, art. 21.º, n.º 2, e o RGAC, art. 128.º, n.º 2, não preveem prazo para o cão classificado depois dos 12 meses nem dispensa por idade ou saúde, ao contrário da esterilização (art. 126.º, n.º 6). Origem: pedido de esclarecimento de uma associação zoófila."),
     ("1.35", "23.10.2026", "Ficha nova D-04 (na cedência de cão perigoso, o cedente não informa nem entrega nada, e o novo detentor fica com o atraso). As omissões do cedente continuam a ser dele (DL 9/2021, art. 36.º), mas nem o DL 315/2009 nem o RGAC regulam a cedência de cão perigoso; o art. 110.º, n.º 2 não fixa prazo de licença para o novo titular e o art. 127.º, n.º 3 deixa cair a licença na entrega de cão potencialmente perigoso. Origem: pedido de esclarecimento de uma associação zoófila."),
+    ("1.36", "23.10.2026", "Ficha nova D-05 (o registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório). O art. 135.º, n.º 2 cria o depósito do treino no SIAC, mas nada dá aos treinadores perfil de acesso, o art. 140.º não pune a falta de registo nem a falta de treino (hoje DL 315/2009, art. 38.º, n.º 1, als. m) e p)) e não há regime para os treinos já feitos. Origem: proposta de depósito central dos comprovativos de treino."),
 ]

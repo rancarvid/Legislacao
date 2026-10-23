@@ -1655,6 +1655,41 @@ FICHAS = [
             "PER-03"
         ]
     },
+    {
+        "cod": "PER-05",
+        "cod_ensaio_2": "P-56",
+        "cod_antigo": "D-05",
+        "artigo": "Obrigações dos treinadores",
+        "etiquetas": [
+            "PER",
+            "REG",
+            "SAN"
+        ],
+        "titulo": "O registo do treino no SIAC fica sem perfil de acesso, sem coima e sem regime transitório",
+        "onde": [
+            "art. [[Obrigações dos treinadores]], n.ºs 1 e 2",
+            "art. [[Destino de animais agressores]], n.º 4",
+            "art. [[Contraordenações]]",
+            "art. [[Alterações ao registo]], n.º 1",
+            "DL 315/2009, art. 28.º, n.ºs 1 e 2, e art. 38.º, n.º 1, als. m) e p)"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "Hoje não há registo central do treino. O treinador guarda durante 10 anos um registo dos animais treinados e mostra-o às entidades fiscalizadoras quando lho pedem (DL 315/2009, art. 28.º, n.º 1). O detentor recebe um documento (n.º 2). Se o detentor o perder, ou se o cão mudar de mãos, a autoridade só confirma o treino se souber quem foi o treinador.",
+            "O RGAC cria o depósito: «O treino do animal, com aproveitamento, é registado pelo treinador no SIAC, no prazo de 10 dias» (art. [[Obrigações dos treinadores]], n.º 2). O registo fica ligado ao transponder e acompanha o cão.",
+            "Faltam peças para funcionar. Nada dá aos treinadores perfil de acesso ao SIAC, que só aceita alterações de entidades com perfil atribuído pela DGAV (art. [[Alterações ao registo]], n.º 1). O art. [[Contraordenações]] não tem coima expressa para a falta de registo, para a falta de treino ou para os outros deveres dos treinadores, que hoje são contraordenação (DL 315/2009, art. 38.º, n.º 1, als. m) e p)); as alíneas genéricas remetem para «artigo XX.º».",
+            "Não há regime para os treinos já feitos com o DL 315/2009, que só existem em papel e no registo do treinador. O treino imposto pelo MVM ao animal agressor continua a ser provado por comprovativo entregue ao MVM (art. [[Destino de animais agressores]], n.º 4), fora do SIAC."
+        ],
+        "proposta": "(i) Prever no Manual de Procedimentos SIAC um perfil de treinador, ligado ao título profissional. (ii) Coima para o treinador que não registe o treino, e repor as coimas da falta de treino e dos deveres dos treinadores. (iii) Norma transitória: o treinador regista no SIAC os treinos que constem do seu registo dos últimos 10 anos (art. [[Obrigações dos treinadores]], n.º 1), ou o médico veterinário regista-os com base no documento entregue ao detentor. (iv) No art. [[Destino de animais agressores]], n.º 4, o comprovativo de aprovação passa a ser o registo no SIAC.",
+        "levantado": [
+            "Análise interna (23.10.2026): proposta de um depósito central dos comprovativos de treino, verificável pela autoridade mesmo que o detentor os perca"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "PER-03",
+            "PER-04"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1917,6 +1952,7 @@ CORRESPONDENCIA = [
     ("D-02", "P-53", "PER-02"),
     ("D-03", "P-54", "PER-03"),
     ("D-04", "P-55", "PER-04"),
+    ("D-05", "P-56", "PER-05"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
     ("S-04", "P-52", "SAN-05"),
