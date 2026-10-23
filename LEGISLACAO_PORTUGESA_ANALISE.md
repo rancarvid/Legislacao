@@ -107,6 +107,7 @@ Documento consolidado de toda a legislação portuguesa não revogada relevante 
 | Referência | Título Completo | Data | Tema | Observações |
 |---|---|---|---|---|
 | Várias | Exceções a bem-estar animal geral | Diversas | Animais de pecuária, experimentação, caça, espetáculos tauromáquicos, forças segurança/armadas | Fora do âmbito de bem-estar de companhia; legislação sectorial própria |
+| **DL 103/2026** | Decreto-Lei n.º 103/2026, de 22 de maio | 22/05/2026 | Controlos oficiais e outras atividades oficiais (execução do Regulamento (UE) 2017/625) | Regime horizontal: DGAV autoridade competente; delegação de tarefas; deveres de colaboração dos operadores; taxas (Portaria 304-A/2026/1); contraordenações RJCE. Aplica-se aos controlos oficiais do bem-estar animal, incluindo os do Regulamento (UE) 2026/1818 (considerandos 31 e 32) |
 
 ---
 
@@ -143,6 +144,11 @@ Transportes:
 ├── DL 58/2008 (comboios)
 ├── DL 265/2007 + DL 158/2008 (transportadores)
 └── Portaria 968/2009 (públicos)
+
+Controlos oficiais (regime horizontal):
+├── Regulamento (UE) 2017/625 (base europeia)
+├── DL 103/2026 (execução nacional; revoga DL 178/2008 e Portaria 1073/2008)
+└── Portaria 304-A/2026/1 (taxas)
 ```
 
 ---

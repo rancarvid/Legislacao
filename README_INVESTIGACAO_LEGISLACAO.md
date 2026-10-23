@@ -1,7 +1,7 @@
 # Investigação Completa da Legislação Portuguesa Vigente sobre Bem-Estar Animal
 
 **Investigação Realizada**: 22 de março de 2026
-**Total de Diplomas Identificados**: 19
+**Total de Diplomas Identificados**: 20
 **Estado**: ✅ Completa
 
 ---
@@ -10,14 +10,14 @@
 
 ### 1. **legislacao_vigente_animais_completa.xlsx** (8.5 KB)
    - **Formato**: Excel com tabela estruturada
-   - **Conteúdo**: 19 diplomas em 10 colunas
+   - **Conteúdo**: 20 diplomas em 10 colunas
    - **Colunas**: Referência | Título | Data | Tema | Sub-tema | Status | Descrição | Artigos | Diplomas Relacionados | Impacto Regulamento
    - **Uso**: Análise estruturada, filtros, ordenação, exportação
    - **Pessoas-alvo**: Analistas, gestores de dados
 
 ### 2. **legislacao_vigente_animais_2026.csv** (5.9 KB)
    - **Formato**: CSV com valores delimitados por ponto-e-vírgula
-   - **Conteúdo**: 19 diplomas em 6 colunas essenciais
+   - **Conteúdo**: 20 diplomas em 6 colunas essenciais
    - **Colunas**: Referência | Título | Data | Tema | Status | Observações
    - **Uso**: Import em bases de dados, tratamento em Python/R
    - **Pessoas-alvo**: Desenvolvedores, cientistas de dados
@@ -196,7 +196,7 @@
 ## ✅ Checklist de Validação
 
 - [x] Investigação realizada em dre.pt e fontes online consolidadas
-- [x] 19 diplomas vigentes identificados e catalogados
+- [x] 20 diplomas vigentes identificados e catalogados
 - [x] Nenhuma legislação revogada incluída
 - [x] Remissões cruzadas verificadas
 - [x] Impacto Regulamento (UE) 2026/1818 documentado

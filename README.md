@@ -37,7 +37,7 @@ O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o 
 | Fase | Trabalho realizado | Estado |
 |---|---|---|
 | **Organização do repositório** | Catalogação de todos os ficheiros legislativos com códigos internos (`@legislacao`, `@codigo`, `@rgbeac`, `@regulamento`, `@rgac`) | ✅ Completo |
-| **Investigação legislativa** | Levantamento exaustivo de 19 diplomas portugueses vigentes (leis, DLs, portarias, DR) em 12 temáticas | ✅ Completo |
+| **Investigação legislativa** | Levantamento exaustivo de 20 diplomas portugueses vigentes (leis, DLs, portarias, DR) em 12 temáticas | ✅ Completo |
 | **Análise comparativa — Art. 5.º a 22.º** | 21 artigos do Regulamento (UE) 2026/1818 mapeados artigo a artigo com correspondências em `@rgbeac`, `@codigo` e `@legislacao` | ✅ Completo |
 | **Ferramenta de reunião** | HTML SPA interativo + Excel + Word gerados automaticamente pelo script `gerar_comparativo_reuniao.py` | ✅ Operacional |
 | **Análise de opiniões** | 52 opiniões externas organizadas em 7 grupos; integradas na análise dos preâmbulos | ✅ Completo |
@@ -136,13 +136,14 @@ pip install python-docx openpyxl
 
 ## Legislação Portuguesa Vigente Identificada
 
-19 diplomas em 12 temáticas — ver `00_COMECE_AQUI.md` e `LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md` para análise completa.
+20 diplomas em 12 temáticas — ver `00_COMECE_AQUI.md` e `LEGISLACAO_VIGENTE_ANALISE_COMPLETA.md` para análise completa.
 
 Destaques:
 - **DL 82/2019** — Identificação eletrónica (SIAC/microchip)
 - **Lei 27/2016** — Rede de centros de recolha; proibição do abate
 - **DL 276/2001** — Proteção dos animais de companhia
 - **Lei 8/2017** — Estatuto jurídico dos animais como seres sensíveis
+- **DL 103/2026** — Controlos oficiais: execução nacional do Regulamento (UE) 2017/625 (DGAV autoridade competente; regime aplicável aos controlos do Regulamento (UE) 2026/1818)
 
 ---
 

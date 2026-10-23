@@ -3,7 +3,7 @@
 ## 📌 COMECE AQUI
 
 **Data da Investigação**: 22 de março de 2026
-**Total de Diplomas Identificados**: 19
+**Total de Diplomas Identificados**: 20
 **Status**: ✅ INVESTIGAÇÃO COMPLETA
 
 ---
@@ -40,7 +40,7 @@ O número **2023/0447** identifica o **procedimento legislativo (COD)**, não o 
 
 Investigação exaustiva de TODA a legislação portuguesa vigente (não revogada) relacionada com bem-estar e proteção de animais, especialmente animais de companhia.
 
-**Resultado**: 19 diplomas catalogados em 12 temáticas principais
+**Resultado**: 20 diplomas catalogados em 12 temáticas principais
 
 ### Ficheiros gerados (7 no total):
 
@@ -86,7 +86,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 
 ---
 
-## 📊 19 Diplomas Identificados
+## 📊 20 Diplomas Identificados
 
 ### Leis (5)
 1. Lei 92/95 — Protecção aos Animais
@@ -96,7 +96,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 5. Lei 95/2017 — Comércio de Animais
 + Lei 20/2019 — Proteção em Circos
 
-### Decretos-Lei (7)
+### Decretos-Lei (8)
 1. DL 276/2001 — Proteção Companhia
 2. DL 314/2003 — Raiva/PNLVERAZ
 3. DL 202/2004 — Lei Bases Caça
@@ -104,6 +104,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 5. DL 74/2007 — Cães Assistência
 6. DL 255/2009 — Circos e Espetáculos
 7. DL 82/2019 — Identificação/SIAC
+8. DL 103/2026 — Controlos Oficiais (execução do Reg. (UE) 2017/625; DGAV)
 
 ### Portarias (5)
 1. Portaria 264/2013 — PNLVERAZ (normas técnicas)
@@ -132,7 +133,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 | 9. Circos/Espetáculos | ✅ Completa | DL 255/2009, Lei 20/2019 |
 | 10. Transportes | ✅ Completa | DL 265/2007, Portaria 968/2009 |
 | 11. Sanções Criminais | ⚠️ Questão constitucional | Lei 69/2014 |
-| 12. Administração | ✅ Completa | Dec. Regulamentar 3/2021 |
+| 12. Administração e Controlos Oficiais | ✅ Completa | Dec. Regulamentar 3/2021, DL 103/2026 |
 
 ---
 
@@ -175,7 +176,7 @@ Investigação exaustiva de TODA a legislação portuguesa vigente (não revogad
 ## 📚 Como Usar Cada Ficheiro
 
 ### 1. legislacao_vigente_animais_completa.xlsx ⭐ MAIS USADO
-- **O quê**: Tabela Excel estruturada com 19 diplomas
+- **O quê**: Tabela Excel estruturada com 20 diplomas
 - **Como**: Abra em Excel/Calc, filtre por coluna "Tema Principal"
 - **Vantagem**: Rápido, visual, permite ordenação/filtros
 - **Quem usa**: Juristas, analistas, gestores
@@ -265,7 +266,7 @@ PASSO 4: Compare com Regulamento (UE) 2026/1818
 ## ✅ Validação Final
 
 - [x] Investigação realizada em fontes consolidadas (dre.pt, PGDL, DGAV, SIAC, ICNF)
-- [x] 19 diplomas vigentes identificados
+- [x] 20 diplomas vigentes identificados
 - [x] Nenhuma legislação revogada incluída
 - [x] 12 temáticas cobertas
 - [x] Impacto Regulamento (UE) 2026/1818 documentado

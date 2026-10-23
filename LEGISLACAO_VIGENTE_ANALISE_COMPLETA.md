@@ -7,7 +7,7 @@
 
 ## 1. SÍNTESE EXECUTIVA
 
-Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal relacionados com bem-estar e proteção de animais, especialmente animais de companhia. A legislação cobre oito eixos temáticos principais:
+Esta investigação identifica **20 diplomas legislativos vigentes** em Portugal relacionados com bem-estar e proteção de animais, especialmente animais de companhia. A legislação cobre oito eixos temáticos principais:
 
 | Eixo Temático | Diplomas | Cobertura |
 |---|---|---|
@@ -23,6 +23,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Caça e Matilhas** | DL 202/2004, Portaria 148/2016 | Bem-estar de cães de caça; registação de matilhas |
 | **Sanções Criminais** | Lei 69/2014 | Criminaliza maus tratos e abandono |
 | **Administração e Provedoria** | Dec. Regulamentar 3/2021 | Institui Provedor do Animal |
+| **Controlos Oficiais** | DL 103/2026 | Executa o Regulamento (UE) 2017/625; DGAV autoridade competente; deveres de colaboração dos operadores; taxas; contraordenações RJCE |
 
 ---
 
@@ -309,6 +310,27 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 
 ---
 
+### 5.2 Decreto-Lei n.º 103/2026, de 22 de Maio — Controlos Oficiais (execução do Regulamento (UE) 2017/625)
+
+| Aspeto | Detalhe |
+|---|---|
+| **Referência** | Decreto-Lei n.º 103/2026, de 22 de maio (Diário da República, 1.ª série, n.º 99) |
+| **Tema** | Controlos oficiais e outras atividades oficiais — géneros alimentícios, alimentos para animais, saúde e bem-estar animal, fitossanidade e produtos fitofarmacêuticos |
+| **Status** | Vigente — entrada em vigor 60 dias após a publicação (21.7.2026). Verificado no DR (diariodarepublica.pt) em 23.10.2026: «Em vigor», sem alterações; regulamentado pela Portaria n.º 304-A/2026/1 (n.º 2 do art.º 9.º) |
+| **Objeto** | Assegura a execução nacional do Regulamento (UE) 2017/625 nos domínios das als. a) a f) e h) do n.º 2 do art.º 1.º desse Regulamento (a al. f) é o bem-estar animal) |
+| **Autoridade competente** | DGAV, «sem prejuízo das competências atribuídas por lei a outras entidades» (art.º 3.º); pode delegar tarefas de controlo oficial em organismos delegados ou pessoas singulares, por despacho do diretor-geral (art.º 6.º) |
+| **Controlos** | Baseados no risco e com frequência adequada (art.º 4.º); Plano Nacional de Controlo Plurianual coordenado pela DGAV (art.º 5.º); laboratórios oficiais e de referência designados pela DGAV (art.º 8.º) |
+| **Operadores** | Deveres gerais de colaboração: acesso às instalações, aos sistemas informáticos, aos animais e aos registos; em caso de recusa ou obstrução, colaboração imediata das forças de segurança (art.º 7.º) |
+| **Taxas** | Devidas pelos operadores pelos controlos oficiais (art.º 9.º); fixadas pela Portaria n.º 304-A/2026/1, de 20 de julho; cobrança coerciva e suspensão dos controlos por falta de pagamento (art.ºs 10.º e 11.º) |
+| **Contraordenações** | Económicas, nos termos do RJCE (DL n.º 9/2021): graves — violação dos deveres de colaboração, das medidas dos art.ºs 137.º e 138.º do Reg. 2017/625, não pagamento das taxas; leves — obrigações acessórias da portaria (art.º 13.º). Fiscalização: DGAV, ASAE e autoridades policiais; instrução e decisão: DGAV ou ASAE (art.º 15.º) |
+| **Revoga** | DL n.º 178/2008, de 26 de agosto, e Portaria n.º 1073/2008, de 22 de setembro |
+| **Ligação ao Regulamento (UE) 2026/1818** | O Regulamento remete os controlos oficiais para o Reg. 2017/625 (considerandos 31 e 32) e define «autoridades competentes» por remissão para este (art.º 4.º, al. u)); o DL 103/2026 é, por isso, o regime nacional dos controlos oficiais ao bem-estar de cães e gatos |
+| **Ficheiro no repositório** | `Legislação vigente/DL 103_2026 - relativo aos controlos oficiais e outras atividades oficiais.pdf` |
+
+**Relevância**: Regime horizontal que enquadra a fiscalização pela DGAV do bem-estar animal, incluindo os estabelecimentos abrangidos pelo Regulamento (UE) 2026/1818. O cap. XV do diploma final `@rgac` (fiscalização, contraordenações) e o art.º 55.º (taxas) têm de se articular com este diploma — ver a ficha S-05 do memorando de acompanhamento do RGAC.
+
+---
+
 ## 6. LEGISLAÇÃO ADICIONAL DE PROTEÇÃO
 
 ### 6.1 Lei n.º 20/2019, de 22 de Fevereiro — Animais em Circos
@@ -341,6 +363,7 @@ Esta investigação identifica **19 diplomas legislativos vigentes** em Portugal
 | **Circos** | DL 255/2009 | Lei 20/2019 | Implementação de proibição de selvagens |
 | **Cães de Assistência** | DL 74/2007 | — | Certificação e treino (fora escopo legislativo) |
 | **Sanções** | Lei 69/2014 | DL 276/2001 (contraordenações) | Coerência e aplicação uniforme |
+| **Controlos Oficiais** | DL 103/2026 | Reg. (UE) 2017/625, Portaria 304-A/2026/1, DL 9/2021 (RJCE) | Articulação com o cap. XV (fiscalização e contraordenações) e o art.º 55.º (taxas) do diploma final `@rgac` |
 
 ---
 
@@ -353,6 +376,7 @@ O Regulamento (UE) 2026/1818 incide sobre:
 - **Reprodução**: Complementa Lei 95/2017; pode exigir normas técnicas adicionais
 - **Transportes**: Harmónico com Portaria 968/2009; pode exigir padrões europeus
 - **Documentação**: DL 82/2019 já prevê identificação eletrónica (compatível)
+- **Controlos oficiais**: o Regulamento remete para o Regulamento (UE) 2017/625 (considerandos 31 e 32; art.º 4.º, al. u)); em Portugal o regime nacional é o DL 103/2026 (DGAV autoridade competente; delegação; taxas; RJCE). O relatório anual dos controlos oficiais (art.º 113.º do Reg. 2017/625) passa a abranger os cães e gatos
 
 ---
 
@@ -387,6 +411,7 @@ O Regulamento (UE) 2026/1818 incide sobre:
 - Portaria n.º 146/2017, de 26 de abril
 - Portaria n.º 148/2016
 - Portaria n.º 264/2013, de 16 de agosto
+- DL n.º 103/2026, de 22 de maio (pasta `Legislação vigente/`)
 
 ---
 
@@ -405,7 +430,7 @@ Legislação consultada via:
 
 - **Consolidação**: Todos os diplomas consultados estão em versão consolidada disponível online
 - **Revogações**: Nenhum dos diplomas listados foi revogado; alterações posteriores foram incorporadas
-- **Período de Vigência**: A maioria dos diplomas está vigente há vários anos; Lei 8/2017 é a mais recente alteração significativa
+- **Período de Vigência**: A maioria dos diplomas está vigente há vários anos; o DL 103/2026 (22.5.2026, em vigor desde 21.7.2026) é o diploma mais recente; a Lei 8/2017 continua a ser a alteração substantiva mais relevante
 - **Interconexões**: Múltiplos diplomas remetem uns para os outros; análise artigo-a-artigo recomendada
 
 ---

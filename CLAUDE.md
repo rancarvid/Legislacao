@@ -46,6 +46,7 @@ Cada ficheiro tem um **código interno** para referência rápida em prompts e a
 | `@legislacao` | `Portaria 148_2016 - (...).docx` | Portaria n.º 148/2016 — Matilhas de caça maior |
 | `@legislacao` | `Portaria n.º 264_2013 - (...).docx` | Portaria n.º 264/2013 — PNLVERAZ (raiva e zoonoses) |
 | `@legislacao` | `DECRET~1.DOC` | Decreto-Lei n. 74_2007, de 27 de Março - Direito de acesso das pessoas com deficiência acompanhadas de cães de assistência.docx |
+| `@legislacao` | `Legislação vigente/DL 103_2026 - relativo aos controlos oficiais e outras atividades oficiais.pdf` | **Decreto-Lei n.º 103/2026, de 22 de maio** — Execução nacional do Regulamento (UE) 2017/625 (controlos oficiais e outras atividades oficiais, incluindo bem-estar animal). DGAV autoridade competente (art.º 3.º); delegação de tarefas de controlo (art.º 6.º); deveres de colaboração dos operadores (art.º 7.º); taxas (art.º 9.º; Portaria n.º 304-A/2026/1, de 20 de julho); contraordenações económicas RJCE (art.º 13.º). Revoga o DL n.º 178/2008. Em vigor desde 21.7.2026. É o regime nacional dos controlos oficiais do `@regulamento` (considerandos 31 e 32; art.º 4.º, al. u)) e referência obrigatória para o cap. XV do `@rgac` (fiscalização, contraordenações, taxas) |
 
 > **Regra de classificação**: Tudo o que não for `@rgac`, `@codigo`, `@rgbeac` ou `@regulamento` integra o grupo `@legislacao`.
 
@@ -119,6 +120,7 @@ A legislação relevante que não conste do repositório deve ser consultada onl
 - ❌ Citar o `@regulamento` pelo número de procedimento `2023/0447` em produção analítica nova — o ato publicado é o **Regulamento (UE) 2026/1818**
 - ❌ Usar as versões `.docx` pré-publicação do `@regulamento` (pe00002…, 11.12.2025…) como fonte primária — são arquivo; a fonte é o PDF do JO
 - ❌ Confundir **entrada em vigor** (20.º dia após a publicação) com **início de aplicação** (31.8.2028, salvo as datas diferidas do art.º 33.º)
+- ❌ Analisar a fiscalização, as contraordenações ou as taxas do `@rgac` (cap. XV e art.º 55.º) sem articular com o regime dos controlos oficiais — Regulamento (UE) 2017/625 e **DL n.º 103/2026** (DGAV autoridade competente; deveres de colaboração dos operadores; RJCE)
 
 ---
 

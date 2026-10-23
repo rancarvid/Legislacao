@@ -71,6 +71,7 @@ Branch atual: `claude/review-recent-tasks-YROKh`
 | `Portaria 148_2016 (...)` | `@legislacao` |
 | `Portaria n.º 264_2013 (...)` | `@legislacao` |
 | `DECRET~1.DOC` | `@legislacao` |
+| `Legislação vigente/DL 103_2026 - relativo aos controlos oficiais e outras atividades oficiais.pdf` | `@legislacao` — DL n.º 103/2026 (controlos oficiais; execução do Reg. (UE) 2017/625) |
 | `oexcel.xlsx` | `@oexcel` — comparativo temático de referência |
 
 Pasta `@opiniao/`: 52 opiniões externas de organizações (PDF) organizadas em 7 grupos temáticos. Ver análise integrada em `ad86f36`.
@@ -98,7 +99,7 @@ Pasta `@opiniao/`: 52 opiniões externas de organizações (PDF) organizadas em 
 | Ficheiro | Descrição |
 |---|---|
 | `FICHA_RESPOSTA_AR_Regulamento_2023_0447.docx` | Ficha de resposta a inquirição parlamentar (Word, sem ícones) |
-| `legislacao_vigente_animais_completa.xlsx` | 19 diplomas vigentes em estrutura Excel filtrávelg |
+| `legislacao_vigente_animais_completa.xlsx` | 20 diplomas vigentes em estrutura Excel filtrável |
 | `legislacao_vigente_animais_2026.csv` | Mesmos dados em CSV |
 | `artigos_15a_17a_20_correspondencias.md` | Correspondências para ART-15a, 17a–20 |
 | `artigos_17a_20_correspondencias.md` | Correspondências para ART-17a–20 |

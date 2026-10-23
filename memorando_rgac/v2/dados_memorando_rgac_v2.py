@@ -1483,7 +1483,8 @@ FICHAS = [
             "Hoje a entidade gestora do LOP é o Clube Português de Canicultura, sem ato de reconhecimento pela DGAV publicado. O regulamento do LOP do Clube diz que o registo foi criado em 1932 «conforme despacho ministerial de 29 de Março de 1939 (Diário do Governo, n.º 91, 3ª Série de 20 de Abril de 1939)» e que a comissão que decide os registos é «assistido por um Delegado da Direcção Geral de Veterinária». O DL 276/2001 define o animal de raça pura pelo registo «no livro de origens português» (art. 2.º, n.º 1, al. bb), e art. 53.º, n.º 3) e o DL 315/2009 fala em «livro de origens oficialmente reconhecido» (arts. 16.º, n.ºs 2 e 4, e 19.º, n.º 3), sem dizer quem o reconhece. O Despacho n.º 15262/2012, que aprova as unidades orgânicas da DGAV, dá ao Gabinete de Recursos Genéticos Animais a competência de «Controlar a atividade delegada às associações de criadores, respeitante à gestão dos livros genealógicos», e o sítio da DGAV remete para o Clube como «entidade gestora dos Livros Genealógicos» das raças caninas autóctones. A orgânica da DGAV, Decreto Regulamentar n.º 31/2012, art. 2.º, n.º 2, al. p), na redação do Decreto Regulamentar n.º 4/2025, manda «Superintender a gestão dos livros genealógicos geridos pelas associações de criadores reconhecidas para todas as espécies animais, designadamente homologação dos secretários técnicos, aprovação de regulamentos e acompanhamento e verificação do seu cumprimento», e as als. jj) e mm) dão-lhe a definição e a aplicação das políticas de criação e comércio de animais de companhia e o cumprimento das regras aplicáveis. O regime zootécnico do DL 59/2022, que executa o Regulamento (UE) 2016/1012, só abrange as espécies bovina, suína, ovina, caprina e equina. O art. [[Reconhecimento das organizações ou associações de criadores]] do RGAC cria pela primeira vez um reconhecimento por despacho do diretor-geral para os animais de companhia.",
             "No art. [[Contraordenações]], n.º 2, a única alínea próxima é a segunda al. i) (ver L-11): «A oposição ou a criação de obstáculos à execução de medida prevista no presente diploma, que tenha sido regularmente comunicada e emanada de autoridade ou funcionário competente». Um pedido de informações não é uma medida. A recusa de dados, o silêncio e a informação falsa ficam sem coima. A P-42 já nota que a al. d) do DL 276/2001 só abrange dados pedidos para funções desse decreto-lei. Com a revogação do DL 276/2001, a al. d) desaparece sem substituto.",
             "As regras gerais não suprem a falta. O CPA, art. 60.º, n.º 1, manda cooperar «os órgãos da Administração Pública e os interessados» no procedimento, e o terceiro a quem se pedem dados não é interessado. O auxílio administrativo (CPA, art. 66.º, n.º 1) só se pede a «quaisquer outros órgãos da Administração Pública». A Lei 36/2021, anexo (Lei-Quadro do Estatuto de Utilidade Pública), art. 12.º, n.º 1, al. h), obriga as pessoas coletivas com estatuto de utilidade pública a «Prestar todas as informações e disponibilizar todos os documentos solicitados por quaisquer entidades públicas com competências para o efeito», mas só vale para essas entidades e enquanto o estatuto durar. O RGPD, art. 6.º, n.º 1, al. c), legitima o tratamento «necessário para o cumprimento de uma obrigação jurídica a que o responsável pelo tratamento esteja sujeito»: é a norma do DL 276/2001 que hoje dá ao terceiro a obrigação jurídica para transmitir dados pessoais dos seus associados ou clientes. Sem norma no RGAC, o terceiro tem de encontrar outro fundamento ou recusar.",
-            "O Regulamento (UE) 2026/1818 remete os controlos oficiais para o Regulamento (UE) 2017/625 (considerandos 31 e 32) e manda os Estados-Membros fixar sanções efetivas, proporcionadas e dissuasivas (art. 32.º, ver P-42). Não tem norma geral que obrigue terceiros a responder aos pedidos de dados das autoridades nacionais. A norma nacional continua a ser necessária."
+            "O Regulamento (UE) 2026/1818 remete os controlos oficiais para o Regulamento (UE) 2017/625 (considerandos 31 e 32) e manda os Estados-Membros fixar sanções efetivas, proporcionadas e dissuasivas (art. 32.º, ver P-42). Não tem norma geral que obrigue terceiros a responder aos pedidos de dados das autoridades nacionais. A norma nacional continua a ser necessária.",
+            "O DL 103/2026, art. 7.º, em vigor desde 21.7.2026, resolve parte do problema para os operadores: nos controlos oficiais do Regulamento (UE) 2017/625, obriga-os a facultar o acesso aos documentos, livros e registos e a cooperar, e pune a recusa como contraordenação económica grave (art. 13.º, n.º 1, al. a)). Não abrange os terceiros que detêm os dados (entidade gestora do LOP, plataformas em linha, centros de atendimento médico-veterinário) nem os pedidos feitos ao abrigo de normas nacionais fora do controlo oficial. Ver P-59."
         ],
         "proposta": "Repor no art. [[Fiscalização]] o dever do DL 276/2001, art. 67.º, n.º 3, alargado aos pedidos de dados: as autoridades administrativas e policiais e as pessoas singulares e coletivas prestam toda a colaboração necessária às inspeções, às ações de controlo e aos pedidos de informação e de documentos das autoridades referidas no n.º 1, no prazo que estas fixarem. Nomear as entidades que mais vezes detêm os dados: organizações que gerem livros genealógicos, plataformas em linha, centros de atendimento médico-veterinário e transportadores. Aditar ao art. [[Contraordenações]], n.º 2, a contraordenação do DL 276/2001, art. 68.º, n.º 1, al. d): negação ou inviabilização de dados ou de informações requeridos pelas autoridades competentes e prestação de informações inexatas ou falsas, abrangendo a recusa e o atraso da entidade gestora do LOP. No art. [[Requisitos dos reprodutores]], n.º 2, dizer que as informações abrangem os registos de ninhadas, reprodutores e afixos de um criador identificado, com prazo de resposta. No art. [[Reconhecimento das organizações ou associações de criadores]], prever a decisão da DGAV sobre a entidade que hoje gere o LOP, para que o reconhecimento deixe de assentar só no despacho de 1939. Com estas normas, a transmissão de dados pessoais fica coberta pelo RGPD, art. 6.º, n.º 1, al. c), do lado do terceiro, e al. e), do lado da DGAV.",
         "levantado": [
@@ -1491,7 +1492,8 @@ FICHAS = [
         ],
         "estado": "Aberto",
         "rel": [
-            "P-42"
+            "P-42",
+            "P-59"
         ]
     },
     {
@@ -1699,6 +1701,46 @@ FICHAS = [
         "rel": [
             "P-54",
             "P-56"
+        ]
+    },
+    {
+        "cod": "P-59",
+        "cod_antigo": "S-05",
+        "artigo": "Fiscalização",
+        "titulo": "O RGAC não se articula com o regime nacional dos controlos oficiais do DL 103/2026",
+        "etiquetas": [
+            "SAN",
+            "EST"
+        ],
+        "onde": [
+            "art. [[Fiscalização]], n.ºs 1 e 3",
+            "art. [[Contraordenações]], n.º 2, al. i)",
+            "art. [[Instrução e decisão]], n.º 3",
+            "art. [[Direito subsidiário]]",
+            "art. [[Definições]], definição de «Autoridade competente»",
+            "art. [[Âmbito Objetivo]], n.º 4",
+            "art. [[Taxas]], n.º 1",
+            "DL 103/2026, arts. 3.º, 6.º, 7.º, 9.º, 13.º e 15.º",
+            "Portaria n.º 304-A/2026/1, arts. 2.º, n.º 5, e 3.º, n.º 2"
+        ],
+        "origem": "RGAC",
+        "problema": [
+            "O Decreto-Lei n.º 103/2026, de 22 de maio, em vigor desde 21.7.2026, assegura a execução nacional do Regulamento (UE) 2017/625, o regulamento dos controlos oficiais, nos domínios das als. a) a f) e h) do art. 1.º, n.º 2, desse regulamento. A al. f) é o bem-estar animal. A DGAV é a autoridade competente, «Sem prejuízo das competências atribuídas por lei a outras entidades» (art. 3.º, n.º 1), e pode delegar tarefas de controlo oficial em organismos delegados ou pessoas singulares, por despacho do diretor-geral (art. 6.º). O diploma revoga o DL 178/2008 e a Portaria n.º 1073/2008. As taxas foram fixadas pela Portaria n.º 304-A/2026/1, de 20 de julho.",
+            "O Regulamento (UE) 2026/1818 entrega os controlos oficiais a esse regime. O considerando 32 diz que o regulamento é «um exemplo de legislação da União no domínio dos requisitos em matéria de bem-estar dos animais referidos no artigo 1.º, n.º 2, alínea f), do Regulamento (UE) 2017/625» e que os requisitos deste «aplicam-se em complemento dos previstos no presente regulamento». O art. 4.º, al. u), define «Autoridades competentes» por remissão para o art. 3.º, ponto 3, do Regulamento (UE) 2017/625, isto é, as autoridades que o Estado-Membro designar nos termos do art. 4.º desse regulamento. Em Portugal, hoje, é a DGAV.",
+            "O RGAC executa o Regulamento (UE) 2026/1818 (art. [[Âmbito Objetivo]], n.º 4), mas define «Autoridade competente» no art. [[Definições]] como a DGAV, o MVM, o médico-veterinário ao serviço do município, a câmara municipal, a junta de freguesia, o ICNF, I. P., a GNR, a PSP, a PM e a Polícia Marítima, e o art. [[Fiscalização]], n.º 1, junta a ASAE na fiscalização. O RGAC não diz qual destas entidades é a autoridade competente para efeitos do Regulamento (aprovação de estabelecimentos, certificação de tratadores, bases de dados, dados do anexo III, relatório anual do art. 113.º do Regulamento (UE) 2017/625), nem se a atuação das câmaras, dos MVM e das polícias é controlo oficial, sujeito ao Plano Nacional de Controlo Plurianual (DL 103/2026, art. 5.º) e à delegação do art. 6.º, ou fiscalização nacional fora desse regime. O DL 103/2026 não é citado em nenhum artigo do RGAC.",
+            "Na obstrução e nos deveres de colaboração há dois regimes para o mesmo facto. Para os operadores sujeitos a controlo oficial, o DL 103/2026, art. 7.º, obriga a facultar o acesso às instalações, aos sistemas informáticos, aos animais e aos registos e a cooperar com as autoridades. Em caso de recusa ou obstrução, a autoridade «solicita a imediata colaboração das forças de segurança para remover a obstrução» (n.º 4). O incumprimento é contraordenação económica grave do RJCE (art. 13.º, n.º 1, al. a)), instruída pela DGAV ou pela ASAE (art. 15.º). O RGAC responde à obstrução com o mandado judicial de acesso e remoção (art. [[Fiscalização]], n.º 3) e pune «A oposição ou a criação de obstáculos à execução de medida prevista no presente diploma» como contraordenação do art. [[Contraordenações]], n.º 2, com coima de 150 a 3 740 euros para pessoa singular e de 150 a 44 890 euros para pessoa coletiva, instruída pela DGAV (art. [[Instrução e decisão]], n.º 3) e com direito subsidiário do DL 433/82 (art. [[Direito subsidiário]]). Nos estabelecimentos de criação, nos de venda, nos CRO e nos abrigos, os dois regimes aplicam-se ao mesmo facto, com molduras, entidades instrutoras e regime geral diferentes. Os terceiros que detêm dados ficam fora dos dois (ver P-52).",
+            "As taxas sobrepõem-se. O RGAC, art. [[Taxas]], n.º 1, prevê taxas «Pelos atos e serviços relativos aos procedimentos previstos no presente diploma», a fixar por portaria. O DL 103/2026, art. 9.º, prevê taxas pelos controlos oficiais e outras atividades oficiais e só afasta, no n.º 4, os «atos realizados para efeitos de aprovação dos estabelecimentos no âmbito de processos de licenciamento cuja legislação prevê uma taxa específica». A Portaria n.º 304-A/2026/1 cobra taxa pela aprovação de estabelecimentos quando a legislação do licenciamento não tem taxa própria (art. 2.º, n.º 5) e pelos controlos oficiais não planeados e diligências após incumprimento (art. 3.º, n.º 2). Sem ressalva no RGAC, um estabelecimento aprovado ao abrigo do RGAC e controlado ao abrigo do Regulamento (UE) 2017/625 pode pagar as duas taxas pelo mesmo ato.",
+            "Fica também um sistema a três no regime geral das contraordenações. As contraordenações do DL 276/2001 são contraordenações económicas do RJCE (art. 68.º, na redação do DL 9/2021). O DL 103/2026 segue o RJCE (art. 13.º, n.º 4). O RGAC volta ao regime geral do DL 433/82 (art. [[Direito subsidiário]]), com coimas próprias. Ver P-47, quanto às medidas cautelares, e P-51, quanto às sanções acessórias."
+        ],
+        "proposta": "Aditar ao art. [[Fiscalização]] um número a dizer que os controlos oficiais do cumprimento do Regulamento (UE) 2026/1818, e das normas do RGAC que o executam, se regem pelo Regulamento (UE) 2017/625 e pelo DL 103/2026, que a DGAV é a autoridade competente para esse efeito e que pode delegar tarefas de controlo oficial nos termos do art. 6.º do DL 103/2026, nomeadamente nos médicos-veterinários municipais. Dizer no art. [[Definições]] que a definição de «Autoridade competente» não prejudica essa designação. Resolver o concurso de normas: ou o art. [[Contraordenações]] exclui os factos punidos pelo DL 103/2026, art. 13.º, ou o RGAC adota para os operadores o dever de colaboração e a sanção desse diploma e reserva o mandado judicial do art. [[Fiscalização]], n.º 3, para os detentores particulares. No art. [[Taxas]], ressalvar as taxas devidas pelos controlos oficiais ao abrigo do DL 103/2026 e da Portaria n.º 304-A/2026/1, para evitar dupla cobrança pelo mesmo ato. Decidir o regime geral das contraordenações, RJCE ou DL 433/82, e aplicá-lo a todo o capítulo XV.",
+        "levantado": [
+            "Análise interna (23.10.2026), a propósito da entrada do DL 103/2026 na pasta de legislação vigente do repositório"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "P-52",
+            "P-47",
+            "P-51"
         ]
     },
 ]
@@ -1969,6 +2011,7 @@ CORRESPONDENCIA = {
     "E-02": "P-50",
     "S-03": "P-51",
     "S-04": "P-52",
+    "S-05": "P-59",
 }
 
 REGISTO_ALTERACOES = _V1.REGISTO_ALTERACOES + [
