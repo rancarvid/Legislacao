@@ -11,8 +11,8 @@ Regras de escrita (ver .claude/skills/memorando-rgac/SKILL.md):
 - nunca reutilizar um codigo de ficha; fichas resolvidas mudam de estado, nao se apagam.
 """
 
-VERSAO_MEMORANDO = "1.32"
-DATA_MEMORANDO = "22.10.2026"
+VERSAO_MEMORANDO = "1.33"
+DATA_MEMORANDO = "23.10.2026"
 DATA_LIGACOES = "14.10.2026"
 FICHEIRO_RGAC = "RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx"
 VERSAO_RGAC = ("RGAC_DAJA_REV. FORMAL_V1_Versão TRABALHO - Revisto 30-06-2026 18h00 Grupo.docx "
@@ -1101,6 +1101,33 @@ CAPITULOS = [
             "estado": "Aberto",
             "rel": []
         },
+        {
+            "cod": "D-02",
+            "titulo": "Associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias",
+            "onde": [
+                "art. 69.º, n.ºs 6 e 7",
+                "art. 110.º, n.ºs 1 e 3",
+                "art. 81.º, n.ºs 2 e 3",
+                "art. 127.º, n.º 4",
+                "DL 315/2009, art. 3.º, al. f), art. 5.º, n.º 1, e art. 20.º, n.º 4",
+                "DL 82/2019, art. 9.º, n.º 5, e art. 27.º, n.ºs 1 e 3"
+            ],
+            "origem": "PARCIAL",
+            "problema": [
+                "Hoje, o DL 82/2019 admite pessoas coletivas como titulares no SIAC e refere os centros de alojamento sem fins lucrativos (art. 9.º, n.º 5, na redação da Lei 2/2020). O DL 315/2009 só conhece o detentor pessoa singular, maior de 16 anos (art. 3.º, al. f)), e a licença é emitida pela junta de freguesia da área de residência do detentor (art. 5.º, n.º 1). Quando uma associação recebe um cão perigoso, a lei não diz em nome de quem se pede a licença. O DL 82/2019 manda o titular «assegurar o licenciamento» (art. 27.º, n.º 3) na junta da área de recenseamento do titular (n.º 1), que uma pessoa coletiva não tem.",
+                "O RGAC resolve a titularidade: só pessoa singular, maior de 16 anos, salvo município ou associação zoófila com estabelecimento licenciado (art. 69.º, n.ºs 6 e 7). Mas a licença continua pensada só para a pessoa singular: é emitida pela junta da «área de residência do titular» (art. 110.º, n.º 1) e pedida pelo «titular, pessoa singular, maior de 16 anos» (n.º 3). Quando o titular é o município ou a associação, ninguém cabe na norma.",
+                "Na adoção, o art. 81.º, n.ºs 2 e 3 obriga as associações zoófilas a listar na plataforma nacional de adoção todos os animais em condições de serem adotados, com fotografia e perfil comportamental. O art. 127.º, n.º 4 proíbe a «comercialização e publicidade de animais perigosos». Hoje a mesma proibição está no DL 315/2009, art. 20.º, n.º 4. Para um cão perigoso apto para adoção, as duas normas apontam em sentidos contrários, e nada diz se divulgar para adoção é publicidade."
+            ],
+            "proposta": "(i) No art. 110.º, prever que, sendo titular um município ou uma associação zoófila, a licença é pedida pelo titular e emitida em nome da pessoa singular, maior de 16 anos, responsável pela guarda do animal, na junta da área do estabelecimento; a idoneidade e a formação exigem-se a essa pessoa. (ii) No art. 127.º, n.º 4, ressalvar a divulgação para adoção por CRO e associações zoófilas na plataforma do art. 81.º, com indicação de que o animal é perigoso e dos requisitos que o adotante tem de cumprir. Em alternativa, excluir os animais perigosos do dever de listagem do art. 81.º, n.º 3.",
+            "levantado": [
+                "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila que passou a titular de um cão classificado como perigoso"
+            ],
+            "estado": "Aberto",
+            "rel": [
+                "T-08",
+                "D-01"
+            ]
+        },
     ]},
     {"letra": "S", "capitulos": ["Capítulo XV"], "titulo": "Medidas administrativas, fiscalização e contraordenações (cap. XV)", "intro": [], "fichas": [
         {
@@ -1898,4 +1925,5 @@ REGISTO_ALTERACOES = [
     ("1.30", "22.10.2026", "Ficha S-04: a orgânica da DGAV (Decreto Regulamentar n.º 31/2012, art. 2.º, n.º 2, al. p), na redação do Decreto Regulamentar n.º 4/2025) manda superintender a gestão dos livros genealógicos das associações de criadores reconhecidas para todas as espécies, e as als. jj) e mm) dão à DGAV a política e o cumprimento das regras de criação e comércio de animais de companhia. Fonte nova: Decreto Regulamentar n.º 4/2025."),
     ("1.31", "22.10.2026", "Ficha D-01 completada: a «prova em contrário» do art. 120.º, n.º 5 não pode ser só uma avaliação de comportamento, porque nas als. a) e b) do n.º 1 a classificação resulta de um facto. Proposta (ii) ajustada. Origem: pedido de um MVM para retirar a classificação de um cão sem prova de que tenha sido o agressor."),
     ("1.32", "22.10.2026", "Lapso L-22: remissões erradas nas normas dos treinadores de cães perigosos (arts. 130.º, 131.º, 132.º e 134.º). Origem: pedido de esclarecimento de um treinador certificado pela PSP sobre os documentos para o título profissional (DL 315/2009, art. 25.º)."),
+    ("1.33", "23.10.2026", "Ficha nova D-02 (associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias). O art. 69.º, n.º 7 admite a associação zoófila como titular, mas o art. 110.º, n.ºs 1 e 3 só prevê a licença para pessoa singular; o art. 81.º obriga a listar para adoção os animais aptos e o art. 127.º, n.º 4 proíbe a publicidade de animais perigosos. Origem: pedido de esclarecimento de uma associação zoófila."),
 ]

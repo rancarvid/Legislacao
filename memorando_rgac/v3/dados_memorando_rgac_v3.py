@@ -1552,6 +1552,41 @@ FICHAS = [
             "SAN-01"
         ]
     },
+    {
+        "cod": "PER-02",
+        "cod_ensaio_2": "P-53",
+        "cod_antigo": "D-02",
+        "artigo": "Detenção de cães perigosos ou potencialmente perigosos",
+        "etiquetas": [
+            "PER",
+            "TIT",
+            "REG"
+        ],
+        "titulo": "Associação titular de cão perigoso: falta a regra da licença e a adoção fica entre duas normas contrárias",
+        "onde": [
+            "art. [[Registo no Sistema de Informação de Animais de Companhia (SIAC)]], n.ºs 6 e 7",
+            "art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.ºs 1 e 3",
+            "art. [[Plataforma Nacional de Adoção de Animais de Companhia]], n.ºs 2 e 3",
+            "art. [[Colocação no mercado de animais potencialmente perigosos]], n.º 4",
+            "DL 315/2009, art. 3.º, al. f), art. 5.º, n.º 1, e art. 20.º, n.º 4",
+            "DL 82/2019, art. 9.º, n.º 5, e art. 27.º, n.ºs 1 e 3"
+        ],
+        "origem": "PARCIAL",
+        "problema": [
+            "Hoje, o DL 82/2019 admite pessoas coletivas como titulares no SIAC e refere os centros de alojamento sem fins lucrativos (art. 9.º, n.º 5, na redação da Lei 2/2020). O DL 315/2009 só conhece o detentor pessoa singular, maior de 16 anos (art. 3.º, al. f)), e a licença é emitida pela junta de freguesia da área de residência do detentor (art. 5.º, n.º 1). Quando uma associação recebe um cão perigoso, a lei não diz em nome de quem se pede a licença. O DL 82/2019 manda o titular «assegurar o licenciamento» (art. 27.º, n.º 3) na junta da área de recenseamento do titular (n.º 1), que uma pessoa coletiva não tem.",
+            "O RGAC resolve a titularidade: só pessoa singular, maior de 16 anos, salvo município ou associação zoófila com estabelecimento licenciado (art. [[Registo no Sistema de Informação de Animais de Companhia (SIAC)]], n.ºs 6 e 7). Mas a licença continua pensada só para a pessoa singular: é emitida pela junta da «área de residência do titular» (art. [[Detenção de cães perigosos ou potencialmente perigosos]], n.º 1) e pedida pelo «titular, pessoa singular, maior de 16 anos» (n.º 3). Quando o titular é o município ou a associação, ninguém cabe na norma.",
+            "Na adoção, o art. [[Plataforma Nacional de Adoção de Animais de Companhia]], n.ºs 2 e 3 obriga as associações zoófilas a listar na plataforma nacional de adoção todos os animais em condições de serem adotados, com fotografia e perfil comportamental. O art. [[Colocação no mercado de animais potencialmente perigosos]], n.º 4 proíbe a «comercialização e publicidade de animais perigosos». Hoje a mesma proibição está no DL 315/2009, art. 20.º, n.º 4. Para um cão perigoso apto para adoção, as duas normas apontam em sentidos contrários, e nada diz se divulgar para adoção é publicidade."
+        ],
+        "proposta": "(i) No art. [[Detenção de cães perigosos ou potencialmente perigosos]], prever que, sendo titular um município ou uma associação zoófila, a licença é pedida pelo titular e emitida em nome da pessoa singular, maior de 16 anos, responsável pela guarda do animal, na junta da área do estabelecimento; a idoneidade e a formação exigem-se a essa pessoa. (ii) No art. [[Colocação no mercado de animais potencialmente perigosos]], n.º 4, ressalvar a divulgação para adoção por CRO e associações zoófilas na plataforma do art. [[Plataforma Nacional de Adoção de Animais de Companhia]], com indicação de que o animal é perigoso e dos requisitos que o adotante tem de cumprir. Em alternativa, excluir os animais perigosos do dever de listagem do art. [[Plataforma Nacional de Adoção de Animais de Companhia]], n.º 3.",
+        "levantado": [
+            "Análise interna (23.10.2026), a propósito do pedido de esclarecimento de uma associação zoófila que passou a titular de um cão classificado como perigoso"
+        ],
+        "estado": "Aberto",
+        "rel": [
+            "TIT-08",
+            "PER-01"
+        ]
+    },
 ]
 
 RESOLVIDOS = [
@@ -1811,6 +1846,7 @@ CORRESPONDENCIA = [
     ("S-02", "P-47", "SAN-03"),
     ("E-01", "P-48", "BEM-02"),
     ("D-01", "P-49", "PER-01"),
+    ("D-02", "P-53", "PER-02"),
     ("E-02", "P-50", "EST-01"),
     ("S-03", "P-51", "SAN-04"),
     ("S-04", "P-52", "SAN-05"),
